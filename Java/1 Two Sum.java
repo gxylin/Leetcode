@@ -31,3 +31,49 @@ class Solution {
         return result;
     }
 }
+
+Method 2: Sort + two points
+Time complexity: O(nlogn)
+Space complexity: O(n)
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int[] result = new int[2];
+        int[] number = new int[2];
+        if (nums == null || nums.length == 0){
+            return result;
+        }
+        int[] origin = new int[nums.length];
+        for (int i = 0; i < nums.length; i++){
+            origin[i] = nums[i];
+        }
+        Arrays.sort(origin);
+        int left = 0;
+        int right = nums.length -1;
+        while (left < right){
+            int sum = origin[left] + origin[right];
+            if (sum == target){
+                number[0] = origin[left];
+                number[1] = origin[right];
+                break;
+            }else if (sum < target){
+                left++;
+            }else{
+                right--;
+            } 
+        }
+       for (int i = 0; i < nums.length; i++){
+           if (nums[i] == number[0]){
+               result[0] = i;
+               break;
+           }
+       }
+       for (int i = nums.length - 1; i >= 0; i--){
+           if (nums[i] == number[1]){
+               result[1] = i;
+               break;
+           }
+        }
+        return result;
+    }
+   
+}
