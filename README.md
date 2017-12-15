@@ -7,4 +7,5 @@ Solution for Leetcode/LintCode
 |242        | [Valid Anagram.java](Java/242_ValidAnagram.java) | Easy|Java       |Leetcode  |
 |144        | [BinaryTreePreorderTraversal.java](Java/144_BinaryTreePreorderTraversal.java)|Medium|Java|Leetcode  |
 |94         | [BinaryTreeInorderTraversal.java](Java/94_BinaryTreeInorderTraversal.java)|Medium|Java| Leetcode  |
+|512        | [DecodeWays.java](Java/512_DecodeWays.java)|Medium|Java|Lintcode
 
