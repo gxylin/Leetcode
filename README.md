@@ -8,4 +8,5 @@ Solution for Leetcode/LintCode
 |144        | [BinaryTreePreorderTraversal.java](Java/144_BinaryTreePreorderTraversal.java)|Medium|Java|Leetcode  |
 |94         | [BinaryTreeInorderTraversal.java](Java/94_BinaryTreeInorderTraversal.java)|Medium|Java| Leetcode  |
 |512        | [DecodeWays.java](Java/512_DecodeWays.java)|Medium|Java|Lintcode
+|638        | [StringsHomomorphism.java](Java/638_StringsHomomorphism.java)|Easy|Java|Lintcode|
 
