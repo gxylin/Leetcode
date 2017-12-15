@@ -10,4 +10,4 @@ Solution for Leetcode/LintCode
 |512      | [DecodeWays.java](Java/512_DecodeWays.java)|Medium|Java|Lintcode
 |638      | [StringsHomomorphism.java](Java/638_StringsHomomorphism.java)|Easy|Java|Lintcode|
 |626      | [RectangleOverlap.java](Java/626_RectangleOverlap)|Easy|Java|Lintcode|
-
+|637      | [CheckWordAbbreviation.java](Java/637_CheckWordAbbreviation.java)|Easy|Java|Lintcode|
