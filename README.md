@@ -9,6 +9,6 @@ Solution for Leetcode/LintCode
 |94       | [BinaryTreeInorderTraversal.java](Java/94_BinaryTreeInorderTraversal.java)|Medium|Java| Leetcode  |
 |512      | [DecodeWays.java](Java/512_DecodeWays.java)|Medium|Java|Lintcode
 |638      | [StringsHomomorphism.java](Java/638_StringsHomomorphism.java)|Easy|Java|Lintcode|
-|626      | [RectangleOverlap.java](Java/626_RectangleOverlap)|Easy|Java|Lintcode|
+|626      | [RectangleOverlap.java](Java/626_RectangleOverlap.java)|Easy|Java|Lintcode|
 |637      | [CheckWordAbbreviation.java](Java/637_CheckWordAbbreviation.java)|Easy|Java|Lintcode|
 |639      | [WordsAbbreviation.java](Java/639_WordsAbbreviation.java)|Hard|Java|Lintcode|
