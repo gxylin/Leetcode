@@ -1,5 +1,5 @@
-# Leetcode
-Solution for Leetcode/LintCode
+# Leetcode/Lintcode
+Solution for Leetcode/Lintcode
 
 | **No.#**| **Problem**                         | **Level**     | **Language** |**Source**|
 |  :-----:| :-----                              |   :---:       |    :---:     | :--:     |
@@ -12,3 +12,4 @@ Solution for Leetcode/LintCode
 |626      | [RectangleOverlap.java](Java/626_RectangleOverlap.java)|Easy|Java|Lintcode|
 |637      | [CheckWordAbbreviation.java](Java/637_CheckWordAbbreviation.java)|Easy|Java|Lintcode|
 |639      | [WordsAbbreviation.java](Java/639_WordsAbbreviation.java)|Hard|Java|Lintcode|
+|642      | [SlidingWindowAveragefromDataStream.java](Java/642_SlidingWindowAveragefromDataStream.java)|Easy|Java|Lintcode|
