@@ -13,3 +13,4 @@ Solution for Leetcode/Lintcode
 |637      | [CheckWordAbbreviation.java](Java/637_CheckWordAbbreviation.java)|Easy|Java|Lintcode|
 |639      | [WordsAbbreviation.java](Java/639_WordsAbbreviation.java)|Hard|Java|Lintcode|
 |642      | [SlidingWindowAveragefromDataStream.java](Java/642_SlidingWindowAveragefromDataStream.java)|Easy|Java|Lintcode|
+|640      | [EditDistanceII.java](Java/640_EditDistanceII.java)|Medium|Java|Lintcode|
