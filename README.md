@@ -16,3 +16,4 @@ Solution for Leetcode/Lintcode
 |640      | [EditDistanceII.java](Java/640_EditDistanceII.java)|Medium|Java|Lintcode|
 |660      | [ReadCharactersFromFile.java](Java/660_ReadCharactersFromFile.java)|Hard|Java|Lintcode|
 |659      | [StringsSerialization.java](Java/659_StringsSerialization.java)|Medium|Java|Lintcode|
+|643      | [SystemLongestFilePath.java](Java/643_SystemLongestFilePath.java)|Medium|Java|Lintcode|
