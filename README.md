@@ -17,3 +17,4 @@ Solution for Leetcode/Lintcode
 |660      | [ReadCharactersFromFile.java](Java/660_ReadCharactersFromFile.java)|Hard|Java|Lintcode|
 |659      | [StringsSerialization.java](Java/659_StringsSerialization.java)|Medium|Java|Lintcode|
 |643      | [SystemLongestFilePath.java](Java/643_SystemLongestFilePath.java)|Medium|Java|Lintcode|
+|419      | [RomantoInteger.java](Java/419_RomantoInteger.java)|Medium|Java|Lintcode|
