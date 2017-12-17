@@ -15,3 +15,4 @@ Solution for Leetcode/Lintcode
 |642      | [SlidingWindowAveragefromDataStream.java](Java/642_SlidingWindowAveragefromDataStream.java)|Easy|Java|Lintcode|
 |640      | [EditDistanceII.java](Java/640_EditDistanceII.java)|Medium|Java|Lintcode|
 |660      | [ReadCharactersFromFile.java](Java/660_ReadCharactersFromFile.java)|Hard|Java|Lintcode|
+|94       | [BinaryTreeInorderTraversal.java](Java/94_BinaryTreeInorderTraversal.java)|Medium|Java|Lintcode|
