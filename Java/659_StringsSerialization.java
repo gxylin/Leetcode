@@ -18,7 +18,7 @@ public class Solution {
     public String encode(List<String> strs) {
         String ans = "";
         for (String str : strs){
-            ans += str.length() + ":" + str;
+            ans += String.valueOf(str.length()) + ":" + str;
         }
         return ans;
     }
