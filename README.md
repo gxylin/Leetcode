@@ -19,3 +19,4 @@ Solution for Leetcode/Lintcode
 |643      | [SystemLongestFilePath.java](Java/643_SystemLongestFilePath.java)|Medium|Java|Lintcode|
 |419      | [RomantoInteger.java](Java/419_RomantoInteger.java)|Medium|Java|Lintcode|
 |418      | [IntegertoRoman.java](Java/418_IntegertoRoman.java)|Medium|Java|Lintcode|
+|645      | [IdentifyCelebrity.java](Java/645_IdentifyCelebrity.java)|Medium|Java|Lintcode
