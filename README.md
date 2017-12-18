@@ -24,3 +24,4 @@ Solution for Leetcode/Lintcode
 |19    |72   | [EditDistance.java](Java/72_EditDistance.java)|Medium|Java|Leetcode|
 |20    |641  | [MissingInterval.java](Java/641_MissingInterval.java)|Medium|Java|Lintcode|
 |21    |156  | [MergeIntervals.java](Java/156_MergeIntervals.java)|Easy|Java|Lintcode|
+|22    |30   | [InsertInterval.java](Java/30_InsertInterval.java)|Easy|Java|Lintcode|
