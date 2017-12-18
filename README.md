@@ -21,3 +21,4 @@ Solution for Leetcode/Lintcode
 |418      | [IntegertoRoman.java](Java/418_IntegertoRoman.java)|Medium|Java|Lintcode|
 |645      | [IdentifyCelebrity.java](Java/645_IdentifyCelebrity.java)|Medium|Java|Lintcode|
 |644      | [MirrorNumbers.java](Java/644_MirrorNumbers.java)|Easy|Java|Lintcode|
+|72       | [EditDistance.java](Java/72_EditDistance.java)|Medium|Java|Leetcode|
