@@ -23,3 +23,4 @@ Solution for Leetcode/Lintcode
 |18    |644  | [MirrorNumbers.java](Java/644_MirrorNumbers.java)|Easy|Java|Lintcode|
 |19    |72   | [EditDistance.java](Java/72_EditDistance.java)|Medium|Java|Leetcode|
 |20    |641  | [MissingInterval.java](Java/641_MissingInterval.java)|Medium|Java|Lintcode|
+|21    |156  | [MergeIntervals.java](Java/156_MergeIntervals.java)|Easy|Java|Lintcode|
