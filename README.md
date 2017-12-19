@@ -25,3 +25,4 @@ Solution for Leetcode/Lintcode
 |20    |641  | [MissingInterval.java](Java/641_MissingInterval.java)|Medium|Java|Lintcode|
 |21    |156  | [MergeIntervals.java](Java/156_MergeIntervals.java)|Easy|Java|Lintcode|
 |22    |30   | [InsertInterval.java](Java/30_InsertInterval.java)|Easy|Java|Lintcode|
+|23    |646  | [FirstPositionUniqueCharacter.java](Java/646_FirstPositionUniqueCharacter.java)|Easy|Java|Lintcode|
