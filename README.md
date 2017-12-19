@@ -29,3 +29,4 @@ Solution for Leetcode/Lintcode
 |24    |647  | [SubstringAnagrams.java](Java/647_SubstringAnagrams.java)|Medium|Java|lintcode|
 |25    |648  | [WordAbbreviationSet.java](Java/648_WordAbbreviationSet.java)|Medium|Java|Lintcode|
 |26    |124  | [LongestConsecutiveSequence.java](Java/124_LongestConsecutiveSequence.java)|Medium|Java|Lintcode|
+|27    |526  | [LoadBalancer.java](Java/526_LoadBalancer.java)|Medium|Java|Lintcode|
