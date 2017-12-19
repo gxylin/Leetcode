@@ -27,3 +27,4 @@ Solution for Leetcode/Lintcode
 |22    |30   | [InsertInterval.java](Java/30_InsertInterval.java)|Easy|Java|Lintcode|
 |23    |646  | [FirstPositionUniqueCharacter.java](Java/646_FirstPositionUniqueCharacter.java)|Easy|Java|Lintcode|
 |24    |647  | [SubstringAnagrams.java](Java/647_SubstringAnagrams.java)|Medium|Java|lintcode|
+|25    |648  | [WordAbbreviationSet.java](Java/648_WordAbbreviationSet.java)|Medium|Java|Lintcode|
