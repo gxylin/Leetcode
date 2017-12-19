@@ -55,7 +55,7 @@ public class Solution {
     }
 }
 
-Methdo 2:
+Method 2:
 Time complexity: O(n * 256)
 public class Solution {
     /*
