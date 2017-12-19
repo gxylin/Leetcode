@@ -13,6 +13,20 @@ return [0, 6]
 The substring with start index = 0 is "cba", which is an anagram of "abc".
 The substring with start index = 6 is "bac", which is an anagram of "abc".
 
+思路:
+• Anagrams 的充要条件?
+• 元素出现的次数一样就好了
+• 一个基本的想法:假设p串的长度为l , 那么就找出s中所有长度为l 的子 串,并统计它们中元素出现的个数
+• 朴素算法 O(nl) n为s串长度
+• 可以更快吗?
+• 想想相邻的两个子串的差别?
+• 相当于一个长度为l 的sliding window 从左往右扫一遍
+• 每次只增加一个右边元素 && 减少一个左边的元素
+• 用什么统计元素个数? – 数组
+    
+考点:
+• Sliding window + hash
+
 Method 1: 
 Time complexity: O(n)
 public class Solution {
