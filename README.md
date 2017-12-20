@@ -37,4 +37,5 @@ Solution for Leetcode/Lintcode
 |32    |661  | [Conver BST to Greater Tree.java](Java/661_ConverBSTtoGreaterTree.java)|Easy|Java|Lintcode|
 |33    |448 |[InorderSuccessorBinarySearchTree.java](Java/448_InorderSuccessorinBinarySearchTree.java)|Medium|Java|Lintcode|
 |34    |649  | [Binary Tree Flipping.java](Java/649_BinaryTreeFlipping.java)|Medium|Java|Lintcode|
-|32    |650  | [BinaryTreeLeavesOrderTraversal.java](Java/650_BinaryTreeLeavesOrderTraversal.java)|Medium|Java|Lintcode|
+|32    |650  | [Binary Tree Leaves Order Traversal.java](Java/650_BinaryTreeLeavesOrderTraversal.java)|Medium|Java|Lintcode|
+|33   |651|[Binary Tree Vertical Order Traversal.java](Java/651_BinaryTreeVerticalOrderTraversal.java)|Medium|Java|Lintcode|
