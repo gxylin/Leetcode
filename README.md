@@ -39,3 +39,4 @@ Solution for Leetcode/Lintcode
 |34    |649  | [Binary Tree Flipping.java](Java/649_BinaryTreeFlipping.java)|Medium|Java|Lintcode|
 |32    |650  | [Binary Tree Leaves Order Traversal.java](Java/650_BinaryTreeLeavesOrderTraversal.java)|Medium|Java|Lintcode|
 |33   |651|[Binary Tree Vertical Order Traversal.java](Java/651_BinaryTreeVerticalOrderTraversal.java)|Medium|Java|Lintcode|
+|34    |628  | [Maximum Subtree.java](Java/628_MaximumSubtree.java)|Easy|Java|Lintcode|
