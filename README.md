@@ -34,3 +34,4 @@ Solution for Leetcode/Lintcode
 |29    |423  | [ValidParentheses.java](Java/423_ValidParentheses.java)|Easy|Java|Lintcode|
 |30    |622  | [Guess Number Game.java](Java/622_GuessNumberGame.java)|Easy|Java|Lintcode|
 |31    |61   | [Search for a Range.java](Java/61_SearchforaRange.java)|Medium|Java|Lintcode|
+|32    |661  | [Conver BST to Greater Tree.java](Java/661_ConverBSTtoGreaterTree.java)|Easy|Java|Lintcode|
