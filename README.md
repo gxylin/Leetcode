@@ -30,3 +30,4 @@ Solution for Leetcode/Lintcode
 |25    |648  | [WordAbbreviationSet.java](Java/648_WordAbbreviationSet.java)|Medium|Java|Lintcode|
 |26    |124  | [LongestConsecutiveSequence.java](Java/124_LongestConsecutiveSequence.java)|Medium|Java|Lintcode|
 |27    |526  | [LoadBalancer.java](Java/526_LoadBalancer.java)|Medium|Java|Lintcode|
+|28    |76   | [LongestIncreasingSubsequence.java](Java/76_LongestIncreasingSubsequence.java)|Medium|Java|Lintcode|
