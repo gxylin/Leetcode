@@ -31,3 +31,4 @@ Solution for Leetcode/Lintcode
 |26    |124  | [LongestConsecutiveSequence.java](Java/124_LongestConsecutiveSequence.java)|Medium|Java|Lintcode|
 |27    |526  | [LoadBalancer.java](Java/526_LoadBalancer.java)|Medium|Java|Lintcode|
 |28    |76   | [LongestIncreasingSubsequence.java](Java/76_LongestIncreasingSubsequence.java)|Medium|Java|Lintcode|
+|29    |423  | [ValidParentheses.java](Java/423_ValidParentheses.java)|Easy|Java|Lintcode|
