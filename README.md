@@ -41,3 +41,4 @@ Solution for Leetcode/Lintcode
 |33   |651|[Binary Tree Vertical Order Traversal.java](Java/651_BinaryTreeVerticalOrderTraversal.java)|Medium|Java|Lintcode|
 |34    |628  | [Maximum Subtree.java](Java/628_MaximumSubtree.java)|Easy|Java|Lintcode|
 |35    |270  | [Closest Binary Search TreeValue.java](Java/270_ClosestBinarySearchTreeValue.java)|Easy|Java|Leetcode|
+|36    |74   | [First Bad Version.java](Java/74_FirstBadVersion.java)|Medium|Java|Lintcode|
