@@ -42,3 +42,4 @@ Solution for Leetcode/Lintcode
 |34    |628  | [Maximum Subtree.java](Java/628_MaximumSubtree.java)|Easy|Java|Lintcode|
 |35    |270  | [Closest Binary Search TreeValue.java](Java/270_ClosestBinarySearchTreeValue.java)|Easy|Java|Leetcode|
 |36    |74   | [First Bad Version.java](Java/74_FirstBadVersion.java)|Medium|Java|Lintcode|
+|37    |629  | [Minimum Spanning Tree.java](Java/629_MinimumSpanningTree.java)|Hard|Java|Lintcode|
