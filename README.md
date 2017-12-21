@@ -44,3 +44,4 @@ Solution for Leetcode/Lintcode
 |36    |74   | [First Bad Version.java](Java/74_FirstBadVersion.java)|Medium|Java|Lintcode|
 |37    |629  | [Minimum Spanning Tree.java](Java/629_MinimumSpanningTree.java)|Hard|Java|Lintcode|
 |38    |477  | [Surrounded Regions.java](Java/477_SurroundedRegions.java)|Medium|Java|Lintcode|
+|39    |477  | [Surrounded Regions.py](Python/477_SurroundedRegions.py)|Medium|Java|Lintcode|
