@@ -11,6 +11,10 @@ Gievn the connections = ["Acity","Bcity",1], ["Acity","Ccity",2], ["Bcity","Ccit
 
 Return ["Acity","Bcity",1], ["Acity","Ccity",2]
 
+
+Method: Union Find + Kruskal
+
+
 /**
  * Definition for a Connection.
  * public class Connection {
