@@ -47,3 +47,4 @@ Solution for Leetcode/Lintcode
 |39    |477  | [Surrounded Regions.py](Python/477_SurroundedRegions.py)|Medium|Java|Lintcode|
 |40    |663  | [Nearest Exit.java](Java/663_NearestExit.java)|Medium|Java|Lintcode|
 |41    |425 |[Letter Combinations of Phone Number.java](Java/425_LetterCombinationsofPhoneNumber.java)|Medium|Java|Lintcode|
+|42    |652  | [Factorization.java](Java/652_Factorization.java)|Medium|Java|Lintcode|
