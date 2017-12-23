@@ -45,7 +45,8 @@ public class Solution {
         int num = digits.charAt(x) - '0'; 
         String s = phone[num];
         for (int i = 0; i < s.length() ; i++){
-            dfs(result, x + 1, str + s.charAt(i), digits, phone);
+            dfs(result, x + 1, str + s.charAt(i), digits, phone); 
+            // no need to remove the last char because string uses deep copy by default
         }
     }
 }
