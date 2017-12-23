@@ -49,4 +49,4 @@ Solution for Leetcode/Lintcode
 |41    |425 |[Letter Combinations of Phone Number.java](Java/425_LetterCombinationsofPhoneNumber.java)|Medium|Java|Lintcode|
 |42    |652  | [Factorization.java](Java/652_Factorization.java)|Medium|Java|Lintcode|
 |43    |653  | [Add Operators.java](Java/653_AddOperators.java)|Hard|Java|Lintcode|
-|44    |634  | [Word Squares.java](Java/634_WordSquares.java)|hard|Java|Lintcode|
+|44    |634  | [Word Squares.java](Java/634_WordSquares.java)|Hard|Java|Lintcode|
