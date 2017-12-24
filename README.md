@@ -52,3 +52,4 @@ Solution for Leetcode/Lintcode
 |44    |634  | [Word Squares.java](Java/634_WordSquares.java)|Hard|Java|Lintcode|
 |45    |38   | [Search a 2D Matrix II.java](Java/38_Search2DMatrixII.java)|Medium|Java|Lintcode|
 |46    |161  | [Rotate Image.java](Java/161_RotateImage.java)|Medium|Java|Lintcode|
+|47    |654  | [Sparse Matrix Multiplication](Java/654_SparseMatrixMultiplication)|Medium|Java|Lintcode|
