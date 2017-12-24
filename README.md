@@ -50,3 +50,4 @@ Solution for Leetcode/Lintcode
 |42    |652  | [Factorization.java](Java/652_Factorization.java)|Medium|Java|Lintcode|
 |43    |653  | [Add Operators.java](Java/653_AddOperators.java)|Hard|Java|Lintcode|
 |44    |634  | [Word Squares.java](Java/634_WordSquares.java)|Hard|Java|Lintcode|
+|45    |38   | [Search a 2D Matrix II.java](Java/38_Search2DMatrixII.java)|Medium|Java|Lintcode|
