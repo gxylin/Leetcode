@@ -54,3 +54,4 @@ Solution for Leetcode/Lintcode
 |46    |161  | [Rotate Image.java](Java/161_RotateImage.java)|Medium|Java|Lintcode|
 |47    |654  | [Sparse Matrix Multiplication](Java/654_SparseMatrixMultiplication)|Medium|Java|Lintcode|
 |48    |655  | [Big Integer Addition.java](Java/655_BigIntegerAddition.java)|Easy|Java|Lintcode|
+|49    |656  | [Big Integer Multiplication.java](Java/656_BigIntegerMultiplication.java)|Medium|Java|Lintcode|
