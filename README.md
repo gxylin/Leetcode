@@ -58,3 +58,4 @@ Solution for Leetcode/Lintcode
 |50    |408  | [Add Binary.java](Java/408_AddBinary.java)|Medium|Java|Lintcode|
 |51    |167  | [Add Two Numbers.java](Java/167_AddTwoNumbers.java)|Easy|Java|Lintcode|
 |52    |428  | [Pow.java](Java/428_Pow.java)|Medium|Java|Lintcode|
+|53    |433  | [Number of Islands.java](Java/433_NumberofIslands.java)|Easy|Java|Lintcode|
