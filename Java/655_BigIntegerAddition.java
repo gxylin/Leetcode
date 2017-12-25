@@ -10,6 +10,11 @@ Example
 Given num1 = "123", num2 = "45"
 return "168"
 
+ 高精度加法的实现?
+– 方法1:每次模拟进位 (见代码)
+– 方法2:对应数位相加后一次性进位
+
+Method 1:
 public class Solution {
     /*
      * @param num1: a non-negative integers
