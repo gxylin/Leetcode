@@ -57,3 +57,4 @@ Solution for Leetcode/Lintcode
 |49    |656  | [Big Integer Multiplication.java](Java/656_BigIntegerMultiplication.java)|Medium|Java|Lintcode|
 |50    |408  | [Add Binary.java](Java/408_AddBinary.java)|Medium|Java|Lintcode|
 |51    |167  | [Add Two Numbers.java](Java/167_AddTwoNumbers.java)|Easy|Java|Lintcode|
+|52    |428  | [Pow.java](Java/428_Pow.java)|Medium|Java|Lintcode|
