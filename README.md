@@ -59,4 +59,4 @@ Solution for Leetcode/Lintcode
 |51    |167  | [Add Two Numbers.java](Java/167_AddTwoNumbers.java)|Easy|Java|Lintcode|
 |52    |428  | [Pow.java](Java/428_Pow.java)|Medium|Java|Lintcode|
 |53    |433  | [Number of Islands.java](Java/433_NumberofIslands.java)|Easy|Java|Lintcode|
-|54    |107  | [Word Break.java](Java/107_Word Break.java)|Medium|Java|Lintcode|
+|54    |107  | [Word Break.java](Java/107_WordBreak.java)|Medium|Java|Lintcode|
