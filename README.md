@@ -60,4 +60,4 @@ Solution for Leetcode/Lintcode
 |52    |428  | [Pow.java](Java/428_Pow.java)|Medium|Java|Lintcode|
 |53    |433  | [Number of Islands.java](Java/433_NumberofIslands.java)|Easy|Java|Lintcode|
 |54    |107  | [Word Break.java](Java/107_WordBreak.java)|Medium|Java|Lintcode|
-|55  |3 |[LongestSubstringWithoutRepeatingCharacters(Java/3_LongestSubstringWithoutRepeatingCharacters)|Medium|Java|Leetcode
+|55 |3|[LongestSubstringWithoutRepeatingCharacters](Java/3_LongestSubstringWithoutRepeatingCharacters)|Medium|Java|Leetcode|
