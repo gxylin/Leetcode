@@ -61,3 +61,4 @@ Solution for Leetcode/Lintcode
 |53    |433  | [Number of Islands.java](Java/433_NumberofIslands.java)|Easy|Java|Lintcode|
 |54    |107  | [Word Break.java](Java/107_WordBreak.java)|Medium|Java|Lintcode|
 |55|3|[LongestSubstringWithoutRepeatingChars](Java/3_LongestSubstringWithoutRepeatingCharacters.java)|Medium|Java|Leetcode|
+|56    |4    | [Median of Two Sorted Arrays](java/4_MedianofTwoSortedArrays.java)|Hard|Java|Leetcode|
