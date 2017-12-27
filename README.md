@@ -65,3 +65,4 @@ Solution for Leetcode/Lintcode
 |57    |5    | [Longest Palindromic Substring](Java/5_LongestPalindromicSubstring.java)|Medium|Leetcode|
 |58    |6    | [Zig Zag Conversion.java](Java/6_ZigZagConversion.java)|Medium|Leetcode|
 |59    |7    | [ReverseInteger.java](Java/7_ReverseInteger.java)|Easy|Leetcode|
+|60    |688  | [Knight Probability in Chessboard.java](Java/688_KnightProbabilityinChessboard.java)|Medium|Leetcode|
