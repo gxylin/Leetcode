@@ -62,3 +62,4 @@ Solution for Leetcode/Lintcode
 |54    |107  | [Word Break.java](Java/107_WordBreak.java)|Medium|Java|Lintcode|
 |55|3|[LongestSubstringWithoutRepeatingChars](Java/3_LongestSubstringWithoutRepeatingCharacters.java)|Medium|Java|Leetcode|
 |56    |4    | [Median of Two Sorted Arrays](Java/4_MedianofTwoSortedArrays.java)|Hard|Java|Leetcode|
+|57    |5    | [Longest PalindromicS ubstring](Java/5_LongestPalindromicSubstring.java)|Medium|Leetcode|
