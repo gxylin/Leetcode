@@ -67,3 +67,4 @@ Solution for Leetcode/Lintcode
 |59    |7    | [ReverseInteger.java](Java/7_ReverseInteger.java)|Easy|Leetcode|
 |60    |688  | [Knight Probability in Chessboard.java](Java/688_KnightProbabilityinChessboard.java)|Medium|Leetcode|
 |61    |697  | [Degree of Array.java](Java/697_DegreeofArray.java)|Easy|Leetcode|
+|62    |39   | [Combination Sum.java](Java/39_CombinationSum.java)|Medium|Leetcode|
