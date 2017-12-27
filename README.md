@@ -64,3 +64,4 @@ Solution for Leetcode/Lintcode
 |56    |4    | [Median of Two Sorted Arrays](Java/4_MedianofTwoSortedArrays.java)|Hard|Java|Leetcode|
 |57    |5    | [Longest Palindromic Substring](Java/5_LongestPalindromicSubstring.java)|Medium|Leetcode|
 |58    |6    | [Zig Zag Conversion.java](Java/6_ZigZagConversion.java)|Medium|Leetcode|
+|59    |7    | [ReverseInteger.java](Java/7_ReverseInteger.java)|Easy|Leetcode|
