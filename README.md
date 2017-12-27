@@ -63,3 +63,4 @@ Solution for Leetcode/Lintcode
 |55|3|[LongestSubstringWithoutRepeatingChars](Java/3_LongestSubstringWithoutRepeatingCharacters.java)|Medium|Java|Leetcode|
 |56    |4    | [Median of Two Sorted Arrays](Java/4_MedianofTwoSortedArrays.java)|Hard|Java|Leetcode|
 |57    |5    | [Longest Palindromic Substring](Java/5_LongestPalindromicSubstring.java)|Medium|Leetcode|
+|58    |6    | [Zig Zag Conversion.java](Java/6_ZigZagConversion.java)|Medium|Leetcode|
