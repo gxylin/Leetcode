@@ -68,4 +68,4 @@ Solution for Leetcode/Lintcode
 |60    |688  | [Knight Probability in Chessboard.java](Java/688_KnightProbabilityinChessboard.java)|Medium|Leetcode|
 |61    |697  | [Degree of Array.java](Java/697_DegreeofArray.java)|Easy|Leetcode|
 |62    |39   | [Combination Sum.java](Java/39_CombinationSum.java)|Medium|Leetcode|
-|63    |40   | [Combination SumII.java](Java/40_CombinationSumII.java)|Medium|Leetcode|
+|63    |40   | [Combination Sum II.java](Java/40_CombinationSumII.java)|Medium|Leetcode|
