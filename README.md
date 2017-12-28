@@ -73,3 +73,4 @@ Solution for Leetcode/Lintcode
 |65    |47   | [Permutations II.java](Java/47_PermutationsII.java)|Medium|Leetcode|
 |66    |146  | [LRU Cache.java](Java/146_LRUCache.java)|Hard|Leetcode|
 |67    |15   | [3Sum.java](Java/15_3Sum.java)|Medium|Leetcode|
+|68    |74   | [Search 2D Matrix.java](Java/74_Search2DMatrix.java)|Medium|leetcode|
