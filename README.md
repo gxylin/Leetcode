@@ -69,3 +69,4 @@ Solution for Leetcode/Lintcode
 |61    |697  | [Degree of Array.java](Java/697_DegreeofArray.java)|Easy|Leetcode|
 |62    |39   | [Combination Sum.java](Java/39_CombinationSum.java)|Medium|Leetcode|
 |63    |40   | [Combination Sum II.java](Java/40_CombinationSumII.java)|Medium|Leetcode|
+|64    |46   | [Permutations.java](Java/46_Permutations.java)|Medium|Leetcode|
