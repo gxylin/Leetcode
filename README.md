@@ -68,7 +68,7 @@ Solution for Leetcode/Lintcode
 |60    |688  | [Knight Probability in Chessboard.java](Java/688_KnightProbabilityinChessboard.java)|Medium|Java|Leetcode|
 |61    |697  | [Degree of Array.java](Java/697_DegreeofArray.java)|Easy|Java|Leetcode|
 |62    |39   | [Combination Sum.java](Java/39_CombinationSum.java)|Medium|Java|Leetcode|
-|63    |40   | [Combination Sum II.java](Java/40_CombinationSumII.java)|Medium|Leetcode|
+|63    |40   | [Combination Sum II.java](Java/40_CombinationSumII.java)|Medium|Java|Leetcode|
 |64    |46   | [Permutations.java](Java/46_Permutations.java)|Medium|Java|Leetcode|
 |65    |47   | [Permutations II.java](Java/47_PermutationsII.java)|Medium|Java|Leetcode|
 |66    |146  | [LRU Cache.java](Java/146_LRUCache.java)|Hard|Java|Leetcode|
