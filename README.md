@@ -74,3 +74,4 @@ Solution for Leetcode/Lintcode
 |66    |146  | [LRU Cache.java](Java/146_LRUCache.java)|Hard|Leetcode|
 |67    |15   | [3Sum.java](Java/15_3Sum.java)|Medium|Leetcode|
 |68    |74   | [Search 2D Matrix.java](Java/74_Search2DMatrix.java)|Medium|leetcode|
+|69    |33   | [Search in Rotated Sorted Array.java](Java/33_SearchinRotatedSortedArray.java)|Medium|Leetcode
