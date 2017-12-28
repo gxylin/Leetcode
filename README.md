@@ -62,16 +62,16 @@ Solution for Leetcode/Lintcode
 |54    |107  | [Word Break.java](Java/107_WordBreak.java)|Medium|Java|Lintcode|
 |55|3|[LongestSubstringWithoutRepeatingChars](Java/3_LongestSubstringWithoutRepeatingCharacters.java)|Medium|Java|Leetcode|
 |56    |4    | [Median of Two Sorted Arrays](Java/4_MedianofTwoSortedArrays.java)|Hard|Java|Leetcode|
-|57    |5    | [Longest Palindromic Substring](Java/5_LongestPalindromicSubstring.java)|Medium|Leetcode|
-|58    |6    | [Zig Zag Conversion.java](Java/6_ZigZagConversion.java)|Medium|Leetcode|
-|59    |7    | [ReverseInteger.java](Java/7_ReverseInteger.java)|Easy|Leetcode|
-|60    |688  | [Knight Probability in Chessboard.java](Java/688_KnightProbabilityinChessboard.java)|Medium|Leetcode|
-|61    |697  | [Degree of Array.java](Java/697_DegreeofArray.java)|Easy|Leetcode|
-|62    |39   | [Combination Sum.java](Java/39_CombinationSum.java)|Medium|Leetcode|
+|57    |5    | [Longest Palindromic Substring](Java/5_LongestPalindromicSubstring.java)|Medium|Java|Leetcode|
+|58    |6    | [Zig Zag Conversion.java](Java/6_ZigZagConversion.java)|Medium|Java|Leetcode|
+|59    |7    | [ReverseInteger.java](Java/7_ReverseInteger.java)|Easy|Java|Leetcode|
+|60    |688  | [Knight Probability in Chessboard.java](Java/688_KnightProbabilityinChessboard.java)|Medium|Java|Leetcode|
+|61    |697  | [Degree of Array.java](Java/697_DegreeofArray.java)|Easy|Java|Leetcode|
+|62    |39   | [Combination Sum.java](Java/39_CombinationSum.java)|Medium|Java|Leetcode|
 |63    |40   | [Combination Sum II.java](Java/40_CombinationSumII.java)|Medium|Leetcode|
-|64    |46   | [Permutations.java](Java/46_Permutations.java)|Medium|Leetcode|
-|65    |47   | [Permutations II.java](Java/47_PermutationsII.java)|Medium|Leetcode|
-|66    |146  | [LRU Cache.java](Java/146_LRUCache.java)|Hard|Leetcode|
-|67    |15   | [3Sum.java](Java/15_3Sum.java)|Medium|Leetcode|
-|68    |74   | [Search 2D Matrix.java](Java/74_Search2DMatrix.java)|Medium|leetcode|
-|69    |33   | [Search in Rotated Sorted Array.java](Java/33_SearchinRotatedSortedArray.java)|Medium|Leetcode
+|64    |46   | [Permutations.java](Java/46_Permutations.java)|Medium|Java|Leetcode|
+|65    |47   | [Permutations II.java](Java/47_PermutationsII.java)|Medium|Java|Leetcode|
+|66    |146  | [LRU Cache.java](Java/146_LRUCache.java)|Hard|Java|Leetcode|
+|67    |15   | [3Sum.java](Java/15_3Sum.java)|Medium|Java|Leetcode|
+|68    |74   | [Search 2D Matrix.java](Java/74_Search2DMatrix.java)|Medium|Java|Leetcode|
+|69    |33   | [Search in Rotated Sorted Array.java](Java/33_SearchinRotatedSortedArray.java)|Medium|Java|Leetcode|
