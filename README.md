@@ -75,3 +75,4 @@ Solution for Leetcode/Lintcode
 |67    |15   | [3Sum.java](Java/15_3Sum.java)|Medium|Java|Leetcode|
 |68    |74   | [Search 2D Matrix.java](Java/74_Search2DMatrix.java)|Medium|Java|Leetcode|
 |69    |33   | [Search in Rotated Sorted Array.java](Java/33_SearchinRotatedSortedArray.java)|Medium|Java|Leetcode|
+|70 |235|[Lowest Common Ancestor Binary Search Tree](Java/235_LowestCommonAncestorBinarySearchTree.java)|Easy|Java|Leetcode|
