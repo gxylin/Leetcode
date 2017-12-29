@@ -81,3 +81,4 @@ Solution for Leetcode/Lintcode
 |73    |257  | [Binary Tree Paths.java](Java/257_BinaryTreePaths.java)|Easy|Java|Leetcode|
 |74    |110  | [Balanced BinaryTree.java](Java/110_BalancedBinaryTree.java)|Easy|Java|Leetcode|
 |75 |298|[Binary Tree Longest Consecutive Sequence](Java/298_BinaryTreeLongestConsecutiveSequence.java)|Medium|Java|Leetcode
+|76 |378 |[Convert Binary Search Tree to DoublyLinkedList](Java/378_ConvertBSTtoDoublyLinkedList.java|Medium|Java|Lintcode|
