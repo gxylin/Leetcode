@@ -80,3 +80,4 @@ Solution for Leetcode/Lintcode
 |72    |104  | [Maximum Depth of Binary Tree.java](Java/104_MaximumDepthBinaryTree.java)|Easy|Java|Leetcode|
 |73    |257  | [Binary Tree Paths.java](Java/257_BinaryTreePaths.java)|Easy|Java|Leetcode|
 |74    |110  | [Balanced BinaryTree.java](Java/110_BalancedBinaryTree.java)|Easy|Java|Leetcode|
+|75    |298 | [Binary Tree Longest Consecutive Sequence](Java/298_BinaryTreeLongestConsecutiveSequence)|Medium|Java|Leetcode
