@@ -41,11 +41,11 @@ class Solution {
         helper(root, null, 0);
         return max;
     }
-    private void helper(TreeNode root, TreeNode parent, int length){
+    private void helper(TreeNode root, TreeNode parent, int lengthWithoutRoot){
         if (root == null){
             return;
         }
-        int len = (parent != null && parent.val + 1 == root.val) ? length + 1 : 1;
+        int len = (parent != null && parent.val + 1 == root.val) ? lengthWithoutRoot + 1 : 1;
         helper(root.left, root, len);
         helper(root.right, root, len);
         max = Math.max(max, len);
