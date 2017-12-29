@@ -78,3 +78,4 @@ Solution for Leetcode/Lintcode
 |70 |235|[Lowest Common Ancestor Binary Search Tree](Java/235_LowestCommonAncestorBinarySearchTree.java)|Easy|Java|Leetcode|
 |71 |236|[Lowest Common Ancestor Binary Tree](Java/236_LowestCommonAncestorBinaryTree.java)|Medium|Java|Leetcode|
 |72    |104  | [Maximum Depth of Binary Tree.java](Java/104_MaximumDepthBinaryTree.java)|Easy|Java|Leetcode|
+|73    |257  | [Binary Tree Paths.java](Java/257_BinaryTreePaths.java)|Easy|Java|Leetcode|
