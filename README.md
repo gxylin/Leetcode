@@ -88,3 +88,4 @@ Solution for Leetcode/Lintcode
 |80    |178  | [Graph Valid Tree.java](Java/178_GraphValidTree.java)|Medium|Java|Lintcode|
 |81    |51   | [N-Queens.java](Java/51_N-Queens.java)|Hard|Java|Leetcode|
 |82    |52   | [N-Queens II.java](Java/52_N-QueensII.java)|Hard|Java|Leetcode|
+|83    |112  | [Path Sum.java](Java/112_PathSum.java)|Easy|Java|Leetcode|
