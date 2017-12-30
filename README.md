@@ -91,3 +91,4 @@ Solution for Leetcode/Lintcode
 |83    |112  | [Path Sum.java](Java/112_PathSum.java)|Easy|Java|Leetcode|
 |84    |113  | [Path Sum II.java](Java/113_PathSumII.java)|Medium|Java|Leetcode|
 |85    |528  | [Flatten Nested List Iterator.java] (Java/528_FlattenNestedListIterator.java)|Medium|Java|Lintcode|
+|86    |40   | [Implement Queue by Stacks](Java/40_ImplementQueuebyStacks.java)|Medium|Java|Lintcode|
