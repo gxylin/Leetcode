@@ -90,3 +90,4 @@ Solution for Leetcode/Lintcode
 |82    |52   | [N-Queens II.java](Java/52_N-QueensII.java)|Hard|Java|Leetcode|
 |83    |112  | [Path Sum.java](Java/112_PathSum.java)|Easy|Java|Leetcode|
 |84    |113  | [Path Sum II.java](Java/113_PathSumII.java)|Medium|Java|Leetcode|
+|85    |528  | [Flatten Nested List Iterator.java] (Java/528_FlattenNestedListIterator.java)|Medium|Java|Lintcode|
