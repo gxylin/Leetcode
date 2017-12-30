@@ -86,3 +86,4 @@ Solution for Leetcode/Lintcode
 |78    |210  | [Course Schedule II.java](Java/210_CourseScheduleII.java)|Medium|Java|Leetcode|
 |79    |70   | [Binary Tree Level Order Traversal II](Java/70_BinaryTreeLevelOrderTraversalII.java)|Medium|Java|Lintcode
 |80    |178  | [Graph Valid Tree.java](Java/178_GraphValidTree.java)|Medium|Java|Lintcode|
+|81    |51   | [N-Queens.java](Java/51_N-Queens.java)|Hard|Java|Leetcode|
