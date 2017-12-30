@@ -87,3 +87,4 @@ Solution for Leetcode/Lintcode
 |79    |70   | [Binary Tree Level Order Traversal II](Java/70_BinaryTreeLevelOrderTraversalII.java)|Medium|Java|Lintcode
 |80    |178  | [Graph Valid Tree.java](Java/178_GraphValidTree.java)|Medium|Java|Lintcode|
 |81    |51   | [N-Queens.java](Java/51_N-Queens.java)|Hard|Java|Leetcode|
+|82    |52   | [N-Queens II.java](Java/52_N-QueensII.java)|Hard|Java|Leetcode|
