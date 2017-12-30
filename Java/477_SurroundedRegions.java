@@ -81,3 +81,72 @@ public class Solution {
         }
     }
 }
+
+Method 2: one bfs
+
+class Solution {
+    public void solve(char[][] board) {
+        if (board == null || board.length == 0 || board[0].length == 0){
+            return;
+        }
+        int n = board.length;
+        int m = board[0].length;
+        Queue<Integer> qx = new LinkedList<>();
+        Queue<Integer> qy = new LinkedList<>();
+        
+        int[] dx = {1, 0 , -1 ,0};
+        int[] dy = {0, 1, 0, -1};
+        
+        for (int i = 0; i < m; i++){
+            if (board[0][i] == 'O'){
+                qx.offer(0);
+                qy.offer(i);
+                board[0][i] = 'W';
+            }
+            if (board[n-1][i] == 'O'){
+                qx.offer(n-1);
+                qy.offer(i);
+                board[n-1][i] = 'W';
+            }
+        }
+        for (int i = 0; i < n; i++){
+            if (board[i][0] == 'O'){
+                qx.offer(i);
+                qy.offer(0);
+                board[i][0] = 'W';
+            }
+            if (board[i][m-1] == 'O'){
+                qx.offer(i);
+                qy.offer(m-1);
+                board[i][m-1] = 'W';
+            }
+        }
+        
+        while (!qx.isEmpty()){
+            int cx = qx.poll();
+            int cy = qy.poll();
+            for (int i = 0; i < 4; i++){
+                int nx = cx + dx[i];
+                int ny = cy + dy[i];
+                if (inBound(n, m, nx, ny) && board[nx][ny] == 'O'){
+                    qx.offer(nx);
+                    qy.offer(ny);
+                    board[nx][ny] = 'W';
+                }
+            }
+        }
+        
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < m; j++){
+                if (board[i][j] == 'W'){
+                    board[i][j] = 'O';
+                }else{
+                    board[i][j] = 'X';
+                }
+            }
+        }
+    }
+    private boolean inBound(int n, int m, int nx, int ny){
+        return nx >= 0 && nx < n && ny >= 0 && ny < m;
+    }
+}
