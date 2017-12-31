@@ -94,3 +94,5 @@ Solution for Leetcode/Lintcode
 |86    |40   | [Implement Queue by Stacks](Java/40_ImplementQueuebyStacks.java)|Medium|Java|Lintcode|
 |87    |450  | [Reverse Nodes in k-Group.java](Java/450_ReverseNodesk-Group.java)|Hard|Java|Lintcode|
 |88    |105  | [Copy List with RandomPointer.java](Java/105_CopyListwithRandomPointer.java)|Medium|Java|Lintcode|
+|89    |
+|90    |148  | [Sort List.java](Java/148_SortList.java)|Medium|Java|Leetcode|
