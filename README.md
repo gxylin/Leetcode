@@ -92,3 +92,4 @@ Solution for Leetcode/Lintcode
 |84    |113  | [Path Sum II.java](Java/113_PathSumII.java)|Medium|Java|Leetcode|
 |85    |528  | [Flatten Nested List Iterator.java] (Java/528_FlattenNestedListIterator.java)|Medium|Java|Lintcode|
 |86    |40   | [Implement Queue by Stacks](Java/40_ImplementQueuebyStacks.java)|Medium|Java|Lintcode|
+|87    |450  | [Reverse Nodes in k-Group.java](Java/450_ReverseNodesk-Group.java)|Hard|Java|Lintcode|
