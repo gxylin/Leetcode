@@ -102,3 +102,4 @@ Solution for Leetcode/Lintcode
 |94    |139  | [Subarray Sum Closest.java](Java/139_SubarraySumClosest.java)|Medium|Java|Lintcode|
 |95    |560  | [Subarray Sum Equals K.java](Java/560_SubarraySumEqualsK.java)|Medium|Java|Leetcode|
 |96    |283  | [Move Zeroes.java](Java/283_MoveZeroes.java)|Easy|Java|Leetcode|
+|97    |27   | [Remove Element.java](Java/27_RemoveElement.java)|Easy|Java|Leetcode|
