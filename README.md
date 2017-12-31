@@ -100,3 +100,4 @@ Solution for Leetcode/Lintcode
 |92    |53   | [Maximum Subarray.java](Java/53_MaximumSubarray.java)|Easy|Java|Leetcode|
 |93    |138  | [Subarray Sum.java](Java/138_SubarraySum.java)|Easy|Java|Lintcode|
 |94    |139  | [Subarray Sum Closest.java](Java/139_SubarraySumClosest.java)|Medium|Java|Lintcode|
+|95    |560  | [Subarray Sum Equals K.java](Java/560_SubarraySumEqualsK.java)|Medium|Java|Leetcode|
