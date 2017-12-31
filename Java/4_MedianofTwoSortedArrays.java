@@ -13,6 +13,7 @@ nums2 = [3, 4]
 
 The median is (2 + 3)/2 = 2.5
 
+Method 1: O(log(m + n))
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int n = nums1.length + nums2.length;
@@ -41,5 +42,48 @@ class Solution {
             return findKth(A, startA, B, startB + k/2, k - k/2);
         }
         
+    }
+}
+
+Method 2: Time complexity O(k)
+public class Solution {
+    /*
+     * @param A: An integer array
+     * @param B: An integer array
+     * @return: a double whose format is *.5 or *.0
+     */
+    public double findMedianSortedArrays(int[] A, int[] B) {
+        int len = A.length + B.length;
+        if (len % 2 == 0){
+            return (findKth(A, B, len /2) + findKth(A, B, len / 2 + 1))/2.0;
+        }else{
+            return findKth(A, B, len / 2 + 1);
+        }
+    }
+    private int findKth(int[] A, int[] B, int k){
+        int i = 0, j = 0;
+        int index = 0;
+        while (i < A.length && j < B.length){
+            if (A[i] < B[j]){
+                index++;
+                if (index == k){
+                    return A[i];
+                }else{
+                    i++;
+                }
+            }else{
+                index++;
+                if (index == k){
+                    return B[j];
+                }else{
+                    j++;
+                }
+            }
+        }
+        if (i < A.length){
+            return A[i + (k - index - 1)];
+        }else{
+            return B[j + (k - index - 1)];
+        }
     }
 }
