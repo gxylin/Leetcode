@@ -98,4 +98,5 @@ Solution for Leetcode/Lintcode
 |90    |148  | [Sort List.java](Java/148_SortList.java)|Medium|Java|Leetcode|
 |91    |23   | [Merge k Sorted Lists.java](Java/23_MergekSortedLists.java)|Hard|Java|Leetcode|
 |92    |53   | [Maximum Subarray.java](Java/53_MaximumSubarray.java)|Easy|Java|Leetcode|
-|93    |138  | [Subarray Sum.java](Java/138_SubarraySum.java)|Medium|Java|Lintcode|
+|93    |138  | [Subarray Sum.java](Java/138_SubarraySum.java)|Easy|Java|Lintcode|
+|94    |139  | [Subarray Sum Closest.java](Java/139_SubarraySumClosest.java)|Medium|Java|Lintcode|
