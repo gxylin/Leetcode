@@ -97,3 +97,4 @@ Solution for Leetcode/Lintcode
 |89    |21   | [Merge Two Sorted Lists.java](Java/21_MergeTwoSortedLists.java)|Easy|Java|Leetcode|
 |90    |148  | [Sort List.java](Java/148_SortList.java)|Medium|Java|Leetcode|
 |91    |23   | [Merge k Sorted Lists.java](Java/23_MergekSortedLists.java)|Hard|Java|Leetcode|
+|92    |53   | [Maximum Subarray.java](Java/53_MaximumSubarray.java)|Easy|Java|Leetcode|
