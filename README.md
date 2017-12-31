@@ -93,3 +93,4 @@ Solution for Leetcode/Lintcode
 |85    |528  | [Flatten Nested List Iterator.java](Java/528_FlattenNestedListIterator.java)|Medium|Java|Lintcode|
 |86    |40   | [Implement Queue by Stacks](Java/40_ImplementQueuebyStacks.java)|Medium|Java|Lintcode|
 |87    |450  | [Reverse Nodes in k-Group.java](Java/450_ReverseNodesk-Group.java)|Hard|Java|Lintcode|
+|88    |105  | [Copy List with RandomPointer.java](Java/105_CopyListwithRandomPointer.java)|Medium|Java|Lintcode|
