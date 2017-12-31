@@ -12,7 +12,7 @@ Solution for Leetcode/Lintcode
 |7     |626  | [RectangleOverlap.java](Java/626_RectangleOverlap.java)|Easy|Java|Lintcode|
 |8     |637  | [CheckWordAbbreviation.java](Java/637_CheckWordAbbreviation.java)|Easy|Java|Lintcode|
 |9     |639  | [WordsAbbreviation.java](Java/639_WordsAbbreviation.java)|Hard|Java|Lintcode|
-|10    |642  | [SlidingWindowAveragefromDataStream.java](Java/642_SlidingWindowAveragefromDataStream.java)|Easy|Java|Lintcode|
+|10    |642| [SlidingWindowAveragefromDataStream.java](Java/642_SlidingWindowAveragefromDataStream.java)|Easy|Java|Lintcode|
 |11    |640  | [EditDistanceII.java](Java/640_EditDistanceII.java)|Medium|Java|Lintcode|
 |12    |660  | [ReadCharactersFromFile.java](Java/660_ReadCharactersFromFile.java)|Hard|Java|Lintcode|
 |13    |659  | [StringsSerialization.java](Java/659_StringsSerialization.java)|Medium|Java|Lintcode|
@@ -94,5 +94,5 @@ Solution for Leetcode/Lintcode
 |86    |40   | [Implement Queue by Stacks](Java/40_ImplementQueuebyStacks.java)|Medium|Java|Lintcode|
 |87    |450  | [Reverse Nodes in k-Group.java](Java/450_ReverseNodesk-Group.java)|Hard|Java|Lintcode|
 |88    |105  | [Copy List with RandomPointer.java](Java/105_CopyListwithRandomPointer.java)|Medium|Java|Lintcode|
-|89    |21   | [MergeTwoSortedLists.java](Java/21_MergeTwoSortedLists.java)|Easy|Java|Leetcode|
+|89    |21   | [Merge Two Sorted Lists.java](Java/21_MergeTwoSortedLists.java)|Easy|Java|Leetcode|
 |90    |148  | [Sort List.java](Java/148_SortList.java)|Medium|Java|Leetcode|
