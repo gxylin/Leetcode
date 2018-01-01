@@ -106,3 +106,4 @@ Solution for Leetcode/Lintcode
 |98    |26   | [Remove Duplicates from Sorted Array.java](Java/26_RemoveDuplicatesfromSortedArray.java)|Easy|Java|Leetcode|
 |99    |16   | [3SumClosest.java](Java/16_3SumClosest.java)|Medium|Java|Leetcode|
 |100   |31   | [Partition Array.java](Java/31_PartitionArray.java)|Medium|Java|Lintcode|
+|101   |561  | [ArrayPartitionI.java](Java/561_ArrayPartitionI.java)|Easy|Java|Leetcode|
