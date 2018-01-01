@@ -14,6 +14,8 @@ Challenge
 A rather straight forward solution is a two-pass algorithm using counting sort. That will cost O(k) extra memory. 
 Can you do it without using extra memory?
 
+Rainbow sort 
+ 
 public class Solution {
     /*
      * @param colors: A list of integer
