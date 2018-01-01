@@ -110,3 +110,4 @@ Solution for Leetcode/Lintcode
 |102   |5    | [Kth Largest Element.java](Java/5_KthLargestElement.java)|Medium|Java|Lintcode|
 |103   |75   | [Sort Colors.java](Java/75_SortColors.java)|Medium|Java|Leetcode
 |104   |143  | [Sort Colors II.java](Java/143_SortColorsII.java)|Medium|Java|Lintcode|
+|105   |129  | [Rehashing.java](Java/129_Rehashing.java)|Medium|Java|Lintcode|
