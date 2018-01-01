@@ -111,3 +111,4 @@ Solution for Leetcode/Lintcode
 |103   |75   | [Sort Colors.java](Java/75_SortColors.java)|Medium|Java|Leetcode
 |104   |143  | [Sort Colors II.java](Java/143_SortColorsII.java)|Medium|Java|Lintcode|
 |105   |129  | [Rehashing.java](Java/129_Rehashing.java)|Medium|Java|Lintcode|
+|106   |128  | [Longest Consecutive Sequence.java](Java/128_LongestConsecutiveSequence.java)|Hard|Java|Leetcode|
