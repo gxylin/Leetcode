@@ -117,4 +117,5 @@ Solution for Leetcode/Lintcode
 |XX    |438  | [template for slide window](https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007)|
 |109   |263  | [Ugly Number.java](Java/263_UglyNumber.java)|Easy|Java|leetcode|
 |110   |263  | [Ugly NumberII.java](Java/264_UglyNumberII.java)|Medum|Java|Leetcode|
-|111   |692  | [TopKFrequentWords.java](Java/692_TopKFrequentWords.java)|Medium|Java|Leetcode|
+|111   |692  | [Top K Frequent Words.java](Java/692_TopKFrequentWords.java)|Medium|Java|Leetcode|
+|112   |613  | [High Five.java](Java/613_HighFive.java)|Medium|Java|Lintcode|
