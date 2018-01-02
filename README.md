@@ -114,3 +114,4 @@ Solution for Leetcode/Lintcode
 |106   |128  | [Longest Consecutive Sequence.java](Java/128_LongestConsecutiveSequence.java)|Hard|Java|Leetcode|
 |107   |171  | [Anagrams.java](Java/171_Anagrams.java)|Medium|Java|Lintcode|
 |108   |438  | [Find All Anagrams in String.java](Java/438_FindAllAnagramsinString.java)|Medium|Java|Leetcode|
+|template for slide windown: https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007|
