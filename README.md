@@ -116,3 +116,4 @@ Solution for Leetcode/Lintcode
 |108   |438  | [Find All Anagrams in String.java](Java/438_FindAllAnagramsinString.java)|Medium|Java|Leetcode|
 |XX    |438  | [template for slide window](https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007)|
 |109   |263  | [Ugly Number.java](Java/263_UglyNumber.java)|Easy|Java|leetcode|
+|110   |263  | [Ugly NumberII.java](Java/264_UglyNumberII.java)|Medum|Java|Leetcode|
