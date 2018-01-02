@@ -54,30 +54,84 @@ class Solution {
 }
 
 Method 2:
-Time complexity: O(n)
+Time complexity: O(n) 
+Slide window template
 https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007?page=1
+public class Solution {
+    public List<Integer> findAnagrams(String s, String t) {
+        List<Integer> result = new LinkedList<>();
+        if(t.length()> s.length()) return result;
+        Map<Character, Integer> map = new HashMap<>();
+        for(char c : t.toCharArray()){
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        int counter = map.size();
+        
+        int begin = 0, end = 0;
+        int head = 0;
+        int len = Integer.MAX_VALUE;
+        
+        
+        while(end < s.length()){
+            char c = s.charAt(end);
+            if( map.containsKey(c) ){
+                map.put(c, map.get(c)-1);
+                if(map.get(c) == 0) counter--;
+            }
+            end++;
+            
+            while(counter == 0){
+                char tempc = s.charAt(begin);
+                if(map.containsKey(tempc)){
+                    map.put(tempc, map.get(tempc) + 1);
+                    if(map.get(tempc) > 0){
+                        counter++;
+                    }
+                }
+                if(end-begin == t.length()){
+                    result.add(begin);
+                }
+                begin++;
+            }
+            
+        }
+        return result;
+    }
+}
 
 Method 3:
+Time complexity: O(n)
 class Solution {
+    final static int  MAX_CHAR = 256;
     public List<Integer> findAnagrams(String s, String p) {
-        List<Integer> res = new ArrayList<>();
-        if(s==null||p==null||s.length()==0||p.length()==0) return res;
-        int[] hash = new int[256];
-        for(char c:p.toCharArray()){
-            hash[c]++;
+        List<Integer> result = new ArrayList<>();
+        if (s.length() < p.length()){
+            return result;
         }
-        int left,right,count;
-        count=p.length();
-        left=right=0;
-        while(right<s.length()){
-            if(hash[s.charAt(right++)]-->=1){
+        int[] map = new int[MAX_CHAR];
+        int len = p.length();
+        for (int i = 0; i < len; i++){
+            map[p.charAt(i)]++;
+        }
+        int left = 0,  right = 0;
+        int count = len;
+        while(right < s.length()){
+            if(map[s.charAt(right)] > 0){ 
                 count--;
             }
-            if(count==0) res.add(left);
-            if(right-left==p.length() && hash[s.charAt(left++)]++>=0){
-                count++;
+            map[s.charAt(right)]--;
+            right++;
+            if(count == 0){
+                result.add(left);
+            }
+            if(right - left == len){
+                if (map[s.charAt(left)] >= 0){
+                    count++;
+                }
+                map[s.charAt(left)]++;
+                left++;                
             }
         }
-        return res;
+        return result;
     }
 }
