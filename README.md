@@ -120,3 +120,4 @@ Solution for Leetcode/Lintcode
 |111   |692  | [Top K Frequent Words.java](Java/692_TopKFrequentWords.java)|Medium|Java|Leetcode|
 |112   |613  | [High Five.java](Java/613_HighFive.java)|Medium|Java|Lintcode|
 |113   |401 |[Kth Smallest Number in Sorted Matrix.java](Java/401_KthSmallestNumberinSortedMatrix.java)|Medium|Java|Lintcode
+|114   |109  | [Triangle.java](Java/109_Triangle.java)|Easy|Java|Lintcode|
