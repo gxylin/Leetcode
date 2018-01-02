@@ -121,3 +121,4 @@ Solution for Leetcode/Lintcode
 |112   |613  | [High Five.java](Java/613_HighFive.java)|Medium|Java|Lintcode|
 |113   |401 |[Kth Smallest Number in Sorted Matrix.java](Java/401_KthSmallestNumberinSortedMatrix.java)|Medium|Java|Lintcode
 |114   |109  | [Triangle.java](Java/109_Triangle.java)|Easy|Java|Lintcode|
+|115   |64   | [Minimum Path Sum.java](Java/64_MinimumPathSum.java)|Medium|Java|Leetcode|
