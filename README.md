@@ -119,3 +119,4 @@ Solution for Leetcode/Lintcode
 |110   |263  | [Ugly NumberII.java](Java/264_UglyNumberII.java)|Medum|Java|Leetcode|
 |111   |692  | [Top K Frequent Words.java](Java/692_TopKFrequentWords.java)|Medium|Java|Leetcode|
 |112   |613  | [High Five.java](Java/613_HighFive.java)|Medium|Java|Lintcode|
+|113   |401 |[Kth Smallest Number in Sorted Matrix.java](Java/401_KthSmallestNumberinSortedMatrix.java)|Medium|Java|Lintcode
