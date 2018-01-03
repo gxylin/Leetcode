@@ -126,3 +126,4 @@ Solution for Leetcode/Lintcode
 |117   |63   | [Unique Paths II.java](Java/63_UniquePathsII.java)|Medium|Java|Leetcode|
 |118   |300  | [Longest Increasing Subsequence.java](Java/300_LongestIncreasingSubsequence.java)|Medium|Java|Leetcode|
 |119   |368  | [Largest Divisible Subset.java](Java/368_LargestDivisibleSubset.java)|Medium|Java|Leetcode|
+|120   |91   | [Decode Ways.java](Java/91_DecodeWays.java)|Medium|Java|Leetcode|
