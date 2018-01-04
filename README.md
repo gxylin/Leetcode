@@ -129,3 +129,4 @@ Solution for Leetcode/Lintcode
 |120   |91   | [Decode Ways.java](Java/91_DecodeWays.java)|Medium|Java|Leetcode|
 |121   |179  | [Largest Number.java](Java/179_LargestNumber.java)|Medium|Java|Leetcode|
 |122   |713  | [Subarray Product Less Than K.java](Java/713_SubarrayProductLessThanK.java)|Medium|Java|Leetcode|
+|123   |152  | [Maximum Product Subarray.java](Java/152_MaximumProductSubarray.java)|Medium|Java|Leetcode|
