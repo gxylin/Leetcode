@@ -50,3 +50,7 @@ class Solution {
         return max;
     }
 }
+
+Why DP?
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/discuss/39112
+
