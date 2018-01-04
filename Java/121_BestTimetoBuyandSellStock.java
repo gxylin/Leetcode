@@ -42,7 +42,7 @@ class Solution {
             return 0;
         }
         int max = 0;
-        int min = prices[0];
+        int min = Integer.MAX_VALUE;
         for (int i = 0; i < prices.length; i++){
             max = Math.max(max, prices[i] - min);
             min = Math.min(min, prices[i]);
