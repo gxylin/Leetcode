@@ -136,3 +136,4 @@ Solution for Leetcode/Lintcode
 |127   |122  | [Best Time to Buy and Sell Stock II.java](Java/122_BestTimetoBuyandSellStockII.java)|Easy|Java|Leetcode|
 |128   |123  | [Best Time to Buy and Sell Stock III.java](Java/123_BestTimetoBuyandSellStockIII.java)|Hard|Java|Leetcode|
 |129   |188  | [Best Time to Buy and Sell Stock IV.java](Java/188_BestTimetoBuyandSellStockIV.java)|Hard|Java|Leetcode|
+|130 |714| [Best Time to Buy and Sell Stock with TransactionFee](Java/714_BestTimewithTransactionFee.java)|Medium|Java|Leetcode|
