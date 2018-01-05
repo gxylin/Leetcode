@@ -23,8 +23,8 @@ class Solution {
         
         for (int i = 0; i < prices.length; i++){
             for (int j = 1; j <= k; j++){
-                 maxProfit[j] = Math.max(maxProfit[j], prices[i] - minCost[j]);
-                 minCost[j] = Math.min(minCost[j], prices[i] - maxProfit[j-1]);
+                minCost[j] = Math.min(minCost[j], prices[i] - maxProfit[j-1]);
+                maxProfit[j] = Math.max(maxProfit[j], prices[i] - minCost[j]); 
             }
         }
         return maxProfit[k];
