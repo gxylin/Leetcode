@@ -138,3 +138,4 @@ Solution for Leetcode/Lintcode
 |129   |188  | [Best Time to Buy and Sell Stock IV.java](Java/188_BestTimetoBuyandSellStockIV.java)|Hard|Java|Leetcode|
 |130|714|[Best Time to Buy and Sell Stock with Fee (Java/714_BestTimewithTransactionFee.java)|Medium|Java|Leetcode|
 |131   |344  | [ReverseString.java](Java/344_ReverseString.java)|Easy|Java|Leetcode|
+|132   |347  | [Top K Frequent Elements.java](Java/347_TopKFrequentElements.java)|Medium|Java|Leetcode|
