@@ -65,7 +65,7 @@ class Solution {
         if (nums == null || nums.length == 0){
             return result;
         }
-        Queue<Freq> maxHeap = new PriorityQueue<Freq>(k, new Comparator<Freq>(){
+        Queue<Freq> maxHeap = new PriorityQueue<Freq>(nums.length, new Comparator<Freq>(){
             public int compare(Freq a, Freq b){
                 return b.freq - a.freq;
             }
