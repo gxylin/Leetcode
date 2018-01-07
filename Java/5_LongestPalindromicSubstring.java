@@ -46,3 +46,56 @@ class Solution {
         return true;
     }
 }
+
+Method 2:
+class Solution {
+    public String longestPalindrome(String s) {
+        if (s == null || s.length() == 0){
+            return s;
+        }
+        String str = "";
+        for (int i = 0; i < s.length(); i++){
+            String odd = expand(s, i, i);
+            String even = expand(s, i, i+1);
+            if (str.length() < odd.length()){
+                str = odd;
+            }
+            if (str.length() < even.length()){
+                str = even;
+            }
+        }
+        return str;
+    }
+    private String expand(String s, int i, int j){
+        while (i >= 0 && j < s.length() && s.charAt(i) == s.charAt(j)){
+            i--;
+            j++;
+        }
+        return s.substring(i+1, j);
+    }
+}
+
+Method 3:
+public class Solution {
+    private int lo, maxLen;
+
+    public String longestPalindrome(String s) {
+        int len = s.length();
+        for (int i = 0; i < len; i++) {
+            extendPalindrome(s, i, i);  //assume odd length, try to extend Palindrome as possible
+            extendPalindrome(s, i, i+1); //assume even length.
+        }
+        return s.substring(lo, lo + maxLen);
+    }
+
+    private void extendPalindrome(String s, int j, int k) {
+        while (j >= 0 && k < s.length() && s.charAt(j) == s.charAt(k)) {
+            j--;
+            k++;
+        }
+        if (maxLen < k - j - 1) {
+            lo = j + 1;
+            maxLen = k - j - 1;
+        }
+    }
+}
