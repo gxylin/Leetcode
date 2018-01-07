@@ -140,4 +140,5 @@ Solution for Leetcode/Lintcode
 |131   |344  | [ReverseString.java](Java/344_ReverseString.java)|Easy|Java|Leetcode|
 |132   |347  | [Top K Frequent Elements.java](Java/347_TopKFrequentElements.java)|Medium|Java|Leetcode|
 |134   |136  | [Single Number.java](Java/136_SingleNumber.java)|Easy|Java|Leetcode|
-|135   |20   | [Valid Parentheses.java](Java/20_ValidParentheses.java)|Easy|Java/Leetcode|
+|135   |20   | [Valid Parentheses.java](Java/20_ValidParentheses.java)|Easy|Java|Leetcode|
+|136   |206  | [Reverse LinkedList.java](Java/206_ReverseLinkedList.java)|Easy|Java|Leetcode|
