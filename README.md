@@ -142,3 +142,4 @@ Solution for Leetcode/Lintcode
 |134   |136  | [Single Number.java](Java/136_SingleNumber.java)|Easy|Java|Leetcode|
 |135   |20   | [Valid Parentheses.java](Java/20_ValidParentheses.java)|Easy|Java|Leetcode|
 |136   |206  | [Reverse LinkedList.java](Java/206_ReverseLinkedList.java)|Easy|Java|Leetcode|
+|137   |572  | [Subtree of Another Tree.java](Java/572_SubtreeofAnotherTree.java)|Easy|Java|Leetcode|
