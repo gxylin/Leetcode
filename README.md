@@ -143,3 +143,4 @@ Solution for Leetcode/Lintcode
 |135   |20   | [Valid Parentheses.java](Java/20_ValidParentheses.java)|Easy|Java|Leetcode|
 |136   |206  | [Reverse LinkedList.java](Java/206_ReverseLinkedList.java)|Easy|Java|Leetcode|
 |137   |572  | [Subtree of Another Tree.java](Java/572_SubtreeofAnotherTree.java)|Easy|Java|Leetcode|
+|138   |223  | [Rectangle Area.java](Java/223_RectangleArea.java)|Medium|Java|Leetcode|
