@@ -146,3 +146,4 @@ Solution for Leetcode/Lintcode
 |138   |223  | [Rectangle Area.java](Java/223_RectangleArea.java)|Medium|Java|Leetcode|
 |139   |239  | [Sliding Window Maximum.java](Java/239_SlidingWindowMaximum.java)|Hard|Java|Leetcode|
 |140   |48   | [Rotate Image.java](Java/48_RotateImage.java)|Medium|Java|Leetcode|
+|141   |141  | [Linked List Cycle.java](Java/141_LinkedListCycle.java)|Easy|Java|Leetcode|
