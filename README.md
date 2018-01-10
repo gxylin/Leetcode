@@ -150,3 +150,4 @@ Solution for Leetcode/Lintcode
 |142   |142  | [LinkedListCycleII.java](Java/142_LinkedListCycleII.java)|Medium|Java|Leetcode|
 |143   |129  | [Sum Root to Leaf Numbers.java](Java/129_SumRootLeafNumbers.java)|Medium|Java|Leetcode|
 |144   |413  | [Arithmetic Slices.java](Java/413_ArithmeticSlices.java)|Medium|Java|Leetcode|
+|145   |328  | [OddEvenLinkedList.java](Java/328_OddEvenLinkedList.java)|Medium|Java|Leetcode|
