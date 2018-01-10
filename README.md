@@ -148,3 +148,4 @@ Solution for Leetcode/Lintcode
 |140   |48   | [Rotate Image.java](Java/48_RotateImage.java)|Medium|Java|Leetcode|
 |141   |141  | [Linked List Cycle.java](Java/141_LinkedListCycle.java)|Easy|Java|Leetcode|
 |142   |142  | [LinkedListCycleII.java](Java/142_LinkedListCycleII.java)|Medium|Java|Leetcode|
+|143   |129  | [Sum Root to Leaf Numbers.java](Java/129_SumRootLeafNumbers.java)|Medium|Java|Leetcode|
