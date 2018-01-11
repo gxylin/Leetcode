@@ -157,3 +157,4 @@ Solution for Leetcode/Lintcode
 |149   |49   | [Group Anagrams.java](Java/49_GroupAnagrams.java)|Medium|Java|Leetcode|
 |150   |73   | [Set Matrix Zeroes.java](Java/73_SetMatrixZeroes.java)|Medium|Java|Leetcode|
 |151   |78   | [Subsets.java](Java/78_Subsets.java)|Medium|Java|Leetcode|
+|152   |89   | [Gray Code.java](Java/89_GrayCode.java)|Medium|Java|Leetcode|
