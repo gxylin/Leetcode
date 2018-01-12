@@ -162,3 +162,4 @@ Solution for Leetcode/Lintcode
 |154   |119  | [Pascal's triangle II.java](Java/119_Pascal'sTriangleII.java)|Easy|Java|leetcode|
 |155   |155  | [Min Stack.java](Java/155_MinStack.java)|Easy|Java|Leetcode|
 |156   |167  | [Two Sum II.java](Java/167_TwoSumII.java)|Easy|Java|Leetcode|
+|157   |189  | [Rotate Array.java](Java/189_RotateArray.java)|Easy|Java|Leetcode|
