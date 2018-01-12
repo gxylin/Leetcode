@@ -160,3 +160,4 @@ Solution for Leetcode/Lintcode
 |152   |89   | [Gray Code.java](Java/89_GrayCode.java)|Medium|Java|Leetcode|
 |153   |98   | [Valid Binary Search Tree.java](Java/98_ValidBinarySearchTree.java)|Medium|Java|Leetcode|
 |154   |119  | [Pascal's triangle II.java](Java/119_Pascal'sTriangleII.java)|Easy|Java|leetcode|
+|155   |155  | [Min Stack.java](Java/155_MinStack.java)|Easy|Java|Leetcode|
