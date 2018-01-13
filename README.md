@@ -172,4 +172,4 @@ Solution for Leetcode/Lintcode
 |164   |279  | [Perfect Squares.java](Java/279_PerfectSquares.java)|Medium|Java|Leetcode|
 |165   |237  | [Delete Node in a Linked List.java](Java/237_DeleteNodeinLinkedList.java)|Easy|Java|Leetcode|
 |166   |238  | [Product of Array Except Self.java](Java/238_ProductofArrayExceptSelf.java)|Medium|Java|Leetcode|
-|167   |380 | [Insert Delete GetRandom Load Balancer.java](Java/380_Load Balancer.java)|Medium|Java|Leetcode|
+|167   |380  | [Insert Delete GetRandom Load Balancer.java](Java/380_Load_Balancer.java)|Medium|Java|Leetcode|
