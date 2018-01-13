@@ -166,3 +166,4 @@ Solution for Leetcode/Lintcode
 |158   |151  | [Reverse Words in a String.java](Java/151_ReverseWordsinString.java)|Medium|Java|Leetcode|
 |159   |186  | [Reverse Words in a String II.java](Java/186_ReverseWordsinStringII.java)|Medium|Java|Leetcode|
 |160   |199  | [Binary Tree Right Side View.java](Java/199_BinaryTreeRightSideView.java)|Medium|Java|Leetcode|
+|161   |205  | [Isomorphic Strings.java](Java/205_IsomorphicStrings.java)|Easy|Java|Leetcode|
