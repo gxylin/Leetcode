@@ -174,3 +174,4 @@ Solution for Leetcode/Lintcode
 |166   |238  | [Product of Array Except Self.java](Java/238_ProductofArrayExceptSelf.java)|Medium|Java|Leetcode|
 |167   |380  | [Insert Delete GetRandom Load Balancer.java](Java/380_Load_Balancer.java)|Medium|Java|Leetcode|
 |168   |387  | [First Unique Character in a String.java](Java/387_FirstUniqueChar.java)|Easy|Java|Leetcode|
+|169   |617  | [Merge Two Binary Trees.java](Java/617_MergeTwoBinaryTrees.java)|Easy|Java|Leetcode|
