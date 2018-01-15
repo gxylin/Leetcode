@@ -176,4 +176,4 @@ Solution for Leetcode/Lintcode
 |168   |387  | [First Unique Character in a String.java](Java/387_FirstUniqueChar.java)|Easy|Java|Leetcode|
 |169   |617  | [Merge Two Binary Trees.java](Java/617_MergeTwoBinaryTrees.java)|Easy|Java|Leetcode|
 |170   |682  | [BaseballGame.java](Java/682_BaseballGame.java)|Easy|Java|Leetcode|
-|17 |297| [Serialize and Deserialize Binary Tree.java](Java/297_SerializeandDeserializeBinaryTree.java)|Hard|Java|Leetcode|
+|171 |297| [Serialize and Deserialize Binary Tree.java](Java/297_SerializeandDeserializeBinaryTree.java)|Hard|Java|Leetcode|
