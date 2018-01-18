@@ -177,3 +177,4 @@ Solution for Leetcode/Lintcode
 |169   |617  | [Merge Two Binary Trees.java](Java/617_MergeTwoBinaryTrees.java)|Easy|Java|Leetcode|
 |170   |682  | [BaseballGame.java](Java/682_BaseballGame.java)|Easy|Java|Leetcode|
 |171 |297| [Serialize and Deserialize Binary Tree.java](Java/297_SerializeandDeserializeBinaryTree.java)|Hard|Java|Leetcode|
+|172   |763  | [Partition Labels.java](Java/763_PartitionLabels.java)|Medium|Java|Leetcode|
