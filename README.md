@@ -179,3 +179,4 @@ Solution for Leetcode/Lintcode
 |171 |297| [Serialize and Deserialize Binary Tree.java](Java/297_SerializeandDeserializeBinaryTree.java)|Hard|Java|Leetcode|
 |172   |763  | [Partition Labels.java](Java/763_PartitionLabels.java)|Medium|Java|Leetcode|
 |XXX   |XXX  | [distance between two nodes of BinarySearchTree](Java/distanceBetweenTwoNodesBST.java)|
+|173   |678  | [ValidParenthesisString.java](Java/678_ValidParenthesisString.java)|Medium|Java|Leetcode|
