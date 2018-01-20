@@ -126,7 +126,6 @@ public class Codec {
             return null;
         }
         String[] strs = data.split(",");
-        TreeNode root = new TreeNode(Integer.parseInt(strs[0]));
         int[] d = new int[1];
         return dfsDe(strs, d);
     }
