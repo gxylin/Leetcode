@@ -182,3 +182,4 @@ Solution for Leetcode/Lintcode
 |173   |678  | [ValidParenthesisString.java](Java/678_ValidParenthesisString.java)|Medium|Java|Leetcode|
 |174   |627  | [Longest Palindrome.java](Java/627_LongestPalindrome.java)|Easy|Java|Lintcode|
 |175   |726  | [Check Full Binary Tree.java](Java/726_CheckFullBinaryTree.java)|Medium|Java|Lintcode|
+|176   |728  | [Three Distinct Factors.java](Java/728_ThreeDistinctFactors.java)|Medium|Java|Lintcode|
