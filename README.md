@@ -186,3 +186,4 @@ Solution for Leetcode/Lintcode
 |177   |772  | [Group Anagrams.java](Java/772_GroupAnagrams.java)|Medium|Java|Lintcode|
 |178   |735  | [Maximum From the Right.java](Java/735_maximumFromRight.java)|Medium|Java|Lintcode|
 |179   |451  | [Sort Characters By Frequency.java](Java/451_SortCharactersByFrequency.java)|Medium|Java|Leetcode|
+|180   |532  | [K-diff Pairs in an Array.java](Java/532_K-diffPairsArray.java)|Easy|Java|Leetcode|
