@@ -195,3 +195,4 @@ Solution for Leetcode/Lintcode
 |186   |106  |[Convert Sorted List to Balanced BST.java](Java/106_ConvertSortedListtoBalancedBST.java)|Medium|Java|Lintcode|
 |187   |6    | [Merge Two Sorted Arrays.java](Java/6_MergeTwoSortedArrays.java)|Easy|Java|Lintcode|
 |188   |57   | [Three Sum.java](Java/57_ThreeSum.java)|Medium|Java|Lintcode|
+|189   |382  | [Triangle Count.java](Java/382_TriangleCount.java)|Medium|Java|Lintcode|
