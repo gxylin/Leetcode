@@ -189,3 +189,4 @@ Solution for Leetcode/Lintcode
 |180   |532  | [K-diff Pairs in an Array.java](Java/532_K-diffPairsArray.java)|Easy|Java|Leetcode|
 |181   |28   | [Implement strStr.java](Java/28_ImplementstrStr.java)|Easy|Java|Leetcode|
 |182   |96   | [Partition List.java](Java/96_PartitionList.java)|Medium|Java|Lintcode|
+|183   |511  | [Swap Two Nodes in Linked List.java](Java/511_SwapTwoNodesLinkedList.java)|Medium|Java|Lintcode|
