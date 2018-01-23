@@ -188,3 +188,4 @@ Solution for Leetcode/Lintcode
 |179   |451  | [Sort Characters By Frequency.java](Java/451_SortCharactersByFrequency.java)|Medium|Java|Leetcode|
 |180   |532  | [K-diff Pairs in an Array.java](Java/532_K-diffPairsArray.java)|Easy|Java|Leetcode|
 |181   |28   | [Implement strStr.java](Java/28_ImplementstrStr.java)|Easy|Java|Leetcode|
+|182   |96   | [Partition List.java](Java/96_PartitionList.java)|Medium|Java|Lintcode|
