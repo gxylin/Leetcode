@@ -191,3 +191,4 @@ Solution for Leetcode/Lintcode
 |182   |96   | [Partition List.java](Java/96_PartitionList.java)|Medium|Java|Lintcode|
 |183   |511  | [Swap Two Nodes in Linked List.java](Java/511_SwapTwoNodesLinkedList.java)|Medium|Java|Lintcode|
 |184   |99   | [Reorder List.java](Java/99_ReorderList.java)|Medium|Java|Lintcode|
+|185   |170  | [Rotate List.java](Java/170_RotateList.java)|Medium|Java|Lintcode|
