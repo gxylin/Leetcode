@@ -203,3 +203,4 @@ Solution for Leetcode/Lintcode
 |194   |116  | [Jump Game.java](Java/116_JumpGame.java)|Medium|Java|Lintcode|
 |195   |117  | [Jump Game II.java](Java/117_JumpGameII.java)|Medium|Java|Lintcode|
 |196   |604  | [Window Sum.java](Java/604_WindowSum.java)|Easy|Java|Lintcode|
+|197   |80   | [Remove Duplicates from Sorted Array II.java](Java/80_RemoveDuplicatesII.java)|Medium|Java|Leetcode|
