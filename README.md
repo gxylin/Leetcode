@@ -207,3 +207,4 @@ Solution for Leetcode/Lintcode
 |198   |88   | [Merge Sorted Array.java](Java/88_MergeSortedArray.java)|Easy|Java|Leetcode|
 |199   |287  | [Find Duplicate Number.java](Java/287_FindDuplicateNumber.java)|Medium|Java|Leetcode|
 |200   |111  | [Minimum Depth of Binary Tree.java](Java/111_MinimumDepthofBinaryTree.java)|Easy|Java|Leetcode|
+|201   |22   | [Generate Parentheses.java](Java/22_GenerateParentheses.java)|Medium|Java|Leetcode|
