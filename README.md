@@ -211,3 +211,4 @@ Solution for Leetcode/Lintcode
 |202   |131  | [Palindrome Partitioning.java](Java/131_PalindromePartitioning.java)|Medium|Java|Leetcode|
 |203   |545  | [Boundary of Binary Tree.java](Java/545_BoundaryofBinaryTree.java)|Medium|Java|Leetcode|
 |204   |42   | [Trapping Rain Water.java](Java/42_TrappingRainWater.java)|Hard|Java|Leetcode|
+|205   |675  | [Cut Off Trees for Golf Event.java](Java/675_CutOffTreesforGolfEvent.java)|Hard|Java|Leetcode|
