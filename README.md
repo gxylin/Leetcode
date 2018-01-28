@@ -212,3 +212,4 @@ Solution for Leetcode/Lintcode
 |203   |545  | [Boundary of Binary Tree.java](Java/545_BoundaryofBinaryTree.java)|Medium|Java|Leetcode|
 |204   |42   | [Trapping Rain Water.java](Java/42_TrappingRainWater.java)|Hard|Java|Leetcode|
 |205   |675  | [Cut Off Trees for Golf Event.java](Java/675_CutOffTreesforGolfEvent.java)|Hard|Java|Leetcode|
+|206   |460  | [LFU Cache.java](Java/460_LFUCache.java)|Hard|Java|Leetcode|
