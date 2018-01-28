@@ -214,3 +214,4 @@ Solution for Leetcode/Lintcode
 |205   |675  | [Cut Off Trees for Golf Event.java](Java/675_CutOffTreesforGolfEvent.java)|Hard|Java|Leetcode|
 |206   |460  | [LFU Cache.java](Java/460_LFUCache.java)|Hard|Java|Leetcode|
 |207   |725  | [Split Linked Listin Parts.java](Java/725_SplitLinkedListinParts.java)|Medium|Java|Leetcode|
+|208   |529  | [Minesweeper.java](Java/529_Minesweeper.java)|Medium|Java|Leetcode|
