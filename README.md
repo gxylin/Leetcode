@@ -217,3 +217,4 @@ Solution for Leetcode/Lintcode
 |208   |529  | [Minesweeper.java](Java/529_Minesweeper.java)|Medium|Java|Leetcode|
 |209   |508  | [Most Frequent SubtreeSum.java](Java/508_MostFrequentSubtreeSum.java)|Medium|Java|Leetcode|
 |210   |414  | [Third Maximum Number.java](Java/414_ThirdMaximumNumber.java)|Easy|Java|Leetcode|
+|211   |538  | [Convert BST to Greater Tree.java](Java/538_ConvertBSTtoGreaterTree.java)|Easy|Java|Leetcode|
