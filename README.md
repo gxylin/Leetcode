@@ -221,3 +221,4 @@ Solution for Leetcode/Lintcode
 |212   |775  | [Global Local Inversions.java](Java/775_Global_Local_Inversions.java)|Medium|Java|Leetcode|
 |213   |771  | [Jewels and Stones.java](Java/771_JewelsandStones.java)|Easy|Java|Leetcode|
 |214   |746  | [Min Cost Climbing Stairs.java](Java/746_MinCostClimbingStairs.java)|Easy|Java|Leetcode|
+|215   |70   | [Climbing Stairs.java](Java/70_ClimbingStairs.java)|Easy|Java|Leetcode|
