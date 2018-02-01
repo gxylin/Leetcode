@@ -222,3 +222,4 @@ Solution for Leetcode/Lintcode
 |213   |771  | [Jewels and Stones.java](Java/771_JewelsandStones.java)|Easy|Java|Leetcode|
 |214   |746  | [Min Cost Climbing Stairs.java](Java/746_MinCostClimbingStairs.java)|Easy|Java|Leetcode|
 |215   |70   | [Climbing Stairs.java](Java/70_ClimbingStairs.java)|Easy|Java|Leetcode|
+|216   |662  | [Maximum Width of Binary Tree.java](Java/662_MaximumWidthofBinaryTree.java)|Medium|Java|Leetcode|
