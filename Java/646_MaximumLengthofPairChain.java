@@ -12,6 +12,9 @@ Explanation: The longest chain is [1,2] -> [3,4]
 Note:
 The number of given pairs will be in the range [1, 1000].
 
+    
+Similar as Longest Increasing Subsequence
+
 class Solution {
     public int findLongestChain(int[][] pairs) {
         if (pairs == null || pairs.length == 0){
