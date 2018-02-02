@@ -224,3 +224,4 @@ Solution for Leetcode/Lintcode
 |215   |70   | [Climbing Stairs.java](Java/70_ClimbingStairs.java)|Easy|Java|Leetcode|
 |216   |662  | [Maximum Width of Binary Tree.java](Java/662_MaximumWidthofBinaryTree.java)|Medium|Java|Leetcode|
 |217   |661  | [Image Smoother.java](Java/661_ImageSmoother.java)|Easy|Java|Leetcode|
+|218   |646  | [Maximum Length of Pair Chain.java](Java/646_MaximumLengthofPairChain.java)|Medium|Java|Leetcode|
