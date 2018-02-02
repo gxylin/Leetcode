@@ -223,3 +223,4 @@ Solution for Leetcode/Lintcode
 |214   |746  | [Min Cost Climbing Stairs.java](Java/746_MinCostClimbingStairs.java)|Easy|Java|Leetcode|
 |215   |70   | [Climbing Stairs.java](Java/70_ClimbingStairs.java)|Easy|Java|Leetcode|
 |216   |662  | [Maximum Width of Binary Tree.java](Java/662_MaximumWidthofBinaryTree.java)|Medium|Java|Leetcode|
+|217   |661  | [Image Smoother.java](Java/661_ImageSmoother.java)|Easy|Java|Leetcode|
