@@ -226,3 +226,4 @@ Solution for Leetcode/Lintcode
 |217   |661  | [Image Smoother.java](Java/661_ImageSmoother.java)|Easy|Java|Leetcode|
 |218   |646  | [Maximum Length of Pair Chain.java](Java/646_MaximumLengthofPairChain.java)|Medium|Java|Leetcode|
 |219   |645  | [Set Mismatch.java](Java/645_SetMismatch.java)|Easy|Java|Leetcode|
+|220   |606  | [Construct String from Binary Tree.java](Java/606_ConstructStringfromBinaryTree.java)|Easy|Java|Leetcode|
