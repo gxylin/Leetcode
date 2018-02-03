@@ -230,3 +230,4 @@ Solution for Leetcode/Lintcode
 |221   |536  | [Construct Binary Tree from String.java](Java/536_ConstructBinaryTreefromString.java)|Medium|Java|Leetcode|
 |222   |553  | [Optimal Division.java](Java/553_OptimalDivision.java)|Medium|Java|Leetcode|
 |223   |459  | [Repeated Substring Pattern.java](Java/459_RepeatedSubstringPattern.java)|Easy|Java|Leetcode|
+|224   |686  | [Repeated String Match.java](Java/686_RepeatedStringMatch.java)|Easy|Java|Leetcode|
