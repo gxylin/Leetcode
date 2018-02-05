@@ -234,3 +234,4 @@ Solution for Leetcode/Lintcode
 |225   |396  | [Rotate Function.java](Java/396_RotateFunction.java)|Medium|Java|Leetcode|
 |226   |14   | [Longest Common Prefix.java](Java/14_LongestCommonPrefix.java)|Easy|Java|Leetcode|
 |227   |31   | [Next Permutation.java](Java/31_NextPermutation.java)|Medium|Java|Leetcode|
+|228   |38   | [Count and Say.java](Java/38_CountandSay.java)|Easy|Java|Leetcode|
