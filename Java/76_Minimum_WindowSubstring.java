@@ -23,7 +23,7 @@ class Solution {
         int count = map.size();
         int start = 0;
         int end = 0;
-        int min = 0;
+        int len = Integer.MAX_VALUE;
         int head = 0;
         while (end < s.length()){
             char c = s.charAt(end);
@@ -35,20 +35,25 @@ class Solution {
             }
             end++;
             while (count == 0){
+                if (end - start < len){
+                    len = end - start;
+                    head = start;
+                }
+                
                 char cstart = s.charAt(start);
                 if (map.containsKey(cstart)){
-                    map.put(cstart, map.get(csart) + 1);
+                    map.put(cstart, map.get(cstart) + 1);
                     if (map.get(cstart) > 0){
                         count++;
                     }
                 }
-                if (end - start < min){
-                    head = start;
-                    min = end - start;
-                }
                 start++;
             }
         }
-        return s.substring(head, head + min);
+        if (len == Integer.MAX_VALUE){
+            return "";
+        }
+        return s.substring(head, head + len);
+        
     }
 }
