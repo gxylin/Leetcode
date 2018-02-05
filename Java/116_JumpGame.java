@@ -40,3 +40,21 @@ public class Solution {
         return can[A.length - 1];
     }
 }
+
+Method 2: 
+Time complexity: O(n)
+ class Solution {
+    public boolean canJump(int[] nums) {
+        if (nums == null || nums.length == 0){
+            return false;
+        }
+        int max = 0;
+        for (int i = 0; i < nums.length; i++){
+            if (max < i){
+                return false;
+            }
+            max = Math.max(max, i + nums[i]);
+        }
+        return true;
+    }
+}
