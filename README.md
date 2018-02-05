@@ -236,3 +236,4 @@ Solution for Leetcode/Lintcode
 |227   |31   | [Next Permutation.java](Java/31_NextPermutation.java)|Medium|Java|Leetcode|
 |228   |38   | [Count and Say.java](Java/38_CountandSay.java)|Easy|Java|Leetcode|
 |229   |41   | [First Missing Positive.java](Java/41_FirstMissingPositive.java)|Hard|Java|Leetcode|
+|230   |54   | [Spiral Matrix.java](Java/54_SpiralMatrix.java)|Medium|Java|Leetcode|
