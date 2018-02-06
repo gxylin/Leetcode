@@ -239,3 +239,4 @@ Solution for Leetcode/Lintcode
 |230   |54   | [Spiral Matrix.java](Java/54_SpiralMatrix.java)|Medium|Java|Leetcode|
 |231   |76   | [Minimum_Window Substring.java](Java/76_Minimum_WindowSubstring.java)|Hard|Java|Leetcode|
 |232  |103  | [Binary Tree Zigzag Level Order Traversal.java](Java/103_BinaryTreeZigzagTraversal.java)|Medium|Java|Leetcode|
+|233|105|[Construct Binary Tree from Preorder and Inorder Traversal](Java/105_Construct.java)|Medium|Java|Leetcode|
