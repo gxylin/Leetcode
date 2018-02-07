@@ -250,3 +250,4 @@ Solution for Leetcode/Lintcode
 |241   |150  |[Evaluate Reverse Polish Notation.java](Java/150_EvaluateReversePolishNotation.java)|Medium|Java|Leetcode|
 |242   |162  |[Find Peak Element.java](Java/162_FindPeakElement.java)|Medium|Java|Leetcode|
 |243   |166  |[Fraction to Recurring Decimal](Java/166_Fraction.java)|Medium|Java|Leetcode|
+|244   |169  |[Majority Element.java](Java/169_MajorityElement.java)|Easy|Java|Leetcode|
