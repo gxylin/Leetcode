@@ -247,3 +247,4 @@ Solution for Leetcode/Lintcode
 |238   |133  |[Clone Graph.java](Java/133_CloneGraph.java)|Medium|Java|Leetcode|
 |239   |134  |[Gas Station.java](Java/134_GasStation.java)|Medium|Java|Leetcode|
 |240   |145  |[Binary Tree Postorder Traversal](Java/145_Postorder.java)|Hard|Java|Leetcode|
+|241   |150  |[Evaluate Reverse Polish Notation.java](Java/150_EvaluateReversePolishNotation.java)|Medium|Java|Leetcode|
