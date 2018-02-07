@@ -249,3 +249,4 @@ Solution for Leetcode/Lintcode
 |240   |145  |[Binary Tree Postorder Traversal](Java/145_Postorder.java)|Hard|Java|Leetcode|
 |241   |150  |[Evaluate Reverse Polish Notation.java](Java/150_EvaluateReversePolishNotation.java)|Medium|Java|Leetcode|
 |242   |162  |[Find Peak Element.java](Java/162_FindPeakElement.java)|Medium|Java|Leetcode|
+|243   |166  |[Fraction to Recurring Decimal](Java/166_Fraction.java)|Medium|Java|Leetcode|
