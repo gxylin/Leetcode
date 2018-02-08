@@ -255,3 +255,4 @@ Solution for Leetcode/Lintcode
 |246   |168  |[Excel Sheet Column Title](Java/168_ColumnExcel.java)|Easy|Java|Leetcode|
 |247   |172  |[Factorial Trailing Zeroes.java](Java/172_FactorialTrailingZeroes.java)|Easy|Java|Leetcode|
 |248   |174  |[Dungeon Game.java](Java/174_DungeonGame.java)|Hard|Java|Leetcode|
+|249   |198  |[House Robber.java](Java/198_HouseRobber.java)|Easy|Java|Leetcode|
