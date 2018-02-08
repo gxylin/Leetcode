@@ -251,3 +251,4 @@ Solution for Leetcode/Lintcode
 |242   |162  |[Find Peak Element.java](Java/162_FindPeakElement.java)|Medium|Java|Leetcode|
 |243   |166  |[Fraction to Recurring Decimal](Java/166_Fraction.java)|Medium|Java|Leetcode|
 |244   |169  |[Majority Element.java](Java/169_MajorityElement.java)|Easy|Java|Leetcode|
+|245   |171  |[Excel Sheet Column Number](Java/171_ ExcelNumber.java)|Easy|Java|Leetcode|
