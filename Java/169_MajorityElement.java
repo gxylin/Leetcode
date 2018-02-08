@@ -2,6 +2,7 @@ Given an array of size n, find the majority element. The majority element is the
 
 You may assume that the array is non-empty and the majority element always exist in the array.
 
+Method 1:
 class Solution {
     public int majorityElement(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
@@ -14,5 +15,13 @@ class Solution {
             }
         }
         return Integer.MIN_VALUE;
+    }
+}
+
+Method 2:
+class Solution {
+    public int majorityElement(int[] nums) {
+        Arrays.sort(nums);
+        return nums[nums.length/2];
     }
 }
