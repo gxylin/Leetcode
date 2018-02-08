@@ -256,3 +256,4 @@ Solution for Leetcode/Lintcode
 |247   |172  |[Factorial Trailing Zeroes.java](Java/172_FactorialTrailingZeroes.java)|Easy|Java|Leetcode|
 |248   |174  |[Dungeon Game.java](Java/174_DungeonGame.java)|Hard|Java|Leetcode|
 |249   |198  |[House Robber.java](Java/198_HouseRobber.java)|Easy|Java|Leetcode|
+|250   |202  |[Happy Number.java](Java/202_HappyNumber.java)|Easy|Java|Leetcode|
