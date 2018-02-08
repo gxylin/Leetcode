@@ -8,7 +8,6 @@ class Solution {
         boolean[] notPrime = new boolean[n];
         for (int i = 2; i < n; i++){
             if (!notPrime[i]){
-                notPrime[i] = false;
                 ans++;
                 for (int j = 2; i * j < n; j++){
                     notPrime[i*j] = true;
