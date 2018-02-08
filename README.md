@@ -252,3 +252,4 @@ Solution for Leetcode/Lintcode
 |243   |166  |[Fraction to Recurring Decimal](Java/166_Fraction.java)|Medium|Java|Leetcode|
 |244   |169  |[Majority Element.java](Java/169_MajorityElement.java)|Easy|Java|Leetcode|
 |245   |171  |[Excel Sheet Column Number](Java/171_ ExcelNumber.java)|Easy|Java|Leetcode|
+|246   |168  |[Excel Sheet Column Title](Java/168_ColumnExcel.java)|Easy|Java|Leetcode|
