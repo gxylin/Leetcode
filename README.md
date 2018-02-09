@@ -259,3 +259,4 @@ Solution for Leetcode/Lintcode
 |250   |202  |[Happy Number.java](Java/202_HappyNumber.java)|Easy|Java|Leetcode|
 |251   |208  |[Implement Trie.java](Java/208_Trie.java)|Medium|Java|Leetcode|
 |252   |213  |[House Robber II.java](Java/213_HouseRobberII.java)|Medium|Java|Leetcode|
+|253   |230  |[Kth Smallest Element in a BST](Java/230_KthSmallestBST.java)|Medium|Java|Leetcode|
