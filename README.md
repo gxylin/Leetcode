@@ -263,3 +263,4 @@ Solution for Leetcode/Lintcode
 |254   |671  |[Second Minimum Node In a Binary Tree](Java/671_SecondMinimumBinary.java)|Easy|Java|Leetcode|
 |255   |251  |[Flatten 2D Vector.java](Java/251_Flatten2DVector.java)|Medium|Java|Leetcode|
 |256   |252  |[Meeting Rooms.java](Java/252_MeetingRooms.java)|Easy|Java|Leetcode|
+|257   |253  |[Meeting Rooms II.java](Java/253_MeetingRoomsII.java)|Medium|Java|Leetcode|
