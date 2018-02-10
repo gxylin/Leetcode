@@ -262,3 +262,4 @@ Solution for Leetcode/Lintcode
 |253   |230  |[Kth Smallest Element in a BST](Java/230_KthSmallestBST.java)|Medium|Java|Leetcode|
 |254   |671  |[Second Minimum Node In a Binary Tree](Java/671_SecondMinimumBinary.java)|Easy|Java|Leetcode|
 |255   |251  |[Flatten 2D Vector.java](Java/251_Flatten2DVector.java)|Medium|Java|Leetcode|
+|256   |252  |[Meeting Rooms.java](Java/252_MeetingRooms.java)|Easy|Java|Leetcode|
