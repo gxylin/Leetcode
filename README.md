@@ -268,4 +268,4 @@ Solution for Leetcode/Lintcode
 |259   |289  |[Game of Life.java](Java/289_GameofLife.java)|Medium|Java|Leetcode|
 |260   |225  |[Implement Stack Using Queue.java](Java/225_ImplementStack.java)|Medium|Java|Leetcode|
 |261   |295  |[Find Median from Data Stream.java](Java/295_FindMedianDataStream.java)|Hard|Java|Leetcode|
-|262   |322  |[Coin Change.java](322_Java/CoinChange.java)|Medium|Java|Leetcode|
+|262   |322  |[Coin Change.java](Java/322_CoinChange.java)|Medium|Java|Leetcode|
