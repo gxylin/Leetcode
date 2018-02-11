@@ -265,3 +265,4 @@ Solution for Leetcode/Lintcode
 |256   |252  |[Meeting Rooms.java](Java/252_MeetingRooms.java)|Easy|Java|Leetcode|
 |257   |253  |[Meeting Rooms II.java](Java/253_MeetingRoomsII.java)|Medium|Java|Leetcode|
 |258   |269  |[Alien Dictionary.java](Java/269_AlienDictionary.java)|Hard|Java|Leetcode|
+|259   |289  |[Game of Life.java](Java/289_GameofLife.java)|Medium|Java|Leetcode|
