@@ -267,3 +267,4 @@ Solution for Leetcode/Lintcode
 |258   |269  |[Alien Dictionary.java](Java/269_AlienDictionary.java)|Hard|Java|Leetcode|
 |259   |289  |[Game of Life.java](Java/289_GameofLife.java)|Medium|Java|Leetcode|
 |260   |225  |[Implement Stack Using Queue.java](Java/225_ImplementStack.java)|Medium|Java|Leetcode|
+|261   |295  |[Find Median from Data Stream.java](Java/295_FindMedianDataStream.java)|Hard|Java|Leetcode|
