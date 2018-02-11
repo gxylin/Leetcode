@@ -264,3 +264,4 @@ Solution for Leetcode/Lintcode
 |255   |251  |[Flatten 2D Vector.java](Java/251_Flatten2DVector.java)|Medium|Java|Leetcode|
 |256   |252  |[Meeting Rooms.java](Java/252_MeetingRooms.java)|Easy|Java|Leetcode|
 |257   |253  |[Meeting Rooms II.java](Java/253_MeetingRoomsII.java)|Medium|Java|Leetcode|
+|258   |269  |[Alien Dictionary.java](Java/269_AlienDictionary.java)|Hard|Java|Leetcode|
