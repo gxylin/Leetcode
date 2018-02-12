@@ -271,3 +271,4 @@ Solution for Leetcode/Lintcode
 |262   |322  |[Coin Change.java](Java/322_CoinChange.java)|Medium|Java|Leetcode|
 |263   |280  |[Wiggle Sort.java](Java/280_WiggleSort.java)|Medium|Java|Leetcode|
 |264   |324  |[Wiggle Sort II.java](Java/324_WiggleSortII.java)|Medium|Java|Leetcode|
+|265   |329  |[Longest Increasing Path.java](Java/329_LongestIncreasingPath.java)|Hard|Java|Leetcode|
