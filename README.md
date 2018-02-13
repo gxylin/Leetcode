@@ -275,3 +275,4 @@ Solution for Leetcode/Lintcode
 |266   |334  |[Increasing Triplet Subsequence.java](Java/334_IncreasingTripletSubsequence.java)|Medium|Java|Leetcode|
 |267   |340  |[Longest Substring with At Most K Distinct Characters](Java/340_LongestSubstring.java)|Hard|Java|Leetcode|
 |268   |348  |[Design Tic-Tac-Toe](Java/348_Design_Tic_Tac.java)|Medium|Java|Leetcode|
+|269   |349  |[Intersection of Two Arrays](Java/349_Intersection.java)|Easy|Java|Leetcode|
