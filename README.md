@@ -273,3 +273,4 @@ Solution for Leetcode/Lintcode
 |264   |324  |[Wiggle Sort II.java](Java/324_WiggleSortII.java)|Medium|Java|Leetcode|
 |265   |329  |[Longest Increasing Path.java](Java/329_LongestIncreasingPath.java)|Hard|Java|Leetcode|
 |266   |334  |[Increasing Triplet Subsequence.java](Java/334_IncreasingTripletSubsequence.java)|Medium|Java|Leetcode|
+|267   |340  |[Longest Substring with At Most K Distinct Characters](Java/340_LongestSubstring.java)|Hard|Java|Leetcode|
