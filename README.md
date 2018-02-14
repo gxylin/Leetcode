@@ -279,3 +279,4 @@ Solution for Leetcode/Lintcode
 |270   |350  |[Intersection of Two Arrays II](Java/350_IntersectionII.java)|Easy|Java|Leetcode|
 |271   |371  |[Sum of Two Integers](Jaav/371_SumTwoIntegers.java)|Easy|Java|Leetcode|
 |272   |382  |[Reservoir Sampling Linked List Random Node](Java/382_RandomNode.java)|Medium|Java|Leetcode|
+|273   |398  |[Reservoir Sampling Random Pick Index](Java/398_RandomPick.java)|Medium|Java|Leetcode|
