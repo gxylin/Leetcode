@@ -284,3 +284,4 @@ Solution for Leetcode/Lintcode
 |275   |395  |[Longest Substring with At Least K Repeating Characters](Java/395_LongestSubstring.java)|Medium|Java|Leetcode|
 |276   |412  |[Fizz Buzz](Java/412_FizzBuzz.java)|Easy|Java|Leetcode|
 |277   |454  |[4Sum II](Java/454_4SumII.java)|Medium|Java|Leetcode|
+|278   |611  |[Valid Triangle Number](Java/611_ValidTriangleNumber.java)|Medium|Java|Leetcode|
