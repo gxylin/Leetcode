@@ -280,3 +280,4 @@ Solution for Leetcode/Lintcode
 |271   |371  |[Sum of Two Integers](Jaav/371_SumTwoIntegers.java)|Easy|Java|Leetcode|
 |272   |382  |[Reservoir Sampling Linked List Random Node](Java/382_RandomNode.java)|Medium|Java|Leetcode|
 |273   |398  |[Reservoir Sampling Random Pick Index](Java/398_RandomPick.java)|Medium|Java|Leetcode|
+|274   |384  |[Reservoir Shuffle an Array](Java/384_ShuffleArray.java)|Medium|Java|Leetcode|
