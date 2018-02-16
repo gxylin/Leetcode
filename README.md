@@ -285,4 +285,4 @@ Solution for Leetcode/Lintcode
 |276   |412  |[Fizz Buzz](Java/412_FizzBuzz.java)|Easy|Java|Leetcode|
 |277   |454  |[4Sum II](Java/454_4SumII.java)|Medium|Java|Leetcode|
 |278   |611  |[Valid Triangle Number](Java/611_ValidTriangleNumber.java)|Medium|Java|Leetcode|
-|279   |259  |[3Sum Smaller]|(Java/259_3SumSmaller)|Medium|Java|Leetcode|
+|279   |259  |[3Sum Smaller](Java/259_3SumSmaller)|Medium|Java|Leetcode|
