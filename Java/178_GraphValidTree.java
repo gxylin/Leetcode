@@ -52,3 +52,56 @@ public class Solution {
         return graph;
     }
 }
+
+Method 2: Union Find
+class Solution {
+    class UF{
+        int[] id;
+        int[] size;
+        int count;
+        public UF(int N){
+            count = N;
+            id = new int[N];
+            size = new int[N];
+            for (int i = 0; i < N; i++){
+                id[i] = i;
+                size[i] = 1;
+            }
+        }
+        public int componentNum(){
+            return count;
+        }
+        public int root(int p){
+            while (p != id[p]){
+                p = id[p];
+            }
+            return p;
+        }
+        public boolean find(int p , int q){
+            return root(p) == root(q);
+        }
+        public void union(int p, int q){
+            int rp = root(p);
+            int rq = root(q);
+            if (rp < rq){
+                id[rp] = rq;
+                size[rq] += size[rp];
+            }else{
+                id[rq] = rp;
+                size[rp] += size[rq];
+            }
+            count--;
+        }
+        
+    }
+    public boolean validTree(int n, int[][] edges) {
+        UF uf = new UF(n);
+        for (int[] edge : edges){
+            if (uf.find(edge[0], edge[1])){
+                return false;
+            }
+            uf.union(edge[0], edge[1]);
+        }
+        return uf.componentNum() == 1;
+    }
+}
