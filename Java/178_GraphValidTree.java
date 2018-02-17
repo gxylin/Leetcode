@@ -105,3 +105,4 @@ class Solution {
         return uf.componentNum() == 1;
     }
 }
+https://leetcode.com/problems/graph-valid-tree/discuss/69018/AC-Java-Union-Find-solution
