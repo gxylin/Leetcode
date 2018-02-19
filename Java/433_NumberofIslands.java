@@ -44,6 +44,7 @@ public class Solution {
         int[] dy = {1, 0, -1, 0};
         qx.offer(i);
         qy.offer(j);
+        grid[i][j] = false;
         while (!qx.isEmpty()){
             int cx = qx.poll();
             int cy = qy.poll();
