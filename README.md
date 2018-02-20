@@ -290,3 +290,4 @@ Solution for Leetcode/Lintcode
 |281   |547  |[Union Find Friend Circles](Java/547_FriendCircles.java)|Medium|Java|Leetcode|
 |282   |140  |[Word Break II](Java/140_WordBreakII.java)|Hard|Java|Leetcode|
 |283   |805  |[Maxium Association Set](Java/805_MaximumAssociationSet.java)|Medium|Java|Lintcode|
+|284   |79   |[Word Search](Java/79_WordSearch.java)|Medium|Java|Leetcode|
