@@ -292,3 +292,4 @@ Solution for Leetcode/Lintcode
 |283   |805  |[Maxium Association Set](Java/805_MaximumAssociationSet.java)|Medium|Java|Lintcode|
 |284   |79   |[Word Search](Java/79_WordSearch.java)|Medium|Java|Leetcode|
 |285   |212  |[Word Search II](Java/212_WordSearchII.java)|Hard|Java|Leetcode|
+|286   |336  |[Palindrome Pair](Java/336_PalindromePairs.java)|Hard|Java|Leetcode|
