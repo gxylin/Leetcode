@@ -295,3 +295,4 @@ Solution for Leetcode/Lintcode
 |286   |336  |[Palindrome Pair](Java/336_PalindromePairs.java)|Hard|Java|Leetcode|
 |287   |549  |[Binary Tree Longest Consecutive Sequence II](Java/549_BinaryTree.java)|Medium|Java|Leetcode|
 |288   |44   |[Wildcard Matching](Java/44_WildcardMatching.java)|Hard|Java|Leetcode|
+|289   |10   |[Regular Expression Matching](Java/10_RegularExpressionMatching.java)|Hard|Java|Leetcode|
