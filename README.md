@@ -296,3 +296,4 @@ Solution for Leetcode/Lintcode
 |287   |549  |[Binary Tree Longest Consecutive Sequence II](Java/549_BinaryTree.java)|Medium|Java|Leetcode|
 |288   |44   |[Wildcard Matching](Java/44_WildcardMatching.java)|Hard|Java|Leetcode|
 |289   |10   |[Regular Expression Matching](Java/10_RegularExpressionMatching.java)|Hard|Java|Leetcode|
+|290   |243  |[Shortest Word Distance](Java/243_ShortestI.java)|Easy|Java|Leetcode|
