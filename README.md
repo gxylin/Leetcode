@@ -302,3 +302,4 @@ Solution for Leetcode/Lintcode
 |293   |9    |[Palindrome Number.java](Java/9_PalindromeNumber.java)|Easy|Java|Leetcode|
 |294   |19   |[Remove Nth Node From End of List](Java/19_RemoveNth.java)|Medium|Java|Leetcode|
 |295   |36   |[Valid Sudoku](Java/36_ValidSudoku.java)|Medium|Java|Leetcode|
+|296   |229  |[Majority Element II](Java/229_MajorityElementII.java)|Medium|Java|Leetcode|
