@@ -42,10 +42,10 @@ class Solution {
                 
                 char cstart = s.charAt(start);
                 if (map.containsKey(cstart)){
-                    map.put(cstart, map.get(cstart) + 1);
-                    if (map.get(cstart) > 0){
+                    if (map.get(cstart) == 0){
                         count++;
                     }
+                    map.put(cstart, map.get(cstart) + 1);    
                 }
                 start++;
             }
