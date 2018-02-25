@@ -304,3 +304,4 @@ Solution for Leetcode/Lintcode
 |295   |36   |[Valid Sudoku](Java/36_ValidSudoku.java)|Medium|Java|Leetcode|
 |296   |229  |[Majority Element II](Java/229_MajorityElementII.java)|Medium|Java|Leetcode|
 |297   |384  |[Longest Substring Without Repeating Characters](Java/384_Longest.java)|Medium|Java|Lintcode|
+|XXX   |XXX  |[Union Find Template](Java/UnionFindTemplate.java)|
