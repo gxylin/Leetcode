@@ -62,10 +62,11 @@ class Solution {
             }
         }
         visited[i][j] = true;
-        dfs(board, result, trie, str, i+1, j, visited);
-        dfs(board, result, trie, str, i-1, j, visited);
-        dfs(board, result, trie, str, i, j+1, visited);
-        dfs(board, result, trie, str, i, j-1, visited);
+        int[] dx = {1, 0 , -1 , 0};
+        int[] dy = {0, 1, 0, - 1};
+        for (int k = 0; k < 4; k++){
+            dfs(board, result, trie, str, i + dx[k], j + dy[k], visited);
+        }
         visited[i][j] = false;
     }
     
