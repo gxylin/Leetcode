@@ -306,3 +306,4 @@ Solution for Leetcode/Lintcode
 |297   |384  |[Longest Substring Without Repeating Characters](Java/384_Longest.java)|Medium|Java|Lintcode|
 |XXX   |XXX  |[Union Find Template](Java/UnionFindTemplate.java)|
 |298   |434  |[Number of Islands II](Java/434_NumberofIslandsII.java)|Hard|Java|Leetcode|
+|299   |364  |[Trapping Rain Water II](Java/364_TrappingRainWaterII .java)|Hard|Java|Lintcode|
