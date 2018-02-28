@@ -307,3 +307,4 @@ Solution for Leetcode/Lintcode
 |XXX   |XXX  |[Union Find Template](Java/UnionFindTemplate.java)|
 |298   |434  |[Number of Islands II](Java/434_NumberofIslandsII.java)|Hard|Java|Leetcode|
 |299   |364  |[Trapping Rain Water II](Java/364_TrappingRainWaterII.java)|Hard|Java|Lintcode|
+|300   |81   |[Data Stream Median](Java/81_DataStream.java)|Hard|Java|Lintcode|
