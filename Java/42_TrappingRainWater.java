@@ -36,3 +36,39 @@ class Solution {
         return ans;
     }
 }
+
+Lintcode: 363
+public class Solution {
+    /**
+     * @param heights: a list of integers
+     * @return: a integer
+     */
+    public int trapRainWater(int[] heights) {
+        if (heights == null || heights.length <= 1){
+            return 0;
+        }
+        int left = 0;
+        int right = heights.length - 1;
+        int ans = 0;
+        int leftHeight = heights[left];
+        int rightHeight = heights[right];
+        while (left < right){
+            if (leftHeight < rightHeight){
+                left++;
+                if (leftHeight > heights[left]){
+                    ans += leftHeight - heights[left];
+                }else{
+                    leftHeight = heights[left];
+                }
+            }else{
+                right--;
+                if (rightHeight > heights[right]){
+                    ans += rightHeight - heights[right];
+                }else{
+                    rightHeight = heights[right];
+                }
+            }
+        }
+        return ans;
+    }
+}
