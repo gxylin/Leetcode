@@ -310,3 +310,4 @@ Solution for Leetcode/Lintcode
 |300   |81   |[Data Stream Median](Java/81_DataStream.java)|Hard|Java|Lintcode|
 |301   |575  |[Expression Expand](Java/575_ExpressionExpand.java)|Medium|Java|Lintcode|
 |302   |84   |[Largest Rectangle in Histogram](Java/84_LargestRectangle.java)|Hard|Java|Leetcode|
+|303   |85   |[Maximal Rectangle](Java/85_MaximalRectangle.java)|Hard|Java|Leetcode|
