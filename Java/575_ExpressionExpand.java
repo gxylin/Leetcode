@@ -12,6 +12,7 @@ Challenge
 Can you do it without recursion?
 
 
+Method 1: Stack O(n)
 public class Solution {
     /**
      * @param s: an expression includes numbers, letters and brackets
@@ -46,3 +47,5 @@ public class Solution {
         return sb.toString();
     }
 }
+
+Method 2: DFS O(n^2)
