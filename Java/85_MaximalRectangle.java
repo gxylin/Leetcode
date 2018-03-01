@@ -8,6 +8,7 @@ For example, given the following matrix:
 1 0 0 1 0
 Return 6.
 
+Method: Monotonic Stack O(m * n)
 class Solution {
     public int maximalRectangle(char[][] matrix) {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0){
