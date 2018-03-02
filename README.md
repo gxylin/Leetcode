@@ -311,3 +311,4 @@ Solution for Leetcode/Lintcode
 |301   |575  |[Expression Expand](Java/575_ExpressionExpand.java)|Medium|Java|Lintcode|
 |302   |84   |[Largest Rectangle in Histogram](Java/84_LargestRectangle.java)|Hard|Java|Leetcode|
 |303   |85   |[Maximal Rectangle](Java/85_MaximalRectangle.java)|Hard|Java|Leetcode|
+|304   |385  |[Sliding Window Maximum](Java/362_SlidingWindowMaximum.java)|Hard|Java|Leetcode|
