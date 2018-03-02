@@ -23,6 +23,9 @@ class Solution {
 
 Method 2:
 Time complexity: O(nlogn)
+Find the biggest number that check_smaller_number <= itself
+http://www.lintcode.com/en/problem/find-the-duplicate-number/
+
 class Solution {
     public int findDuplicate(int[] nums) {
         int start = 1;
