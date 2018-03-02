@@ -312,3 +312,4 @@ Solution for Leetcode/Lintcode
 |302   |84   |[Largest Rectangle in Histogram](Java/84_LargestRectangle.java)|Hard|Java|Leetcode|
 |303   |85   |[Maximal Rectangle](Java/85_MaximalRectangle.java)|Hard|Java|Leetcode|
 |304   |385  |[Sliding Window Maximum](Java/362_SlidingWindowMaximum.java)|Hard|Java|Leetcode|
+|305   |141  |[Sqrt square](Java/141_Sqrt.java)|Easy|Java|Lintcode|
