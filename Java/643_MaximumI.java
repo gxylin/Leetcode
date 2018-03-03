@@ -9,7 +9,7 @@ Note:
 1 <= k <= n <= 30,000.
 Elements of the given array will be in the range [-10,000, 10,000].
 
-
+Method 1: Sliding window
 class Solution {
     public double findMaxAverage(int[] nums, int k) {
         int sum = 0;
@@ -22,5 +22,21 @@ class Solution {
             max = Math.max(max,  sum);
         }
         return (double) max / k;
+    }
+}
+
+Method 2: Prefix Sum
+class Solution {
+    public double findMaxAverage(int[] nums, int k) {
+        int[] preSum = new int[nums.length+1];
+        preSum[0] = 0;
+        for(int i = 0; i < nums.length; i++){
+            preSum[i+1] = preSum[i] + nums[i];
+        }
+        int max = Integer.MIN_VALUE;
+        for (int i = k; i < preSum.length; i++){
+            max = Math.max(max, preSum[i] - preSum[i-k]);
+        }
+        return (double)(max) / k;
     }
 }
