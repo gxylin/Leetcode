@@ -13,6 +13,9 @@ Given array A = [3,2,4], k = 2.
 
 Return 5( First person spends 5 minutes to copy book 1 and book 2 and second person spends 4 minutes to copy book 3. )
 
+    
+Method: Binary Search
+O(n log m) where n is the number of books and m is the sum of the pages
 public class Solution {
     /**
      * @param pages: an array of integers
