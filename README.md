@@ -315,3 +315,4 @@ Solution for Leetcode/Lintcode
 |305   |141  |[Sqrt square](Java/141_Sqrt.java)|Easy|Java|Lintcode|
 |306   |437  |[Copy Books](Java/437_CopyBooks.java)|Hard|Java|Lintcode|
 |307   |362  |[Sliding Window Maximum](Java/362_SlidingWindow.java)|Hard|Java|Lintcode|
+|308   |643  |[Maximum Average Subarray I](Java/643_MaximumI.java)|Easy|Java|Leetcode|
