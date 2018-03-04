@@ -320,3 +320,4 @@ Solution for Leetcode/Lintcode
 |310   |391  |[Number of Airplanes in the Sky ](Java/391_NumberSky.java)|Medium|Java|Lintcode|
 |311   |221  |[Maximal Square](Java/221_MaximalSquare.java)|Medium|Java|Leetcode|
 |312   |397  |[Longest Increasing Continuous Subsequence](Java/397_LICS.java)|Easy|Java|Lintcode|
+|313   |398  |[Longest Increasing Continuous Subsequence 2D (memorization)](Java/LICS_2D.java)|Hard|Java|Lintcode|
