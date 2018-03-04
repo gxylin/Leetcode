@@ -319,3 +319,4 @@ Solution for Leetcode/Lintcode
 |309   |644  |[Maximum Average Subarray II](Java/644_MaximumII.java)|Hard|Java|Leetcode|
 |310   |391  |[Number of Airplanes in the Sky ](Java/391_NumberSky.java)|Medium|Java|Lintcode|
 |311   |221  |[Maximal Square](Java/221_MaximalSquare.java)|Medium|Java|Leetcode|
+|312   |397  |[Longest Increasing Continuous Subsequence](Java/397_LICS.java)|Easy|Java|Lintcode|
