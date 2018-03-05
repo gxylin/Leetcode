@@ -19,7 +19,7 @@ Challenge
 O(n) time and O(1) memory
 
 http://www.jiuzhang.com/solutions/coins-in-a-line/
-
+dp[i] denotes if the first player will win when there are i coins left
 public class Solution {
     /**
      * @param n: An integer
