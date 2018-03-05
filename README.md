@@ -321,3 +321,4 @@ Solution for Leetcode/Lintcode
 |311   |221  |[Maximal Square](Java/221_MaximalSquare.java)|Medium|Java|Leetcode|
 |312   |397  |[Longest Increasing Continuous Subsequence](Java/397_LICS.java)|Easy|Java|Lintcode|
 |313   |398  |[Longest Increasing Continuous Subsequence 2D (memorization)](Java/LICS_2D.java)|Hard|Java|Lintcode|
+|314   |394  |[Coins in a Line ](Java/394_CoinsLine.java)|Medium|Java|Lintcode|
