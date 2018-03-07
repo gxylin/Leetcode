@@ -324,3 +324,4 @@ Solution for Leetcode/Lintcode
 |314   |394  |[Coins in a Line I](Java/394_CoinsLine.java)|Medium|Java|Lintcode|
 |315   |395  |[Coins in a Line II](Java/395_CoinsII.java)|Medium|Java|Lintcode|
 |316   |312  |[Burst Balloons](Java/312_BurstBalloons.java)|Hard|Java|Leetcode|
+|317   |77   |[Longest Common Subsequence (LCS)](Java/77_LCS.java)|Medium|Java|Lintcode|
