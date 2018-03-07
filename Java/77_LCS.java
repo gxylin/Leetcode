@@ -13,6 +13,7 @@ For "ABCD" and "EDCA", the LCS is "A" (or "D", "C"), return 1.
 
 For "ABCD" and "EACB", the LCS is "AC", return 2.
 
+http://www.jiuzhang.com/solutions/longest-common-subsequence/
 public class Solution {
     /**
      * @param A: A string
