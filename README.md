@@ -325,3 +325,4 @@ Solution for Leetcode/Lintcode
 |315   |395  |[Coins in a Line II](Java/395_CoinsII.java)|Medium|Java|Lintcode|
 |316   |312  |[Burst Balloons](Java/312_BurstBalloons.java)|Hard|Java|Leetcode|
 |317   |77   |[Longest Common Subsequence (LCS)](Java/77_LCS.java)|Medium|Java|Lintcode|
+|318   |79   |[Longest Common Substring](Java/79_LCS.java)|Medium|Java|Lintcode|
