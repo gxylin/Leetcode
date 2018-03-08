@@ -328,3 +328,4 @@ Solution for Leetcode/Lintcode
 |318   |79   |[Longest Common Substring](Java/79_LCS.java)|Medium|Java|Lintcode|
 |319   |92   |[Backpack](Java/92_Backpack.java)|Medium|Java|Lintcode|
 |320   |125  |[Backpack II](Java/125_BackpackII.java)|Medium|Java|Lintcode|
+|312   |89   |[k sum](Java/89_kSum.java)|Hard|Java|Lintcode|
