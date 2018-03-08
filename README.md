@@ -327,3 +327,4 @@ Solution for Leetcode/Lintcode
 |317   |77   |[Longest Common Subsequence (LCS)](Java/77_LCS.java)|Medium|Java|Lintcode|
 |318   |79   |[Longest Common Substring](Java/79_LCS.java)|Medium|Java|Lintcode|
 |319   |92   |[Backpack](Java/92_Backpack.java)|Medium|Java|Lintcode|
+|320   |125  |[Backpack II](Java/125_BackpackII.java)|Medium|Java|Lintcode|
