@@ -36,3 +36,29 @@ public class Solution {
         return result;
     }
 }
+
+Method 2: use prefix Sum
+public class Solution {
+    /**
+     * @param nums: A list of integers
+     * @return: A list of integers includes the index of the first number and the index of the last number
+     */
+    public List<Integer> subarraySum(int[] nums) {
+        List<Integer> result = new ArrayList<>();
+        int[] pre = new int[nums.length+1];
+        pre[0] = 0;
+        for (int i = 1; i <= nums.length; i++){
+            pre[i] = pre[i-1] + nums[i-1];
+        }
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < pre.length; i++){
+            if (map.containsKey(pre[i])){
+                result.add(map.get(pre[i]));
+                result.add(i-1);
+                return result;
+            }
+            map.put(pre[i], i);
+        }
+        return result;
+    }
+}
