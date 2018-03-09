@@ -19,7 +19,7 @@ class Solution {
 }
 
 Method 2: DP
-f[i] denotes the maxium value of the subarray that ends at the first i elements
+f[i] denotes the maxium value of the continuous subarray that ends at the first i elements
 
 public class Solution {
     /**
