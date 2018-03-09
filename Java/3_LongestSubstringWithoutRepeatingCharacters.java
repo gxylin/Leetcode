@@ -36,3 +36,35 @@ class Solution {
         return max;
     }
 }
+
+Method 2: Sliding window
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        if (s == null || s.length() == 0){
+            return 0;
+        }
+        Map<Character, Integer> map = new HashMap<>();
+        int start = 0;
+        int end = 0;
+        int ans = 0;
+        int count = 0;
+        while (end < s.length()){
+            char c = s.charAt(end);
+            map.put(c, map.getOrDefault(c, 0) + 1);
+            if (map.get(c) > 1){
+                count++;
+            }
+            end++;
+            while (count > 0){
+                char cstart = s.charAt(start);
+                if (map.get(cstart) > 1){
+                    count--;
+                }
+                map.put(cstart, map.get(cstart) - 1);
+                start++;
+            }
+            ans = Math.max(ans, end - start);
+        }
+        return ans;
+    }
+}
