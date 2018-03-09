@@ -40,3 +40,22 @@ public class Solution {
         return max;
     }
 }
+
+Method 3: rolling array
+public class Solution {
+    /**
+     * @param nums: A list of integers
+     * @return: A integer indicate the sum of max subarray
+     */
+    public int maxSubArray(int[] nums) {
+        int n = nums.length;
+        int[] f = new int[2];
+        f[0] = 0;
+        int max = Integer.MIN_VALUE;
+        for (int i = 1; i <= n; i++){
+            f[i%2] = Math.max(nums[i-1], nums[i-1] + f[(i-1)%2]);
+            max = Math.max(max, f[i%2]);
+        }
+        return max;
+    }
+}
