@@ -12,6 +12,8 @@ In array [1,2,3,4,5], the 1st largest element is 5, 2nd largest element is 4, 3r
 Challenge 
 O(n) time, O(1) extra memory.
 
+ 
+Quick select: O(n) time
 class Solution {
     /*
      * @param k : description of k
