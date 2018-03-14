@@ -14,6 +14,8 @@ By calling next repeatedly until hasNext returns false, the order of elements re
 Follow up:
 As an added challenge, try to code it using only iterators in C++ or iterators in Java. 
 
+ 
+ http://www.jiuzhang.com/solutions/flatten-2d-vector/
 public class Vector2D implements Iterator<Integer> {
     Stack<Integer> stack;
     public Vector2D(List<List<Integer>> vec2d) {
