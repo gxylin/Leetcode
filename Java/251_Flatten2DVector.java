@@ -25,6 +25,9 @@ public class Vector2D implements Iterator<Integer> {
 
     @Override
     public Integer next() {
+        if (!hasNext()){
+         return null;
+        }
         return stack.pop();
     }
 
