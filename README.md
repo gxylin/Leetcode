@@ -331,3 +331,4 @@ Solution for Leetcode/Lintcode
 |312   |89   |[k sum](Java/89_kSum.java)|Hard|Java|Lintcode|
 |313   |402  |[Continuous Subarray Sum](Java/402_Continuous.java)|Medium|Java|Lintcode|
 |314   |22   |[Flatten List.java](Java/22_FlattenList.java)|Easy|Java|Lintcode|
+|315   |86   |[Binary Search Tree Iterator](Java/86_BSTIterator.java)|Hard|Java|Lintcode|
