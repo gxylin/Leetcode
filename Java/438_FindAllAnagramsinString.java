@@ -57,43 +57,39 @@ Method 2:
 Time complexity: O(n) 
 Slide window template
 https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007?page=1
-public class Solution {
-    public List<Integer> findAnagrams(String s, String t) {
-        List<Integer> result = new LinkedList<>();
-        if(t.length()> s.length()) return result;
+class Solution {
+    public List<Integer> findAnagrams(String s, String p) {
+        List<Integer> result = new ArrayList<>();
         Map<Character, Integer> map = new HashMap<>();
-        for(char c : t.toCharArray()){
-            map.put(c, map.getOrDefault(c, 0) + 1);
+        for (int i = 0; i < p.length(); i++){
+            map.put(p.charAt(i), map.getOrDefault(p.charAt(i), 0) + 1);
         }
-        int counter = map.size();
-        
-        int begin = 0, end = 0;
-        int head = 0;
-        int len = Integer.MAX_VALUE;
-        
-        
-        while(end < s.length()){
-            char c = s.charAt(end);
-            if( map.containsKey(c) ){
-                map.put(c, map.get(c)-1);
-                if(map.get(c) == 0) counter--;
+        int start = 0;
+        int end = 0;
+        int count = map.size();
+        while (end < s.length()){
+            char endCh = s.charAt(end);
+            if (map.containsKey(endCh)){
+                map.put(endCh, map.get(endCh) - 1);
+                if (map.get(endCh) == 0){
+                    count--;
+                }
             }
             end++;
-            
-            while(counter == 0){
-                char tempc = s.charAt(begin);
-                if(map.containsKey(tempc)){
-                    map.put(tempc, map.get(tempc) + 1);
-                    if(map.get(tempc) > 0){
-                        counter++;
+            while (count == 0){
+                if (end - start == p.length()){
+                    result.add(start);
+                }
+                char startCh = s.charAt(start);
+                if (map.containsKey(startCh)){
+                    if (map.get(startCh) == 0){
+                        count++;
                     }
+                    map.put(startCh, map.get(startCh) + 1);
                 }
-                if(end-begin == t.length()){
-                    result.add(begin);
-                }
-                begin++;
+                start++;
             }
-            
+           
         }
         return result;
     }
