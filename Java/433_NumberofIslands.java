@@ -16,6 +16,7 @@ Given graph:
 ]
 
 Method 1:
+Time complexity; O(mn)
 public class Solution {
     /*
      * @param grid: a boolean 2D matrix
