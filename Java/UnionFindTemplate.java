@@ -1,3 +1,4 @@
+Time complexity with path compression: Find: O(1), Union: O(1)
 class UF{
         int[] parent;
         int[] size;
