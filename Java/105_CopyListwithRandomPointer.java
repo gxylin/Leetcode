@@ -22,36 +22,29 @@ public class Solution {
      * @param head: The head of linked list with a random pointer.
      * @return: A new head of a deep copy of the list.
      */
+    public class Solution {
     public RandomListNode copyRandomList(RandomListNode head) {
         if (head == null){
             return head;
         }
-        
-        HashMap<RandomListNode, RandomListNode> map = new HashMap<>();
+        Map<RandomListNode, RandomListNode> map = new HashMap<>();
         RandomListNode dummy = new RandomListNode(0);
-        
-        RandomListNode temp = head;
-        RandomListNode newNode = dummy;
         RandomListNode newHead = dummy;
+        RandomListNode t = head;
         
-        //copy node
         while (head != null){
-            if (map.containsKey(head)){
-                newNode = map.get(head);
-            }else{
-                newNode = new RandomListNode(head.label);
-                map.put(head, newNode);
-            }
-            newHead.next = newNode;
-            newHead = newNode;
+            RandomListNode node = new RandomListNode(head.label);
+            map.put(head, node); 
+            newHead.next = node;
+            newHead = node;
             head = head.next;
         }
-        //copy random
-        head = temp;
+
+        head = t;
         while (head != null){
-           newNode = map.get(head);
-           newNode.random = map.get(head.random);
-           head = head.next;
+            RandomListNode temp = map.get(head);
+            temp.random = map.get(head.random);
+            head = head.next;
         }
         return dummy.next;
     }
