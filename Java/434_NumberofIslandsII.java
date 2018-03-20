@@ -23,7 +23,8 @@ return [1,1,2,2].
  * }
  */
 
-
+Time complexity of Union Find with path compression: O(k + m*n) m*n -- union find inialization
+Time complexity of BFS: O(k * m * n)
 public class Solution {
     /*
      * @param n: An integer
@@ -48,7 +49,7 @@ public class Solution {
             if (parent[a] == a){
                 return a;
             }
-            return parent[a] = find(parent[a]);
+            return find(parent[a]);
         }
         public void union(int a, int b){
             int rootA = find(a);
