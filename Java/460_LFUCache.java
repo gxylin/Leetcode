@@ -68,7 +68,7 @@ class LFUCache {
         int value = -1;
         if (map.containsKey(key)){
             Pair oldPair = map.get(key);
-            pq.remove(oldPair);
+            pq.remove(oldPair); //O(n) for priorityQueu, O(logn) for treemap
             value = oldPair.val;
             Pair newPair = new Pair(key, value, oldPair.freq + 1, stamp++);
             map.put(key, newPair);
