@@ -72,3 +72,29 @@ public class Solution {
         return ans;
     }
 }
+
+
+class Solution {
+    public int trap(int[] height) {
+        if (height == null || height.length < 3){
+            return 0;
+        }
+        int left = 0;
+        int right = height.length - 1;
+        int leftHeight = height[left];
+        int rightHeight = height[right];
+        int ans = 0;
+        while (left < right){
+            if (leftHeight < rightHeight){
+                left++;
+                ans += Math.max(0, leftHeight - height[left]);
+                leftHeight = Math.max(leftHeight, height[left]);
+            }else{
+                right--;
+                ans += Math.max(0, rightHeight - height[right]);
+                rightHeight = Math.max(rightHeight, height[right]);
+            }
+        }
+        return ans;
+    }
+}
