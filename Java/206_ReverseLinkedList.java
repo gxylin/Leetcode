@@ -1,5 +1,11 @@
 Reverse a singly linked list.
-
+public class ListNode{
+    int val;
+    ListNode next;
+    ListNode(int x){
+        val = x;
+    }
+}
 click to show more hints.
 
 Hint:
