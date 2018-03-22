@@ -10,7 +10,7 @@ dict = ["cat", "cats", "and", "sand", "dog"].
 
 A solution is ["cats and dog", "cat sand dog"].
 
-Method 1: dfs
+Method 1:  DP + Memorization, the same as Methodd 2
 class Solution {
     Map<String, List<String>> map = new HashMap<>();
     public List<String> wordBreak(String s, List<String> wordDict) {
@@ -31,6 +31,36 @@ class Solution {
                 if (temp.size() != 0){
                     for (String str : temp){
                         result.add(str +" " + sub);
+                    }
+                }
+            }
+        }
+        map.put(s, result);
+        return result;
+    }
+}
+
+Method 2: DP + memorization
+class Solution {
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        Map<String, List<String>> map = new HashMap<>();
+        return dp(map, s, wordDict);
+    }
+    private List<String> dp(Map<String, List<String>> map, String s, List<String> wordDict){
+        if (map.containsKey(s)){
+            return map.get(s);
+        }
+        List<String> result = new ArrayList<>();
+        if  (wordDict.contains(s)){
+            result.add(s);
+        }
+        for (int i = 1; i < s.length(); i++){
+            String sub = s.substring(0, i);
+            if (wordDict.contains(sub)){
+                List<String> temp = dp(map, s.substring(i), wordDict);
+                if (temp.size() != 0){
+                    for (String str : temp){
+                        result.add(sub + " " + str);
                     }
                 }
             }
