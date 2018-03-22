@@ -51,3 +51,38 @@ public class Solution {
         return dummy.next;
     }
 }
+
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(-1);
+        ListNode head = dummy;
+        ListNode n1= l1;
+        ListNode n2 = l2;
+        int carry = 0;
+        int sum = 0;
+        while (n1 != null || n2 != null){
+            sum = carry;
+            sum += (n1 != null) ? n1.val : 0;
+            sum += (n2 != null) ? n2.val : 0;
+            carry = sum / 10;
+            ListNode node = new ListNode(sum % 10);
+            head.next = node;
+            head = node;
+            n1 = (n1 != null) ? n1.next : n1;
+            n2 = (n2 != null) ? n2.next : n2;
+        }
+        if (carry != 0){
+            head.next = new ListNode(carry);
+        }
+        return dummy.next;
+    }
+}
