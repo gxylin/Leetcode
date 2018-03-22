@@ -6,36 +6,32 @@ For example, the longest substring without repeating letters for "abcabcbb" is "
 
 For "bbbbb" the longest substring is "b", with the length of 1.
 
-public class Solution {
-    /**
-     * @param s: a string
-     * @return: an integer
-     */
+class Solution {
     public int lengthOfLongestSubstring(String s) {
-        if (s == null || s.length() == 0){
-            return 0;
-        }
         Map<Character, Integer> map = new HashMap<>();
-        int i = 0;
-        int j = 0;
-        int ans = Integer.MIN_VALUE;
         int count = 0;
-        while (j < s.length()){
-            char c = s.charAt(j);
-            map.put(c, map.getOrDefault(c, 0) + 1);
-            if (map.get(c) == 2){
+        int start = 0;
+        int end = 0;
+        int ans = 0;
+        while (end < s.length()){
+            char endCh = s.charAt(end);
+            map.put(endCh, map.getOrDefault(endCh, 0) + 1);
+            if (map.get(endCh) > 1){
                 count++;
             }
-            j++;
+            end++;
             while (count > 0){
-                char cstart = s.charAt(i);
-                map.put(cstart, map.get(cstart) - 1);
-                if (map.get(cstart) == 1){
+                
+                char startCh = s.charAt(start);
+                if (map.get(startCh) > 1){
                     count--;
                 }
-                i++;
+                map.put(startCh, map.get(startCh) - 1);
+                start++;
             }
-            ans = Math.max(ans, j - i);
+            if (end - start > ans){
+                ans = end - start;
+            }
         }
         return ans;
     }
