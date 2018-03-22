@@ -334,3 +334,4 @@ Solution for Leetcode/Lintcode
 |315   |86   |[Binary Search Tree Iterator](Java/86_BSTIterator.java)|Hard|Java|Lintcode|
 |316   |694  |[Number of Distinct Islands](Java/694_NumberIslands.java)|Medium|Java|Leetcode|
 |317   |127  |[Word Ladder](Java/127_WordLadder.java)|Medium|Java|Leetcode|
+|318   |240  |[Search 2D Matrix II](Java/240_SearchII.java)|Medium|Java|Leetcode|
