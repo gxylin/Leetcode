@@ -1,4 +1,5 @@
-Given a string s and a dictionary of words dict, determine if s can be break into a space-separated sequence of one or more dictionary words.
+Given a string s and a dictionary of words dict, determine if s can be break into a space-separated sequence of 
+one or more dictionary words.
 
 Have you met this question in a real interview? Yes
 Example
