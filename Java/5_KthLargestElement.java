@@ -61,3 +61,51 @@ class Solution {
         A[b] = temp;
     }
 };
+
+
+//with random number
+class Solution {
+    Random random = new Random();
+    public int findKthLargest(int[] nums, int k) {
+        int low = 0;
+        int high = nums.length - 1;
+        while (low <= high){
+            int index = partition(nums, low, high);
+            if (index == k - 1){
+                return nums[index];
+            }else if (index > k -1){
+                high = index - 1;
+            }else{
+                low = index + 1;
+            }
+        }
+        return -1;
+    }
+    private int partition(int[] nums, int low, int high){
+        int head = low;
+        int pivotIndex = low + random.nextInt(high - low + 1);
+        int pivot = nums[pivotIndex];
+        swap(nums, head, pivotIndex);
+        low++;
+        while (low <= high){
+            while (low <= high && nums[low] > pivot){
+                low++;
+            }
+            while (low <= high && nums[high] < pivot){
+                high--;
+            }
+            if (low <= high){
+                swap(nums, low, high);
+                low++;
+                high--;
+            }
+        }
+        swap(nums, head, high);
+        return high;
+    }
+    private void swap(int[] nums, int a, int b){
+        int temp = nums[a];
+        nums[a] = nums[b];
+        nums[b] = temp;
+    }
+}
