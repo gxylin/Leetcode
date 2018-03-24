@@ -8,7 +8,7 @@ You may assume k is always valid, 1 ≤ k ≤ number of unique elements.
 Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 
 Method 1:
-Time complexity: O(nlogn)
+Time complexity: O(nlogk)
 class Solution {
     class Freq{
         int val;
@@ -50,7 +50,7 @@ class Solution {
 }
 
 Method 2:
-Time complexity: O(nlogn)
+Time complexity: O(nlogk)
 class Solution {
     class Freq{
         int val;
@@ -79,6 +79,39 @@ class Solution {
         }
         for (int i = 0; i < k; i++){
             result.add(maxHeap.poll().val);
+        }
+        return result;
+    }
+}
+
+class Solution {
+    class Pair{
+        String str;
+        int freq;
+        public Pair(String str, int freq){
+            this.str = str;
+            this.freq = freq;
+        }
+    }
+    public List<String> topKFrequent(String[] words, int k) {
+        Queue<Pair> maxQueue = new PriorityQueue<Pair>(new Comparator<Pair>(){
+           public int compare(Pair a, Pair b){
+               if (a.freq != b.freq){
+                   return b.freq - a.freq;
+               }
+               return a.str.compareTo(b.str);
+           } 
+        });
+        List<String> result = new ArrayList<>();
+        Map<String, Integer> map = new HashMap<>();
+        for (String word : words){
+            map.put(word, map.getOrDefault(word, 0) + 1);
+        }
+        for (String s : map.keySet()){
+            maxQueue.offer(new Pair(s, map.get(s)));
+        }
+        for (int i = 0; i < k; i++){
+            result.add(maxQueue.poll().str);
         }
         return result;
     }
