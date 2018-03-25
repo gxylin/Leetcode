@@ -47,3 +47,30 @@ class Solution {
         return count;
     }
 }
+
+class Solution {
+    Map<Integer, Integer> map = new HashMap<>();
+    public int coinChange(int[] coins, int amount) {
+        if (amount == 0){
+            return 0;
+        }
+        if (amount < 0){
+            return -1;
+        }
+        if (map.containsKey(amount)){
+            return map.get(amount);
+        }
+        int ans = Integer.MAX_VALUE;
+        for (int coin : coins){
+            int curr = 0;
+            int next = coinChange(coins, amount - coin);
+            if (next >= 0){
+                curr = next + 1;
+                ans = Math.min(ans, curr);
+            }
+        }
+        int count = (ans == Integer.MAX_VALUE) ? -1 : ans;
+        map.put(amount, count);
+        return count;
+    }
+}
