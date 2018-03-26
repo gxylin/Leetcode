@@ -64,3 +64,44 @@ class Solution {
         return sb.toString();
     }
 }
+
+Method 2: PQ
+class Solution {
+    class Pair{
+        char c;
+        int freq;
+        public Pair(char c, int freq){
+            this.c = c;
+            this.freq = freq;
+        }
+    }
+    public String frequencySort(String s) {
+        StringBuilder sb = new StringBuilder();
+        if (s == null || s.length() == 0){
+            return "";
+        }
+        Map<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < s.length(); i++){
+            char c = s.charAt(i);
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        Queue<Pair> queue = new PriorityQueue<Pair>(new Comparator<Pair>(){
+            public int compare(Pair a, Pair b){
+                return b.freq - a.freq;
+            }
+        });
+        for (Character ch : map.keySet()){
+            queue.offer(new Pair(ch, map.get(ch)));
+        }
+        while (!queue.isEmpty()){
+            Pair p = queue.poll();
+            int count = p.freq;
+            char c = p.c;
+            while (count > 0){
+                sb.append(c);
+                count--;
+            }
+        }
+        return sb.toString();
+    }
+}
