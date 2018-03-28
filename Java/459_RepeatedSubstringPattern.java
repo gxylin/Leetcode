@@ -44,3 +44,23 @@ class Solution {
     	return false;
     }
 }
+
+class Solution {
+    public boolean repeatedSubstringPattern(String str) {
+        int len = str.length();
+    	for(int i=len/2 ; i >= 1 ; i--) {
+    		if(len%i == 0) {
+    			int m = len/i;
+                StringBuilder sb = new StringBuilder();
+                String subS = str.substring(0,i);
+                for (int j = 0; j < m; j++){
+                    sb.append(subS);
+                }
+    			if (sb.toString().equals(str)){
+                    return true;
+                }
+    		}
+    	}
+    	return false;
+    }
+}
