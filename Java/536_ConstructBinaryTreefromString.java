@@ -31,9 +31,14 @@ Note:
  * }
  */
            
- The string has 3 parts : root (left)(right). However, (left) and (right) might be empty.
+
+           
+Method: dfs - pre order traversal
+
+The string has 3 parts : root (left)(right). However, (left) and (right) might be empty.
 Actually, after we find the left part, we can break the loop and build right child using 
 the rest string directly if the rest is not empty.
+
 
 class Solution {
     public TreeNode str2tree(String s) {
