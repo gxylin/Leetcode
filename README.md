@@ -336,3 +336,4 @@ Solution for Leetcode/Lintcode
 |317   |127  |[Word Ladder](Java/127_WordLadder.java)|Medium|Java|Leetcode|
 |318   |240  |[Search 2D Matrix II](Java/240_SearchII.java)|Medium|Java|Leetcode|
 |319   |518  |[Coin Change 2](Java/518_CoinChange2.java)|Medium|Java|Leetcode|
+|320   |537  |[Complex Number Multiplication](Java/537_ComplexNumber.java)|Medium|Java|Leetcode|
