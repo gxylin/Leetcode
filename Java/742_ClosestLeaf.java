@@ -20,6 +20,8 @@ Output: 2 (or 3)
 
 Explanation: Either 2 or 3 is the nearest leaf node to the target of 1.
 
+Convert to undirected graph using dfs and use bfs to find the minimal path
+          
 Method 1:
 /**
  * Definition for a binary tree node.
