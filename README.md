@@ -340,3 +340,4 @@ Solution for Leetcode/Lintcode
 |321   |663  |[Equal Tree Partition Tree Sum](Java/663_EqualTreePartition.java)|Medium|Java|Leetcode|
 |322   |791  |[Custom Sort String](Java/791_CustomSortString.java)|Medium|Java|Leetcode|
 |323   |742  |[Closest Leaf in a Binary Tree](Java/742_ClosestLeaf.java)|Medium|Java|Leetcode|
+|324   |776  |[Split BST](Java/776_SplitBST.java)|Medium|Java|Leetcode|
