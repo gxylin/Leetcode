@@ -1,7 +1,8 @@
-mplement pow(x, n).
+implement pow(x, n).
 
  Notice
-You don't need to care about the precision of your answer, it's acceptable if the expected answer and your answer 's difference is smaller than 1e-3.
+You don't need to care about the precision of your answer, it's acceptable if the expected answer and your answer 's 
+ difference is smaller than 1e-3.
 
 Have you met this question in a real interview? Yes
 Example
