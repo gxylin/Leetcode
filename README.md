@@ -181,7 +181,7 @@ Solution for Leetcode/Lintcode
 |XXX   |XXX  | [distance between two nodes of BinarySearchTree](Java/distanceBetweenTwoNodesBST.java)|
 |173   |678  | [ValidParenthesisString.java](Java/678_ValidParenthesisString.java)|Medium|Java|Leetcode|
 |174   |627  | [Longest Palindrome.java](Java/627_LongestPalindrome.java)|Easy|Java|Lintcode|
-|175   |726  | [Check Full Binary Tree.java](Java/726_CheckFullBinaryTree.java)|Medium|Java|Lintcode|
+|175   |726  | [Check Valid Full Binary Tree.java](Java/726_CheckFullBinaryTree.java)|Medium|Java|Lintcode|
 |176   |728  | [Three Distinct Factors.java](Java/728_ThreeDistinctFactors.java)|Medium|Java|Lintcode|
 |177   |772  | [Group Anagrams.java](Java/772_GroupAnagrams.java)|Medium|Java|Lintcode|
 |178   |735  | [Maximum From the Right.java](Java/735_maximumFromRight.java)|Medium|Java|Lintcode|
