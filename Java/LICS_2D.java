@@ -13,7 +13,7 @@ public class Solution{
       return 0;
     }
     n = A.length;
-    m = A[0].elngth;
+    m = A[0].length;
     int ans = 0;
     dp = new int[n][m];
     flag = new int[n][m];
