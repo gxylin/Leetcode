@@ -23,7 +23,7 @@ class Solution {
         while (l < r){
             int left = height[l];
             int right = height[r];
-            if (left <= right){
+            if (left < right){
                 while (left > height[++l]){
                     ans += left - height[l];
                 }
