@@ -10,6 +10,7 @@ Given array A = [2,3,1,1,4]
 
 The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
 
+Method 1: like Coin Change O(n^2)
 public class Solution {
     /*
      * @param A: A list of integers
@@ -32,5 +33,26 @@ public class Solution {
             }
         }
         return minSteps[A.length - 1];
+    }
+}
+
+Method 2: Like BFS O(n)
+http://www.allenlipeng47.com/blog/index.php/2016/09/12/jump-game-ii/
+class Solution {
+    public int jump(int[] nums) {
+        int level = 0;
+        int nextMaxIndex = 0;
+        int currMaxIndex = 0;
+        for (int i = 0; i < nums.length; i++){
+            if (currMaxIndex >= nums.length - 1){
+                return level;
+            }
+            nextMaxIndex = Math.max(nextMaxIndex, i + nums[i]);
+            if (i == currMaxIndex){
+                level++;
+                currMaxIndex = nextMaxIndex;
+            } 
+        }
+        return 0;
     }
 }
