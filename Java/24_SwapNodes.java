@@ -13,6 +13,8 @@ Your algorithm should use only constant space. You may not modify the values in 
  *     ListNode(int x) { val = x; }
  * }
  */
+    
+ Method: use two nodes as a pair, so define three pointers: prev, cur, next
 class Solution {
     public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null){
