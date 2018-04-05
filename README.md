@@ -344,3 +344,4 @@ Solution for Leetcode/Lintcode
 |325   |8    |[String to Integer (atoi)](Java/8_StringtoInteger.java)|Medium|Java|Leetcode|
 |326   |11   |[Container With Most Water](Java/11_ContainerWater.java)|Medium|Java|Leetcode|
 |327   |35   |[Search Insert Position](Java/35_Search.java)|Easy|Java|Leetcode|
+|328   |24   |[Swap Nodes in Pairs](Java/24_SwapNodes.java)|Medium|Java|Leetcode|
