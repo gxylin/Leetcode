@@ -346,3 +346,4 @@ Solution for Leetcode/Lintcode
 |327   |35   |[Search Insert Position](Java/35_Search.java)|Easy|Java|Leetcode|
 |328   |24   |[Swap Nodes in Pairs](Java/24_SwapNodes.java)|Medium|Java|Leetcode|
 |329   |43   |[Multiply Strings](Java/43_MultiplyStrings.java)|Medium|Java|Leetcode|
+|330   |18   |[4Sum](Java/18_4Sum.java)|Medium|Java|Leetcode|
