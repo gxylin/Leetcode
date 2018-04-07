@@ -348,3 +348,4 @@ Solution for Leetcode/Lintcode
 |329   |43   |[Multiply Strings](Java/43_MultiplyStrings.java)|Medium|Java|Leetcode|
 |330   |18   |[4Sum](Java/18_4Sum.java)|Medium|Java|Leetcode|
 |331   |30   |[Substring with Concatenation of All Words](Java/30_Substring.java)|Hard|Java|Leetcode|
+|332   |59   |[Spiral Matrix II](Java/59_SpiralMatrixII.java)|Medium|Java|Leetcode|
