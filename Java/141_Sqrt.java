@@ -34,7 +34,7 @@ public class Solution {
                 end = mid;
             }
         }
-        if (end * end <= x){
+        if (end * end == x){
             return (int) end;
         }
         return (int) start;
