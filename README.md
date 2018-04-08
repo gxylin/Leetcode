@@ -351,3 +351,4 @@ Solution for Leetcode/Lintcode
 |332   |59   |[Spiral Matrix II](Java/59_SpiralMatrixII.java)|Medium|Java|Leetcode|
 |333   |60   |[Permutation Sequence](Java/60_Permutation.java)|Medium|Java|Leetcode|
 |334   |66   |[Plus One](Java/66_PlusOne.java)|Easy|Java|Leetcode|
+|335   |100  |[Same Tree](Java/100_SameTree.java)|Easy|Java|Leetcode|
