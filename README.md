@@ -350,4 +350,4 @@ Solution for Leetcode/Lintcode
 |331   |30   |[Substring with Concatenation of All Words](Java/30_Substring.java)|Hard|Java|Leetcode|
 |332   |59   |[Spiral Matrix II](Java/59_SpiralMatrixII.java)|Medium|Java|Leetcode|
 |333   |60   |[Permutation Sequence](Java/60_Permutation.java)|Medium|Java|Leetcode|
-|334   |66   |Plus One](Java/66_PlusOne.java)|Easy|Java|Leetcode|
+|334   |66   |[Plus One](Java/66_PlusOne.java)|Easy|Java|Leetcode|
