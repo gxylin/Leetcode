@@ -33,3 +33,22 @@ public class Solution {
         return ans;
     }
 }
+
+class Solution {
+    public String addBinary(String a, String b) {
+        StringBuilder sb = new StringBuilder();
+        int carry = 0;
+        int sum = 0;
+        for (int i = a.length() - 1, j = b.length() - 1; i >=0 || j>= 0; i--, j--){
+            sum = carry;
+            sum += i >= 0 ? a.charAt(i) - '0' : 0;
+            sum += j >= 0 ? b.charAt(j) - '0' : 0;
+            carry = sum / 2;
+            sb.insert(0, sum %2);
+        }
+        if (carry != 0){
+            sb.insert(0, carry);
+        }
+        return sb.toString();
+    }
+}
