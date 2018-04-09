@@ -360,3 +360,4 @@ Solution for Leetcode/Lintcode
 |341   |101  |[Symmetric Tree](Java/101_Symmetric.java)|Easy|Java|Leetcode|
 |342   |107  |[Binary Tree Level Order Traversal II](Java/107_binaryTree.java)|Easy|Java|Leetcode|
 |343   |125  |[Valid Palindrome](Java/125_ValidPalindrome.java)|Easy|Java|Leetcode|
+|344   |96   |[Unique Binary Search Trees (Catalan Number)](Java/96_Unique.java)|Medium|Java|Leetcode|
