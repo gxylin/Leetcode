@@ -34,3 +34,32 @@ class Solution {
         return dp[m][n];
     }
 }
+
+Rolling array:
+time complexity: O(m*n)
+space complexity: O(n)
+class Solution {
+    public boolean isInterleave(String s1, String s2, String s3) {
+        if (s3.length() != s1.length() + s2.length()){
+            return false;
+        }
+        int m = s1.length();
+        int n = s2.length();
+        boolean[][] dp = new boolean[2][n+1];
+        for (int i = 0; i <= m; i++){
+            for (int j = 0; j <= n; j++){
+                if (i == 0 && j == 0){
+                    dp[i][j] = true;
+                }else if (j==0){
+                    dp[i%2][j] = dp[(i-1)%2][0] &&s1.charAt(i-1) == s3.charAt(i-1);
+                }else if (i == 0){
+                    dp[i%2][j] = dp[i%2][j-1] && s2.charAt(j-1) == s3.charAt(j-1);
+                }else{
+                   dp[i%2][j] = dp[(i-1)%2][j] && s1.charAt(i-1) == s3.charAt(i+j-1) || dp[i%2][j-1] && s2.charAt(j-1) == s3.charAt(i+j-1); 
+                }
+                
+            }
+        }
+        return dp[m%2][n];
+    }
+}
