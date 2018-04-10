@@ -364,3 +364,4 @@ Solution for Leetcode/Lintcode
 |345   |95   |[Unique Binary Search Trees II](Java/95_Unique.java)|Medium|Java|Leetcode|
 |346   |87   |[Scramble String](Java/87_ScrambleString.java)|Hard|Java|Leetcode|
 |347   |97   |[Interleaving String](Java/97_InterleavingString.java)|Hard|Java|Leetcode|
+|348   |118  |[Pascal's Triangle](Java/118_Pascal_Triangle.java)|Easy|Java|Leetcode|
