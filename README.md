@@ -366,3 +366,4 @@ Solution for Leetcode/Lintcode
 |347   |97   |[Interleaving String](Java/97_InterleavingString.java)|Hard|Java|Leetcode|
 |348   |118  |[Pascal's Triangle](Java/118_Pascal_Triangle.java)|Easy|Java|Leetcode|
 |349   |99   |[Recover Binary Search Tree](Java/99_Recover.java)|Hard|Java|Leetcode|
+|350   |93   |[Restore IP Addresses](Java/93_Restore.java)|Medium|Java|Leetcode|
