@@ -41,14 +41,15 @@ public class Solution {
         if (root == null){
             return;
         }
-        while (root.left != null && root.right != null){
-            TreeLinkNode leftMostNode = root.left;  
-            while (root != null){
-                root.left.next = root.right;
-                root.right.next = root.next == null ? null : root.next.left;
-                root = root.next;
+        TreeLinkNode head = root;
+        while (head.left != null && head.right != null){
+            TreeLinkNode cur = head;  
+            while (cur != null){
+                cur.left.next = cur.right;
+                cur.right.next = cur.next == null ? null : cur.next.left;
+                cur = cur.next;
             }
-            root = leftMostNode;
+            head = head.left;
         }
     }
 }
