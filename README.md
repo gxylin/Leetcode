@@ -370,3 +370,4 @@ Solution for Leetcode/Lintcode
 |351   |116  |[Populating Next Right Pointers in Each Node](Java/116_Populating.java)|Medium|Java|Leetcode|
 |352   |117  |[Populating Next Right Pointers in Each Node II](Java/117_Populating.java)|Medium|Java|Leetcode|
 |353   |147  |[Insertion Sort List](Java/147_InsertionList.java)|Medium|Java|Leetcode|
+|354   |153  |[Find Minimum in Rotated Sorted Array](Java/153_FindMinimum.java)|Medium|Java|Leetcode|
