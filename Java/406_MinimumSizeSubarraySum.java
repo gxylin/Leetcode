@@ -10,34 +10,24 @@ If you have figured out the O(n) solution, try coding another solution of which 
 
 Method 1: two points
 time complexity: O(n)
-public class Solution {
-    /*
-     * @param nums: an array of integers
-     * @param s: An integer
-     * @return: an integer representing the minimum size of subarray
-     */
-    public int minimumSize(int[] nums, int s) {
-       if (nums == null || nums.length == 0 ){
-           return -1;
-       }
-       int start = 0;
-       int end = 0;
-       int ans = Integer.MAX_VALUE;
-       int sum = 0;
-       while (end < nums.length){
-           while (sum < s && end < nums.length){
-               sum += nums[end];
-               end++;
-           }
-           while (sum >= s && start < end){
-               ans = Math.min(ans, end - start);
-               sum -= nums[start];
-               start++;
-           }
-       }
-       if (ans == Integer.MAX_VALUE){
-           return -1;
-       }
-       return ans;
+class Solution {
+    public int minSubArrayLen(int s, int[] nums) {
+        int ans = Integer.MAX_VALUE;
+        int start = 0;
+        int end = 0;
+        int sum = 0;
+        while (end < nums.length){
+            sum += nums[end];
+            end++;
+            while (sum >= s && start < end){
+                ans = Math.min(ans, end - start);
+                sum -= nums[start];
+                start++;
+            }
+        }
+        if (ans == Integer.MAX_VALUE){
+            return 0;
+        }
+        return ans;
     }
 }
