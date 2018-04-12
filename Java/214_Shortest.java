@@ -7,6 +7,9 @@ Given "aacecaaa", return "aaacecaaa".
 
 Given "abcd", return "dcbabcd"
 
+https://leetcode.com/articles/shortest-palindrome/
+Time complexity: O(n^2)
+Space complexity: O(n)
 class Solution {
     public String shortestPalindrome(String s) {
         StringBuilder sb = new StringBuilder();
