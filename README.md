@@ -373,3 +373,4 @@ Solution for Leetcode/Lintcode
 |354   |153  |[Find Minimum in Rotated Sorted Array](Java/153_FindMinimum.java)|Medium|Java|Leetcode|
 |355   |154  |[Find Minimum in Rotated Sorted Array II](Java/154_FindMinimum.java)|Hard|Java|Leetcode|
 |356   |231  |[Power of Two](Java/231_PowerTwo.java)|Easy|Java|Leetcode|
+|357   |535  |[Encode and Decode TinyURL](Java/535_url.java)|Medium|Java|Leetcode|
