@@ -377,3 +377,4 @@ Solution for Leetcode/Lintcode
 |358   |211  |[Add and Search Word Trie](Java/211_Add.java)|Medium|Java|Leetcode|
 |359   |187  |[Repeated DNA Sequences](Java/187_Repeated.java)|Medium|Java|Leetcode|
 |360   |216  |[Combination Sum III](Java/216_Combination.java)|Medium|Java|Leetcode|
+|361   |214  |[Shortest Palindrome](Java/214_Shortest.java)|Hard|Java|Leetcode|
