@@ -375,3 +375,4 @@ Solution for Leetcode/Lintcode
 |356   |231  |[Power of Two](Java/231_PowerTwo.java)|Easy|Java|Leetcode|
 |357   |535  |[Encode and Decode TinyURL](Java/535_url.java)|Medium|Java|Leetcode|
 |358   |211  |[Add and Search Word Trie](Java/211_Add.java)|Medium|Java|Leetcode|
+|359   |187  |[Repeated DNA Sequences](Java/187_Repeated.java)|Medium|Java|Leetcode|
