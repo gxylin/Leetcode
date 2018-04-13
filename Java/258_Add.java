@@ -29,4 +29,5 @@ class Solution {
     }
 }
 
+abc%9 = a * (100 % 9) + b * (10 %9) + c % 9 = a + b + c
 https://leetcode.com/problems/add-digits/discuss/68588/1-line-Java-Solution
