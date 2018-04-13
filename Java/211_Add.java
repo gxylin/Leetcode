@@ -24,7 +24,7 @@ class WordDictionary {
         TrieNode[] links;
         int R = 26;
         boolean isEnd;
-        TrieNode() {
+        public TrieNode() {
             links = new TrieNode[R];
             isEnd = false;
         }
