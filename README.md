@@ -380,3 +380,4 @@ Solution for Leetcode/Lintcode
 |361   |214  |[Shortest Palindrome](Java/214_Shortest.java)|Hard|Java|Leetcode|
 |362   |219  |[Contains Duplicate II](Java/219_Contains.java)|Easy|Java|Leetcode|
 |363   |220  |[Contains Duplicate III TreeSet TreeMap](Java/220_Contains.java)|Medium|Java|Leetcode|
+|364   |226  |[Invert Binary Tree](Java/226_Invert.java)|Easy|Java|Leetcode|
