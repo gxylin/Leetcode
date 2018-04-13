@@ -32,9 +32,9 @@ class Solution {
         }
         int leftDepth = getDepth(root.left);
         int rightDepth = getDepth(root.right);
-        if (leftDepth == rightDepth){
+        if (leftDepth == rightDepth){ //left subtree is full
             return (1 << leftDepth) - 1 + countNodes(root.right) + 1;
-        }else{
+        }else{//right subtree is full
             return (1 << rightDepth) - 1 + countNodes(root.left) + 1;
         }
         
