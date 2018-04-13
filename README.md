@@ -382,3 +382,4 @@ Solution for Leetcode/Lintcode
 |363   |220  |[Contains Duplicate III TreeSet TreeMap](Java/220_Contains.java)|Medium|Java|Leetcode|
 |364   |226  |[Invert Binary Tree](Java/226_Invert.java)|Easy|Java|Leetcode|
 |365   |258  |[Add Digits](Java/258_Add.java)|Easy|Java|Leetcode|
+|366   |222  |[Count Complete Tree Nodes](Java/222_count.java)|Medium|Java|Leetcode|
