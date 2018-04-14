@@ -388,3 +388,4 @@ Solution for Leetcode/Lintcode
 |369   |224  |[Basic Calculator](Java/224_Basic.java)|Hard|Java|Leetcode|
 |370   |225  |[Basic Calculator II](Java/227_Basic.java)|Medium|Java|Leetcode|
 |371   |246  |[Strobogrammatic Numbe](Java/246_Strobogrammatic.java)|Easy|Java|Leetcode|
+|372   |247  |[Strobogrammatic Numbe II](Java/247_Strobogrammatic.java)|Medium|Java|Leetcode|
