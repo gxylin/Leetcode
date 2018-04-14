@@ -387,3 +387,4 @@ Solution for Leetcode/Lintcode
 |368   |228  |[Summary Ranges](Java/228_Summary.java)|Medium|Java|Leetcode|
 |369   |224  |[Basic Calculator](Java/224_Basic.java)|Hard|Java|Leetcode|
 |370   |225  |[Basic Calculator II](Java/227_Basic.java)|Medium|Java|Leetcode|
+|371   |246  |[](Java/246_Strobogrammatic.java)|Easy|Java|Leetcode|
