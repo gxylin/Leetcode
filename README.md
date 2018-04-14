@@ -385,3 +385,4 @@ Solution for Leetcode/Lintcode
 |366   |222  |[Count Complete Tree Nodes](Java/222_count.java)|Medium|Java|Leetcode|
 |367   |218  |[Skyline](Java/131_Skyline.java)|Hard|Java|Leetcode|
 |368   |228  |[Summary Ranges](Java/228_Summary.java)|Medium|Java|Leetcode|
+|369   |224  |[Basic Calculator](Jaa/224_Basic.java)|Hard|Java|Leetcode|
