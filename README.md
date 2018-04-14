@@ -386,3 +386,4 @@ Solution for Leetcode/Lintcode
 |367   |218  |[Skyline](Java/131_Skyline.java)|Hard|Java|Leetcode|
 |368   |228  |[Summary Ranges](Java/228_Summary.java)|Medium|Java|Leetcode|
 |369   |224  |[Basic Calculator](Java/224_Basic.java)|Hard|Java|Leetcode|
+|370   |225  |[Basic Calculator II](Java/227_Basic.java)|Medium|Java|Leetcode|
