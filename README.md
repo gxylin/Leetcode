@@ -394,3 +394,4 @@ Solution for Leetcode/Lintcode
 |375   |254  |[Factor Combinations](Java/254_Factor.java)|Medium|Java|Leetcode|
 |376   |255  |[Verify preorder in binary search tree montonic stack](Java/255_Verify.java)|Medium|Java|Leetcode|
 |377   |256  |[Paint House](Java/256_paint.java)|Easy|Java|Leetcode|
+|378   |274  |[H-Index](Java/274_H-Index.java)|Medium|Java|Leetcode|
