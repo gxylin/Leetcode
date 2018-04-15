@@ -389,4 +389,5 @@ Solution for Leetcode/Lintcode
 |370   |225  |[Basic Calculator II](Java/227_Basic.java)|Medium|Java|Leetcode|
 |371   |246  |[Strobogrammatic Numbe](Java/246_Strobogrammatic.java)|Easy|Java|Leetcode|
 |372   |247  |[Strobogrammatic Numbe II](Java/247_Strobogrammatic.java)|Medium|Java|Leetcode|
-|373   |249  |[Group Shifted Strings](Java/249_Group.java)|Medium|Java|
+|373   |249  |[Group Shifted Strings](Java/249_Group.java)|Medium|Java|Leetcode|
+|374   |250  |[Count Univalue Subtrees](Java/250_Count.java)|Medium|Java|Leetcode|
