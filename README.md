@@ -393,3 +393,4 @@ Solution for Leetcode/Lintcode
 |374   |250  |[Count Univalue Subtrees](Java/250_Count.java)|Medium|Java|Leetcode|
 |375   |254  |[Factor Combinations](Java/254_Factor.java)|Medium|Java|Leetcode|
 |376   |255  |[Verify preorder in binary search tree montonic stack](Java/255_Verify.java)|Medium|Java|Leetcode|
+|377   |256  |[Paint House](Java/256_paint.java)|Easy|Java|Leetcode|
