@@ -21,7 +21,7 @@ class Solution {
         List<List<String>> result = new ArrayList<>();
         Map<String, List<String>> map = new HashMap<>();
         for (String str : strings){
-            int offset = str.charAt(0) - 'a';
+           int offset = (int) (str.charAt(0) - 'a');
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < str.length(); i++){
                 char c = (char) (str.charAt(i) - offset);
