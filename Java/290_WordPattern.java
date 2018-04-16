@@ -56,6 +56,8 @@ class Solution {
             return false;
         }
         for (Integer i = 0; i < pattern.length(); i++){ //notice here we must use Integer instead of int
+        // i being an Integer object, which allows to compare with just != because 
+        // there’s no autoboxing-same-value-to-different-objects-problem anymore.
             char c = pattern.charAt(i);
             if (map.put(c, i) != map.put(strArray[i], i)){
                 return false;
