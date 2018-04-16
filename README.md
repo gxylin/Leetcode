@@ -399,3 +399,4 @@ Solution for Leetcode/Lintcode
 |380   |241  |[Different Ways to Add Parentheses Divide and Conquer](Java/241_Different.java)|Medium|Java|Leetcode|
 |381   |290  |[Word Pattern](Java/290_WordPattern.java)|Easy|Java|Leetcode|
 |382   |284  |[Peeking Iterator](Java/284_Peeking.java)|Medium|Java|Leetcode|
+|383   |292  |[Nim Game](Java/292_Nim.java)|Easy|Java|Leetcode|
