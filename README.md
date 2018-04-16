@@ -396,3 +396,4 @@ Solution for Leetcode/Lintcode
 |377   |256  |[Paint House](Java/256_paint.java)|Easy|Java|Leetcode|
 |378   |274  |[H-Index](Java/274_H-Index.java)|Medium|Java|Leetcode|
 |379   |275  |[H-Index II](Java/275_Hindex.java)|Medium|Java|Leetcode|
+|380   |241  |[Different Ways to Add Parentheses Divide and Conquer](Java/241_Different.java)|Medium|Java|Leetcode|
