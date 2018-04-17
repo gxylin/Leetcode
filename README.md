@@ -402,3 +402,4 @@ Solution for Leetcode/Lintcode
 |383   |292  |[Nim Game](Java/292_Nim.java)|Easy|Java|Leetcode|
 |384   |299  |[Bulls and Cows](Java/299_Bulls.java)|Medium|Java|Leetcode|
 |385   |282  |[Expression Add Operators Backtracking](Java/282_Expression.java)|Hard|Java|Leetcode|
+|386   |318  |[Maximum Product of Word Lengths bit compare two words](Java/318_Maximum.java)|Medium|Java|Leetcode|
