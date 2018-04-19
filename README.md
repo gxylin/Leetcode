@@ -407,3 +407,4 @@ Solution for Leetcode/Lintcode
 |388   |304  |[Range Sum Query 2D 2D preSum Array](Java/304_Range.java)|Medium|Java|Leetcode|
 |389   |310  |[Minimum Height Trees topological sort](Java/310_Minimum.java)|Medium|Java|Leetcode|
 |390   |367  |[Valid Perfect Square](Java/367_Valid.java)|Easy|Java|Leetcode|
+|391   |331  |[Verify Preorder Serialization of a Binary Tree](Java/331_Verify.java)|Medium|Java|Leetcode|
