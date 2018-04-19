@@ -406,3 +406,4 @@ Solution for Leetcode/Lintcode
 |387   |303  |[Range Sum Query - Immutable preSum Array](Java/303_Range.java)|Easy|Java|Leetcode|
 |388   |304  |[Range Sum Query 2D 2D preSum Array](Java/304_Range.java)|Medium|Java|Leetcode|
 |389   |310  |[Minimum Height Trees topological sort](Java/310_Minimum.java)|Medium|Java|Leetcode|
+|390   |367  |[Valid Perfect Square](Java/367_Valid.java)|Easy|Java|Leetcode|
