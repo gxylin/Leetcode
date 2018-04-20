@@ -84,3 +84,31 @@ class Solution {
     }
 }
 
+Method 3:
+class Solution {
+    public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
+        List<int[]> result = new ArrayList<>();
+        if (nums1.length == 0 || nums2.length == 0 || k == 0){
+            return result;
+        }
+        Queue<int[]> minIndexHeap = new PriorityQueue<int[]>(new Comparator<int[]>(){
+            public int compare(int[] a, int[] b){
+                return nums1[a[0]] + nums2[a[1]] - (nums1[b[0]] + nums2[b[1]]);
+            }
+        });
+        minIndexHeap.offer(new int[]{0, 0});
+        while (!minIndexHeap.isEmpty() && k > 0){
+            int[] curIndex = minIndexHeap.poll();
+            result.add(new  int[]{nums1[curIndex[0]], nums2[curIndex[1]]});
+            if (curIndex[1] != nums2.length - 1){
+                minIndexHeap.offer(new int[]{curIndex[0], curIndex[1] + 1});
+            }
+            if (curIndex[0] != nums1.length - 1 && curIndex[1] == 0){
+                minIndexHeap.offer(new int[]{curIndex[0] + 1, 0});
+            }
+            k--;
+        }
+        return result;
+    }
+}
+
