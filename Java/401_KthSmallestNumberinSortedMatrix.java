@@ -11,7 +11,8 @@ Given k = 4 and a matrix:
 ]
 return 5
 
-
+Time complexity: O(2*k*logk)
+Space complexity: O(m*n)
     
 public class Solution {
     /*
