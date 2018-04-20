@@ -28,4 +28,51 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: Binary tree
+O(nLogn)
+class Solution {
+    class TreeNode {
+        int val;
+        int count = 1;
+        TreeNode left;
+        TreeNode right;
+        public TreeNode (int val){
+            this.val = val;
+        }
+    }
+    public List<Integer> countSmaller(int[] nums) {
+        List<Integer> result = new ArrayList<>();
+        if (nums == null || nums.length == 0){
+            return result;
+        }
+        int end = nums.length - 1;
+        TreeNode root = new TreeNode(nums[end]);
+        result.add(0);
+        for (int i = end - 1; i >= 0; i--){
+            int count = insertNode(root, nums[i]);
+            result.add(0, count);
+        }
+        return result;
+    }
+    private int insertNode(TreeNode root, int val){
+        int thisCount = 0;
+		while(true) {
+			if(val <= root.val) {
+				root.count++;
+				if(root.left == null) {
+					root.left = new TreeNode(val); break;
+				} else {
+					root = root.left;
+				}
+			} else {
+				thisCount += root.count;
+				if(root.right == null) {
+					root.right = new TreeNode(val); break;
+				} else {
+					root = root.right;
+				}
+			}
+		}
+		return thisCount;
+    }
+}
