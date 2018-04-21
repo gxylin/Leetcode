@@ -413,3 +413,4 @@ Solution for Leetcode/Lintcode
 |394   |332  |[Reconstruct Itinerary Backtracking](java/332_Reconstruct.java)|Medium|Java|Leetcode|
 |395   |373  |[Find K Pairs with Smallest Sums](Java/373_Find.java)|Medium|Java|Leetcode|
 |396   |345  |[Reverse Vowels of a String](Java/345_Reverse.java)|Easy|Java|Leetcode|
+|397   |321  |[Create Maximum Number](Java/321_Create.java)|Hard|Java|Leetcode|
