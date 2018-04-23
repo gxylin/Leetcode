@@ -415,3 +415,4 @@ Solution for Leetcode/Lintcode
 |396   |345  |[Reverse Vowels of a String](Java/345_Reverse.java)|Easy|Java|Leetcode|
 |397   |321  |[Create Maximum Number](Java/321_Create.java)|Hard|Java|Leetcode|
 |398   |32   |[Longest Valid Parentheses](Java/32_Longest.java)|Hard|Java|Leetcode|
+|399   |581  |[Shortest Unsorted Continuous Subarray two pointers](Java/581_Shortest.java)|Easy|Java|Leetcode|
