@@ -417,3 +417,4 @@ Solution for Leetcode/Lintcode
 |398   |32   |[Longest Valid Parentheses two pointers](Java/32_Longest.java)|Hard|Java|Leetcode|
 |399   |581  |[Shortest Unsorted Continuous Subarray two pointers](Java/581_Shortest.java)|Easy|Java|Leetcode|
 |400   |494  |[Target Sum Add Operator DP](Java/494_Target.java)|Medium|Java|Leetcode|
+|401   |543  |[Diameter of Binary Tree](Java/543_Diameter.java)|Easy|Java|Leetcode|
