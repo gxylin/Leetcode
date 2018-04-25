@@ -1,4 +1,5 @@
-Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
+Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values 
+along the path equals the given sum.
 
 For example:
 Given the below binary tree and sum = 22,
@@ -28,19 +29,6 @@ class Solution {
         if (root.left == null && root.right == null && root.val == sum){
             return true;
         }
-        boolean left, right;
-        if (root.left != null){
-            left = hasPathSum(root.left, sum - root.val);
-            if (left == true){
-                return true;
-            }
-        }
-        if (root.right != null){
-            right = hasPathSum(root.right, sum - root.val);
-            if (right == true){
-                return true;
-            }
-        }
-        return false;
+       return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
     }
 }
