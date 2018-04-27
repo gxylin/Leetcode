@@ -423,3 +423,4 @@ Solution for Leetcode/Lintcode
 |404   |448  |[Find All Numbers Disappeared in an Array](Java/448_Find.java)|Easy|Java|Leetcode|
 |405   |416  |[Partition Equal Subset Sum Backpack DP](Java/416_Partition.java)|Medium|Java|Leetcode|
 |406   |461  |[Hamming Distance bit](Java/461_Hamming.java)|Easy|Java|Leetcode|
+|407   |647  |[Palindromic Substrings](Java/647_Palindromic.java)|Medium|Java|Leetcode|
