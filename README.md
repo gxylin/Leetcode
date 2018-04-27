@@ -422,3 +422,4 @@ Solution for Leetcode/Lintcode
 |403   |437  |[Path Sum III](Java/437_Path.java)|Easy|Java|Leetcode|
 |404   |448  |[Find All Numbers Disappeared in an Array](Java/448_Find.java)|Easy|Java|Leetcode|
 |405   |416  |[Partition Equal Subset Sum Backpack DP](Java/416_Partition.java)|Medium|Java|Leetcode|
+|406   |461  |[Hamming Distance bit](Java/461_Hamming.java)|Easy|Java|Leetcode|
