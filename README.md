@@ -424,4 +424,4 @@ Solution for Leetcode/Lintcode
 |405   |416  |[Partition Equal Subset Sum Backpack DP](Java/416_Partition.java)|Medium|Java|Leetcode|
 |406   |461  |[Hamming Distance bit](Java/461_Hamming.java)|Easy|Java|Leetcode|
 |407   |647  |[Palindromic Substrings](Java/647_Palindromic.java)|Medium|Java|Leetcode|
-|408   |301  |[Remove Invalid Parentheses](Java/301_Remove.java)|Hard|Java|Leetcode|
+|408   |301  |[Remove Invalid Parentheses BFS](Java/301_Remove.java)|Hard|Java|Leetcode|
