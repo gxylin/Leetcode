@@ -15,6 +15,11 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/disc
 
 buy[i]: Max profit till index i. The series of transaction is ending with a buy.
 sell[i]: Max profit till index i. The series of transaction is ending with a sell.
+Till index i, the buy / sell action must happen and must be the last action. It may not happen at index i. 
+    It may happen at i - 1, i - 2, ... 0.
+In the end n - 1, return sell[n - 1]. Apparently we cannot finally end up with a buy. 
+    In that case, we would rather take a rest at n - 1.
+For special case no transaction at all, classify it as sell[i], so that in the end, we can still return sell[n - 1]. 
 
 
 Method 1: DP
