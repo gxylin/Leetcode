@@ -426,3 +426,4 @@ Solution for Leetcode/Lintcode
 |407   |647  |[Palindromic Substrings](Java/647_Palindromic.java)|Medium|Java|Leetcode|
 |408   |301  |[Remove Invalid Parentheses BFS](Java/301_Remove.java)|Hard|Java|Leetcode|
 |409   |338  |[Counting Bits](Java/338_Counting.java)|Medium|Java|Leetcode|
+|410   |406  |[Queue Reconstruction by Height](Java/406_Queue.java)|Medium|Java|Leetcode|
