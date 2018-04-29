@@ -433,4 +433,4 @@ Solution for Leetcode/Lintcode
 |414   |190  |[Reverse Bits](Java/190_Reverse.java)|Easy|Java|Leetcode|
 |415   |326  |[Power of Three](Java/326_Power.java)|Easy|Java|Leetcode|
 |416   |137  |[Single Number II](Java/137_Single.java)|Medium|Java|Leetcode|
-|417   |260  |[Single Number III](Java/260. Single.java)|Medium|Java|Leetcode|
+|417   |260  |[Single Number III](Java/260_Single.java)|Medium|Java|Leetcode|
