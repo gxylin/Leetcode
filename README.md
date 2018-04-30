@@ -436,3 +436,4 @@ Solution for Leetcode/Lintcode
 |417   |260  |[Single Number III](Java/260_Single.java)|Medium|Java|Leetcode|
 |418   |342  |[Power of Four](Java/342_Power.java)|Easy|Java|Leetcode|
 |419   |343  |[Integer break](Java/343_Integer.java)|Medium|Java|Leetcode|
+|420   |374  |[Guess Number](Java/374_Guess.java)|Easy|Java|Leetcode|
