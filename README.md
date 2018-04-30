@@ -434,3 +434,4 @@ Solution for Leetcode/Lintcode
 |415   |326  |[Power of Three](Java/326_Power.java)|Easy|Java|Leetcode|
 |416   |137  |[Single Number II](Java/137_Single.java)|Medium|Java|Leetcode|
 |417   |260  |[Single Number III](Java/260_Single.java)|Medium|Java|Leetcode|
+|418   |342  |[Power of Four](Java/342_Power.java)|Easy|Java|Leetcode|
