@@ -437,3 +437,4 @@ Solution for Leetcode/Lintcode
 |418   |342  |[Power of Four](Java/342_Power.java)|Easy|Java|Leetcode|
 |419   |343  |[Integer break](Java/343_Integer.java)|Medium|Java|Leetcode|
 |420   |374  |[Guess Number](Java/374_Guess.java)|Easy|Java|Leetcode|
+|421   |377  |[Combination Sum IV](Java/377_Combination.java)|Medium|Java|Leetcode|
