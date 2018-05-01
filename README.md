@@ -439,3 +439,4 @@ Solution for Leetcode/Lintcode
 |420   |374  |[Guess Number](Java/374_Guess.java)|Easy|Java|Leetcode|
 |421   |377  |[Combination Sum IV](Java/377_Combination.java)|Medium|Java|Leetcode|
 |422   |389  |[Find the Difference](Java/389_Find.java)|Easy|Java|Leetcode|
+|423   |376  |[Wiggle Subsequence](Java/376_Wiggle.java)|Medium|Java|Leetcode|
