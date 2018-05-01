@@ -47,7 +47,7 @@ class Solution {
     }
 }
 
-Method 2: recursion + memorization
+Method 2: recursion + memorization (this is also kind of DP -- top down)
 class Solution {
     Map<Integer, Integer> map = new HashMap<>();
     public int combinationSum4(int[] nums, int target) {
@@ -65,5 +65,28 @@ class Solution {
         }
         map.put(target, ans);
         return ans;
+    }
+}
+
+https://leetcode.com/problems/combination-sum-iv/discuss/85036/1ms-Java-DP-Solution-with-Detailed-Explanation
+
+Now for a DP solution, we just need to figure out a way to store the intermediate results, to avoid the same 
+combination sum being calculated many times. We can use an array to save those results, and check if there is 
+already a result before calculation. We can fill the array with -1 to indicate that 
+the result hasn't been calculated yet. 0 is not a good choice because it means there is no combination sum for the target.
+    
+Method 3: DP iteration -- bottom up
+class Solution {
+    public int combinationSum4(int[] nums, int target) {
+        int[] dp = new int[target+1];
+        dp[0] = 1; // when the target is 0, the dp should be 1 not 0
+        for (int i = 1; i <= target; i++){
+            for (int j = 0; j < nums.length; j++){
+                if (i >= nums[j]){
+                   dp[i] += dp[i - nums[j]]; 
+                }
+            }
+        }
+        return dp[target];
     }
 }
