@@ -441,3 +441,4 @@ Solution for Leetcode/Lintcode
 |422   |389  |[Find the Difference](Java/389_Find.java)|Easy|Java|Leetcode|
 |423   |376  |[Wiggle Subsequence](Java/376_Wiggle.java)|Medium|Java|Leetcode|
 |424   |415  |[Add Strings](Java/415_Add.java)|Easy|Java|Leetcode|
+|425   |381  |[Insert Delete GetRandom O(1) - Duplicates allowed](Java/381_Insert.java)|Hard|Java|Leetcode|
