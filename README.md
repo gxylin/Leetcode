@@ -447,3 +447,4 @@ Solution for Leetcode/Lintcode
 |428   |417  |[Pacific Atlantic Water Flow](Java/417_Pacific.java)|Medium|Java|Leetcode
 |429   |392  |[Is subsequence](Java/392_IsSubsequence.java)|Medium|Java|Leetcode
 |430   |383  |[Ransom Note](Java/383_Ransom.java)|Easy|Java|Leetcode|
+|431   |386  |[Lexicographical Numbers](Java/386_Lexicographical.java)|Medium|Java|Leetcode|
