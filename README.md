@@ -443,3 +443,4 @@ Solution for Leetcode/Lintcode
 |424   |415  |[Add Strings](Java/415_Add.java)|Easy|Java|Leetcode|
 |425   |381  |[Insert Delete GetRandom O(1) - Duplicates allowed](Java/381_Insert.java)|Hard|Java|Leetcode|
 |426   |405  |[Convert a Number to Hexadecimal](Java/405_Convert.java)|Easy|Java|Leetcode|
+|427   |404  |[Sum of Left Leaves](Java/404_Sum.java)|Easy|Java|Leetcode|
