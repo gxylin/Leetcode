@@ -449,3 +449,4 @@ Solution for Leetcode/Lintcode
 |430   |383  |[Ransom Note](Java/383_Ransom.java)|Easy|Java|Leetcode|
 |431   |386  |[Lexicographical Numbers](Java/386_Lexicographical.java)|Medium|Java|Leetcode|
 |432   |410  |[Split Array Largest Sum Binary Search](Java/410_Split.java)|Hard|Java|Leetcode|
+|433   |424  |[Longest Repeating Character Replacement Sliding Window](Java/424_Longest.java)|Medium|Java|Leetcode|
