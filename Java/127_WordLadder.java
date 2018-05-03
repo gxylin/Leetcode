@@ -56,12 +56,13 @@ class Solution {
     }
     
     private List<String> getNextWord(List<String> wordList, String str){
+        Set<String> set = new HashSet<>(wordList); //convert list to set so that contains function takes O(1) instead of O(n)
         List<String> result = new ArrayList<>();
         for (int i = 0; i < str.length(); i++){
             for (char j = 'a'; j <= 'z'; j++){
                 if (j != str.charAt(i)){
                    String word = replace(str, j, i);
-                   if (wordList.contains(word)){
+                   if (set.contains(word)){
                        result.add(word);
                    }
                 }
