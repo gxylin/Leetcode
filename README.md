@@ -448,3 +448,4 @@ Solution for Leetcode/Lintcode
 |429   |392  |[Is subsequence](Java/392_IsSubsequence.java)|Medium|Java|Leetcode
 |430   |383  |[Ransom Note](Java/383_Ransom.java)|Easy|Java|Leetcode|
 |431   |386  |[Lexicographical Numbers](Java/386_Lexicographical.java)|Medium|Java|Leetcode|
+|432   |410  |[Split Array Largest Sum Binary Search](Java/410_Split.java)|Hard|Java|Leetcode|
