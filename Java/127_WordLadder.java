@@ -77,3 +77,47 @@ class Solution {
         return new String(charArray);
     }
 }
+
+Combined to one function
+class Solution {
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        if (wordList == null || wordList.size() == 0 || !wordList.contains(endWord)){
+            return 0;
+        }
+        if (beginWord.equals(endWord)){
+            return 1;
+        }
+        int result = 1;
+        Queue<String> queue = new LinkedList<>();
+        Set<String> set = new HashSet<>();
+        queue.offer(beginWord);
+        set.add(beginWord);
+        Set<String> wordSet = new HashSet<>(wordList);
+        
+        while (!queue.isEmpty()){
+            int size = queue.size();
+            result++;
+            for (int k = 0; k < size; k++){
+                String str = queue.poll();
+                for (int i = 0; i < str.length(); i++){
+                    char[] charArray = str.toCharArray();
+                    for (char j = 'a'; j <= 'z'; j++){
+                        if (str.charAt(i) == j){
+                            continue;
+                        }
+                        charArray[i] = j;
+                        String word = new String(charArray);
+                        if (word.equals(endWord)){
+                            return result;
+                        }
+                        if (wordSet.contains(word) && !set.contains(word)){
+                            queue.offer(word);
+                            set.add(word);
+                        }
+                    }
+                }
+            }
+        }
+        return 0;
+    }
+}
