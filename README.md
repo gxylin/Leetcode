@@ -452,3 +452,4 @@ Solution for Leetcode/Lintcode
 |433   |424  |[Longest Repeating Character Replacement Sliding Window](Java/424_Longest.java)|Medium|Java|Leetcode|
 |434   |433  |[Minimum Genetic Mutation BFS](Java/433_Minimum.java)|Medium|Java|Leetcode|
 |435   |434  |[Number of Segments in a String split](Java/434_Number.java)|Easy|Java|Leetcode|
+|436   |435  |[Non-overlapping Intervals](Java/435_overlapping.java)|Medium|Java|Leetcode|
