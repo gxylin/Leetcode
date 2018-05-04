@@ -451,3 +451,4 @@ Solution for Leetcode/Lintcode
 |432   |410  |[Split Array Largest Sum Binary Search](Java/410_Split.java)|Hard|Java|Leetcode|
 |433   |424  |[Longest Repeating Character Replacement Sliding Window](Java/424_Longest.java)|Medium|Java|Leetcode|
 |434   |433  |[Minimum Genetic Mutation BFS](Java/433_Minimum.java)|Medium|Java|Leetcode|
+|435   |434  |[Number of Segments in a String split](Java/434_Number.java)|Easy|Java|Leetcode|
