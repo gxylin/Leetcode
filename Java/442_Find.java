@@ -11,6 +11,8 @@ Input:
 Output:
 [2,3]
 
+https://leetcode.com/problems/find-all-duplicates-in-an-array/discuss/92411/Java-O(1)-space-O(n)-time-solution-with-swapping
+
 class Solution {
     public List<Integer> findDuplicates(int[] nums) {
         List<Integer> result = new ArrayList<>();
