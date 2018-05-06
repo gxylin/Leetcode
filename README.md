@@ -457,3 +457,4 @@ Solution for Leetcode/Lintcode
 |438   |442  |[Find All Duplicates in an Array](Java/442_Find.java)|Medium|Java|Leetcode|
 |439   |541  |[Reverse String II](Java/541_Reverse.java)|Easy|Java|Leetcode|
 |440   |452  |[Minimum Number of Arrows to Burst Balloons Interval](Java/452_Minimum.java)|Medium|Java|Leetcode|
+|441   |530  |[Minimum Absolute Difference in BST](Java/530_Minimum.java)|Easy|Java|Leetcode|
