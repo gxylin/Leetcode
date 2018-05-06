@@ -83,3 +83,34 @@ class Solution {
         inOrder(root.right);
     }
 }
+
+Method 3:
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    TreeNode prev = null;
+    public int getMinimumDifference(TreeNode root) {
+        int[] ans = new int[1];
+        ans[0] = Integer.MAX_VALUE;
+        inOrder(root, ans);
+        return ans[0];
+    }
+    private void inOrder(TreeNode root, int[] ans){
+        if (root == null){
+            return;
+        }
+        inOrder(root.left, ans);
+        if (prev != null){
+            ans[0] = Math.min(ans[0], Math.abs(root.val - prev.val));
+        }
+        prev = root;
+        inOrder(root.right, ans);
+    }
+}
