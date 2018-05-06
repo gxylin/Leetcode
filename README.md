@@ -461,3 +461,4 @@ Solution for Leetcode/Lintcode
 |442   |539  |[Minimum Time Difference](Java/539_Minimum.java)|Medium|Java|Leetcode|
 |443   |500  |[Keyboard Row](Java/500_Keyboard.java)|Easy|Java|Leetcode|
 |444   |463  |[Island Perimeter](Java/463_Island.java)|Easy|Java|Leetcode|
+|445   |453  |[Minimum Moves to Equal Array Elements](Java/453_Minimum.java)|Easy|Java|Leetcode|
