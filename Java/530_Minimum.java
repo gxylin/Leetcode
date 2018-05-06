@@ -51,6 +51,9 @@ class Solution {
     }
 }
 
+Since this is a BST, the inorder traversal of its nodes results in a sorted list of values. Thus, 
+the minimum absolute difference must occur in any adjacently traversed nodes. 
+   I use the global variable "prev" to keep track of each node's inorder predecessor.
 Method 2:
 /**
  * Definition for a binary tree node.
