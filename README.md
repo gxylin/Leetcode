@@ -462,3 +462,4 @@ Solution for Leetcode/Lintcode
 |443   |500  |[Keyboard Row](Java/500_Keyboard.java)|Easy|Java|Leetcode|
 |444   |463  |[Island Perimeter](Java/463_Island.java)|Easy|Java|Leetcode|
 |445   |453  |[Minimum Moves to Equal Array Elements](Java/453_Minimum.java)|Easy|Java|Leetcode|
+|446   |462  |[Minimum Moves to Equal Array Elements II](Java/462_Minimum.java)|Medium|Java|Leetcode|
