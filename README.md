@@ -107,7 +107,7 @@ Solution for Leetcode/Lintcode
 |99    |16   | [3SumClosest.java](Java/16_3SumClosest.java)|Medium|Java|Leetcode|
 |100   |31   | [Partition Array.java](Java/31_PartitionArray.java)|Medium|Java|Lintcode|
 |101   |561  | [ArrayPartitionI.java](Java/561_ArrayPartitionI.java)|Easy|Java|Leetcode|
-|102   |5    | [Kth Largest Element.java](Java/5_KthLargestElement.java)|Medium|Java|Lintcode|
+|102   |5    | [Kth Largest Element Quick Select](Java/5_KthLargestElement.java)|Medium|Java|Lintcode|
 |103   |75   | [Sort Colors.java](Java/75_SortColors.java)|Medium|Java|Leetcode
 |104   |143  | [Sort Colors II.java](Java/143_SortColorsII.java)|Medium|Java|Lintcode|
 |105   |129  | [Rehashing.java](Java/129_Rehashing.java)|Medium|Java|Lintcode|
