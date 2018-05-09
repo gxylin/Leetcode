@@ -469,3 +469,4 @@ Solution for Leetcode/Lintcode
 |450   |450  |[Delete Node in a BST Recursion/Divide Conquer](Java/450_Delete.java)|Medium|Java|Leetcode|
 |451   |501  |[Find Mode in Binary Search Tree](Java/501_Find.java)|Easy|Java|Leetcode|
 |452   |496  |[Next Greater Element I Monotonic Stack](Java/496_Next.java)|Easy|Java|Leetcode|
+|453   |503  |[Next Greater Element II Monotonic Stack](Java/503_Next.java)|Medium|Java|Leetcode|
