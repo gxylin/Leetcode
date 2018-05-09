@@ -467,3 +467,4 @@ Solution for Leetcode/Lintcode
 |448   |455  |[Assign Cookies](Java/455_Assign.java)|Easy|Java|Leetcode|
 |449   |445  |[Add Two Numbers II](Java/445_Add.java)|Medium|Java|Leetcode|
 |450   |450  |[Delete Node in a BST Recursion/Divide Conquer](Java/450_Delete.java)|Medium|Java|Leetcode|
+|451   |501  |[Find Mode in Binary Search Tree](Java/501_Find.java)|Easy|Java|Leetcode|
