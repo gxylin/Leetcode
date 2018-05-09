@@ -470,3 +470,4 @@ Solution for Leetcode/Lintcode
 |451   |501  |[Find Mode in Binary Search Tree](Java/501_Find.java)|Easy|Java|Leetcode|
 |452   |496  |[Next Greater Element I Monotonic Stack](Java/496_Next.java)|Easy|Java|Leetcode|
 |453   |503  |[Next Greater Element II Monotonic Stack](Java/503_Next.java)|Medium|Java|Leetcode|
+|454   |556  |[Next Greater Element III](Java/556_Next.java)|Medium|Java|Leetcode|
