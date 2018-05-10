@@ -472,3 +472,4 @@ Solution for Leetcode/Lintcode
 |453   |503  |[Next Greater Element II Monotonic Stack](Java/503_Next.java)|Medium|Java|Leetcode|
 |454   |556  |[Next Greater Element III](Java/556_Next.java)|Medium|Java|Leetcode|
 |455   |443  |[String Compression](Java/443_String.java)|Easy|Java|Leetcode|
+|456   |456  |[132 Pattern Monotonic Stack](Java/456_132Pattern.java)|Hard|Java|Leetcode|
