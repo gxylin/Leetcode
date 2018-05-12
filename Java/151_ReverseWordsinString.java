@@ -25,3 +25,20 @@ public class Solution {
         return String.join(" ", words);
     }
 }
+
+public class Solution {
+    public String reverseWords(String s) {
+        if (s == null || s.trim().length() == 0){
+            return s.trim();
+        }
+        String[] arr = s.trim().split("\\s+");
+        int n = arr.length;
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++){
+            StringBuilder temp = new StringBuilder(arr[i]);
+            sb.append(temp.reverse());
+            sb.append(" ");
+        }
+        return sb.reverse().toString().trim();
+    }
+}
