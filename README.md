@@ -475,3 +475,4 @@ Solution for Leetcode/Lintcode
 |456   |456  |[132 Pattern Monotonic Stack](Java/456_132Pattern.java)|Hard|Java|Leetcode|
 |457   |467  |[Unique Substrings in Wraparound String](Java/467_Unique.java)|Medium|Java|Leetcode|
 |458   |520  |[Detect Capital](Java/520_Detect.java)|Easy|Java|Leetcode|
+|459   |525  |[Contiguous Array HashMap](Java/525_Contiguous.java)|Medium|Java|Leetcode|
