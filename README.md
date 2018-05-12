@@ -476,3 +476,4 @@ Solution for Leetcode/Lintcode
 |457   |467  |[Unique Substrings in Wraparound String](Java/467_Unique.java)|Medium|Java|Leetcode|
 |458   |520  |[Detect Capital](Java/520_Detect.java)|Easy|Java|Leetcode|
 |459   |525  |[Contiguous Array HashMap](Java/525_Contiguous.java)|Medium|Java|Leetcode|
+|460   |540  |[Single Element in a Sorted Array](Java/540_Single.java)|Medium|Java|Leetcode|
