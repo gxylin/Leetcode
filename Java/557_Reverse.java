@@ -15,11 +15,9 @@ class Solution {
         }
         int start = 0;
         int i = 0;
-        int n = s.length();
-      //  s = s.trim().split("\\s+");
         char[] charArray = s.toCharArray();
-        
-        while (i < charArray.length){
+        int n = charArra.length;
+        while (i < n){
             while (i < n && charArray[i] == ' '){
                 i++;
             }
@@ -50,11 +48,9 @@ class Solution {
         }
         int start = 0;
         int i = 0;
-        int n = s.length();
-      //  s = s.trim().split("\\s+");
         char[] charArray = s.toCharArray();
-        
-        while (i <= charArray.length){
+        int n = charArra.length;
+        while (i <= n){
             if (i == s.length() || charArray[i] == ' '){
                 reverse(charArray, start, i-1);
                 start = i + 1;
