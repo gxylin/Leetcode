@@ -479,3 +479,4 @@ Solution for Leetcode/Lintcode
 |460   |540  |[Single Element in a Sorted Array](Java/540_Single.java)|Medium|Java|Leetcode|
 |461   |557  |[Reverse Words in a String III](Java/557_Reverse.java)|Easy|Java|Leetcode|
 |462   |523  |[Continuous Subarray Sum](Java/523_Continuous.java)|Medium|Java|Leetcode|
+|463   |524  |[Longest Word in Dictionary through Deleting](Java/524_Longest.java)|Medium|Java|Leetcode|
