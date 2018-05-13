@@ -8,6 +8,25 @@ The length of the array is in range [1, 20,000].
 The range of numbers in the array is [-1000, 1000] and the range of the integer k is [-1e7, 1e7].
 
 
+Method 1:
+class Solution {
+    public int subarraySum(int[] nums, int k) {
+        int count = 0;
+        int preSum = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, 1);
+        for (int i = 0; i < nums.length; i++){
+            preSum += nums[i];
+            if (map.containsKey(preSum-k)){
+                count += map.get(preSum-k);
+            }
+            map.put(preSum, map.getOrDefault(preSum, 0) + 1);
+        }
+        return count;
+    }
+}
+
+Method 2:
 Time complexity: O(n)
 class Solution {
     public int subarraySum(int[] nums, int k) {
