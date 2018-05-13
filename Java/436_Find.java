@@ -111,3 +111,36 @@ class Solution {
         return result;
     }
 }
+
+TreeMap comparator is implemented the same as others
+/**
+ * Definition for an interval.
+ * public class Interval {
+ *     int start;
+ *     int end;
+ *     Interval() { start = 0; end = 0; }
+ *     Interval(int s, int e) { start = s; end = e; }
+ * }
+ */
+class Solution {
+    public int[] findRightInterval(Interval[] intervals) {
+        int[] result = new int [intervals.length];
+        TreeMap<Integer, Integer> treeMap = new TreeMap<>(new Comparator<Integer>(){
+            public int compare (Integer a, Integer b){
+                return a - b;
+            }
+        });
+        for (int i = 0; i < intervals.length; i++){
+            treeMap.put(intervals[i].start, i);
+        }
+        for (int i = 0; i < intervals.length; i++){
+            Map.Entry<Integer, Integer> entry = treeMap.ceilingEntry(intervals[i].end);
+            if (entry != null){
+                result[i] = entry.getValue();
+            }else{
+                result[i] = -1;
+            }
+        }
+        return result;
+    }
+}
