@@ -19,6 +19,8 @@ All the strings in the input will only contain lower-case letters.
 The size of the dictionary won't exceed 1,000.
 The length of all the strings in the input won't exceed 1,000.
 
+Method 1: sorting
+Time complexity: O(x*n*logn + n*x) Here nn refers to the number of strings in list dd and xx refers to average string length.
 class Solution {
     public String findLongestWord(String s, List<String> d) {
         Collections.sort(d, new Comparator<String>(){
@@ -79,6 +81,7 @@ class Solution {
 }
 
 Method 3: without sorting
+Time complexity: O(n*x) Here nn refers to the number of strings in list dd and xx refers to average string length.
 class Solution {
     public String findLongestWord(String s, List<String> d) {
         String ans = "";
