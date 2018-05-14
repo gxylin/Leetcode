@@ -482,3 +482,4 @@ Solution for Leetcode/Lintcode
 |463   |524  |[Longest Word in Dictionary through Deleting](Java/524_Longest.java)|Medium|Java|Leetcode|
 |464   |441  |[Arranging Coins](Java/441_Arranging.java)|Easy|Java|Leetcode|
 |465   |436  |[Find Right Interval TreeMap](Java/436_Find.java)|Medium|Java|Leetcode|
+|466   |485  |[Max Consecutive Ones](Java/485_Max.java|Easy|Java|Leetcode|
