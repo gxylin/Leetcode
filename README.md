@@ -484,3 +484,4 @@ Solution for Leetcode/Lintcode
 |465   |436  |[Find Right Interval TreeMap](Java/436_Find.java)|Medium|Java|Leetcode|
 |466   |485  |[Max Consecutive Ones](Java/485_Max.java)|Easy|Java|Leetcode|
 |467   |513  |[Find Bottom Left Tree Value](Java/513_Find.java)|Medium|Java|Leetcode|
+|468   |506  |[Relative Ranks](Java/506_Relative)|Easy|Java|Leetcode|
