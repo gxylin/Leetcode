@@ -485,3 +485,4 @@ Solution for Leetcode/Lintcode
 |466   |485  |[Max Consecutive Ones](Java/485_Max.java)|Easy|Java|Leetcode|
 |467   |513  |[Find Bottom Left Tree Value](Java/513_Find.java)|Medium|Java|Leetcode|
 |468   |506  |[Relative Ranks](Java/506_Relative)|Easy|Java|Leetcode|
+|469   |474  |[Ones and Zeroes Dynamic Programming](Java/474_Ones.java)|Medium|Java|Leetcode|
