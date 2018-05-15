@@ -85,30 +85,27 @@ class Solution {
     }
 }
 
+https://leetcode.com/problems/ones-and-zeroes/discuss/95807/0-1-knapsack-detailed-explanation.
+
 Method 3: Best,similar to a coin change problem
 class Solution {
     public int findMaxForm(String[] strs, int m, int n) {
         int l = strs.length;
         int[][][] dp = new int[l+1][m+1][n+1];
-        for (int i = 0; i <= l; i++){
+        for (int i = 1; i <= l; i++){
             int zeros = 0;
             int ones = 0;
-            if (i > 0){
-                String s = strs[i-1];
-                for (int j = 0; j < s.length(); j++){
-                    if (s.charAt(j) == '0'){
-                        zeros++;
-                    }else{
-                        ones++;
-                    }
+            String s = strs[i-1];
+            for (int j = 0; j < s.length(); j++){
+                if (s.charAt(j) == '0'){
+                       zeros++;
+                }else{
+                    ones++;
                 }
-                
             }
             for (int j = 0; j <= m; j++){
                 for (int k = 0; k <= n; k++){
-                    if (i == 0){
-                        dp[0][j][k] = 0;
-                    }else if (j >= zeros && k >= ones){
+                    if (j >= zeros && k >= ones){
                         dp[i][j][k] = Math.max(dp[i-1][j-zeros][k-ones] + 1, dp[i-1][j][k]);
                     }else{
                         dp[i][j][k] = dp[i-1][j][k];
@@ -119,5 +116,64 @@ class Solution {
         return dp[l][m][n];
     }
 }
-Method 4: reduce space complexity
+Method 4: reduce space complexity by using rolling array
+class Solution {
+    public int findMaxForm(String[] strs, int m, int n) {
+        int l = strs.length;
+        int[][][] dp = new int[2][m+1][n+1];
+        for (int i = 1; i <= l; i++){
+            int zeros = 0;
+            int ones = 0;
+            String s = strs[i-1];
+            for (int j = 0; j < s.length(); j++){
+                if (s.charAt(j) == '0'){
+                       zeros++;
+                }else{
+                    ones++;
+                }
+            }
+            for (int j = 0; j <= m; j++){
+                for (int k = 0; k <= n; k++){
+                    if (j >= zeros && k >= ones){
+                        dp[i%2][j][k] = Math.max(dp[(i-1)%2][j-zeros][k-ones] + 1, dp[(i-1)%2][j][k]);
+                    }else{
+                        dp[i%2][j][k] = dp[(i-1)%2][j][k];
+                    }
+                }
+            }
+        }
+        return dp[l%2][m][n];
+    }
+}
+
+Method 5:
+
+class Solution {
+    public int findMaxForm(String[] strs, int m, int n) {
+        int l = strs.length;
+        int[][] dp = new int[m+1][n+1];
+        for (int i = 0; i < l; i++){
+            int zeros = 0;
+            int ones = 0;
+            String s = strs[i];
+            for (int j = 0; j < s.length(); j++){
+                if (s.charAt(j) == '0'){
+                    zeros++;
+                }else{
+                    ones++;
+                }
+            }
+            for (int j = m; j >=0 ; j--){
+                for (int k = n; k >= 0; k--){
+                    if (j >= zeros && k >= ones){
+                        dp[j][k] = Math.max(dp[j-zeros][k-ones] + 1, dp[j][k]);
+                    }else{
+                        dp[j][k] = dp[j][k];
+                    }
+                }
+            }
+        }
+        return dp[m][n];
+    }
+}
 
