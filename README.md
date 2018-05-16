@@ -486,3 +486,4 @@ Solution for Leetcode/Lintcode
 |467   |513  |[Find Bottom Left Tree Value](Java/513_Find.java)|Medium|Java|Leetcode|
 |468   |506  |[Relative Ranks](Java/506_Relative)|Easy|Java|Leetcode|
 |469   |474  |[Ones and Zeroes Dynamic Programming](Java/474_Ones.java)|Medium|Java|Leetcode|
+|470   |563  |[Binary Tree Tilt](Java/563_Binary.java)|Easy|Java|Leetcode|
