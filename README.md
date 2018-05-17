@@ -490,3 +490,4 @@ Solution for Leetcode/Lintcode
 |471   |565  |[Array Nesting](Java/565_Array.java)|Medium|Java|Leetcode|
 |472   |554  |[Brick Wall](Java/554_Brick.java)|Medium|Java|Leetcode|
 |473   |566  |[Reshape the Matrix](Java/566_Reshape.java)|Easy|Java|Leetcode|
+|474   |567  |[Permutation in String Sliding Window](Java/567_Permutation.java)|Medium|Java|Leetcode|
