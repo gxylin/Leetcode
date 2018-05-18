@@ -493,3 +493,4 @@ Solution for Leetcode/Lintcode
 |474   |567  |[Permutation in String Sliding Window](Java/567_Permutation.java)|Medium|Java|Leetcode|
 |475   |575  |[Distribute candies](Java/575_Distribute.java)|Easy|Java|Leetcode|
 |476   |583  |[Delete Operation for Two Strings](Java/583_Delete.java)|Medium|Java|Leetcode|
+|477   |156  |[Binary Tree Upside Down Reverse Tree](Java/156_Binary.java)|Medium|Java|Leetcode|
