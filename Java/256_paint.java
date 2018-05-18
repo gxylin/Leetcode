@@ -30,47 +30,62 @@
     }
   
   Method 2: generalization
-  public int minCost(int[][] costs) {
-        int n = cost.length;
-        int m = cost[0].length;
-        int[][] dp = new int[n][m];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++){
+  public int minCostII(int[][] costs) {
+        if (costs == null || costs.length == 0){
+            return 0;
+        }
+        int n = costs.length;
+        int k = costs[0].length;
+        int[][] dp = new int[n+1][k];
+        for (int i = 1; i <= n; i++){
+            for (int j = 0; j < k; j++){
                 int min = Integer.MAX_VALUE;
-                for (int k = 0; k < m; k++){
-                    if (j != k){
-                       min = Math.min(min, dp[i-1][k];
-                   }
+                for (int m = 0; m < k; m++){
+                    if (j != m){
+                        min = Math.min(min, dp[i-1][m]);
+                    }
                 }
-                dp[i][j] = cost[i][j] + min;
+                if (min != Integer.MAX_VALUE){
+                    dp[i][j] = min + costs[i-1][j];
+                }else{
+                    dp[i][j] = costs[i-1][j];
+                }
             }
         }
         int ans = Integer.MAX_VALUE;
-        for (int i = 0; i < m; i++){
-           ans = Math.min(ans, dp[n-1][i]);
+        for (int i = 0; i < k; i++){
+            ans = Math.min(ans, dp[n][i]);
         }
         return ans;
     }
     
   Method 2: generalization + rolling array
-  public int minCost(int[][] costs) {
-        int n = cost.length;
-        int m = cost[0].length;
-        int[][] dp = new int[2][m];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++){
+  public int minCostII(int[][] costs) {
+        if (costs == null || costs.length == 0){
+            return 0;
+        }
+        int n = costs.length;
+        int k = costs[0].length;
+        int[][] dp = new int[2][k];
+        for (int i = 1; i <= n; i++){
+            for (int j = 0; j < k; j++){
                 int min = Integer.MAX_VALUE;
-                for (int k = 0; k < m; k++){
-                    if (j != k){
-                       min = Math.min(min, dp[(i-1)%2][k];
-                   }
+                for (int m = 0; m < k; m++){
+                    if (j != m){
+                        min = Math.min(min, dp[(i-1)%2][m]);
+                    }
                 }
-                dp[i%2][j] = cost[i%2][j] + min;
+                if (min != Integer.MAX_VALUE){
+                    dp[i%2][j] = min + costs[i-1][j];
+                }else{
+                    dp[i%2][j] = costs[i-1][j];
+                }
             }
         }
         int ans = Integer.MAX_VALUE;
-        for (int i = 0; i < m; i++){
-           ans = Math.min(ans, dp[(n-1)%2][i]);
+        for (int i = 0; i < k; i++){
+            ans = Math.min(ans, dp[n%2][i]);
         }
         return ans;
     }
+}
