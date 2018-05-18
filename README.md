@@ -491,3 +491,4 @@ Solution for Leetcode/Lintcode
 |472   |554  |[Brick Wall](Java/554_Brick.java)|Medium|Java|Leetcode|
 |473   |566  |[Reshape the Matrix](Java/566_Reshape.java)|Easy|Java|Leetcode|
 |474   |567  |[Permutation in String Sliding Window](Java/567_Permutation.java)|Medium|Java|Leetcode|
+|475   |575  |[Distribute candies](Java/575_Distribute.java)|Easy|Java|Leetcode|
