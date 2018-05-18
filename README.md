@@ -492,3 +492,4 @@ Solution for Leetcode/Lintcode
 |473   |566  |[Reshape the Matrix](Java/566_Reshape.java)|Easy|Java|Leetcode|
 |474   |567  |[Permutation in String Sliding Window](Java/567_Permutation.java)|Medium|Java|Leetcode|
 |475   |575  |[Distribute candies](Java/575_Distribute.java)|Easy|Java|Leetcode|
+|476   |583  |[Delete Operation for Two Strings](Java/583_Delete.java)|Medium|Java|Leetcode|
