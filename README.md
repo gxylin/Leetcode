@@ -499,3 +499,4 @@ Solution for Leetcode/Lintcode
 |480   |265  |[Paint House II](Java/265_Paint.java)|Hard|Java|Leetcode|
 |481   |266  |[Palindrome Permutation](Java/266_Palindrome.java)|Easy|Java|Leetcode|
 |482   |267  |[Palindrome Permutation II Backtracking](Java/267_Palindrome.java)|Medium|Java|Leetcode|
+|483   |293  |[Flip Game](Java/293_Flip.java)|Easy|Java|Leetcode|
