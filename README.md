@@ -501,3 +501,4 @@ Solution for Leetcode/Lintcode
 |482   |267  |[Palindrome Permutation II Backtracking](Java/267_Palindrome.java)|Medium|Java|Leetcode|
 |483   |293  |[Flip Game](Java/293_Flip.java)|Easy|Java|Leetcode|
 |484   |294  |[Flip Game II recursion/memorization](Java/294_Flip.java)|Medium|Java|Leetcode|
+|485   |281  |[Zigzag Iterator](Java/281_Zigzag.java)|Medium|Java|Leetcode|
