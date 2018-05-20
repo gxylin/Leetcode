@@ -504,3 +504,4 @@ Solution for Leetcode/Lintcode
 |485   |281  |[Zigzag Iterator](Java/281_Zigzag.java)|Medium|Java|Leetcode|
 |486   |271  |[Encode and Decode Strings](Java/271_Encode.java)|Medium|Java|Leetcode|
 |487   |276  |[Paint Fence](Java/276_Paint.java)|Easy|Java|Leetcode|
+|488   |296  |[Best Meeting Point](Java/296_Best.java)|Hard|Java|Leetcode|
