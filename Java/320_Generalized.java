@@ -56,10 +56,6 @@ class Solution {
         if (word == null){
             return result;
         }
-        if (word.length() == 0){
-            result.add(word);
-            return result;
-        }
         dfs(result, word, "", 0, 0);
         return result;
     }
