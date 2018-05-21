@@ -508,3 +508,4 @@ Solution for Leetcode/Lintcode
 |489   |339  |[Nested List Weight Sum](Java/339_Nested.java)|Easy|Java|Leetcode|
 |490   |346  |[Moving Average from Data Stream](Java/346_Moving.java)|Easy|Java|Leetcode|
 |491   |320  |[Generalized Abbreviation](Java/320_Generalized.java)|Medium|Java|Leetcode|
+|492   |357  |[Count Numbers with Unique Digits](Java/357_Count.java)|Medium|Java|Leetcode|
