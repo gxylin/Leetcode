@@ -512,3 +512,4 @@ Solution for Leetcode/Lintcode
 |493   |359  |[Logger Rate Limiter](Java/359_Logger.java)|Easy|Java|Leetcode|
 |494   |360  |[Sort Transformed Array](Java/360_Sort.java)|Medium|Java|Leetcode|
 |495   |362  |[Design Hit Counter](Java/362_Design.java)|Medium|Java|Leetcode|
+|496   |364  |[Nested List Weight Sum II](Java/364_Nested.java)|Medium|Java|Leetcode|
