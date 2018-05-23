@@ -6,32 +6,32 @@ Solution for Leetcode/Lintcode
 |1     |1    | [Two Sum.java](Java/1_TwoSum.java)  |    Easy       |    Java      |Leetcode  |
 |2     |242  | [Valid Anagram.java](Java/242_ValidAnagram.java) | Easy|Java       |Leetcode  |
 |3     |144  | [Binary Tree Preorder Traversal.java](Java/144_BinaryTreePreorderTraversal.java)|Medium|Java|Leetcode  |
-|4     |94   | [BinaryTreeInorderTraversal.java](Java/94_BinaryTreeInorderTraversal.java)|Medium|Java| Leetcode  |
-|5     |512  | [DecodeWays.java](Java/512_DecodeWays.java)|Medium|Java|Lintcode
-|6     |638  | [StringsHomomorphism.java](Java/638_StringsHomomorphism.java)|Easy|Java|Lintcode|
-|7     |626  | [RectangleOverlap.java](Java/626_RectangleOverlap.java)|Easy|Java|Lintcode|
-|8     |637  | [CheckWordAbbreviation.java](Java/637_CheckWordAbbreviation.java)|Easy|Java|Lintcode|
-|9     |639  | [WordsAbbreviation.java](Java/639_WordsAbbreviation.java)|Hard|Java|Lintcode|
-|10    |642| [SlidingWindowAveragefromDataStream.java](Java/642_SlidingWindowAveragefromDataStream.java)|Easy|Java|Lintcode|
-|11    |640  | [EditDistanceII.java](Java/640_EditDistanceII.java)|Medium|Java|Lintcode|
-|12    |660  | [ReadCharactersFromFile.java](Java/660_ReadCharactersFromFile.java)|Hard|Java|Lintcode|
-|13    |659  | [StringsSerialization.java](Java/659_StringsSerialization.java)|Medium|Java|Lintcode|
-|14    |643  | [SystemLongestFilePath.java](Java/643_SystemLongestFilePath.java)|Medium|Java|Lintcode|
-|15    |419  | [RomantoInteger.java](Java/419_RomantoInteger.java)|Medium|Java|Lintcode|
-|16    |418  | [IntegertoRoman.java](Java/418_IntegertoRoman.java)|Medium|Java|Lintcode|
-|17    |645  | [IdentifyCelebrity.java](Java/645_IdentifyCelebrity.java)|Medium|Java|Lintcode|
-|18    |644  | [MirrorNumbers.java](Java/644_MirrorNumbers.java)|Easy|Java|Lintcode|
-|19    |72   | [EditDistance.java](Java/72_EditDistance.java)|Medium|Java|Leetcode|
-|20    |641  | [MissingInterval.java](Java/641_MissingInterval.java)|Medium|Java|Lintcode|
-|21    |156  | [MergeIntervals.java](Java/156_MergeIntervals.java)|Medium|Java|Lintcode|
-|22    |30   | [InsertInterval.java](Java/30_InsertInterval.java)|Hard|Java|Lintcode|
-|23    |646  | [FirstPositionUniqueCharacter.java](Java/646_FirstPositionUniqueCharacter.java)|Easy|Java|Lintcode|
-|24    |647  | [SubstringAnagrams.java](Java/647_SubstringAnagrams.java)|Medium|Java|lintcode|
-|25    |648  | [WordAbbreviationSet.java](Java/648_WordAbbreviationSet.java)|Medium|Java|Lintcode|
-|26    |124  | [LongestConsecutiveSequence.java](Java/124_LongestConsecutiveSequence.java)|Medium|Java|Lintcode|
-|27    |526  | [LoadBalancer.java](Java/526_LoadBalancer.java)|Medium|Java|Lintcode|
-|28    |76   | [LongestIncreasingSubsequence.java](Java/76_LongestIncreasingSubsequence.java)|Medium|Java|Lintcode|
-|29    |423  | [ValidParentheses.java](Java/423_ValidParentheses.java)|Easy|Java|Lintcode|
+|4     |94   | [Binary Tree Inorder Traversal.java](Java/94_BinaryTreeInorderTraversal.java)|Medium|Java| Leetcode  |
+|5     |512  | [Decode Ways.java](Java/512_DecodeWays.java)|Medium|Java|Lintcode
+|6     |638  | [Strings Homomorphism.java](Java/638_StringsHomomorphism.java)|Easy|Java|Lintcode|
+|7     |626  | [Rectangle Overlap.java](Java/626_RectangleOverlap.java)|Easy|Java|Lintcode|
+|8     |637  | [Check Word Abbreviation.java](Java/637_CheckWordAbbreviation.java)|Easy|Java|Lintcode|
+|9     |639  | [Word Abbreviation.java](Java/639_WordsAbbreviation.java)|Hard|Java|Lintcode|
+|10    |642| [Sliding Window Average from Data Stream.java](Java/642_SlidingWindowAveragefromDataStream.java)|Easy|Java|Lintcode|
+|11    |640  | [Edit Distance II.java](Java/640_EditDistanceII.java)|Medium|Java|Lintcode|
+|12    |660  | [Read Characters From File.java](Java/660_ReadCharactersFromFile.java)|Hard|Java|Lintcode|
+|13    |659  | [Strings Serialization.java](Java/659_StringsSerialization.java)|Medium|Java|Lintcode|
+|14    |643  | [System Longest File Path.java](Java/643_SystemLongestFilePath.java)|Medium|Java|Lintcode|
+|15    |419  | [Roman to Integer.java](Java/419_RomantoInteger.java)|Medium|Java|Lintcode|
+|16    |418  | [Integer to Roman.java](Java/418_IntegertoRoman.java)|Medium|Java|Lintcode|
+|17    |645  | [Identify Celebrity.java](Java/645_IdentifyCelebrity.java)|Medium|Java|Lintcode|
+|18    |644  | [Mirror Numbers.java](Java/644_MirrorNumbers.java)|Easy|Java|Lintcode|
+|19    |72   | [Edit Distance.java](Java/72_EditDistance.java)|Medium|Java|Leetcode|
+|20    |641  | [Missing Interval.java](Java/641_MissingInterval.java)|Medium|Java|Lintcode|
+|21    |156  | [Merge Intervals.java](Java/156_MergeIntervals.java)|Medium|Java|Lintcode|
+|22    |30   | [Insert Interval.java](Java/30_InsertInterval.java)|Hard|Java|Lintcode|
+|23    |646  | [First Position Unique Character.java](Java/646_FirstPositionUniqueCharacter.java)|Easy|Java|Lintcode|
+|24    |647  | [Substring Anagrams.java](Java/647_SubstringAnagrams.java)|Medium|Java|lintcode|
+|25    |648  | [Word Abbreviation Set.java](Java/648_WordAbbreviationSet.java)|Medium|Java|Lintcode|
+|26    |124  | [Longest Consecutive Sequence.java](Java/124_LongestConsecutiveSequence.java)|Medium|Java|Lintcode|
+|27    |526  | [Load Balancer.java](Java/526_LoadBalancer.java)|Medium|Java|Lintcode|
+|28    |76   | [Longest Increasing Subsequence.java](Java/76_LongestIncreasingSubsequence.java)|Medium|Java|Lintcode|
+|29    |423  | [Valid Parentheses.java](Java/423_ValidParentheses.java)|Easy|Java|Lintcode|
 |30    |622  | [Guess Number Game.java](Java/622_GuessNumberGame.java)|Easy|Java|Lintcode|
 |31    |61   | [Search for a Range.java](Java/61_SearchforaRange.java)|Medium|Java|Lintcode|
 |32    |661  | [Conver BST to Greater Tree.java](Java/661_ConverBSTtoGreaterTree.java)|Easy|Java|Lintcode|
