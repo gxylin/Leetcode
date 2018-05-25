@@ -517,3 +517,4 @@ Solution for Leetcode/Lintcode
 |498   |369  |[Plus One Linked List](Java/369_Plus.java)|Medium|Java|Leetcode|
 |499   |370  |[Range Addition Range Caching](Java/370_Range.java)|Medium|Java|Leetcode|
 |500   |408  |[Valid Word Abbreviation](Java/408_Valid.java)|Easy|Java|Leetcode|
+|501   |422  |[Valid Word Square](Java/422_Valid.java)|Easy|Java|Leetcode|
