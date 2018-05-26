@@ -520,3 +520,4 @@ Solution for Leetcode/Lintcode
 |501   |422  |[Valid Word Square](Java/422_Valid.java)|Easy|Java|Leetcode|
 |502   |418  |[Sentence Screen Fitting](Java/418_Sentence.java)|Medium|Java|Leetcode|
 |503   |439  |[Ternary Expression Parser](Java/439_Ternary.java)|Medium|Java|Leetcode|
+|504   |484  |[Find Permutation](Java/484_Find.java)|Medium|Java|Leetcode|
