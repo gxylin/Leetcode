@@ -524,3 +524,4 @@ Solution for Leetcode/Lintcode
 |505   |681  |[Next Closest Time](Java/681_Next.java)|Medium|Java|Leetcode|
 |506   |325  |[Maximum Size Subarray Sum Equals k](Java/325_Maximum.java)|Medium|Java|Leetcode|
 |507   |272  |[Closest Binary Search Tree Value II](Java/272_Closest.java)|Hard|Java|Leetcode|
+|508   |624  |[Maximum Distance in Arrays](Java/624_Maximum.java)|Easy|Java|Leetcode|
