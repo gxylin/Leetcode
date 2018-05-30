@@ -526,3 +526,4 @@ Solution for Leetcode/Lintcode
 |507   |272  |[Closest Binary Search Tree Value II](Java/272_Closest.java)|Hard|Java|Leetcode|
 |508   |624  |[Maximum Distance in Arrays](Java/624_Maximum.java)|Easy|Java|Leetcode|
 |509   |351  |[Android Unlock Patterns](Java/351_Android.java)|Medium|Java|Leetcode|
+|510   |544  |[Output Contest Matches](Java/544_Output.java)|Medium|Java|Leetcode|
