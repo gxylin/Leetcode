@@ -15,6 +15,8 @@ Follow up:
 What if the inputs contain unicode characters? How would you adapt your solution to such case?
 
 
+http://exploringjs.com/es6/ch_maps-sets.html#sec_overview-maps-sets
+
 
 /**
  * @param {string} s
