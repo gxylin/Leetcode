@@ -529,4 +529,4 @@ Solution for Leetcode/Lintcode
 |510   |544  |[Output Contest Matches](Java/544_Output.java)|Medium|Java|Leetcode|
 |511   |616  |[Add Bold Tag in String Merge Interval](Java/616_Add.java)|Medium|Java|Leetcode|
 |512   |758  |[Bold Words in String](Java/758_Bold.java)|Medium|Java|Leetcode|
-|513   |490  |[Maze I](Java/490_maze.java)|Medium|Java|Leetcode|
+|513   |490  |[Maze I BFS DFS](Java/490_maze.java)|Medium|Java|Leetcode|
