@@ -122,6 +122,7 @@ Method 2: DFS
 class Solution {
     public boolean hasPath(int[][] maze, int[] start, int[] destination) {
         boolean[][] visited = new boolean[maze.length][maze[0].length];
+        visited[start[0]][start[1]] = true;
         return dfs(maze, start, destination, visited);
     }
     private boolean dfs(int[][] maze, int[] start, int[] destination, boolean[][] visited){
