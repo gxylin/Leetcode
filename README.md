@@ -532,3 +532,4 @@ Solution for Leetcode/Lintcode
 |513   |490  |[Maze I BFS DFS](Java/490_maze.java)|Medium|Java|Leetcode|
 |514   |505  |[Maze II BFS DFS](Java/505_MazeII.java)|Medium|Java|Leetcode|
 |515   |499  |[Maze III BFS DFS](Java/499_MazeIII.java)|Hard|Java|Leetcode|
+|516   |562  |[Longest Line of Consecutive One in Matrix](Java/562_Longest.java)|Medium|Java|Leetcode|
