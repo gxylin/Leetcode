@@ -534,3 +534,4 @@ Solution for Leetcode/Lintcode
 |515   |499  |[Maze III BFS DFS](Java/499_MazeIII.java)|Hard|Java|Leetcode|
 |516   |562  |[Longest Line of Consecutive One in Matrix](Java/562_Longest.java)|Medium|Java|Leetcode|
 |517   |635  |[Design Log Storage System](Java/635_Design.java)|Medium|Java|Leetcode|
+|518   |734  |[Sentence Similarity](Java/734_Sentence.java)|Easy|Java|Leetcode|
