@@ -15,9 +15,9 @@ https://leetcode.com/problems/basic-calculator/discuss/62361/Iterative-Java-solu
 class Solution {
     public int calculate(String s) {
         int ans = 0;
-        int number = 0;
-        int sign = 1;
-        Stack<Integer> stack = new Stack<>();
+        int number = 0; //denote the current number
+        int sign = 1; //denote the previous sign
+        Stack<Integer> stack = new Stack<>(); // store the sign before "(" and the sum before "(" 
         for (int i = 0; i < s.length(); i++){
             char c = s.charAt(i);
             if (Character.isDigit(c)){
