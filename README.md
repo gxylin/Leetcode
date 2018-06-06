@@ -62,7 +62,7 @@ Solution for Leetcode/Lintcode
 |54    |107  | [Word Break.java](Java/107_WordBreak.java)|Medium|Java|Lintcode|
 |55|3|[LongestSubstringWithoutRepeatingChars](Java/3_LongestSubstringWithoutRepeatingCharacters.java)|Medium|Java|Leetcode|
 |56    |4    | [Median of Two Sorted Arrays](Java/4_MedianofTwoSortedArrays.java)|Hard|Java|Leetcode|
-|57    |5    | [Longest Palindromic Substring](Java/5_LongestPalindromicSubstring.java)|Medium|Java|Leetcode|
+|57    |5    | [Longest Palindromic Substring Dynamic Programming](Java/5_LongestPalindromicSubstring.java)|Medium|Java|Leetcode|
 |58    |6    | [Zig Zag Conversion.java](Java/6_ZigZagConversion.java)|Medium|Java|Leetcode|
 |59    |7    | [ReverseInteger.java](Java/7_ReverseInteger.java)|Easy|Java|Leetcode|
 |60    |688  | [Knight Probability in Chessboard.java](Java/688_KnightProbabilityinChessboard.java)|Medium|Java|Leetcode|
