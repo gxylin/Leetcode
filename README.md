@@ -537,3 +537,4 @@ Solution for Leetcode/Lintcode
 |518   |734  |[Sentence Similarity](Java/734_Sentence.java)|Easy|Java|Leetcode|
 |519   |737  |[Sentence Similarity II build graph and Union Find](Java/737_Sentence.java)|Medium|Java|Leetcode|
 |520   |760  |[Anagram Mapping](Java/760_Find.java)|Easy|Java|Leetcode|
+|521   |504  |[Base 7](Java/504_Base.java)|Easy|Java|Leetcode|
