@@ -542,3 +542,4 @@ Solution for Leetcode/Lintcode
 |523   |730  |[Count Different Palindromic Subsequences Challenging DP](Java/730_Count.java)|Hard|Java|Leetcode|
 |524   |594  |[Longest Harmonious Subsequence HashMap](Java/594_Longest.java)|Easy|Java|Leetcode|
 |525   |599  |[Minimum Index Sum of Two Lists](Java/599_Minimum.java)|Easy|Java|Leetcode|
+|526   |628  |[Maximum Product of Three Numbers](Java/628_Maximum.java)|Easy|Java|Leetcode
