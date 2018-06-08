@@ -543,3 +543,4 @@ Solution for Leetcode/Lintcode
 |524   |594  |[Longest Harmonious Subsequence HashMap](Java/594_Longest.java)|Easy|Java|Leetcode|
 |525   |599  |[Minimum Index Sum of Two Lists](Java/599_Minimum.java)|Easy|Java|Leetcode|
 |526   |628  |[Maximum Product of Three Numbers](Java/628_Maximum.java)|Easy|Java|Leetcode
+|527   |633  |[Sum of Square Numbers Two points](Java/633_Sum.java)|Easy|Java|Leetcode|
