@@ -541,3 +541,4 @@ Solution for Leetcode/Lintcode
 |522   |516  |[Longest Palindromic Subsequence Dynamic Programming](Java/516_Longest.java)|Medium|Java|Leetcode|
 |523   |730  |[Count Different Palindromic Subsequences Challenging DP](Java/730_Count.java)|Hard|Java|Leetcode|
 |524   |594  |[Longest Harmonious Subsequence HashMap](Java/594_Longest.java)|Easy|Java|Leetcode|
+|525   |599  |[Minimum Index Sum of Two Lists](Java/599_Minimum.java)|Easy|Java|Leetcode|
