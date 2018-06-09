@@ -545,3 +545,4 @@ Solution for Leetcode/Lintcode
 |526   |628  |[Maximum Product of Three Numbers](Java/628_Maximum.java)|Easy|Java|Leetcode
 |527   |633  |[Sum of Square Numbers Two points](Java/633_Sum.java)|Easy|Java|Leetcode|
 |528   |623  |[Add One Row to Tree](Java/623_Add.java)|Medium|Java|Leetcode|
+|529   |637  |[Average of Levels in Binary Tree](Java/637_Average.java)|Easy|Java|Leetcode|
