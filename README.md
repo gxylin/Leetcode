@@ -548,3 +548,4 @@ Solution for Leetcode/Lintcode
 |529   |637  |[Average of Levels in Binary Tree](Java/637_Average.java)|Easy|Java|Leetcode|
 |530   |638  |[Shopping Offers DFS meomo](Java/638_Shopping.java)|Medium|Java|Leetcode|
 |531   |653  |[Two Sum IV - Input is a BST](Java/653_Two.java)|Easy|Java|Leetcode|
+|532   |648  |[Replace Words Trie](Java/648_Replace.java)|Medium|Java|Leetcode|
