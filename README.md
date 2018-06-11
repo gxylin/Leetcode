@@ -550,3 +550,4 @@ Solution for Leetcode/Lintcode
 |531   |653  |[Two Sum IV - Input is a BST](Java/653_Two.java)|Easy|Java|Leetcode|
 |532   |648  |[Replace Words Trie](Java/648_Replace.java)|Medium|Java|Leetcode|
 |533   |665  |[Non-decreasing Array](Java/665_Nondecreasing.java)|Medium|Java|Leetcode|
+|534   |652  |[Find Duplicate Subtrees Recursion/Serialization](Java/652_Find.java)|Medium|Java|Leetcode|
