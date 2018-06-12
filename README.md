@@ -552,3 +552,4 @@ Solution for Leetcode/Lintcode
 |533   |665  |[Non-decreasing Array](Java/665_Nondecreasing.java)|Medium|Java|Leetcode|
 |534   |652  |[Find Duplicate Subtrees Recursion/Serialization](Java/652_Find.java)|Medium|Java|Leetcode|
 |535   |654  |[Maximum Binary Tree](Java/654_Maximum.java)|Medium|Java|Leetcode
+|536   |657  |[Judge Route Circle](Java/657_Judge.java)|Easy|Java|Leetcode|
