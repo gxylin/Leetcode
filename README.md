@@ -558,3 +558,4 @@ Solution for Leetcode/Lintcode
 |539   |670  |[Maximum Swap number](java/670_Maximum.java)|Medium|Java|Leetcode|
 |540   |526  |[Beautiful Arrangement backtracking](Java/526_Beautiful.java)|Medium|Java|Leetcode|
 |541   |515  |[Find Largest Value in Each Tree Row](Java/515_Find.java)|Medium|Java|Leetcode|
+|542   |531  |[Lonely Pixel I Matrix](Java/531_Lonely.java)|Medium|Java|Leetcode|
