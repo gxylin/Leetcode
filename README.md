@@ -561,3 +561,4 @@ Solution for Leetcode/Lintcode
 |542   |531  |[Lonely Pixel I Matrix](Java/531_Lonely.java)|Medium|Java|Leetcode|
 |543   |477  |[Total Hamming Distance](Java/477_Total.java)|Medium|Java|Leetcode|
 |544   |473  |[Matchsticks to Square Backtracking](Java/473_Matchsticks.java)|Medium|Java|Leetcode|
+|545   |491  |[Increasing Subsequences Backtracking](Java/491_Increasing.java)|Medium|Java|Leetcode|
