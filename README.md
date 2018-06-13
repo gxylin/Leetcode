@@ -556,3 +556,4 @@ Solution for Leetcode/Lintcode
 |537   |659  |[Split Array into Consecutive Subsequences Greedy](Java/659_Split.java)|Medium|Java|Leetcode|
 |538   |669  |[Trim a Binary Search Tree](Java/669_Trim.java)|Easy|Java|Leetcode|
 |539   |670  |[Maximum Swap number](java/670_Maximum.java)|Medium|Java|Leetcode|
+|540   |526  |[Beautiful Arrangement backtracking](Java/526_Beautiful.java)|Medium|Java|Leetcode|
