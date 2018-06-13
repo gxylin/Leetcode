@@ -19,6 +19,9 @@ The length of the given matchstick array will not exceed 15.
 https://leetcode.com/problems/matchsticks-to-square/discuss/95752/Java-DFS-solution-with-various-optimizations-(sorting-sequential-partition-DP)
 https://leetcode.com/problems/matchsticks-to-square/discuss/95729/Java-DFS-Solution-with-Explanation
 
+The idea is to assign one number into different sums and try different combinations. 
+numIndex is increased by one to ensure only one visit. 
+
 Method 1: without sorting... 423ms
 class Solution {
     public boolean makesquare(int[] nums) {
