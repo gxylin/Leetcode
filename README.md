@@ -562,3 +562,4 @@ Solution for Leetcode/Lintcode
 |543   |477  |[Total Hamming Distance](Java/477_Total.java)|Medium|Java|Leetcode|
 |544   |473  |[Matchsticks to Square Backtracking](Java/473_Matchsticks.java)|Medium|Java|Leetcode|
 |545   |491  |[Increasing Subsequences Backtracking](Java/491_Increasing.java)|Medium|Java|Leetcode|
+|545   |498  |[Diagonal Traverse](Java/498_Diagonal.java)|Medium|Java|Leetcode|
