@@ -564,3 +564,4 @@ Solution for Leetcode/Lintcode
 |545   |491  |[Increasing Subsequences Backtracking](Java/491_Increasing.java)|Medium|Java|Leetcode|
 |545   |498  |[Diagonal Traverse](Java/498_Diagonal.java)|Medium|Java|Leetcode|
 |546   |542  |[01 Matrix another kind of BFS](Java/542_Matrix.java)|Medium|Java|Leetcode|
+|547   |680  |[Valid Palindrome II ](Java/680_Valid.java)|Easy|Java|Leetcode|
