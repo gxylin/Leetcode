@@ -565,4 +565,5 @@ Solution for Leetcode/Lintcode
 |545   |498  |[Diagonal Traverse](Java/498_Diagonal.java)|Medium|Java|Leetcode|
 |546   |542  |[01 Matrix another kind of BFS](Java/542_Matrix.java)|Medium|Java|Leetcode|
 |547   |680  |[Valid Palindrome II ](Java/680_Valid.java)|Easy|Java|Leetcode|
-|548   |677  |[Map Sum Pairs Trie](Java/677_Map.java)|Medium|Javav|Leetcode|
+|548   |677  |[Map Sum Pairs Trie](Java/677_Map.java)|Medium|Java|Leetcode|
+|548   |695  |[Max Area of Island](Java/695_Max.java)|Easy|Java|Leetcode|
