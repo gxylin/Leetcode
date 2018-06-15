@@ -560,7 +560,7 @@ Solution for Leetcode/Lintcode
 |541   |515  |[Find Largest Value in Each Tree Row](Java/515_Find.java)|Medium|Java|Leetcode|
 |542   |531  |[Lonely Pixel I Matrix](Java/531_Lonely.java)|Medium|Java|Leetcode|
 |543   |477  |[Total Hamming Distance](Java/477_Total.java)|Medium|Java|Leetcode|
-|544   |473  |[Matchsticks to Square Backtracking](Java/473_Matchsticks.java)|Medium|Java|Leetcode|
+|544   |473  |[Matchsticks to Square Backtracking Partition](Java/473_Matchsticks.java)|Medium|Java|Leetcode|
 |545   |491  |[Increasing Subsequences Backtracking](Java/491_Increasing.java)|Medium|Java|Leetcode|
 |546   |498  |[Diagonal Traverse](Java/498_Diagonal.java)|Medium|Java|Leetcode|
 |547   |542  |[01 Matrix another kind of BFS](Java/542_Matrix.java)|Medium|Java|Leetcode|
@@ -568,3 +568,4 @@ Solution for Leetcode/Lintcode
 |549   |677  |[Map Sum Pairs Trie](Java/677_Map.java)|Medium|Java|Leetcode|
 |550   |695  |[Max Area of Island](Java/695_Max.java)|Easy|Java|Leetcode|
 |551   |696  |[Count Binary Substrings Very Good](Java/696_Count.java)|Easy|Java|Leetcode|
+|552   |698  |[Partition to K Equal Sum Subsets Backtracking Partition](Java/698_Partition.java)|Medium|Java|Leetcode|
