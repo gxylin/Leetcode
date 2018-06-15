@@ -567,3 +567,4 @@ Solution for Leetcode/Lintcode
 |548   |680  |[Valid Palindrome II ](Java/680_Valid.java)|Easy|Java|Leetcode|
 |549   |677  |[Map Sum Pairs Trie](Java/677_Map.java)|Medium|Java|Leetcode|
 |550   |695  |[Max Area of Island](Java/695_Max.java)|Easy|Java|Leetcode|
+|551   |696  |[Count Binary Substrings Very Good](Java/696_Count.java)|Easy|Java|Leetcode|
