@@ -11,6 +11,7 @@ Note:
 1 <= len(A), len(B) <= 1000
 0 <= A[i], B[i] < 100
 
+Method: Same idea of Longest Common Substring
 //dp[i][j] is the length of longest common subarray ending with nums[i-1] and nums[j-1]
 class Solution {
     public int findLength(int[] A, int[] B) {
