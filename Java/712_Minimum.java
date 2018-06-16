@@ -25,6 +25,16 @@ Convert character to ASCII:
 char character = 'a';    
 int ascii = (int) character;
 
+Let dp[i][j] be the answer to the problem for the strings s1[i:], s2[j:].
+
+When one of the input strings is empty, the answer is the ASCII-sum of the other string. We can calculate this cumulatively using code like dp[i][s2.length()] = dp[i+1][s2.length()] + s1.codePointAt(i).
+
+When s1[i] == s2[j], we have dp[i][j] = dp[i+1][j+1] as we can ignore these two characters.
+
+When s1[i] != s2[j], we will have to delete at least one of them. We'll have dp[i][j] as the minimum of the answers after both deletion options.
+
+The solutions presented will use bottom-up dynamic programming.
+    
 
 class Solution {
     public int minimumDeleteSum(String s1, String s2) {
