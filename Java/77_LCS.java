@@ -14,6 +14,10 @@ For "ABCD" and "EDCA", the LCS is "A" (or "D", "C"), return 1.
 For "ABCD" and "EACB", the LCS is "AC", return 2.
 
 http://www.jiuzhang.com/solutions/longest-common-subsequence/
+
+dp[i][j] is the length of longest common subarray ending or may not end with nums[i-1] and nums[j-1]
+
+
 public class Solution {
     /**
      * @param A: A string
