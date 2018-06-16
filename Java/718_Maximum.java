@@ -12,7 +12,7 @@ Note:
 0 <= A[i], B[i] < 100
 
 Method: Same idea of Longest Common Substring
-//dp[i][j] is the length of longest common subarray ending with nums[i-1] and nums[j-1]
+dp[i][j] is the length of longest common subarray ending with nums[i-1] and nums[j-1]
 class Solution {
     public int findLength(int[] A, int[] B) {
         int m = A.length;
@@ -32,6 +32,9 @@ class Solution {
 }
 
 Note that the following code is for longest common subsequence not longest common substring
+
+dp[i][j] is the length of longest common subarray ending or may not end with nums[i-1] and nums[j-1]
+
 Example
 For "ABCD" and "EDCA", the LCS is "A" (or "D", "C"), return 1.
 For "ABCD" and "EACB", the LCS is "AC", return 2.
