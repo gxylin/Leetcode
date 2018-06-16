@@ -570,3 +570,4 @@ Solution for Leetcode/Lintcode
 |551   |696  |[Count Binary Substrings Very Good](Java/696_Count.java)|Easy|Java|Leetcode|
 |552   |698  |[Partition to K Equal Sum Subsets Backtracking Partition](Java/698_Partition.java)|Medium|Java|Leetcode|
 |553   |712  |[Minimum ASCII Delete Sum for Two Strings Dynamic Programming](Java/712_Minimum.java)|Medium|Java|Leetcode|
+|554   |720  |[Longest Word in Dictionary Trie](Java/720_Longest.java)|Medium|Java|Leetcode|
