@@ -53,6 +53,51 @@ class MapSum {
     }
 }
 
+
+Modified version: Better
+class MapSum {
+    class TrieNode{
+        TrieNode[] children;
+        int score;
+        public TrieNode (){
+            children = new TrieNode[26];
+        }
+    }
+    /** Initialize your data structure here. */
+    TrieNode trie;
+    Map<String, Integer> map;
+    public MapSum() {
+        trie = new TrieNode();
+        map = new HashMap<String, Integer>();
+    }
+    
+    public void insert(String key, int val) {
+        TrieNode cur = trie;
+        int delta = val - map.getOrDefault(key, 0);
+        map.put(key, val);
+        for (int i = 0; i < key.length(); i++){
+            if (cur.children[key.charAt(i) - 'a'] == null){
+                cur.children[key.charAt(i) - 'a'] = new TrieNode();
+            }
+            cur = cur.children[key.charAt(i) - 'a'];
+            cur.score += delta;
+        }
+    }
+    
+    public int sum(String prefix) {
+        TrieNode cur = trie;
+        for (int i = 0; i < prefix.length() ; i++){
+            if (cur.children[prefix.charAt(i) - 'a'] != null){
+                cur = cur.children[prefix.charAt(i) - 'a'];
+            }else{
+                return 0;
+            }
+        }
+        return cur.score;
+    }
+}
+
+
 /**
  * Your MapSum object will be instantiated and called as such:
  * MapSum obj = new MapSum();
