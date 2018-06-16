@@ -61,6 +61,22 @@ class Solution {
         return ans;
     }
 }
+https://leetcode.com/problems/longest-word-in-dictionary/discuss/109114/JavaC++-Clean-Code
+Best solution: build HashMap
+class Solution {
+    public String longestWord(String[] words) {
+        Arrays.sort(words);
+        Set<String> built = new HashSet<String>();
+        String res = "";
+        for (String w : words) {
+            if (w.length() == 1 || built.contains(w.substring(0, w.length() - 1))) {
+                res = w.length() > res.length() ? w : res;
+                built.add(w);
+            }
+        }
+        return res;
+    }
+}
 
 Method 2: Brute Force
 Intuition
