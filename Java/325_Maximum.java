@@ -15,6 +15,7 @@ Input: nums = [-2, -1, 2, 1], k = 1
 Output: 2 
 Explanation: The subarray [-1, 2] sums to 1 and is the longest.
 
+Method: preSum
 class Solution {
     public int maxSubArrayLen(int[] nums, int k) {
         if (nums == null || nums.length == 0){
