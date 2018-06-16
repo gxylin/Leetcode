@@ -8,7 +8,7 @@ Given the array [2,3,1,2,4,3] and s = 7, the subarray [4,3] has the minimal leng
 Challenge 
 If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log n).
 
-Method 1: two points
+Method 1: two points, sliding window
 time complexity: O(n)
 class Solution {
     public int minSubArrayLen(int s, int[] nums) {
