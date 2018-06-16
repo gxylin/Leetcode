@@ -14,6 +14,9 @@ O(n x m) time and memory.
 
 https://www.jiuzhang.com/solution/longest-common-substring/
 
+dp[i][j] is the length of longest common subarray ending with nums[i-1] and nums[j-1], which is different from previous 
+longest common subsequence
+
 public class Solution {
     /**
      * @param A: A string
