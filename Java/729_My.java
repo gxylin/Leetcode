@@ -38,10 +38,6 @@ class MyCalendar {
     }
     
     public boolean book(int start, int end) {
-        if (intervals.isEmpty()){
-            intervals.add(new Interval(start, end));
-            return true;
-        }
         for (Interval interval : intervals){
             if (interval.start < end && interval.end > start){
                 return false;
