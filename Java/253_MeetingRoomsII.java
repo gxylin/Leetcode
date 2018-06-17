@@ -103,7 +103,7 @@ class Solution {
     }
 }
 
-Method 3: Best solution (inspired by My calendar II)
+Method 3: Best solution (inspired by My calendar II), the same s My calendar III
 Time complexity: O(nlogn)
 /**
  * Definition for an interval.
