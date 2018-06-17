@@ -576,3 +576,4 @@ Solution for Leetcode/Lintcode
 |557   |728  |[Self Dividing Numbers](Java/728_Self.java)|Easy|Java|Leetcode|
 |558   |729  |[My Calendar I](Java/729_My.java)|Medium|Java|Leetcode|
 |559   |731  |[My Calendar II](Java/731_My.java)|Medium|Java|Leetcode|
+|560   |732  |[My Calendar III](Java/732_my.java)|Hard|Java|Leetcode|
