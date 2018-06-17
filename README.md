@@ -573,3 +573,4 @@ Solution for Leetcode/Lintcode
 |554   |720  |[Longest Word in Dictionary Trie](Java/720_Longest.java)|Medium|Java|Leetcode|
 |555   |718  |[Maximum Length of Repeated Subarray Dynamic Programming](Java/718_Maximum.java)|Medium|Java|Leetcode|
 |556   |724  |[Find Pivot Index](Java/724_Find.java)|Easy|Java|Leetcode|
+|557   |728  |[Self Dividing Numbers](Java/728_Self.java)|Easy|Java|Leetcode|
