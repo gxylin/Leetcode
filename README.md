@@ -263,7 +263,7 @@ Solution for Leetcode/Lintcode
 |254   |671  |[Second Minimum Node In a Binary Tree](Java/671_SecondMinimumBinary.java)|Easy|Java|Leetcode|
 |255   |251  |[Flatten 2D Vector.java](Java/251_Flatten2DVector.java)|Medium|Java|Leetcode|
 |256   |252  |[Meeting Rooms.java](Java/252_MeetingRooms.java)|Easy|Java|Leetcode|
-|257   |253  |[Meeting Rooms II.java](Java/253_MeetingRoomsII.java)|Medium|Java|Leetcode|
+|257   |253  |[Meeting Rooms II TreeMap Sweep line](Java/253_MeetingRoomsII.java)|Medium|Java|Leetcode|
 |258   |269  |[Alien Dictionary.java](Java/269_AlienDictionary.java)|Hard|Java|Leetcode|
 |259   |289  |[Game of Life.java](Java/289_GameofLife.java)|Medium|Java|Leetcode|
 |260   |225  |[Implement Stack Using Queue.java](Java/225_ImplementStack.java)|Medium|Java|Leetcode|
@@ -575,5 +575,5 @@ Solution for Leetcode/Lintcode
 |556   |724  |[Find Pivot Index](Java/724_Find.java)|Easy|Java|Leetcode|
 |557   |728  |[Self Dividing Numbers](Java/728_Self.java)|Easy|Java|Leetcode|
 |558   |729  |[My Calendar I](Java/729_My.java)|Medium|Java|Leetcode|
-|559   |731  |[My Calendar II](Java/731_My.java)|Medium|Java|Leetcode|
-|560   |732  |[My Calendar III](Java/732_my.java)|Hard|Java|Leetcode|
+|559   |731  |[My Calendar II TreeMap Sweep line](Java/731_My.java)|Medium|Java|Leetcode|
+|560   |732  |[My Calendar III TreeMap Sweep line](Java/732_my.java)|Hard|Java|Leetcode|
