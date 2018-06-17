@@ -21,7 +21,7 @@ The number of calls to MyCalendar.book per test case will be at most 1000.
 In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
 
 
-Method 1:
+Method 1: Brute Force
 Time complexity: O(n)
 class MyCalendar {
     class Interval {
@@ -52,6 +52,22 @@ class MyCalendar {
     }
 }
 
+public class MyCalendar {
+    List<int[]> calendar;
+
+    MyCalendar() {
+        calendar = new ArrayList();
+    }
+
+    public boolean book(int start, int end) {
+        for (int[] iv: calendar) {
+            if (iv[0] < end && start < iv[1]) return false;
+        }
+        calendar.add(new int[]{start, end});
+        return true;
+    }
+}
+                                                                                                                          
 /**
  * Your MyCalendar object will be instantiated and called as such:
  * MyCalendar obj = new MyCalendar();
@@ -59,6 +75,7 @@ class MyCalendar {
  */
  
  Method 2: TreeMap
+ Time complexity: O(logn)
  class MyCalendar {
     class Interval {
         int start;
