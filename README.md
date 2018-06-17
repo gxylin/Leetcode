@@ -572,3 +572,4 @@ Solution for Leetcode/Lintcode
 |553   |712  |[Minimum ASCII Delete Sum for Two Strings Dynamic Programming](Java/712_Minimum.java)|Medium|Java|Leetcode|
 |554   |720  |[Longest Word in Dictionary Trie](Java/720_Longest.java)|Medium|Java|Leetcode|
 |555   |718  |[Maximum Length of Repeated Subarray Dynamic Programming](Java/718_Maximum.java)|Medium|Java|Leetcode|
+|556   |724  |[Find Pivot Index](Java/724_Find.java)|Easy|Java|Leetcode|
