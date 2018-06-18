@@ -581,3 +581,4 @@ Solution for Leetcode/Lintcode
 |562   |402  |[Remove K Digits monotonic stack](Java/402_Remove.java)|Medium|Java|Leetcode|
 |563   |738  |[Monotone Increasing Digits](Java/738_Monotone.java)|Medium|Java|Leetcode|
 |564   |739  |[Daily Temperatures Monotonic Stack](Java/739_Daily.java)|Medium|Java|Leetcode|
+|565   |740  |[Delete and Earn Dynamic Programming and TreeMap](Java/740_Delete.java)|Medium|Java|Leetcode|
