@@ -578,3 +578,4 @@ Solution for Leetcode/Lintcode
 |559   |731  |[My Calendar II TreeMap Sweep line](Java/731_My.java)|Medium|Java|Leetcode|
 |560   |732  |[My Calendar III TreeMap Sweep line](Java/732_my.java)|Hard|Java|Leetcode|
 |561   |735  |[Asteroid Collision](Java/735_Asteroid.java)|Medium|Java|Leetcode|
+|562   |402  |[Remove K Digits](Java/402_Remove.java)|Medium|Java|Leetcode|
