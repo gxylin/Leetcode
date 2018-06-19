@@ -11,7 +11,8 @@ The length of times will be in the range [1, 6000].
 All edges times[i] = (u, v, w) will have 1 <= u, v <= N and 1 <= w <= 100.
 
 https://leetcode.com/problems/network-delay-time/discuss/109968/Simple-JAVA-Djikstra's-(PriorityQueue-optimized)-Solution-with-explanation
-Djikstra
+Dijkstra’s Algorithm finds the shortest distance from the start node to every other node in the graph
+
 class Solution {
     public int networkDelayTime(int[][] times, int N, int K) {
         Map<Integer, Map<Integer, Integer>> graph = new HashMap<>();
