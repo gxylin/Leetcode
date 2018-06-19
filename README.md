@@ -585,4 +585,4 @@ Solution for Leetcode/Lintcode
 |566   |747  |[Largest Number At Least Twice of Others](Java/747_Largest.java)|Easy|Java|Leetcode|
 |567   |744  |[Find Smallest Letter Greater Than Target Binary Search](Java/744_Find.java)|Easy|Java|Leetcode|
 |568   |743  |[Network Delay Time Graph Dijkstra](Java/743_Network.java)|Medium|Java|Leetcode|
-|569   |750  |[Number Of Corner Rectangles](Java/750_Number.java)|Medium|Java|Leetcode|
+|569   |750  |[Number Of Corner Rectangles HashMap](Java/750_Number.java)|Medium|Java|Leetcode|
