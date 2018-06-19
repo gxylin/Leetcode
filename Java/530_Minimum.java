@@ -108,9 +108,41 @@ class Solution {
         }
         inOrder(root.left, ans);
         if (prev != null){
-            ans[0] = Math.min(ans[0], Math.abs(root.val - prev.val));
+            ans[0] = Math.min(ans[0], root.val - prev.val);
         }
         prev = root;
         inOrder(root.right, ans);
+    }
+}
+
+
+Wrong answer below,
+
+the answer below is the minimum difference between root and children
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public int minDiffInBST(TreeNode root) {
+        int[] ans = new int[1];
+        ans[0] = Integer.MAX_VALUE;
+        inOrder(root, null, ans);
+        return ans[0];
+    }
+    private void inOrder(TreeNode root, TreeNode prev, int[] ans){
+        if (root == null){
+            return;
+        }
+        inOrder(root.left, root, ans);
+        if (prev != null){
+            ans[0] = Math.min(ans[0], Math.abs(root.val - prev.val));
+        }
+        inOrder(root.right, root, ans);
     }
 }
