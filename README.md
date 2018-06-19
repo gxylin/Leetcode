@@ -582,3 +582,4 @@ Solution for Leetcode/Lintcode
 |563   |738  |[Monotone Increasing Digits](Java/738_Monotone.java)|Medium|Java|Leetcode|
 |564   |739  |[Daily Temperatures Monotonic Stack](Java/739_Daily.java)|Medium|Java|Leetcode|
 |565   |740  |[Delete and Earn Dynamic Programming and TreeMap](Java/740_Delete.java)|Medium|Java|Leetcode|
+|566   |747  |[Largest Number At Least Twice of Others](Java/747_Largest.java)|Easy|Java|Leetcode|
