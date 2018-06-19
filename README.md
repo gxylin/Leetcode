@@ -584,4 +584,4 @@ Solution for Leetcode/Lintcode
 |565   |740  |[Delete and Earn Dynamic Programming and TreeMap](Java/740_Delete.java)|Medium|Java|Leetcode|
 |566   |747  |[Largest Number At Least Twice of Others](Java/747_Largest.java)|Easy|Java|Leetcode|
 |567   |744  |[Find Smallest Letter Greater Than Target Binary Search](Java/744_Find.java)|Easy|Java|Leetcode|
-|568   |743  |[Network Delay Time](Java/743_Network.java)|Medium|Java|Leetcode|
+|568   |743  |[Network Delay Time Graph Dijkstra](Java/743_Network.java)|Medium|Java|Leetcode|
