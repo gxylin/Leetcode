@@ -23,6 +23,24 @@ The length of nums is at most 20000.
 Each element nums[i] is an integer in the range [1, 10000].
 
 Similar as House Robber I
+
+Method 1: best solution
+class Solution {
+    public int deleteAndEarn(int[] nums) {
+        int[] count = new int[10001];
+        for (int i : nums){
+            count[i]++;
+        }
+        int[] dp = new int[10001];
+        dp[1] = count[1];
+        for (int i = 2; i <= 10000; i++){
+            dp[i] = Math.max(dp[i-1], dp[i-2] + i * count[i]);
+        }
+        return dp[10000];
+    }
+}
+
+Method 2: DP + treemap
 class Solution {
     public int deleteAndEarn(int[] nums) {
         TreeMap<Integer, Integer> map = new TreeMap<>();
