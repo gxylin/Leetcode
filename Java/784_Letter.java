@@ -15,6 +15,7 @@ Note:
 S will be a string with length at most 12.
 S will consist only of letters or digits.
 
+    https://leetcode.com/problems/letter-case-permutation/discuss/115508/Java-solution-using-recursion
 class Solution {
     public List<String> letterCasePermutation(String S) {
         List<String> res = new ArrayList<>();
