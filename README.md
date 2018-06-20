@@ -587,3 +587,4 @@ Solution for Leetcode/Lintcode
 |568   |743  |[Network Delay Time Graph Dijkstra](Java/743_Network.java)|Medium|Java|Leetcode|
 |569   |750  |[Number Of Corner Rectangles HashMap](Java/750_Number.java)|Medium|Java|Leetcode|
 |570   |784  |[Letter Case Permutation Recursion](Java/784_Letter.java)|Easy|Java|Leetcode|
+|571   |766  |[Toeplitz Matrix](Java/766_Toeplitz.java)|Easy|Java|Leetcode|
