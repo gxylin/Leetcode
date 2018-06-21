@@ -590,3 +590,4 @@ Solution for Leetcode/Lintcode
 |571   |766  |[Toeplitz Matrix](Java/766_Toeplitz.java)|Easy|Java|Leetcode|
 |572   |767  |[Reorganize String](Java/767_Reorganize.java)|Medium|Java|Leetcode|
 |573   |769  |[Max Chunks To Make Sorted](Java/769_Max.java)|Medium|Java|Leetcode|
+|574   |768  |[Max Chunks To Make Sorted II](Java/768_Max.java)|Hard|Java|Leetcode|
