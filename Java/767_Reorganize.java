@@ -14,7 +14,7 @@ Note:
 
 S will consist of lowercase letters and have length in range [1, 500].
 
-
+Similar as Task Scheduler, greedy + PQ
 class Solution {
     class Pair {
         char ch;
