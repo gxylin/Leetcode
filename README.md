@@ -592,3 +592,4 @@ Solution for Leetcode/Lintcode
 |573   |769  |[Max Chunks To Make Sorted](Java/769_Max.java)|Medium|Java|Leetcode|
 |574   |768  |[Max Chunks To Make Sorted II](Java/768_Max.java)|Hard|Java|Leetcode|
 |575   |788  |[Rotated Digits](Java/788_Rotated.java)|Easy|Java|Leetcode|
+|576   |787  |[Cheapest Flights Within K Stops Graph Dijkstra](Java/787_Cheapest.java)|Hard|Java|Leetcode|
