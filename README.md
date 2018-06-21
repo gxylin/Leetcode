@@ -588,3 +588,4 @@ Solution for Leetcode/Lintcode
 |569   |750  |[Number Of Corner Rectangles HashMap](Java/750_Number.java)|Medium|Java|Leetcode|
 |570   |784  |[Letter Case Permutation Recursion](Java/784_Letter.java)|Easy|Java|Leetcode|
 |571   |766  |[Toeplitz Matrix](Java/766_Toeplitz.java)|Easy|Java|Leetcode|
+|572   |767  |[Reorganize String](Java/767_Reorganize.java)|Medium|Java|Leetcode|
