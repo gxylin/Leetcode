@@ -17,6 +17,7 @@ Return false.
 Follow up:
 If there are lots of incoming S, say S1, S2, ... , Sk where k >= 1B, and you want to check one by one to see if T has its subsequence. In this scenario, how would you change your code?
 
+Method 1: 50ms
 class Solution {
     public boolean isSubsequence(String s, String t) {
         if (s.length() == 0){
@@ -34,5 +35,32 @@ class Solution {
             indexT++;
         }
         return false;
+    }
+}
+https://leetcode.com/problems/is-subsequence/discuss/87297/Java.-Only-2ms.-Much-faster-than-normal-2-pointers.
+Difference between Method 1 and Method 2:
+the origin code of func "indexOf" and "charAt". These two solution both traversed the char of String one by one to search 
+the first occurrence specific char.
+The difference is that indexOf only call once function then traversed in "String.value[]" arr, 
+but we used multiple calling function "charAt" to get the value in "String.value[]" arr.
+The time expense of calling function made the difference.
+    
+Method 2: 2ms
+class Solution {
+    public boolean isSubsequence(String s, String t) {
+        if (t.length() < s.length()){
+            return false;
+        }
+        int prev = 0;
+        int indexS = 0;
+        while (indexS < s.length()){
+            prev = t.indexOf(s.charAt(indexS), prev);
+            if (prev == - 1){
+                return false;
+            }
+            indexS++;
+            prev++;
+        }
+        return true;
     }
 }
