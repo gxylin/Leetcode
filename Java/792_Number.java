@@ -39,3 +39,40 @@ class Solution {
         return false;
     }
 }
+
+Method 3: Accepted (174ms)
+Refer to explanation:https://leetcode.com/problems/number-of-matching-subsequences/discuss/117634/Efficient-and-simple-go-through-words-in-parallel-with-explanation
+
+class Solution {
+    public int numMatchingSubseq(String S, String[] words) {
+        Map<Character, LinkedList<String>> map = new HashMap<>();
+        for (String word : words){
+            char c = word.charAt(0);
+            if (!map.containsKey(c)){
+                map.put(c, new LinkedList<String>());
+            }
+            map.get(c).offer(word);
+        }
+        int ans = 0;
+        for (int i = 0; i < S.length(); i++){
+            char c = S.charAt(i);
+            LinkedList<String> queue = map.get(c);
+            if (queue == null){
+                continue;
+            }
+            int size  = queue.size();
+            for (int j = 0; j < size; j++){
+                String str = queue.poll();
+                if (str.length() == 1){
+                    ans++;
+                }else{
+                    if (!map.containsKey(str.charAt(1))){
+                        map.put(str.charAt(1), new LinkedList<String>());
+                    }
+                    map.get(str.charAt(1)).offer(str.substring(1));
+                }
+            }
+        }
+        return ans;
+    }
+}
