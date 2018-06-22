@@ -31,6 +31,20 @@ class Solution {
 
 class Solution {
     public int rotatedDigits(int N) {
+        int ans = 0;
+        for (int i = 1; i <= N; i++){
+            String s = String.valueOf(i);
+            if ((s.contains("2") || s.contains("5") || s.contains("6") || s.contains("9")) 
+                && (s.contains("3") && s.contains("4") && s.contains("7"))){
+                ans++;
+            }
+        }
+        return ans;
+    }
+}
+
+class Solution {
+    public int rotatedDigits(int N) {
         // Count how many n in [1, N] are good.
         int ans = 0;
         for (int n = 1; n <= N; ++n)
