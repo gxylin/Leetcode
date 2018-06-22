@@ -596,3 +596,4 @@ Solution for Leetcode/Lintcode
 |577   |796  |[Rotate String](Java/796_Rotate.java)|Easy|Java|Leetcode|
 |578   |797  |[All Paths From Source to Target](Java/797_All.java)|Medium|Java|Leetcode|
 |579   |800  |[Similar RGB Color](Java/800_Similar.java)|Easy|Java|Leetcode|
+|580   |792  |[Number of Matching Subsequences](Java/792_Number.java)|Medium|Java|Leetcode|
