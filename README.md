@@ -594,3 +594,4 @@ Solution for Leetcode/Lintcode
 |575   |788  |[Rotated Digits](Java/788_Rotated.java)|Easy|Java|Leetcode|
 |576   |787  |[Cheapest Flights Within K Stops Graph Dijkstra](Java/787_Cheapest.java)|Hard|Java|Leetcode|
 |577   |796  |[Rotate String](Java/796_Rotate.java)|Easy|Java|Leetcode|
+|578   |797  |[All Paths From Source to Target](Java/797_All.java)|Medium|Java|Leetcode|
