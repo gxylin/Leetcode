@@ -19,6 +19,28 @@ You can print different paths in any order, but you should keep the order of nod
 class Solution {
     public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
         List<List<Integer>> res = new ArrayList<>();
+        List<Integer> path = new ArrayList<>();
+        path.add(0);
+        dfs(res, path, graph, 0,  graph.length - 1);
+        return res;
+    }
+    private void dfs(List<List<Integer>> res, List<Integer> path, int[][] graph, int src, int dst){
+        if (src == dst){
+            res.add(new ArrayList<Integer>(path));
+            return;
+        }
+        for (int node : graph[src]){
+            path.add(node);
+            dfs(res, path, graph, node, dst);
+            path.remove(path.size() - 1);
+        }
+    }
+}
+
+
+class Solution {
+    public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
+        List<List<Integer>> res = new ArrayList<>();
         Map<Integer, List<Integer>> graphMap = new HashMap<>();
         for (int i = 0; i < graph.length; i++){
             graphMap.put(i, new ArrayList<Integer>());
