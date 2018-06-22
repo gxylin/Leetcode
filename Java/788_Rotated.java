@@ -35,7 +35,7 @@ class Solution {
         for (int i = 1; i <= N; i++){
             String s = String.valueOf(i);
             if ((s.contains("2") || s.contains("5") || s.contains("6") || s.contains("9")) 
-                && (s.contains("3") && s.contains("4") && s.contains("7"))){
+                && (!s.contains("3") && !s.contains("4") && !s.contains("7"))){
                 ans++;
             }
         }
