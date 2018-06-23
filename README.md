@@ -597,3 +597,4 @@ Solution for Leetcode/Lintcode
 |578   |797  |[All Paths From Source to Target](Java/797_All.java)|Medium|Java|Leetcode|
 |579   |800  |[Similar RGB Color](Java/800_Similar.java)|Easy|Java|Leetcode|
 |580   |792  |[Number of Matching Subsequences](Java/792_Number.java)|Medium|Java|Leetcode|
+|581   |795  |[Number of Subarrays with Bounded Maximum](Java/795_Number.java)|Medium|Java|Leetcode|
