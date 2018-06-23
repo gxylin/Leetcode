@@ -598,3 +598,4 @@ Solution for Leetcode/Lintcode
 |579   |800  |[Similar RGB Color](Java/800_Similar.java)|Easy|Java|Leetcode|
 |580   |792  |[Number of Matching Subsequences](Java/792_Number.java)|Medium|Java|Leetcode|
 |581   |795  |[Number of Subarrays with Bounded Maximum](Java/795_Number.java)|Medium|Java|Leetcode|
+|582   |804  |[Unique Morse Code Words](Java/804_Unique.java)|Easy|Java|Leetcode|
