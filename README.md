@@ -599,3 +599,4 @@ Solution for Leetcode/Lintcode
 |580   |792  |[Number of Matching Subsequences](Java/792_Number.java)|Medium|Java|Leetcode|
 |581   |795  |[Number of Subarrays with Bounded Maximum](Java/795_Number.java)|Medium|Java|Leetcode|
 |582   |804  |[Unique Morse Code Words](Java/804_Unique.java)|Easy|Java|Leetcode|
+|583   |801  |[Minimum Swaps To Make Sequences Increasing Very good Two Alternate 1D DP](Java/801_Minimum.java)|Medium|Java|Leetcode|
