@@ -600,3 +600,4 @@ Solution for Leetcode/Lintcode
 |581   |795  |[Number of Subarrays with Bounded Maximum](Java/795_Number.java)|Medium|Java|Leetcode|
 |582   |804  |[Unique Morse Code Words](Java/804_Unique.java)|Easy|Java|Leetcode|
 |583   |801  |[Minimum Swaps To Make Sequences Increasing Very good Two Alternate 1D DP](Java/801_Minimum.java)|Medium|Java|Leetcode|
+|584   |807  |[Max Increase to Keep City Skyline](Java/807_Max.java)|Medium|Java|Leetcode|
