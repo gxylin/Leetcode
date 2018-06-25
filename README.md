@@ -602,3 +602,4 @@ Solution for Leetcode/Lintcode
 |583   |801  |[Minimum Swaps To Make Sequences Increasing Very good Two Alternate 1D DP](Java/801_Minimum.java)|Medium|Java|Leetcode|
 |584   |807  |[Max Increase to Keep City Skyline](Java/807_Max.java)|Medium|Java|Leetcode|
 |585   |814  |[Binary Tree Pruning](Java/814_Binary.java)|Medium|Java|Leetcode|
+|586   |806  |[Number of Lines To Write String](Java/806_Number.java)|Easy|Java|Leetcode|
