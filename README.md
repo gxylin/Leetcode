@@ -603,3 +603,4 @@ Solution for Leetcode/Lintcode
 |584   |807  |[Max Increase to Keep City Skyline](Java/807_Max.java)|Medium|Java|Leetcode|
 |585   |814  |[Binary Tree Pruning](Java/814_Binary.java)|Medium|Java|Leetcode|
 |586   |806  |[Number of Lines To Write String](Java/806_Number.java)|Easy|Java|Leetcode|
+|587   |812  |[Largest Triangle Area](Java/812_Largest.java)|Easy|Java|Leetcode|
