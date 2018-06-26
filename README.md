@@ -604,3 +604,4 @@ Solution for Leetcode/Lintcode
 |585   |814  |[Binary Tree Pruning](Java/814_Binary.java)|Medium|Java|Leetcode|
 |586   |806  |[Number of Lines To Write String](Java/806_Number.java)|Easy|Java|Leetcode|
 |587   |812  |[Largest Triangle Area](Java/812_Largest.java)|Easy|Java|Leetcode|
+|588   |811  |[Subdomain Visit Count](Java/811_Subdomain.java)|Easy|Java|Leetcode|
