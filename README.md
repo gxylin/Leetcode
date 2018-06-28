@@ -606,3 +606,4 @@ Solution for Leetcode/Lintcode
 |587   |812  |[Largest Triangle Area](Java/812_Largest.java)|Easy|Java|Leetcode|
 |588   |811  |[Subdomain Visit Count](Java/811_Subdomain.java)|Easy|Java|Leetcode|
 |589   |819  |[Most Common Word](Java/819_Most.java)|Easy|Java|Leetcode|
+|590   |813  |[Largest Sum of Averages 2D DP + 1D DP](Java/813_Largest.java)|Medium|Java|Leetcode|
