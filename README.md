@@ -610,4 +610,4 @@ Solution for Leetcode/Lintcode
 |591   |821  |[Shortest Distance to a Character Good](Java/821_Shortest.java)|Easy|Java|Leetcode|
 |592   |817  |[Linked List Components](Java/817_Linked.java)|Medium|Java|Leetcode|
 |593   |832  |[Flipping an Image](Java/832_Flipping.java)|Easy|Java|Leetcode|
-|594   |830  |[Short Encoding of Words](Java/830_Positions.java)|Easy|Java|Leetcode|
+|594   |830  |[Positions of Large Groups](Java/830_Positions.java)|Easy|Java|Leetcode|
