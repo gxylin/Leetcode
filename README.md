@@ -611,3 +611,4 @@ Solution for Leetcode/Lintcode
 |592   |817  |[Linked List Components](Java/817_Linked.java)|Medium|Java|Leetcode|
 |593   |832  |[Flipping an Image](Java/832_Flipping.java)|Easy|Java|Leetcode|
 |594   |830  |[Positions of Large Groups Two pointers](Java/830_Positions.java)|Easy|Java|Leetcode|
+|595   |824  |[Goat Latin](Java/824_Goat.java)|Easy|Java|Leetcode|
