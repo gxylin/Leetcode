@@ -608,3 +608,4 @@ Solution for Leetcode/Lintcode
 |589   |819  |[Most Common Word](Java/819_Most.java)|Easy|Java|Leetcode|
 |590   |813  |[Largest Sum of Averages 2D DP + 1D DP](Java/813_Largest.java)|Medium|Java|Leetcode|
 |591   |821  |[Shortest Distance to a Character Good](Java/821_Shortest.java)|Easy|Java|Leetcode|
+|592   |817  |[Linked List Components](Java/817_Linked.java)|Medium|Java|Leetcode|
