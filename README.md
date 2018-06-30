@@ -614,3 +614,4 @@ Solution for Leetcode/Lintcode
 |595   |824  |[Goat Latin](Java/824_Goat.java)|Easy|Java|Leetcode|
 |596   |829  |[Consecutive Numbers Sum](Java/829_Consecutive.java)|Medium|Java|Leetcode|
 |597   |842  |[Split Array into Fibonacci Sequence Backtracking](Java/842_Split.java)|Medium|Java|Leetcode|
+|598   |851  |[Loud and Rich DFS + Memo](Java/851_Loud.java)|Medium|Java|Leetcode|
