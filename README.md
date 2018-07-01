@@ -617,3 +617,4 @@ Solution for Leetcode/Lintcode
 |598   |851  |[Loud and Rich DFS + memorization](Java/851_Loud.java)|Medium|Java|Leetcode|
 |599   |517  |[Super Washing Machines](Java/517_Super.java)|Hard|Java|Leetcode|
 |600   |273  |[Integer to English Words](Java/273_Integer.java)|Hard|Java|Leetcode|
+|601   |268  |[Missing Number](Java/268_Missing.java)|Easy|Java|Leetcode|
