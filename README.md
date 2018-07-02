@@ -622,3 +622,4 @@ Solution for Leetcode/Lintcode
 |603   |721  |[Accounts Merge DFS Union Find](Java/721_Accounts.java)|Medium|Java|Leetcode|
 |604   |673  |[Number of Longest Increasing Subsequence Two Dynamic Programming](Java/673_Number.java)|Medium|Java|Leetcode|
 |605   |785  |[Is Graph Bipartite Color DFS](Java/785_Is.java)|Medium|Java|Leetcode|
+|606   |764  |[Largest Plus Sign Dynamic Programming](Java/764_Largest.java)|Medium|Java|Leetcode|
