@@ -623,3 +623,4 @@ Solution for Leetcode/Lintcode
 |604   |673  |[Number of Longest Increasing Subsequence Two Dynamic Programming](Java/673_Number.java)|Medium|Java|Leetcode|
 |605   |785  |[Is Graph Bipartite Color DFS](Java/785_Is.java)|Medium|Java|Leetcode|
 |606   |764  |[Largest Plus Sign Directional Dynamic Programming](Java/764_Largest.java)|Medium|Java|Leetcode|
+|607   |825  |[Friends Of Appropriate Ages](Java/825_Friends.java)|Medium|Java|Leetcode|
