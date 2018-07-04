@@ -625,3 +625,4 @@ Solution for Leetcode/Lintcode
 |606   |764  |[Largest Plus Sign Directional Dynamic Programming](Java/764_Largest.java)|Medium|Java|Leetcode|
 |607   |825  |[Friends Of Appropriate Ages](Java/825_Friends.java)|Medium|Java|Leetcode|
 |608   |71   |[Simplify Path Stack](Java/71_Simplify.java)|Medium|Java|Leetcode|
+|609   |91   |[Decode Ways](Java/91_Decode.java)|Medium|Java|Leetcode|
