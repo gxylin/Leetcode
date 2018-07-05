@@ -627,4 +627,4 @@ Solution for Leetcode/Lintcode
 |608   |71   |[Simplify Path Stack](Java/71_Simplify.java)|Medium|Java|Leetcode|
 |609   |91   |[Decode Ways](Java/91_Decode.java)|Medium|Java|Leetcode|
 |610   |639  |[Decode Ways II](Java/639_Decode.java)|Medium|Java|Leetcode|
-|611   |642  |[Design Search Autocomplete System](Java/642_Design.java)|Hard|Java|Leetcode|
+|611   |642  |[Design Search Autocomplete System Trie](Java/642_Design.java)|Hard|Java|Leetcode|
