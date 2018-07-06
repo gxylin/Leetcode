@@ -31,23 +31,10 @@ Note:
     1 <= N <= 50
     Answers will be in the range of 32-bit signed integer.
 
-Method 1:
+Method:
 Time complexity: O(n^2)
 Space complexity: O(1)
-class Solution {
-    public int maxA(int N) {
-        int[] dp = new int[N+1];
-        for (int i = 1; i <= N; i++){
-            dp[i] = dp[i-1] + 1;
-            for (int j = 1; j < i-1; j++){
-                dp[i] = Math.max(dp[i], dp[j] * (i-j-1));
-            }
-        }
-        return dp[N];
-    }
-}
 
-Method 2:
 We use i steps to reach maxA(i) then use the remaining n - i steps to reach n - i - 1 copies of maxA(i)
 
 For example:
