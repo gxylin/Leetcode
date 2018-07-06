@@ -628,3 +628,4 @@ Solution for Leetcode/Lintcode
 |609   |91   |[Decode Ways](Java/91_Decode.java)|Medium|Java|Leetcode|
 |610   |639  |[Decode Ways II](Java/639_Decode.java)|Medium|Java|Leetcode|
 |611   |642  |[Design Search Autocomplete System Trie](Java/642_Design.java)|Hard|Java|Leetcode|
+|612   |165  |[Compare Version Numbers Split](Java/165_Compare.java)|Medium|Java|Leetcode|
