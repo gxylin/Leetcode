@@ -12,6 +12,7 @@ Note:
 The length of A will be in the range [1, 30].
 A[i] will be in the range of [0, 10000].
 
+    https://leetcode.com/problems/split-array-with-same-average/discuss/120660/Java-accepted-recursive-solution-with-explanation
 class Solution {
     public boolean splitArraySameAverage(int[] A) {
         int sum = 0;
