@@ -60,6 +60,7 @@ class Solution {
 }
 
 Method 2: Best solution
+only count top left one cell as one ship
 https://leetcode.com/problems/battleships-in-a-board/discuss/90902/Simple-Java-Solution
 class Solution {
     public int countBattleships(char[][] board) {
