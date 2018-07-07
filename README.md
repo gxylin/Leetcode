@@ -634,3 +634,4 @@ Solution for Leetcode/Lintcode
 |615   |650  |[2 Keys Keyboard](Java/650_Keys.java)|Medium|Java|Leetcode|
 |616   |651  |[4 Keys Keyboard](Java/651_Keys.java)|Medium|Java|Leetcode|
 |617   |419  |[Battleships in a Board](Java/419_Battleships.java)|Medium|Java|Leetcode|
+|618   |805  |[Split Array With Same Average](Java/805_Split.java)|Hard|Java|Leetcode|
