@@ -636,3 +636,4 @@ Solution for Leetcode/Lintcode
 |617   |419  |[Battleships in a Board](Java/419_Battleships.java)|Medium|Java|Leetcode|
 |618   |805  |[Split Array With Same Average](Java/805_Split.java)|Hard|Java|Leetcode|
 |619   |582  |[Kill Process DFS BFS](Java/582_Kill.java)|Medium|Java|Leetcode|
+|620   |636  |[Exclusive Time of Functions Stack](Java/636_Exclusive.java)|Medium|Java|Leetcode|
