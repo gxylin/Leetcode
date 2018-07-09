@@ -639,3 +639,4 @@ Solution for Leetcode/Lintcode
 |620   |636  |[Exclusive Time of Functions Stack](Java/636_Exclusive.java)|Medium|Java|Leetcode|
 |621   |605  |[Can Place Flowers Greedy](Java/605_Can.java|Easy|Java|Leetcode|
 |622   |464  |[Can I win DFS + Memo](Java/464_Can.java)|Medium|Java|Leetcode|
+|623   |486  |[Predict the Winner DP MinMax](Java/486_Predict.java)|Medium|Java|Leetcode|
