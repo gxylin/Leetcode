@@ -637,6 +637,6 @@ Solution for Leetcode/Lintcode
 |618   |805  |[Split Array With Same Average](Java/805_Split.java)|Hard|Java|Leetcode|
 |619   |582  |[Kill Process DFS BFS](Java/582_Kill.java)|Medium|Java|Leetcode|
 |620   |636  |[Exclusive Time of Functions Stack](Java/636_Exclusive.java)|Medium|Java|Leetcode|
-|621   |605  |[Can Place Flowers Greedy](Java/605_Can.java|Easy|Java|Leetcode|
+|621   |605  |[Can Place Flowers Greedy](Java/605_Can.java)|Easy|Java|Leetcode|
 |622   |464  |[Can I win DFS + Memo](Java/464_Can.java)|Medium|Java|Leetcode|
 |623   |486  |[Predict the Winner DP MinMax](Java/486_Predict.java)|Medium|Java|Leetcode|
