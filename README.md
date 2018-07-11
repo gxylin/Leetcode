@@ -642,3 +642,4 @@ Solution for Leetcode/Lintcode
 |623   |486  |[Predict the Winner DP MinMax](Java/486_Predict.java)|Medium|Java|Leetcode|
 |624   |844  |[Backspace String Compare](Java/844_Backspace.java)|Easy|Java|Leetcode|
 |625   |799  |[Champagne Tower](Java/799_Champagne.java)|Medium|Java|Leetcode|
+|626   |479  |[Largest Palindrome Product](Java/479_Largest.java)|Medium|Java|Leetcode|
