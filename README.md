@@ -643,3 +643,4 @@ Solution for Leetcode/Lintcode
 |624   |844  |[Backspace String Compare](Java/844_Backspace.java)|Easy|Java|Leetcode|
 |625   |799  |[Champagne Tower](Java/799_Champagne.java)|Medium|Java|Leetcode|
 |626   |479  |[Largest Palindrome Product](Java/479_Largest.java)|Medium|Java|Leetcode|
+|627   |164  |[Maximum Gap](Java/164_Maximum.java)|Hard|Java|Leetcode|
