@@ -644,3 +644,4 @@ Solution for Leetcode/Lintcode
 |625   |799  |[Champagne Tower](Java/799_Champagne.java)|Medium|Java|Leetcode|
 |626   |479  |[Largest Palindrome Product](Java/479_Largest.java)|Medium|Java|Leetcode|
 |627   |164  |[Maximum Gap](Java/164_Maximum.java)|Hard|Java|Leetcode|
+|628   |752  |[Open the Lock BFS](Java/752_Open.java)|Medium|Java|Leetcode|
