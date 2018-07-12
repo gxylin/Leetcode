@@ -47,6 +47,9 @@ class Solution {
         Set<Integer> set = new HashSet<>();
         for (int i = x; i < x+3; i++){
             for (int j = y; j < y+3; j++){
+                if (grid[i][j] < 1 || grid[i][j] > 9){
+                    return false;
+                }
                 if (!set.add(grid[i][j])){
                     return false;
                 }
