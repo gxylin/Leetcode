@@ -646,3 +646,4 @@ Solution for Leetcode/Lintcode
 |627   |164  |[Maximum Gap](Java/164_Maximum.java)|Hard|Java|Leetcode|
 |628   |752  |[Open the Lock BFS](Java/752_Open.java)|Medium|Java|Leetcode|
 |629   |840  |[Magic Squares In Grid](Java/840_Magic.java)|Easy|Java|Leetcode|
+|630   |849  |[Maximize Distance to Closest Person](Java/849_Maximize.java)|Easy|Java|Leetcode|
