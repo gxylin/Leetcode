@@ -648,3 +648,4 @@ Solution for Leetcode/Lintcode
 |629   |840  |[Magic Squares In Grid](Java/840_Magic.java)|Easy|Java|Leetcode|
 |630   |849  |[Maximize Distance to Closest Person](Java/849_Maximize.java)|Easy|Java|Leetcode|
 |631   |838  |[Push Dominoes](Java/838_Push.java)|Medium|Java|Leetcode|
+|632   |802  |[Find Eventual Safe States Classic Color DFS](Java/802_Find.java)|Medium|Java|Leetcode|
