@@ -650,3 +650,4 @@ Solution for Leetcode/Lintcode
 |631   |838  |[Push Dominoes](Java/838_Push.java)|Medium|Java|Leetcode|
 |632   |802  |[Find Eventual Safe States Classic Color DFS](Java/802_Find.java)|Medium|Java|Leetcode|
 |633   |778  |[Swim in Rising Water PriorityQueue](Java/778_Swim.java)|Hard|Java|Leetcode|
+|634   |852  |[Peak Index in a Mountain Array](Java/852_Peak.java)|Easy|Java|Leetcode|
