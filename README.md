@@ -655,3 +655,4 @@ Solution for Leetcode/Lintcode
 |636   |826  |[Most Profit Assigning Work](Java/826_Most.java)|Medium|Java|Leetcode|
 |637   |827  |[Making A Large Island](Java/827_Making.java)|Hard|Java|Leetcode|
 |638   |828  |[Unique Letter String](Java/828_Unique.java)|Hard|Java|Leetcode|
+|639   |867  |[Transpose Matrix](Java/867_Transpose.java)|Easy|Java|Leetcode|
