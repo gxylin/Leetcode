@@ -60,6 +60,10 @@ class Solution {
 }
 
 Method 2: 
+Instead of counting all unique characters and struggling with all possible substrings,
+we can count for every char in S, how many ways to be found as a unique char.
+We count and sum, and it will be out answer.
+
 Time complexity: O(n)
 Space complexity: O(n)
 https://leetcode.com/problems/unique-letter-string/discuss/128952/One-pass-O(N)-Straight-Forward
