@@ -658,3 +658,4 @@ Solution for Leetcode/Lintcode
 |639   |867  |[Transpose Matrix](Java/867_Transpose.java)|Easy|Java|Leetcode|
 |640   |833  |[Find And Replace in String](Java/833_Find.java)|Medium|Java|Leetcode|
 |641   |841  |[Keys and Rooms Classic DFS BFS](Java/841_Keys.java)|Medium|Java|Leetcode|
+|642   |845  |[Longest Mountain in Array](Java/845_Longest.java)|Medium|Java|Leetcode|
