@@ -660,3 +660,4 @@ Solution for Leetcode/Lintcode
 |641   |841  |[Keys and Rooms Classic DFS BFS](Java/841_Keys.java)|Medium|Java|Leetcode|
 |642   |845  |[Longest Mountain in Array](Java/845_Longest.java)|Medium|Java|Leetcode|
 |643   |846  |[Hand of Straights](Java/846_Hand.java)|Medium|Java|Leetcode|
+|644   |848  |[Shifting Letters Prefix Sum](Java/848_Shifting.java)|Medium|Java|Leetcode|
