@@ -661,4 +661,4 @@ Solution for Leetcode/Lintcode
 |642   |845  |[Longest Mountain in Array](Java/845_Longest.java)|Medium|Java|Leetcode|
 |643   |846  |[Hand of Straights](Java/846_Hand.java)|Medium|Java|Leetcode|
 |644   |848  |[Shifting Letters Prefix Sum](Java/848_Shifting.java)|Medium|Java|Leetcode|
-|645   |856  |[Score of Parentheses Stack](Java/856_Score.java)|Medium|Java|Leetcode|
+|645   |856  |[Score of Parentheses Stack Very Good](Java/856_Score.java)|Medium|Java|Leetcode|
