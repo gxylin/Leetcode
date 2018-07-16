@@ -90,9 +90,9 @@ class Solution {
             if (c == '('){
                 stack.push(0);
             }else{
-                int v = stack.pop();
-                int w = stack.pop();
-                stack.push(w + Math.max(v * 2, 1));
+                int deeperLevel = stack.pop();
+                int currLevel = stack.pop();
+                stack.push(currLevel + Math.max(deeperLevel * 2, 1));
             }
         }
         return stack.pop();
