@@ -664,3 +664,4 @@ Solution for Leetcode/Lintcode
 |645   |856  |[Score of Parentheses Stack Very Good](Java/856_Score.java)|Medium|Java|Leetcode|
 |646   |860  |[Lemonade Change](Java/860_Lemonade.java)|Easy|Java|Leetcode|
 |647   |859  |[Buddy String](Java/859_Buddy.java)|Easy|Java|Leetcode|
+|648   |861  |[Score After Flipping Matrix Greedy](Java/861_Score.java)|Medium|Java|Leetcode|
