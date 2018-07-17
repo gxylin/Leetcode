@@ -666,3 +666,4 @@ Solution for Leetcode/Lintcode
 |647   |859  |[Buddy String](Java/859_Buddy.java)|Easy|Java|Leetcode|
 |648   |861  |[Score After Flipping Matrix Greedy](Java/861_Score.java)|Medium|Java|Leetcode|
 |649   |858  |[Mirror Reflection](Java/858_Mirror.java)|Medium|Java|Leetcode|
+|650   |834  |[Sum of Distances in Tree Very Good Tree Graph](Java/834_Sum.java)|Hard|Java|Leetcode|
