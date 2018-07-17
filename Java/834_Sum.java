@@ -101,6 +101,7 @@ class Solution {
         preOrder(graph, res, count, 0, new HashSet<Integer>()); //calculate others 
         return res;
     }
+  //calculate the sum of all the distance from root to nodes
     private void postOrder(Map<Integer, Set<Integer>> graph, int[] res, int[] count, int parent, Set<Integer> seen){
         seen.add(parent);
         for (int child : graph.get(parent)){
@@ -112,6 +113,7 @@ class Solution {
             }
         }
     }
+  //calculate the sum of all the distance from node to all other nodes
     private void preOrder(Map<Integer, Set<Integer>> graph, int[] res, int[] count, int parent, Set<Integer> seen){
         seen.add(parent);
         for (int child : graph.get(parent)){
