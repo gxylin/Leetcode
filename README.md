@@ -671,3 +671,4 @@ Solution for Leetcode/Lintcode
 |652   |862  |[Shortest Subarray with Sum at Least K Monotonic Stack](Java/862_Shortest.java)|Hard|Java|Leetcode|
 |653   |863  |[All Nodes Distance K in Binary Tree Graph](Java/863_All.java)|Medium|Java|Leetcode|
 |654   |823  |[Binary Trees With Factors Dynamic Programming](Java/823_Binary.java)|Medium|Java|Leetcode|
+|655   |868  |[Binary Gap](Java/868_Binary.java)|Easy|Java|Leetcode|
