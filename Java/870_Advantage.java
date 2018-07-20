@@ -22,6 +22,8 @@ Note:
 
 
 Method 1: TreeMap
+Time complexity: O(nlogn)
+Space complexity: O(n)
 class Solution {
     public int[] advantageCount(int[] A, int[] B) {
         int[] res = new int[A.length];
@@ -45,6 +47,8 @@ class Solution {
 }
 
 Method 2: PQ
+Time complexity: O(nlogn)
+Space complexity: O(n)
 class Solution {
     public int[] advantageCount(int[] A, int[] B) {
         int n = A.length;
