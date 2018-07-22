@@ -676,3 +676,4 @@ Solution for Leetcode/Lintcode
 |657   |870  |[Advantage Shuffle Greedy](Java/870_Advantage.java)|Medium|Java|Leetcode|
 |658   |869  |[Reordered Power of 2](Java/869_Reordered.java)|Medium|Java|Leetcode|
 |659   |401  |[Binary Watch Permutation](Java/401_Binary.java)|Easy|Java|Leetcode|
+|660   |400  |[Nth Digit](Java/400_Nth.java)|Easy|Java|Leetcode|
