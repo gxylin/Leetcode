@@ -23,3 +23,6 @@ class Solution {
         return m << i;
     }
 }
+
+
+https://leetcode.com/problems/bitwise-and-of-numbers-range/discuss/56729/Bit-operation-solution(JAVA)
