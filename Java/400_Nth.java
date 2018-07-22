@@ -32,7 +32,7 @@ class Solution {
             digits += 1;
             start *= 10;
         }
-        int pos = (n - 1) / digits;
+        int pos = (n - 1) / digits; // -1 to convert to base 0
         int num = start + pos;
         int offset = (n- 1) % digits;
         String s = Integer.toString(num);
