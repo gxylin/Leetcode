@@ -56,6 +56,7 @@ class Solution {
 }
 
 Method 2: Best solution
+recursion
 class Solution {
     public final int[] weights = {8, 4, 2, 1, 32, 16, 8, 4, 2, 1};
     public List<String> readBinaryWatch(int num) {
@@ -76,6 +77,36 @@ class Solution {
                 dfs(res, num - 1, i + 1, hour + weights[i], min);
             }else{
                 dfs(res, num - 1, i + 1, hour, min + weights[i]);
+            }
+        }
+    }
+}
+
+backtracking:
+class Solution {
+    public final int[] weights = {8, 4, 2, 1, 32, 16, 8, 4, 2, 1};
+    public List<String> readBinaryWatch(int num) {
+        List<String> res = new ArrayList<>();
+        dfs(res, num, 0, 0, 0);
+        return res;
+    }
+    private void dfs(List<String> res, int num, int index, int hour, int min){
+        if (hour >= 12 || min >= 60){
+            return;
+        }
+        if (num == 0){
+            res.add(hour + ":" + (min >= 10 ? min : "0" + min));
+            return;
+        }
+        for (int i = index; i < weights.length; i++){
+            if (i < 4){
+                hour += weights[i];
+                dfs(res, num - 1, i + 1, hour, min);
+                hour -= weights[i];
+            }else{
+                min += weights[i];
+                dfs(res, num - 1, i + 1, hour, min);
+                min -= weights[i];
             }
         }
     }
