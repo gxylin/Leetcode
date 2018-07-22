@@ -677,3 +677,4 @@ Solution for Leetcode/Lintcode
 |658   |869  |[Reordered Power of 2](Java/869_Reordered.java)|Medium|Java|Leetcode|
 |659   |401  |[Binary Watch Permutation](Java/401_Binary.java)|Easy|Java|Leetcode|
 |660   |400  |[Nth Digit](Java/400_Nth.java)|Easy|Java|Leetcode|
+|661   |201  |[Bitwise AND of Numbers Range](Java/201_Bitwise.java)|Medium|Java|Leetcode|
