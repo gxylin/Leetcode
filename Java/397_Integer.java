@@ -68,3 +68,5 @@ class Solution {
         return dp[n];
     }
 }
+
+https://leetcode.com/problems/integer-replacement/discuss/87928/Java-12-line-4(5)ms-iterative-solution-with-explanations.-No-other-data-structures.
