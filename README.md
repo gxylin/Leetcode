@@ -679,3 +679,4 @@ Solution for Leetcode/Lintcode
 |660   |400  |[Nth Digit](Java/400_Nth.java)|Easy|Java|Leetcode|
 |661   |201  |[Bitwise AND of Numbers Range](Java/201_Bitwise.java)|Medium|Java|Leetcode|
 |662   |397  |[Integer Replacement](Java/397_Integer.java)|Medium|Java|Leetcode|
+|663   |385  |[Mini Parser](Java/385_Mini.java)|Medium|Java|Leetcode|
