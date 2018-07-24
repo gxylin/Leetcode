@@ -39,20 +39,23 @@ class ExamRoom {
             list.add(0);
             return 0;
         }
-        int max = Math.max(list.get(0), n - 1 - list.get(list.size() - 1)); // to handle the corner case: before the first and after the last
+        int max = Math.max(list.get(0), n - 1 - list.get(list.size() - 1)); // to handle the corner cases: before the first and after the last
         for (int i = 0; i < list.size() - 1 ; i++){
             max = Math.max(max, (list.get(i+1) - list.get(i)) / 2);
         }
+       //first case: in the first range
         if (list.get(0) == max){
             list.add(0, 0);
             return 0;
         }
+        //second case: in the middle
         for (int i = 0; i < list.size() - 1; i++){
             if ((list.get(i+1) - list.get(i)) / 2 == max){
                 list.add(i+1, list.get(i) + max);
                 return list.get(i+1);
             }
         }
+       //third case: in the last range
         list.add(n-1);
         return n-1;
     }
