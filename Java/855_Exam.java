@@ -62,6 +62,7 @@ class ExamRoom {
     
     public void leave(int p) {
         list.remove(new Integer(p));//remove Object, not index if we want to remove index, we need use loop
+       //list.remove(Integer.valueOf(p));
     }
     /*
     for (int i = 0; i < list.size(); i++){
