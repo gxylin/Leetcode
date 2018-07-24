@@ -28,3 +28,29 @@ class Solution {
         return v.intValue();
     }
 }
+
+Dynamic programming: Correct solution
+https://leetcode.com/problems/ugly-number-ii/discuss/69364/My-16ms-C++-DP-solution-with-short-explanation
+class Solution {
+    public int nthUglyNumber(int n) {
+        int[] res = new int[n];
+        int[] indices = new int[3];
+        int[] primes = new int[3];
+        primes[0] = 2;
+        primes[1] = 3;
+        primes[2] = 5;
+        res[0] = 1;
+        for (int i = 1; i < n; i++){
+            res[i] = Integer.MAX_VALUE;
+            for (int j = 0; j < 3; j++){
+                res[i] = Math.min(res[i], primes[j] * res[indices[j]]);
+            }
+            for (int j = 0; j < 3; j++){
+                if (res[i] == primes[j] * res[indices[j]]){
+                    indices[j]++;
+                }
+            }
+        }
+        return res[n-1];
+    }
+}
