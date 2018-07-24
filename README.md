@@ -685,3 +685,4 @@ Solution for Leetcode/Lintcode
 |666   |458  |[Poor Pigs](Java/458_Poor.java)|Easy|Java|Leetcode|
 |667   |390  |[Elimination Game](Java/390_Elimination.java)|Medium|Java|Leetcode|
 |668   |855  |[Exam Room](Java/855_Exam.java)|Medium|Java|Leetcode|
+|669   |313  |[Super Ugly Number](Java/313_Super.java)|Medium|Java|Leetcode|
