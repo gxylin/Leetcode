@@ -39,7 +39,6 @@ class Solution {
             }
             i++;
         }
-        max = Math.max(max, (i - start) / 2);
         //deal with corner case
         int count = 0;
         for (int j = 0; j < seats.length; j++){
