@@ -683,3 +683,4 @@ Solution for Leetcode/Lintcode
 |664   |421  |[Maximum XOR of Two Numbers in an Array Trie+Bit](Java/421_Maximum.java)|Medium|Java|Leetcode|
 |665   |399  |[Evaluate Division Graph](Java/399_Evaluate.java)|Medium|Java|Leetcode|
 |666   |458  |[Poor Pigs](Java/458_Poor.java)|Easy|Java|Leetcode|
+|667   |390  |[Elimination Game](Java/390_Elimination.java)|Medium|Java|Leetcode|
