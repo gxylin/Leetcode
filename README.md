@@ -684,3 +684,4 @@ Solution for Leetcode/Lintcode
 |665   |399  |[Evaluate Division Graph](Java/399_Evaluate.java)|Medium|Java|Leetcode|
 |666   |458  |[Poor Pigs](Java/458_Poor.java)|Easy|Java|Leetcode|
 |667   |390  |[Elimination Game](Java/390_Elimination.java)|Medium|Java|Leetcode|
+|668   |855  |[Exam Room](Java/855_Exam.java)|Medium|Java|Leetcode|
