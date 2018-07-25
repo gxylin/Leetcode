@@ -1,7 +1,6 @@
 Given an n-ary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 
 For example, given a 3-ary tree:
-
 /*
 // Definition for a Node.
 class Node {
@@ -31,7 +30,9 @@ class Solution {
                 Node node = queue.poll();
                 list.add(node.val);
                 for (Node n : node.children){
-                    queue.offer(n);
+                    if (n != null){
+                        queue.offer(n);
+                    }
                 }
             }
             res.add(list);
