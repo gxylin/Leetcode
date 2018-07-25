@@ -29,12 +29,13 @@ class Solution {
     }
 }
 
-Dynamic programming: Correct solution
+Dynamic programming: better solution
 https://leetcode.com/problems/ugly-number-ii/discuss/69364/My-16ms-C++-DP-solution-with-short-explanation
+the concept of merge sort
 class Solution {
     public int nthUglyNumber(int n) {
         int[] res = new int[n];
-        int[] indices = new int[3];
+        int[] indices = new int[3];//hold the index of res[i] for each prime, i is increased by 1 whenever that prime is used 
         int[] primes = new int[3];
         primes[0] = 2;
         primes[1] = 3;
