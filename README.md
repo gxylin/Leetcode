@@ -686,3 +686,4 @@ Solution for Leetcode/Lintcode
 |667   |390  |[Elimination Game](Java/390_Elimination.java)|Medium|Java|Leetcode|
 |668   |855  |[Exam Room](Java/855_Exam.java)|Medium|Java|Leetcode|
 |669   |313  |[Super Ugly Number](Java/313_Super.java)|Medium|Java|Leetcode|
+|670   |327  |[Count of Range Sum](Java/327_Count.java)|Hard|Java|Leetcode|
