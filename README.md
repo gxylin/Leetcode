@@ -689,3 +689,4 @@ Solution for Leetcode/Lintcode
 |670   |327  |[Count of Range Sum](Java/327_Count.java)|Hard|Java|Leetcode|
 |671   |429  |[N-ary Tree Level Order Traversal](Java/429_N-ary.java)|Easy|Java|Leetcode|
 |672   |589  |[N-ary Tree Preorder Traversal](Java/589_N-ary.java)|Easy|Java|Leetcode|
+|673   |590  |[N-ary Tree Postorder Traversal](Java/590_N-ary.java)|Easy|Java|Leetcode|
