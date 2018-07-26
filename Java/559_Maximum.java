@@ -42,7 +42,7 @@ class Solution {
         }
         int max = 0;
         for (Node node : root.children){
-            max = Math.max(max, dfs(node));
+            max = Math.max(max, maxDepth(node));
         }
         return max + 1;
     }
