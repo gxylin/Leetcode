@@ -692,3 +692,4 @@ Solution for Leetcode/Lintcode
 |673   |590  |[N-ary Tree Postorder Traversal](Java/590_N-ary.java)|Easy|Java|Leetcode|
 |674   |430  |[Flatten a Multilevel Doubly Linked List DFS + LinkedList](Java/430_Flatten.java)|Medium|Java|Leetcode|
 |675   |470  |[Implement Rand10() Using Rand7()](Java/470_Implement.java)|Medium|Java|Leetcode|
+|676   |475  |[Heaters](Java/475_Heaters.java)|Easy|Java|Leetcode|
