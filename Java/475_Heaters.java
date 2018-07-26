@@ -39,7 +39,7 @@ class Solution {
 
 https://leetcode.com/problems/heaters/discuss/95881/Simple-Java-Solution-with-2-Pointers
 
-
+Based on 2 pointers, the idea is to find the nearest heater for each house, by comparing the next heater with the current heater.
 Method 2: O(m+n + Math.max(nlogn, mlogm)), there is no need to reset j to be 0 every loop of house. 
 class Solution {
     public int findRadius(int[] houses, int[] heaters) {
