@@ -18,7 +18,7 @@ Input: [1,2,3,4],[1,4]
 Output: 1
 Explanation: The two heater was placed in the position 1 and 4. We need to use radius 1 standard, then all the houses can be warmed.
 
-Method 1: O(mn) TLE
+Method 1: O(mn + Math.max(nlogn, mlogm)) TLE
 class Solution {
     public int findRadius(int[] houses, int[] heaters) {
         Arrays.sort(houses);
@@ -40,7 +40,7 @@ class Solution {
 https://leetcode.com/problems/heaters/discuss/95881/Simple-Java-Solution-with-2-Pointers
 
 
-Method 2: O(m+n), there is no need to reset j to be 0 every loop of house. 
+Method 2: O(m+n + Math.max(nlogn, mlogm)), there is no need to reset j to be 0 every loop of house. 
 class Solution {
     public int findRadius(int[] houses, int[] heaters) {
         Arrays.sort(houses);
