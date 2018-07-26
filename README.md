@@ -694,3 +694,4 @@ Solution for Leetcode/Lintcode
 |675   |470  |[Implement Rand10() Using Rand7()](Java/470_Implement.java)|Medium|Java|Leetcode|
 |676   |475  |[Heaters Two pointers](Java/475_Heaters.java)|Easy|Java|Leetcode|
 |677   |482  |[License Key Formatting](Java/482_License.java)|Easy|Java|Leetcode|
+|678   |559  |[Maximum Depth of N-ary Tree](Java/559_Maximum.java)|Easy|Java|Leetcode|
