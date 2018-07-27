@@ -695,6 +695,6 @@ Solution for Leetcode/Lintcode
 |676   |475  |[Heaters Two pointers](Java/475_Heaters.java)|Easy|Java|Leetcode|
 |677   |482  |[License Key Formatting](Java/482_License.java)|Easy|Java|Leetcode|
 |678   |559  |[Maximum Depth of N-ary Tree](Java/559_Maximum.java)|Easy|Java|Leetcode|
-|679   |576  |[Out of Boundary Paths Dynamic Programming](Java/576_Out.java)|Medium|Java|Leetcode|
+|679   |576  |[Out of Boundary Paths Very Good Dynamic Programming](Java/576_Out.java)|Medium|Java|Leetcode|
 |680   |622  |[Design Circular Queue](Java/622_Design.java)|Medium|Java|Leetcode|
 |681   |632  |[Smallest Range PriorityQueue like Merge K array](Java/632_Smallest.java)|Hard|Java|Leetcode|
