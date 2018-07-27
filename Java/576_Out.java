@@ -65,7 +65,7 @@ class Solution {
     }
 }
 
-Method 3: Dynamic Programming
+Method 3: Dynamic Programming Best solution
 DP[i][j][k] stands for how many possible ways to walk into cell j,k in step i, DP[i][j][k] only depends on DP[i - 1][j][k], 
 so we can compress 3 dimensional dp array to 2 dimensional.
 https://leetcode.com/problems/out-of-boundary-paths/discuss/102967/Java-Solution-DP-with-space-compression
@@ -73,7 +73,14 @@ https://leetcode.com/problems/out-of-boundary-paths/discuss/102967/Java-Solution
 Time complexity : O(N*m*n). We need to fill the dp array with dimensions mn N times. 
 Here mn refers to the size of the grid and N refers to the number of moves available.
 
-Space complexity : O(m*n). dp and temp array of size mmxnn are used.
+Space complexity : O(m*n). dp and temp array of size mn are used.
+    
+ dp[i][j] refers to the number of ways the position corresponding to the indices (i,j) 
+    can be reached given some particular number of moves.
+ dp[i][j]=dp[i−1][j]+dp[i+1][j]+dp[i][j−1]+dp[i][j+1]
+ 
+ initial position, dp[i][j] = 1 since there is only one way to reach i, j which is zero move
+    
 class Solution {
     public int findPaths(int m, int n, int N, int i, int j) {
         int MOD = (int)Math.pow(10, 9) + 7;
