@@ -65,7 +65,7 @@ class Solution {
     }
 }
 
-Method 3: Dynamic Programming Best solution
+Method 3: Dynamic Programming Best solution Reduce space dimension 
 DP[i][j][k] stands for how many possible ways to walk into cell j,k in step i, DP[i][j][k] only depends on DP[i - 1][j][k], 
 so we can compress 3 dimensional dp array to 2 dimensional.
 https://leetcode.com/problems/out-of-boundary-paths/discuss/102967/Java-Solution-DP-with-space-compression
