@@ -698,3 +698,4 @@ Solution for Leetcode/Lintcode
 |679   |576  |[Out of Boundary Paths Very Good Dynamic Programming](Java/576_Out.java)|Medium|Java|Leetcode|
 |680   |622  |[Design Circular Queue](Java/622_Design.java)|Medium|Java|Leetcode|
 |681   |632  |[Smallest Range PriorityQueue like Merge K array](Java/632_Smallest.java)|Hard|Java|Leetcode|
+|682   |641  |[Design Circular Deque](Java/641_Design.java)|Medium|Java|Leetcode|
