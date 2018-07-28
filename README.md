@@ -700,3 +700,4 @@ Solution for Leetcode/Lintcode
 |681   |632  |[Smallest Range PriorityQueue like Merge K array](Java/632_Smallest.java)|Hard|Java|Leetcode|
 |682   |641  |[Design Circular Deque](Java/641_Design.java)|Medium|Java|Leetcode|
 |683   |655  |[Print Binary Tree Good DFS BFS](Java/655_Print.java)|Medium|Java|Leetcode|
+|684   |687  |[Longest Univalue Path Very Good](Java/687_Longest.java)|Easy|Java|Leetcode|
