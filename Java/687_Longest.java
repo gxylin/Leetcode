@@ -30,8 +30,14 @@ Note: The given binary tree has not more than 10000 nodes. The height of the tre
 
 Method:
 https://leetcode.com/problems/longest-univalue-path/solution/
+Let arrow_length(node) be the length of the longest arrow that extends from the node. 
+That will be 1 + arrow_length(node.left) if node.left exists and has the same value as node. Similarly for the node.right case.
+
+While we are computing arrow lengths, each candidate answer will be the sum of the arrows in both directions from that node. 
+We record these candidate answers and return the best one.
+    
 Note that
-For each node, there are 5 cases for the longest path
+For each node, there are 5 cases for the longest path as candidates
 1. not pass node but on the left subtree
 2. not pass node but on the right subtree
 3. pass node and on the left subtree
@@ -42,6 +48,8 @@ We can use variable ans to track the longest path and cover cases 1, 2, 5; use r
 
 Note that we are looking for path and graph, which means there are start node and end node. So in the function return, we have to 
 use Math.max(leftMax, rightMax)
+
+  
 
 class Solution {
     int ans = 0;
