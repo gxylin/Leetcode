@@ -100,8 +100,13 @@ class Solution {
     }
 }
 
-
+Note 1: col = (int) Math.pow(2, row) - 1;
+Note 2:  we always print a node at the center of its subtree index range. 
+     root is at the center of left and right, say mid
+     root.left (if not null) is at the center of left and mid - 1
+     root.right (if not null) is at the center of mid + 1 and right
 https://leetcode.com/problems/print-binary-tree/discuss/106269/Java-Iterative-Level-Order-Traversal-with-Queue
+
 class Solution {
     public List<List<String>> printTree(TreeNode root) {
         List<List<String>> res = new ArrayList<>();
