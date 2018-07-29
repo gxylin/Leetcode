@@ -703,3 +703,4 @@ Solution for Leetcode/Lintcode
 |684   |687  |[Longest Univalue Path Very Good](Java/687_Longest.java)|Easy|Java|Leetcode|
 |685   |690  |[Employee Importance BFS DFS](Java/690_Employee.java)|Easy|Java|Leetcode|
 |686   |693  |[Binary Number with Alternating Bits](Java/693_Binary.java)|Easy|Java|Leetcode|
+|687   |684  |[Redundant Connection DFS Union Find](Java/684_Redundant.java)|Medium|Java|Leetcode|
