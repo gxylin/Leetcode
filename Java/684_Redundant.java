@@ -88,7 +88,8 @@ class Solution {
             }
             Set<Integer> seen = new HashSet<>();
             if (!graph.get(u).isEmpty() && !graph.get(v).isEmpty() && dfs(graph, u, v, seen)){
-            //note that here we check isEmpty() to ensure it is connected in the graph
+            //note that here we check isEmpty() to ensure it is added in the graph
+            // if not yet added in the graph, no need to check dfs; if added, check if u and v are connected
                 res[0] = u;
                 res[1] = v;
                 return res;
