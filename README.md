@@ -701,3 +701,4 @@ Solution for Leetcode/Lintcode
 |682   |641  |[Design Circular Deque](Java/641_Design.java)|Medium|Java|Leetcode|
 |683   |655  |[Print Binary Tree Good DFS BFS](Java/655_Print.java)|Medium|Java|Leetcode|
 |684   |687  |[Longest Univalue Path Very Good](Java/687_Longest.java)|Easy|Java|Leetcode|
+|685   |690  |[Employee Importance BFS DFS](Java/690_Employee.java)|Easy|Java|Leetcode|
