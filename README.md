@@ -702,3 +702,4 @@ Solution for Leetcode/Lintcode
 |683   |655  |[Print Binary Tree Good DFS BFS](Java/655_Print.java)|Medium|Java|Leetcode|
 |684   |687  |[Longest Univalue Path Very Good](Java/687_Longest.java)|Easy|Java|Leetcode|
 |685   |690  |[Employee Importance BFS DFS](Java/690_Employee.java)|Easy|Java|Leetcode|
+|686   |693  |[Binary Number with Alternating Bits](Java/693_Binary.java)|Easy|Java|Leetcode|
