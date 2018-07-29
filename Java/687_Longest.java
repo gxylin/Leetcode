@@ -75,3 +75,8 @@ class Solution {
         return Math.max(leftMax, rightMax);
     }
 }
+
+Time Complexity: O(N), where NN is the number of nodes in the tree. We process every node once.
+
+Space Complexity: O(H), where H is the height of the tree. Our recursive call stack could be up to H layers deep.
+
