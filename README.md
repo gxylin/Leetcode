@@ -705,3 +705,4 @@ Solution for Leetcode/Lintcode
 |686   |693  |[Binary Number with Alternating Bits](Java/693_Binary.java)|Easy|Java|Leetcode|
 |687   |684  |[Redundant Connection DFS Union Find](Java/684_Redundant.java)|Medium|Java|Leetcode|
 |688   |685  |[Redundant Connection II DFS Union Find](Java/685_Redundant.java)|Hard|Java|Leetcode|
+|689   |700  |[Search in a Binary Search Tree](Java/700_Search.java)|Easy|Java|Leetcode|
