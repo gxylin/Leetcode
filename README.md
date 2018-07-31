@@ -708,3 +708,4 @@ Solution for Leetcode/Lintcode
 |689   |700  |[Search in a Binary Search Tree](Java/700_Search.java)|Easy|Java|Leetcode|
 |690   |701  |[Insert into a Binary Search Tree](Java/701_Insert.java)|Medium|Java|Leetcode|
 |691   |703  |[Kth Largest Element in a Stream](Java/703_Kth.java)|Easy|Java|Leetcode|
+|692   |704  |[Binary Search](Java/704_Binary.java)|Easy|Java|Leetcode|
