@@ -54,7 +54,7 @@ class MyLinkedList {
     /** Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. */
     public void addAtHead(int val) {
         SingleNode node = new SingleNode(val);
-        node.next = head;
+        node.next = head; //note how to add head note//
         head = node;
     }
     
