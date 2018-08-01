@@ -713,3 +713,4 @@ Solution for Leetcode/Lintcode
 |694   |706  |[Design HashMap](Java/706_Design.java)|Easy|Java|Leetcode|
 |695   |707  |[Design Linked List](Java/707_Design.java)|Easy|Java|Leetcode|
 |696   |709  |[To Lower Case](Java/709_To.java)|Easy|Java|Leetcode|
+|697   |702  |[Search in a Sorted Array of Unknown Size](Java/702_Search.java)|Medium|Java|Leetcode|
