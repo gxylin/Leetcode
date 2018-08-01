@@ -712,3 +712,4 @@ Solution for Leetcode/Lintcode
 |693   |705  |[Design HashSet](Java/705_Design.java)|Easy|Java|Leetcode|
 |694   |706  |[Design HashMap](Java/706_Design.java)|Easy|Java|Leetcode|
 |695   |707  |[Design Linked List](Java/707_Design.java)|Easy|Java|Leetcode|
+|696   |709  |[To Lower Case](Java/709_To.java)|Easy|Java|Leetcode|
