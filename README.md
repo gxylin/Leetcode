@@ -711,3 +711,4 @@ Solution for Leetcode/Lintcode
 |692   |704  |[Binary Search](Java/704_Binary.java)|Easy|Java|Leetcode|
 |693   |705  |[Design HashSet](Java/705_Design.java)|Easy|Java|Leetcode|
 |694   |706  |[Design HashMap](Java/706_Design.java)|Easy|Java|Leetcode|
+|695   |707  |[Design Linked List](Java/707_Design.java)|Easy|Java|Leetcode|
