@@ -53,3 +53,22 @@ class Solution {
         return count;
     }
 }
+
+Method 3:
+https://leetcode.com/problems/find-the-duplicate-number/description/
+class Solution {
+    public int findDuplicate(int[] nums) {
+        int slow = nums[0];
+        int fast = nums[nums[0]];
+        while (fast != slow){
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        }
+        int entry = 0;//can't use nums[0]
+        while (entry != slow){
+            entry = nums[entry];
+            slow = nums[slow];
+        }
+        return slow;
+    }
+}
