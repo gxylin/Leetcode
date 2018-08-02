@@ -28,7 +28,7 @@ http://www.lintcode.com/en/problem/find-the-duplicate-number/
 
 class Solution {
     public int findDuplicate(int[] nums) {
-        int start = 1;
+        int start = 0;
         int end = nums.length - 1;
         while (start + 1 < end){
             int mid = start + (end - start) / 2;
