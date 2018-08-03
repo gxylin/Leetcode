@@ -54,6 +54,32 @@ class Solution {
     }
 }
 
+class Solution {
+    public int findDuplicate(int[] nums) {
+        int start = 0;
+        int end = nums.length - 1;
+        while (start <= end){
+            int mid = start + (end - start) / 2;
+            if (check_smaller_number(mid, nums) <= mid){
+                start = mid + 1;
+            }else{
+                end = mid - 1;
+            }
+        }
+
+        return start;
+    }
+    private int check_smaller_number(int mid, int[] nums){
+        int count = 0;
+        for (int i = 0; i < nums.length; i++){
+            if (nums[i] <= mid){
+                count++;
+            }
+        }
+        return count;
+    }
+}
+
 Method 3:
 https://leetcode.com/problems/find-the-duplicate-number/description/
 class Solution {
