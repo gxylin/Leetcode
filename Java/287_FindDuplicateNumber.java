@@ -24,7 +24,7 @@ class Solution {
 Method 2:
 Time complexity: O(nlogn)
 Find the biggest number that check_smaller_number <= itself
-http://www.lintcode.com/en/problem/find-the-duplicate-number/
+https://leetcode.com/problems/find-the-duplicate-number/discuss/72844/Two-Solutions-(with-explanation):-O(nlog(n))-and-O(n)-time-O(1)-space-without-changing-the-input-array
 
 class Solution {
     public int findDuplicate(int[] nums) {
