@@ -74,7 +74,7 @@ class Solution {
             int mid = low + (high - low) / 2;
             int count = getLessEqual(matrix, mid);
             if (count < k){
-                low = mid +1 1;
+                low = mid + 1;
             }else{
                 high = mid - 1;
             }
