@@ -99,3 +99,40 @@ class Solution {
     }
 }
 
+class Solution {
+    public int kthSmallest(int[][] matrix, int k) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int low = matrix[0][0];
+        int high = matrix[m-1][n-1];
+        while (low + 1 < high){
+            int mid = low + (high - low) / 2;
+            int count = getLessEqual(matrix, mid);
+            if (count <= k - 1){
+                low = mid;
+            }else{
+                high = mid;
+            }
+        }
+        if (getLessEqual(matrix, low) <= k - 1){
+            return high;
+        }
+        return low;
+    }
+    private int getLessEqual(int[][] matrix, int val){
+        int res = 0;
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int i = m - 1;
+        int j = 0;
+        while (i >= 0 && j < n){
+            if (matrix[i][j] > val){
+                i--;
+            }else{
+                res += i + 1;
+                j++;
+            }
+        }
+        return res;
+    }
+}
