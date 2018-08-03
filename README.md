@@ -717,3 +717,4 @@ Solution for Leetcode/Lintcode
 |698   |715  |[Range Module](Java/715_Range.java)|Hard|Java|Leetcode|
 |699   |403  |[Frog Jump](Java/403_Frog.java)|Hard|Java|Leetcode|
 |700   |717  |[1-bit and 2-bit Characters](Java/717_bit.java)|Easy|Java|Leetcode|
+|701   |719  |[Find K-th Smallest Pair Distance](Java/719_Find K-th.java)|Hard|Java|Leetcode|
