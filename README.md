@@ -720,3 +720,4 @@ Solution for Leetcode/Lintcode
 |701   |719  |[Find K-th Smallest Pair Distance](Java/719_FindK-th.java)|Hard|Java|Leetcode|
 |XXX   |XXX  |[Binary Search Template](Java/binary.java)|
 |702   |786  |[K-th Smallest Prime Fraction](Java/786_kth.java)|Hard|Java|Leetcode|
+|703   |872  |[Leaf-Similar Trees](Java/872_Leaf-Similar.java)|Easy|Java|Leetcode|
