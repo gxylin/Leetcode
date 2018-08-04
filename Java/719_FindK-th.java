@@ -46,6 +46,10 @@ class Solution {
 Method 2:
 way to define the K-th smallest pair distance: given an integer num, let count(num) denote the number of pair 
 distances that are no greater than num, then the K-th smallest pair distance will be the smallest integer such that count(num) >= K.
+    
+If we sort the input array in ascending order, this problem can actually be rephrased as finding the kth smallest element in a sorted 
+matrix, where the matrix element at position (i, j) is given by matrix[i][j] = nums[j] - nums[i]
+
 https://leetcode.com/problems/find-k-th-smallest-pair-distance/discuss/109082/Approach-the-problem-using-the-%22trial-and-error%22-algorithm
 
 Time complexity: O(nlogn + nlogd) d is the max - min
