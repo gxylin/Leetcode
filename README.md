@@ -719,3 +719,4 @@ Solution for Leetcode/Lintcode
 |700   |717  |[1-bit and 2-bit Characters](Java/717_bit.java)|Easy|Java|Leetcode|
 |701   |719  |[Find K-th Smallest Pair Distance](Java/719_FindK-th.java)|Hard|Java|Leetcode|
 |XXX   |XXX  |[Binary Search Template](Java/binary.java)|
+|702   |786  |[K-th Smallest Prime Fraction](Java/786_kth.java)|Hard|Java|Leetcode|
