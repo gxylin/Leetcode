@@ -19,7 +19,7 @@ Note:
     The length of S will be in the range [1, 20000].
     The length of T will be in the range [1, 100].
 
-
+Different from minium window substring
 Method 1: DP
 Time complexity: O(mn)
 Space complexity: O(mn)
