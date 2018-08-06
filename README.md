@@ -723,3 +723,4 @@ Solution for Leetcode/Lintcode
 |703   |872  |[Leaf-Similar Trees](Java/872_Leaf-Similar.java)|Easy|Java|Leetcode|
 |704   |668  |[Kth Smallest Number in Multiplication Table](Java/668_Kth.java)|Hard|Java|Leetcode|
 |705   |727  |[Minimum Window Subsequence Dynamic Programming](Java/727_Minimum.java)|Hard|Java|Leetcode|
+|706   |115  |[Distinct Subsequences Dynamic Programming](Java/115_Distinct.java)|Hard|Javav|Leetcode|
