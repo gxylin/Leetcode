@@ -27,9 +27,9 @@ class Solution {
     public String minWindow(String S, String T) {
         int m = T.length();
         int n = S.length();
-        int[][] dp = new int[m+1][n+1];
+        int[][] dp = new int[m+1][n+1];// the largest index in String s that the first i in String T and first j in String S could match. 
         for (int j = 0; j <= n; j++){
-            dp[0][j] = j+1;
+            dp[0][j] = j+1; //initalize by adding 1 to differentiate between index and invalid cases
         }
         for (int i = 1; i <= m; i++){
             for (int j = 1; j <= n; j++){
