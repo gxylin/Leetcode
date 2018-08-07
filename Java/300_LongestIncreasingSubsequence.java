@@ -37,6 +37,7 @@ class Solution {
 
 Method 2:
 https://discuss.leetcode.com/topic/39681/fast-java-binary-search-solution-with-detailed-explanation/4
+https://leetcode.com/problems/longest-increasing-subsequence/discuss/74824/JavaPython-Binary-search-O(nlogn)-time-with-explanation
 
 Note that the length is correct but the sequence may be wrong,
 because even it did the substitution, it didn't change the LIS' length. so even some of the number is added incorrectly, 
