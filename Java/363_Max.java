@@ -13,6 +13,8 @@ The rectangle inside the matrix must have an area > 0.
 What if the number of rows is much larger than the number of columns?
 
 Method 1: Use TreeSet for binary search
+https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/discuss/83597/Java-Binary-Search-solution-time-complexity-min(mn)2*max(mn)*log(max(mn))
+
 HashMap may not be very good since the problem is asking for the rectangular area no larger than K... 
 From map we could only get the exact value of (val - target).
 Not like 560	Subarray Sum Equals K.java, which could use HashMap
