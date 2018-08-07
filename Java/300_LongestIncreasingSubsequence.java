@@ -99,3 +99,25 @@ Time complexity: O(nlogn)
         return end;
     }
 }
+
+https://leetcode.com/problems/longest-increasing-subsequence/discuss/74825/Short-Java-solution-using-DP-O(n-log-n)
+class Solution {
+    public int lengthOfLIS(int[] nums) {
+        if (nums == null || nums.length == 0){
+            return 0;
+        }
+        int[] dp = new int[nums.length];
+        int len = 0;
+        for (int i = 0; i < nums.length; i++){
+            int index = Arrays.binarySearch(dp, 0, len, nums[i]);
+            if (index < 0){
+                index = - (index + 1);
+            }
+            dp[index] = nums[i];
+            if (index == len){
+                len++;
+            }
+        }
+        return len;
+    }
+}
