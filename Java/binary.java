@@ -1,3 +1,5 @@
+https://leetcode.com/articles/introduction-to-binary-search/
+
 Template for binary search and question similar as 719
 https://leetcode.com/problems/find-k-th-smallest-pair-distance/discuss/109082/Approach-the-problem-using-the-%22trial-and-error%22-algorithm
 
