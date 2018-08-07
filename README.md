@@ -725,3 +725,4 @@ Solution for Leetcode/Lintcode
 |705   |727  |[Minimum Window Subsequence Dynamic Programming](Java/727_Minimum.java)|Hard|Java|Leetcode|
 |706   |115  |[Distinct Subsequences Dynamic Programming](Java/115_Distinct.java)|Hard|Javav|Leetcode|
 |707   |876  |[Middle of the Linked List](Java/876_Middle.java)|Easy|Java|Leetcode|
+|708   |354  |[Russian Doll Envelopes LIS](Java/354_Russian.java)|Hard|Java|Leetcode|
