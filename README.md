@@ -727,3 +727,4 @@ Solution for Leetcode/Lintcode
 |707   |876  |[Middle of the Linked List](Java/876_Middle.java)|Easy|Java|Leetcode|
 |708   |354  |[Russian Doll Envelopes LIS](Java/354_Russian.java)|Hard|Java|Leetcode|
 |709   |363  |[Max Sum of Rectangle No Larger Than K](Java/363_Max.java)|Hard|Java|Leetcode|
+|710   |428  |[Serialize and Deserialize N-ary Tree](Java/428_Serialize.java)|Hard|Java|Leetcode|
