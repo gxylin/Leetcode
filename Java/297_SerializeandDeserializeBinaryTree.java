@@ -145,3 +145,64 @@ public class Codec {
 // Your Codec object will be instantiated and called as such:
 // Codec codec = new Codec();
 // codec.deserialize(codec.serialize(root));
+
+
+
+Method 3:
+Best solution: preOrder with queue
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Codec {
+
+    // Encodes a tree to a single string.
+    public String serialize(TreeNode root) {
+        if (root == null){
+            return "";
+        }
+        StringBuilder sb = new StringBuilder();
+        serializePreOrder(root, sb);
+        return sb.toString();
+    }
+
+    private void serializePreOrder(TreeNode root, StringBuilder sb){
+        if (root == null){
+            sb.append("null,");
+            return;
+        }
+        sb.append(root.val + ",");
+        serializePreOrder(root.left, sb);
+        serializePreOrder(root.right, sb);
+    }
+    // Decodes your encoded data to tree.
+    public TreeNode deserialize(String data) {
+        if (data.length() == 0){
+            return null;
+        }
+        String[] strs = data.split(",");
+        Queue<String> queue = new LinkedList<>(Arrays.asList(strs));
+        return deserializePreOrder(queue);
+    }
+    
+    private TreeNode deserializePreOrder(Queue<String> queue){
+        String str = queue.poll();
+        if (str.equals("null")){
+            return null;
+        }
+        TreeNode root = new TreeNode(Integer.parseInt(str));
+        root.left = deserializePreOrder(queue);
+        root.right = deserializePreOrder(queue);
+        return root;
+    }
+}
+
+// Your Codec object will be instantiated and called as such:
+// Codec codec = new Codec();
+// codec.deserialize(codec.serialize(root));
+
