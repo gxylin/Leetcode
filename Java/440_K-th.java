@@ -13,6 +13,10 @@ Output:
 Explanation:
 The lexicographical order is [1, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9], so the second smallest number is 10.
 
+    
+    
+https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/discuss/92242/ConciseEasy-to-understand-Java-5ms-solution-with-Explaination
+
 class Solution {
     public int findKthNumber(int n, int k) {
         int curr = 1;
