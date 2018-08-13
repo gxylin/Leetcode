@@ -729,3 +729,4 @@ Solution for Leetcode/Lintcode
 |709   |363  |[Max Sum of Rectangle No Larger Than K](Java/363_Max.java)|Hard|Java|Leetcode|
 |710   |428  |[Serialize and Deserialize N-ary Tree](Java/428_Serialize.java)|Hard|Java|Leetcode|
 |711   |440  |[K-th Smallest in Lexicographical Order](Java/440_K-th.java)|Hard|Java|Leetcode|
+|712   |472  |[Concatenated Words](Java/472_Concatenated.java)|Hard|Java|Leetcode|
