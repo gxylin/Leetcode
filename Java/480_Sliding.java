@@ -22,6 +22,8 @@ Therefore, return the median sliding window as [1,-1,-1,3,5,6].
 
 The similar as 295. Find Median from Data Stream
 Use two PQ
+Time complexity: O(nk) as add takes O(logk) but remove takes O(k)
+Space complexity: O(n)
 class Solution {
     public double[] medianSlidingWindow(int[] nums, int k) {
         Queue<Integer> minPQ = new PriorityQueue<>();//store the larger half, if even number, put into minPQ
