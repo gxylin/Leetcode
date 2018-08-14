@@ -18,6 +18,7 @@ The returned elements order does not matter.
 
 Method 1: DP solution
 use the code from word break I
+Time complexity: O(m^2 * nlogn)
 class Solution {
     public List<String> findAllConcatenatedWordsInADict(String[] words) {
         List<String> res = new ArrayList<>();
@@ -51,6 +52,7 @@ class Solution {
     }
 }
 
+Time complexity: O(m^2 * n)
 class Solution {
     public List<String> findAllConcatenatedWordsInADict(String[] words) {
         List<String> res = new ArrayList<>();
@@ -84,3 +86,63 @@ class Solution {
 }
 
 
+Method 2: DFS + Trie
+https://leetcode.com/problems/concatenated-words/discuss/95644/102ms-java-Trie-+-DFS-solution.-With-explanation-easy-to-understand.
+
+class Solution {
+    class TrieNode {
+        TrieNode[] children;
+        boolean isEnd;
+        public TrieNode() {
+            children = new TrieNode[26];
+            isEnd = false;
+        }
+    }
+    public List<String> findAllConcatenatedWordsInADict(String[] words) {
+        List<String> res = new ArrayList<>();
+        //build trie
+        TrieNode root = new TrieNode();
+        for (String word : words){
+            if (word.length() == 0){
+                continue;
+            }
+            TrieNode node = root;
+            for (char c : word.toCharArray()){
+                if (node.children[c - 'a'] == null){
+                    node.children[c - 'a'] = new TrieNode();
+                }
+                node = node.children[c - 'a'];
+            }
+            node.isEnd = true;
+        }
+        //check
+        for (String word : words){
+            if (word.length() == 0){
+                continue;
+            }
+            if (isValid(root, word, 0, 0)){
+                res.add(word);
+            }
+        }
+        return res;
+    }
+    private boolean isValid(TrieNode root, String word, int start, int count){
+        TrieNode node = root;
+        for (int i = start; i < word.length(); i++){
+            char c = word.charAt(i);
+            if (node.children[c - 'a'] == null){
+                return false;
+            }
+            if (node.children[c - 'a'].isEnd){
+                if (i == word.length() - 1){
+                    return count >= 1;
+                }
+                if (isValid(root, word, i+1, count+1)){
+                    return true;
+                }
+            }
+            node = node.children[c - 'a'];
+        }
+        return false;
+    }
+}
