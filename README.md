@@ -731,3 +731,4 @@ Solution for Leetcode/Lintcode
 |711   |440  |[K-th Smallest in Lexicographical Order](Java/440_K-th.java)|Hard|Java|Leetcode|
 |712   |472  |[Concatenated Words DFS Trie Dynamic Programming](Java/472_Concatenated.java)|Hard|Java|Leetcode|
 |713   |480  |[Sliding Window Median](Java/480_Sliding.java)|Hard|Java|Leetcode|
+|714   |492  |[Construct Rectangle](Java/492_Construct.java)|Easy|Java|Leetcode|
