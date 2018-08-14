@@ -16,7 +16,7 @@ All the input string will only include lower case letters.
 The returned elements order does not matter.
 
 
-Method 1: DP solution
+Method 1: DP solution 284ms
 use the code from word break I
 Time complexity: O(m^2 * nlogn)
 class Solution {
@@ -86,7 +86,7 @@ class Solution {
 }
 
 
-Method 2: DFS + Trie
+Method 2: DFS + Trie 54ms
 https://leetcode.com/problems/concatenated-words/discuss/95644/102ms-java-Trie-+-DFS-solution.-With-explanation-easy-to-understand.
 
 class Solution {
