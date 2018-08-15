@@ -76,3 +76,78 @@ class Solution {
 		return thisCount;
     }
 }
+
+Method 3: Merge Sort Idea:
+https://leetcode.com/problems/count-of-smaller-numbers-after-self/discuss/76583/11ms-JAVA-solution-using-merge-sort-with-explanation
+
+class Solution {
+    class Pair {
+        int val;
+        int index;
+        public Pair (int val, int index){
+            this.val = val;
+            this.index = index;
+        }
+    }
+    public List<Integer> countSmaller(int[] nums) {
+        List<Integer> res = new ArrayList<>();
+        int n = nums.length;
+        int[] count = new int[n];
+        Pair[] pair = new Pair[n];
+        Pair[] temp = new Pair[n];
+        for (int i = 0; i < n; i++){
+            pair[i] = new Pair(nums[i], i);
+        }
+        mergeSort(count, pair, temp, 0, n - 1);
+        for (int i = 0; i < n; i++){
+            res.add(count[i]);
+        }
+        return res;
+    }
+    private void mergeSort(int[] count, Pair[] pair, Pair[] temp, int start, int end){
+        if (start >= end){
+            return;
+        }
+        int mid = (start + end) / 2;
+        mergeSort(count, pair, temp, start, mid);
+        mergeSort(count, pair, temp, mid + 1, end);
+        merge(count, pair, temp, start, mid, end);
+    }
+    private void merge(int[] count, Pair[] pair, Pair[] temp, int start, int mid, int end){
+        int left = start;
+        int right = mid + 1;
+        int index = start;
+        int rightCount = 0;
+        while (left <= mid && right <= end){
+            if (pair[left].val > pair[right].val){
+               // temp[index++] = pair[right++];
+                temp[index] = new Pair(pair[right].val, pair[right].index);
+                rightCount++;
+                right++;
+            }else{
+               // temp[index++] = pair[left++];
+                temp[index] = new Pair(pair[left].val, pair[left].index);
+                count[pair[left].index] += rightCount;
+                left++;
+            }
+            index++;
+        }
+        while (left <= mid){
+           // temp[index++] = pair[left++];
+            temp[index] = new Pair(pair[left].val, pair[left].index);
+            count[pair[left].index] += rightCount;
+            left++;
+            index++;
+        }
+        while (right <= end){
+           // temp[index++] = pair[right++];
+            temp[index] = new Pair(pair[right].val, pair[right].index);
+            right++;
+            index++;
+        }
+        //copy back to pair
+        for (int i = start; i <= end; i++){
+            pair[i] = new Pair(temp[i].val, temp[i].index);
+        }
+    }
+}
