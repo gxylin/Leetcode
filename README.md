@@ -734,3 +734,4 @@ Solution for Leetcode/Lintcode
 |714   |492  |[Construct Rectangle](Java/492_Construct.java)|Easy|Java|Leetcode|
 |715   |493  |[Reverse Pairs Merge Sort](Java/493_Reverse.java)|Hard|Java|Leetcode|
 |716   |507  |[Perfect Number](Java/507_Perfect.java)|Easy|Java|Leetcode|
+|717   |514  |[Freedom Trail Dynamic Programming](Java/514_Freedom.java)|Hard|Java|Leetcode|
