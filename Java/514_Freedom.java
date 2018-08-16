@@ -38,8 +38,9 @@ class Solution {
                     dp[i][j] = Integer.MAX_VALUE;
                     for (int k = 0; k < n; k++){
                         if (dp[i-1][k] != 0){
-                             int min = Math.min(Math.abs(j - k) + 1, n - Math.abs(j - k) + 1);
-                             dp[i][j] = Math.min(dp[i][j], dp[i-1][k] + min);
+                            int diff = Math.abs(j - k);
+                            int min = Math.min(diff + 1, n - diff + 1);
+                            dp[i][j] = Math.min(dp[i][j], dp[i-1][k] + min);
                         }
                     }
                 }
