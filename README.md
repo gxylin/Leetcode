@@ -732,3 +732,4 @@ Solution for Leetcode/Lintcode
 |712   |472  |[Concatenated Words DFS Trie Dynamic Programming](Java/472_Concatenated.java)|Hard|Java|Leetcode|
 |713   |480  |[Sliding Window Median](Java/480_Sliding.java)|Hard|Java|Leetcode|
 |714   |492  |[Construct Rectangle](Java/492_Construct.java)|Easy|Java|Leetcode|
+|715   |493  |[Reverse Pairs Merge Sort](Java/493_Reverse.java)|Hard|Java|Leetcode|
