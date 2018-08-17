@@ -736,3 +736,4 @@ Solution for Leetcode/Lintcode
 |716   |507  |[Perfect Number](Java/507_Perfect.java)|Easy|Java|Leetcode|
 |717   |514  |[Freedom Trail Dynamic Programming](Java/514_Freedom.java)|Hard|Java|Leetcode|
 |718   |551  |[Student Attendance Record](Java/551_Student.java)|Easy|Java|Leetcode|
+|719   |552  |[Student Attendance Record II Dynamic Programming](Java/552_Student.java)|Hard|Java|Leetcode|
