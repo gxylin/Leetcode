@@ -735,3 +735,4 @@ Solution for Leetcode/Lintcode
 |715   |493  |[Reverse Pairs Merge Sort](Java/493_Reverse.java)|Hard|Java|Leetcode|
 |716   |507  |[Perfect Number](Java/507_Perfect.java)|Easy|Java|Leetcode|
 |717   |514  |[Freedom Trail Dynamic Programming](Java/514_Freedom.java)|Hard|Java|Leetcode|
+|718   |551  |[Student Attendance Record](Java/551_Student.java)|Easy|Java|Leetcode|
