@@ -737,3 +737,4 @@ Solution for Leetcode/Lintcode
 |717   |514  |[Freedom Trail Dynamic Programming](Java/514_Freedom.java)|Hard|Java|Leetcode|
 |718   |551  |[Student Attendance Record](Java/551_Student.java)|Easy|Java|Leetcode|
 |719   |552  |[Student Attendance Record II Dynamic Programming](Java/552_Student.java)|Hard|Java|Leetcode|
+|720   |548  |[Split Array with Equal Sum](Java/548_Split.java)|Medium|Java|Leetcode|
