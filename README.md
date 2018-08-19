@@ -738,3 +738,4 @@ Solution for Leetcode/Lintcode
 |718   |551  |[Student Attendance Record](Java/551_Student.java)|Easy|Java|Leetcode|
 |719   |552  |[Student Attendance Record II Dynamic Programming](Java/552_Student.java)|Hard|Java|Leetcode|
 |720   |548  |[Split Array with Equal Sum](Java/548_Split.java)|Medium|Java|Leetcode|
+|721   |604  |[Design Compressed String Iterator](Java/604_Design.java)|Easy|Java|Leetcode|
