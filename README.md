@@ -741,3 +741,4 @@ Solution for Leetcode/Lintcode
 |721   |604  |[Design Compressed String Iterator](Java/604_Design.java)|Easy|Java|Leetcode|
 |722   |588  |[Design In-Memory File System TrieNode](Java/588_Design.java)|Hard|Java|Leetcode|
 |723   |609  |[Find Duplicate File in System](Java/609_Find.java)|Medium|Java|Leetcode|
+|724   |600  |[Non-negative Integers without Consecutive Ones](Java/600_Non-negative.java)|Hard|Java|Leetecode|
