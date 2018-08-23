@@ -742,3 +742,4 @@ Solution for Leetcode/Lintcode
 |722   |588  |[Design In-Memory File System TrieNode](Java/588_Design.java)|Hard|Java|Leetcode|
 |723   |609  |[Find Duplicate File in System](Java/609_Find.java)|Medium|Java|Leetcode|
 |724   |600  |[Non-negative Integers without Consecutive Ones](Java/600_Non-negative.java)|Hard|Java|Leetecode|
+|725   |630  |[Course Schedule III](Java/630_Course.java)|Hard|Java|Leetcode|
