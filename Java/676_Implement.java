@@ -64,7 +64,7 @@ class MagicDictionary {
  * boolean param_2 = obj.search(word);
  */
  
- Method 2: Trie
+ Method 2: Trie (like BFS, search the entire trie)
 class MagicDictionary {
     class TrieNode {
         TrieNode[] children;
