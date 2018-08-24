@@ -16,7 +16,7 @@ For contest purpose, the test data is rather small by now. You could think about
 Please remember to RESET your class variables declared in class MagicDictionary, as static/class variables are persisted across multiple test cases. Please see here for more details.
 
 
-Method 1: HashMap
+Method 1: HashMap (faster)
 class MagicDictionary {
     Map<Integer, Set<String>> map;
     /** Initialize your data structure here. */
