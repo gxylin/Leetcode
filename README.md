@@ -744,3 +744,4 @@ Solution for Leetcode/Lintcode
 |724   |600  |[Non-negative Integers without Consecutive Ones](Java/600_Non-negative.java)|Hard|Java|Leetecode|
 |725   |630  |[Course Schedule III](Java/630_Course.java)|Hard|Java|Leetcode|
 |726   |676  |[Implement Magic Dictionary](Java/676_Implement.java)|Medium|Java|Leetcode|
+|727   |679  |[24 Game Backtracking](Java/679_Game.java)|Hard|Java|Leetcode|
