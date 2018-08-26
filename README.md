@@ -745,3 +745,4 @@ Solution for Leetcode/Lintcode
 |725   |630  |[Course Schedule III](Java/630_Course.java)|Hard|Java|Leetcode|
 |726   |676  |[Implement Magic Dictionary](Java/676_Implement.java)|Medium|Java|Leetcode|
 |727   |679  |[24 Game Backtracking](Java/679_Game.java)|Hard|Java|Leetcode|
+|728   |683  |[K Empty Slots Sliding Window](Java/683_Empty.java)|Hard|Java|Leetcode|
