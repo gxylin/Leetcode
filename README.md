@@ -750,3 +750,4 @@ Solution for Leetcode/Lintcode
 |730   |884  |[Uncommon Words from Two Sentences](Java/884_Uncommon.java)|Easy|Java|Leetcode|
 |731   |716  |[Max Stack](Java/716_Max.java)|Hard|Java|Leetcode|
 |732   |723  |[Candy Crush Two Pointers](Java/723_Candy.java)|Medium|Java|Leetcode|
+|733   |883  |[Projection Area of 3D Shapes](Java/883_Projection.java)|Easy|Java|Leetcode|
