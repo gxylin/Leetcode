@@ -64,7 +64,7 @@ class Solution {
                 int index = m - 1;
                 for (int i = m - 1; i >= 0; i--){
                     if (board[i][j] > 0){
-                        board[index--][j] = board[i][j]; // two pointers
+                        board[index--][j] = board[i][j]; // two pointers: index is the slow pointer, i is the faster pointer
                     }
                 }
                 //fill zeros
