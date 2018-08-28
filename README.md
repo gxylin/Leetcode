@@ -748,3 +748,4 @@ Solution for Leetcode/Lintcode
 |728   |683  |[K Empty Slots Sliding Window](Java/683_Empty.java)|Hard|Java|Leetcode|
 |729   |691  |[Stickers to Spell Word Dynamic Programming + Backtracking](Java/691_Stickers.java)|Hard|Java|Leetcode|
 |730   |884  |[Uncommon Words from Two Sentences](Java/884_Uncommon.java)|Easy|Java|Leetcode|
+|731   |716  |[Max Stack](Java/716_Max.java)|Hard|Java|Leetcode|
