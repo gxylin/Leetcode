@@ -15,10 +15,10 @@ minStack.top();      --> Returns 0.
 minStack.getMin();   --> Returns -2.
 
 class MinStack {
-
-    /** initialize your data structure here. */
-    Stack stack;
+    
+    Stack<Integer> stack;
     int min;
+    /** initialize your data structure here. */
     public MinStack() {
         stack = new Stack<Integer>();
         min = Integer.MAX_VALUE;
@@ -33,16 +33,16 @@ class MinStack {
     }
     
     public void pop() {
-        if ((int) stack.peek() == min){
+        if (top() == min){
             stack.pop();
-            min = (int) stack.pop();
+            min = stack.pop();
         }else{
-            stack.pop(); 
+            stack.pop();
         }
     }
     
     public int top() {
-        return (int) stack.peek();
+        return stack.peek();
     }
     
     public int getMin() {
