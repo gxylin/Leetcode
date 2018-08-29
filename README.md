@@ -752,3 +752,4 @@ Solution for Leetcode/Lintcode
 |732   |723  |[Candy Crush Two Pointers](Java/723_Candy.java)|Medium|Java|Leetcode|
 |733   |883  |[Projection Area of 3D Shapes](Java/883_Projection.java)|Easy|Java|Leetcode|
 |734   |726  |[Number of Atoms Recursion](Java/726_Number.java)|Hard|Java|Leetcode|
+|735   |748  |[Shortest Completing Word](Java/748_Shortest.java)|Medium|Java|Leetcode|
