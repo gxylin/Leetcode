@@ -76,3 +76,78 @@ class WordFilter {
 
 Method 2: HashMap and others
 https://leetcode.com/problems/prefix-and-suffix-search/discuss/110044/Three-ways-to-solve-this-problem-in-Java
+
+TLE
+class WordFilter {
+    String[] input;
+    public WordFilter(String[] words) {
+        input = words;
+    }
+    
+    public int f(String prefix, String suffix) {
+        for (int i = input.length - 1; i >= 0; i--){
+            String word = input[i];
+            if (word.startsWith(prefix) && word.endsWith(suffix)){
+                return i;
+            }
+        }
+        return -1;
+    }
+}
+
+
+WordFilter: Time = O(NL)
+f: Time = O(N)
+Space = O(NL)
+ 
+class WordFilter {
+    Map<String, List<Integer>> prefixMap;
+    Map<String, List<Integer>> suffixMap;
+    public WordFilter(String[] words) {
+        prefixMap = new HashMap<>();
+        suffixMap = new HashMap<>();
+        for (int w = 0; w < words.length; w++){
+            String word = words[w];
+            for (int i = 0; i <= word.length(); i++){
+                String str = word.substring(0, i);
+                if (!prefixMap.containsKey(str)){
+                    prefixMap.put(str, new ArrayList<Integer>());
+                }
+                prefixMap.get(str).add(w);
+            }
+            for (int i = 0; i <= word.length(); i++){
+                String str = word.substring(i);
+                if (!suffixMap.containsKey(str)){
+                    suffixMap.put(str, new ArrayList<Integer>());
+                }
+                suffixMap.get(str).add(w);
+            }
+        }
+    }
+    
+    public int f(String prefix, String suffix) {
+        if (!prefixMap.containsKey(prefix) || !suffixMap.containsKey(suffix)){
+            return -1;
+        }
+        List<Integer> pList = prefixMap.get(prefix);
+        List<Integer> sList = suffixMap.get(suffix);
+        int p = pList.size() - 1;
+        int s = sList.size() - 1;
+        while (p >= 0 && s >= 0){
+            if (pList.get(p) > sList.get(s)){
+                p--;
+            }else if (pList.get(p) < sList.get(s)){
+                s--;
+            }else{
+                return pList.get(p);
+            }
+        }
+        return -1;
+    }
+}
+
+/**
+ * Your WordFilter object will be instantiated and called as such:
+ * WordFilter obj = new WordFilter(words);
+ * int param_1 = obj.f(prefix,suffix);
+ */
