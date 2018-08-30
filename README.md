@@ -757,3 +757,4 @@ Solution for Leetcode/Lintcode
 |737   |745  |[Prefix and Suffix Search](Java/745_Prefix.java)|Hard|Java|Leetcode|
 |738   |753  |[Cracking the Safe Backtracking](Java/753_Cracking.java)|Hard|Java|Leetcode|
 |739   |754  |[Reach a Number](Java/754_Reach.java)|Medium|Java|Leetcode|
+|740   |756  |[Pyramid Transition Matrix DFS + Backtracking](Java/756_Pyramid.java)|Medium|Java|Leetcode|
