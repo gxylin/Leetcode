@@ -755,4 +755,4 @@ Solution for Leetcode/Lintcode
 |735   |748  |[Shortest Completing Word](Java/748_Shortest.java)|Medium|Java|Leetcode|
 |736   |888  |[Fair Candy Swap](Java/888_Fair.java)|Easy|Java|Leetcode|
 |737   |745  |[Prefix and Suffix Search](Java/745_Prefix.java)|Hard|Java|Leetcode|
-|747   |753  |[Cracking the Safe Backtracking](Java/753_Cracking.java)|Hard|Java|Leetcode|
+|738   |753  |[Cracking the Safe Backtracking](Java/753_Cracking.java)|Hard|Java|Leetcode|
