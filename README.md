@@ -756,3 +756,4 @@ Solution for Leetcode/Lintcode
 |736   |888  |[Fair Candy Swap](Java/888_Fair.java)|Easy|Java|Leetcode|
 |737   |745  |[Prefix and Suffix Search](Java/745_Prefix.java)|Hard|Java|Leetcode|
 |738   |753  |[Cracking the Safe Backtracking](Java/753_Cracking.java)|Hard|Java|Leetcode|
+|739   |754  |[Reach a Number](Java/754_Reach.java)|Medium|Java|Leetcode|
