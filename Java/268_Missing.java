@@ -50,6 +50,17 @@ class Solution {
         return -1;
     }
 }
+class Solution {
+    public int missingNumber(int[] nums) {
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length; i++){
+            if (nums[i] != i){
+                return i;
+            }
+        }
+        return nums.length;
+    }
+}
 
 Method 3:
 Time complexity: O(n)
