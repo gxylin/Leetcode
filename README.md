@@ -759,3 +759,4 @@ Solution for Leetcode/Lintcode
 |739   |754  |[Reach a Number](Java/754_Reach.java)|Medium|Java|Leetcode|
 |740   |756  |[Pyramid Transition Matrix DFS + Backtracking](Java/756_Pyramid.java)|Medium|Java|Leetcode|
 |741   |759  |[Employee Free Time Merge Interval](Java/759_Employee.java)|Hard|Java|Leetcode|
+|742   |761  |[Special Binary String Recursion Very Good](Java/761_Special.java)|Hard|Java|Leetcode|
