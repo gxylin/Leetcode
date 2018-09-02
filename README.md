@@ -761,3 +761,4 @@ Solution for Leetcode/Lintcode
 |741   |759  |[Employee Free Time Merge Interval](Java/759_Employee.java)|Hard|Java|Leetcode|
 |742   |761  |[Special Binary String Recursion Very Good](Java/761_Special.java)|Hard|Java|Leetcode|
 |743   |765  |[Couples Holding Hands Union Find](Java/765_Couples.java)|Hard|Java|Leetcode|
+|744   |773  |[Sliding Puzzle Backtracking BFS](Java/773_Sliding.java)|Hard|Java|Leetcode|
