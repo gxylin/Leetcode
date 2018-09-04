@@ -763,3 +763,4 @@ Solution for Leetcode/Lintcode
 |743   |765  |[Couples Holding Hands Union Find](Java/765_Couples.java)|Hard|Java|Leetcode|
 |744   |773  |[Sliding Puzzle Backtracking BFS](Java/773_Sliding.java)|Hard|Java|Leetcode|
 |745   |774  |[Minimize Max Distance to Gas Station Binary Search](Java/774_Minimize.java)|Hard|Java|Leetcode|
+|746   |777  |[Swap Adjacent in LR String](Java/777_Swap.java)|Medium|Java|Leetcode|
