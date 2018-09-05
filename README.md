@@ -766,3 +766,4 @@ Solution for Leetcode/Lintcode
 |746   |777  |[Swap Adjacent in LR String](Java/777_Swap.java)|Medium|Java|Leetcode|
 |747   |779  |[K-th Symbol in Grammar Recursion](Java/779_Kth.java)|Medium|Java|Leetcode|
 |748   |781  |[Rabbits in Forest](Java/781_Rabbits.java)|Medium|Java|Leetcode|
+|749   |780  |[Reaching Points](Java/780_Reaching.java)|Hard|Java|Leetcode|
