@@ -769,3 +769,4 @@ Solution for Leetcode/Lintcode
 |749   |780  |[Reaching Points](Java/780_Reaching.java)|Hard|Java|Leetcode|
 |750   |793  |[Preimage Size of Factorial Zeroes Function Binary Search](Java/793_Preimage.java)|Hard|Java|Leetcode|
 |751   |798  |[Smallest Rotation with Highest Score](Java/798_Smallest.java)|Hard|Java|Leetcode|
+|752   |809  |[Expressive Words](Java/809_Expressive.java)|Medium|Java|Leetcode|
