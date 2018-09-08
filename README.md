@@ -772,4 +772,4 @@ Solution for Leetcode/Lintcode
 |752   |809  |[Expressive Words](Java/809_Expressive.java)|Medium|Java|Leetcode|
 |753   |810  |[Chalkboard XOR Game](Java/810_Chalkboard.java)|Hard|Java|Leetcode|
 |754   |816  |[Ambiguous Coordinates](Java/816_Ambiguous.java)|Medium|Java|Leetcode|
-|755   |820  |[Short Encoding of Words](Java/820_Short.java)|Medium|Java|Leetcode|
+|755   |820  |[Short Encoding of Words Trie](Java/820_Short.java)|Medium|Java|Leetcode|
