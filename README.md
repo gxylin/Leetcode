@@ -773,3 +773,4 @@ Solution for Leetcode/Lintcode
 |753   |810  |[Chalkboard XOR Game](Java/810_Chalkboard.java)|Hard|Java|Leetcode|
 |754   |816  |[Ambiguous Coordinates](Java/816_Ambiguous.java)|Medium|Java|Leetcode|
 |755   |820  |[Short Encoding of Words Trie](Java/820_Short.java)|Medium|Java|Leetcode|
+|756   |831  |[Masking Personal Information](Java/831_Masking.java)|Medium|Java|Leetcode|
