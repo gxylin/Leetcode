@@ -776,3 +776,4 @@ Solution for Leetcode/Lintcode
 |756   |831  |[Masking Personal Information](Java/831_Masking.java)|Medium|Java|Leetcode|
 |757   |822  |[Card Flipping Game](Java/822_Card.java)|Medium|Java|Leetcode|
 |758   |893  |[Groups of Special-Equivalent Strings Compare two HashMap](Java/893_Groups.java)|Easy|Java|Leetcode|
+|759   |837  |[New 21 Game Dynamic Programming](Java/837_New.java)|Medium|Java|Leetcode|
