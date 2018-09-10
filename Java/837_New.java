@@ -40,7 +40,7 @@ class Solution {
             dp[i] = Wsum / W;
             if (i < K){
                 Wsum += dp[i];
-            }else{
+            }else{//in this case, no card draw
                 res += dp[i];
             }
             if (i >= W){
