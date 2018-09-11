@@ -780,3 +780,4 @@ Solution for Leetcode/Lintcode
 |760   |839  |[Similar String Groups Union Find](Java/839_Similar.java)|Hard|Java|Leetcode|
 |761   |892  |[Surface Area of 3D Shapes](Java/892_Surface.java)|Easy|Java|Leetcode|
 |762   |889  |[Construct Binary Tree from Preorder and Postorder Traversal](Java/889_Construct)|Medium|Java|Leetcode|
+|763   |818  |[Race Car](Java/818_Race.java)|Hard|Java|Leetcode|
