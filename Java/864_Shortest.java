@@ -101,3 +101,63 @@ class Solution {
         return -1;
     }
 }
+
+class Solution {
+    public int shortestPathAllKeys(String[] grid) {
+        int m = grid.length;
+        int n = grid[0].length();
+        int count = 0;
+        Queue<int[]> queue = new LinkedList<>();
+        Set<String> set = new HashSet<>();
+        int target = 0;
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                char c = grid[i].charAt(j);
+                if (c == '@'){
+                    int[] state = new int[]{0, i, j};
+                    queue.offer(state);
+                    set.add(state[0] + ":" + state[1] + ":" + state[2]);
+                }else if (Character.isLowerCase(c)){
+                    target |= 1 << (int)(c - 'a');
+                }
+            }
+        }
+        int[][] dirs = new int[][]{{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        while (!queue.isEmpty()){
+            int size = queue.size();
+            for (int i = 0; i < size; i++){
+                int[] state = queue.poll();
+                if (state[0] == target){
+                    return count;
+                }
+                int key = state[0];
+                int cx = state[1];
+                int cy = state[2];
+                for (int[] dir : dirs){
+                    int nx = cx + dir[0];
+                    int ny = cy + dir[1];
+                    if (nx >= 0 && nx < m && ny >= 0 && ny < n){
+                        char c = grid[nx].charAt(ny);
+                        if (Character.isLowerCase(c)){//get the key
+                            int newKey = key  | (1 << ((int)(c -'a')));
+                            String newStr = newKey + ":" + nx + ":" + ny;
+                            if (!set.contains(newStr)){
+                                queue.offer(new int[]{newKey, nx, ny});
+                                set.add(newStr);
+                            }
+                        }else if (Character.isUpperCase(c) && (key & (1 << (int)(c - 'A'))) != 0 || c == '.' || c == '@'){
+                            String newStr = key + ":" + nx + ":" + ny;
+                            if (!set.contains(newStr)){
+                                queue.offer(new int[]{key, nx, ny});
+                                set.add(newStr);
+                            }
+                        }
+                    }
+                }
+                
+            }
+            count++;
+        }
+        return -1;
+    }
+}
