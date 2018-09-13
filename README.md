@@ -782,3 +782,4 @@ Solution for Leetcode/Lintcode
 |762   |889  |[Construct Binary Tree from Preorder and Postorder Traversal](Java/889_Construct)|Medium|Java|Leetcode|
 |763   |818  |[Race Car](Java/818_Race.java)|Hard|Java|Leetcode|
 |764   |847  |[Shortest Path Visiting All Nodes BFS Classic](Java/847_Shortest.java)|Hard|Java|Leetcode|
+|765   |864  |[Shortest Path to Get All Keys BFS Classic](Java/864_Shortest.java)|Hard|Java|Leetcode|
