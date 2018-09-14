@@ -784,3 +784,4 @@ Solution for Leetcode/Lintcode
 |764   |847  |[Shortest Path Visiting All Nodes BFS Classic](Java/847_Shortest.java)|Hard|Java|Leetcode|
 |765   |864  |[Shortest Path to Get All Keys BFS Classic](Java/864_Shortest.java)|Hard|Java|Leetcode|
 |766   |896  |[Monotonic Array](Java/896_Monotonic.java)|Easy|Java|Leetcode|
+|767   |853  |[Car Fleet](Java/853_Car.java)|Medium|Java|Leetcode|
