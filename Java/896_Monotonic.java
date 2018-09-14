@@ -60,6 +60,21 @@ class Solution {
     }
 }
 
+class Solution {
+    public boolean isMonotonic(int[] A) {
+        if (A.length == 1){
+            return true;
+        }
+        boolean increase = true;
+        boolean decrease = true;
+        for (int i = 1; i < A.length; i++){
+            increase &= A[i] >= A[i-1];
+            decrease &= A[i] <= A[i-1];
+        }
+        return increase || decrease;
+    }
+}
+
 Method 2: two pass
 class Solution {
     public boolean isMonotonic(int[] A) {
