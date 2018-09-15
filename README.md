@@ -786,3 +786,4 @@ Solution for Leetcode/Lintcode
 |766   |896  |[Monotonic Array](Java/896_Monotonic.java)|Easy|Java|Leetcode|
 |767   |853  |[Car Fleet](Java/853_Car.java)|Medium|Java|Leetcode|
 |768   |897  |[Increasing Order Search Tree](Java/897_Increasing.java)|Easy|Java|Leetcode|
+|769   |873  |[Length of Longest Fibonacci Subsequence Dynamic Programming](Java/873_Length.java)|Medium|Java|Leetcode|
