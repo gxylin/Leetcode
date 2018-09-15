@@ -787,3 +787,4 @@ Solution for Leetcode/Lintcode
 |767   |853  |[Car Fleet](Java/853_Car.java)|Medium|Java|Leetcode|
 |768   |897  |[Increasing Order Search Tree](Java/897_Increasing.java)|Easy|Java|Leetcode|
 |769   |873  |[Length of Longest Fibonacci Subsequence Dynamic Programming](Java/873_Length.java)|Medium|Java|Leetcode|
+|770   |854  |[K-Similar Strings Classic BFS](Java/854_Similar.java)|Hard|Java|Leetcode|
