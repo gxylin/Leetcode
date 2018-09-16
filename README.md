@@ -790,3 +790,4 @@ Solution for Leetcode/Lintcode
 |770   |854  |[K-Similar Strings Classic BFS](Java/854_Similar.java)|Hard|Java|Leetcode|
 |771   |857  |[Minimum Cost to Hire K Workers](Java/857_Minimum.java)|Hard|Java|Leetcode|
 |772   |874  |[Walking Robot Simulation](Java/874_Walking.java)|Easy|Java|Leetcode|
+|773   |875  |[Koko Eating Bananas Binary Search](Java/875_Koko.java)|Medium|Java|Leetcode|
