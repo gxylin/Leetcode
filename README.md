@@ -791,3 +791,4 @@ Solution for Leetcode/Lintcode
 |771   |857  |[Minimum Cost to Hire K Workers](Java/857_Minimum.java)|Hard|Java|Leetcode|
 |772   |874  |[Walking Robot Simulation](Java/874_Walking.java)|Easy|Java|Leetcode|
 |773   |875  |[Koko Eating Bananas Binary Search](Java/875_Koko.java)|Medium|Java|Leetcode|
+|774   |871  |[Minimum Number of Refueling Stops](Java/871_Minimum.java)|Hard|Java|Leetcode|
