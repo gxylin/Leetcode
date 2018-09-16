@@ -789,3 +789,4 @@ Solution for Leetcode/Lintcode
 |769   |873  |[Length of Longest Fibonacci Subsequence Dynamic Programming](Java/873_Length.java)|Medium|Java|Leetcode|
 |770   |854  |[K-Similar Strings Classic BFS](Java/854_Similar.java)|Hard|Java|Leetcode|
 |771   |857  |[Minimum Cost to Hire K Workers](Java/857_Minimum.java)|Hard|Java|Leetcode|
+|772   |874  |[Walking Robot Simulation](Java/874_Walking.java)|Easy|Java|Leetcode|
