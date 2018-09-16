@@ -63,7 +63,9 @@ class Solution {
     }
 }
 
-Method 2: PriorityQueue, always try to add gas at the largest gas station first
+Method 2: Better solution
+
+PriorityQueue, always try to add gas at the largest gas station first
 https://leetcode.com/problems/minimum-number-of-refueling-stops/solution/
 Time complexity: O(NlogN)
 class Solution {
