@@ -788,3 +788,4 @@ Solution for Leetcode/Lintcode
 |768   |897  |[Increasing Order Search Tree](Java/897_Increasing.java)|Easy|Java|Leetcode|
 |769   |873  |[Length of Longest Fibonacci Subsequence Dynamic Programming](Java/873_Length.java)|Medium|Java|Leetcode|
 |770   |854  |[K-Similar Strings Classic BFS](Java/854_Similar.java)|Hard|Java|Leetcode|
+|771   |857  |[Minimum Cost to Hire K Workers](Java/857_Minimum.java)|Hard|Java|Leetcode|
