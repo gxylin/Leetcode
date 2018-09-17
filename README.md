@@ -792,3 +792,4 @@ Solution for Leetcode/Lintcode
 |772   |874  |[Walking Robot Simulation](Java/874_Walking.java)|Easy|Java|Leetcode|
 |773   |875  |[Koko Eating Bananas Binary Search](Java/875_Koko.java)|Medium|Java|Leetcode|
 |774   |871  |[Minimum Number of Refueling Stops](Java/871_Minimum.java)|Hard|Java|Leetcode|
+|775   |877  |[Stone Game](Java/877_Stone.java)|Medium|Java|Leetcode|
