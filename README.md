@@ -795,3 +795,4 @@ Solution for Leetcode/Lintcode
 |775   |877  |[Stone Game](Java/877_Stone.java)|Medium|Java|Leetcode|
 |776   |878  |[Nth Magical Number](Java/878_Nth.java)|Hard|Java|Leetcode|
 |777   |880  |[Decoded String at Index](Java/880_Decoded.java)|Medium|Java|Leetcode|
+|778   |881  |[Boats to Save People](Java/881_Boats.java)|Medium|Java|Leetcode|
