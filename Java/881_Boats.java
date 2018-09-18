@@ -26,6 +26,7 @@ Note:
 1 <= people.length <= 50000
 1 <= people[i] <= limit <= 30000
 
+Two points greedy
 class Solution {
     public int numRescueBoats(int[] people, int limit) {
         int res = 0;
