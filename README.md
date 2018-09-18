@@ -797,3 +797,4 @@ Solution for Leetcode/Lintcode
 |777   |880  |[Decoded String at Index](Java/880_Decoded.java)|Medium|Java|Leetcode|
 |778   |881  |[Boats to Save People](Java/881_Boats.java)|Medium|Java|Leetcode|
 |779   |905  |[Sort Array By Parity](Java/905_Sort.java)|Easy|Java|Leetcode|
+|780   |890  |[Find and Replace Pattern](Java/890_Find.java)|Medium|Java|Leetcode|
