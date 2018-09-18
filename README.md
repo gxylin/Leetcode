@@ -794,3 +794,4 @@ Solution for Leetcode/Lintcode
 |774   |871  |[Minimum Number of Refueling Stops](Java/871_Minimum.java)|Hard|Java|Leetcode|
 |775   |877  |[Stone Game](Java/877_Stone.java)|Medium|Java|Leetcode|
 |776   |878  |[Nth Magical Number](Java/878_Nth.java)|Hard|Java|Leetcode|
+|777   |880  |[Decoded String at Index](Java/880_Decoded.java)|Medium|Java|Leetcode|
