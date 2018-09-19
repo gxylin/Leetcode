@@ -54,7 +54,9 @@ class Solution {
         for (int nei : graph[start]){
             if (color[nei] == 0){
                 color[nei] = -color[start];
-                dfs(graph, color, nei);
+                if (!dfs(graph, color, nei)){
+                    return false;
+                }
             }else{
                 if (color[nei] == color[start]){
                     return false;
