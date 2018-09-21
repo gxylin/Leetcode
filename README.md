@@ -802,3 +802,4 @@ Solution for Leetcode/Lintcode
 |782   |879  |[Profitable Schemes](Java/879_Profitable.java)|Hard|Java|Leetcode|
 |783   |894  |[All Possible Full Binary Trees Recursion](Java/894_All.java)|Medium|Java|Leetcode|
 |784   |895  |[Maximum Frequency Stack Very Good LFU](Java/895_Maximum.java)|Hard|Java|Leetcode|
+|785   |898  |[Bitwise ORs of Subarrays](Java/898_Bitwise.java)|Medium|Java|Leetcode|
