@@ -44,9 +44,16 @@ Time complexity: O(KN^2)
 Method 2: DP + binary search
 Time complexity: O(KNlogN)
 https://leetcode.com/problems/super-egg-drop/solution/
+
 Method 3: DP
 Time complexity: KLogN
 https://leetcode.com/problems/super-egg-drop/discuss/158974/C++JavaPython-2D-and-1D-DP-O(KlogN)
+
+dp[M][K]means that, given K eggs and M moves, what is the maximum number of floor that we can check.
+
+dp[m-1][k-1]: egg breaks 
+dp[m-1][k]: egg survives
+dp[m][k] is similar to the number of combinations and it increase exponentially to N
 class Solution {
     public int superEggDrop(int K, int N) {
         int[][] dp = new int[N+1][K+1];//dp means  the maximum number of floor that we can check when K eggs and M moves
