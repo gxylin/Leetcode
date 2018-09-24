@@ -808,3 +808,4 @@ Solution for Leetcode/Lintcode
 |788   |887  |[Super Egg Drop](Java/887_Super.java)|Hard|Java|Leetcode|
 |789   |900  |[RLE Iterator](Java/900_RLE.java)|Medium|Java|Leetcode|
 |790   |891  |[Sum of Subsequence Widths](Java/891_Sum.java)|Hard|Java|Leetcode|
+|791   |901  |[Online Stock Span Monotonic Stack](Java/901_Online.java)|Medium|Java|Leetcode|
