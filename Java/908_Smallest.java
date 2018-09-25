@@ -31,8 +31,8 @@ Note:
 
 class Solution {
     public int smallestRangeI(int[] A, int K) {
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
+        int min = A[0];
+        int max = A[0];
         for (int i : A){
             min = Math.min(min, i);
             max = Math.max(max, i);
