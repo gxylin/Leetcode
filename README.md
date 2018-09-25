@@ -811,3 +811,4 @@ Solution for Leetcode/Lintcode
 |791   |901  |[Online Stock Span Monotonic Stack](Java/901_Online.java)|Medium|Java|Leetcode|
 |792   |899  |[Orderly Queue](Java/899_Orderly.java)|Hard|Java|Leetcode|
 |793   |903  |[Valid Permutations for DI Sequence Dynamic Programming](Java/903_Valid.java)|Hard|Java|Leetcode|
+|794   |908  |[Smallest Range I](Java/908_Smallest.java)|Easy|Java|Leetcode|
