@@ -27,8 +27,13 @@ Note:
 S consists only of characters from the set {'D', 'I'}.
 https://leetcode.com/problems/valid-permutations-for-di-sequence/discuss/168278/C++JavaPython-DP-Solution-O(N2)?page=2
 
+
 Method: DP
 Time complexity: O(N^2)
+ 
+dp[i][j] means the number of possible permutations of first i + 1 digits,
+where the i + 1th digit is j + 1th smallest in the rest of digits.
+ 
 class Solution {
     public int numPermsDISequence(String S) {
         int mod = (int)1e9 + 7;
