@@ -813,3 +813,4 @@ Solution for Leetcode/Lintcode
 |793   |903  |[Valid Permutations for DI Sequence Dynamic Programming](Java/903_Valid.java)|Hard|Java|Leetcode|
 |794   |908  |[Smallest Range I](Java/908_Smallest.java)|Easy|Java|Leetcode|
 |795   |910  |[Smallest Range II](Java/910_Smallest.java)|Medium|Java|Leetcode|
+|796   |911  |[Online Election](Java/911_Online.java)|Medium|Java|Leetcode|
