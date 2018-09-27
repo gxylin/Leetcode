@@ -46,7 +46,7 @@ class Solution {
         int mod = (int)1e9 + 7;
         int n = A.length;
         int res = 0;
-        Stack<Integer> stack = new Stack<>();//monotonic stack and  store index, so the value of index is increasing
+        Stack<Integer> stack = new Stack<>();//monotonic stack and  store index, but the value of index in ascending
         int[] dp = new int[n+1];
         stack.push(0);
         for (int i = 1; i <= n; i++){
