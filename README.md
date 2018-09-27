@@ -814,3 +814,4 @@ Solution for Leetcode/Lintcode
 |794   |908  |[Smallest Range I](Java/908_Smallest.java)|Easy|Java|Leetcode|
 |795   |910  |[Smallest Range II](Java/910_Smallest.java)|Medium|Java|Leetcode|
 |796   |911  |[Online Election](Java/911_Online.java)|Medium|Java|Leetcode|
+|797   |907  |[Sum of Subarray Minimums Dynamic Programming + Monotonic Stack](Java/907_Sum.java)|Hard|Java|Leetcode|
