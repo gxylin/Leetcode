@@ -8,6 +8,7 @@ A partially filled sudoku which is valid.
 Note:
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
 
+Time complexity: O(N * N)
 class Solution {
     public boolean isValidSudoku(char[][] board) {
         for (int i = 0; i < 9; i++){
