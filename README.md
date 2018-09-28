@@ -816,3 +816,4 @@ Solution for Leetcode/Lintcode
 |796   |911  |[Online Election](Java/911_Online.java)|Medium|Java|Leetcode|
 |797   |907  |[Sum of Subarray Minimums Dynamic Programming + Monotonic Stack](Java/907_Sum.java)|Hard|Java|Leetcode|
 |798   |65   |[Valid Number](Java/65_Valid.java)|Hard|Java|Leetcode|
+|799   |37   |[Sudoku Solver Backtracking](Java/37_Sudoku.java)|Hard|Java|Leetcode|
