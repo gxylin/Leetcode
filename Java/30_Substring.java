@@ -12,7 +12,7 @@ You should return the indices: [0,9].
 class Solution {
     public List<Integer> findSubstring(String s, String[] words) {
         List<Integer> result = new ArrayList<>();
-        if (s == null || s.length() == 0){
+        if (s == null || s.length() == 0 || words.length == 0){
             return result;
         }
         Map<String, Integer> map = new HashMap<>();
