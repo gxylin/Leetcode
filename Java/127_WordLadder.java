@@ -122,3 +122,40 @@ class Solution {
         return 0;
     }
 }
+
+class Solution {
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        Queue<String> queue = new LinkedList<>();
+        Set<String> seen = new HashSet<>();
+        queue.offer(beginWord);
+        seen.add(beginWord);
+        Set<String> wordSet = new HashSet<>(wordList);
+        int res = 0;
+        while (!queue.isEmpty()){
+            res++;
+            int size = queue.size();
+            for (int i = 0; i < size; i++){
+                String curr = queue.poll();
+                if (curr.equals(endWord)){
+                    return res;
+                }
+                char[] charArray = curr.toCharArray();
+                for (int j = 0; j < curr.length(); j++){
+                    for (char ch = 'a'; ch <= 'z'; ch++){
+                        char c = charArray[j];
+                        if (ch != c){
+                            charArray[j] = ch;
+                            String str = new String(charArray);
+                            if (!seen.contains(str) && wordSet.contains(str)){
+                                queue.offer(str);
+                                seen.add(str);
+                            }
+                            charArray[j] = c; 
+                        }
+                    }
+                }
+            }
+        }
+        return 0;
+    }
+}
