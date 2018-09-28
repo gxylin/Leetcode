@@ -9,6 +9,7 @@ words: ["foo", "bar"]
 You should return the indices: [0,9].
 (order does not matter).
 
+Time complexity: O(N * M)
 class Solution {
     public List<Integer> findSubstring(String s, String[] words) {
         List<Integer> result = new ArrayList<>();
@@ -19,7 +20,6 @@ class Solution {
         for (String word : words){
             map.put(word, map.getOrDefault(word, 0) + 1);
         }
-        int count = map.size();
         int len = words[0].length();
         int last = s.length() - len * words.length;
         int start = 0;
