@@ -818,3 +818,4 @@ Solution for Leetcode/Lintcode
 |798   |65   |[Valid Number](Java/65_Valid.java)|Hard|Java|Leetcode|
 |799   |37   |[Sudoku Solver Backtracking](Java/37_Sudoku.java)|Hard|Java|Leetcode|
 |800   |126  |[Word ladder II](Java/126_Word.java)|Hard|Java|Leetcode|
+|801   |163  |[Missing Ranges](Java/163_Missing.java)|Medium|Java|Leetcode|
