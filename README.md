@@ -821,3 +821,4 @@ Solution for Leetcode/Lintcode
 |801   |163  |[Missing Ranges](Java/163_Missing.java)|Medium|Java|Leetcode|
 |802   |286  |[Walls and Gates](Java/286_Walls.java)|Medium|Java|Leetcode|
 |803   |288  |[Unique Word Abbreviation](Java/288_Unique.java)|Medium|Java|Leetcode|
+|804   |291  |[Word Pattern II Backtracking](Java/291_Word.java)|Hard|Java|Leetcode|
