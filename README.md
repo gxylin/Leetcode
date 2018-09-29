@@ -820,3 +820,4 @@ Solution for Leetcode/Lintcode
 |800   |126  |[Word ladder II](Java/126_Word.java)|Hard|Java|Leetcode|
 |801   |163  |[Missing Ranges](Java/163_Missing.java)|Medium|Java|Leetcode|
 |802   |286  |[Walls and Gates](Java/286_Walls.java)|Medium|Java|Leetcode|
+|803   |288  |[Unique Word Abbreviation](Java/288_Unique.java)|Medium|Java|Leetcode|
