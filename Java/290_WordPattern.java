@@ -46,7 +46,7 @@ class Solution {
 
 
 https://leetcode.com/problems/word-pattern/discuss/73402/8-lines-simple-Java
-previousValue =map(key, value) return the stored previous value
+previousValue =map.put(key, value) return the stored previous value
 
 class Solution {
     public boolean wordPattern(String pattern, String str) {
