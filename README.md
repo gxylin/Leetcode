@@ -823,3 +823,4 @@ Solution for Leetcode/Lintcode
 |803   |288  |[Unique Word Abbreviation](Java/288_Unique.java)|Medium|Java|Leetcode|
 |804   |291  |[Word Pattern II Backtracking](Java/291_Word.java)|Hard|Java|Leetcode|
 |805   |353  |[Design Snake Game](Java/353_Design.java)|Medium|Java|Leetcode|
+|806   |361  |[Bomb Enemy](Java/361_Bomb.java)|Medium|Java|Leetcode|
