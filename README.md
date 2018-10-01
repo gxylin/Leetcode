@@ -825,3 +825,4 @@ Solution for Leetcode/Lintcode
 |805   |353  |[Design Snake Game](Java/353_Design.java)|Medium|Java|Leetcode|
 |806   |361  |[Bomb Enemy](Java/361_Bomb.java)|Medium|Java|Leetcode|
 |807   |379  |[Design Phone Directory](Java/379_Design.java)|Medium|Java|Leetcode|
+|808   |302  |[Smallest Rectangle Enclosing Black Pixels Binary Search](Java/302_Smallest.java)|Hard|Java|Leetcode|
