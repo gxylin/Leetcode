@@ -44,3 +44,29 @@ class Solution {
         return max;
     }
 }
+
+Best solution derived from max consecutive ones II
+Sliding window
+class Solution {
+    public int findMaxConsecutiveOnes(int[] nums) {
+        int max = 0;
+        int count = 0;
+        int low = 0;
+        int high = 0;
+        int k = 0;//flip most number
+        while (high < nums.length){
+            if (nums[high] == 0){
+                count++;
+            }
+            while (count > 0){
+                if (nums[low] == 0){
+                    count--;
+                }
+                low++;
+            }
+            max = Math.max(max, high - low + 1);
+            high++;
+        }
+        return max;
+    }
+}
