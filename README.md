@@ -826,3 +826,4 @@ Solution for Leetcode/Lintcode
 |806   |361  |[Bomb Enemy](Java/361_Bomb.java)|Medium|Java|Leetcode|
 |807   |379  |[Design Phone Directory](Java/379_Design.java)|Medium|Java|Leetcode|
 |808   |302  |[Smallest Rectangle Enclosing Black Pixels Binary Search](Java/302_Smallest.java)|Hard|Java|Leetcode|
+|809   |487   |[Max Consecutive Ones II](Java/487_Max.java)|Medium|Java|Leetcode|
