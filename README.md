@@ -829,3 +829,4 @@ Solution for Leetcode/Lintcode
 |809   |487  |[Max Consecutive Ones II](Java/487_Max.java)|Medium|Java|Leetcode|
 |810   |471  |[Encode String with Shortest Length 2D Dynamic Programming](Java/471_Encode.java)|Hard|Java|Leetcode|
 |811   |465  |[Optimal Account Setting](Java/465_Optimal.java)|Hard|Java|Leetcode|
+|812   |489  |[Robot clean room](Java/489_Robot.java)|Hard|Java|Leetcode|
