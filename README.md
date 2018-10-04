@@ -832,3 +832,4 @@ Solution for Leetcode/Lintcode
 |812   |489  |[Robot clean room](Java/489_Robot.java)|Hard|Java|Leetcode|
 |813   |555  |[Split Concatenated Strings](Java/555_Split.java)|Medium|Java|Leetcode|
 |814   |157  |[Read N Characters Given Read4](Java/157_Read.java)|Easy|Java|Leetcode|
+|815   |666  |[Path Sum IV](Java/666_Path.java)|Medium|Java|Leetcode|
