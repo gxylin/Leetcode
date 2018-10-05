@@ -835,3 +835,4 @@ Solution for Leetcode/Lintcode
 |815   |666  |[Path Sum IV](Java/666_Path.java)|Medium|Java|Leetcode|
 |816   |755  |[Pour Water Two points](Java/755_Pour.java)|Medium|Java|Leetcode|
 |817   |656  |[Coin Path](Java/656_Coin.java)|Hard|Java|Leetcode|
+|818   |317  |[Shortest Distance from All Buildings BFS](Java/317_Shortest.java)|Hard|Java|Leetcode|
