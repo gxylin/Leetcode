@@ -88,3 +88,37 @@ class Solution {
         return sb.toString();
     }
 }
+
+
+Method 2: DFS
+class Solution {
+    public int numDistinctIslands(int[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+        Set<String> set = new HashSet<>();
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (grid[i][j] == 1){
+                    StringBuilder sb = new StringBuilder();
+                    dfs(grid, i, j, sb, "0");
+                    set.add(sb.toString());
+                }
+            }
+        }
+        return set.size();
+    }
+    private String dfs(int[][] grid, int x, int y, StringBuilder sb, String str){
+        int m = grid.length;
+        int n = grid[0].length;
+        if (x >= 0 && x < m && y >= 0 && y < n && grid[x][y] == 1){
+            grid[x][y] = 0;
+            sb.append(str);
+            dfs(grid, x+1, y, sb, "1");
+            dfs(grid, x, y+1, sb, "2");
+            dfs(grid, x-1, y, sb, "3");
+            dfs(grid, x, y-1, sb, "4");
+            sb.append("_");
+        }
+        return sb.toString();
+    }
+}
