@@ -15,6 +15,7 @@ Explanation: The original array is [1,2,3]. The two derangements are [2,3,1] and
 Note:
 n is in the range of [1, 106]. 
 
+https://leetcode.com/problems/find-the-derangement-of-an-array/solution/#
 
 class Solution {
     public int findDerangement(int n) {
