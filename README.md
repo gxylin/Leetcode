@@ -841,3 +841,4 @@ Solution for Leetcode/Lintcode
 |821   |356  |[Line Reflection](Java/356_Line.java)|Medium|Java|Leetcode|
 |822   |625  |[Minimum Factorization](Java/625_Minimum.java)|Medium|Java|Leetcode|
 |823   |444  |[Sequence Reconstruction BFS Topological](Java/444_Sequence.java)|Medium|Java|Leetcode|
+|824   |660  |[Remove 9  Convert 10-based to x-based](Java/660_Remove.java)|Hard|Java|Leetcode|
