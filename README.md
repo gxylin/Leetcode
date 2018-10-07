@@ -840,3 +840,4 @@ Solution for Leetcode/Lintcode
 |820   |634  |[Find the Derangement of An Array](Java/634_Find.java)|Medium|Java|Leetcode|
 |821   |356  |[Line Reflection](Java/356_Line.java)|Medium|Java|Leetcode|
 |822   |625  |[Minimum Factorization](Java/625_Minimum.java)|Medium|Java|Leetcode|
+|823   |444  |[Sequence Reconstruction BFS Topological](Java/444_Sequence.java)|Medium|Java|Leetcode|
