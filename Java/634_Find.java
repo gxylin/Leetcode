@@ -17,6 +17,9 @@ n is in the range of [1, 106].
 
 https://leetcode.com/problems/find-the-derangement-of-an-array/solution/#
 
+dp[i]=(i−1)∗(dp[i−1]+dp[i−2])
+ 
+
 class Solution {
     public int findDerangement(int n) {
         if (n == 0){
