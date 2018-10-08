@@ -66,7 +66,7 @@ class Solution {
         dp[0][0] = days[0][0];
         for (int i = 1 ; i < N; i++){
             if (flights[0][i] == 0){
-                dp[i][0] = Integer.MIN_VALUE;
+                dp[i][0] = Integer.MIN_VALUE; // if can't go through, set to Integer.MIN_VALUE instead of 0
             }else{
                 dp[i][0] = days[i][0];
             }
@@ -98,7 +98,7 @@ class Solution {
         int K = days[0].length;
         int[][] dp = new int[N][2];
         for (int i = 0 ; i < N; i++){
-            Arrays.fill(dp[i], Integer.MIN_VALUE);
+            Arrays.fill(dp[i], Integer.MIN_VALUE); // if can't go through, set to Integer.MIN_VALUE instead of 0
             if (i == 0 || flights[0][i] == 1){
                 dp[i][0] = days[i][0];
             }
