@@ -57,6 +57,6 @@ class Solution {
             return new ResultType(false, 0, 0);
         }
         
-        return new ResultType(left.isValid && right.isValid, Math.min(left.min, root.val), Math.max(right.max, root.val));
+        return new ResultType(true, Math.min(left.min, root.val), Math.max(right.max, root.val));
     }
 }
