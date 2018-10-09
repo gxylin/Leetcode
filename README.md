@@ -844,3 +844,4 @@ Solution for Leetcode/Lintcode
 |824   |660  |[Remove 9  Convert 10-based to x-based](Java/660_Remove.java)|Hard|Java|Leetcode|
 |825   |568  |[Maximum Vacation Days Dynamic Programming](Java/568_Maximum.java)|Hard|Java|Leetcode|
 |826   |914  |[X of a Kind in a Deck of Cards gcd](Java/914_gcd.java)|Easy|Java|Leetcode|
+|827   |915  |[Partition Array into Disjoint Intervals Good](Java/915_Partition.java)|Medium|Java|Leetcode|
