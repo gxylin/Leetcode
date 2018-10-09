@@ -843,3 +843,4 @@ Solution for Leetcode/Lintcode
 |823   |444  |[Sequence Reconstruction BFS Topological](Java/444_Sequence.java)|Medium|Java|Leetcode|
 |824   |660  |[Remove 9  Convert 10-based to x-based](Java/660_Remove.java)|Hard|Java|Leetcode|
 |825   |568  |[Maximum Vacation Days Dynamic Programming](Java/568_Maximum.java)|Hard|Java|Leetcode|
+|826   |914  |[X of a Kind in a Deck of Cards gcd](Java/914_gcd.java)|Easy|Java|Leetcode|
