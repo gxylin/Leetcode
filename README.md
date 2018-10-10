@@ -846,3 +846,4 @@ Solution for Leetcode/Lintcode
 |826   |914  |[X of a Kind in a Deck of Cards gcd](Java/914_gcd.java)|Easy|Java|Leetcode|
 |827   |915  |[Partition Array into Disjoint Intervals Good](Java/915_Partition.java)|Medium|Java|Leetcode|
 |828   |917  |[Reverse Only Letters](Java/917_Reverse.java)|Easy|Java|Leetcode|
+|829   |916  |[Word Subsets](Java/916_Word.java)|Medium|Java|Leetcode|
