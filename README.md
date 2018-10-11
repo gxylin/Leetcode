@@ -97,7 +97,7 @@ Solution for Leetcode/Lintcode
 |89    |21   | [Merge Two Sorted Lists.java](Java/21_MergeTwoSortedLists.java)|Easy|Java|Leetcode|
 |90    |148  | [Sort List.java](Java/148_SortList.java)|Medium|Java|Leetcode|
 |91    |23   | [Merge k Sorted Lists.java](Java/23_MergekSortedLists.java)|Hard|Java|Leetcode|
-|92    |53   | [Maximum Subarray.java](Java/53_MaximumSubarray.java)|Easy|Java|Leetcode|
+|92    |53   | [Maximum Subarray Very Good Greedy DP](Java/53_MaximumSubarray.java)|Easy|Java|Leetcode|
 |93    |138  | [Subarray Sum.java](Java/138_SubarraySum.java)|Easy|Java|Lintcode|
 |94    |139  | [Subarray Sum Closest.java](Java/139_SubarraySumClosest.java)|Medium|Java|Lintcode|
 |95    |560  | [Subarray Sum Equals K.java](Java/560_SubarraySumEqualsK.java)|Medium|Java|Leetcode|
