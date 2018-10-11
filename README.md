@@ -849,3 +849,4 @@ Solution for Leetcode/Lintcode
 |829   |916  |[Word Subsets](Java/916_Word.java)|Medium|Java|Leetcode|
 |830   |918  |[Maximum Sum Circular Subarray Very Good](Java/918_Maximum.java)|Medium|Java|Leetcode|
 |831   |919  |[Complete Binary Tree Inserter](Java/919_Complete.java)|Medium|Java|Leetcode|
+|832   |920  |[Number of Music Playlists Dynamic Programming](Java/920_Number.java)|Hard|Java|Leetcode|
