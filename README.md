@@ -848,3 +848,4 @@ Solution for Leetcode/Lintcode
 |828   |917  |[Reverse Only Letters](Java/917_Reverse.java)|Easy|Java|Leetcode|
 |829   |916  |[Word Subsets](Java/916_Word.java)|Medium|Java|Leetcode|
 |830   |918  |[Maximum Sum Circular Subarray Very Good](Java/918_Maximum.java)|Medium|Java|Leetcode|
+|831   |919  |[Complete Binary Tree Inserter](Java/919_Complete.java)|Medium|Java|Leetcode|
