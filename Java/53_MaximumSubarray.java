@@ -90,3 +90,67 @@ class Solution {
         return global;
     }
 }
+
+
+
+If the required output is changed to the desired array not just sum
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int global = Integer.MIN_VALUE;
+        int local = 0;
+        int start = 0;
+        int end = 0;
+        int[] index = new int[2];
+        for (int i = 0; i< nums.length; i++){
+            if (nums[i] > local + nums[i]){
+                start = i;
+                local = nums[i];
+            }else{
+                local += nums[i];
+            }
+            if (local > global){
+                end = i;
+                global = local;
+                index[0] = start;
+                index[1] = end;
+            }
+        }
+        int len = index[1] - index[0] + 1;
+        int[] res = new int[len];
+        for (int i = index[0]; i <= index[1]; i++){
+            res[i-index[0]] = nums[i];
+            System.out.println(nums[i]);
+        }
+        return global;
+    }
+}
+
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int max = Integer.MIN_VALUE;
+        int sum = 0;
+        int start = 0;
+        int end = 0;
+        int[] index = new int[2];
+        for (int i = 0; i < nums.length; i++){
+            sum += nums[i];
+            if (sum > max){
+                end = i;
+                max = sum;
+                index[0] = start;
+                index[1] = end;
+            }
+            if (sum < 0){
+                sum = 0;
+                start = i + 1;
+            }
+        }
+        int len = index[1] - index[0] + 1;
+        int[] res = new int[len];
+        for (int i = index[0]; i <= index[1]; i++){
+            res[i-index[0]] = nums[i];
+            System.out.println(nums[i]);
+        }
+        return max;
+    }
+}
