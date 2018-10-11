@@ -3,20 +3,25 @@ Find the contiguous subarray within an array (containing at least one number) wh
 For example, given the array [-2,1,-3,4,-1,2,1,-5,4],
 the contiguous subarray [4,-1,2,1] has the largest sum = 6.
 
+Check Leetcode 918 for the case of circular array
+    
+    
 Method 1: Greey
 class Solution {
     public int maxSubArray(int[] nums) {
-        int maxSum = Integer.MIN_VALUE;
-        int minSum = 0;
+        int max = Integer.MIN_VALUE;
         int sum = 0;
-        for (int i = 0; i < nums.length; i++){
-            sum += nums[i];
-            maxSum = Math.max(sum - minSum, maxSum);
-            minSum = Math.min(sum, minSum);
+        for (int num : nums){
+            sum += num;
+            max = Math.max(max, sum);
+            if (sum < 0){
+                sum = 0;
+            }
         }
-        return maxSum;
+        return max;
     }
 }
+
 
 Method 2: DP
 f[i] denotes the maxium value of the continuous subarray that ends at the first i elements
@@ -57,5 +62,19 @@ public class Solution {
             max = Math.max(max, f[i%2]);
         }
         return max;
+    }
+}
+
+Method 4: DP
+Space complexity: O(1)
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int global = nums[0];
+        int local = nums[0];
+        for (int i = 1; i< nums.length; i++){
+            local = Math.max(nums[i], local + nums[i]);
+            global = Math.max(global, local);
+        }
+        return global;
     }
 }
