@@ -22,6 +22,18 @@ class Solution {
     }
 }
 
+Better to handle corner case 
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int global = Integer.MIN_VALUE;
+        int local = 0;
+        for (int i = 0; i< nums.length; i++){
+            local = Math.max(nums[i], local + nums[i]);
+            global = Math.max(global, local);
+        }
+        return global;
+    }
+}
 
 Method 2: DP
 f[i] denotes the maxium value of the continuous subarray that ends at the first i elements
