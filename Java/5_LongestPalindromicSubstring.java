@@ -12,7 +12,37 @@ Example:
 Input: "cbbd"
 
 Output: "bb"
+    
+Best solution
+class Solution {
+    public String longestPalindrome(String s) {
+        if (s == null || s.length() == 0){
+            return s;
+        }
+        String str = "";
+        for (int i = 0; i < s.length(); i++){
+            String odd = expand(s, i, i);
+            String even = expand(s, i, i+1);
+            if (str.length() < odd.length()){
+                str = odd;
+            }
+            if (str.length() < even.length()){
+                str = even;
+            }
+        }
+        return str;
+    }
+    private String expand(String s, int i, int j){
+        while (i >= 0 && j < s.length() && s.charAt(i) == s.charAt(j)){
+            i--;
+            j++;
+        }
+        return s.substring(i+1, j);
+    }
+}
 
+
+    
 Key idea, every time we move to right, we only need to consider whether using this new character as 
 tail could produce new palindrome string of length (current length +1) or (current length +2)
 
@@ -47,33 +77,7 @@ class Solution {
     }
 }
 
-Method 2:
-class Solution {
-    public String longestPalindrome(String s) {
-        if (s == null || s.length() == 0){
-            return s;
-        }
-        String str = "";
-        for (int i = 0; i < s.length(); i++){
-            String odd = expand(s, i, i);
-            String even = expand(s, i, i+1);
-            if (str.length() < odd.length()){
-                str = odd;
-            }
-            if (str.length() < even.length()){
-                str = even;
-            }
-        }
-        return str;
-    }
-    private String expand(String s, int i, int j){
-        while (i >= 0 && j < s.length() && s.charAt(i) == s.charAt(j)){
-            i--;
-            j++;
-        }
-        return s.substring(i+1, j);
-    }
-}
+
 
 Method 3:
 public class Solution {
