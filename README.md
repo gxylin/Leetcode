@@ -853,3 +853,4 @@ Solution for Leetcode/Lintcode
 |833   |922  |[Sort Array By Parity II](Java/922_Sort.java)|Easy|Java|Leetcode|
 |834   |921  |[Minimum Add to Make Parentheses Valid](Java/921_Minimum.java)|Medium|Java|Leetcode|
 |835   |923  |[3Sum With Multiplicity](Java/923_3Sum.java)|Medium|Java|Leetcode|
+|836   |924  |[Minimize Malware Spread Union Find](Java/924_Minimize.java)|Hard|Java|Leetcode|
