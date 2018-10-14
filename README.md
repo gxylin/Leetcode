@@ -779,7 +779,7 @@ Solution for Leetcode/Lintcode
 |759   |837  |[New 21 Game Dynamic Programming](Java/837_New.java)|Medium|Java|Leetcode|
 |760   |839  |[Similar String Groups Union Find](Java/839_Similar.java)|Hard|Java|Leetcode|
 |761   |892  |[Surface Area of 3D Shapes](Java/892_Surface.java)|Easy|Java|Leetcode|
-|762   |889  |[Construct Binary Tree from Preorder and Postorder Traversal](Java/889_Construct)|Medium|Java|Leetcode|
+|762   |889  |[Construct Binary Tree from Preorder and Postorder Traversal](Java/889_Construct.java)|Medium|Java|Leetcode|
 |763   |818  |[Race Car](Java/818_Race.java)|Hard|Java|Leetcode|
 |764   |847  |[Shortest Path Visiting All Nodes BFS Classic](Java/847_Shortest.java)|Hard|Java|Leetcode|
 |765   |864  |[Shortest Path to Get All Keys BFS Classic](Java/864_Shortest.java)|Hard|Java|Leetcode|
