@@ -98,3 +98,33 @@ class Solution {
         return ans;
     }
 }
+
+
+Best one:
+class Solution {
+    public int trap(int[] height) {
+        int left = 0;
+        int right = height.length - 1;
+        int i = left;
+        int j = right;
+        int res = 0;
+        while (i <= j){
+            if (height[left] <= height[right]){
+                if (height[i] >= height[left]){
+                    left = i;
+                }else{
+                    res += height[left] - height[i];
+                }
+                i++;
+            }else{
+                if (height[j] >= height[right]){
+                    right = j;
+                }else{
+                    res += height[right] - height[j];
+                }
+                j--;
+            }
+        }
+        return res;
+    }
+}
