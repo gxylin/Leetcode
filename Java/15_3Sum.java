@@ -10,6 +10,7 @@ A solution set is:
   [-1, -1, 2]
 ]
 
+Time complexity: O(N^2)
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
