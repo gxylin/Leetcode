@@ -98,3 +98,69 @@ public class Solution {
         return result;
     }
 }
+
+
+/**
+ * Definition for an interval.
+ * public class Interval {
+ *     int start;
+ *     int end;
+ *     Interval() { start = 0; end = 0; }
+ *     Interval(int s, int e) { start = s; end = e; }
+ * }
+ */
+class Solution {
+    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+        List<Interval> res = new ArrayList<>();
+        intervals.add(newInterval);
+        Collections.sort(intervals, new Comparator<Interval>(){
+            public int compare (Interval i1, Interval i2){
+                return i1.start - i2.start;
+            }
+        });
+        Interval last = null;
+        for (Interval interval : intervals){
+            if (last == null || last.end < interval.start){
+                last = interval;
+                res.add(interval);
+            }else{
+                last.end = Math.max(last.end, interval.end);
+            }
+        }
+        return res;
+    }
+}
+
+/**
+ * Definition for an interval.
+ * public class Interval {
+ *     int start;
+ *     int end;
+ *     Interval() { start = 0; end = 0; }
+ *     Interval(int s, int e) { start = s; end = e; }
+ * }
+ */
+class Solution {
+    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+        List<Interval> res = new ArrayList<>();
+        if (intervals == null){
+            res.add(newInterval);
+            return res;
+        }
+        int idx = 0;
+        while (idx < intervals.size() && intervals.get(idx).start < newInterval.start){
+            idx++;
+        }
+        intervals.add(idx, newInterval);
+        Interval last = null;
+        for (int i = 0; i < intervals.size(); i++){
+            if (last == null || last.end < intervals.get(i).start){
+                res.add(intervals.get(i));
+                last = intervals.get(i);    
+            }else{
+                last.end = Math.max(last.end, intervals.get(i).end);
+            }
+        }
+        return res;
+    }
+}
