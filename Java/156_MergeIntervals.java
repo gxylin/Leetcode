@@ -76,8 +76,8 @@ class Solution {
         Interval last = null;
         for (Interval interval : intervals){
             if (last == null || last.end < interval.start){
-                last = interval;
-                res.add(last);
+                res.add(interval);
+                last = interval;       
             }else{
                 last.end = Math.max(last.end, interval.end);
             }
