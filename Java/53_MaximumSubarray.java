@@ -95,7 +95,7 @@ class Solution {
 
 If the required output is changed to the desired array not just sum
 class Solution {
-    public int maxSubArray(int[] nums) {
+    public int[] maxSubArray(int[] nums) {
         int global = Integer.MIN_VALUE;
         int local = 0;
         int start = 0;
@@ -119,14 +119,13 @@ class Solution {
         int[] res = new int[len];
         for (int i = index[0]; i <= index[1]; i++){
             res[i-index[0]] = nums[i];
-            System.out.println(nums[i]);
         }
         return global;
     }
 }
 
 class Solution {
-    public int maxSubArray(int[] nums) {
+    public int[] maxSubArray(int[] nums) {
         int max = Integer.MIN_VALUE;
         int sum = 0;
         int start = 0;
