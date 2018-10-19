@@ -64,7 +64,7 @@ Solution for Leetcode/Lintcode
 |56    |4    | [Median of Two Sorted Arrays](Java/4_MedianofTwoSortedArrays.java)|Hard|Java|Leetcode|
 |57    |5    | [Longest Palindromic Substring Dynamic Programming](Java/5_LongestPalindromicSubstring.java)|Medium|Java|Leetcode|
 |58    |6    | [Zig Zag Conversion.java](Java/6_ZigZagConversion.java)|Medium|Java|Leetcode|
-|59    |7    | [ReverseInteger.java](Java/7_ReverseInteger.java)|Easy|Java|Leetcode|
+|59    |7    | [Reverse Integer](Java/7_ReverseInteger.java)|Easy|Java|Leetcode|
 |60    |688  | [Knight Probability in Chessboard.java](Java/688_KnightProbabilityinChessboard.java)|Medium|Java|Leetcode|
 |61    |697  | [Degree of Array.java](Java/697_DegreeofArray.java)|Easy|Java|Leetcode|
 |62    |39   | [Combination Sum.java](Java/39_CombinationSum.java)|Medium|Java|Leetcode|
