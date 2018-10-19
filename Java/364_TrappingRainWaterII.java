@@ -115,7 +115,9 @@ class Solution {
                 if (nx >= 0 && nx < m && ny >= 0 && ny < n && !visited[nx][ny]){
                     if (heightMap[nx][ny] < node.h){
                         res += node.h - heightMap[nx][ny];
-                        pq.offer(new Node(nx, ny, node.h));//note that this node must be pushed in queue and set height as node.h not heightMap[nx][ny]
+                        //note that this node must be pushed in queue and set height as node.h not heightMap[nx][ny]
+                        //because the water will be filled up to the level of node.h not heightMap[nx][ny]
+                        pq.offer(new Node(nx, ny, node.h));
                     }else{
                         pq.offer(new Node(nx, ny, heightMap[nx][ny]));
                     }
