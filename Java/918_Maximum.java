@@ -117,22 +117,24 @@ return the maximum one,
 (which equals to the max subarray sum)
 class Solution {
     public int maxSubarraySumCircular(int[] A) {
-        int sum = 0;
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
-        int currMax = 0;
-        int currMin = 0;
+        int sum = 0;
+        int localMax = 0;
+        int localMin = 0;
         for (int i : A){
-            currMax = Math.max(i, currMax + i);
-            max = Math.max(max, currMax);
-            currMin = Math.min(i, currMin + i);
-            min = Math.min(min, currMin);
             sum += i;
+            localMax = Math.max(i, localMax + i);
+            max = Math.max(max, localMax);
+            localMin = Math.min(i, localMin + i);
+            min = Math.min(min, localMin);
         }
-        return max < 0 ? max : Math.max(max, sum - min);
+        if (max < 0){
+            return max;
+        }
+        return Math.max(max, sum - min);
     }
 }
-
 
 
 
