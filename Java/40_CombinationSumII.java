@@ -42,3 +42,32 @@ class Solution {
         }
     }
 }
+
+class Solution {
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(candidates);
+        boolean[] visited = new boolean[candidates.length];
+        dfs(res, new ArrayList<Integer>(), candidates, target, visited, 0);
+        return res;
+    }
+    private void dfs(List<List<Integer>> res, List<Integer> item, int[] candidates, int target, boolean[] visited, int start){
+        if (target == 0){
+            res.add(new ArrayList<Integer>(item));
+            return;
+        }
+        for (int i = start; i < candidates.length; i++){
+            if (candidates[i] > target){
+                break;
+            }
+            if (i > 0 && candidates[i] == candidates[i-1] && !visited[i-1]){
+                continue;
+            }
+            item.add(candidates[i]);
+            visited[i] = true;
+            dfs(res, item, candidates, target - candidates[i], visited, i + 1);
+            visited[i] = false;
+            item.remove(item.size() - 1);
+        }
+    }
+}
