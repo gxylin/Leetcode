@@ -146,8 +146,8 @@ Solution for Leetcode/Lintcode
 |138   |223  | [Rectangle Area.java](Java/223_RectangleArea.java)|Medium|Java|Leetcode|
 |139   |239  | [Sliding Window Maximum.java](Java/239_SlidingWindowMaximum.java)|Hard|Java|Leetcode|
 |140   |48   | [Rotate Image.java](Java/48_RotateImage.java)|Medium|Java|Leetcode|
-|141   |141  | [Linked List Cycle.java](Java/141_LinkedListCycle.java)|Easy|Java|Leetcode|
-|142   |142  | [LinkedListCycleII.java](Java/142_LinkedListCycleII.java)|Medium|Java|Leetcode|
+|141   |141  | [Linked List Cycle](Java/141_LinkedListCycle.java)|Easy|Java|Leetcode|
+|142   |142  | [Linked List Cycle II](Java/142_LinkedListCycleII.java)|Medium|Java|Leetcode|
 |143   |129  | [Sum Root to Leaf Numbers.java](Java/129_SumRootLeafNumbers.java)|Medium|Java|Leetcode|
 |144   |413  | [Arithmetic Slices.java](Java/413_ArithmeticSlices.java)|Medium|Java|Leetcode|
 |145   |328  | [OddEvenLinkedList.java](Java/328_OddEvenLinkedList.java)|Medium|Java|Leetcode|
