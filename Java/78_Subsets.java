@@ -19,7 +19,6 @@ If nums = [1,2,3], a solution is:
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
-        Arrays.sort(nums);
         dfs(result, new ArrayList<Integer>(), nums, 0);
         return result;
     }
