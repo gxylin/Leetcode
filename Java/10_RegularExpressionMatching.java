@@ -64,3 +64,34 @@ class Solution {
         return dp[m][n];
     }
 }
+
+
+class Solution {
+    public boolean isMatch(String s, String p) {
+        int m = s.length();
+        int n = p.length();
+        boolean[][] dp = new boolean[m+1][n+1];
+        dp[0][0] = true;
+        char[] sc = s.toCharArray();
+        char[] pc = p.toCharArray();
+        for (int i = 1; i <= n; i++){
+            if (pc[i-1] == '*'){
+                dp[0][i] = dp[0][i-1] || dp[0][i-2];
+            }
+        }
+        for (int i = 1; i <= m; i++){
+            for (int j = 1; j <= n; j++){
+                if (sc[i-1] == pc[j-1] || pc[j-1] == '.'){
+                    dp[i][j] = dp[i-1][j-1];
+                }else if (pc[j-1] == '*'){
+                    if (j >= 2 && sc[i-1] != pc[j-2] && pc[j-2] != '.'){
+                        dp[i][j] = dp[i][j-2];
+                    }else{
+                        dp[i][j] = dp[i][j-1] || dp[i][j-2] || dp[i-1][j];
+                    }
+                }
+            }
+        }
+        return dp[m][n];
+    }
+}
