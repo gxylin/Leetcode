@@ -61,3 +61,28 @@ class Solution {
         }
     }
 }
+
+class Solution {
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        boolean[] visited = new boolean[nums.length];
+        dfs(res, new ArrayList<Integer>(), visited, nums);
+        return res;
+    }
+    private void dfs(List<List<Integer>> res, List<Integer> item, boolean[] visited, int[] nums){
+        if(item.size() == nums.length){
+            res.add(new ArrayList<Integer>(item));
+            return;
+        }
+        for (int i = 0; i < nums.length; i++){
+            if (visited[i]){
+                continue;
+            }
+            item.add(nums[i]);
+            visited[i] = true;
+            dfs(res, item, visited, nums);
+            visited[i] = false;
+            item.remove(item.size() - 1);
+        }
+    }
+}
