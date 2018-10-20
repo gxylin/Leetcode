@@ -38,3 +38,30 @@ class Solution {
         }
     }
 }
+
+Better version
+class Solution {
+    public List<List<Integer>> permuteUnique(int[] nums) {
+        List<List<Integer>> res  = new ArrayList<>();
+        Arrays.sort(nums);
+        boolean[] visited = new boolean[nums.length];
+        dfs(res, new ArrayList<Integer>(), visited, nums);
+        return res;
+    }
+    private void dfs(List<List<Integer>> res, List<Integer> item, boolean[] visited, int[] nums){
+        if (item.size() == nums.length){
+            res.add(new ArrayList<Integer>(item));
+            return;
+        }
+        for (int i = 0; i < nums.length; i++){
+            if (visited[i] || i > 0 && nums[i] == nums[i-1] && !visited[i-1]){
+                continue;
+            }
+            visited[i] = true;
+            item.add(nums[i]);
+            dfs(res, item, visited, nums);
+            item.remove(item.size() - 1);
+            visited[i] = false;
+        }
+    }
+}
