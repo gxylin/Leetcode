@@ -37,3 +37,27 @@ class Solution {
         }
     }
 }
+
+
+class Solution {
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(nums);
+        boolean[] visited = new boolean[nums.length];
+        dfs(res, new ArrayList<Integer>(), nums, visited, 0);
+        return res;
+    }
+    private void dfs(List<List<Integer>> res, List<Integer> item, int[] nums, boolean[] visited, int start){
+        res.add(new ArrayList<Integer>(item));
+        for (int i = start; i < nums.length; i++){
+            if (i >0 && nums[i] == nums[i-1] && !visited[i-1]){
+                continue;
+            }
+            item.add(nums[i]);
+            visited[i] = true;
+            dfs(res, item, nums, visited, i + 1);
+            visited[i] = false;
+            item.remove(item.size() - 1);
+        }
+    }
+}
