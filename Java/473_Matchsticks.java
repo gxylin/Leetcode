@@ -105,3 +105,46 @@ class Solution {
         return false;
     }
 }
+
+
+Backtracking: 
+refer to Leetcoe 698 for the genelized format in which k = 4
+
+class Solution {
+    public boolean makesquare(int[] nums) {
+        if (nums == null || nums.length == 0){
+            return false;
+        }
+        int sum = 0;
+        for (int i : nums){
+            sum += i;
+        }
+        if (sum % 4 != 0){
+            return false;
+        }
+        int target = sum / 4;
+        int[] sums = new int[4];
+        return canPartition(nums, sums, target, nums.length - 1);
+    }
+    private boolean canPartition(int[] nums, int[] sums, int target, int pos){
+        if (pos < 0){
+            for (int i = 0; i < 4; i++){
+                if (sums[i] != target){
+                    return false;
+                }
+            }
+            return true;
+        }
+        for (int i = 0; i < 4; i++){
+            if (sums[i] + nums[pos] > target){
+                continue;
+            }
+            sums[i] += nums[pos];
+            if (canPartition(nums, sums, target, pos - 1)){
+                return true;
+            }
+            sums[i] -= nums[pos];
+        }
+        return false;
+    }
+}
