@@ -568,7 +568,7 @@ Solution for Leetcode/Lintcode
 |549   |677  |[Map Sum Pairs Trie](Java/677_Map.java)|Medium|Java|Leetcode|
 |550   |695  |[Max Area of Island](Java/695_Max.java)|Easy|Java|Leetcode|
 |551   |696  |[Count Binary Substrings Very Good](Java/696_Count.java)|Easy|Java|Leetcode|
-|552   |698  |[Partition to K Equal Sum Subsets Backtracking Partition](Java/698_Partition.java)|Medium|Java|Leetcode|
+|552   |698  |[Partition to K Equal Sum Subsets Backtracking Partition Very Good](Java/698_Partition.java)|Medium|Java|Leetcode|
 |553   |712  |[Minimum ASCII Delete Sum for Two Strings Dynamic Programming](Java/712_Minimum.java)|Medium|Java|Leetcode|
 |554   |720  |[Longest Word in Dictionary Trie](Java/720_Longest.java)|Medium|Java|Leetcode|
 |555   |718  |[Maximum Length of Repeated Subarray Dynamic Programming](Java/718_Maximum.java)|Medium|Java|Leetcode|
