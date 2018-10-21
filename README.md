@@ -855,3 +855,4 @@ Solution for Leetcode/Lintcode
 |835   |923  |[3Sum With Multiplicity](Java/923_3Sum.java)|Medium|Java|Leetcode|
 |836   |924  |[Minimize Malware Spread Union Find](Java/924_Minimize.java)|Hard|Java|Leetcode|
 |837   |200  |[Number of islands](Java/200_Number.java)|Medium|Java|Leetcode|
+|838   |925  |[Long Pressed Name](Java/925_Long.java)|Easy|Java|Leetcode|
