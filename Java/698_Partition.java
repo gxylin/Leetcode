@@ -1,4 +1,5 @@
-Given an array of integers nums and a positive integer k, find whether it's possible to divide this array into k non-empty subsets whose sums are all equal.
+Given an array of integers nums and a positive integer k, find whether it's possible to divide this array into k non-empty 
+subsets whose sums are all equal.
 
 Example 1:
 Input: nums = [4, 3, 2, 3, 5, 2, 1], k = 4
