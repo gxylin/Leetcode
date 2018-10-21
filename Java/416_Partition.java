@@ -86,3 +86,44 @@ class Solution {
         return dp[nums.length%2][target];
     }
 }
+
+
+Method 2: backtracking 
+
+generalization refer to Leetcode 698
+class Solution {
+    public boolean canPartition(int[] nums) {
+        int sum = 0;
+        for (int num : nums){
+            sum += num;
+        }
+        if (sum % 2 != 0){
+            return false;
+        }
+        int target = sum / 2;
+        int[] sums = new int[2];
+        Arrays.sort(nums);
+        return backtrack(nums, target, sums, nums.length - 1);
+    }
+    private boolean backtrack(int[] nums, int target, int[] sums,int pos){
+        if (pos < 0){
+            for (int i = 0; i < 2; i++){
+                if (sums[i] != target){
+                    return false;
+                }
+            }
+            return true;
+        }
+        for (int i = 0; i < 2; i++){
+            if (sums[i] + nums[pos] > target){
+                continue;
+            }
+            sums[i] += nums[pos];
+            if (backtrack(nums, target, sums, pos - 1)){
+                return true;
+            }
+            sums[i] -= nums[pos];
+        }
+        return false;
+    }
+}
