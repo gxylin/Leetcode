@@ -28,7 +28,7 @@ class Solution {
         int target = sum / k;
         Arrays.sort(nums);
         int[] sums = new int[nums.length];
-        return canParition(nums, target, sums, k, nums.length - 1);
+        return canParition(nums, target, sums, k, nums.length - 1); //pos must go from largest to smallest otherwise it will TLE
     }
     private boolean canParition(int[] nums, int target, int[] sums, int k, int pos){
         if (pos < 0){
