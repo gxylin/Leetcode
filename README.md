@@ -857,3 +857,4 @@ Solution for Leetcode/Lintcode
 |837   |200  |[Number of islands](Java/200_Number.java)|Medium|Java|Leetcode|
 |838   |925  |[Long Pressed Name](Java/925_Long.java)|Easy|Java|Leetcode|
 |839   |926  |[Flip String to Monotone Increasing](Java/926_Flip.java)|Medium|Java|Leetcode|
+|840   |927  |[Three Equal Parts](Java/927_Three.java)|Hard|Java|Leetcode|
