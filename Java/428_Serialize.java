@@ -72,3 +72,43 @@ class Codec {
 // Your Codec object will be instantiated and called as such:
 // Codec codec = new Codec();
 // codec.deserialize(codec.serialize(root));
+
+
+
+Better version:
+class Codec {
+
+    // Encodes a tree to a single string.
+    public String serialize(Node root) {
+        StringBuilder sb = new StringBuilder();
+        serializePreOrder(root, sb);
+        return sb.toString();
+    }
+
+    private void serializePreOrder(Node root, StringBuilder sb){
+        sb.append(root.val);
+        sb.append(root.children.size());
+        for (Node node : root.children){
+            serializePreOrder(node, sb);
+        }
+    }
+    // Decodes your encoded data to tree.
+    public Node deserialize(String data) {
+        String[] strs = data.split(",");
+        int[] pt = new int[1];
+        pt[0] = 0;
+        return deserializePreOrder(strs, pt);
+    }
+    
+    private Node deserializePreOrder(String[] strs, int[] pt){
+        int val = Integer.parseInt(strs[pt[0]]);
+        pt[0]++;
+        int size = Integer.parseInt(strs[pt[0]]);
+        pt[0]++;
+        Node root = new Node(val, new ArrayList<Node>(size));
+        for (int i = 0; i < size; i++){
+            root.children.add(deserializePreOrder(strs, pt));
+        }
+        return root;
+    }
+}
