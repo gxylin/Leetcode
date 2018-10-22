@@ -61,9 +61,6 @@ class Solution {
                 size[rootY] += size[rootX];
             }
         }
-        private int getSize(int x){
-            return size[x];
-        }
     }
     public int minMalwareSpread(int[][] graph, int[] initial) {
         int res = -1;
@@ -79,7 +76,7 @@ class Solution {
         int max = 0;
         for (int i : initial){
             int root = uf.find(i);
-            int size = uf.getSize(root);
+            int size = uf.size[root];
             if (max < size){
                 max = size;
                 res = i;
