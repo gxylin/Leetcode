@@ -50,3 +50,29 @@ public class Solution {
         }
     }
 }
+
+backtracking using StringBuilder
+class Solution {
+    public List<String> letterCombinations(String digits) {
+        List<String> res = new ArrayList<>();
+        if (digits == null || digits.length() == 0){
+            return res;
+        }
+        String[] letters = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        backtrack(res, digits, new StringBuilder(), 0, letters);
+        return res;
+    }
+    private void backtrack(List<String> res, String digits, StringBuilder sb, int pos, String[] letters){
+        if (pos == digits.length()){
+            res.add(sb.toString());
+            return;
+        }
+        int num = (int)(digits.charAt(pos) - '0');
+        String letter = letters[num];
+        for (int i = 0; i < letter.length(); i++){
+            sb.append(letter.charAt(i));
+            backtrack(res, digits, sb, pos + 1, letters);
+            sb.deleteCharAt(sb.length() - 1);
+        }
+    }
+}
