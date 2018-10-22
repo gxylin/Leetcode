@@ -858,3 +858,4 @@ Solution for Leetcode/Lintcode
 |838   |925  |[Long Pressed Name](Java/925_Long.java)|Easy|Java|Leetcode|
 |839   |926  |[Flip String to Monotone Increasing](Java/926_Flip.java)|Medium|Java|Leetcode|
 |840   |927  |[Three Equal Parts](Java/927_Three.java)|Hard|Java|Leetcode|
+|841   |928  |[Minimize Malware Spread II Union Find](Java/928_Minimize.java)|Hard|Java|Leetcode|
