@@ -209,6 +209,15 @@ public class Codec {
 
 
 Best version: preorder
+Using preOrder traversal could be generalized to all the similar serialize and deserialize tree question, including BST, n-ary tree.
+
+Level Order can't do the generalization.
+
+Note that in deseralization, you have to create int[] pt in order to track the pointer and move forward. Because in Java function, 
+it is passed by copying value or reference. It won't work if copying value. Hence, we have to construct int[] to enable copying by 
+reference.
+    
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -261,3 +270,4 @@ public class Codec {
 // Your Codec object will be instantiated and called as such:
 // Codec codec = new Codec();
 // codec.deserialize(codec.serialize(root));
+```
