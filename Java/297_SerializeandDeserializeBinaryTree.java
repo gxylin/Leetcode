@@ -206,3 +206,58 @@ public class Codec {
 // Codec codec = new Codec();
 // codec.deserialize(codec.serialize(root));
 
+
+
+Best version: preorder
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Codec {
+
+    // Encodes a tree to a single string.
+    public String serialize(TreeNode root) {
+        StringBuilder res = new StringBuilder();
+        preOrderSerial(root, res);
+        return res.toString();
+    }
+
+    private void preOrderSerial(TreeNode root, StringBuilder res){
+        if (root == null){
+            res.append("null,");
+            return;
+        }
+        res.append(root.val + ",");
+        preOrderSerial(root.left, res);
+        preOrderSerial(root.right, res);
+    }
+    
+    // Decodes your encoded data to tree.
+    public TreeNode deserialize(String data) {
+        String[] strs = data.split(",");
+        int[] pt = new int[1];
+        pt[0] = 0;
+        return preOrderDeserial(strs, pt);
+    }
+    
+    private TreeNode preOrderDeserial(String[] strs, int[] pt){
+        String str = strs[pt[0]];
+        pt[0]++;
+        if (str.equals("null")){
+            return null;
+        }
+        TreeNode root = new TreeNode(Integer.parseInt(str));
+        root.left = preOrderDeserial(strs, pt);
+        root.right = preOrderDeserial(strs, pt);
+        return root;
+    }
+}
+
+// Your Codec object will be instantiated and called as such:
+// Codec codec = new Codec();
+// codec.deserialize(codec.serialize(root));
