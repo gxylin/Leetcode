@@ -22,7 +22,7 @@ class Solution {
         if (map.containsKey(s)){
             return map.get(s);
         }
-        if (wordDict.contains(s)){
+        if (wordDict.contains(s)){//must have, like initialization
             result.add(s);
         }
         for (int i = 1; i < s.length(); i++){
