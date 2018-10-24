@@ -144,6 +144,7 @@ class Solution {
             if (nums[mid] == target){
                 return mid;
             }
+            int last = nums[end];
             if (target > last){
                 if (nums[mid] < target && nums[mid] > last){
                     start = mid;
