@@ -57,3 +57,42 @@ class Solution {
         
     }
 }
+
+class Solution {
+    public String minWindow(String s, String t) {
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : t.toCharArray()){
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        int count = map.size();
+        int start = 0;
+        int end = 0;
+        int head = 0;
+        int minLen = Integer.MAX_VALUE;
+        while (end < s.length()){
+            char cEnd = s.charAt(end);
+            if (map.containsKey(cEnd)){
+                map.put(cEnd, map.get(cEnd) - 1);
+                if (map.get(cEnd) == 0){
+                    count--;
+                }
+            }
+            end++;
+            while (count == 0){
+                if (end - start < minLen){
+                    minLen = end - start;
+                    head = start;
+                }
+                char cStart = s.charAt(start);
+                if (map.containsKey(cStart)){
+                    if  (map.get(cStart) == 0){
+                        count++;
+                    }
+                    map.put(cStart, map.get(cStart) + 1);
+                }
+                start++;
+            }
+        }
+        return minLen == Integer.MAX_VALUE ? "" : s.substring(head, head + minLen);
+    }
+}
