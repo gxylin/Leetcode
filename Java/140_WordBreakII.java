@@ -10,7 +10,8 @@ dict = ["cat", "cats", "and", "sand", "dog"].
 
 A solution is ["cats and dog", "cat sand dog"].
 
-Method 1:  DP + Memorization, the same as Methodd 2
+DP = recursion + memorization
+Method 1:  DP, the same as Methodd 2
 class Solution {
     Map<String, List<String>> map = new HashMap<>();
     public List<String> wordBreak(String s, List<String> wordDict) {
@@ -40,7 +41,7 @@ class Solution {
     }
 }
 
-Method 2: DP + memorization
+Method 2: DP
 class Solution {
     public List<String> wordBreak(String s, List<String> wordDict) {
         Map<String, List<String>> map = new HashMap<>();
