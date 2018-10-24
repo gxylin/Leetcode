@@ -69,3 +69,45 @@ class Solution {
         return result;
     }
 }
+
+
+Method 3: Backtracking
+class Solution {
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        List<String> res = new ArrayList<>();
+        Set<String> set = new HashSet<>();
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for (String st : wordDict){
+            set.add(st);
+            min = Math.min(min, st.length());
+            max = Math.max(max, st.length());
+        }
+        backtrack(res, new ArrayList<String>(), s, set, min, max, 0);
+        return res;
+    }
+    private void backtrack(List<String> res, List<String> item, String s, Set<String> set, int min, int max, int pos){
+        if (pos == s.length()){
+            String str = String.join(" ", item);
+            res.add(str);
+            return;
+        }
+     //   System.out.println(pos);
+        for (int i = pos; i <= s.length(); i++){
+            if (i - pos < min){
+                continue;
+            }
+            if (i - pos > max){
+                break;
+            }
+            String sub = s.substring(pos, i);
+      //      System.out.println(sub);
+            if (set.contains(sub)){
+                item.add(sub);
+                backtrack(res, item, s, set, min, max, i);
+                item.remove(item.size() - 1);
+            }
+        }
+    }
+    
+}
