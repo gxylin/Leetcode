@@ -60,3 +60,53 @@ class Solution {
         return res;   
     }
 }
+
+
+Better solution:
+class Solution {
+    class Point{
+        int val;
+        int index;
+        int listIdx;
+        public Point (int val, int index, int listIdx){
+            this.val = val;
+            this.index = index;
+            this.listIdx = listIdx;
+        }
+    }
+    public int[] smallestRange(List<List<Integer>> nums) {
+        Queue<Point> pq = new PriorityQueue<Point>(new Comparator<Point>(){
+            public int compare (Point p1, Point p2){
+                if (p1.val == p2.val){
+                    return p1.index - p2.index;
+                }
+                return p1.val - p2.val;
+            }
+        });
+        int minLen = Integer.MAX_VALUE;//track the minimum length
+        int maxVal = Integer.MIN_VALUE;//track the maximum value
+        for (int i = 0; i < nums.size(); i++){
+            List<Integer> list = nums.get(i);
+            int val = list.get(0);
+            pq.offer(new Point(val, 0, i));
+            maxVal = Math.max(maxVal, val);
+        }
+        int[] res = new int[2];
+        while (!pq.isEmpty()){
+            Point p = pq.poll();
+            if (minLen > maxVal - p.val){
+                minLen = maxVal - p.val;
+                res[0] = p.val;
+                res[1] = maxVal;
+            }
+            if (p.index + 1 < nums.get(p.listIdx).size()){
+                int nextVal = nums.get(p.listIdx).get(p.index + 1);
+                pq.offer(new Point(nextVal, p.index + 1, p.listIdx));
+                maxVal = Math.max(maxVal, nextVal);
+            }else{
+                break;
+            }
+        }
+        return res;
+    }
+}
