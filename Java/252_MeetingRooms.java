@@ -84,3 +84,26 @@ class Solution {
         return true;
     }
 }
+
+
+Method 3: the same as Meeting rooms II
+class Solution {
+    public int minMeetingRooms(Interval[] intervals) {
+        if (intervals == null || intervals.length == 0){
+            return 0;
+        }
+        TreeMap<Integer, Integer> map = new TreeMap<>();
+        for(Interval interval : intervals){
+            map.put(interval.start, map.getOrDefault(interval.start, 0) + 1);
+            map.put(interval.end, map.getOrDefault(interval.end, 0) - 1);
+        }
+        int active = 0;
+        for (int val : map.values()){
+            active += val;
+            if (active > 1){
+                return false;
+            }
+        }
+        return true;
+    }
+}
