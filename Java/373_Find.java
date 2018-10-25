@@ -84,7 +84,9 @@ class Solution {
     }
 }
 
-Method 3:
+Method 3: Best solution
+Time complexity: O(klogk)
+Space complexity: O(k)
 class Solution {
     public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         List<int[]> result = new ArrayList<>();
