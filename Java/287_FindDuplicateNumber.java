@@ -81,7 +81,7 @@ class Solution {
 }
 
 Method 3:
-https://leetcode.com/problems/find-the-duplicate-number/description/
+https://leetcode.com/problems/find-the-duplicate-number/discuss/72846/My-easy-understood-solution-with-O(n)-time-and-O(1)-space-without-modifying-the-array.-With-clear-explanation.
 class Solution {
     public int findDuplicate(int[] nums) {
         int slow = nums[0];
