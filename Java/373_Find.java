@@ -54,7 +54,7 @@ class Solution {
 }
 
 Method 2: PQ with using the given information of sorted array
-Time complexity: O(k * logm)
+Time complexity: O(k * log (min(m, k))
 Space complexity: O(k)
 
 class Solution {
