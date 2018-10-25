@@ -68,7 +68,7 @@ class Solution {
                 return (a[0] + a[1]) - (b[0] + b[1]);
             }
         });
-        for (int i = 0; i < nums1.length; i++){
+        for (int i = 0; i < nums1.length && i < k; i++){
             pq.offer(new int[]{nums1[i], nums2[0], 0});
         }
         while (!pq.isEmpty() && k > 0){
