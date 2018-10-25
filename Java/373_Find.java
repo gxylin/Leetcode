@@ -54,33 +54,33 @@ class Solution {
 }
 
 Method 2: PQ with using the given information of sorted array
-Time complexity: O(min(k, m) * logk)
+Time complexity: O(k * logm)
 Space complexity: O(k)
 
 class Solution {
     public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
-        List<int[]> result = new ArrayList<>();
-        if (nums1.length == 0 || nums2.length == 0 || k == 0){
-            return result;
+         List<int[]> res = new ArrayList<>();
+        if (nums1 == null || nums1.length == 0 || nums2 == null || nums2.length == 0){
+            return res;
         }
-        Queue<int[]> queue = new PriorityQueue<int[]>(new Comparator<int[]>(){
-            public int compare(int[] a, int[] b){
-                return a[0] + a[1] - (b[0] + b[1]);
+        Queue<int[]> pq = new PriorityQueue<int[]>(new Comparator<int[]>(){
+            public int compare (int[] a, int[] b){
+                return (a[0] + a[1]) - (b[0] + b[1]);
             }
         });
-        for (int i = 0; i < nums1.length && i < k; i++){
-            queue.offer(new int[]{nums1[i], nums2[0], 0});
+        for (int i = 0; i < nums1.length; i++){
+            pq.offer(new int[]{nums1[i], nums2[0], 0});
         }
-        
-        while (!queue.isEmpty() && k > 0){
-            int[] cur = queue.poll();
-            result.add(new  int[]{cur[0], cur[1]});
-            if (cur[2] != nums2.length - 1){
-                queue.offer(new int[]{cur[0], nums2[cur[2]+1], cur[2]+1});
+        while (!pq.isEmpty() && k > 0){
+            int[] curr = pq.poll();
+            res.add(new int[]{curr[0], curr[1]});
+            int nextIdx = curr[2] + 1;
+            if (nextIdx < nums2.length){
+                pq.offer(new int[]{curr[0], nums2[nextIdx], nextIdx});
             }
             k--;
         }
-        return result;
+        return res;
     }
 }
 
