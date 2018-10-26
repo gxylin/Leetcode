@@ -97,3 +97,61 @@ class WordDictionary {
  * obj.addWord(word);
  * boolean param_2 = obj.search(word);
  */
+
+class WordDictionary {
+    class TrieNode {
+        TrieNode[] children;
+        boolean isEnd;
+        public TrieNode (){
+            children = new TrieNode[26];
+            isEnd = false;
+        }
+    }
+    /** Initialize your data structure here. */
+    TrieNode root;
+    public WordDictionary() {
+        root = new TrieNode();
+    }
+    
+    /** Adds a word into the data structure. */
+    public void addWord(String word) {
+        TrieNode node = root;
+        for (char c : word.toCharArray()){
+            if (node.children[c - 'a'] == null){
+                node.children[c - 'a'] = new TrieNode();
+            }
+            node = node.children[c - 'a'];
+        }
+        node.isEnd = true;
+    }
+    
+    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
+    public boolean search(String word) {
+        return search(word, root, 0);
+    }
+    private boolean search(String word, TrieNode node, int pos){
+        if (pos == word.length()){
+            return node.isEnd;
+        }
+        char c = word.charAt(pos);
+        if (c == '.'){
+            for (TrieNode child : node.children){
+                if (child != null && search(word, child, pos + 1)){
+                    return true;
+                }
+            }
+            return false;
+        }else if (node.children[c - 'a'] != null){
+            node = node.children[c - 'a'];
+            return search(word, node, pos+1);
+        }
+        return false;
+    }
+}
+
+/**
+ * Your WordDictionary object will be instantiated and called as such:
+ * WordDictionary obj = new WordDictionary();
+ * obj.addWord(word);
+ * boolean param_2 = obj.search(word);
+ */
