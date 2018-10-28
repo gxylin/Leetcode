@@ -859,3 +859,4 @@ Solution for Leetcode/Lintcode
 |839   |926  |[Flip String to Monotone Increasing](Java/926_Flip.java)|Medium|Java|Leetcode|
 |840   |927  |[Three Equal Parts](Java/927_Three.java)|Hard|Java|Leetcode|
 |841   |928  |[Minimize Malware Spread II Union Find](Java/928_Minimize.java)|Hard|Java|Leetcode|
+|842   |929  |[Unique Email Addresses](Java/929_Unique.java)|Easy|Java|Leetcode|
