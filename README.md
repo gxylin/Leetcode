@@ -7,7 +7,7 @@ Solution for Leetcode/Lintcode
 |2     |242  | [Valid Anagram.java](Java/242_ValidAnagram.java) | Easy|Java       |Leetcode  |
 |3     |144  | [Binary Tree Preorder Traversal.java](Java/144_BinaryTreePreorderTraversal.java)|Medium|Java|Leetcode  |
 |4     |94   | [Binary Tree Inorder Traversal.java](Java/94_BinaryTreeInorderTraversal.java)|Medium|Java| Leetcode  |
-|5     |512  | [Decode Ways.java](Java/512_DecodeWays.java)|Medium|Java|Lintcode
+|5     |512  | [Decode Ways Dynamic Programming](Java/512_DecodeWays.java)|Medium|Java|Lintcode
 |6     |638  | [Strings Homomorphism.java](Java/638_StringsHomomorphism.java)|Easy|Java|Lintcode|
 |7     |626  | [Rectangle Overlap.java](Java/626_RectangleOverlap.java)|Easy|Java|Lintcode|
 |8     |637  | [Check Word Abbreviation.java](Java/637_CheckWordAbbreviation.java)|Easy|Java|Lintcode|
