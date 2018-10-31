@@ -89,8 +89,8 @@ class Solution {
         if (words == null || words.length == 0){
             return "";
         }
-        Map<Character, Set<Character>> map = new HashMap<>();
-        Map<Character, Integer> indegree = new HashMap<>();
+        Map<Character, Set<Character>> map = new HashMap<>(); //priority map
+        Map<Character, Integer> indegree = new HashMap<>(); //indegree map
             
         //1. build indgree map and priority map
         for (String word : words){
