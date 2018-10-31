@@ -46,3 +46,24 @@ class Solution {
     }
     
 }
+
+Best solution:
+class Solution {
+    public List<String> generateParenthesis(int n) {
+        List<String> res = new ArrayList<>();
+        helper(res, "", n, n);
+        return res;
+    }
+    private void helper(List<String> res, String str, int leftRemain, int rightRemain){
+        if (leftRemain == 0 && rightRemain == 0){
+            res.add(str);
+            return;
+        }
+        if (leftRemain > 0){
+            helper(res, str + "(", leftRemain - 1, rightRemain);
+        }
+        if (rightRemain > leftRemain){ //note that it is not rightRemain > 0 because to eliminate invalid cases
+            helper(res, str + ")", leftRemain, rightRemain - 1);
+        }
+    }
+}
