@@ -291,7 +291,7 @@ Solution for Leetcode/Lintcode
 |282   |140  |[Word Break II Recursion + Memo](Java/140_WordBreakII.java)|Hard|Java|Leetcode|
 |283   |805  |[Maxium Association Set](Java/805_MaximumAssociationSet.java)|Medium|Java|Lintcode|
 |284   |79   |[Word Search backtracking](Java/79_WordSearch.java)|Medium|Java|Leetcode|
-|285   |212  |[Word Search II](Java/212_WordSearchII.java)|Hard|Java|Leetcode|
+|285   |212  |[Word Search II backtracking Trie](Java/212_WordSearchII.java)|Hard|Java|Leetcode|
 |286   |336  |[Palindrome Pair](Java/336_PalindromePairs.java)|Hard|Java|Leetcode|
 |287   |549  |[Binary Tree Longest Consecutive Sequence II](Java/549_BinaryTree.java)|Medium|Java|Leetcode|
 |288   |44   |[Wildcard Matching](Java/44_WildcardMatching.java)|Hard|Java|Leetcode|
