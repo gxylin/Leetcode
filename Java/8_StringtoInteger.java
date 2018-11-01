@@ -4,32 +4,35 @@ Implement atoi to convert a string to an integer.
 
 class Solution {
     public int myAtoi(String str) {
-        if (str == null || str.length() == 0){
+        if (str == null){
             return 0;
         }
         str = str.trim();
         int i = 0;
         char flag = '+';
-        if (str.charAt(i) == '-'){
+        if (str.length() == 0){
+            return 0;
+        }
+        if (str.charAt(0) == '-'){
             flag = '-';
             i++;
-        }else if (str.charAt(i) == '+'){
+        }else if (str.charAt(0) == '+'){
             i++;
         }
-        double result = 0;
-        while (i < str.length() && str.charAt(i) >= '0' && str.charAt(i) <='9'){
-            result = result * 10 + (int) (str.charAt(i) - '0');
+        double res = 0;
+        while (i < str.length() && str.charAt(i) >= '0' && str.charAt(i) <= '9'){
+            res = res * 10 + (int)(str.charAt(i) - '0');
             i++;
         }
         if (flag == '-'){
-            result = -result;
+            res = -res;
         }
-        if (result < Integer.MIN_VALUE){
-            return Integer.MIN_VALUE;
+        if (res < Integer.MIN_VALUE){
+            res = (int) Integer.MIN_VALUE;
         }
-        if (result > Integer.MAX_VALUE){
-            return Integer.MAX_VALUE;
+        if (res > Integer.MAX_VALUE){
+            res = (int) Integer.MAX_VALUE;
         }
-        return (int) result;
+        return (int)res;
     }
 }
