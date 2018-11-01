@@ -116,3 +116,84 @@ class Solution {
         return result;
     }
 }
+
+
+
+
+Better:
+Time complexity: O(nlogk)
+class Solution {
+    class Pair {
+        int val;
+        int freq;
+        public Pair (int val, int freq){
+            this.val = val;
+            this.freq = freq;
+        }
+    }
+    public List<Integer> topKFrequent(int[] nums, int k) {
+        List<Integer> res = new ArrayList<>();
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i : nums){
+            map.put(i, map.getOrDefault(i, 0) + 1);
+        }
+        Queue<Pair> pq = new PriorityQueue<Pair>(new Comparator<Pair>(){
+            public int compare (Pair p1, Pair p2){
+                return p2.freq - p1.freq;
+            }
+        });
+        for (int key : map.keySet()){
+            pq.offer(new Pair(key, map.get(key)));
+        }
+        int i = 0;
+        while (!pq.isEmpty() && i < k){
+            Pair p = pq.poll();
+            res.add(p.val);
+            i++;
+        }
+        return res;
+    }
+}
+
+Best:
+Time complexity: O(klogk)
+class Solution {
+    class Pair {
+        int val;
+        int freq;
+        public Pair (int val, int freq){
+            this.val = val;
+            this.freq = freq;
+        }
+    }
+    public List<Integer> topKFrequent(int[] nums, int k) {
+        List<Integer> res = new ArrayList<>();
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i : nums){
+            map.put(i, map.getOrDefault(i, 0) + 1);
+        }
+        Queue<Pair> pq = new PriorityQueue<Pair>(new Comparator<Pair>(){
+            public int compare (Pair p1, Pair p2){
+                return p1.freq - p2.freq;
+            }
+        });
+        for (int key : map.keySet()){
+            if (pq.size() < k){
+                pq.offer(new Pair(key, map.get(key)));
+            }else{
+                if (pq.peek().freq < map.get(key)){
+                    pq.poll();
+                    pq.offer(new Pair(key, map.get(key)));
+                }
+            }
+        }
+        Stack<Integer> stack = new Stack<>();
+        while (!pq.isEmpty()){
+            stack.push(pq.poll().val);
+        }
+        while (!stack.isEmpty()){
+            res.add(stack.pop());
+        }
+        return res;
+    }
+}
