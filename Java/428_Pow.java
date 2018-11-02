@@ -26,29 +26,27 @@ Challenge: O(logn) time
 问:7可以分解成哪 几个数的和?
 十进制转二进制 %2 /2 时间复杂度O(logn)
 
-public class Solution {
-    /*
-     * @param x: the base number
-     * @param n: the power number
-     * @return: the result
-     */
+class Solution {
     public double myPow(double x, int n) {
         if (n < 0){
-            if (n == Integer.MIN_VALUE){
-                return 0;
+            if (n == Integer.MIN_VALUE ){
+                if (Math.abs(x) - 1.0 < 0.001){
+                    return 1.0;
+                }
+                return 0.0;
             }
             x = 1/x;
             n = -n;
         }
-        double ans = 1;
+        double res = 1.0;
         double tmp = x;
         while (n > 0){
             if (n % 2 == 1){
-                ans *= tmp;
+                res *= tmp;
             }
             tmp *= tmp;
             n /= 2;
         }
-        return ans;
+        return res;
     }
 }
