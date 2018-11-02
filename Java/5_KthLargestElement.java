@@ -12,8 +12,9 @@ In array [1,2,3,4,5], the 1st largest element is 5, 2nd largest element is 4, 3r
 Challenge 
 O(n) time, O(1) extra memory.
 
- 
-Quick select: O(n) time
+https://leetcode.com/problems/kth-largest-element-in-an-array/discuss/60294/Solution-explained
+
+Quick select: O(n) time Average, Worst Case O(N^2) without random, Random can improve to O(N)
 class Solution {
     /*
      * @param k : description of k
