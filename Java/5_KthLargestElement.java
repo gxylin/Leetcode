@@ -109,3 +109,43 @@ class Solution {
         nums[b] = temp;
     }
 }
+
+
+
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        int low = 0;
+        int high = nums.length - 1;
+        while (low <= high){
+            int rank = partition(nums, low, high);
+            if  (rank == k - 1){
+                return nums[rank];
+            }else if (rank < k - 1){
+                low = rank + 1;
+            }else{
+                high = rank - 1;
+            }
+        }
+        return -1;
+    }
+    private int partition(int[] nums, int low, int high){
+        int pIndex = low;
+        int pivot = nums[low];
+        low++;
+        while (low <= high){
+            if (nums[low] < pivot){
+                swap(nums, low, high);
+                high--;
+            }else{
+                low++;
+            }
+        }
+        swap(nums, pIndex, high);
+        return high;
+    }
+    private void swap(int[] nums, int i, int j){
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+}
