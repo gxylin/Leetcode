@@ -864,3 +864,4 @@ Solution for Leetcode/Lintcode
 |844   |931  |[Minimum Falling Path Sum](Java/931_Minimum.java)|Medium|Java|Leetcode|
 |XXX   |XXX  |[Trie Template](Java/trieTemplate.java)|
 |845   |933  |[Number of Recent Calls Treemap](Java/933_Number.java)|Easy|Java|Leetcode|
+|846   |934  |[Shortest Bridge BFS](Java/934_Shortest.java)|Medium|Java|Leetcode|
