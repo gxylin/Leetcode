@@ -865,3 +865,4 @@ Solution for Leetcode/Lintcode
 |XXX   |XXX  |[Trie Template](Java/trieTemplate.java)|
 |845   |933  |[Number of Recent Calls Treemap](Java/933_Number.java)|Easy|Java|Leetcode|
 |846   |934  |[Shortest Bridge BFS](Java/934_Shortest.java)|Medium|Java|Leetcode|
+|847   |935  |[Knight Dialer](Java/935_Knight.java)|Medium|Java|Leetcode|
