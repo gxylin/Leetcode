@@ -419,7 +419,7 @@ Solution for Leetcode/Lintcode
 |400   |494  |[Target Sum Add Operator DP](Java/494_Target.java)|Medium|Java|Leetcode|
 |401   |543  |[Diameter of Binary Tree](Java/543_Diameter.java)|Easy|Java|Leetcode|
 |402   |394  |[Decode String Stack](Java/394_Decode.java)|Medium|Java|Leetcode|
-|403   |437  |[Path Sum III](Java/437_Path.java)|Easy|Java|Leetcode|
+|403   |437  |[Path Sum III Good Recursion](Java/437_Path.java)|Easy|Java|Leetcode|
 |404   |448  |[Find All Numbers Disappeared in an Array](Java/448_Find.java)|Easy|Java|Leetcode|
 |405   |416  |[Partition Equal Subset Sum Backpack DP](Java/416_Partition.java)|Medium|Java|Leetcode|
 |406   |461  |[Hamming Distance bit](Java/461_Hamming.java)|Easy|Java|Leetcode|
