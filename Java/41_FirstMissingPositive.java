@@ -33,3 +33,23 @@ class Solution {
         nums[j] = temp;
     }
 }
+
+class Solution {
+    public int firstMissingPositive(int[] nums) {
+        for (int i = 0; i < nums.length; i++){
+            while (nums[i] > 0 && nums[i] <= nums.length && i != nums[i] - 1 && nums[i] != nums[nums[i] - 1]){
+                swap(nums, i, nums[i]-1);
+            }
+        }
+        int i = 0;
+        while (i < nums.length && i == nums[i] - 1){
+            i++;
+        }
+        return i+1;
+    }
+    private void swap (int[] A, int i, int j){
+        int temp = A[i];
+        A[i] = A[j];
+        A[j] = temp;
+    }
+}
