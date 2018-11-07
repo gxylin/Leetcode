@@ -13,7 +13,7 @@ Given the below binary tree,
 Return 6.
 
               
-Similar as 687. Longest Univalue Path
+Similar as 687. Longest Univalue Path, Refer to the solution in 687
 Method 1: use global variable
 /**
  * Definition for a binary tree node.
