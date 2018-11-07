@@ -51,6 +51,7 @@ use Math.max(leftMax, rightMax)
 
   
 
+  Similar to 124. Binary Tree Maximum Path Sum
 class Solution {
     int ans = 0;
     public int longestUnivaluePath(TreeNode root) {
@@ -80,3 +81,39 @@ Time Complexity: O(N), where NN is the number of nodes in the tree. We process e
 
 Space Complexity: O(H), where H is the height of the tree. Our recursive call stack could be up to H layers deep.
 
+
+  
+Remove global variable
+ /**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public int longestUnivaluePath(TreeNode root) {
+        int[] ans = new int[1];
+        longestIncludeRoot(root, ans);
+        return ans[0];
+    }
+    private int longestIncludeRoot(TreeNode root, int[] ans){
+        if (root == null){
+            return 0;
+        }
+        int left = longestIncludeRoot(root.left, ans);
+        int right = longestIncludeRoot(root.right, ans);
+        int leftMax = 0;
+        if (root.left != null && root.val == root.left.val){
+            leftMax = left + 1;
+        }
+        int rightMax = 0;
+        if (root.right != null && root.val == root.right.val){
+            rightMax = right + 1;
+        }
+        ans[0] = Math.max(ans[0], leftMax + rightMax);
+        return Math.max(leftMax, rightMax);
+    }
+}
