@@ -334,7 +334,7 @@ Solution for Leetcode/Lintcode
 |315   |86   |[Binary Search Tree Iterator](Java/86_BSTIterator.java)|Hard|Java|Lintcode|
 |316   |694  |[Number of Distinct Islands](Java/694_NumberIslands.java)|Medium|Java|Leetcode|
 |317   |127  |[Word Ladder](Java/127_WordLadder.java)|Medium|Java|Leetcode|
-|318   |240  |[Search 2D Matrix II](Java/240_SearchII.java)|Medium|Java|Leetcode|
+|318   |240  |[Search 2D Matrix II Good](Java/240_SearchII.java)|Medium|Java|Leetcode|
 |319   |518  |[Coin Change 2](Java/518_CoinChange2.java)|Medium|Java|Leetcode|
 |320   |537  |[Complex Number Multiplication](Java/537_ComplexNumber.java)|Medium|Java|Leetcode|
 |321   |663  |[Equal Tree Partition Tree Sum](Java/663_EqualTreePartition.java)|Medium|Java|Leetcode|
