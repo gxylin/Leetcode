@@ -12,6 +12,8 @@ Given the below binary tree,
      2   3
 Return 6.
 
+              
+Similar as 687. Longest Univalue Path
 Method 1: use global variable
 /**
  * Definition for a binary tree node.
