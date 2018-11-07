@@ -94,6 +94,49 @@ class MinStack {
     }
 }
 
+Method 3:
+push x and min at one stack
+class MinStack {
+    Stack<Integer> stack;
+    int min;
+    /** initialize your data structure here. */
+    public MinStack() {
+        stack = new Stack<>();
+        min = Integer.MAX_VALUE;
+    }
+    
+    public void push(int x) {
+        min = Math.min(min, x);
+        stack.push(x);
+        stack.push(min);
+    }
+    
+    public void pop() {
+        stack.pop();
+        int temp = stack.pop();
+        if (min == temp){
+            if  (stack.isEmpty()){
+                min = Integer.MAX_VALUE;
+            }else{
+                 min = stack.peek();
+            }
+           
+        }
+        
+    }
+    
+    public int top() {
+        int temp = stack.pop();
+        int val = stack.peek();
+        stack.push(temp);
+        return val;
+    }
+    
+    public int getMin() {
+        return stack.peek();
+    }
+}
+
 /**
  * Your MinStack object will be instantiated and called as such:
  * MinStack obj = new MinStack();
