@@ -38,3 +38,36 @@ class Solution {
         return helper(root.right, sum * 10 + root.val) + helper(root.left, sum * 10 + root.val);
     }
 }
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    int res = 0;
+    public int sumNumbers(TreeNode root) {
+        if (root == null){
+            return 0;
+        }
+        dfs(root, 0);
+        return res;
+    }
+    private void dfs(TreeNode root, int sum){
+        if (root.left == null && root.right == null){
+            res += sum * 10 + root.val;
+            return;
+        }
+        sum = sum * 10 + root.val;
+        if (root.left != null){
+            dfs(root.left, sum);
+        }
+        if (root.right != null){
+            dfs(root.right, sum);
+        }
+    }
+}
