@@ -35,9 +35,28 @@ class Solution {
         if (root == null){
             return 0;
         }
-        int robRoot = root.val + (root.left == null ? 0 : rob(root.left.left) + rob(root.left.right)) + (root.right == null ? 0 :                                 rob(root.right.left) + rob(root.right.right));
+        int robRoot = root.val + (root.left == null ? 0 : rob(root.left.left) + rob(root.left.right)) + (root.right == null ? 0 : rob(root.right.left) + rob(root.right.right));
         int notRobRoot = rob(root.left) + rob(root.right);
         return Math.max(robRoot, notRobRoot);
     }
 }
 
+Better:
+
+class Solution {
+    public int rob(TreeNode root) {
+        if (root == null){
+            return 0;
+        }
+        int maxLeft = rob(root.left);
+        int maxRight = rob(root.right);
+        int max = root.val;
+        if (root.left != null){
+            max += rob(root.left.left) + rob(root.left.right);
+        }
+        if (root.right != null){
+            max += rob(root.right.left) + rob(root.right.right);
+        }
+        return Math.max(max, maxLeft + maxRight);
+    }
+}
