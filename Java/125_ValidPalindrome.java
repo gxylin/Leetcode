@@ -34,3 +34,32 @@ class Solution {
         return true;
     }
 }
+
+
+Better version:
+class Solution {
+    public boolean isPalindrome(String s) {
+        if (s == null || s.length() == 0){
+            return true;
+        }
+        char[] chars = s.toCharArray();
+        int left = 0;
+        int right = s.length() - 1;
+        while (left < right){
+            while (left < right && !Character.isLetterOrDigit(chars[left])){//isLetterOrDigit: alphanumeric
+                left++;
+            }
+            while (left < right && !Character.isLetterOrDigit(chars[right])){
+                right--;
+            }
+
+                if (Character.toLowerCase(chars[left]) != Character.toLowerCase(chars[right])){//ignore cases
+                    return false;
+                }
+                left++;
+                right--;
+            
+        }
+        return true;
+    }
+}
