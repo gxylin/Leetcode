@@ -42,3 +42,24 @@ class Solution {
         return res;
     }
 }
+
+
+Method 2: general form
+class Solution {
+    public int distinctSubseqII(String S) {
+        int mod = (int)1e9 + 7;
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : S.toCharArray()){
+            int sum = 0;
+            for (int val : map.values()){
+                sum = (sum + val)%mod;
+            }
+            map.put(c, sum + 1);
+        }
+        int res = 0;
+        for (int val : map.values()){
+            res = (res + val) % mod;
+        }
+        return res;
+    }
+}
