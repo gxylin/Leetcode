@@ -869,3 +869,4 @@ Solution for Leetcode/Lintcode
 |848   |427  |[Construct Quad Tree Recursion](Java/427_Construct.java)|Medium|Java|Leetcode|
 |849   |938  |[Range Sum of BST](Java/938_Range.java)|Medium|Java|Leetcode|
 |850   |937  |[Reorder log files](Java/937_Reorder.java)|Easy|Java|Leetcode|
+|851   |940  |[Distinct Subsequences II Dynamic Very Good](Java/940_Distinct.java)|Hard|Java|Leetcode|
