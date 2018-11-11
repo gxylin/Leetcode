@@ -120,3 +120,47 @@ class Solution {
         }    
     }
 }
+
+
+
+Better Version:
+class Solution {
+    public TreeNode deleteNode(TreeNode root, int key) {
+        TreeNode dummy = new TreeNode(-1);
+        TreeNode parent = dummy;
+        dummy.left = root;
+        delete(parent, root, key);
+        return dummy.left;
+    }
+    private void delete(TreeNode parent, TreeNode root, int key){
+        if (root == null){
+            return;
+        }
+        if (key == root.val){
+            if (root.right == null){
+                if (root == parent.left){
+                    parent.left = root.left;
+                }else{
+                    parent.right = root.left;
+                }
+            }else{
+                if (root == parent.left){
+                    parent.left = root.right;
+                }else{
+                    parent.right = root.right;
+                }
+                TreeNode node = root.right;
+                while (node.left != null){
+                    node = node.left;
+                }
+                node.left = root.left;
+            }
+            root.left = null;
+            root.right = null;
+        }else if (key > root.val){
+            delete(root, root.right, key);
+        }else{
+            delete(root, root.left, key);
+        }
+    }
+}
