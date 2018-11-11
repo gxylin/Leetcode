@@ -867,3 +867,4 @@ Solution for Leetcode/Lintcode
 |846   |934  |[Shortest Bridge BFS](Java/934_Shortest.java)|Medium|Java|Leetcode|
 |847   |935  |[Knight Dialer](Java/935_Knight.java)|Medium|Java|Leetcode|
 |848   |427  |[Construct Quad Tree Recursion](Java/427_Construct.java)|Medium|Java|Leetcode|
+|849   |938  |[Range Sum of BST](Java/938_Range.java)|Medium|Java|Leetcode|
