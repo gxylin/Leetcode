@@ -45,3 +45,29 @@ class Solution {
         return cur.toString();
     }
 }
+
+
+Better version:
+class Solution {
+    public String countAndSay(int n) {
+        String str = "1";
+        for (int i = 1; i < n; i++){
+            int j = 0;
+            StringBuilder sb = new StringBuilder();
+            while (j < str.length()){
+                char c = str.charAt(j);
+                int k = j + 1;
+                int times = 1;
+                while (k < str.length() && str.charAt(k) == c){
+                    k++;
+                    times++;
+                }
+                sb.append(times);
+                sb.append(c);
+                j = k;
+            }
+            str = sb.toString();
+        }
+        return str;
+    }
+}
