@@ -33,7 +33,7 @@ class Solution {
             for (int j = 0; j < 26; j++){
                 sum = (sum + end[j]) % mod;
             }
-            end[c - 'a'] = sum + 1;
+            end[c - 'a'] = sum + 1;// 1 means new SINGLE character
         }
         int res = 0;
         for (int i = 0; i < 26; i++){
