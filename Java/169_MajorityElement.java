@@ -38,26 +38,25 @@ class Solution {
     }
 }
 
-Method 3:
+Method 3: Best solution:
 class Solution {
     public int majorityElement(int[] nums) {
-        int major = 0;
         int count = 0;
+        int res = 0;
         for (int i = 0; i < nums.length; i++){
-            if (nums[i] == major){
+            if (count == 0){
+                res = nums[i];
                 count++;
-            }else if (count == 0){
-                major = nums[i];
+            }else if (res == nums[i]){
                 count++;
             }else{
                 count--;
             }
         }
-        return major;
+        return res;
     }
 }
 
-Best solution:
 class Solution {
     public int majorityElement(int[] nums) {
         int res = nums[0];
