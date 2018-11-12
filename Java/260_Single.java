@@ -59,3 +59,32 @@ class Solution {
         return result;
     }
 }
+
+
+
+Better version:
+class Solution {
+    public int[] singleNumber(int[] nums) {
+        int diff = 0;
+        for (int num : nums){
+            diff ^= num;
+        }
+        int bit = 0;
+        while (bit < 32){
+            if (((diff >> bit) & 1) == 1){
+                diff = (1 << bit);
+                break;
+            }
+            bit++;
+        }
+        int[] res = new int[2];
+        for (int num : nums){
+            if ((diff & num) == 0){
+                res[0] ^= num;
+            }else{
+                res[1] ^= num;
+            }
+        }
+        return res;
+    }
+}
