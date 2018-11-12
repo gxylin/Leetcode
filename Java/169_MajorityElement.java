@@ -76,7 +76,7 @@ class Solution {
     }
 }
 
-Method 4:
+Method 4: Similar as Single Number II
 bit manipulation:
 class Solution {
     public int majorityElement(int[] nums) {
