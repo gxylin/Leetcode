@@ -65,3 +65,40 @@ class Solution {
         return new int[0];
     }
 }
+
+
+Better version: the same as course schedule I
+class Solution {
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        int[] res = new int[numCourses];
+        int index = 0;
+        int[] indegree = new int[numCourses];
+        for (int[] p : prerequisites){
+            indegree[p[0]]++;
+        }
+        Queue<Integer> queue = new LinkedList<>();
+        for (int i = 0; i < numCourses; i++){
+            if (indegree[i] == 0){
+                queue.offer(i);
+            }
+        }
+        while (!queue.isEmpty()){
+            int curr = queue.poll();
+            res[index++] = curr;
+            for (int[] p : prerequisites){
+                if (p[1] == curr){
+                    indegree[p[0]]--;
+                    if (indegree[p[0]] == 0){
+                        queue.offer(p[0]);
+                    }
+                }
+            }
+        }
+        for (int i = 0; i < numCourses; i++){
+            if (indegree[i] != 0){
+                return new int[0];
+            }
+        }
+        return res;
+    }
+}
