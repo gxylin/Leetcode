@@ -63,3 +63,36 @@ class Solution {
         return true;
     }
 }
+
+Better:
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        int[] indegree = new int[numCourses];
+        for (int[] p : prerequisites){
+            indegree[p[0]]++;
+        }
+        Queue<Integer> queue = new LinkedList<>();
+        for (int i = 0; i < numCourses; i++){
+            if (indegree[i] == 0){
+                queue.offer(i);
+            }
+        }
+        while (!queue.isEmpty()){
+            int course = queue.poll();
+            for (int[] p : prerequisites){
+                if (p[1] == course){
+                    indegree[p[0]]--;
+                    if (indegree[p[0]] == 0){
+                        queue.offer(p[0]);
+                    }
+                }
+            }
+        }
+        for (int i = 0; i < numCourses; i++){
+            if (indegree[i] != 0){
+                return false;
+            }
+        }
+        return true;
+    }
+}
