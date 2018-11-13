@@ -51,6 +51,21 @@ class Solution {
     }
 }
 
+
+Best solution: per generalization form
+class Solution {
+    public int maxProfit(int[] prices) {
+        int minCost = Integer.MAX_VALUE;
+        int maxProfits = 0;
+        for (int price : prices){
+            minCost = Math.min(minCost, price);//not price - maxProfits because only one transaction is allowed
+            maxProfits = Math.max(maxProfits, price - minCost);
+        }
+        return maxProfits;
+    }
+}
+
+
 Why DP?
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/discuss/39112
 
