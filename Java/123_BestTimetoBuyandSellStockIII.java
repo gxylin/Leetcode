@@ -20,3 +20,20 @@ class Solution {
         return maxProfit2;
     }
 }
+
+class Solution {
+    public int maxProfit(int[] prices) {
+        int[] minCost = new int[3];
+        int[] maxprofits = new int[3];
+        for (int i = 0; i < 3; i++){
+            minCost[i] = Integer.MAX_VALUE;
+        }
+        for (int i = 0; i < prices.length; i++){
+            for (int j = 1; j <= 2; j++){
+                minCost[j] = Math.min(minCost[j], prices[i] - maxprofits[j-1]);
+                maxprofits[j] = Math.max(maxprofits[j], prices[i] - minCost[j]);
+            }
+        }
+        return maxprofits[2];
+    }
+}
