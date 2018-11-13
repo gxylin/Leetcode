@@ -14,3 +14,17 @@ class Solution {
         return max;
     }
 }
+
+
+Generalized form
+class Solution {
+    public int maxProfit(int[] prices) {
+        int minCost = Integer.MAX_VALUE;
+        int maxProfits = 0;
+        for (int price: prices){
+            minCost = Math.min(minCost, price - maxProfits);//not price because any number of transaction is allowed
+            maxProfits = Math.max(maxProfits, price - minCost);
+        }
+        return maxProfits;
+    }
+}
