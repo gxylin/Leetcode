@@ -32,3 +32,28 @@ class Solution {
         return pq.size();
     }
 }
+
+
+class Solution {
+    public int scheduleCourse(int[][] courses) {
+        Arrays.sort(courses, new Comparator<int[]>(){
+           public int compare(int[] a1, int[] a2){
+               return a1[1] - a2[1];
+           } 
+        });
+        Queue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>(){
+            public int compare(Integer i1, Integer i2){
+                return (int)(i2 - i1);
+            }
+        });
+        int time = 0;
+        for (int[] c : courses){
+            time += c[0];
+            pq.offer(c[0]);
+            if (time > c[1]){
+                time -= pq.poll();
+            }
+        }
+        return pq.size();
+    }
+}
