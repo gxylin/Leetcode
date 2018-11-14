@@ -57,3 +57,51 @@ class Solution {
         A[j] = temp;
     }
 }
+
+
+Better version:
+class Solution {
+    public void nextPermutation(int[] nums) {
+        //three steps:
+        //step 1: find the first non-ascending element from right to left
+        if (nums == null || nums.length == 0){
+            return;
+        }
+        int n = nums.length;
+        int index = n;
+        for (int i = n - 1; i > 0; i--){
+            if (nums[i-1] < nums[i]){
+                index = i-1;
+                break;
+            }
+        }
+        if (index == n){//reverse the nums
+            reverse(nums, 0, n-1);
+            return;
+        }
+        int pivot = nums[index];
+        //step 2: find the first element that is greater than pivot from right to left
+        for (int i = n - 1; i > index; i--){
+            if (nums[i] > pivot){
+                swap(nums, index, i);
+                break;
+            }
+        }
+        //step 3: reverse the elements from index + 1 to right
+        reverse(nums, index+1, n-1);
+    }
+    private void reverse(int[] nums, int start, int end){
+        while (start < end){
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
+        }
+    }
+    private void swap(int[] nums, int start, int end){
+        int temp = nums[start];
+        nums[start] = nums[end];
+        nums[end] = temp;
+    }
+}
