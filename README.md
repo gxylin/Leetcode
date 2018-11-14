@@ -264,7 +264,7 @@ Solution for Leetcode/Lintcode
 |255   |251  |[Flatten 2D Vector.java](Java/251_Flatten2DVector.java)|Medium|Java|Leetcode|
 |256   |252  |[Meeting Rooms.java](Java/252_MeetingRooms.java)|Easy|Java|Leetcode|
 |257   |253  |[Meeting Rooms II TreeMap Sweep line](Java/253_MeetingRoomsII.java)|Medium|Java|Leetcode|
-|258   |269  |[Alien Dictionary Topological sort](Java/269_AlienDictionary.java)|Hard|Java|Leetcode|
+|258   |269  |[Alien Dictionary Topological sort Very good](Java/269_AlienDictionary.java)|Hard|Java|Leetcode|
 |259   |289  |[Game of Life.java](Java/289_GameofLife.java)|Medium|Java|Leetcode|
 |260   |225  |[Implement Stack Using Queue.java](Java/225_ImplementStack.java)|Medium|Java|Leetcode|
 |261   |295  |[Find Median from Data Stream.java](Java/295_FindMedianDataStream.java)|Hard|Java|Leetcode|
