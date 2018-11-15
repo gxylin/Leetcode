@@ -178,3 +178,44 @@ class Solution {
       }
 }
  
+
+class Solution {
+    public int openLock(String[] deadends, String target) {
+        Set<String> dead = new HashSet<>();
+        for (String s : deadends){
+            dead.add(s);
+        }
+        if (dead.contains("0000")){
+            return -1;
+        }
+        Queue<String> queue = new LinkedList<>();
+        Set<String> seen = new HashSet<>();
+        queue.offer("0000");
+        seen.add("0000");
+        int res = 0;
+        while (!queue.isEmpty()){
+            int size = queue.size();
+            for (int i = 0; i < size; i++){
+                String str = queue.poll();
+                if (str.equals(target)){
+                    return res;
+                }
+                for (int j = 0; j < 4; j++){
+                    int num = (int)(str.charAt(j) - '0');
+                    String cand = str.substring(0, j) + ((num+1)%10) + str.substring(j+1);
+                    if (!seen.contains(cand) && !dead.contains(cand)){
+                        queue.offer(cand);
+                        seen.add(cand);
+                    }
+                    cand = str.substring(0, j) + ((num+9)%10) + str.substring(j+1);
+                    if (!seen.contains(cand) && !dead.contains(cand)){
+                        queue.offer(cand);
+                        seen.add(cand);
+                    }
+                }
+            }
+            res++;
+        }
+        return -1;
+    }
+}
