@@ -20,3 +20,8 @@ public class Solution {
         return result;
     }
 }
+
+>>> zeros filled right shift
+>> right shift
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
