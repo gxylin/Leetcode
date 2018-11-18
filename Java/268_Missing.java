@@ -75,7 +75,10 @@ class Solution {
         return ans;
     }
 }
-Because we know that nums contains nnn numbers and that it is missing exactly one number on the range [0..n−1][0..n-1][0..n−1], we know that nnn definitely replaces the missing number in nums. Therefore, if we initialize an integer to nnn and XOR it with every index and value, we will be left with the missing number. Consider the following example (the values have been sorted for intuitive convenience, but need not be):
+Because we know that nums contains nnn numbers and that it is missing exactly one number on the range [0..n−1][0..n-1][0..n−1],
+we know that nnn definitely replaces the missing number in nums. Therefore, if we initialize an integer to nnn and XOR it with every
+index and value, we will be left with the missing number. Consider the following example (the values have been sorted for intuitive
+convenience, but need not be):
 
 Index 	0 	1 	2 	3
 Value 	0 	1 	3 	4
