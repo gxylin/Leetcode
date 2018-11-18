@@ -95,3 +95,29 @@ class Solution {
         return expectedSum - sum;
     }
 }
+
+
+Method 3: Swap
+class Solution {
+    public int missingNumber(int[] nums) {
+        int n = nums.length;
+        int i = 0;
+        int res = -1;
+        while(i < n){
+            if (nums[i] == n || nums[i] == i){
+                if (nums[i] == n){
+                    res = i;
+                }
+                i++;
+                continue;
+            }
+            swap(nums, i, nums[i]);
+        }
+        return res == -1 ? n : res;
+    }
+    private void swap(int[] A, int i, int j){
+        int temp = A[i];
+        A[i] = A[j];
+        A[j] = temp;
+    }
+}
