@@ -873,3 +873,4 @@ Solution for Leetcode/Lintcode
 |852   |939  |[Minimum Area Rectangle](Java/939_Minimum.java)|Medium|Java|Leetcode|
 |853   |29   |[Divide Two Integers](Java/29_Divide.java)|Medium|Java|Leetcode|
 |854   |941  |[Valid Mountain Array Good Two Pointers](Java/941_Valid.java)|Easy|Java|Leetcode|
+|855   |942  |[DI String Match Two Pointers](Java/942_DIString.java)|Easy|Java|Leetcode|
