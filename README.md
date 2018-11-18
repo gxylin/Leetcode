@@ -872,3 +872,4 @@ Solution for Leetcode/Lintcode
 |851   |940  |[Distinct Subsequences II Dynamic Very Good](Java/940_Distinct.java)|Hard|Java|Leetcode|
 |852   |939  |[Minimum Area Rectangle](Java/939_Minimum.java)|Medium|Java|Leetcode|
 |853   |29   |[Divide Two Integers](Java/29_Divide.java)|Medium|Java|Leetcode|
+|854   |941  |[Valid Mountain Array Good Two Pointers](Java/941_Valid.java)|Easy|Java|Leetcode|
