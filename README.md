@@ -875,3 +875,4 @@ Solution for Leetcode/Lintcode
 |854   |941  |[Valid Mountain Array Good Two Pointers](Java/941_Valid.java)|Easy|Java|Leetcode|
 |855   |942  |[DI String Match Two Pointers](Java/942_DIString.java)|Easy|Java|Leetcode|
 |856   |944  |[Delete Columns to Make Sorted](Java/944_Delete.java)|Medium|Java|Leetcode|
+|857   |34   |[Find First and Last Position of Element in Sorted Array](Java/34_Find.java)|Medium|Java|Leetcode|
