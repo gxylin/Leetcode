@@ -27,7 +27,7 @@ After calling your function, the tree should look like:
      / \  / \
     4->5->6->7 -> NULL
     
-Method 1: iteration
+Method 1: iteration LinkedList
 /**
  * Definition for binary tree with next pointer.
  * public class TreeLinkNode {
@@ -54,7 +54,7 @@ public class Solution {
     }
 }
 
-Method 2: recursion
+Method 2: recursion Tree 
 /**
  * Definition for binary tree with next pointer.
  * public class TreeLinkNode {
@@ -81,7 +81,7 @@ public class Solution {
 }
 
 
-Method 3: BFS
+Method 3: BFS Tree
 /**
  * Definition for binary tree with next pointer.
  * public class TreeLinkNode {
