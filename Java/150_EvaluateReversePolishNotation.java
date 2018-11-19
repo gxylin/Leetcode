@@ -40,3 +40,28 @@ class Solution {
         return number.pop();
     }
 }
+
+class Solution {
+    public int evalRPN(String[] tokens) {
+        Stack<String> stack = new Stack<>();
+        for (String token : tokens){
+            char c = token.charAt(token.length()-1);
+            if (Character.isDigit(c)){
+                stack.push(token);
+            }else{
+                int s2 = Integer.parseInt(stack.pop());
+                int s1 = Integer.parseInt(stack.pop());
+                if (c == '+'){
+                    stack.push(String.valueOf(s1 + s2));
+                }else if (c == '-'){
+                    stack.push(String.valueOf(s1 - s2));
+                }else if (c == '*'){
+                    stack.push(String.valueOf(s1 * s2));
+                }else{
+                    stack.push(String.valueOf(s1 / s2));
+                }
+            }
+        }
+        return Integer.parseInt(stack.pop());
+    }
+}
