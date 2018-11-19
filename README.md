@@ -629,7 +629,7 @@ Solution for Leetcode/Lintcode
 |610   |639  |[Decode Ways II](Java/639_Decode.java)|Medium|Java|Leetcode|
 |611   |642  |[Design Search Autocomplete System Trie](Java/642_Design.java)|Hard|Java|Leetcode|
 |612   |165  |[Compare Version Numbers Split](Java/165_Compare.java)|Medium|Java|Leetcode|
-|613   |285  |[Inorder Successor in BST](Java/285_Inorder.java)|Medium|Java|Leetcode|
+|613   |285  |[Inorder Successor in BST Very good](Java/285_Inorder.java)|Medium|Java|Leetcode|
 |614   |333  |[Largest BST Subtree Divide and Conquer](Java/333_Largest.java)|Medium|Java|Leetcode|
 |615   |650  |[2 Keys Keyboard](Java/650_Keys.java)|Medium|Java|Leetcode|
 |616   |651  |[4 Keys Keyboard](Java/651_Keys.java)|Medium|Java|Leetcode|
