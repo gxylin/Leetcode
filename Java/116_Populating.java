@@ -116,3 +116,39 @@ public class Solution {
         }
     }
 }
+
+Method 4: 117. general form
+/**
+ * Definition for binary tree with next pointer.
+ * public class TreeLinkNode {
+ *     int val;
+ *     TreeLinkNode left, right, next;
+ *     TreeLinkNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public void connect(TreeLinkNode root) {
+        if (root == null){
+            return;
+        }
+        TreeLinkNode head = root;
+        TreeLinkNode dummyChildHead = new TreeLinkNode(-1);
+        while (head != null){
+            TreeLinkNode curr = head;
+            TreeLinkNode child = dummyChildHead;
+            while (curr != null){
+                if (curr.left != null){
+                    child.next = curr.left;
+                    child = child.next;
+                }
+                if (curr.right != null){
+                    child.next = curr.right;
+                    child = child.next;
+                }
+                curr = curr.next;
+            }
+            head = dummyChildHead.next;
+            dummyChildHead = new TreeLinkNode(-1);
+        }
+    }
+}
