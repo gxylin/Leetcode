@@ -45,7 +45,7 @@ class Solution {
     private int findIndex(int[] A, int start, int end, int target){
         for (int i = start; i <= end; i++){
             if (A[i] == target){
-                return i - start;
+                return i - start;//must use relative distance index
             }
         }
         return -1;
