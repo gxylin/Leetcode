@@ -77,3 +77,28 @@ class Solution {
         return root;
     }
 }
+
+
+Key idea: use the next element after root to find the split index
+class Solution {
+    public TreeNode constructFromPrePost(int[] pre, int[] post) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < post.length; i++){
+            map.put(post[i], i);
+        }
+        return construct(pre, 0, pre.length - 1, post, 0, post.length - 1, map);
+    }
+    private TreeNode construct(int[] pre, int preStart, int preEnd, int[] post, int postStart, int postEnd, Map<Integer, Integer> map){
+        if (preStart > preEnd || postStart > postEnd){
+            return null;
+        }
+        int pivot = pre[preStart];
+        TreeNode root = new TreeNode(pivot);
+        if (preStart + 1 <= preEnd){
+            int delta = map.get(pre[preStart+1]) - postStart + 1;
+            root.left = construct(pre, preStart + 1, preStart + delta, post, postStart, postStart + delta-1, map);
+            root.right = construct(pre, preStart + delta + 1, preEnd, post, postStart + delta, postEnd - 1, map);
+        }
+        return root;
+    }
+}
