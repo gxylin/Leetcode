@@ -22,11 +22,13 @@ The key insight here is to notice that once the remainder starts repeating, so d
 
 Algorithm
 
-You will need a hash table that maps from the remainder to its position of the fractional part. Once you found a repeating remainder, you may enclose the reoccurring fractional part with parentheses by consulting the position from the table.
+You will need a hash table that maps from the remainder to its position of the fractional part. Once you found a repeating remainder, 
+you may enclose the reoccurring fractional part with parentheses by consulting the position from the table.
 
 The remainder could be zero while doing the division. That means there is no repeating fractional part and you should stop right away.
 
-Just like the question Divide Two Integers, be wary of edge cases such as negative fractions and nasty extreme case such as −2147483648−1\frac{-2147483648}{-1}​−1​​−2147483648​​.
+Just like the question Divide Two Integers, be wary of edge cases such as negative fractions and nasty extreme case such as
+−2147483648−1\frac{-2147483648}{-1}​−1​​−2147483648​​.
 
 Here are some good test cases:
 Test case 	Explanation
