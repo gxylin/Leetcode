@@ -15,6 +15,8 @@ solution.reset();
 // Returns the random shuffling of array [1,2,3].
 solution.shuffle();
 
+
+Random return integer between each between zero (inclusive) and one (exclusive).
 class Solution {
     private int[] nums;
     private Random random;
