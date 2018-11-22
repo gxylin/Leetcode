@@ -56,3 +56,28 @@ class Solution {
         return 0;
     }
 }
+
+
+Method 3: Greedy O(n) like Jum Game I
+The main idea is based on greedy. Let's say the range of the current jump is [curBegin, curEnd], curFarthest is the farthest point 
+that all points in [curBegin, curEnd] can reach. Once the current point reaches curEnd, then trigger another jump, 
+and set the new curEnd with curFarthest, then keep the above steps, as the following:
+
+class Solution {
+    public int jump(int[] nums) {
+        int steps = 0;
+        int curBegin = 0;
+        int curEnd = 0;
+        int curFarthest = 0;
+        while (curFarthest < nums.length - 1){
+            for (int i = curBegin; i <= curEnd; i++){
+                curFarthest = Math.max(curFarthest, i + nums[i]);
+            }
+            steps++;
+            curBegin = curEnd+1;
+            curEnd = curFarthest;
+        }
+        return steps;
+        
+    }
+}
