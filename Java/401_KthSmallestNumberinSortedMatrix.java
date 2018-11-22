@@ -73,8 +73,8 @@ class Solution {
         while (low <= high){
             int mid = low + (high - low) / 2;
             int count = getLessEqual(matrix, mid);
-            if (count <= k - 1){
-                low = mid + 1;
+            if (count <= k - 1){ 
+                low = mid + 1; //find the last one to meet the condition
             }else{
                 high = mid - 1;
             }
@@ -109,7 +109,7 @@ class Solution {
             int mid = low + (high - low) / 2;
             int count = getLessEqual(matrix, mid);
             if (count <= k - 1){
-                low = mid;
+                low = mid; //find the last one to meet the condition
             }else{
                 high = mid;
             }
