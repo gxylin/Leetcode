@@ -41,7 +41,7 @@ public class Solution {
     }
 }
 
-Method 2: 
+Method 2:  Greedy
 Time complexity: O(n)
  class Solution {
     public boolean canJump(int[] nums) {
