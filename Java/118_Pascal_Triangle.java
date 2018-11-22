@@ -58,3 +58,35 @@ class Solution {
         return result;
     }
 }
+
+class Solution {
+    public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (numRows == 0){
+            return res;
+        }
+        List<Integer> l = new ArrayList<>();
+        l.add(1);
+        res.add(l);
+        if (numRows == 1){
+            return res;
+        }
+        l = new ArrayList<>();
+        l.add(1);
+        l.add(1);
+        res.add(l);
+        if (numRows == 2){
+            return res;
+        }
+        for (int i = 2; i < numRows; i++){
+            List<Integer> list = new ArrayList<>();
+            list.add(1);
+            for (int j = 1; j < i; j++){
+                list.add(res.get(i-1).get(j-1) + res.get(i-1).get(j));
+            }
+            list.add(1);
+            res.add(list);
+        }
+        return res;
+    }
+}
