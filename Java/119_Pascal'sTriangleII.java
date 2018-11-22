@@ -49,3 +49,23 @@ class Solution {
         return result;
     }
 }
+
+class Solution {
+    public List<Integer> getRow(int rowIndex) {
+        List<Integer> res = new ArrayList<>();
+        int[][] dp = new int[2][rowIndex+1];
+        for (int i = 0; i <= rowIndex; i++){
+            for (int j = 0; j <= i; j++){
+                if (j == 0 || j == i){
+                    dp[i%2][j] = 1;
+                }else{
+                    dp[i%2][j] = dp[(i-1)%2][j-1] + dp[(i-1)%2][j];
+                }
+                if (i == rowIndex){
+                    res.add(dp[i%2][j]);
+                }
+            }
+        }
+        return res;
+    }
+}
