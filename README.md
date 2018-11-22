@@ -277,7 +277,7 @@ Solution for Leetcode/Lintcode
 |268   |348  |[Design Tic-Tac-Toe](Java/348_Design_Tic_Tac.java)|Medium|Java|Leetcode|
 |269   |349  |[Intersection of Two Arrays](Java/349_Intersection.java)|Easy|Java|Leetcode|
 |270   |350  |[Intersection of Two Arrays II](Java/350_IntersectionII.java)|Easy|Java|Leetcode|
-|271   |371  |[Sum of Two Integers](Jaav/371_SumTwoIntegers.java)|Easy|Java|Leetcode|
+|271   |371  |[Sum of Two Integers](Java/371_SumTwoIntegers.java)|Easy|Java|Leetcode|
 |272   |382  |[Reservoir Sampling Linked List Random Node](Java/382_RandomNode.java)|Medium|Java|Leetcode|
 |273   |398  |[Reservoir Sampling Random Pick Index](Java/398_RandomPick.java)|Medium|Java|Leetcode|
 |274   |384  |[Reservoir Shuffle an Array](Java/384_ShuffleArray.java)|Medium|Java|Leetcode|
