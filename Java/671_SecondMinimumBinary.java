@@ -60,3 +60,37 @@ class Solution {
         dfs(root.right);
     }
 }
+
+
+Better version:
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public int findSecondMinimumValue(TreeNode root) {
+        int[] res = new int[2];
+        res[0] = Integer.MAX_VALUE;
+        res[1] = Integer.MAX_VALUE;
+        preorder(root, res);
+        return res[1] == Integer.MAX_VALUE ? -1 : res[1];
+    }
+    private void preorder(TreeNode root, int[] res){
+        if (root == null){
+            return;
+        }
+        if (root.val < res[0]){
+            res[1] = res[0];
+            res[0] = root.val;
+        }else if (root.val > res[0] && root.val < res[1]){
+            res[1] = root.val;
+        }
+        preorder(root.left, res);
+        preorder(root.right, res);
+    }
+}
