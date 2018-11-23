@@ -150,3 +150,59 @@ class Solution {
         return nx >= 0 && nx < n && ny >= 0 && ny < m;
     }
 }
+
+
+Better version:
+class Solution {
+    public void solve(char[][] board) {
+        if (board == null || board.length == 0){
+            return;
+        }
+        int m = board.length;
+        int n = board[0].length;
+        for (int i = 0; i < m; i++){
+            if (board[i][0] == 'O'){
+                bfs(board, i, 0);
+            }
+            if (board[i][n-1] == 'O'){
+                bfs(board, i, n-1);
+            }
+        }
+        for (int j = 0; j < n; j++){
+            if (board[0][j] == 'O'){
+                bfs(board, 0, j);
+            }
+            if (board[m-1][j] == 'O'){
+                bfs(board, m-1, j);
+            }
+        }
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (board[i][j] == 'O'){
+                    board[i][j] = 'X';
+                }else if (board[i][j] == 'W'){
+                    board[i][j] = 'O';
+                }
+            }
+        }
+    }
+    private void bfs(char[][] board, int x, int y){
+        int m = board.length;
+        int n = board[0].length;
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        Queue<int[]> queue = new LinkedList<>();
+        queue.offer(new int[]{x, y});
+        board[x][y] = 'W';
+        while (!queue.isEmpty()){
+            int[] curr = queue.poll();
+            for (int[] dir : dirs){
+                int nx = curr[0] + dir[0];
+                int ny = curr[1] + dir[1];
+                if (nx >= 0 && nx < m && ny >= 0 && ny < n && board[nx][ny] == 'O'){
+                    queue.offer(new int[]{nx, ny});
+                    board[nx][ny] = 'W';      
+                }
+            }
+        }
+    }
+}
