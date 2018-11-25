@@ -281,7 +281,7 @@ Solution for Leetcode/Lintcode
 |272   |382  |[Reservoir Sampling Linked List Random Node](Java/382_RandomNode.java)|Medium|Java|Leetcode|
 |273   |398  |[Reservoir Sampling Random Pick Index](Java/398_RandomPick.java)|Medium|Java|Leetcode|
 |274   |384  |[Reservoir Shuffle an Array](Java/384_ShuffleArray.java)|Medium|Java|Leetcode|
-|275 |395|[Longest Substring with At Least K Repeating Characters Sliding Window](Java/395_LongestSubstring.java)|Medium|Java|Leetcode|
+|275 |395|[Longest Substring with At Least K Repeating Characters Sliding Window Very good](Java/395_LongestSubstring.java)|Medium|Java|Leetcode|
 |276   |412  |[Fizz Buzz](Java/412_FizzBuzz.java)|Easy|Java|Leetcode|
 |277   |454  |[4Sum II](Java/454_4SumII.java)|Medium|Java|Leetcode|
 |278   |611  |[Valid Triangle Number](Java/611_ValidTriangleNumber.java)|Medium|Java|Leetcode|
