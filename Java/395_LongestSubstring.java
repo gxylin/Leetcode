@@ -54,6 +54,7 @@ class Solution {
 
 
 Method 2: sliding window, based on Leetcode 340 template
+Time complexity: O(26*N)
 class Solution {
     public int longestSubstring(String s, int k) {
         if (s == null || s.length() == 0){
