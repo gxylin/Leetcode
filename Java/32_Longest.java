@@ -33,9 +33,7 @@ class Solution {
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
                 stack.push(')');
-            } else if (!stack.empty() && stack.peek() == s.charAt(i)) {
-                stack.pop();
-            } else {
+            } else if (stack.empty() || stack.pop() != s.charAt(i)) {
                 return false;
             }
         }
