@@ -12,6 +12,7 @@ The solution is guaranteed to be unique.
 And the question guaranteed that the solution is unique(The first one I found is the right one).
 2, The tank should never be negative, so restart whenever there is a negative number.
 
+Method 1: O(N)
 class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int start = 0;
@@ -31,5 +32,29 @@ class Solution {
             return -1;
         }
         return start;
+    }
+}
+
+Method 2: O(N^2)
+    class Solution {
+    public int canCompleteCircuit(int[] gas, int[] cost) {
+        int n = gas.length;
+        for (int i = 0; i < n; i++){
+            boolean found = true;
+            int tank = 0;
+            for (int j = 0; j < n; j++){
+                int index = (i + j) % n;
+                if (gas[index] + tank < cost[index]){
+                    found = false;
+                    break;
+                }
+                tank += gas[index] - cost[index];
+            }
+            if (found){
+                return i;
+            }
+            
+        }
+        return -1;
     }
 }
