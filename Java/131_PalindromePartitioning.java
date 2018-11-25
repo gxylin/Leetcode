@@ -69,7 +69,7 @@ class Solution {
                     List<String> list = new ArrayList<>();
                     list.add(sub);
                     res.add(list);
-                }else{
+                }else{ // if size == 0, it won't go into loop
                     for (List<String> item: temp){
                         List<String> list = new ArrayList<>();
                         list.add(sub);
