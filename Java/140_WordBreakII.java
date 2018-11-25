@@ -30,7 +30,7 @@ class Solution {
             if (wordDict.contains(sub)){
                 List<String> temp = wordBreak(s.substring(0, i), wordDict);
                 if (temp.size() != 0){
-                    for (String str : temp){
+                    for (String str : temp){//if size == 0, won't go into loop
                         result.add(str +" " + sub);
                     }
                 }
