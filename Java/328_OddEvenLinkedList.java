@@ -19,32 +19,67 @@ The first node is considered odd, the second node even and so on ...
  *     ListNode(int x) { val = x; }
  * }
  */
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode oddEvenList(ListNode head) {
+        ListNode dummy1 = new ListNode(0);
+        ListNode dummy2 = new ListNode(0);
+        ListNode l1 = dummy1;
+        ListNode l2 = dummy2;
+        dummy1.next = head;
+        ListNode curr = head;
+        int count = 1;
+        while (curr != null){
+            if (count % 2 == 1){
+                l1.next = curr;
+                l1 = l1.next;
+                curr = curr.next;
+                l1.next = null;
+            }else{
+                l2.next = curr;
+                l2 = l2.next;
+                curr = curr.next;
+                l2.next = null;
+            }
+            count++;
+        }
+        l1.next = dummy2.next;
+        dummy2.next = null;
+        return dummy1.next;
+    }
+}
+
+Method 2:
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
 class Solution {
     public ListNode oddEvenList(ListNode head) {
         if (head == null){
             return head;
         }
-        ListNode dummy1 = new ListNode(0);
-        ListNode dummy2 = new ListNode(0);
-        ListNode l1 = dummy1;
-        ListNode l2 = dummy2;
-        int count = 1;
-        ListNode curr = head;
-        while (curr != null){
-            ListNode temp = curr.next;
-            if (count % 2 == 1){
-                l1.next = curr;
-                l1 = curr;  
-                l1.next = null;
-            }else{
-                l2.next = curr;
-                l2 = curr;
-                l2.next = null;
-            }
-            count++;
-            curr = temp;
+        ListNode odd = head;
+        ListNode evenHead = odd.next;
+        ListNode even = evenHead;
+        while (even != null && even.next != null){
+            odd.next = odd.next.next;
+            even.next = even.next.next;
+            odd = odd.next;
+            even = even.next;
         }
-        l1.next = dummy2.next;
-        return dummy1.next;
+        odd.next = evenHead;
+        return head;
     }
 }
