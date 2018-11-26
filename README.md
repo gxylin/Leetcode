@@ -879,3 +879,4 @@ Solution for Leetcode/Lintcode
 |858   |945  |[Minimum Increment to Make Array Unique Good](Java/945_Minimum.java)|Medium|Java|Leetcode|
 |859   |946  |[Validate Stack Sequences Stack Good](Java/946_Validate.java)|Medium|Java|Leetcode|
 |860   |948  |[Bag of Tokens](Java/948_Bag.java)|Medium|Java|Leetcode|
+|861   |947  |[Most Stones Removed with Same Row or Column Union Find](Java/947_Most.java)|Medium|Java|Leetcode|
