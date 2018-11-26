@@ -878,3 +878,4 @@ Solution for Leetcode/Lintcode
 |857   |34   |[Find First and Last Position of Element in Sorted Array](Java/34_Find.java)|Medium|Java|Leetcode|
 |858   |945  |[Minimum Increment to Make Array Unique Good](Java/945_Minimum.java)|Medium|Java|Leetcode|
 |859   |946  |[Validate Stack Sequences Stack Good](Java/946_Validate.java)|Medium|Java|Leetcode|
+|860   |948  |[Bag of Tokens](Java/948_Bag.java)|Medium|Java|Leetcode|
