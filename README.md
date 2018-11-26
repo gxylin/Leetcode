@@ -876,4 +876,5 @@ Solution for Leetcode/Lintcode
 |855   |942  |[DI String Match Two Pointers](Java/942_DIString.java)|Easy|Java|Leetcode|
 |856   |944  |[Delete Columns to Make Sorted](Java/944_Delete.java)|Medium|Java|Leetcode|
 |857   |34   |[Find First and Last Position of Element in Sorted Array](Java/34_Find.java)|Medium|Java|Leetcode|
-|858   |954  |[Minimum Increment to Make Array Unique Good](Java/945_Minimum.java)|Medium|Java|Leetcode|
+|858   |945  |[Minimum Increment to Make Array Unique Good](Java/945_Minimum.java)|Medium|Java|Leetcode|
+|859   |946  |[Validate Stack Sequences Stack Good](Java/946_Validate.java)|Medium|Java|Leetcode|
