@@ -66,3 +66,56 @@ class Solution {
         return -1.0;
     }
 }
+
+
+class Solution {
+    public double[] calcEquation(String[][] equations, double[] values, String[][] queries) {
+        int N = queries.length;
+        //build graph
+        double[] res = new double[N];
+        Map<String, Map<String, Double>> graph = new HashMap<>();
+        for (int i = 0; i < equations.length; i++){
+            String dividend = equations[i][0];
+            String divisor = equations[i][1];
+            if (!graph.containsKey(dividend)){
+                graph.put(dividend, new HashMap<>());
+                graph.get(dividend).put(dividend, 1.0);
+            }
+            graph.get(dividend).put(divisor, values[i]);
+            if (!graph.containsKey(divisor)){
+                graph.put(divisor, new HashMap<>());
+                graph.get(divisor).put(divisor, 1.0);
+            }
+            graph.get(divisor).put(dividend, 1.0/values[i]);
+        }
+        //dfs
+        for (int i = 0; i < N; i++){
+            String dividend = queries[i][0];
+            String divisor = queries[i][1];
+            if (!graph.containsKey(dividend) || !graph.containsKey(divisor)){
+                res[i] = -1.0;
+            }else{
+                Set<String> seen = new HashSet<>();
+                seen.add(dividend);
+                res[i] = dfs(graph, dividend, divisor, seen);
+            }   
+        }
+        return res;
+    }
+    private double dfs(Map<String, Map<String, Double>> graph, String dividend, String divisor, Set<String> seen){
+        if (dividend.equals(divisor)){
+            return 1.0;
+        }
+        Map<String, Double> map = graph.get(dividend);
+        for (String key : map.keySet()){
+            if (!seen.contains(key)){
+                seen.add(key);
+                double val = dfs(graph, key, divisor, seen);
+                if (val > 0){
+                    return map.get(key) * val;
+                }
+            }
+        }
+        return -1.0;
+    }
+}
