@@ -16,7 +16,7 @@ Write a function to determine the knight's minimum initial health so that he is 
 For example, given the dungeon below, the initial health of the knight must be at least 7 if he follows the optimal path 
 RIGHT-> RIGHT -> DOWN -> DOWN.
 
-
+Method 1: f[i][j] denotes the minimal hp needed to exit from dungeon[i][j]
 class Solution {
     public int calculateMinimumHP(int[][] dungeon) {
         int m = dungeon.length;
@@ -47,7 +47,7 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: Better solution: health[i][j] denotes the minimal hp needed to enter into dungeon[i][j]
 public int calculateMinimumHP(int[][] dungeon) {
     if (dungeon == null || dungeon.length == 0 || dungeon[0].length == 0) return 0;
     
