@@ -116,3 +116,30 @@ public class Solution {
         return map.get(node);
     }
 }
+
+Better version: DFS
+/**
+ * Definition for undirected graph.
+ * class UndirectedGraphNode {
+ *     int label;
+ *     List<UndirectedGraphNode> neighbors;
+ *     UndirectedGraphNode(int x) { label = x; neighbors = new ArrayList<UndirectedGraphNode>(); }
+ * };
+ */
+public class Solution {
+    Map<UndirectedGraphNode, UndirectedGraphNode> map = new HashMap<>();
+    public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
+        if (node == null){
+            return null;
+        }
+        UndirectedGraphNode curr = new UndirectedGraphNode(node.label);
+        map.put(node, curr);
+        for (UndirectedGraphNode nei : node.neighbors){
+            if (!map.containsKey(nei)){
+                cloneGraph(nei);
+            }
+            curr.neighbors.add(map.get(nei));
+        }
+        return curr;
+    }
+}
