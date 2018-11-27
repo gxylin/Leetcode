@@ -681,7 +681,7 @@ Solution for Leetcode/Lintcode
 |662   |397  |[Integer Replacement](Java/397_Integer.java)|Medium|Java|Leetcode|
 |663   |385  |[Mini Parser](Java/385_Mini.java)|Medium|Java|Leetcode|
 |664   |421  |[Maximum XOR of Two Numbers in an Array Trie+Bit](Java/421_Maximum.java)|Medium|Java|Leetcode|
-|665   |399  |[Evaluate Division Graph](Java/399_Evaluate.java)|Medium|Java|Leetcode|
+|665   |399  |[Evaluate Division Graph Very Good](Java/399_Evaluate.java)|Medium|Java|Leetcode|
 |666   |458  |[Poor Pigs](Java/458_Poor.java)|Easy|Java|Leetcode|
 |667   |390  |[Elimination Game](Java/390_Elimination.java)|Medium|Java|Leetcode|
 |668   |855  |[Exam Room](Java/855_Exam.java)|Medium|Java|Leetcode|
