@@ -15,17 +15,20 @@ Note:
 cost will have a length in the range [2, 1000].
 Every cost[i] will be an integer in the range [0, 999].
 
+    
+    To be clear, top means the index of n not n - 1;
 class Solution {
     public int minCostClimbingStairs(int[] cost) {
         if (cost == null || cost.length == 0){
             return 0;
         }
-        int[] f = new int[cost.length + 1];
-        f[0] = 0;
-        f[1] = 0;
-        for (int i = 2; i < f.length; i++){
-            f[i] = Math.min(f[i-2]+ cost[i-2], f[i-1] + cost[i-1]);
+        int n = cost.length;
+        int[] dp = new int[n+1];
+        dp[0] = 0;
+        dp[1] = 0;
+        for (int i = 2; i <= n; i++){
+            dp[i] = Math.min(dp[i-1] + cost[i-1], dp[i-2] + cost[i-2]);
         }
-        return f[f.length - 1];
+        return dp[n];
     }
 }
