@@ -22,3 +22,31 @@ class Solution {
         return result;
     }
 }
+
+Better version:
+backtrack
+https://leetcode.com/problems/gray-code/discuss/29880/Backtracking-C++-solution
+https://www.tutorialspoint.com/java/java_bitset_class.htm
+class Solution {
+    public List<Integer> grayCode(int n) {
+        List<Integer> res = new ArrayList<>();
+        backtrack(res, n, new BitSet());
+        return res;
+    }
+    private void backtrack(List<Integer> res, int n, BitSet chosen){
+        if (n == 0){
+            res.add(convert(chosen));
+            return;
+        }
+        backtrack(res, n-1, chosen);
+        chosen.flip(n-1);
+        backtrack(res, n-1, chosen);
+    }
+    private int convert(BitSet bits){
+        int res = 0;
+        for (int i = 0; i < bits.length(); i++){
+            res += bits.get(i) ? (1 << i) : 0;
+        }
+        return res;
+    }
+}
