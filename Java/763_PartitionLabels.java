@@ -45,3 +45,31 @@ class Solution {
         return result;
     }
 }
+
+
+Better version:
+class Solution {
+    public List<Integer> partitionLabels(String S) {
+        List<Integer> res = new ArrayList<>();
+        Map<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < S.length(); i++){
+            map.put(S.charAt(i), i);
+        }
+        int start = 0;
+        int end = 0;
+        int i = 0;
+        while (i < S.length()){
+            char c = S.charAt(i);
+            end = map.get(c);
+            while (i < end && map.get(S.charAt(i)) <= end){
+                i++;
+            }
+            if (i == end){
+                res.add(end - start + 1);
+                start = end + 1;
+                i = start;
+            }
+        }
+        return res;
+    }
+}
