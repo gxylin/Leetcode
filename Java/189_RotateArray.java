@@ -35,7 +35,7 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: best solution
 class Solution {
     public void rotate(int[] nums, int k) {
         if (nums == null || nums.length == 0){
