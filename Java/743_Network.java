@@ -148,3 +148,48 @@ class Solution {
         return ans;
     }
 }
+
+
+Better version:
+class Solution {
+    public int networkDelayTime(int[][] times, int N, int K) {
+        Map<Integer, Map<Integer, Integer>> graph = new HashMap<>();
+        for (int[] edge : times){
+            if (!graph.containsKey(edge[0])){
+                graph.put(edge[0], new HashMap<>());
+            }
+            graph.get(edge[0]).put(edge[1], edge[2]);
+        }
+        Map<Integer, Integer> distMap = new HashMap<>();
+        Queue<int[]> pq = new PriorityQueue<int[]>(new Comparator<int[]>(){
+            public int compare(int[] e1, int[] e2){
+                return e1[1] - e2[1];
+            }
+        });
+        pq.offer(new int[]{K, 0});
+        distMap.put(K, 0);
+        while (!pq.isEmpty()){
+            int[] curr = pq.poll();
+            int node = curr[0];
+            int dist = curr[1];
+            if (!graph.containsKey(node)){
+                continue;
+            }
+            Map<Integer, Integer> map =  graph.get(node);
+            for (int key : map.keySet()){
+                if (!distMap.containsKey(key) || dist + map.get(key) < distMap.get(key)){
+                    distMap.put(key, dist + map.get(key));
+                    pq.offer(new int[]{key, dist + map.get(key)});
+                }
+            }
+        }
+        if (distMap.size() != N){
+            return -1;
+        }
+        int max = 0;
+        for (int val : distMap.values()){
+            max = Math.max(max, val);
+        }
+        return max;
+    }
+}
