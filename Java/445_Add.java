@@ -99,3 +99,62 @@ class Solution {
         return node.val != 0 ? node : node.next;
     }
 }
+
+
+Better:
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        Stack<Integer> s1 = new Stack<>();
+        Stack<Integer> s2 = new Stack<>();
+        ListNode n1 = l1;
+        while (n1 != null){
+            s1.push(n1.val);
+            n1 = n1.next;
+        }
+        ListNode n2 = l2;
+        while (n2 != null){
+            s2.push(n2.val);
+            n2 = n2.next;
+        }
+        int carry = 0;
+        int sum = 0;
+        ListNode dummy = new ListNode(-1);
+        ListNode head = dummy;
+        while (!s1.isEmpty() && !s2.isEmpty()){
+            sum = carry + s1.pop() + s2.pop();
+            ListNode node = new ListNode(sum%10);
+            carry = sum/10;
+            node.next = head.next;
+            head.next = node;
+        }
+        while (!s1.isEmpty()){
+            sum = carry + s1.pop();
+            carry = sum / 10;
+            ListNode node = new ListNode(sum % 10);
+            node.next = head.next;
+            head.next = node;
+        }
+        while (!s2.isEmpty()){
+            sum = carry + s2.pop();
+            carry = sum / 10;
+            ListNode node = new ListNode(sum % 10);
+            node.next = head.next;
+            head.next = node;
+        }
+        if (carry == 0){
+            return dummy.next;
+        }
+        ListNode node = new ListNode(carry);
+        node.next = head.next;
+        head.next = node;
+        return dummy.next;
+    }
+}
