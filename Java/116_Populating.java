@@ -132,23 +132,22 @@ public class Solution {
             return;
         }
         TreeLinkNode head = root;
-        TreeLinkNode dummyChildHead = new TreeLinkNode(-1);
         while (head != null){
             TreeLinkNode curr = head;
-            TreeLinkNode child = dummyChildHead;
+            TreeLinkNode childDummy = new TreeLinkNode(-1);
+            TreeLinkNode child = childDummy;
             while (curr != null){
-                if (curr.left != null){
-                    child.next = curr.left;
-                    child = child.next;
-                }
+                 if (curr.left != null){
+                     child.next = curr.left;
+                     child = child.next;
+                 }
                 if (curr.right != null){
                     child.next = curr.right;
                     child = child.next;
                 }
                 curr = curr.next;
             }
-            head = dummyChildHead.next;
-            dummyChildHead = new TreeLinkNode(-1);
+            head = childDummy.next;
         }
     }
 }
