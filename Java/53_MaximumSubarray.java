@@ -122,7 +122,7 @@ class Solution {
         for (int i = index[0]; i <= index[1]; i++){
             res[i-index[0]] = nums[i];
         }
-        return global;
+        return res;
     }
 }
 
