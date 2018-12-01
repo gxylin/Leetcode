@@ -368,7 +368,7 @@ Solution for Leetcode/Lintcode
 |349   |99   |[Recover Binary Search Tree](Java/99_Recover.java)|Hard|Java|Leetcode|
 |350   |93   |[Restore IP Addresses](Java/93_Restore.java)|Medium|Java|Leetcode|
 |351   |116  |[Populating Next Right Pointers in Each Node](Java/116_Populating.java)|Medium|Java|Leetcode|
-|352   |117  |[Populating Next Right Pointers in Each Node II](Java/117_Populating.java)|Medium|Java|Leetcode|
+|352   |117  |[Populating Next Right Pointers in Each Node II Good](Java/117_Populating.java)|Medium|Java|Leetcode|
 |353   |147  |[Insertion Sort List](Java/147_InsertionList.java)|Medium|Java|Leetcode|
 |354   |153  |[Find Minimum in Rotated Sorted Array](Java/153_FindMinimum.java)|Medium|Java|Leetcode|
 |355   |154  |[Find Minimum in Rotated Sorted Array II](Java/154_FindMinimum.java)|Hard|Java|Leetcode|
