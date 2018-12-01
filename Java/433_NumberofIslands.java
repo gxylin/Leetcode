@@ -126,3 +126,60 @@ public class Solution {
         return adj.x >= 0 && adj.y >= 0 && adj.x < m && adj.y < n;
     }
 }
+
+
+Method 3: UF
+class Solution {
+    class UF {
+        int[] parent;
+        public UF (int N){
+            parent = new int[N];
+            for (int i = 0; i < N; i++){
+                parent[i] = i;
+            }
+        }
+        public int find(int x){
+            if (x == parent[x]){
+                return x;
+            }
+            return find(parent[x]);
+        }
+        public void union (int x, int y){
+            int rootX = find(x);
+            int rootY = find(y);
+            if (rootX != rootY){
+                parent[rootX] = rootY;
+            }
+        }
+    }
+    public int numIslands(char[][] grid) {
+        if (grid == null || grid.length == 0){
+            return 0;
+        }
+        int m = grid.length;
+        int n = grid[0].length;
+        UF uf = new UF(m*n);
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        int count = 0;
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (grid[i][j] == '1'){
+                    count++;
+                    int num1 = i * n + j;
+                    for (int[] dir : dirs){
+                        int x = i + dir[0];
+                        int y = j + dir[1];
+                        if (x >= 0 && x < m && y >= 0 && y < n && grid[x][y] == '1'){
+                            int num2 = x * n + y; 
+                            if (uf.find(num1) != uf.find(num2)){
+                                uf.union(num1, num2);
+                                count--;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return count;
+    }
+}
