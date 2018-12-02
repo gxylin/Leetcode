@@ -885,3 +885,4 @@ Solution for Leetcode/Lintcode
 |864   |949  |[Largest Time for Given Digits Permutation](Java/949_Largest.java)|Easy|Java|Leetcode|
 |865   |951  |[Flip Equivalent Binary Trees Good](Java/951_Flip.java)|Medium|Java|Leetcode|
 |866   |950  |[Reveal Cards In Increasing Order Very Good](Java/950_Reveal.java)|Medium|Java|Leetcode|
+|867   |952  |[Largest Component Size by Common Factor Union Find Very Good](Java/952_Largest.java)|Hard|Java|Leetcode|
