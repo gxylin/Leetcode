@@ -59,3 +59,89 @@ class Solution {
         }
     }
 }
+
+class Solution {
+    int max = Integer.MIN_VALUE;
+    public String largestTimeFromDigits(int[] A) {
+        if (A == null || A.length == 0){
+            return "";
+        }
+        boolean[] visited = new boolean[4];
+        List<List<Integer>> resList = new ArrayList<>();
+        backtrack(resList, A, new ArrayList<Integer>(), visited);
+        if (max == Integer.MIN_VALUE){
+            return "";
+        }
+        List<Integer> res = resList.get(resList.size() - 1);
+        return res.get(0) + String.valueOf(res.get(1)) + ":" + String.valueOf(res.get(2)) + res.get(3);
+    }
+    private void backtrack(List<List<Integer>> res, int[] A, List<Integer> item, boolean[] visited){
+        if (item.size() == A.length){
+            int cand = item.get(0) * 1000 + item.get(1) * 100 + item.get(2) * 10 + item.get(3);
+            if (item.get(0) * 10 + item.get(1) < 24 && item.get(2) * 10 + item.get(3) < 60 && cand > max){
+                max = cand;
+                res.add(new ArrayList<>(item));
+            }
+            return;
+        }
+        for (int i = 0; i < A.length; i++){
+            if (!visited[i]){
+                visited[i] = true;
+                item.add(A[i]);
+                backtrack(res, A, item, visited);
+                visited[i] = false;
+                item.remove(item.size() - 1);
+            }
+        }
+    }
+}
+
+
+Method 3: Permutation code
+class Solution {
+    
+    public String largestTimeFromDigits(int[] A) {
+        if (A == null || A.length == 0){
+            return "";
+        }
+        boolean[] visited = new boolean[4];
+        List<List<Integer>> resList = new ArrayList<>();
+        permutation(resList, A, new ArrayList<Integer>(), visited);
+        int max = Integer.MIN_VALUE;
+        int index = -1;
+        for (int i = 0; i < resList.size(); i++){
+            List<Integer> list = resList.get(i);
+            int num = convert(list);
+            if (num > max){
+                max = num;
+                index = i;
+            }
+        }
+        if (index == -1 || max == Integer.MIN_VALUE){
+            return "";
+        }
+        List<Integer> res = resList.get(index);
+        return res.get(0) + String.valueOf(res.get(1)) + ":" + String.valueOf(res.get(2)) + res.get(3);
+    }
+    private void permutation(List<List<Integer>> res, int[] A, List<Integer> item, boolean[] visited){
+        if (item.size() == A.length){
+            res.add(new ArrayList<>(item));
+            return;
+        }
+        for (int i = 0; i < A.length; i++){
+            if (!visited[i]){
+                visited[i] = true;
+                item.add(A[i]);
+                permutation(res, A, item, visited);
+                visited[i] = false;
+                item.remove(item.size() - 1);
+            }
+        }
+    }
+    private int convert(List<Integer> list){
+        if (list.get(0) * 10 + list.get(1) < 24 && list.get(2) * 10 + list.get(3) < 60){
+            return list.get(0) * 1000 + list.get(1) * 100 + list.get(2) * 10 + list.get(3);
+        }
+        return Integer.MIN_VALUE;
+    }
+}
