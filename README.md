@@ -882,6 +882,6 @@ Solution for Leetcode/Lintcode
 |861   |947  |[Most Stones Removed with Same Row or Column Union Find Good](Java/947_Most.java)|Medium|Java|Leetcode|
 |862   |74   |[Search a 2D Matrix Good](Java/74_Search.java)|Medium|Java|Leetcode|
 |863   |722  |[Remove Comments](Java/722_Remove.java)|Medium|Java|Leetcode|
-|864   |949  |[Largest Time for Given Digits](Java/949_Largest.java)|Easy|Java|Leetcode|
+|864   |949  |[Largest Time for Given Digits Permutation](Java/949_Largest.java)|Easy|Java|Leetcode|
 |865   |951  |[Flip Equivalent Binary Trees](Java/951_Flip.java)|Medium|Java|Leetcode|
 |866   |950  |[Reveal Cards In Increasing Order Very Good](Java/950_Reveal.java)|Medium|Java|Leetcode|
