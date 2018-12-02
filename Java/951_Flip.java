@@ -19,15 +19,7 @@ Note:
 Each tree will have at most 100 nodes.
 Each value in each tree will be a unique integer in the range [0, 99].
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Similar as LeetCode 101 Symmetric Tree
 class Solution {
     public boolean flipEquiv(TreeNode root1, TreeNode root2) {
         return isSame(root1, root2);
