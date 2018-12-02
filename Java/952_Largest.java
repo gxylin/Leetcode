@@ -11,6 +11,7 @@ Best Solution:
 Time complexity: O(N*sqrt(Max val of A[i]))
 Union Find template. The only additional stuff is one hashmap which is used to convert factor to the node index 
 in A for union.
+HashMap: key is the factor, val is the index in A
     
 class Solution {
     class UF {
