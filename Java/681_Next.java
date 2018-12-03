@@ -17,7 +17,9 @@ Output: "22:22"
 Explanation: The next closest time choosing from digits 2, 3, 5, 9, is 22:22. It may be assumed that the returned time is n
 ext day's time since it is smaller than the input time numerically.
 
-Method 1: DFS
+    
+Similar to Leetcode 949 Largest Time for given digits
+Method 1: backtrack
 class Solution {
     String result = "";
     int diff = Integer.MAX_VALUE;
