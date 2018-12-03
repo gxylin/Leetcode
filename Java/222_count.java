@@ -16,33 +16,38 @@ does what pow(2,n) does. When the exponential base is 2, use bit moving operatio
 
 https://leetcode.com/problems/count-complete-tree-nodes/discuss/61967/A-very-clear-recursive-solution-isn't-it
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Method 1: 
+Time complexity: O(logN * logN or depth * depth)
+
 class Solution {
     public int countNodes(TreeNode root) {
         if (root == null){
             return 0;
         }
-        int leftDepth = getDepth(root.left);
-        int rightDepth = getDepth(root.right);
-        if (leftDepth == rightDepth){ //left subtree is full
+        int leftDepth = getLeftDepth(root.left);
+        int rightDepth = getLeftDepth(root.right);
+        if (leftDepth == rightDepth){//left subtree is full, right subtree may be or may not be
             return (1 << leftDepth) - 1 + countNodes(root.right) + 1;
-        }else{//right subtree is full
+        }else{//right subtree is full, left subtree is not full
             return (1 << rightDepth) - 1 + countNodes(root.left) + 1;
         }
-        
     }
-    private int getDepth(TreeNode root){
+    private int getLeftDepth(TreeNode root){
         if (root == null){
             return 0;
         }
-        return 1 + getDepth(root.left);
+        return 1 + getLeftDepth(root.left);
+    }
+}
+
+
+Method 2: TLE
+Time complexity: N or number of node
+class Solution {
+    public int countNodes(TreeNode root) {
+        if (root == null){
+            return 0;
+        }
+        return 1 + countNodes(root.left) + countNodes(root.right);
     }
 }
