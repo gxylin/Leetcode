@@ -41,6 +41,30 @@ class Solution {
     }
 }
 
+class Solution {
+    public String longestPalindrome(String s) {
+        if (s == null || s.length() == 0){
+            return "";
+        }
+        int[] res = new int[2];
+        for (int i = 0; i < s.length(); i++){
+            expand(s, i, i, res);
+            expand(s, i, i+1, res);
+        }
+        return s.substring(res[0], res[0] + res[1]);
+    }
+    private void expand(String s, int start, int end, int[] res){
+        while (start >= 0 && end < s.length() && s.charAt(start) == s.charAt(end)){
+            start--;
+            end++;
+        }
+        if (res[1] < end - start - 1){
+            res[1] = end - start - 1;
+            res[0] = start + 1;
+        }
+    }
+}
+
 
     
 Key idea, every time we move to right, we only need to consider whether using this new character as 
