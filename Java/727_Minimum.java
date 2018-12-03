@@ -1,6 +1,7 @@
 Given strings S and T, find the minimum (contiguous) substring W of S, so that T is a subsequence of W.
 
-If there is no such window in S that covers all characters in T, return the empty string "". If there are multiple such minimum-length windows, return the one with the left-most starting index.
+If there is no such window in S that covers all characters in T, return the empty string "". If there are multiple such minimum-length
+windows, return the one with the left-most starting index.
 
 Example 1:
 
@@ -27,7 +28,7 @@ class Solution {
     public String minWindow(String S, String T) {
         int m = T.length();
         int n = S.length();
-        int[][] dp = new int[m+1][n+1];// the largest index in String s that the first i in String T and first j in String S could match. 
+        int[][] dp = new int[m+1][n+1];// the largest starting index in String s that the first i in String T and first j in String S could match. 
         for (int j = 0; j <= n; j++){
             dp[0][j] = j+1; //initalize by adding 1 to differentiate between index and invalid cases
         }
@@ -59,7 +60,7 @@ class Solution {
     public String minWindow(String S, String T) {
         int m = T.length();
         int n = S.length();
-        int[][] dp = new int[m+1][n+1];
+        int[][] dp = new int[m+1][n+1];// the largest START index in String s that the first i in String T and first j in String S could match. 
         for (int i = 0; i <= m; i++){
             Arrays.fill(dp[i], -1);
         }
