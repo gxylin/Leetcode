@@ -145,3 +145,65 @@ class Solution {
         return Integer.MIN_VALUE;
     }
 }
+
+
+Another solution Similar to Leetcode 681 Next Closest Time
+class Solution {
+    
+    public String largestTimeFromDigits(int[] A) {
+        if (A == null || A.length == 0){
+            return "";
+        }
+        boolean[] visited = new boolean[4];
+        List<List<Integer>> resList = new ArrayList<>();
+        permutation(resList, A, new ArrayList<Integer>(), visited, 0);
+        int max = Integer.MIN_VALUE;
+        int index = -1;
+        for (int i = 0; i < resList.size(); i++){
+            List<Integer> list = resList.get(i);
+            int num = convert(list);
+            if (num > max){
+                max = num;
+                index = i;
+            }
+        }
+        if (index == -1 || max == Integer.MIN_VALUE){
+            return "";
+        }
+        List<Integer> res = resList.get(index);
+        return res.get(0) + String.valueOf(res.get(1)) + ":" + String.valueOf(res.get(2)) + res.get(3);
+    }
+    private void permutation(List<List<Integer>> res, int[] A, List<Integer> item, boolean[] visited, int pos){
+        if (item.size() == A.length){
+            res.add(new ArrayList<>(item));
+            return;
+        }
+        for (int i = 0; i < A.length; i++){
+            if (pos == 0 && A[i] > 2){
+                continue;
+            }
+            if (pos == 1 && item.get(0) * 10 + A[i] > 23){
+                continue;
+            }
+            if (pos == 2 && A[i] > 5){
+                continue;
+            }
+            if (pos == 3 && item.get(2) * 10 + A[i] > 59){
+                continue;
+            }
+            if (!visited[i]){
+                visited[i] = true;
+                item.add(A[i]);
+                permutation(res, A, item, visited, pos + 1);
+                visited[i] = false;
+                item.remove(item.size() - 1);
+            }
+        }
+    }
+    private int convert(List<Integer> list){
+   //     if (list.get(0) * 10 + list.get(1) < 24 && list.get(2) * 10 + list.get(3) < 60){
+            return list.get(0) * 1000 + list.get(1) * 100 + list.get(2) * 10 + list.get(3);
+   //     }
+   //     return Integer.MIN_VALUE;
+    }
+}
