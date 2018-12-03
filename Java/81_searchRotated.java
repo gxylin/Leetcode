@@ -39,10 +39,10 @@ class Solution {
                     end = mid;
                 }
             }else{//this case is the only difference due to the duplicates
-                if (nums[start] == nums[mid]){
+                if (nums[start] == nums[mid]){//when eqaul, we don't know which direction to do binary
                     start++;
                 }
-                if (nums[end] == nums[mid]){
+                if (nums[end] == nums[mid]){//when eqaul, we don't know which direction to do binary
                     end--;
                 }
             }
@@ -80,10 +80,10 @@ class Solution {
                     end = mid;
                 }
             }else{ //this case is the only difference due to the duplicates
-                if (nums[mid] == nums[start]){
+                if (nums[mid] == nums[start]){//when eqaul, we don't know which direction to do binary
                     start++;
                 }
-                if (nums[mid] == nums[end]){
+                if (nums[mid] == nums[end]){//when eqaul, we don't know which direction to do binary
                     end--;
                 }
             }
