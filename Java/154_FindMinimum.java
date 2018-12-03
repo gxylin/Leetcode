@@ -44,9 +44,9 @@ class Solution {
         int target = nums[end];
         while (start + 1 < end){
             int mid = start + (end - start) / 2;
-            if (nums[mid] == nums[start]){
+            if (nums[mid] == nums[start]){//when eqaul, we don't know which direction to do binary
                 start++;
-            }else if (nums[mid] == nums[end]){
+            }else if (nums[mid] == nums[end]){//when eqaul, we don't know which direction to do binary
                 end--;
             }else if (nums[mid] <= target){
                 end = mid;
