@@ -18,7 +18,7 @@ https://leetcode.com/problems/count-complete-tree-nodes/discuss/61967/A-very-cle
 
 Method 1: 
 Time complexity: O(logN * logN or depth * depth)
-
+Halve the tree in every recursive step, and there are O(logN) or height steps. So it O((logN)^2)
 class Solution {
     public int countNodes(TreeNode root) {
         if (root == null){
@@ -42,7 +42,8 @@ class Solution {
 
 
 Method 2: TLE
-Time complexity: N or number of node
+Time complexity: O(NlogN)
+Halve the tree in every step but there are O(N) steps. So it is O(NlogN)
 class Solution {
     public int countNodes(TreeNode root) {
         if (root == null){
