@@ -45,6 +45,7 @@ class Solution {
     }
 }
 
+Take this:
 class Solution {
     public int search(int[] nums, int target) {
         if (nums == null || nums.length == 0){
