@@ -382,7 +382,7 @@ Solution for Leetcode/Lintcode
 |363   |220  |[Contains Duplicate III TreeSet TreeMap](Java/220_Contains.java)|Medium|Java|Leetcode|
 |364   |226  |[Invert Binary Tree](Java/226_Invert.java)|Easy|Java|Leetcode|
 |365   |258  |[Add Digits](Java/258_Add.java)|Easy|Java|Leetcode|
-|366   |222  |[Count Complete Tree Nodes](Java/222_count.java)|Medium|Java|Leetcode|
+|366   |222  |[Count Complete Tree Nodes Very Good](Java/222_count.java)|Medium|Java|Leetcode|
 |367   |218  |[Skyline](Java/131_Skyline.java)|Hard|Java|Leetcode|
 |368   |228  |[Summary Ranges](Java/228_Summary.java)|Medium|Java|Leetcode|
 |369   |224  |[Basic Calculator](Java/224_Basic.java)|Hard|Java|Leetcode|
