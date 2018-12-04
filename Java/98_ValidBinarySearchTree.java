@@ -53,6 +53,7 @@ class Solution {
         if (!left.isValid || !right.isValid){
             return new ResultType(false, 0, 0);
         }
+        //note that must check root.left != null for the corner case which root.val = Integer.MAX_VALUE  or Integer.MIN_VALUE
         if (root.left != null && left.max >= root.val || root.right != null && right.min <= root.val){
             return new ResultType(false, 0, 0);
         }
