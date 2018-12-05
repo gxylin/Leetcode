@@ -71,3 +71,30 @@ class Solution {
         return root;
     }
 }
+
+
+class Solution {
+    Map<Integer, Integer> map = new HashMap<>();
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
+        for (int i = 0 ;i < inorder.length; i++){
+            map.put(inorder[i], i);
+        }
+        return dfs(inorder, 0, inorder.length - 1, postorder, 0, postorder.length - 1);
+    }
+    private TreeNode dfs(int[] inorder, int startI, int endI, int[] postorder, int startP, int endP){
+        if (startI > endI || startP > endP){
+            return null;
+        }
+        if (startI == endI){
+            return new TreeNode(inorder[startI]);
+        }
+        if (startP == endP){
+            return new TreeNode(postorder[startP]);
+        }
+        TreeNode root = new TreeNode(postorder[endP]);
+        int delta = map.get(postorder[endP]) - startI;
+        root.left = dfs(inorder, startI, startI + delta - 1, postorder, startP, startP + delta - 1);
+        root.right = dfs(inorder, startI + delta + 1, endI, postorder, startP + delta, endP - 1);
+        return root;
+    }
+}
