@@ -81,7 +81,7 @@ System.out.println(arr[1]);   \\output: 10
     
 class Solution {
     public int compareVersion(String version1, String version2) {
-        String[] s1 = version1.split("\\.");
+        String[] s1 = version1.split("\\."); 
         String[] s2 = version2.split("\\.");
         int len = Math.max(s1.length, s2.length);
         for (int i = 0; i < len; i++){
@@ -96,3 +96,7 @@ class Solution {
         return 0;
     }
 }
+
+Note that "." won't work because . in a regular expression means "any character". So we have to use str.split("\\.");
+    
+To split white space, use str.split"\\s+")
