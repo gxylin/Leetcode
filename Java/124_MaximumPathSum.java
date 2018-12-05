@@ -27,9 +27,6 @@ Method 1: use global variable
 class Solution {
     int max = Integer.MIN_VALUE;
     public int maxPathSum(TreeNode root) {
-        if (root == null){
-              return 0;
-        }
         maxPathSumIncludeRoot(root);
         return max;
     }
@@ -60,18 +57,18 @@ class Solution {
     public int maxPathSum(TreeNode root) {
         int[] max = new int[1];
         max[0] = Integer.MIN_VALUE;
-        maxPathDown(root, max);
+        maxPathSumIncludeRoot(root, max);
         return max[0];
     }
-    private int maxPathDown(TreeNode root, int[] max){
+    private int maxPathSumIncludeRoot(TreeNode root, int[] max){
         if (root == null){
             return 0;
         }
-        int left = maxPathDown(root.left, max);
-        int right = maxPathDown(root.right, max);
-        int leftMax = Math.max(0, left);
-        int rightMax = Math.max(0, right);
+        int left = maxPathSumIncludeRoot(root.left, max);
+        int right = maxPathSumIncludeRoot(root.right, max);
+        int leftMax = Math.max(left, 0);
+        int rightMax = Math.max(right, 0);
         max[0] = Math.max(max[0], leftMax + rightMax + root.val);
-        return Math.max(leftMax, rightMax) + root.val;
+        return root.val + Math.max(leftMax, rightMax);
     }
 }
