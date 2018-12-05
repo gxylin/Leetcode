@@ -81,17 +81,20 @@ System.out.println(arr[1]);   \\output: 10
     
 class Solution {
     public int compareVersion(String version1, String version2) {
-        String[] s1 = version1.split("\\."); 
-        String[] s2 = version2.split("\\.");
-        int len = Math.max(s1.length, s2.length);
-        for (int i = 0; i < len; i++){
-            int v1 = i < s1.length ? Integer.parseInt(s1[i]) : 0;
-            int v2 = i < s2.length ? Integer.parseInt(s2[i]) : 0;
-            if (v1 < v2){
-                return -1;
-            }else if (v1 > v2){
+        String[] str1 = version1.split("\\.");
+        String[] str2 = version2.split("\\.");
+        int i = 0;
+        int j = 0;
+        while (i < str1.length || j < str2.length){
+            int num1 = i < str1.length ? Integer.parseInt(str1[i]) : 0;
+            int num2 = j < str2.length ? Integer.parseInt(str2[j]) : 0;
+            if (num1 > num2){
                 return 1;
+            }else if (num1 < num2){
+                return -1;
             }
+            i++;
+            j++;
         }
         return 0;
     }
