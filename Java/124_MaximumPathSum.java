@@ -25,21 +25,21 @@ Method 1: use global variable
  * }
  */
 class Solution {
-    private int max = Integer.MIN_VALUE;
+    int max = Integer.MIN_VALUE;
     public int maxPathSum(TreeNode root) {
-        maxPathDown(root);
+        maxPathSumIncludeRoot(root);
         return max;
     }
-    private int maxPathDown(TreeNode root){
+    private int maxPathSumIncludeRoot(TreeNode root){
         if (root == null){
             return 0;
         }
-        int left = maxPathDown(root.left);
-        int right = maxPathDown(root.right);
-        int leftMax = Math.max(0, left);
-        int rightMax = Math.max(0, right);
+        int left = maxPathSumIncludeRoot(root.left);
+        int right = maxPathSumIncludeRoot(root.right);
+        int leftMax = Math.max(left, 0);
+        int rightMax = Math.max(right, 0);
         max = Math.max(max, leftMax + rightMax + root.val);
-        return Math.max(leftMax, rightMax) + root.val;
+        return root.val + Math.max(leftMax, rightMax);
     }
 }
 
