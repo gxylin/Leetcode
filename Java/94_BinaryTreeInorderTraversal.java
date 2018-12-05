@@ -91,3 +91,23 @@ class Solution {
         return res;
     }
 }
+
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode curr = root;
+        while (curr != null || !stack.isEmpty()){
+            if (curr != null){
+                stack.push(curr);
+                curr = curr.left;
+            }
+            if (curr == null && !stack.isEmpty()){
+                TreeNode node = stack.pop();
+                res.add(node.val);
+                curr = node.right;
+            }
+        }
+        return res;
+    }
+}
