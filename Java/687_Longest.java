@@ -98,25 +98,25 @@ Remove global variable
  */
 class Solution {
     public int longestUnivaluePath(TreeNode root) {
-        int[] ans = new int[1];
-        longestIncludeRoot(root, ans);
-        return ans[0];
+        int[] max = new int[1];
+        longestIncludeRoot(root, max);
+        return max[0];
     }
-    private int longestIncludeRoot(TreeNode root, int[] ans){
+    private int longestIncludeRoot(TreeNode root, int[] max){
         if (root == null){
             return 0;
         }
-        int left = longestIncludeRoot(root.left, ans);
-        int right = longestIncludeRoot(root.right, ans);
-        int leftMax = 0;
+        int left = longestIncludeRoot(root.left, max);
+        int right = longestIncludeRoot(root.right, max);
+        int leftIncludeRoot = 0;
+        int rightIncludeRoot = 0;
         if (root.left != null && root.val == root.left.val){
-            leftMax = left + 1;
+            leftIncludeRoot = left + 1;
         }
-        int rightMax = 0;
         if (root.right != null && root.val == root.right.val){
-            rightMax = right + 1;
+            rightIncludeRoot = right + 1;
         }
-        ans[0] = Math.max(ans[0], leftMax + rightMax);
-        return Math.max(leftMax, rightMax);
+        max[0] = Math.max(max[0], leftIncludeRoot + rightIncludeRoot);
+        return Math.max(leftIncludeRoot, rightIncludeRoot);
     }
 }
