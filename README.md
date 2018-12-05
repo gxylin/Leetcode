@@ -697,7 +697,7 @@ Solution for Leetcode/Lintcode
 |678   |559  |[Maximum Depth of N-ary Tree](Java/559_Maximum.java)|Easy|Java|Leetcode|
 |679   |576  |[Out of Boundary Paths Very Good Dynamic Programming](Java/576_Out.java)|Medium|Java|Leetcode|
 |680   |622  |[Design Circular Queue](Java/622_Design.java)|Medium|Java|Leetcode|
-|681   |632  |[Smallest Range PriorityQueue like Merge K array](Java/632_Smallest.java)|Hard|Java|Leetcode|
+|681   |632  |[Smallest Range PriorityQueue like Merge K array Very Good](Java/632_Smallest.java)|Hard|Java|Leetcode|
 |682   |641  |[Design Circular Deque](Java/641_Design.java)|Medium|Java|Leetcode|
 |683   |655  |[Print Binary Tree Good DFS BFS](Java/655_Print.java)|Medium|Java|Leetcode|
 |684   |687  |[Longest Univalue Path Very Good](Java/687_Longest.java)|Easy|Java|Leetcode|
