@@ -53,33 +53,36 @@ use Math.max(leftMax, rightMax)
 
   Similar to 124. Binary Tree Maximum Path Sum
 class Solution {
-    int ans = 0;
+    int max = Integer.MIN_VALUE;
     public int longestUnivaluePath(TreeNode root) {
-        postOrder(root); //return the longest path that pass root, note that this is not looking for graph
-        return ans;
-    }
-    private int postOrder(TreeNode root){
         if (root == null){
             return 0;
         }
-        int left = postOrder(root.left);
-        int right = postOrder(root.right);
-        int leftMax = 0; //number of longest path extend from node.left
-        int rightMax = 0;
+        longestIncludeRoot(root); //return the longest path that pass root, note that this is not looking for graph
+        return max;
+    }
+    private int longestIncludeRoot(TreeNode root){
+        if (root == null){
+            return 0;
+        }
+        int left = longestIncludeRoot(root.left);
+        int right = longestIncludeRoot(root.right);
+        int leftIncludeRoot = 0; //number of longest path that pass through root
+        int rightIncludeRoot = 0;
         if (root.left != null && root.val == root.left.val){
-            leftMax = left + 1;
+            leftIncludeRoot = left + 1;
         }
         if (root.right != null && root.val == root.right.val){
-            rightMax = right + 1;
+            rightIncludeRoot = right + 1;
         }
-        ans = Math.max(ans, leftMax + rightMax);
-        return Math.max(leftMax, rightMax);
+        max = Math.max(max, leftIncludeRoot + rightIncludeRoot);
+        return Math.max(leftIncludeRoot, rightIncludeRoot);
     }
 }
 
 Time Complexity: O(N), where NN is the number of nodes in the tree. We process every node once.
 
-Space Complexity: O(H), where H is the height of the tree. Our recursive call stack could be up to H layers deep.
+Space Complexity: O(logN or H), where H is the height of the tree. Our recursive call stack could be up to H layers deep.
 
 
   
