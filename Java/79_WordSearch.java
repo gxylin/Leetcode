@@ -59,38 +59,39 @@ class Solution {
 Better:
 class Solution {
     public boolean exist(char[][] board, String word) {
+        if (board == null || board.length == 0){
+            return false;
+        }
         int m = board.length;
         int n = board[0].length;
-        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
-        StringBuilder sb = new StringBuilder();
         boolean[][] visited = new boolean[m][n];
         for (int i = 0; i < m; i++){
             for (int j = 0; j < n; j++){
-                if (word.charAt(0) != board[i][j]){
-                    continue;
-                }
-                if (search(board, i, j, word, dirs, 0, visited)){
-                    return true;
+                if (board[i][j] == word.charAt(0)){
+                    if (dfs(board, word, 0, i, j, visited)){
+                        return true;
+                    }
                 }
             }
         }
         return false;
     }
-    private boolean search(char[][] board, int x, int y, String word, int[][] dirs, int pos, boolean[][] visited){
+    private boolean dfs(char[][] board, String word, int pos, int x, int y, boolean[][] visited){
         if (board[x][y] != word.charAt(pos)){
             return false;
         }
         if (pos == word.length() - 1){
             return true;
-        }
+        } 
         int m = board.length;
         int n = board[0].length;
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
         visited[x][y] = true;
-        for (int i = 0; i < 4; i++){
-            int nx = x + dirs[i][0];
-            int ny = y + dirs[i][1];
+        for (int[] dir : dirs){
+            int nx = x + dir[0];
+            int ny = y + dir[1];
             if (nx >= 0 && nx < m && ny >= 0 && ny < n && !visited[nx][ny]){
-                if (search(board, nx, ny, word, dirs, pos + 1, visited)){
+                if (dfs(board, word, pos + 1, nx, ny, visited)){
                     return true;
                 }
             }
