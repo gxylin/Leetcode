@@ -99,7 +99,7 @@ class Solution {
     }
 }
 
-Method 2: Best solution
+Method 2: better
 class Solution {
     public int compress(char[] chars) {
         if (chars == null || chars.length == 0){
@@ -134,7 +134,7 @@ class Solution {
     }
 }
 
-Method 3: use Integer.toString(count).toCharArray()
+Method 3: Best use Integer.toString(count).toCharArray()
 class Solution {
     public int compress(char[] chars) {
         if (chars == null || chars.length == 0){
