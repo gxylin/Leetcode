@@ -146,81 +146,87 @@ class Solution {
         class TrieNode {
             TrieNode[] children;
             boolean isEnd;
-            public TrieNode (){
+            public TrieNode () {
                 children = new TrieNode[26];
                 isEnd = false;
             }
         }
-        private TrieNode root;
-        public Trie (){
+        TrieNode root;
+        public Trie () {
             root = new TrieNode();
         }
         public void insert(String word){
             TrieNode node = root;
             for (int i = 0; i < word.length(); i++){
-                if (node.children[word.charAt(i) - 'a'] == null){
-                    node.children[word.charAt(i) - 'a'] = new TrieNode();
+                char c = word.charAt(i);
+                if (node.children[c - 'a'] == null){
+                    node.children[c - 'a'] = new TrieNode();
                 }
-                node = node.children[word.charAt(i) - 'a'];
+                node = node.children[c - 'a'];
             }
             node.isEnd = true;
         }
-        public boolean startWith(String prefix){
-            TrieNode node = searchPrefix(prefix);
-            return node != null;
+        public boolean startWith(String word){
+            TrieNode node = root;
+            for (int i = 0; i < word.length(); i++){
+                char c = word.charAt(i);
+                if (node.children[c - 'a'] == null){
+                    return false;
+                }
+                node = node.children[c - 'a'];
+            }
+            return true;
         }
         public boolean search(String word){
-            TrieNode node = searchPrefix(word);
-            return node != null && node.isEnd;
-        }
-        public TrieNode searchPrefix(String prefix){
             TrieNode node = root;
-            for (int i = 0; i < prefix.length(); i++){
-                if (node.children[prefix.charAt(i) - 'a'] == null){
-                    return null;
+            for (int i = 0; i < word.length(); i++){
+                char c = word.charAt(i);
+                if (node.children[c - 'a'] == null){
+                    return false;
                 }
-                node = node.children[prefix.charAt(i) - 'a'];
+                node = node.children[c - 'a'];
             }
-            return node;
+            return node.isEnd;
         }
     }
     public List<String> findWords(char[][] board, String[] words) {
+        if (board == null || board.length == 0){
+            return new ArrayList<String>();
+        }
         int m = board.length;
         int n = board[0].length;
         Set<String> res = new HashSet<>();
         Trie trie = new Trie();
-        boolean[][] visited = new boolean[m][n];
-        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
         for (String word : words){
             trie.insert(word);
         }
+        boolean[][] visited = new boolean[m][n];
         for (int i = 0; i < m; i++){
             for (int j = 0; j < n; j++){
-                dfs(board, i, j, trie, "", res, visited, dirs);
+                dfs(board, trie, res, "", visited, i, j);
             }
         }
         return new ArrayList<>(res);
     }
-    private void dfs(char[][] board, int x, int y, Trie trie, String str, Set<String> res, boolean[][] visited, int[][] dirs){
+    private void dfs(char[][] board, Trie trie, Set<String> res, String word, boolean[][] visited, int x, int y){
+        word += board[x][y];
+        if (!trie.startWith(word)){
+            return;
+        }
+        if (trie.search(word)){
+            res.add(word);
+        }
         int m = board.length;
         int n = board[0].length;
-        if (x < 0 || x >= m || y < 0 || y >= n){
-            return;
-        }
-        if (visited[x][y]){
-            return;
-        }
-        str += board[x][y];
-        if (!trie.startWith(str)){
-            return;
-        }
-        if (trie.search(str)){
-            res.add(str);
-        }
+        int[][] dirs = {{1,0}, {0, 1}, {-1, 0}, {0, -1}};
         visited[x][y] = true;
         for (int[] dir : dirs){
-            dfs(board, x + dir[0], y + dir[1], trie, str, res, visited, dirs);
+            int nx = x + dir[0];
+            int ny = y + dir[1];
+            if (nx >= 0 && nx < m && ny >= 0 && ny < n && !visited[nx][ny]){
+                dfs(board, trie, res, word, visited, nx, ny);
+            }
         }
-        visited[x][y] =false;
+        visited[x][y] = false;
     }
 }
