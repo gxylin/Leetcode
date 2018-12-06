@@ -99,7 +99,7 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: Best solution
 class Solution {
     public int compress(char[] chars) {
         if (chars == null || chars.length == 0){
@@ -157,5 +157,37 @@ class Solution {
             }
         }
         return ans;
+    }
+}
+
+
+Method 4:
+class Solution {
+    public int compress(char[] chars) {
+        boolean newchar = true;
+        int index = 0;
+        int i = 0;
+        while (i < chars.length){
+            if (newchar){
+                chars[index] = chars[i];
+                if (i < chars.length - 1 && chars[i+1] == chars[i]){
+                    newchar = false;
+                }
+                index++;
+                i++;
+            }else{
+                int count = 1;
+                while(i < chars.length && chars[i] == chars[i-1]){
+                    count++;
+                    i++;
+                }
+                String str = String.valueOf(count);
+                for (int j = 0; j < str.length(); j++){
+                    chars[index++] = str.charAt(j);
+                }
+                newchar = true;
+            }
+        }
+        return index;
     }
 }
