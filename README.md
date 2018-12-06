@@ -471,7 +471,7 @@ Solution for Leetcode/Lintcode
 |452   |496  |[Next Greater Element I Monotonic Stack](Java/496_Next.java)|Easy|Java|Leetcode|
 |453   |503  |[Next Greater Element II Monotonic Stack](Java/503_Next.java)|Medium|Java|Leetcode|
 |454   |556  |[Next Greater Element III](Java/556_Next.java)|Medium|Java|Leetcode|
-|455   |443  |[String Compression](Java/443_String.java)|Easy|Java|Leetcode|
+|455   |443  |[String Compression Two Pointers Good](Java/443_String.java)|Easy|Java|Leetcode|
 |456   |456  |[132 Pattern Monotonic Stack](Java/456_132Pattern.java)|Hard|Java|Leetcode|
 |457   |467  |[Unique Substrings in Wraparound String](Java/467_Unique.java)|Medium|Java|Leetcode|
 |458   |520  |[Detect Capital](Java/520_Detect.java)|Easy|Java|Leetcode|
