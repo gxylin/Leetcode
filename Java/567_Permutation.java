@@ -48,3 +48,35 @@ class Solution {
         return false;
     }
 }
+
+class Solution {
+    public boolean checkInclusion(String s1, String s2) {
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : s1.toCharArray()){
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        int start = 0;
+        int end = 0;
+        int count = map.size();
+        while (end < s2.length()){
+            char cEnd = s2.charAt(end);
+            map.put(cEnd, map.getOrDefault(cEnd, 0) - 1);
+            if (map.get(cEnd) == 0){
+                count--;
+            }
+            end++;
+            while (count == 0){
+                if (end - start == s1.length()){
+                    return true;
+                }
+                char cStart = s2.charAt(start);
+                if (map.get(cStart) == 0){
+                    count++;
+                }
+                map.put(cStart, map.getOrDefault(cStart, 0) + 1);
+                start++;
+            }
+        }
+        return false;
+    }
+}
