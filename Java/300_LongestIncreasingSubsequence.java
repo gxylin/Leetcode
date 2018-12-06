@@ -35,6 +35,25 @@ class Solution {
     }
 }
 
+class Solution {
+    public int lengthOfLIS(int[] nums) {
+        int[] dp = new int[nums.length];
+        for (int i = 0; i < nums.length; i++){
+            dp[i] = 1;
+            for (int j = 0; j < i; j++){
+                if (nums[j] < nums[i]){
+                    dp[i] = Math.max(dp[i], dp[j] + 1);
+                }
+            }
+        }
+        int max = 0;
+        for (int i : dp){
+            max = Math.max(max, i);
+        }
+        return max;
+    }
+}
+
 Method 2:
 https://discuss.leetcode.com/topic/39681/fast-java-binary-search-solution-with-detailed-explanation/4
 https://leetcode.com/problems/longest-increasing-subsequence/discuss/74824/JavaPython-Binary-search-O(nlogn)-time-with-explanation
@@ -120,5 +139,70 @@ class Solution {
             }
         }
         return len;
+    }
+}
+
+
+Best solution:
+Time complexity: O(nlogn)
+https://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
+Key idea: The end element of smaller list is smaller than end elements of larger lists
+Three cases:
+1. If A[i] is smallest among all end 
+   candidates of active lists, we will start 
+   new active list of length 1.
+2. If A[i] is largest among all end candidates of 
+  active lists, we will clone the largest active 
+  list, and extend it by A[i].
+
+3. If A[i] is in between, we will find a list with 
+  largest end element that is smaller than A[i]. 
+  Clone and extend this list by A[i]. We will discard all
+  other lists of same length as that of this modified list.
+Algorithm:
+
+Querying length of longest is fairly easy. Note that we are dealing with end elements only. We need not to maintain all the lists.
+We can store the end elements in an array. Discarding operation can be simulated with replacement, and extending a list is analogous 
+to adding more elements to array.
+
+We will use an auxiliary array to keep end elements. The maximum length of this array is that of input. In the worst case the array 
+divided into N lists of size one (note that it does’t lead to worst case complexity). To discard an element, we will trace ceil value
+of A[i] in auxiliary array (again observe the end elements in your rough work), and replace ceil value with A[i]. We extend a list by 
+adding element to auxiliary array. We also maintain a counter to keep track of auxiliary array length.
+    
+class Solution {
+    public int lengthOfLIS(int[] nums) {
+        if (nums == null || nums.length == 0){
+            return 0;
+        }
+        int n = nums.length;
+        int[] tail = new int[n];
+        tail[0] = nums[0];
+        int len = 1;
+        for (int i = 1; i < n; i++){
+            if (nums[i] < tail[0]){
+                tail[0] = nums[i];
+            }else if (nums[i] > tail[len-1]){
+                tail[len++] = nums[i];
+            }else{
+                int index = binarySearch(tail, 0, len - 1, nums[i]);
+                tail[index] = nums[i];
+            }
+        }
+        return len;
+    }
+    private int binarySearch(int[] nums, int start, int end, int target){
+        while (start + 1 < end){
+            int mid = start + (end - start) / 2;
+            if (nums[mid] >= target){
+                end = mid;
+            }else{
+                start = mid;
+            }
+        }
+        if (nums[start] >= target){
+            return start;
+        }
+        return end;
     }
 }
