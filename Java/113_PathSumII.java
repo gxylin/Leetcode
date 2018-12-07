@@ -70,19 +70,19 @@ class Solution {
         dfs(res, new ArrayList<Integer>(), root, sum);
         return res;
     }
-    private void dfs(List<List<Integer>> res, List<Integer> list, TreeNode root, int sum){
+    private void dfs(List<List<Integer>> res, List<Integer> item, TreeNode root, int sum){
         if (root == null){
             return;
         }
-        list.add(root.val);
         if (root.val == sum && root.left == null && root.right == null){
-            res.add(new ArrayList<>(list));
-            list.remove(list.size() - 1); //don't forget to remove the last integer
+            item.add(root.val);
+            res.add(new ArrayList<>(item));
+            item.remove(item.size() - 1);
             return;
         }
-        dfs(res, list, root.left, sum - root.val);
-        dfs(res, list, root.right, sum - root.val);
-        list.remove(list.size() - 1);
+        item.add(root.val);
+        dfs(res, item, root.left, sum - root.val);
+        dfs(res, item, root.right, sum - root.val);
+        item.remove(item.size() - 1);
     }
 }
-
