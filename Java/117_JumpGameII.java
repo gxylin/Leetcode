@@ -91,9 +91,7 @@ class Solution {
         int currFarthest = 0;
         while (currFarthest < nums.length - 1){
             for (int i = currStart; i <= currEnd; i++){
-                if (i + nums[i] > currFarthest){
-                    currFarthest = i + nums[i];
-                }
+                currFarthest = Math.max(currFarthest, i + nums[i]);
             }
             if (currFarthest > currEnd){
                 minStep++;
