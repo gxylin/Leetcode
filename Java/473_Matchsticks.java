@@ -65,7 +65,7 @@ class Solution {
     }
 }
 
-Method 2: with sorting 40ms
+Method 2: with sorting 40ms refer to Leetcoe 698 for the genelized format for rationale
 class Solution {
     public boolean makesquare(int[] nums) {
         if (nums == null || nums.length == 0){
