@@ -89,6 +89,7 @@ class Solution {
         int currStart = 0;
         int currEnd = 0;
         int currFarthest = 0;
+        boolean canReach = true;
         while (currFarthest < nums.length - 1){
             for (int i = currStart; i <= currEnd; i++){
                 currFarthest = Math.max(currFarthest, i + nums[i]);
@@ -97,8 +98,11 @@ class Solution {
                 minStep++;
                 currStart = currEnd;
                 currEnd = currFarthest;
+            }else{//can't reach the last index
+                canReach = false;
+                break;
             }
         }
-        return minStep;
+        return canReach ? minStep : -1;
     }
 }
