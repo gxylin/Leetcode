@@ -242,7 +242,7 @@ Solution for Leetcode/Lintcode
 |233|105|[Construct Binary Tree from Preorder and Inorder Traversal](Java/105_Construct.java)|Medium|Java|Leetcode|
 |234|106 |[Construct Binary Tree from Inorder and Postorder Traversal](Java/106_Construct.java)|Medium|Java|Leetcode|
 |235   |108  |[Convert Sorted Array to Binary Search Tree](Java/108_ConvertToBSTjava)|Easy|Java|Leetcode|
-|236   |114  |[Flatten Binary Tree to Linked List](Java/114_FlattenBinaryTree.java)|Medium|Java|Leetcode|
+|236   |114  |[Flatten Binary Tree to Linked List Very Good](Java/114_FlattenBinaryTree.java)|Medium|Java|Leetcode|
 |237   |124  |[Binary Tree Maximum Path Sum Very Good](Java/124_MaximumPathSum.java)|Hard|Java|Leetcode|
 |238   |133  |[Clone Graph DFS BFS Good](Java/133_CloneGraph.java)|Medium|Java|Leetcode|
 |239   |134  |[Gas Station.java](Java/134_GasStation.java)|Medium|Java|Leetcode|
