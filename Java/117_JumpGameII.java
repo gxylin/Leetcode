@@ -81,3 +81,26 @@ class Solution {
         
     }
 }
+
+
+class Solution {
+    public int jump(int[] nums) {
+        int minStep = 0;
+        int currStart = 0;
+        int currEnd = 0;
+        int currFarthest = 0;
+        while (currFarthest < nums.length - 1){
+            for (int i = currStart; i <= currEnd; i++){
+                if (i + nums[i] > currFarthest){
+                    currFarthest = i + nums[i];
+                }
+            }
+            if (currFarthest > currEnd){
+                minStep++;
+                currStart = currEnd;
+                currEnd = currFarthest;
+            }
+        }
+        return minStep;
+    }
+}
