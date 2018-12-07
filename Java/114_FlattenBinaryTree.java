@@ -89,3 +89,63 @@ class Solution {
         flatten(temp);
     }
 }
+
+With extra space and just the same as standard preorder traversal
+class Solution {
+    public void flatten(TreeNode root) {
+        if (root == null){
+            return;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()){
+            TreeNode curr = stack.pop();
+            if (curr.right != null){
+                stack.push(curr.right);
+            }
+            if (curr.left != null){
+                stack.push(curr.left);
+            }
+            if (!stack.isEmpty()){
+                curr.right = stack.peek();
+                curr.left = null;
+            }
+        }
+    }
+}
+
+
+Best solution:
+Because the required traversal is preorder, we think/work from reverse preorder traversal
+class Solution {
+    TreeNode lastNode = null;
+    public void flatten(TreeNode root) {
+        if (root == null){
+            return;
+        }
+        //reverse preorder
+        flatten(root.right);
+        flatten(root.left);
+        root.right = lastNode;
+        root.left = null;
+        lastNode = root;
+    }
+}
+
+// helper function takes in the previous head, do the flattening and returns the head of the flatten binary tree
+class Solution {
+    public void flatten(TreeNode root) {
+        root = reversePreorder(root, null);
+    }
+    private TreeNode reversePreorder(TreeNode root, TreeNode prev){
+        if (root == null){
+            return null;
+        }
+        root.right = reversePreorder(root.right, root);
+        root.left = reversePreorder(root.left, root);
+        root.right = prev;
+        root.left = null;
+        prev = root;
+        return root;
+    }
+}
