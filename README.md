@@ -456,7 +456,7 @@ Solution for Leetcode/Lintcode
 |437   |447  |[Number of Boomerangs](Java/447_Number.java)|Easy|Java|Leetcode|
 |438   |442  |[Find All Duplicates in an Array](Java/442_Find.java)|Medium|Java|Leetcode|
 |439   |541  |[Reverse String II](Java/541_Reverse.java)|Easy|Java|Leetcode|
-|440   |452  |[Minimum Number of Arrows to Burst Balloons Interval](Java/452_Minimum.java)|Medium|Java|Leetcode|
+|440   |452  |[Minimum Number of Arrows to Burst Balloons Interval Very Good](Java/452_Minimum.java)|Medium|Java|Leetcode|
 |441   |530  |[Minimum Absolute Difference in BST](Java/530_Minimum.java)|Easy|Java|Leetcode|
 |442   |539  |[Minimum Time Difference](Java/539_Minimum.java)|Medium|Java|Leetcode|
 |443   |500  |[Keyboard Row](Java/500_Keyboard.java)|Easy|Java|Leetcode|
