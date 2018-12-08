@@ -12,14 +12,21 @@ Note:
 The length of A will be in the range [1, 30].
 A[i] will be in the range of [0, 10000].
 
-    https://leetcode.com/problems/split-array-with-same-average/discuss/120660/Java-accepted-recursive-solution-with-explanation
+https://leetcode.com/problems/split-array-with-same-average/discuss/120660/Java-accepted-recursive-solution-with-explanation
+
+Key point: avgA = avgB = avgC
+The goal is to find array B that the average of B equals to avg A.
+So it will be converted to N sum problem: find lenB that sum of lenB equals to sum/n    
+Since only split to two arrays, so we try all the possibility of lenB from 1 to n/2
+
+    
 class Solution {
     public boolean splitArraySameAverage(int[] A) {
         int sum = 0;
         for (int i : A){
             sum += i;
         }
-        Arrays.sort(A);
+        Arrays.sort(A);//use sort to prune to accelerate recursion
         int n = A.length;
         for (int i = 1; i <= n / 2; i++){
             if ((sum * i) % n == 0){
@@ -34,9 +41,9 @@ class Solution {
         if (len == 0){
             return target == 0;
         }
-        for (int i = start; i + len  <= A.length; i++){
+        for (int i = start; i + len  <= A.length; i++){//note that i + len < A.length is wrong because A[i] is not taken yet
             if (A[start] * len > target){
-                break;
+                break;//or return false;
             }
             if (i > start && A[i] == A[i-1]){
                 continue;
