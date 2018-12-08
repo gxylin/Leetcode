@@ -21,7 +21,7 @@ One way is to shoot one arrow for example at x = 6 (bursting the balloons [2,8] 
 another arrow at x = 11 (bursting the other two balloons).
 
 The same as non-overlappping interval
-Very close to meeting room, the only difference is to use  Math.min instead of Math.max
+Very close to merge interval, the only difference is to use  Math.min instead of Math.max
 
 
 class Solution {
