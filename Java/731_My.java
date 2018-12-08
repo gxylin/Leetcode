@@ -67,7 +67,7 @@ class MyCalendarTwo {
  */
 
  Method 2: sweep line (best)
- Time complexity: O(n)
+ Time complexity: O(n) for book
  class MyCalendarTwo {
     TreeMap<Integer, Integer> map;
     public MyCalendarTwo() {
@@ -80,7 +80,7 @@ class MyCalendarTwo {
         int active = 0;
         for (int d : map.values()){
             active += d;
-            if (active >= 3){
+            if (active == 3){
                 map.put(start, map.get(start) - 1);
                 map.put(end, map.get(end) + 1);
                 return false;
