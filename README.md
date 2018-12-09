@@ -408,7 +408,7 @@ Solution for Leetcode/Lintcode
 |389   |310  |[Minimum Height Trees topological sort graph](Java/310_Minimum.java)|Medium|Java|Leetcode|
 |390   |367  |[Valid Perfect Square](Java/367_Valid.java)|Easy|Java|Leetcode|
 |391   |331  |[Verify Preorder Serialization of a Binary Tree](Java/331_Verify.java)|Medium|Java|Leetcode|
-|392   |337  |[House Robber III Tree DP](Java/337_House.java)|Medium|Java|Leetcode|
+|392   |337  |[House Robber III Tree DP Very Good](Java/337_House.java)|Medium|Java|Leetcode|
 |393   |315  |[Count of Smaller Numbers After Self](Java/315_Count.java)|Hard|Java|leetcode|
 |394   |332  |[Reconstruct Itinerary Backtracking](java/332_Reconstruct.java)|Medium|Java|Leetcode|
 |395   |373  |[Find K Pairs with Smallest Sums](Java/373_Find.java)|Medium|Java|Leetcode|
