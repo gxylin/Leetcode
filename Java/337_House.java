@@ -60,3 +60,37 @@ class Solution {
         return Math.max(max, maxLeft + maxRight);
     }
 }
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public int rob(TreeNode root) {
+        if (root == null){
+            return 0;
+        }
+        int max = robIncludeRoot(root);
+        int left = rob(root.left);
+        int right = rob(root.right);
+        return Math.max(max, left + right);
+    }
+    private int robIncludeRoot(TreeNode root){
+        if (root == null){
+            return 0;
+        }
+        int max = root.val;
+        if (root.left != null){
+            max += rob(root.left.left) + rob(root.left.right);
+        }
+        if (root.right != null){
+            max += rob(root.right.left) + rob(root.right.right);
+        }
+        return max;
+    }
+}
