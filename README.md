@@ -887,3 +887,4 @@ Solution for Leetcode/Lintcode
 |866   |950  |[Reveal Cards In Increasing Order Very Good](Java/950_Reveal.java)|Medium|Java|Leetcode|
 |867   |952  |[Largest Component Size by Common Factor Union Find Very Good](Java/952_Largest.java)|Hard|Java|Leetcode|
 |868   |232  |[Implement queue using stacks](Java/232_Implement.java)|Easy|Java|Leetcode|
+|869   |953  |[Verifying an Alien Dictionary](Java/953_Verifying.java)|Easy|Java|Leetcode|
