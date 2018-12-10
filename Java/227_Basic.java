@@ -82,7 +82,7 @@ class Solution {
 Method 2: No stack
 class Solution {
     public int calculate(String s) {
-        int ans = 0;
+        int ans = 0;//store the result before the prevNum;
         int number = 0; //denote the current number
         int preNum = 0; //denote the previous number
         char preSign = '+'; //denote the previous sign
