@@ -631,8 +631,8 @@ Solution for Leetcode/Lintcode
 |612   |165  |[Compare Version Numbers Split](Java/165_Compare.java)|Medium|Java|Leetcode|
 |613   |285  |[Inorder Successor in BST Very good](Java/285_Inorder.java)|Medium|Java|Leetcode|
 |614   |333  |[Largest BST Subtree Divide and Conquer](Java/333_Largest.java)|Medium|Java|Leetcode|
-|615   |650  |[2 Keys Keyboard](Java/650_Keys.java)|Medium|Java|Leetcode|
-|616   |651  |[4 Keys Keyboard](Java/651_Keys.java)|Medium|Java|Leetcode|
+|615   |650  |[2 Keys Keyboard Dynamic Programming](Java/650_Keys.java)|Medium|Java|Leetcode|
+|616   |651  |[4 Keys Keyboard Dynamic Programming](Java/651_Keys.java)|Medium|Java|Leetcode|
 |617   |419  |[Battleships in a Board](Java/419_Battleships.java)|Medium|Java|Leetcode|
 |618   |805  |[Split Array With Same Average Very Good DFS](Java/805_Split.java)|Hard|Java|Leetcode|
 |619   |582  |[Kill Process DFS BFS](Java/582_Kill.java)|Medium|Java|Leetcode|
