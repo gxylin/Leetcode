@@ -33,7 +33,8 @@ class Solution {
 
 
 Method 2: Best solution
-Time complexity: O(n)
+https://leetcode.com/problems/2-keys-keyboard/discuss/105897/Loop-best-case-log(n)-no-DP-no-extra-space-no-recursion-with-explanation
+Time complexity: O(n) approximately
 Space complexity: O(1)
 class Solution {
     public int minSteps(int n) {
