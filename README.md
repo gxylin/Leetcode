@@ -890,3 +890,4 @@ Solution for Leetcode/Lintcode
 |869   |953  |[Verifying an Alien Dictionary](Java/953_Verifying.java)|Easy|Java|Leetcode|
 |870   |954  |[Array of Doubled Pairs](Java/954_Array.java)|Medium|Java|Leetcode|
 |871   |955  |[Delete Columns to Make Sorted II Greedy](Java/955_Delete.java)|Medium|Java|Leetcode|
+|872   |794  |[Valid Tic-Tac-Toe State](Java/794_Valid.java)|Medium|Java|Leetcode|
