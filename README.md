@@ -385,8 +385,8 @@ Solution for Leetcode/Lintcode
 |366   |222  |[Count Complete Tree Nodes Very Good](Java/222_count.java)|Medium|Java|Leetcode|
 |367   |218  |[Skyline](Java/131_Skyline.java)|Hard|Java|Leetcode|
 |368   |228  |[Summary Ranges](Java/228_Summary.java)|Medium|Java|Leetcode|
-|369   |224  |[Basic Calculator](Java/224_Basic.java)|Hard|Java|Leetcode|
-|370   |225  |[Basic Calculator II](Java/227_Basic.java)|Medium|Java|Leetcode|
+|369   |224  |[Basic Calculator Stack Good](Java/224_Basic.java)|Hard|Java|Leetcode|
+|370   |225  |[Basic Calculator II No Stack Good](Java/227_Basic.java)|Medium|Java|Leetcode|
 |371   |246  |[Strobogrammatic Numbe](Java/246_Strobogrammatic.java)|Easy|Java|Leetcode|
 |372   |247  |[Strobogrammatic Numbe II](Java/247_Strobogrammatic.java)|Medium|Java|Leetcode|
 |373   |249  |[Group Shifted Strings](Java/249_Group.java)|Medium|Java|Leetcode|
