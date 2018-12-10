@@ -45,6 +45,9 @@ Then we use the remaining n - i = 4 steps: Ctrl A, Ctrl C, Ctrl V, Ctrl V, to re
 We either don't make copies at all, in which case the answer is just n, or if we want to make copies, we need to have 3 steps 
 reserved for Ctrl A, Ctrl C, Ctrl V so i can be at most n - 3
 
+    
+    http://www.cnblogs.com/grandyang/p/7448390.html
+
 class Solution {
     public int maxA(int N) {
         int max = N;
