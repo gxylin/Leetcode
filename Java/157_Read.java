@@ -40,3 +40,5 @@ public int read(char[] buf, int n) {
   
   return total;
 }
+
+https://www.jiuzhang.com/solution/read-n-characters-given-read4-ii-call-multiple-times/
