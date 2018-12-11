@@ -522,7 +522,7 @@ Solution for Leetcode/Lintcode
 |503   |439  |[Ternary Expression Parser](Java/439_Ternary.java)|Medium|Java|Leetcode|
 |504   |484  |[Find Permutation](Java/484_Find.java)|Medium|Java|Leetcode|
 |505   |681  |[Next Closest Time](Java/681_Next.java)|Medium|Java|Leetcode|
-|506   |325  |[Maximum Size Subarray Sum Equals k](Java/325_Maximum.java)|Medium|Java|Leetcode|
+|506   |325  |[Maximum Size Subarray Sum Equals k Very Good](Java/325_Maximum.java)|Medium|Java|Leetcode|
 |507   |272  |[Closest Binary Search Tree Value II](Java/272_Closest.java)|Hard|Java|Leetcode|
 |508   |624  |[Maximum Distance in Arrays](Java/624_Maximum.java)|Easy|Java|Leetcode|
 |509   |351  |[Android Unlock Patterns](Java/351_Android.java)|Medium|Java|Leetcode|
