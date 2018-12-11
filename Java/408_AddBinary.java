@@ -52,3 +52,26 @@ class Solution {
         return sb.toString();
     }
 }
+
+Best solution:
+class Solution {
+    public String addBinary(String a, String b) {
+        StringBuilder sb = new StringBuilder();
+        int i = a.length() - 1;
+        int j = b.length() - 1;
+        int carry = 0;
+        while (i >= 0 || j >= 0){
+            int numA = i >= 0 ? (int)(a.charAt(i) - '0') : 0;
+            int numB = j >= 0 ? (int)(b.charAt(j) - '0') : 0;
+            int digit = numA + numB + carry;
+            sb.append(digit%2);
+            carry = digit/2;
+            i--;
+            j--;
+        }
+        if (carry != 0){
+            sb.append(carry);
+        }
+        return sb.reverse().toString();
+    }
+}
