@@ -48,3 +48,43 @@ class Solution {
         return tasks.length + idle;
     }
 }
+
+
+Method 2:
+class Solution {
+    public int leastInterval(char[] tasks, int n) {
+        int[] map = new int[26];
+        for (char c : tasks){
+            map[c - 'A']++;
+        }
+        Arrays.sort(map);
+        int count = 0;
+        int i = 25;
+        while (i>=0 && map[i] == map[25]){
+            i--;
+            count++;
+        }
+        return Math.max(tasks.length, (map[25]-1)*(n+1) + count);
+    }
+}
+https://leetcode.com/problems/task-scheduler/discuss/104496/concise-Java-Solution-O(N)-time-O(26)-space
+Method 3: best solution
+class Solution {
+    public int leastInterval(char[] tasks, int n) {
+        int[] map = new int[26];
+        for (char c : tasks){
+            map[c - 'A']++;
+        }
+        int maxCount = 0;
+        int count = 0;
+        for (int i = 0; i < 26; i++){
+            if (map[i] > maxCount){
+                maxCount = map[i];
+                count = 1;
+            }else if (map[i] == maxCount){
+                count++;
+            }
+        }
+        return Math.max(tasks.length, (maxCount-1)*(n+1) + count);
+    }
+}
