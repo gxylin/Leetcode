@@ -55,40 +55,44 @@ class Solution {
 
 
 
+Method 2:
+Similar as backpack DP problem as Leetcode 416. But here is more challenging because some data point may not be chosen. Moreover, 
+the dp definition is different. In this question,
+dp[i][j] denotes the largest left sum at the case of after using i-th rod and the difference between left sum and right sum is 
+j - sum of all rods.
+Initially, I want to design dp as i-th rod and difference between left sum and right to be j, however, j could be negative, 
+use sum of all rods to offset all negative values.
+So the answer should be dp[n][sum of all rods].
 
-Below is not working
-class Solution {
-    public int tallestBillboard(int[] rods) {
-        int n = rods.length;
-        if (n == 0){
-            return 0;
-        }
+Time complexity: O(n * sum)
+Space complexity: O(n * sum)
+ 
+ public int tallestBillboard(int[] rods) {
         int sum = 0;
         for (int i : rods){
             sum += i;
         }
-        sum = 10000;
-        boolean[][] dp = new boolean[n+1][sum+1];//dp denotes the first i items can reach up to sum or not
-        int[][] res = new int[n+1][sum+1]; //res denotes the the max height if dp[i][j] = true, otherwise -1
+        int n = rods.length;
+        int[][] dp = new int[n+1][2*sum+1];//largest sum of left at i-th rod and difference between
+		//sum of left and sum of right equals to j-sum
         for (int i = 0; i <= n; i++){
-            dp[i][0] = true;
+            Arrays.fill(dp[i], -1);// -1 means the value could not be reached.
         }
+        dp[0][sum] = 0; //it means if there  is no rods, the  largest left sum could be 0, not -1.
         for (int i = 1; i <= n; i++){
-            for (int j = 1; j <= sum; j++){
-                if (j >= rods[i-1] && dp[i-1][j-rods[i-1]]){//can take the i-th item and will take it to compare with existing res[i][j]
-                    dp[i][j] = true;
-                    res[i][j] = Math.max(res[i][j], res[i-1][j-rods[i-1]] + rods[i-1]);
+            for (int j = 0; j <= 2*sum; j++){
+                if (j - rods[i-1] >= 0 && dp[i-1][j-rods[i-1]] != -1){//this means we will add next rod (rods[i-1] to the left, 
+				//so the largest left sum should be added by rods[i-1] from previous step
+                    dp[i][j] = Math.max(dp[i][j], dp[i-1][j-rods[i-1]] + rods[i-1]);
                 }
-                if (j + rods[i-1] <= sum && dp[i-1][j+rods[i-1]]){
-                    dp[i][j] = true;
-                    res[i][j] = Math.max(res[i][j], res[i-1][j+rods[i-1]]);
+                if (j + rods[i-1] <= 2*sum && dp[i-1][j+rods[i-1]] != -1){//it means we will add next rod(rods[i-1]) to the right, 
+				//so largest left sum at previous step stays at dp[i-1][j+rods[i-1]]
+                    dp[i][j] = Math.max(dp[i][j], dp[i-1][j+rods[i-1]]);
                 }
-                if (dp[i-1][j]){//will not take i-th item no matter can or can't
-                    dp[i][j] = true;
-                    res[i][j] = Math.max(res[i][j], res[i-1][j]);
+                if (dp[i-1][j] != -1){
+                    dp[i][j] = Math.max(dp[i][j], dp[i-1][j]);
                 }
             }
         }
-        return res[n][sum/2];
-    }
+	return dp[n][sum];
 }
