@@ -30,7 +30,7 @@ class Solution {
             if (map.containsKey(sum - k)){
                 max = Math.max(max, i - map.get(sum - k));
             }
-            if (!map.containsKey(sum)){
+            if (!map.containsKey(sum)){//check to ensure not overwrite old values
                 map.put(sum, i);
             }
         }
