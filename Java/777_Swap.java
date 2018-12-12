@@ -62,7 +62,7 @@ class Solution {
         int i = 0;
         int j = 0;
         int N = S.length;
-        while (i < N && j < N){
+        while (i < N || j < N){
             while (i < N && S[i] == 'X'){
                 i++;
             }
@@ -83,3 +83,7 @@ class Solution {
         return true;
     }
 }
+
+Corner case:
+"XXRXLXRXRX"
+"XXRLXXXXXR"
