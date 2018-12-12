@@ -73,3 +73,35 @@ public void dfs(List<String> res, StringBuilder sb, String num, int pos, int tar
 		}
 	}
 }
+
+
+Best solution:
+class Solution {
+    public List<String> addOperators(String num, int target) {
+        List<String> res = new ArrayList<>();
+        dfs(res, num, target, "", 0, 0, 0);
+        return res;
+    }
+    private void dfs(List<String> res, String num, int target, String item, int start, long eval, long prev){
+        if (start == num.length()){
+            if (eval + prev == target){
+                res.add(item);
+            }
+            return;
+        }
+        for (int i = start; i < num.length(); i++){
+            String curr = num.substring(start, i+1);
+            if (curr.length() > 1 && curr.charAt(0) == '0'){
+                break;
+            }
+            if (start == 0){
+                dfs(res, num, target, item + curr, i+1, 0, Long.parseLong(curr));
+            }else{
+                dfs(res, num, target, item + "+" + curr, i+1, eval + prev, Long.parseLong(curr));
+                dfs(res, num, target, item + "-" + curr, i+1, eval + prev, -Long.parseLong(curr));
+                dfs(res, num, target, item + "*" + curr, i+1, eval, prev * Long.parseLong(curr));
+            }
+            
+        }
+    }
+}
