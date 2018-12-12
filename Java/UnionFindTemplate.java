@@ -16,8 +16,8 @@ class UF{
             if (parent[x] == x){
                 return x;
             }
-           // return parent[x] = find(parent[x]);//not path compression
-            return find(parent[x]); //path compression
+            return parent[x] = find(parent[x]);// path compression
+            //return find(parent[x]); //not path compression
         }
         public void union(int a, int b){
             int root_a = find(a);
