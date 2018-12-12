@@ -139,10 +139,10 @@ class Solution {
     }
     private TreeNode reversePreorder(TreeNode root, TreeNode prev){
         if (root == null){
-            return null;
+            return prev;
         }
-        root.right = reversePreorder(root.right, root);
-        root.left = reversePreorder(root.left, root);
+        prev = reversePreorder(root.right, prev);
+        prev= reversePreorder(root.left, prev);
         root.right = prev;
         root.left = null;
         prev = root;
