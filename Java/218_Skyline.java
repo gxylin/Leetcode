@@ -143,3 +143,44 @@ public class Solution {
         return result;
     }
 }
+
+
+Best solution:
+class Solution {
+    public List<int[]> getSkyline(int[][] buildings) {
+        List<int[]> res = new ArrayList<>();
+        List<int[]> height = new ArrayList<>();
+        for(int[] b : buildings){
+            height.add(new int[]{b[0], b[2]});
+            height.add(new int[]{b[1], -b[2]});
+        }
+        Collections.sort(height, new Comparator<int[]>(){
+           public int compare (int[] a, int[] b){
+               if (a[0] == b[0]){
+                   return b[1] - a[1];//end goes first
+               }
+               return a[0] - b[0];
+           } 
+        });
+        Queue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>(){
+            public int compare(Integer i1, Integer i2){
+                return (int)(i2 - i1);
+            }
+        });
+        pq.offer(0);
+        int prev = 0;
+        for (int[] b : height){
+            if (b[1] > 0){//start
+                pq.offer(b[1]);
+            }else{//end
+                pq.remove(-b[1]);
+            }
+            int curr = pq.peek();
+            if (prev != curr){
+                res.add(new int[]{b[0], curr});
+                prev = curr;
+            }
+        }
+        return res;
+    }
+}
