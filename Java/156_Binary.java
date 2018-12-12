@@ -98,16 +98,7 @@ public TreeNode upsideDownBinaryTree(TreeNode root) {
     return newRoot;
 }
 
-Method 3: Iteration
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Method 3: Iteration (best solution)
 class Solution {
     public TreeNode upsideDownBinaryTree(TreeNode root) {
         if (root == null){
