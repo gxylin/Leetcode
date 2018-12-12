@@ -34,7 +34,7 @@ Solution for Leetcode/Lintcode
 |29    |423  | [Valid Parentheses.java](Java/423_ValidParentheses.java)|Easy|Java|Lintcode|
 |30    |622  | [Guess Number Game.java](Java/622_GuessNumberGame.java)|Easy|Java|Lintcode|
 |31    |61   | [Search for a Range.java](Java/61_SearchforaRange.java)|Medium|Java|Lintcode|
-|32    |661  | [Conver BST to Greater Tree.java](Java/661_ConverBSTtoGreaterTree.java)|Easy|Java|Lintcode|
+|32    |661  | [Conver BST to Greater Tree Good](Java/661_ConverBSTtoGreaterTree.java)|Easy|Java|Lintcode|
 |33    |448 |[Inorder Successor Binary Search Tree Good](Java/448_InorderSuccessorinBinarySearchTree.java)|Medium|Java|Lintcode|
 |34    |649  | [Binary Tree Flipping.java](Java/649_BinaryTreeFlipping.java)|Medium|Java|Lintcode|
 |32    |650  | [Binary Tree Leaves Order Traversal Good](Java/650_BinaryTreeLeavesOrderTraversal.java)|Medium|Java|Lintcode|
