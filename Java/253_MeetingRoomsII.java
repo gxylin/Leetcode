@@ -84,7 +84,7 @@ class Solution {
         Collections.sort(list, new Comparator<Point>(){
             public int compare(Point a, Point b){
                 if (a.time == b.time){
-                    return a.flag - b.flag;
+                    return a.flag - b.flag;//end goes ahead
                 }
                 return a.time - b.time;
             }
