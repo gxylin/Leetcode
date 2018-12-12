@@ -141,11 +141,11 @@ class Solution {
         if (root == null){
             return prev;
         }
-        prev = reversePreorder(root.right, prev);
-        prev= reversePreorder(root.left, prev);
+        prev = reversePreorder(root.right, prev);//assign prev to the root.right
+        prev = reversePreorder(root.left, prev);//assign prev to the root.left
         root.right = prev;
         root.left = null;
-        prev = root;
+   //     prev = root;
         return root;
     }
 }
