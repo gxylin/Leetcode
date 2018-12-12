@@ -144,7 +144,7 @@ public class Solution {
     }
 }
 
-
+https://leetcode.com/problems/the-skyline-problem/discuss/61193/Short-Java-solution
 Best solution:
 class Solution {
     public List<int[]> getSkyline(int[][] buildings) {
