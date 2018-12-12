@@ -60,20 +60,7 @@ public class Solution {
 }
 
 
-Method 2: iteration
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */
-
-
+Method 2: iteration (best)
 public class Solution {
     /*
      * @param root: the root of binary tree
