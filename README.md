@@ -763,7 +763,7 @@ Solution for Leetcode/Lintcode
 |743   |765  |[Couples Holding Hands Union Find](Java/765_Couples.java)|Hard|Java|Leetcode|
 |744   |773  |[Sliding Puzzle Backtracking BFS](Java/773_Sliding.java)|Hard|Java|Leetcode|
 |745   |774  |[Minimize Max Distance to Gas Station Binary Search](Java/774_Minimize.java)|Hard|Java|Leetcode|
-|746   |777  |[Swap Adjacent in LR String](Java/777_Swap.java)|Medium|Java|Leetcode|
+|746   |777  |[Swap Adjacent in LR String Very good](Java/777_Swap.java)|Medium|Java|Leetcode|
 |747   |779  |[K-th Symbol in Grammar Recursion](Java/779_Kth.java)|Medium|Java|Leetcode|
 |748   |781  |[Rabbits in Forest](Java/781_Rabbits.java)|Medium|Java|Leetcode|
 |749   |780  |[Reaching Points](Java/780_Reaching.java)|Hard|Java|Leetcode|
