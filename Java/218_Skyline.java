@@ -157,7 +157,7 @@ class Solution {
         Collections.sort(height, new Comparator<int[]>(){
            public int compare (int[] a, int[] b){
                if (a[0] == b[0]){
-                   return b[1] - a[1];//end goes first
+                   return b[1] - a[1];//start must go first
                }
                return a[0] - b[0];
            } 
