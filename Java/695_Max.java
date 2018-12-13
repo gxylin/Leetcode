@@ -62,6 +62,50 @@ class Solution {
     }
 }
 
+Without modifying grid
+class Solution {
+    public int maxAreaOfIsland(int[][] grid) {
+        if (grid == null || grid.length == 0){
+            return 0;
+        }
+        int m = grid.length;
+        int n = grid[0].length;
+        int max = 0;
+        boolean[][] visited = new boolean[m][n];
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (grid[i][j] == 1){
+                    max = Math.max(max, bfs(grid, i, j, visited));
+                }
+            }
+        }
+        return max;
+    }
+    private int bfs(int[][] grid, int x, int y, boolean[][] visited){
+        int m = grid.length;
+        int n = grid[0].length;
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        Queue<int[]> queue = new LinkedList<>();
+        queue.offer(new int[]{x, y});
+        visited[x][y] = true;
+        int count = 1;
+        while (!queue.isEmpty()){
+            int[] curr = queue.poll();
+            for (int[] dir : dirs){
+                int nx = curr[0] + dir[0];
+                int ny = curr[1] + dir[1];
+                if (nx >= 0 && nx < m && ny >= 0 && ny < n && grid[nx][ny] == 1 && !visited[nx][ny]){
+                    queue.offer(new int[]{nx, ny});
+                    visited[nx][ny] = true;
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+}
+
+
 Method 2: DFS recursion
 Time complexity: O(mn)
 Space complexity: O(mn)
