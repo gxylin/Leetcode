@@ -55,7 +55,7 @@ class Solution {
 
 
 
-Method 2:
+Method 2: Best solution
 Similar as backpack DP problem as Leetcode 416. But here is more challenging because some data point may not be chosen. Moreover, 
 the dp definition is different. In this question,
 dp[i][j] denotes the largest left sum at the case of after using i-th rod and the difference between left sum and right sum is 
@@ -85,11 +85,12 @@ Space complexity: O(n * sum)
 				//so the largest left sum should be added by rods[i-1] from previous step
                     dp[i][j] = Math.max(dp[i][j], dp[i-1][j-rods[i-1]] + rods[i-1]);
                 }
-                if (j + rods[i-1] <= 2*sum && dp[i-1][j+rods[i-1]] != -1){//it means we will add next rod(rods[i-1]) to the right, 
+                if (j + rods[i-1] <= 2*sum && dp[i-1][j+rods[i-1]] != -1){//this means we will add next rod(rods[i-1]) to the right, 
 				//so largest left sum at previous step stays at dp[i-1][j+rods[i-1]]
                     dp[i][j] = Math.max(dp[i][j], dp[i-1][j+rods[i-1]]);
                 }
-                if (dp[i-1][j] != -1){
+                if (dp[i-1][j] != -1){//this means we don't use rods[i-1] but we need ensure 
+				//previous step could be reached, so we can compare.
                     dp[i][j] = Math.max(dp[i][j], dp[i-1][j]);
                 }
             }
