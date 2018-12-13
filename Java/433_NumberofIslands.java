@@ -128,6 +128,91 @@ public class Solution {
 }
 
 
+Change the value of grid:
+class Solution {
+    public int numIslands(char[][] grid) {
+        if (grid == null || grid.length == 0){
+            return 0;
+        }
+        int m = grid.length;
+        int n = grid[0].length;
+        int count = 0;
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (grid[i][j] == '1'){
+                    bfs(grid, i, j);
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+    private void bfs(char[][] grid, int x, int y){
+        int m = grid.length;
+        int n = grid[0].length;
+        Queue<int[]> queue = new LinkedList<>();
+        int[][] dirs = {{1,0}, {0, 1}, {-1, 0}, {0, -1}};
+    //    boolean[][] visited = new boolean[m][n];
+        queue.offer(new int[]{x, y});
+        grid[x][y] = '0';
+     //   visited[x][y] = true;
+        while (!queue.isEmpty()){
+            int[] curr = queue.poll();
+            for (int[] dir : dirs){
+                int nx = curr[0] + dir[0];
+                int ny = curr[1] + dir[1];
+                if (nx >= 0 && nx < m && ny >= 0 && ny < n && grid[nx][ny] == '1'){
+                    queue.offer(new int[]{nx, ny});
+                    grid[nx][ny] = '0';
+                }
+            }
+        }
+    }
+}
+
+
+Best solution without changing value of grid
+class Solution {
+    public int numIslands(char[][] grid) {
+        if (grid == null || grid.length == 0){
+            return 0;
+        }
+        int m = grid.length;
+        int n = grid[0].length;
+        int count = 0;
+        boolean[][] visited = new boolean[m][n];
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (grid[i][j] == '1' && !visited[i][j]){
+                    bfs(grid, i, j, visited);
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+    private void bfs(char[][] grid, int x, int y, boolean[][] visited){
+        int m = grid.length;
+        int n = grid[0].length;
+        Queue<int[]> queue = new LinkedList<>();
+        int[][] dirs = {{1,0}, {0, 1}, {-1, 0}, {0, -1}};
+        queue.offer(new int[]{x, y});
+        visited[x][y] = true;
+        while (!queue.isEmpty()){
+            int[] curr = queue.poll();
+            for (int[] dir : dirs){
+                int nx = curr[0] + dir[0];
+                int ny = curr[1] + dir[1];
+                if (nx >= 0 && nx < m && ny >= 0 && ny < n && grid[nx][ny] == '1' && !visited[nx][ny]){
+                    queue.offer(new int[]{nx, ny});
+                    visited[nx][ny] = true;
+                }
+            }
+        }
+    }
+}
+
+
 Method 3: UF
 class Solution {
     class UF {
@@ -142,7 +227,7 @@ class Solution {
             if (x == parent[x]){
                 return x;
             }
-            return find(parent[x]);
+            return parent[x] = find(parent[x]);//path compression
         }
         public void union (int x, int y){
             int rootX = find(x);
@@ -181,5 +266,72 @@ class Solution {
             }
         }
         return count;
+    }
+}
+
+
+class Solution {
+    class UF {
+        int[] parent;
+        int[] size;
+        int count;
+        public UF (int N){
+            parent = new int[N];
+            size = new int[N];
+            count = N;
+            for (int i = 0; i < N; i++){
+                parent[i] = i;
+                size[i] = 1;
+            }
+        }
+        public int find(int x){
+            if (x == parent[x]){
+                return x;
+            }
+            return parent[x] = find(parent[x]);
+        }
+        public void union(int x, int y){
+            int rootX = find(x);
+            int rootY = find(y);
+            if (rootX != rootY){
+                parent[rootX] = rootY;
+                size[rootY] += size[rootX];
+                count--;
+            }
+        }
+        public int getSize(){
+            return count;
+        }
+    }
+    public int numIslands(char[][] grid) {
+        if (grid == null || grid.length == 0){
+            return 0;
+        }
+        int m = grid.length;
+        int n = grid[0].length;
+        UF uf = new UF(m*n);
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        int countZero = 0;
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (grid[i][j] == '1'){
+                    for (int[] dir : dirs){
+                        int nx = i + dir[0];
+                        int ny = j + dir[1];
+                        if (nx >= 0 && nx < m && ny >= 0 && ny < n && grid[nx][ny] == '1'){
+                            int curr = converter(i, j, n);
+                            int next = converter(nx, ny, n);
+                            uf.union(curr, next);
+                        }
+                    }
+                }else{
+                    countZero++;
+                }
+            }
+        }
+        return uf.getSize() - countZero;
+    }
+    private int converter(int x, int y, int n){
+        return x * n + y;
     }
 }
