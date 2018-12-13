@@ -69,16 +69,10 @@ class Solution {
     }
 }
 
-Best:
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+
+
+Best: the same method as Binary Tree Maximum Path Sum, Longest Univalue Path
+
 class Solution {
     int max = Integer.MIN_VALUE;
     public int diameterOfBinaryTree(TreeNode root) {
