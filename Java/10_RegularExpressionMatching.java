@@ -132,7 +132,15 @@ class Solution {
 
 
 Best version to match the rationale
-dp[i][j] denotes match or not when take first i-th p from and first j-th from s
+dp[i][j] denotes match or not when we check the two substrings: p.substring(0, i) and s.substring(0, j) 
+1, If p.charAt(i-1) == s.charAt(j-1) : dp[i][j] = dp[i-1][j-1];
+2, If p.charAt(i-1) == '.' : dp[i][j] = dp[i-1][j-1];
+3, If p.charAt(i-1) == '*':
+   1 if p.charAt(i-2) != s.charAt(j-1) : dp[i][j] = dp[i-2][j] //in this case, * only counts as empty
+   2 if p.charAt(i-2) == s.charAt(j-1) or p.charAt(i-2) == '.':
+         dp[i][j] = dp[i-2][j] //in this case, * counts as 0
+      or dp[i][j] = dp[i-2][j-1] // in this case, * counts as single a
+      or dp[i][j] = dp[i][j-1] // in this case, * counts as multiple a
 class Solution {
     public boolean isMatch(String s, String p) {
         int m = p.length();
