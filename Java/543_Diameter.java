@@ -69,3 +69,34 @@ class Solution {
     }
 }
 
+Best:
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    int max = Integer.MIN_VALUE;
+    public int diameterOfBinaryTree(TreeNode root) {
+        if (root == null){
+            return 0;
+        }
+        maxDiaIncludeRoot(root);
+        return max;
+    }
+    private int maxDiaIncludeRoot(TreeNode root){
+        if (root == null){
+            return -1;
+        }
+        int left = maxDiaIncludeRoot(root.left);
+        int right = maxDiaIncludeRoot(root.right);
+        int leftMax = left + 1;
+        int rightMax = right + 1;
+        max = Math.max(max, leftMax + rightMax);
+        return Math.max(leftMax, rightMax);
+    }
+}
