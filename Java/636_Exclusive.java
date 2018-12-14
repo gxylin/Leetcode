@@ -60,10 +60,12 @@ class Solution {
 
 
 Better version:
+Note that job id is stacked, so we created stack to store job id.
+Then we need to calculate the duration, so we use prev to store previous timestamp
 class Solution {
     public int[] exclusiveTime(int n, List<String> logs) {
         int[] res = new int[n];
-        Stack<Integer> stack = new Stack<>();//store id, not timestamp
+        Stack<Integer> stack = new Stack<>();//store id, not timestamp because id is being stacked not timestamp
         int prev = 0;//store timestamp
         for (String log : logs){
             String[] strs = log.split(":");
