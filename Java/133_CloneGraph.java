@@ -108,7 +108,7 @@ public class Solution {
             for (UndirectedGraphNode nei : curr.neighbors){
                 if (!map.containsKey(nei)){
                     map.put(nei, new UndirectedGraphNode(nei.label));
-                    queue.offer(nei);
+                    queue.offer(nei);//only new node will go on for BFS
                 }
                 map.get(curr).neighbors.add(map.get(nei));
             }
@@ -141,5 +141,36 @@ public class Solution {
             curr.neighbors.add(map.get(nei));
         }
         return curr;
+    }
+}
+
+
+Better DFS
+public class Solution {   
+    public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
+        if (node == null){
+            return null;
+        }
+        Map<UndirectedGraphNode, UndirectedGraphNode> map = new HashMap<>();
+        UndirectedGraphNode root = new UndirectedGraphNode(node.label);
+        map.put(node, root);
+        dfs(node, map);
+        return root;
+    }
+    private void dfs(UndirectedGraphNode node, Map<UndirectedGraphNode, UndirectedGraphNode> map){
+        if (node == null){
+            return;
+        }
+        for (UndirectedGraphNode nei : node.neighbors){
+            if (!map.containsKey(nei)){
+                UndirectedGraphNode newNode = new UndirectedGraphNode(nei.label);
+                map.put(nei, newNode);
+                map.get(node).neighbors.add(newNode);
+                dfs(nei, map);//only new node will go on for dfs
+            }else{
+                map.get(node).neighbors.add(map.get(nei));
+            }
+            
+        }
     }
 }
