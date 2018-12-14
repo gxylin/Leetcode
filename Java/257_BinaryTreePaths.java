@@ -42,3 +42,37 @@ class Solution {
         return result;
     }
 }
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public List<String> binaryTreePaths(TreeNode root) {
+        List<String> res = new ArrayList<>();
+        if (root == null){
+            return res;
+        }
+        List<String> left = binaryTreePaths(root.left);
+        List<String> right = binaryTreePaths(root.right);
+        if (!left.isEmpty()){
+            for (String s : left){
+                res.add(root.val + "->" + s);
+            }
+        }
+        if (!right.isEmpty()){
+            for (String s : right){
+                res.add(root.val + "->" + s);
+            }   
+        }
+        if (left.isEmpty() && right.isEmpty()){
+            res.add(String.valueOf(root.val));
+        }
+        return res;
+    }
+}
