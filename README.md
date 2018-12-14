@@ -374,7 +374,7 @@ Solution for Leetcode/Lintcode
 |355   |154  |[Find Minimum in Rotated Sorted Array II](Java/154_FindMinimum.java)|Hard|Java|Leetcode|
 |356   |231  |[Power of Two](Java/231_PowerTwo.java)|Easy|Java|Leetcode|
 |357   |535  |[Encode and Decode TinyURL](Java/535_url.java)|Medium|Java|Leetcode|
-|358   |211  |[Add and Search Word Trie](Java/211_Add.java)|Medium|Java|Leetcode|
+|358   |211  |[Add and Search Word Trie DFS Good](Java/211_Add.java)|Medium|Java|Leetcode|
 |359   |187  |[Repeated DNA Sequences](Java/187_Repeated.java)|Medium|Java|Leetcode|
 |360   |216  |[Combination Sum III](Java/216_Combination.java)|Medium|Java|Leetcode|
 |361   |214  |[Shortest Palindrome](Java/214_Shortest.java)|Hard|Java|Leetcode|
