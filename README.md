@@ -5,8 +5,8 @@ Solution for Leetcode/Lintcode
 |:--:|:----:| :-----                              |   :---:       |    :---:     | :--:     |
 |1     |1    | [Two Sum.java](Java/1_TwoSum.java)  |    Easy       |    Java      |Leetcode  |
 |2     |242  | [Valid Anagram.java](Java/242_ValidAnagram.java) | Easy|Java       |Leetcode  |
-|3     |144  | [Binary Tree Preorder Traversal.java](Java/144_BinaryTreePreorderTraversal.java)|Medium|Java|Leetcode  |
-|4     |94   | [Binary Tree Inorder Traversal.java](Java/94_BinaryTreeInorderTraversal.java)|Medium|Java| Leetcode  |
+|3     |144  | [Binary Tree Preorder Traversal ](Java/144_BinaryTreePreorderTraversal.java)|Medium|Java|Leetcode  |
+|4     |94   | [Binary Tree Inorder Traversal Tree Iteration Template](Java/94_BinaryTreeInorderTraversal.java)|Medium|Java| Leetcode  |
 |5     |512  | [Decode Ways Dynamic Programming](Java/512_DecodeWays.java)|Medium|Java|Lintcode
 |6     |638  | [Strings Homomorphism.java](Java/638_StringsHomomorphism.java)|Easy|Java|Lintcode|
 |7     |626  | [Rectangle Overlap.java](Java/626_RectangleOverlap.java)|Easy|Java|Lintcode|
