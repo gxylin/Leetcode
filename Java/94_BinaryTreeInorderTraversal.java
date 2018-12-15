@@ -63,6 +63,26 @@ class Solution {
         helper(result, node.right);
     }
 }
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode curr = root;
+        while (curr != null || !stack.isEmpty()){
+            if (curr != null){
+                stack.push(curr);
+                curr = curr.left;
+            }
+            if (curr == null && !stack.isEmpty()){
+                TreeNode node = stack.pop();
+                res.add(node.val);
+                curr = node.right;
+            }
+        }
+        return res;
+    }
+}
+
 
 Method 3: iteration:
 Template: https://leetcode.com/problems/validate-binary-search-tree/discuss/32112/Learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-(Java-Solution)
@@ -84,27 +104,6 @@ class Solution {
         return res;
     }
 }
-
-class Solution {
-    public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        Stack<TreeNode> stack = new Stack<>();
-        TreeNode curr = root;
-        while (curr != null || !stack.isEmpty()){
-            if (curr != null){
-                stack.push(curr);
-                curr = curr.left;
-            }
-            if (curr == null && !stack.isEmpty()){
-                TreeNode node = stack.pop();
-                res.add(node.val);
-                curr = node.right;
-            }
-        }
-        return res;
-    }
-}
-
 
 Tree Iteration template
 https://leetcode.com/problems/validate-binary-search-tree/discuss/32112/Learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-(Java-Solution)
