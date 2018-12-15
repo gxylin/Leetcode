@@ -8,15 +8,7 @@ What if the BST is modified (insert/delete operations) often and you need to fin
 How would you optimize the kthSmallest routine?
 
 Method 1:
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Time complexity: O(n)
 class Solution {
     int ans = 0;
     public int kthSmallest(TreeNode root, int k) {
@@ -40,15 +32,7 @@ class Solution {
 }
 
 Method 2:
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Time complexity: O(n)
 class Solution {
     public int kthSmallest(TreeNode root, int k) {
         int[] result = new int[2];
@@ -71,15 +55,7 @@ class Solution {
 }
 
 Method 3:
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Time complexity: O(nlogn)
 class Solution {
     public int kthSmallest(TreeNode root, int k) {
         int count = countNode(root.left);
@@ -95,5 +71,31 @@ class Solution {
             return 0;
         }
         return 1 + countNode(root.left) + countNode(root.right);
+    }
+}
+
+
+Method 4:
+https://leetcode.com/problems/validate-binary-search-tree/discuss/32112/Learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-(Java-Solution)
+Iteration:
+O(n)
+class Solution {
+    public int kthSmallest(TreeNode root, int k) {
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        TreeNode node = root;
+        while (node != null || !stack.isEmpty()){
+            while (node != null){
+                stack.push(node);
+                node = node.left;
+            }
+            TreeNode curr = stack.pop();
+            k--;
+            if (k == 0){
+                return curr.val;
+            }
+            node = curr.right;
+        }
+        return -1;
     }
 }
