@@ -61,3 +61,6 @@ class Solution {
         return new ResultType(true, Math.min(left.min, root.val), Math.max(right.max, root.val));
     }
 }
+
+Method 2: iterative template
+https://leetcode.com/problems/validate-binary-search-tree/discuss/32112/Learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-(Java-Solution)
