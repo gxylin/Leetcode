@@ -259,7 +259,7 @@ Solution for Leetcode/Lintcode
 |250   |202  |[Happy Number.java](Java/202_HappyNumber.java)|Easy|Java|Leetcode|
 |251   |208  |[Implement Trie.java](Java/208_Trie.java)|Medium|Java|Leetcode|
 |252   |213  |[House Robber II.java](Java/213_HouseRobberII.java)|Medium|Java|Leetcode|
-|253   |230  |[Kth Smallest Element in a BST](Java/230_KthSmallestBST.java)|Medium|Java|Leetcode|
+|253   |230  |[Kth Smallest Element in a BST Good](Java/230_KthSmallestBST.java)|Medium|Java|Leetcode|
 |254   |671  |[Second Minimum Node In a Binary Tree](Java/671_SecondMinimumBinary.java)|Easy|Java|Leetcode|
 |255   |251  |[Flatten 2D Vector.java](Java/251_Flatten2DVector.java)|Medium|Java|Leetcode|
 |256   |252  |[Meeting Rooms.java](Java/252_MeetingRooms.java)|Easy|Java|Leetcode|
