@@ -26,3 +26,21 @@ class Solution {
         return new String(charArray);
     }
 }
+
+class Solution {
+    public String reverseStr(String s, int k) {
+        int n = s.length();
+        StringBuilder sb = new StringBuilder();
+        for (int j = 0; j < n; j += 2*k){
+            StringBuilder temp = new StringBuilder();
+            for (int i = 0; i < k && i + j < n; i++){
+                temp.append(s.charAt(i+j));
+            }
+            sb.append(temp.reverse().toString());
+            for (int i = k; i < 2*k && i + j < n; i++){
+                sb.append(s.charAt(i+j));
+            }
+        }
+        return sb.toString();
+    }
+}
