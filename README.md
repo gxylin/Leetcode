@@ -345,7 +345,7 @@ Solution for Leetcode/Lintcode
 |326   |11   |[Container With Most Water](Java/11_ContainerWater.java)|Medium|Java|Leetcode|
 |327   |35   |[Search Insert Position](Java/35_Search.java)|Easy|Java|Leetcode|
 |328   |24   |[Swap Nodes in Pairs](Java/24_SwapNodes.java)|Medium|Java|Leetcode|
-|329   |43   |[Multiply Strings](Java/43_MultiplyStrings.java)|Medium|Java|Leetcode|
+|329   |43   |[Multiply Strings Good](Java/43_MultiplyStrings.java)|Medium|Java|Leetcode|
 |330   |18   |[4Sum](Java/18_4Sum.java)|Medium|Java|Leetcode|
 |331   |30   |[Substring with Concatenation of All Words](Java/30_Substring.java)|Hard|Java|Leetcode|
 |332   |59   |[Spiral Matrix II](Java/59_SpiralMatrixII.java)|Medium|Java|Leetcode|
