@@ -113,6 +113,39 @@ class Solution {
     
 }
 
+class Solution {
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        List<String> res = new ArrayList<>();
+        Set<String> set = new HashSet<>();
+        int min = 0;
+        int max = 0;
+        for (String str : wordDict){
+            set.add(str);
+            min = Math.min(min, str.length());
+            max = Math.max(max, str.length());
+        }
+        dfs(res, s, "", set, 0, min, max);
+        return res;
+    }
+    private void dfs(List<String> res, String s, String item, Set<String> set, int start, int min, int max){
+        if (start == s.length()){
+            res.add(item.trim());
+            return;
+        }
+        for (int i = start; i < s.length(); i++){
+            String sub = s.substring(start, i+1);
+            if (sub.length() < min){
+                continue;
+            }
+            if (sub.length() > max){
+                break;
+            }
+            if (set.contains(sub)){
+                dfs(res, s, item + " " + sub, set, i+1, min, max);
+            }
+        }
+    }
+}
 
 Best solution:
 class Solution {
