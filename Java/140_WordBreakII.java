@@ -72,7 +72,7 @@ class Solution {
 }
 
 
-Method 3: Backtracking
+Method 3: Backtracking TLE
 class Solution {
     public List<String> wordBreak(String s, List<String> wordDict) {
         List<String> res = new ArrayList<>();
@@ -111,4 +111,37 @@ class Solution {
         }
     }
     
+}
+
+
+Best solution:
+class Solution {
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        Set<String> set = new HashSet<>();
+        for (String str : wordDict){
+            set.add(str);
+        }
+        Map<String, List<String>> map = new HashMap<>();
+        return dfs(s, set, map);
+    }
+    private List<String> dfs(String s, Set<String> set, Map<String, List<String>> map){
+        if (map.containsKey(s)){
+            return map.get(s);
+        }
+        List<String> res = new ArrayList<>();
+        if (set.contains(s)){
+            res.add(s);
+        }
+        for (int i = 1; i < s.length(); i++){
+            String sub = s.substring(0, i);
+            if (set.contains(sub)){
+                List<String> list = dfs(s.substring(i), set, map);
+                for (String str : list){
+                    res.add(sub + " " + str);
+                }
+            }
+        }
+        map.put(s, res);
+        return res;
+    }
 }
