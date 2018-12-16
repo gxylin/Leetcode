@@ -139,3 +139,74 @@ class Solution {
         return res;
     }
 }
+
+
+Best solution:
+class Solution {
+    class UF {
+        int[] parent;
+        int[] size;
+        public UF (int N){
+            parent = new int[N];
+            size = new int[N];
+            for (int i = 0; i < N; i++){
+                parent[i] = i;
+                size[i] = 1;
+            }
+        }
+        public int find(int x){
+            if (x == parent[x]){
+                return x;
+            }
+            return parent[x] = find(parent[x]);
+        }
+        public void union(int x, int y){
+            int rootX = find(x);
+            int rootY = find(y);
+            if (rootX != rootY){
+                parent[rootX] = rootY;
+                size[rootY] += size[rootX];
+            }
+        }
+    }
+    public List<List<String>> accountsMerge(List<List<String>> accounts) {
+        List<List<String>> res = new ArrayList<>();
+        if (accounts == null){
+            return res;
+        }
+        int n = accounts.size();
+        UF uf = new UF(n);
+        Map<String, Integer> emailToIDMap = new HashMap<>();
+        Map<Integer, String> idToNameMap = new HashMap<>();
+        for (int i = 0; i < n; i++){
+            List<String> account = accounts.get(i);
+            String name = account.get(0);
+            idToNameMap.put(i, name);
+            for (int j = 1; j < account.size(); j++){
+                String email = account.get(j);
+                if (!emailToIDMap.containsKey(email)){
+                    emailToIDMap.put(email, i);
+                }else{
+                    uf.union(i, emailToIDMap.get(email));
+                }
+            }
+        }
+        Map<Integer, List<String>> idEmailGraph = new HashMap<>(); 
+        for (String email : emailToIDMap.keySet()){
+            int id = emailToIDMap.get(email);
+            int rootId = uf.find(id);
+            if (!idEmailGraph.containsKey(rootId)){
+                idEmailGraph.put(rootId, new ArrayList<>());
+            }
+            idEmailGraph.get(rootId).add(email);
+        }
+        for (int id : idEmailGraph.keySet()){
+            String name = idToNameMap.get(id);
+            List<String> list = idEmailGraph.get(id);
+            Collections.sort(list);
+            list.add(0, name);
+            res.add(idEmailGraph.get(id));
+        }
+        return res;
+    }
+}
