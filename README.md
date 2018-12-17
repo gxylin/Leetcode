@@ -354,7 +354,7 @@ Solution for Leetcode/Lintcode
 |335   |100  |[Same Tree](Java/100_SameTree.java)|Easy|Java|Leetcode|
 |336   |90   |[Subsets II](Java/90_Subsets_II.java)|Medium|Java|Leetcode|
 |337   |77   |[Combinations](Java/77_Combinations.java)|Medium|Java|Leetcode|
-|338   |81   |[Search in Rotated Sorted Array II](Java/81_searchRotated.java)|Medium|Java|Leetcode|
+|338   |81   |[Search in Rotated Sorted Array II Very Good](Java/81_searchRotated.java)|Medium|Java|Leetcode|
 |339   |83   |[Remove Duplicates from Sorted List](Java/83_RemoveDuplicates.java)|Easy|Java|Leetcode|
 |340   |82   |[Remove Duplicates from Sorted List II](Java/82_Remove.java)|Medium|Java|Leetcode|
 |341   |101  |[Symmetric Tree Good](Java/101_Symmetric.java)|Easy|Java|Leetcode|
