@@ -58,3 +58,40 @@ public class Solution {
     }
 }
 
+
+Time complexity: O(nk)
+Space complexity: O(1)
+https://aaronice.gitbooks.io/lintcode/high_frequency/sort_colors_ii.html
+class Solution {
+    public void sortColors(int[] nums, int k) {
+        int left = 0;
+        int right = nums.length - 1;
+        int i = 0;
+        int min = 1;
+        int max = k;
+        while (min < max){
+            while (i <= right){
+                if (nums[i] == min){
+                    swap(nums, i, left);
+                    i++;
+                    left++;
+                }else if (nums[i] == max){
+                    swap(nums, i, right);
+                    right--;
+                }else{
+                    i++;
+                }
+            }
+            i = left;
+            min++;
+            max--;
+            
+        }
+        
+    }
+    private void swap(int[] nums, int x, int y){
+            int temp = nums[x];
+            nums[x] = nums[y];
+            nums[y] = temp;
+        }
+}
