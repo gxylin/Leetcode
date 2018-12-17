@@ -42,3 +42,38 @@ class Solution {
         nums[b] = temp;
     }
 }
+
+Generalized format for color from 1 to k
+class Solution {
+    public void sortColors(int[] nums) {
+        int left = 0;
+        int right = nums.length - 1;
+        int i = 0;
+        int min = 0;
+        int max = 2;
+        while (min < max){
+            while (i <= right){
+                if (nums[i] == min){
+                    swap(nums, i, left);
+                    i++;
+                    left++;
+                }else if (nums[i] == max){
+                    swap(nums, i, right);
+                    right--;
+                }else{
+                    i++;
+                }
+            }
+            i = left;
+            min++;
+            max--;
+            
+        }
+        
+    }
+    private void swap(int[] nums, int x, int y){
+            int temp = nums[x];
+            nums[x] = nums[y];
+            nums[y] = temp;
+        }
+}
