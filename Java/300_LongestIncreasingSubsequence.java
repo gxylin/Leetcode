@@ -185,7 +185,7 @@ class Solution {
             }else if (nums[i] > tail[len-1]){
                 tail[len++] = nums[i];
             }else{
-                int index = binarySearch(tail, 0, len - 1, nums[i]);
+                int index = binarySearch(tail, 0, len - 1, nums[i]); // find the index of the first that is greater than target
                 tail[index] = nums[i];
             }
         }
