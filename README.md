@@ -895,4 +895,4 @@ Solution for Leetcode/Lintcode
 |874   |957  |[Prison Cells After N Days HashSet](Java/957_Prison.java)|Medium|Java|Leetcode|
 |875   |958  |[Check Completeness of a Binary Tree Good](Java/958_Check.java)|Medium|Java|Leetcode|
 |876   |959  |[Regions Cut By Slashes Very Good](Java/959_Regions.java)|Medium|Java|Leetcode|
-|877   |960  |[Delete Columns to Make Sorted III Longest Increasing Subsequence](Java/960_Delete.java)|Hard|Java|Leetcode|
+|877   |960  |[Delete Columns to Make Sorted III Longest Increasing Subsequence Very Good](Java/960_Delete.java)|Hard|Java|Leetcode|
