@@ -892,3 +892,4 @@ Solution for Leetcode/Lintcode
 |871   |955  |[Delete Columns to Make Sorted II Greedy](Java/955_Delete.java)|Medium|Java|Leetcode|
 |872   |794  |[Valid Tic-Tac-Toe State](Java/794_Valid.java)|Medium|Java|Leetcode|
 |873   |956  |[Tallest Billboard Dynamic Programming HashMap](Java/956_Tallest.java)|Hard|Java|Leetcode|
+|874   |957  |[Prison Cells After N Days](Java/957_Prison.java)|Medium|Java|Leetcode|
