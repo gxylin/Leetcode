@@ -90,7 +90,7 @@ class Solution {
     public int minDeletionSize(String[] A) {
         int m = A.length;
         int n = A[0].length();
-        boolean[] cut = new boolean[m-1];//it means A[i] < A[i+1] at i, in other words, previous columns are already sorted
+        boolean[] cut = new boolean[m-1];//it means A[i] < A[i+1] at i, in other words, previous columns are already sorted to deal with equality case
         int i = 0;
         int res = 0;
         for (int j = 0; j < n; j++){
