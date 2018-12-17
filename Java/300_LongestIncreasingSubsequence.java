@@ -205,4 +205,17 @@ class Solution {
         }
         return end;
     }
+    
+    //the following binary search works too
+    private int binarySearch(int[] nums, int start, int end, int target){
+        while (start <= end){
+            int mid = start + (end - start) / 2;
+            if (nums[mid] >= target){
+                end = mid-1;
+            }else{
+                start = mid+1;
+            }
+        }
+        return start;
+    }
 }
