@@ -86,13 +86,16 @@ Time complexity: O(n)
 Space complexity: O(n)
 Intuition
 
-At each digit of the input number in order, if there is a larger digit that occurs later, we know that the best swap must occur with the digit we are currently considering.
+At each digit of the input number in order, if there is a larger digit that occurs later, we know that the best swap must occur with 
+the digit we are currently considering.
 
 Algorithm
 
-We will compute last[d] = i\text{last[d] = i}last[d] = i, the index i\text{i}i of the last occurrence of digit d\text{d}d (if it exists).
+We will compute last[d] = i\text{last[d] = i}last[d] = i, the index i\text{i}i of the last occurrence of digit d\text{d}d 
+(if it exists).
 
-Afterwards, when scanning the number from left to right, if there is a larger digit in the future, we will swap it with the largest such digit; if there are multiple such digits, we will swap it with the one that occurs the latest.
+Afterwards, when scanning the number from left to right, if there is a larger digit in the future, we will swap it with the largest 
+such digit; if there are multiple such digits, we will swap it with the one that occurs the latest.
 
 class Solution {
     public int maximumSwap(int num) {
