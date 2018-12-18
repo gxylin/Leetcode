@@ -81,7 +81,7 @@ class Solution {
     }
 }
 
-Method 2: (Best Solution)
+Method 2: 
 Time complexity: O(n)
 Space complexity: O(n)
 Intuition
@@ -118,3 +118,45 @@ class Solution {
     }
 }
 
+
+Method 3: Best solution
+Time complexity: O(n)
+ https://leetcode.com/problems/maximum-swap/discuss/107102/Simple-AC-O(n)-java-solution-with-ex
+class Solution {
+    public int maximumSwap(int num) {
+        //step 1: find the cutoff index which does not meet the reverse array and cut array into two parts
+        char[] charArr = Integer.toString(num).toCharArray();
+        int n = charArr.length;
+        int index = -1;
+        for (int i = 0; i < n-1; i++){
+            if (charArr[i] < charArr[i+1]){
+                index = i+1;
+                break;
+            }
+        }
+        if (index == -1){//already the largest
+            return num;
+        }
+        //step 2: find the LAST (i.e. 1993)largest value in the 2nd part
+        int max = -1;
+        int index2 = -1;
+        for (int i = index; i < n; i++){
+            int val = (int)(charArr[i] - '0');
+            if (val >= max){
+                max = val;
+                index2 = i;
+            }
+        }
+        //step 3: find the largest value in the 1st part which is slightly less than the max, and swap them
+        for (int i = 0; i < index; i++){
+            int val = (int)(charArr[i] - '0');
+            if (val < max){
+                char temp = charArr[index2];
+                charArr[index2] = charArr[i];
+                charArr[i] = temp;
+                break;
+            }
+        }
+        return Integer.parseInt(new String(charArr));
+    }
+}
