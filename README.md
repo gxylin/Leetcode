@@ -31,7 +31,7 @@ Solution for Leetcode/Lintcode
 |26    |124  | [Longest Consecutive Sequence.java](Java/124_LongestConsecutiveSequence.java)|Medium|Java|Lintcode|
 |27    |526  | [Load Balancer.java](Java/526_LoadBalancer.java)|Medium|Java|Lintcode|
 |28    |76   | [Longest Increasing Subsequence.java](Java/76_LongestIncreasingSubsequence.java)|Medium|Java|Lintcode|
-|29    |423  | [Valid Parentheses.java](Java/423_ValidParentheses.java)|Easy|Java|Lintcode|
+|29    |423  | [Valid Parentheses Good](Java/423_ValidParentheses.java)|Easy|Java|Lintcode|
 |30    |622  | [Guess Number Game.java](Java/622_GuessNumberGame.java)|Easy|Java|Lintcode|
 |31    |61   | [Search for a Range.java](Java/61_SearchforaRange.java)|Medium|Java|Lintcode|
 |32    |661  | [Conver BST to Greater Tree Good](Java/661_ConverBSTtoGreaterTree.java)|Easy|Java|Lintcode|
