@@ -860,7 +860,7 @@ Solution for Leetcode/Lintcode
 |840   |927  |[Three Equal Parts](Java/927_Three.java)|Hard|Java|Leetcode|
 |841   |928  |[Minimize Malware Spread II Union Find](Java/928_Minimize.java)|Hard|Java|Leetcode|
 |842   |929  |[Unique Email Addresses](Java/929_Unique.java)|Easy|Java|Leetcode|
-|843   |930  |[Binary Subarrays With Sum Prefix Good](Java/930_Binary.java)|Medium|Java|Leetcode|
+|843   |930  |[Binary Subarrays With Sum Prefix Very Good](Java/930_Binary.java)|Medium|Java|Leetcode|
 |844   |931  |[Minimum Falling Path Sum](Java/931_Minimum.java)|Medium|Java|Leetcode|
 |XXX   |XXX  |[Trie Template](Java/trieTemplate.java)|
 |845   |933  |[Number of Recent Calls Treemap](Java/933_Number.java)|Easy|Java|Leetcode|
