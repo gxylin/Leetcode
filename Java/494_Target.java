@@ -46,3 +46,25 @@ class Solution {
     //    }
     }
 }
+
+class Solution {
+    int count = 0;
+    public int findTargetSumWays(int[] nums, int S) {
+        List<String> res = new ArrayList<>();
+        dfs(nums, S, 0);
+        return count;
+    }
+    private void dfs(int[] nums, int target, int start){
+        if (start == nums.length){
+            if (target == 0){
+                count++;
+            } 
+            return;
+        }
+        dfs(nums, target - nums[start], start+1);
+        dfs(nums, target + nums[start], start+1);
+    }
+}
+
+
+
