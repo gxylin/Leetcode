@@ -69,6 +69,9 @@ class Solution {
 Similar as Leetcode 416 Partition Equal Subset Sum
 https://leetcode.com/problems/target-sum/discuss/97334/Java-(15-ms)-C++-(3-ms)-O(ns)-iterative-DP-solution-using-subset-sum-with-explanation
 
+Best solution: Reduce space complexity by scan from end to start
+if scan from start to end, need additional dimension because end data relies on previous start data
+
 Best solution:
 class Solution {
     public int findTargetSumWays(int[] nums, int S) {
