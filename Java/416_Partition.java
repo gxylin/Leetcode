@@ -113,7 +113,8 @@ class Solution {
     }
 }
 
-Best solution: Reduce space complexity
+Best solution: Reduce space complexity by scan from end to start
+if scan from start to end, need additional dimension because end data relies on previous start data
 class Solution {
     public boolean canPartition(int[] nums) {
         int sum = 0;
