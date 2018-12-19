@@ -66,3 +66,30 @@ class Solution {
         return true;
     }
 }
+
+
+Better version:
+class Solution {
+    public boolean isBipartite(int[][] graph) {
+        int n = graph.length;
+        int[] colors = new int[n];
+        for (int i = 0; i < n; i++){ //This graph might be a disconnected graph. So check each unvisited node.
+            if (colors[i] == 0 && !isValid(graph, i, 1, colors)){
+                return false;
+            }
+        }
+        return true;
+    }
+    private boolean isValid(int[][] graph, int curr, int color, int[] colors){
+        colors[curr] = color;
+        for (int nei : graph[curr]){
+            if (colors[nei] == 0){ 
+                if(!isValid(graph, nei, -color, colors))
+                    return false;
+            }else if (colors[nei] == color){
+                return false;
+            }
+        }
+        return true;
+    }
+}
