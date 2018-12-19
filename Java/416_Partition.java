@@ -47,7 +47,7 @@ class Solution {
             dp[i][0] = true;
         }
         for (int i = 1; i <= nums.length; i++){
-            for (int j = 1; j <= target; j++){
+            for (int j = 0; j <= target; j++){
                 if (j >= nums[i-1]){
                     dp[i][j] = dp[i-1][j] || dp[i-1][j-nums[i-1]];
                 }else{
@@ -72,7 +72,7 @@ class Solution {
         boolean[][] dp = new boolean[n+1][target+1];
         dp[0][0] = true;
         for (int i = 1; i <= n; i++){
-            for (int j = 1; j <= target; j++){
+            for (int j = 0; j <= target; j++){
                 if (j >= nums[i-1]){
                     dp[i][j] = dp[i-1][j-nums[i-1]] || dp[i-1][j];
                 }else{
@@ -101,7 +101,7 @@ class Solution {
             dp[i%2][0] = true;
         }
         for (int i = 1; i <= nums.length; i++){
-            for (int j = 1; j <= target; j++){
+            for (int j = 0; j <= target; j++){
                 if (j >= nums[i-1]){
                     dp[i%2][j] = dp[(i-1)%2][j] || dp[(i-1)%2][j-nums[i-1]];
                 }else{
