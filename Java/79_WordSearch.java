@@ -100,3 +100,49 @@ class Solution {
         return false;
     }
 }
+
+class Solution {
+    public boolean exist(char[][] board, String word) {
+        if (board == null || board.length == 0){
+            return false;
+        }
+        int m = board.length;
+        int n = board[0].length;
+        boolean[][] visited = new boolean[m][n];
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (board[i][j] == word.charAt(0)){
+                    visited[i][j] = true;
+                    if (dfs(board, word, i, j, visited, 0)){
+                        return true;
+                    }
+                    visited[i][j] = false;
+                }
+            }
+        }
+        return false;
+    }
+    private boolean dfs(char[][] board, String word, int x, int y, boolean[][] visited, int start){
+        if (board[x][y] != word.charAt(start)){
+            return false;
+        }
+        if (start == word.length() - 1){
+            return true;
+        }
+        int m = board.length;
+        int n = board[0].length;
+        int[][] dirs= {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        for (int[] dir : dirs){
+            int nx = x + dir[0];
+            int ny = y + dir[1];
+            if (nx >= 0 && nx < m && ny >= 0 && ny < n && !visited[nx][ny]){
+                visited[nx][ny] = true;
+                if (dfs(board, word, nx, ny, visited, start+1)){
+                    return true;
+                }
+                visited[nx][ny] = false;
+            }
+        }
+        return false;
+    }
+}
