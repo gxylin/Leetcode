@@ -66,5 +66,59 @@ class Solution {
     }
 }
 
+Similar as Leetcode 416 Partition Equal Subset Sum
+https://leetcode.com/problems/target-sum/discuss/97334/Java-(15-ms)-C++-(3-ms)-O(ns)-iterative-DP-solution-using-subset-sum-with-explanation
+
+Best solution:
+class Solution {
+    public int findTargetSumWays(int[] nums, int S) {
+        int sum = 0;
+        for (int i : nums){
+            sum += i;
+        }
+        if (sum < S || (sum + S) %2 != 0){
+            return 0;
+        }
+        //below is the problem of Partition Equal Subset Sum
+        int target = (sum + S) / 2;
+        int n = nums.length;
+        int[] dp = new int[target+1];
+        dp[0] = 1;
+        for (int i = 0; i < n; i++){
+            for (int j = target; j >= nums[i]; j--){
+                dp[j] += dp[j - nums[i]];
+            }
+        }
+        return dp[target];
+    }
+}
+
+class Solution {
+    public int findTargetSumWays(int[] nums, int S) {
+        int sum = 0;
+        for (int i : nums){
+            sum += i;
+        }
+        if (sum < S || (sum + S) %2 != 0){
+            return 0;
+        }
+        //below is the problem of Partition Equal Subset Sum
+        int target = (sum + S) / 2;
+        int n = nums.length;
+        int[][] dp = new int[n+1][target+1];
+        for (int i = 0; i <= n; i++){
+            dp[i][0] = 1;
+        }
+        for (int i = 1; i <= n; i++){
+            for (int j = 0; j <= target; j++){
+                dp[i][j] = dp[i-1][j];
+                if (j >= nums[i-1]){
+                    dp[i][j] += dp[i-1][j - nums[i-1]];
+                }
+            }
+        }
+        return dp[n][target];
+    }
+}
 
 
