@@ -416,7 +416,7 @@ Solution for Leetcode/Lintcode
 |397   |321  |[Create Maximum Number](Java/321_Create.java)|Hard|Java|Leetcode|
 |398   |32   |[Longest Valid Parentheses two pointers](Java/32_Longest.java)|Hard|Java|Leetcode|
 |399   |581  |[Shortest Unsorted Continuous Subarray two pointers](Java/581_Shortest.java)|Easy|Java|Leetcode|
-|400   |494  |[Target Sum Add Operator DP](Java/494_Target.java)|Medium|Java|Leetcode|
+|400   |494  |[Target Sum Add Operator DFS or Backpack DP](Java/494_Target.java)|Medium|Java|Leetcode|
 |401   |543  |[Diameter of Binary Tree Good](Java/543_Diameter.java)|Easy|Java|Leetcode|
 |402   |394  |[Decode String Stack Very Good](Java/394_Decode.java)|Medium|Java|Leetcode|
 |403   |437  |[Path Sum III Good Recursion](Java/437_Path.java)|Easy|Java|Leetcode|
