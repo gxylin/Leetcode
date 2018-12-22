@@ -37,6 +37,8 @@ class Solution {
 }
 
 Method 2: DP Best solution
+https://github.com/optimisea/Leetcode/blob/master/Java/5_LongestPalindromicSubstring.java
+
 O(n^2)
 class Solution {
     public int countSubstrings(String s) {
