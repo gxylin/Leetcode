@@ -50,9 +50,11 @@ Note:
     The maze contains at least 2 empty spaces, and both the width and height of the maze won't exceed 100.
 
 
-Method 1:
+Method 1: Better solution
 BFS (accepted)
-Time complexity : O(m∗n∗max(m,n)). Time complexity : O(m∗n∗max(m,n))O(m*n*\text{max}(m,n))O(m∗n∗max(m,n)). Complete traversal of maze will be done in the worst case. Here, mmm and nnn refers to the number of rows and columns of the maze. Further, for every current node chosen, we can travel upto a maximum depth of max(m,n)\text{max}(m,n)max(m,n) in any direction.
+Time complexity : O(m∗n∗max(m,n)). Time complexity : O(m∗n∗max(m,n))O(m*n*\text{max}(m,n))O(m∗n∗max(m,n)).
+Complete traversal of maze will be done in the worst case. Here, mmm and nnn refers to the number of rows and columns of the maze. 
+Further, for every current node chosen, we can travel upto a maximum depth of max(m,n)\text{max}(m,n)max(m,n) in any direction.
 
 Space complexity : O(mn)O(mn). queuequeuequeue size can grow upto m∗nm*nm∗n in the worst case
 
@@ -198,7 +200,9 @@ class Solution {
 }
 
 
-Time complexity : O(m∗n∗max(m,n)). Complete traversal of maze will be done in the worst case. Here, mmm and nnn refers to the number of rows and columns of the maze. Further, for every current node chosen, we can travel upto a maximum depth of max(m,n)\text{max}(m,n)max(m,n) in any direction.
+Time complexity : O(m∗n∗max(m,n)). Complete traversal of maze will be done in the worst case. Here, mmm and nnn refers to the number 
+of rows and columns of the maze. Further, for every current node chosen, we can travel upto a maximum depth of max(m,n)\text{max}(m,n)
+max(m,n) in any direction.
 
  Space complexity : O(mn). distancedistancedistance array of size m∗nm*nm∗n is used.
 
@@ -256,12 +260,15 @@ public class Solution {
     }
 }
 
-Method 4: Dijkstra Algorithm and Priority Queue
+Method 4: Dijkstra Algorithm and Priority Queue (best solution)
 
 
-Time complexity : O(mn∗log(mn)). Complete traversal of maze will be done in the worst case giving a factor of mn. Further, poll method is a combination of heapifying(O(log(n)) and removing the top elementO(1) from the priority queue, and it takes O(n) time for nnn elements. In the current case, poll introduces a factor of log(mn)log(mn)log(mn).
+Time complexity : O(mn∗log(mn)). Complete traversal of maze will be done in the worst case giving a factor of mn. 
+Further, poll method is a combination of heapifying(O(log(n)) and removing the top elementO(1) from the priority queue, 
+and it takes O(n) time for nnn elements. In the current case, poll introduces a factor of log(mn)log(mn)log(mn).
 
-Space complexity : O(mn). distancedistancedistance array of size m∗n is used and queuequeuequeue size can grow upto m∗nm*nm∗n in worst case.
+Space complexity : O(mn). distancedistancedistance array of size m∗n is used and queuequeuequeue size can grow upto m∗nm*nm∗n in
+worst case.
 public class Solution {
     public int shortestDistance(int[][] maze, int[] start, int[] dest) {
         int[][] distance = new int[maze.length][maze[0].length];
