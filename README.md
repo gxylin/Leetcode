@@ -897,3 +897,4 @@ Solution for Leetcode/Lintcode
 |876   |959  |[Regions Cut By Slashes Very Good](Java/959_Regions.java)|Medium|Java|Leetcode|
 |877   |960  |[Delete Columns to Make Sorted III Longest Increasing Subsequence Very Good](Java/960_Delete.java)|Hard|Java|Leetcode|
 |878   |132  |[Palindrome Partitioning II](Java/132_Palindrome.java)|Hard|Java|Leetcode|
+|879   |961  |[N-Repeated Element in Size 2N Array](Java/961_Repeated.java)|Easy|Java|Leetcode|
