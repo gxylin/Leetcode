@@ -899,3 +899,4 @@ Solution for Leetcode/Lintcode
 |878   |132  |[Palindrome Partitioning II](Java/132_Palindrome.java)|Hard|Java|Leetcode|
 |879   |961  |[N-Repeated Element in Size 2N Array](Java/961_Repeated.java)|Easy|Java|Leetcode|
 |880   |962  |[Maximum Width Ramp Monotonic Stack Very Good](Java/962_Maximum.java)|Medium|Java|Leetcode|
+|881   |963  |[Minimum Area Rectangle II](Java/963_Minimum.java)|Medium|Java|Leetcode|
