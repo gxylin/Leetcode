@@ -898,3 +898,4 @@ Solution for Leetcode/Lintcode
 |877   |960  |[Delete Columns to Make Sorted III Longest Increasing Subsequence Very Good](Java/960_Delete.java)|Hard|Java|Leetcode|
 |878   |132  |[Palindrome Partitioning II](Java/132_Palindrome.java)|Hard|Java|Leetcode|
 |879   |961  |[N-Repeated Element in Size 2N Array](Java/961_Repeated.java)|Easy|Java|Leetcode|
+|880   |962  |[Maximum Width Ramp Monotonic Stack](Java/962_Maximum.java)|Medium|Java|Leetcode|
