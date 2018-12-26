@@ -52,3 +52,29 @@ class Solution {
         max = Math.max(max, len);
     }
 }
+
+Method 2:
+class Solution{
+      public int longestConsecutive(TreeNode root){
+           return postorder(root);
+      }
+      private int postorder(TreeNode root){
+           if (root == null){
+              return 0;
+           }
+           int left = postorder(root.left);
+           int right = postorder(root.right);
+           int res = 1;
+           if (root.left ! = null){
+               if (root.val == root.left.val - 1){
+                   res = Math.max(res, left + 1);
+               }
+           }
+           if (root.right != null){
+               if (root.val == root.right.val - 1){
+                  res = Math.max(res, right + 1);
+               }
+           }
+           return res;
+      }
+}
