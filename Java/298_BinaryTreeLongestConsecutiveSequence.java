@@ -54,6 +54,7 @@ class Solution {
 }
 
 Method 2:
+Refer to https://github.com/optimisea/Leetcode/blob/master/Java/549_BinaryTree.java
 class Solution{
       public int longestConsecutive(TreeNode root){
            return postorder(root);
