@@ -94,4 +94,37 @@ class Solution {
     }
 }
 
-The following animation will make the process clear:
+https://github.com/optimisea/Leetcode/blob/master/Java/687_Longest.java
+
+class Solution {
+    public int longestConsecutive(TreeNode root) {
+        int[] max = new int[1];
+        longestIncludeRoot(root, max);
+        return max[0];
+    }
+    private int[] longestIncludeRoot(TreeNode root){
+         if (root == null){
+            return new int[]{0, 0};//{incr, decr}
+         }
+         int[] left = longestIncludeRoot(root.left);
+         int[] right = longestIncludeRoot(root.right);
+         int[] incr = new int[]{1, 1};//incr[0]: left longest; incr[1]: right longest
+         int[] decr = new int[]{1, 1};//decr[0]: left longest: decr[1]: right longest
+         if (root.left != null){
+            if (root.val + 1 == root.left.val){
+               incr[0] = left[0] + 1;
+            }else if (root.val - 1 == root.left.val){
+               decr[0] = left[1] + 1;
+            }
+         }
+         if (root.right != null){
+            if (root.val + 1 == root.right.val){
+               incr[1] = right[0] + 1;
+            }else if (root.val - 1 == root.right.val){
+               decr[1] = right[1] + 1;
+            }
+         }
+         max[0] = Math.max(max[0], Math.max(incr[0] + decr[1] - 1, incr[1] + decr[0] - 1));
+         return new int[]{Math.max(incr[0], incr[1]), Math.max(decr[0], decr[1]};
+    }
+}
