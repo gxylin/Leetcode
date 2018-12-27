@@ -74,3 +74,64 @@ class Solution {
 }
 
 https://leetcode.com/problems/decode-ways-ii/discuss/105258/Java-O(N)-by-General-Solution-for-all-DP-problems
+
+
+class Solution {
+    public int numDecodings(String s) {
+        int mod = (int)Math.pow(10, 9) + 7;
+        int n = s.length();
+        if (n == 0){
+            return 0;
+        }
+        if (n == 1){
+            if (s.charAt(0) == '0'){
+                return 0;
+            }else if (s.charAt(0) == '*'){
+                return 9;
+            }else{
+                return 1;
+            }
+        }
+        if (s.charAt(0) == '0'){
+            return 0;
+        }
+        long[] dp = new long[n+1];
+        dp[0] = 1;
+        dp[1] = s.charAt(0) == '*' ? 9 : 1;
+        for (int i = 2; i <= n; i++){
+            char first = s.charAt(i-1);
+            char second = s.charAt(i-2);
+            if (first != '0'){
+                if (first == '*'){
+                    dp[i] += dp[i-1] * 9;
+                }else{
+                    dp[i] += dp[i-1];
+                }
+            }
+            if (first != '*' && second != '*'){
+                int curr = (int)(first - '0');
+                int prev = (int)(second - '0');
+                int num = prev * 10 + curr;
+                if (num >= 10 && num <= 26){
+                    dp[i] += dp[i-2];
+                }
+            }else if (first == '*' && second != '*'){
+                if (second - '0' == 2){
+                    dp[i] += dp[i-2] * 6;
+                }else if (second -'0' == 1){
+                    dp[i] += dp[i-2] * 9;
+                }
+            }else if (first != '*' && second == '*'){
+                if (first - '0' <= 6){
+                    dp[i] += dp[i-2] * 2;
+                }else{
+                    dp[i] += dp[i-2];
+                }
+            }else{
+                dp[i] += dp[i-2] * 15;//can't be 20 so 26-11+1-1
+            }
+            dp[i] %= mod;
+        }
+        return (int)dp[n];
+    }
+}
