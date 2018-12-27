@@ -902,3 +902,4 @@ Solution for Leetcode/Lintcode
 |881   |963  |[Minimum Area Rectangle II](Java/963_Minimum.java)|Medium|Java|Leetcode|
 |882   |964  |[Least Operators to Express Number DFS + memo](Java/964_Least.java)|Hard|Java|Leetcode|
 |883   |674  |[Longest Continuous Increasing Subsequence](Java/674_Longest.java)|Easy|Java|Leetcode|
+|884   |68   |[Text Justification](Java/68_Text.java)|Hard|Java|Leetcode|
