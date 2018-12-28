@@ -34,7 +34,7 @@ class Solution {
         int end = sum;
         while (start <= end){
             int mid = start + (end - start) / 2;
-            if (valid(mid, nums, m)){
+            if (lessThanMid(mid, nums, m)){
                 end = mid - 1;
             }else{
                 start = mid + 1;
@@ -42,7 +42,7 @@ class Solution {
         }
         return start;
     }
-    private boolean valid(int target, int[] nums, int m){
+    private boolean lessThanMid(int target, int[] nums, int m){
         int count = 1;
         int sum = 0;
         for (int num : nums){
@@ -50,7 +50,7 @@ class Solution {
             if (sum > target){
                 count++;
                 sum = num;
-                if (count > m){
+                if (count > m){//must be greater than m, not equal
                     return false;
                 }
             }
