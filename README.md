@@ -904,3 +904,4 @@ Solution for Leetcode/Lintcode
 |883   |674  |[Longest Continuous Increasing Subsequence](Java/674_Longest.java)|Easy|Java|Leetcode|
 |884   |68   |[Text Justification](Java/68_Text.java)|Hard|Java|Leetcode|
 |885   |965  |[Univalued Binary Tree](Java/965_Univalued.java)|Easy|Java|Leetcode|
+|886   |966  |[Vowel Spellchecker Good](Java/966_Vowe.java)|Medium|Java|Leetcode|
