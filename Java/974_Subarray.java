@@ -23,7 +23,7 @@ class Solution {
         int count = 0;
         int sum = 0;
         for (int i : A){
-            sum = (sum + i % K + K) % K;
+            sum = (sum + i % K + K) % K;//convert negative remainder to positive by adding K. in Java: -1 % 2 = -1. In Python: -1 % 2 = 1
             if (map.containsKey(sum)){
                 count += map.get(sum);
             }
