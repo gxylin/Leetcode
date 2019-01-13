@@ -34,8 +34,8 @@ Note:
 class Solution {
     public List<Integer> powerfulIntegers(int x, int y, int bound) {
         Set<Integer> res = new HashSet<>();
-        for (int i = 1; i <= bound; i *= x){
-            for (int j = 1; j <= bound; j *= y){
+        for (int i = 1; i < bound; i *= x){
+            for (int j = 1; j < bound; j *= y){
                 if (i + j <= bound){
                     res.add(i + j);
                 }
