@@ -908,4 +908,4 @@ Solution for Leetcode/Lintcode
 |887   |974  |[Subarray Sums Divisible by K Very Good](Java/974_Subarray.java)|Medium|Java|Leetcode|
 |888   |973  |[K Closest Points to Origin](Java/973_Closest.java)|Easy|Java|Leetcode|
 |889   |976  |[Largest Perimeter Triangle](Java/976_Largest.java)|Easy|Java|Leetcode|
-|890   |975  |[Odd Even Jump TreeMap + Dynamic](Java/975_Odd.java)|Hard|Java|Leetcode|
+|890   |975  |[Odd Even Jump TreeMap + Dynamic Very Good](Java/975_Odd.java)|Hard|Java|Leetcode|
