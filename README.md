@@ -906,3 +906,4 @@ Solution for Leetcode/Lintcode
 |885   |965  |[Univalued Binary Tree](Java/965_Univalued.java)|Easy|Java|Leetcode|
 |886   |966  |[Vowel Spellchecker Good](Java/966_Vowe.java)|Medium|Java|Leetcode|
 |887   |974  |[Subarray Sums Divisible by K Very Good](Java/974_Subarray.java)|Medium|Java|Leetcode|
+|888   |973  |[K Closest Points to Origin](Java/973_Closest.java)|Easy|Java|Leetcode|
