@@ -23,7 +23,7 @@ A[i] is either 0 or 1.
 
 This is the same as 560. Subarray Sum Equals K
 
-Also check 976
+Also check 974
 
 class Solution {
     public int numSubarraysWithSum(int[] A, int S) {
