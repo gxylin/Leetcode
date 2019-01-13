@@ -909,3 +909,4 @@ Solution for Leetcode/Lintcode
 |888   |973  |[K Closest Points to Origin](Java/973_Closest.java)|Easy|Java|Leetcode|
 |889   |976  |[Largest Perimeter Triangle](Java/976_Largest.java)|Easy|Java|Leetcode|
 |890   |975  |[Odd Even Jump TreeMap + Dynamic Very Good](Java/975_Odd.java)|Hard|Java|Leetcode|
+|891   |970  |[Powerful Integers Good](Java/970_Powerful.java)|Easy|Java|Leetcode|
