@@ -18,7 +18,7 @@ public class Solution {
         if (n <= 0){
             return false;
         }
-        if (n != edges.length + 1){
+        if (n != edges.length + 1){//check if it has circle
             return false;
         }
         Map<Integer, Set<Integer>> graph = initializeGraph(n, edges);
