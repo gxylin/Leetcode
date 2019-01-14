@@ -22,43 +22,49 @@ Method 1:
  *     ListNode(int x) { val = x; }
  * }
  */
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
-        if (head == null || k <= 1){
+        if (head == null){
             return head;
         }
+        ListNode node = head;
         int len = 0;
-        ListNode cur = head;
-        while (cur != null){
+        while (node != null){
+            node = node.next;
             len++;
-            cur = cur.next;
         }
-        int n = len / k;
+        int n = len/k;
         if (n == 0){
             return head;
         }
-        
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
-        ListNode dummy2 = dummy;
-        for (int j = 0; j < n; j++){
+        ListNode dummyNode = dummy;
+        for (int i = 0; i < n; i++){
             ListNode prev = null;
-            cur = head;
-            for (int i = 0 ; i < k; i++){
-                ListNode temp = cur.next;
-                cur.next = prev;
-                prev = cur;
-                cur = temp;
+            node = head;
+            for (int j = 0; j < k; j++){
+                ListNode temp = node.next;
+                node.next = prev;
+                prev = node;
+                node = temp;
             }
-            dummy.next = prev;
-            dummy = head;
-            head.next = cur;
-            head = cur;
+            dummyNode.next = prev;
+            head.next = node;
+            dummyNode = head;
+            head = node;
         }
-        return dummy2.next;
+        return dummy.next;
     }
 }
-
 Method 2:
 /**
  * Definition for singly-linked list.
