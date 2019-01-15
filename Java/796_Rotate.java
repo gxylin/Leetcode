@@ -15,6 +15,7 @@ Note:
 A and B will have length at most 100.
 
 Method 1:
+Time complexity: O(AB)
 class Solution {
     public boolean rotateString(String A, String B) {
         return A.length() == B.length() && (A+A).contains(B);
@@ -22,6 +23,7 @@ class Solution {
 }
 
 Method 2:
+Time complexity: O(AB)
 class Solution {
     public boolean rotateString(String A, String B) {
         if (A.length() == 0 && B.length() == 0){
