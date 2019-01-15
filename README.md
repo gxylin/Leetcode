@@ -620,7 +620,7 @@ Solution for Leetcode/Lintcode
 |601   |268  |[Missing Number](Java/268_Missing.java)|Easy|Java|Leetcode|
 |602   |689  |[Maximum Sum of 3 Non-Overlapping Subarrays Dynamic Programming Very Good](Java/689_Maximum.java)|Hard|Java|Leetcode|
 |603   |721  |[Accounts Merge DFS Union Find](Java/721_Accounts.java)|Medium|Java|Leetcode|
-|604   |673  |[Number of Longest Increasing Subsequence Two Dynamic Programming](Java/673_Number.java)|Medium|Java|Leetcode|
+|604   |673  |[Number of Longest Increasing Subsequence Two Dynamic Programming Very Good](Java/673_Number.java)|Medium|Java|Leetcode|
 |605   |785  |[Is Graph Bipartite Color DFS](Java/785_Is.java)|Medium|Java|Leetcode|
 |606   |764  |[Largest Plus Sign Directional Dynamic Programming](Java/764_Largest.java)|Medium|Java|Leetcode|
 |607   |825  |[Friends Of Appropriate Ages](Java/825_Friends.java)|Medium|Java|Leetcode|
