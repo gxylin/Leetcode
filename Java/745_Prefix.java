@@ -68,6 +68,53 @@ class WordFilter {
     }
 }
 
+
+
+class WordFilter {
+    class TrieNode {
+        TrieNode[] children;
+        int weight;
+        public TrieNode (){
+            children = new TrieNode[27];
+            weight = 0;
+        }
+    }
+    TrieNode root;
+    public WordFilter(String[] words) {
+        root = new TrieNode();
+        for (int w = 0; w < words.length; w++){
+            String word = words[w] + "{" + words[w];
+            int len1 = words[w].length();
+            int len2 = word.length();
+            for (int i = 0; i <= len1; i++){
+                TrieNode node = root;
+                for (int j = i; j < len2; j++){
+                    char c = word.charAt(j);
+                    if (node.children[c - 'a'] == null){
+                        node.children[c - 'a'] = new TrieNode();
+                    }
+                    node = node.children[c - 'a'];
+                    node.weight = w;
+                }
+            }
+        }
+    }
+    
+    public int f(String prefix, String suffix) {
+        String query = suffix + "{" + prefix;
+        TrieNode node = root;
+        for (int i = 0; i < query.length(); i++){
+            char c = query.charAt(i);
+            if (node.children[c - 'a'] == null){
+                return -1;
+            }
+            node = node.children[c - 'a'];
+        }
+        return node.weight;
+    }
+}
+
+
 /**
  * Your WordFilter object will be instantiated and called as such:
  * WordFilter obj = new WordFilter(words);
