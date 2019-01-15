@@ -754,7 +754,7 @@ Solution for Leetcode/Lintcode
 |734   |726  |[Number of Atoms Recursion](Java/726_Number.java)|Hard|Java|Leetcode|
 |735   |748  |[Shortest Completing Word](Java/748_Shortest.java)|Medium|Java|Leetcode|
 |736   |888  |[Fair Candy Swap](Java/888_Fair.java)|Easy|Java|Leetcode|
-|737   |745  |[Prefix and Suffix Search](Java/745_Prefix.java)|Hard|Java|Leetcode|
+|737   |745  |[Prefix and Suffix Search Good](Java/745_Prefix.java)|Hard|Java|Leetcode|
 |738   |753  |[Cracking the Safe Backtracking](Java/753_Cracking.java)|Hard|Java|Leetcode|
 |739   |754  |[Reach a Number](Java/754_Reach.java)|Medium|Java|Leetcode|
 |740   |756  |[Pyramid Transition Matrix DFS + Backtracking](Java/756_Pyramid.java)|Medium|Java|Leetcode|
