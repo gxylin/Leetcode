@@ -78,6 +78,7 @@ class Solution {
 }
 
 Method 2: DP
+Time complexity: O(N^2)
 class Solution {
     public int orderOfLargestPlusSign(int N, int[][] mines) {
         int max = 0;
