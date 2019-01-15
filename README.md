@@ -203,7 +203,7 @@ Solution for Leetcode/Lintcode
 |194   |116  | [Jump Game.java](Java/116_JumpGame.java)|Medium|Java|Lintcode|
 |195   |117  | [Jump Game II.java](Java/117_JumpGameII.java)|Medium|Java|Lintcode|
 |196   |604  | [Window Sum.java](Java/604_WindowSum.java)|Easy|Java|Lintcode|
-|197   |80   | [Remove Duplicates from Sorted Array II.java](Java/80_RemoveDuplicatesII.java)|Medium|Java|Leetcode|
+|197   |80   | [Remove Duplicates from Sorted Array II Very Good](Java/80_RemoveDuplicatesII.java)|Medium|Java|Leetcode|
 |198   |88   | [Merge Sorted Array.java](Java/88_MergeSortedArray.java)|Easy|Java|Leetcode|
 |199   |287  | [Find Duplicate Number Binary Search Good](Java/287_FindDuplicateNumber.java)|Medium|Java|Leetcode|
 |200   |111  | [Minimum Depth of Binary Tree.java](Java/111_MinimumDepthofBinaryTree.java)|Easy|Java|Leetcode|
