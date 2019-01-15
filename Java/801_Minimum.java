@@ -83,13 +83,13 @@ class Solution {
         swap[0] = 1;
         norm[0] = 0;
         for (int i = 1; i < n; i++){
-            if (A[i-1] >= B[i] || B[i-1] >= A[i]){
+            if (A[i-1] >= B[i] || B[i-1] >= A[i]){ //the same operation for previous and current
                 norm[i] = norm[i-1];
                 swap[i] = swap[i-1] + 1;
-            }else if (A[i-1] >= A[i] || B[i-1] >= B[i]){
+            }else if (A[i-1] >= A[i] || B[i-1] >= B[i]){ //the opposite operation for prevoius and current
                 norm[i] = swap[i-1];
                 swap[i] = norm[i-1] + 1;
-            }else{
+            }else{ //either swap or fix is okay
                 int min = Math.min(norm[i-1], swap[i-1]);
                 norm[i] = min;
                 swap[i] = min + 1;
@@ -111,9 +111,9 @@ class Solution {
             if (A[i-1] >= B[i] || B[i-1] >= A[i]){
                 swap++;
             }else if (A[i-1] >= A[i] || B[i-1] >= B[i]){
-                int temp = norm;
-                norm = swap[i-1];
-                swap = temp + 1;
+                int temp = swap;
+                swap = norm + 1;
+                norm = temp;
             }else{
                 int min = Math.min(norm, swap);
                 norm = min;
