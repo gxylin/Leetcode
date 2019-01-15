@@ -22,6 +22,26 @@ class Solution {
     }
 }
 
+class Solution {
+    public boolean rotateString(String A, String B) {
+        if (A.length() == 0 && B.length() == 0){
+            return true;
+        }
+        if (A.length() != B.length()){
+            return false;
+        }
+        String newA = A + A;
+        int len = B.length();
+        for (int i = 0; i < newA.length() - len; i++){
+            String sub = newA.substring(i, i+len);
+            if (sub.equals(B)){
+                return true;
+            }
+        }
+        return false;
+    }
+}
+
 Method 2:
 Time complexity: O(AB)
 class Solution {
