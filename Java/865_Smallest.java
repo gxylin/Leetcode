@@ -30,15 +30,9 @@ The values of each node are unique.
 
 
 Method 1: preOrder + postOrder
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Two pass:
+Time complexity: O(N)
+Space complexity: O(N)
 class Solution {
     public TreeNode subtreeWithAllDeepest(TreeNode root) {
         Map<TreeNode, Integer> map = new HashMap<>();
@@ -78,3 +72,69 @@ class Solution {
         return null;
     }
 }
+
+O(N)
+class Solution {
+    public TreeNode subtreeWithAllDeepest(TreeNode root) {
+        Map<TreeNode, Integer> map = new HashMap<>();
+        map.put(null, 0);
+        dfs(root, null, map);
+        int max = 0;
+        for (int d : map.values()){
+            max = Math.max(d, max);
+        }
+        return lowestCommonDepth(root, max, map);
+    }
+    private void dfs(TreeNode root, TreeNode parent, Map<TreeNode, Integer> map){
+        if (root == null){
+            return;
+        }
+        map.put(root, map.get(parent) + 1);
+        dfs(root.left, root, map);
+        dfs(root.right, root, map);
+    }
+    private TreeNode lowestCommonDepth(TreeNode root, int max, Map<TreeNode, Integer> map){
+        if (root == null || map.get(root) == max){
+            return root;
+        }
+        TreeNode left = lowestCommonDepth(root.left, max, map);
+        TreeNode right = lowestCommonDepth(root.right, max, map);
+        if (left != null && right != null){
+            return root;
+        }
+        if (left != null && right == null){
+            return left;
+        }
+        if (left == null && right != null){
+            return right;
+        }
+        return null;
+    }
+}
+
+
+Method 2: 
+Time complexity: O(N^2)
+ class Solution {
+    public TreeNode subtreeWithAllDeepest(TreeNode root) {
+        if (root == null){
+            return root;
+        }
+        int leftDepth = getDepth(root.left);
+        int rightDepth = getDepth(root.right);
+        if (leftDepth == rightDepth){
+            return root;
+        }
+        if (leftDepth > rightDepth){
+            return subtreeWithAllDeepest(root.left);
+        }
+        return subtreeWithAllDeepest(root.right);
+    }
+    private int getDepth(TreeNode root){
+        if (root == null){
+            return 0;
+        }
+        return 1 + Math.max(getDepth(root.left), getDepth(root.right));
+    }
+}
+
