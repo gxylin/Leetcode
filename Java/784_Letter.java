@@ -61,6 +61,28 @@ class Solution {
     }
 }
 
+Best solution:
+class Solution {
+    public List<String> letterCasePermutation(String S) {
+        List<String> res = new ArrayList<>();
+        dfs(S, res, "", 0);
+        return res;
+    }
+    private void dfs(String S, List<String> res, String item, int start){
+        if (start == S.length()){
+            res.add(item);
+            return;
+        }
+        char c = S.charAt(start);
+        if (Character.isLetter(c)){
+            dfs(S, res, item + Character.toUpperCase(c), start + 1);
+            dfs(S, res, item + Character.toLowerCase(c), start + 1);
+        }else{
+            dfs(S, res, item + c, start + 1);
+        }
+    }
+}
+
 Method 2: Backtracking
 class Solution {
     public List<String> letterCasePermutation(String S) {
