@@ -672,7 +672,7 @@ Solution for Leetcode/Lintcode
 |653   |863  |[All Nodes Distance K in Binary Tree Graph](Java/863_All.java)|Medium|Java|Leetcode|
 |654   |823  |[Binary Trees With Factors Dynamic Programming](Java/823_Binary.java)|Medium|Java|Leetcode|
 |655   |868  |[Binary Gap](Java/868_Binary.java)|Easy|Java|Leetcode|
-|656   |865  |[Smallest Subtree with all the Deepest Nodes Label TreeNode Depth](Java/865_Smallest.java)|Medium|Java|Leetcode|
+|656   |865  |[Smallest Subtree with all the Deepest Nodes Label TreeNode Depth Very Good](Java/865_Smallest.java)|Medium|Java|Leetcode|
 |657   |870  |[Advantage Shuffle Greedy](Java/870_Advantage.java)|Medium|Java|Leetcode|
 |658   |869  |[Reordered Power of 2](Java/869_Reordered.java)|Medium|Java|Leetcode|
 |659   |401  |[Binary Watch Permutation](Java/401_Binary.java)|Easy|Java|Leetcode|
