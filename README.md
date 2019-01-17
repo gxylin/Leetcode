@@ -288,7 +288,7 @@ Solution for Leetcode/Lintcode
 |279   |259  |[3Sum Smaller](Java/259_3SumSmaller.java)|Medium|Java|Leetcode|
 |280   |733  |[Flood Fill](Java/733_FloodFill.java)|Easy|Java|Leetcode|
 |281   |547  |[Union Find Friend Circles](Java/547_FriendCircles.java)|Medium|Java|Leetcode|
-|282   |140  |[Word Break II Recursion + Memo](Java/140_WordBreakII.java)|Hard|Java|Leetcode|
+|282   |140  |[Word Break II Recursion + Memo Very Good](Java/140_WordBreakII.java)|Hard|Java|Leetcode|
 |283   |805  |[Maxium Association Set](Java/805_MaximumAssociationSet.java)|Medium|Java|Lintcode|
 |284   |79   |[Word Search backtracking](Java/79_WordSearch.java)|Medium|Java|Leetcode|
 |285   |212  |[Word Search II backtracking Trie](Java/212_WordSearchII.java)|Hard|Java|Leetcode|
