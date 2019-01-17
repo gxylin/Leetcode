@@ -53,7 +53,7 @@ Solution for Leetcode/Lintcode
 |45    |38   | [Search a 2D Matrix II.java](Java/38_Search2DMatrixII.java)|Medium|Java|Lintcode|
 |46    |161  | [Rotate Image.java](Java/161_RotateImage.java)|Medium|Java|Lintcode|
 |47    |654  | [Sparse Matrix Multiplication](Java/654_SparseMatrixMultiplication.java)|Medium|Java|Lintcode|
-|48    |655  | [Big Integer Addition.java](Java/655_BigIntegerAddition.java)|Easy|Java|Lintcode|
+|48    |655  | [Big Integer Addition Very Good](Java/655_BigIntegerAddition.java)|Easy|Java|Lintcode|
 |49    |656  | [Big Integer Multiplication.java](Java/656_BigIntegerMultiplication.java)|Medium|Java|Lintcode|
 |50    |408  | [Add Binary.java](Java/408_AddBinary.java)|Medium|Java|Lintcode|
 |51    |167  | [Add Two Numbers.java](Java/167_AddTwoNumbers.java)|Easy|Java|Lintcode|
