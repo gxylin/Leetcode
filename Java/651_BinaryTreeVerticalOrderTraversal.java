@@ -97,3 +97,6 @@ public class Solution {
         return result;
     }
 }
+
+Method 2: label node
+similar as https://github.com/optimisea/Leetcode/blob/master/Java/865_Smallest.java
