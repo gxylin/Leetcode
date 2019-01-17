@@ -57,3 +57,6 @@ public class Solution {
         return depth;
     }
 }
+
+Method 2: label node
+Similar to https://github.com/optimisea/Leetcode/blob/master/Java/865_Smallest.java
