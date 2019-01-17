@@ -49,7 +49,7 @@ public class Solution {
 }
 
 
-Method 2: length code
+Method 2: length code (best solution)
 public class Solution {
     /**
      * @param strs a list of strings
