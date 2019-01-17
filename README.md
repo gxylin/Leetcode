@@ -23,8 +23,8 @@ Solution for Leetcode/Lintcode
 |18    |644  | [Mirror Numbers.java](Java/644_MirrorNumbers.java)|Easy|Java|Lintcode|
 |19    |72   | [Edit Distance.java](Java/72_EditDistance.java)|Medium|Java|Leetcode|
 |20    |641  | [Missing Interval.java](Java/641_MissingInterval.java)|Medium|Java|Lintcode|
-|21    |156  | [Merge Intervals.java](Java/156_MergeIntervals.java)|Medium|Java|Lintcode|
-|22    |30   | [Insert Interval.java](Java/30_InsertInterval.java)|Hard|Java|Lintcode|
+|21    |156  | [Merge Intervals Very Good](Java/156_MergeIntervals.java)|Medium|Java|Lintcode|
+|22    |30   | [Insert Interval Very Good](Java/30_InsertInterval.java)|Hard|Java|Lintcode|
 |23    |646  | [First Position Unique Character.java](Java/646_FirstPositionUniqueCharacter.java)|Easy|Java|Lintcode|
 |24    |647  | [Substring Anagrams.java](Java/647_SubstringAnagrams.java)|Medium|Java|lintcode|
 |25    |648  | [Word Abbreviation Set.java](Java/648_WordAbbreviationSet.java)|Medium|Java|Lintcode|
