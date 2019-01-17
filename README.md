@@ -15,7 +15,7 @@ Solution for Leetcode/Lintcode
 |10    |642| [Sliding Window Average from Data Stream.java](Java/642_SlidingWindowAveragefromDataStream.java)|Easy|Java|Lintcode|
 |11    |640  | [Edit Distance II.java](Java/640_EditDistanceII.java)|Medium|Java|Lintcode|
 |12    |660  | [Read Characters From File.java](Java/660_ReadCharactersFromFile.java)|Hard|Java|Lintcode|
-|13    |659  | [Strings Serialization.java](Java/659_StringsSerialization.java)|Medium|Java|Lintcode|
+|13    |659  | [Strings Serialization Very Good](Java/659_StringsSerialization.java)|Medium|Java|Lintcode|
 |14    |643  | [System Longest File Path.java](Java/643_SystemLongestFilePath.java)|Medium|Java|Lintcode|
 |15    |419  | [Roman to Integer.java](Java/419_RomantoInteger.java)|Medium|Java|Lintcode|
 |16    |418  | [Integer to Roman.java](Java/418_IntegertoRoman.java)|Medium|Java|Lintcode|
