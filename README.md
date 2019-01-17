@@ -57,9 +57,9 @@ Solution for Leetcode/Lintcode
 |49    |656  | [Big Integer Multiplication Very Good](Java/656_BigIntegerMultiplication.java)|Medium|Java|Lintcode|
 |50    |408  | [Add Binary.java](Java/408_AddBinary.java)|Medium|Java|Lintcode|
 |51    |167  | [Add Two Numbers.java](Java/167_AddTwoNumbers.java)|Easy|Java|Lintcode|
-|52    |428  | [Pow.java](Java/428_Pow.java)|Medium|Java|Lintcode|
-|53    |433  | [Number of Islands.java](Java/433_NumberofIslands.java)|Easy|Java|Lintcode|
-|54    |107  | [Word Break.java](Java/107_WordBreak.java)|Medium|Java|Lintcode|
+|52    |428  | [Pow Good](Java/428_Pow.java)|Medium|Java|Lintcode|
+|53    |433  | [Number of Islands Very Good](Java/433_NumberofIslands.java)|Easy|Java|Lintcode|
+|54    |107  | [Word Break Good](Java/107_WordBreak.java)|Medium|Java|Lintcode|
 |55    |3    | [Longest Substring Without Repeating Chars Sliding Window](Java/3_Longest.java)|Medium|Java|Leetcode|
 |56    |4    | [Median of Two Sorted Arrays](Java/4_MedianofTwoSortedArrays.java)|Hard|Java|Leetcode|
 |57    |5    | [Longest Palindromic Substring Dynamic Programming](Java/5_LongestPalindromicSubstring.java)|Medium|Java|Leetcode|
