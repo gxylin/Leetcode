@@ -23,7 +23,7 @@ more examples at: http://literacy.kent.edu/Minigrants/Cinci/romanchart.htm
 • 如何数位分离? %10 /10 
 • (扩展)如何将一个数转成k进制? % k / k
 
-Method 1:
+Method 1: best solution
 public class Solution {
     /*
      * @param n: The integer
