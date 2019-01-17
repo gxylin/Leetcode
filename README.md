@@ -17,8 +17,8 @@ Solution for Leetcode/Lintcode
 |12    |660  | [Read Characters From File.java](Java/660_ReadCharactersFromFile.java)|Hard|Java|Lintcode|
 |13    |659  | [Strings Serialization Very Good](Java/659_StringsSerialization.java)|Medium|Java|Lintcode|
 |14    |643  | [System Longest File Path.java](Java/643_SystemLongestFilePath.java)|Medium|Java|Lintcode|
-|15    |419  | [Roman to Integer.java](Java/419_RomantoInteger.java)|Medium|Java|Lintcode|
-|16    |418  | [Integer to Roman.java](Java/418_IntegertoRoman.java)|Medium|Java|Lintcode|
+|15    |419  | [Roman to Integer](Java/419_RomantoInteger.java)|Medium|Java|Lintcode|
+|16    |418  | [Integer to Roman Good](Java/418_IntegertoRoman.java)|Medium|Java|Lintcode|
 |17    |645  | [Identify Celebrity.java](Java/645_IdentifyCelebrity.java)|Medium|Java|Lintcode|
 |18    |644  | [Mirror Numbers.java](Java/644_MirrorNumbers.java)|Easy|Java|Lintcode|
 |19    |72   | [Edit Distance.java](Java/72_EditDistance.java)|Medium|Java|Leetcode|
