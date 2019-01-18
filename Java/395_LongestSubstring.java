@@ -95,7 +95,7 @@ class Solution {
                 map.put(cStart, map.get(cStart) - 1);
                 start++;
             }
-            if (uniqueNum == noLessThanKNum){
+            if (uniqueNum == noLessThanKNum && uniqueNum == numTargetDistinct){
                 max = Math.max(max, end - start);
             }
         }
