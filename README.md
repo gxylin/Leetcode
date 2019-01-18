@@ -66,7 +66,7 @@ Solution for Leetcode/Lintcode
 |58    |6    | [Zig Zag Conversion.java](Java/6_ZigZagConversion.java)|Medium|Java|Leetcode|
 |59    |7    | [Reverse Integer](Java/7_ReverseInteger.java)|Easy|Java|Leetcode|
 |60    |688  | [Knight Probability in Chessboard.java](Java/688_KnightProbabilityinChessboard.java)|Medium|Java|Leetcode|
-|61    |697  | [Degree of Array.java](Java/697_DegreeofArray.java)|Easy|Java|Leetcode|
+|61    |697  | [Degree of Array HashMap Good](Java/697_DegreeofArray.java)|Easy|Java|Leetcode|
 |62    |39   | [Combination Sum.java](Java/39_CombinationSum.java)|Medium|Java|Leetcode|
 |63    |40   | [Combination Sum II.java](Java/40_CombinationSumII.java)|Medium|Java|Leetcode|
 |64    |46   | [Permutations.java](Java/46_Permutations.java)|Medium|Java|Leetcode|
