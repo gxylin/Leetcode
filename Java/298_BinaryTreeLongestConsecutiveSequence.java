@@ -53,7 +53,7 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: Best solution
 Refer to https://github.com/optimisea/Leetcode/blob/master/Java/549_BinaryTree.java
 Refer to https://github.com/optimisea/Leetcode/blob/master/Java/687_Longest.java
 
