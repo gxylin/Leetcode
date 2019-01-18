@@ -94,6 +94,7 @@ class Solution {
     }
 }
 
+Best solution
 https://github.com/optimisea/Leetcode/blob/master/Java/687_Longest.java
 
 class Solution {
