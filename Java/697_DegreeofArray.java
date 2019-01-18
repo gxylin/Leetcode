@@ -42,3 +42,24 @@ class Solution {
         return ans;
     }
 }
+
+Method 2: One pass, O(N), best solution
+class Solution {
+    public int findShortestSubArray(int[] nums) {
+        int res = 0;
+        int degree = 0;
+        Map<Integer, Integer> map = new HashMap<>();//key: num, val: current degree
+        Map<Integer, Integer> first = new HashMap<>();//key: num val: first occurance
+        for (int i = 0; i < nums.length; i++){
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+            first.putIfAbsent(nums[i], i);
+            if (degree < map.get(nums[i])){
+                degree = map.get(nums[i]);
+                res = i - first.get(nums[i]) + 1;
+            }else if (degree == map.get(nums[i])){
+                res = Math.min(res, i - first.get(nums[i]) + 1);
+            }
+        }
+        return res;
+    }
+}
