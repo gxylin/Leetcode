@@ -63,3 +63,35 @@ class Solution {
         return nx >= 0 && nx < N && ny >=0 && ny < N;
     }
 }
+
+
+class Solution {
+    public double knightProbability(int N, int K, int r, int c) {
+        double[][] dpPrev = new double[N][N];
+        dpPrev[r][c] = 1.0;
+        int[] dx = {2, 1, -1, -2, -2, -1, 1, 2};
+        int[] dy = {1, 2, 2, 1, -1, -2, -2, -1};
+        for (int k = 0; k < K; k++){
+            double[][] dpCur = new double[N][N];
+            for (int i = 0; i < N; i++){
+                for (int j = 0; j < N; j++){
+                    for (int l = 0; l < dx.length; l++){
+                        int nx = i - dx[l];
+                        int ny = j - dy[l];
+                        if (nx >= 0 && nx < N && ny >= 0 && ny < N){
+                            dpCur[i][j] += dpPrev[nx][ny];
+                        }
+                    }
+                }
+            }
+            dpPrev = dpCur;
+        }
+        double sum = 0.0;
+        for (int i = 0; i < N; i++){
+            for (int j = 0; j < N; j++){
+                sum += dpPrev[i][j];
+            }
+        }
+        return sum / Math.pow(8, K);
+    }
+}
