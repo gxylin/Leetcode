@@ -69,6 +69,7 @@ class Solution {
     }
 }
 
+Best solution:
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         int res = 0;
