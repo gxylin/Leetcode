@@ -55,27 +55,26 @@ class Solution {
 
 Method 2:
 Refer to https://github.com/optimisea/Leetcode/blob/master/Java/549_BinaryTree.java
-class Solution{
-      public int longestConsecutive(TreeNode root){
-           return postorder(root);
-      }
-      private int postorder(TreeNode root){
-           if (root == null){
-              return 0;
-           }
-           int left = postorder(root.left);
-           int right = postorder(root.right);
-           int res = 1;
-           if (root.left ! = null){
-               if (root.val == root.left.val - 1){
-                   res = Math.max(res, left + 1);
-               }
-           }
-           if (root.right != null){
-               if (root.val == root.right.val - 1){
-                  res = Math.max(res, right + 1);
-               }
-           }
-           return res;
-      }
+Refer to https://github.com/optimisea/Leetcode/blob/master/Java/687_Longest.java
+
+int max = 0;
+public int longestConsecutive(TreeNode root){
+    longestIncludeRoot(root);
+    return max;
+}
+private int longestIncludeRoot(TreeNode root){
+  if (root == null){
+      return 0;
+  }
+  int left = longestIncludeRoot(root.left);
+  int right = longestIncludeRoot(root.right);
+  int res = 1;
+  if (root.left != null && (root.left.val > root.val){
+        res = left + 1;
+  }
+  if (root.right != null && root.right.val > root.val){
+        res = Math.max(res, right + 1);
+  }
+  max = Math.max(max, res);
+  return Math.max(left, right) + 1;
 }
