@@ -42,3 +42,36 @@ class Solution {
         return new ResultType(bal, Math.max(left.depth, right.depth) + 1);
     }
 }
+
+
+Method 2:
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    boolean res = true;
+    public boolean isBalanced(TreeNode root) {
+        if (root == null){
+            return true;
+        }
+        depth(root);
+        return res;
+    }
+    private int depth(TreeNode root){
+        if (root == null){
+            return 0;
+        }
+        int left = depth(root.left);
+        int right =depth(root.right);
+        if (Math.abs(left - right) > 1){
+            res = false;;
+        }
+        return Math.max(left, right) + 1;
+    }
+}
