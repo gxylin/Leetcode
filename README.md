@@ -99,7 +99,7 @@ Solution for Leetcode/Lintcode
 |91    |23   | [Merge k Sorted Lists Merge Sort Very Good](Java/23_MergekSortedLists.java)|Hard|Java|Leetcode|
 |92    |53   | [Maximum Subarray Very Good Greedy DP](Java/53_MaximumSubarray.java)|Easy|Java|Leetcode|
 |93    |138  | [Subarray Sum.java](Java/138_SubarraySum.java)|Easy|Java|Lintcode|
-|94    |139  | [Subarray Sum Closest.java](Java/139_SubarraySumClosest.java)|Medium|Java|Lintcode|
+|94    |139  | [Subarray Sum Closest Very Good](Java/139_SubarraySumClosest.java)|Medium|Java|Lintcode|
 |95    |560  | [Subarray Sum Equals K Prefix Sum Very Good](Java/560_SubarraySumEqualsK.java)|Medium|Java|Leetcode|
 |96    |283  | [Move Zeroes.java](Java/283_MoveZeroes.java)|Easy|Java|Leetcode|
 |97    |27   | [Remove Element.java](Java/27_RemoveElement.java)|Easy|Java|Leetcode|
