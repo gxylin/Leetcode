@@ -6,6 +6,7 @@ Have you met this question in a real interview?
 Example
 Give [-3, 1, 3, -3, 4], return [1,4].
 
+    https://www.lintcode.com/problem/continuous-subarray-sum/description
 
 Similar to https://github.com/optimisea/Leetcode/blob/master/Java/53_MaximumSubarray.java
 
