@@ -155,3 +155,29 @@ class Solution {
         return max;
     }
 }
+https://github.com/optimisea/Leetcode/blob/master/Java/402_Continuous.java
+public List<Integer> continuousSubarraySum(int[] A) {
+        List<Integer> result = new ArrayList<>();
+        result.add(0, 0);
+        result.add(1, 0);
+        int local = 0;
+        int global = Integer.MIN_VALUE;
+        int left = 0;
+        int right = 0;
+        for (int i = 0; i < A.length; i++){
+            if (local < 0){
+                local = A[i];
+                left = i;
+                right = i;
+            }else{
+                local += A[i];
+                right = i;
+            }
+            if (local >= global){
+                global = local;
+                result.set(0, left);
+                result.set(1, right);
+            }
+        }
+        return result;
+    }
