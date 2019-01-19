@@ -15,7 +15,7 @@ A rather straight forward solution is a two-pass algorithm using counting sort. 
 Can you do it without using extra memory?
 
 Rainbow sort 
- 
+O(Nlogk)
 public class Solution {
     /*
      * @param colors: A list of integer
