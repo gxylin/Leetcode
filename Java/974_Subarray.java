@@ -16,6 +16,8 @@ Note:
 -10000 <= A[i] <= 10000
 2 <= K <= 10000
 
+ 
+Check 523. Continuous Subarray Sum
 class Solution {
     public int subarraysDivByK(int[] A, int K) {
         Map<Integer, Integer> map = new HashMap<>();
