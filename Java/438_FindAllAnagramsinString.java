@@ -53,7 +53,7 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: Best solution
 Time complexity: O(n) 
 Slide window template
 https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007?page=1
