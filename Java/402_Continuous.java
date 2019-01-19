@@ -73,3 +73,33 @@ public class Solution {
         return res;
     }
 }
+
+public class Solution {
+    /*
+     * @param A: An integer array
+     * @return: A list of integers includes the index of the first number and the index of the last number
+     */
+    public List<Integer> continuousSubarraySum(int[] A) {
+        List<Integer> res = new ArrayList<>();
+        res.add(0);
+        res.add(1);
+        int sum = 0;
+        int max = Integer.MIN_VALUE;
+        int start = 0;
+        int end = 0;
+        for (int i = 0; i < A.length; i++){
+            sum += A[i];
+            if (sum > max){
+                max = sum;
+                end = i;
+                res.set(0, start);
+                res.set(1, end);
+            }
+            if (sum < 0){
+                sum = 0;
+                start = i + 1;
+            }
+        }
+        return res;
+    }
+}
