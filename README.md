@@ -95,8 +95,8 @@ Solution for Leetcode/Lintcode
 |87    |450  | [Reverse Nodes in k-Group.java](Java/450_ReverseNodesk-Group.java)|Hard|Java|Lintcode|
 |88    |105  | [Copy List with RandomPointer.java](Java/105_CopyListwithRandomPointer.java)|Medium|Java|Lintcode|
 |89    |21   | [Merge Two Sorted Lists.java](Java/21_MergeTwoSortedLists.java)|Easy|Java|Leetcode|
-|90    |148  | [Sort List.java](Java/148_SortList.java)|Medium|Java|Leetcode|
-|91    |23   | [Merge k Sorted Lists.java](Java/23_MergekSortedLists.java)|Hard|Java|Leetcode|
+|90    |148  | [Sort List Merge Sort Good](Java/148_SortList.java)|Medium|Java|Leetcode|
+|91    |23   | [Merge k Sorted Lists Merge Sort Very Good](Java/23_MergekSortedLists.java)|Hard|Java|Leetcode|
 |92    |53   | [Maximum Subarray Very Good Greedy DP](Java/53_MaximumSubarray.java)|Easy|Java|Leetcode|
 |93    |138  | [Subarray Sum.java](Java/138_SubarraySum.java)|Easy|Java|Lintcode|
 |94    |139  | [Subarray Sum Closest.java](Java/139_SubarraySumClosest.java)|Medium|Java|Lintcode|
