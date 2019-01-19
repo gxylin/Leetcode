@@ -68,13 +68,14 @@ private int longestIncludeRoot(TreeNode root){
   }
   int left = longestIncludeRoot(root.left);
   int right = longestIncludeRoot(root.right);
-  int res = 1;
+  int leftIncludeRoot = 1;
+  int rightIncludeRoot = 1;
   if (root.left != null && (root.left.val > root.val){
-        res = left + 1;
+        leftIncludeRoot = left + 1;
   }
   if (root.right != null && root.right.val > root.val){
-        res = Math.max(res, right + 1);
+        rightIncludeRoot = right + 1);
   }
-  max = Math.max(max, res);
-  return Math.max(left, right) + 1;
+  max = Math.max(max, Math.max(leftIncludeRoot, rightIncludeRoot));
+  return Math.max(leftIncludeRoot, rightIncludeRoot);
 }
