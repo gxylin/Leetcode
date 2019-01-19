@@ -8,6 +8,7 @@ Have you met this question in a real interview? Yes
 Example
 Given [-3, 1, 2, -3, 4], return [0, 2] or [1, 3].
 
+Method 1: best solution
 public class Solution {
     /*
      * @param nums: A list of integers
