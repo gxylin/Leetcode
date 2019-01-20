@@ -11,7 +11,8 @@ Given k = 4 and a matrix:
 ]
 return 5
 
-Time complexity: O(2*k*logk)
+Method 1: BSF
+Time complexity: O(k*logk)
 Space complexity: O(m*n)
     
 public class Solution {
@@ -60,7 +61,7 @@ public class Solution {
 }
 
 
-Method 2:
+Method 2: Best solution
 https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/discuss/85177/Java-1ms-nlog(max-min)-solution
 Time complexity: O(nlog(max-min))
 Space complexity: O(n or m)
@@ -96,6 +97,39 @@ class Solution {
             }
         }
         return res;
+    }
+}
+
+class Solution {
+    public int kthSmallest(int[][] matrix, int k) {
+        int n = matrix.length;
+        int start = matrix[0][0];
+        int end = matrix[n-1][n-1];
+        while (start <= end){
+            int mid = start + (end - start) / 2;
+            int num = getLessEqual(mid, matrix);
+            if (num <= k - 1){
+                start = mid + 1;
+            }else{
+                end = mid - 1;
+            }
+        }
+        return start;
+    }
+    private int getLessEqual(int target, int[][] matrix){
+        int n = matrix.length;
+        int r = n - 1;
+        int c = 0;
+        int count = 0;
+        while (r >= 0 && c < n){
+            if (matrix[r][c] <= target){
+                count += r + 1;
+                c++;
+            }else{
+                r--;
+            }
+        }
+        return count;
     }
 }
 
