@@ -125,7 +125,7 @@ Solution for Leetcode/Lintcode
 |116   |62   | [Unique Paths.java](Java/62_UniquePaths.java)|Medium|Java|Leetcode|
 |117   |63   | [Unique Paths II.java](Java/63_UniquePathsII.java)|Medium|Java|Leetcode|
 |118|300| [Longest Increasing Subsequence Binary Search DP Very Good](Java/300_LongestIncreasingSubsequence.java)|Medium|Java|Leetcode|
-|119   |368  | [Largest Divisible Subset.java](Java/368_LargestDivisibleSubset.java)|Medium|Java|Leetcode|
+|119   |368  | [Largest Divisible Subset LIS Very Good](Java/368_LargestDivisibleSubset.java)|Medium|Java|Leetcode|
 |120   |91   | [Decode Ways.java](Java/91_DecodeWays.java)|Medium|Java|Leetcode|
 |121   |179  | [Largest Number Compartor](Java/179_LargestNumber.java)|Medium|Java|Leetcode|
 |122   |713  | [Subarray Product Less Than K.java](Java/713_SubarrayProductLessThanK.java)|Medium|Java|Leetcode|
