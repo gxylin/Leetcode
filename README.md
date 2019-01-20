@@ -117,8 +117,8 @@ Solution for Leetcode/Lintcode
 |XXX    |438  | [template for sliding window](https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007)|
 |109   |263  | [Ugly Number](Java/263_UglyNumber.java)|Easy|Java|leetcode|
 |110   |264  | [Ugly Number II Dynamic Programming Merge Sort Idea](Java/264_UglyNumberII.java)|Medum|Java|Leetcode|
-|111   |692  | [Top K Frequent Words.java](Java/692_TopKFrequentWords.java)|Medium|Java|Leetcode|
-|112   |613  | [High Five.java](Java/613_HighFive.java)|Medium|Java|Lintcode|
+|111   |692  | [Top K Frequent Words Very Good](Java/692_TopKFrequentWords.java)|Medium|Java|Leetcode|
+|112   |613  | [High Five Good](Java/613_HighFive.java)|Medium|Java|Lintcode|
 |113   |401 |[Kth Smallest Number in Sorted Matrix.java](Java/401_KthSmallestNumberinSortedMatrix.java)|Medium|Java|Lintcode
 |114   |109  | [Triangle.java](Java/109_Triangle.java)|Easy|Java|Lintcode|
 |115   |64   | [Minimum Path Sum.java](Java/64_MinimumPathSum.java)|Medium|Java|Leetcode|
