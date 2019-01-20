@@ -64,7 +64,7 @@ public class Solution {
 Method 2: Best solution
 https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/discuss/85177/Java-1ms-nlog(max-min)-solution
 Time complexity: O(nlog(max-min))
-Space complexity: O(n or m)
+Space complexity: O(1)
 class Solution {
     public int kthSmallest(int[][] matrix, int k) {
         int m = matrix.length;
