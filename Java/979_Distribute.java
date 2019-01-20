@@ -21,3 +21,21 @@ class Solution {
         return left + right + root.val - 1;
     }
 }
+
+
+class Solution {
+    public int distributeCoins(TreeNode root) {
+        int[] d = new int[1];
+        coinGivenToParent(root,d );
+        return d[0];
+    }
+    private int coinGivenToParent(TreeNode root, int[] d){
+        if (root == null){
+            return 0;
+        }
+        int left = coinGivenToParent(root.left, d);
+        int right = coinGivenToParent(root.right, d);
+        d[0] += Math.abs(left) + Math.abs(right);
+        return left + right + root.val - 1;
+    }
+}
