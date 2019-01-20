@@ -913,3 +913,4 @@ Solution for Leetcode/Lintcode
 |892   |969  |[Pancake Sorting](Java/969_Pancake.java)|Medium|Java|Leetcode|
 |893   |971  |[Flip Binary Tree To Match Preorder Traversal Very Good](Java/971_Flip.java)|Medium|Java|Leetcode|
 |894   |968  |[Binary Tree Cameras Greedy](Java/968_Binary.java)|Hard|Java|Leetcode|
+|895   |977  |[Squares of a Sorted Array Two Pointers](Java/977_Squares.java)|Easy|Java|Leetcode|
