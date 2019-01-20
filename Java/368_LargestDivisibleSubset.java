@@ -53,3 +53,42 @@ class Solution {
         return result;
     }
 }
+
+class Solution {
+    public List<Integer> largestDivisibleSubset(int[] nums) {
+        List<Integer> res = new ArrayList<>();
+        if (nums == null || nums.length == 0){
+            return res;
+        }
+        int n = nums.length;
+        Arrays.sort(nums);
+        int[] count = new int[n];
+        int[] prev = new int[n];
+        for (int i = 0; i < n; i++){
+            count[i] = 1;
+            prev [i] = i;
+        }
+        int max = 0;
+        int index = 0;
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < i; j++){
+                if (nums[i] % nums[j] == 0){
+                    if (count[i] < count[j] + 1){
+                        count[i] = count[j] + 1;
+                        prev[i] = j;
+                    }
+                }
+                if (max < count[i]){
+                    max = count[i];
+                    index = i;
+                }
+            }
+        }
+        while (prev[index] != index){
+            res.add(nums[index]);
+            index = prev[index];
+        }
+        res.add(nums[index]);
+        return res;
+    }
+}
