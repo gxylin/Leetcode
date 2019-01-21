@@ -128,9 +128,9 @@ Solution for Leetcode/Lintcode
 |119   |368  | [Largest Divisible Subset LIS Very Good](Java/368_LargestDivisibleSubset.java)|Medium|Java|Leetcode|
 |120   |91   | [Decode Ways.java](Java/91_DecodeWays.java)|Medium|Java|Leetcode|
 |121   |179  | [Largest Number Compartor](Java/179_LargestNumber.java)|Medium|Java|Leetcode|
-|122 |713| [Subarray Product Less Than K Sliding window two pointers Good](Java/713_SubarrayProductLessThanK.java)|Medium|Java|Leetcode|
+|122   |713| [Subarray Product Less Than K Sliding window Good](Java/713_SubarrayProductLessThanK.java)|Medium|Java|Leetcode|
 |123   |152  | [Maximum Product Subarray Dynamic Good](Java/152_MaximumProductSubarray.java)|Medium|Java|Leetcode|
-|124   |406  | [Minimum Size Subarray Sum.java](Java/406_MinimumSizeSubarraySum.java)|Medium|Java|Lintcode|
+|124   |406  | [Minimum Size Subarray Sum Sliding window good](Java/406_MinimumSizeSubarraySum.java)|Medium|Java|Lintcode|
 |125   |44   | [Minimum Subarray.java](Java/44_MinimumSubarray.java)|Easy|Java|Lintcode|
 |126   |121  | [Best Time to Buy and Sell Stock.java](Java/121_BestTimetoBuyandSellStock.java)|Easy|Java|Leetcode|
 |127   |122  | [Best Time to Buy and Sell Stock II.java](Java/122_BestTimetoBuyandSellStockII.java)|Easy|Java|Leetcode|
