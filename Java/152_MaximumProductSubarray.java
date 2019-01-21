@@ -22,3 +22,22 @@ class Solution {
         return result;
     }
 }
+
+Similar to maximum subarray :https://github.com/optimisea/Leetcode/blob/master/Java/53_MaximumSubarray.java
+class Solution {
+    public int maxProduct(int[] nums) {
+        int global = Integer.MIN_VALUE;
+        int maxCurr = 0;
+        int minCurr = 0;
+        int maxPrev = 1;
+        int minPrev = 1;
+        for (int num : nums){
+            maxCurr = Math.max(num, Math.max(maxPrev * num, minPrev * num));
+            minCurr = Math.min(num, Math.min(maxPrev * num, minPrev * num));
+            global = Math.max(global, maxCurr);
+            maxPrev = maxCurr;
+            minPrev = minCurr;
+        }
+        return global;
+    }
+}
