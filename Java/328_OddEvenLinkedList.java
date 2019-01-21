@@ -56,7 +56,7 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: Best solution
 /**
  * Definition for singly-linked list.
  * public class ListNode {
