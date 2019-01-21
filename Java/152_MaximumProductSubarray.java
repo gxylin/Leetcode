@@ -24,6 +24,7 @@ class Solution {
 }
 
 Similar to maximum subarray :https://github.com/optimisea/Leetcode/blob/master/Java/53_MaximumSubarray.java
+DP
 class Solution {
     public int maxProduct(int[] nums) {
         int global = Integer.MIN_VALUE;
