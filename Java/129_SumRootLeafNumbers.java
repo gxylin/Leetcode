@@ -16,6 +16,7 @@ Return the sum = 12 + 13 = 25.
 
 
 best solution:
+preorder traversal
 class Solution {
     public int sumNumbers(TreeNode root) {
         return helper(root, 0);
@@ -27,7 +28,8 @@ class Solution {
         if (root.left == null && root.right == null){
             return sum * 10 + root.val;
         }
-        return helper(root.right, sum * 10 + root.val) + helper(root.left, sum * 10 + root.val);
+        sum = sum * 10 + root.val;
+        return helper(root.right, sum) + helper(root.left, sum);
     }
 }
 
