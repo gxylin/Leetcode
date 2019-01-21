@@ -43,3 +43,19 @@ class Solution {
         return sum;
     }
 }
+
+DP
+dp denotes the number of slices ending at i
+class Solution {
+    public int numberOfArithmeticSlices(int[] A) {
+        int res = 0;
+        int[] dp = new int[A.length];
+        for (int i = 1; i < A.length - 1; i++){
+            if (A[i-1] - A[i] == A[i] - A[i+1]){
+                dp[i+1] = dp[i] + 1;
+            }
+            res += dp[i+1];
+        }
+        return res;
+    }
+}
