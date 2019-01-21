@@ -38,6 +38,8 @@ All arithmetic subsequence slices are:
 2D dp with hashmap array
 Similar to Arithmetics Slice DP but add additional dimension
 
+does not need to sort, like LIS
+
 class Solution {
     public int numberOfArithmeticSlices(int[] A) {
         int n = A.length;
