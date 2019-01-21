@@ -432,7 +432,7 @@ Solution for Leetcode/Lintcode
 |413   |191  |[Number of 1 Bits](Java/191_Number.java)|Easy|Java|Leetcode|
 |414   |190  |[Reverse Bits](Java/190_Reverse.java)|Easy|Java|Leetcode|
 |415   |326  |[Power of Three](Java/326_Power.java)|Easy|Java|Leetcode|
-|416   |137  |[Single Number II](Java/137_Single.java)|Medium|Java|Leetcode|
+|416   |137  |[Single Number II Very Good](Java/137_Single.java)|Medium|Java|Leetcode|
 |417   |260  |[Single Number III](Java/260_Single.java)|Medium|Java|Leetcode|
 |418   |342  |[Power of Four](Java/342_Power.java)|Easy|Java|Leetcode|
 |419   |343  |[Integer break](Java/343_Integer.java)|Medium|Java|Leetcode|
