@@ -65,7 +65,7 @@ class Solution {
     
 }
 
-Method 3: O(nk) use priority queue
+Method 3: O(nlogk) use priority queue
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
         if (nums == null || nums.length == 0 || k == 0){
