@@ -7,7 +7,10 @@ the contiguous subarray [4,-1,2,1] has the largest sum = 6.
     
    Check Leetcode 918 for the case of circular array
     
-    
+   Another extension: maximum product subarray: 
+https://github.com/optimisea/Leetcode/blob/master/Java/152_MaximumProductSubarray.java
+   
+   
 Method 1: Greey
 class Solution {
     public int maxSubArray(int[] nums) {
