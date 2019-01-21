@@ -150,8 +150,8 @@ Solution for Leetcode/Lintcode
 |142   |142  | [Linked List Cycle II](Java/142_LinkedListCycleII.java)|Medium|Java|Leetcode|
 |143   |129  | [Sum Root to Leaf Numbers Good](Java/129_SumRootLeafNumbers.java)|Medium|Java|Leetcode|
 |144   |413  | [Arithmetic Slices Very Good](Java/413_ArithmeticSlices.java)|Medium|Java|Leetcode|
-|145   |328  | [OddEvenLinkedList.java](Java/328_OddEvenLinkedList.java)|Medium|Java|Leetcode|
-|146   |92   | [ReverseLinkedListII.java](Java/92_ReverseLinkedListII.java)|Medium|Java|Leetcode|
+|145   |328  | [Odd Even Linked List Good](Java/328_OddEvenLinkedList.java)|Medium|Java|Leetcode|
+|146   |92   | [Reverse Linked List II Good](Java/92_ReverseLinkedListII.java)|Medium|Java|Leetcode|
 |147   |160  | [Intersection of Two Linked Lists.java](Java/160_IntersectionTwoLinkedLists.java)|Easy|Java|Leetcode|
 |148   |203  | [Remove Linked List Elements.java](Java/203_RemoveLinkedListElements.java)|Easy|Java|Leetcode|
 |149   |49   | [Group Anagrams.java](Java/49_GroupAnagrams.java)|Medium|Java|Leetcode|
