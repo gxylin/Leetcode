@@ -157,7 +157,7 @@ Solution for Leetcode/Lintcode
 |149   |49   | [Group Anagrams.java](Java/49_GroupAnagrams.java)|Medium|Java|Leetcode|
 |150   |73   | [Set Matrix Zeroes.java](Java/73_SetMatrixZeroes.java)|Medium|Java|Leetcode|
 |151   |78   | [Subsets.java](Java/78_Subsets.java)|Medium|Java|Leetcode|
-|152   |89   | [Gray Code Bit manipulation](Java/89_GrayCode.java)|Medium|Java|Leetcode|
+|152   |89   | [Gray Code Bit manipulation backtracking](Java/89_GrayCode.java)|Medium|Java|Leetcode|
 |153   |98   | [Validate Binary Search Tree Good](Java/98_ValidBinarySearchTree.java)|Medium|Java|Leetcode|
 |154   |119  | [Pascal's triangle II.java](Java/119_Pascal'sTriangleII.java)|Easy|Java|leetcode|
 |155   |155  | [Min Stack.java](Java/155_MinStack.java)|Easy|Java|Leetcode|
