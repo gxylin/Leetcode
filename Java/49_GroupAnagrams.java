@@ -11,6 +11,7 @@ Return:
 Note: All inputs will be in lower-case.
 
 Time complexity: O(N*MlogM)
+Space complexity: O(n + m)
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> result = new ArrayList<>();
