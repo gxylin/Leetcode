@@ -188,7 +188,7 @@ Solution for Leetcode/Lintcode
 |179   |451  | [Sort Characters By Frequency PQ comparator Good](Java/451_SortCharactersByFrequency.java)|Medium|Java|Leetcode|
 |180   |532  | [K-diff Pairs in an Array.java](Java/532_K-diffPairsArray.java)|Easy|Java|Leetcode|
 |181   |28   | [Implement strStr.java](Java/28_ImplementstrStr.java)|Easy|Java|Leetcode|
-|182   |96   | [Partition List.java](Java/96_PartitionList.java)|Medium|Java|Lintcode|
+|182   |96   | [Partition List Good](Java/96_PartitionList.java)|Medium|Java|Lintcode|
 |183   |511  | [Swap Two Nodes in Linked List.java](Java/511_SwapTwoNodesLinkedList.java)|Medium|Java|Lintcode|
 |184   |99   | [Reorder List.java](Java/99_ReorderList.java)|Medium|Java|Lintcode|
 |185   |170  | [Rotate List Good](Java/170_RotateList.java)|Medium|Java|Lintcode|
