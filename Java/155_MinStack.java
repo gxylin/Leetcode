@@ -26,7 +26,7 @@ class MinStack {
     
     public void push(int x) {
         if (x <= min){ // must be <= , can't be <
-            stack.push(min);
+            stack.push(min); //save as backup
             stack.push(x);
             min = x;
         }else{
