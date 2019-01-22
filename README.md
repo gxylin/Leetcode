@@ -179,7 +179,7 @@ Solution for Leetcode/Lintcode
 |171 |297| [Serialize and Deserialize Binary Tree Very Good](Java/297_SerializeandDeserializeBinaryTree.java)|Hard|Java|Leetcode|
 |172   |763  | [Partition Labels Very Good](Java/763_PartitionLabels.java)|Medium|Java|Leetcode|
 |XXX   |XXX  | [distance between two nodes of BinarySearchTree](Java/distanceBetweenTwoNodesBST.java)|
-|173   |678  | [Valid Parenthesis String.java](Java/678_ValidParenthesisString.java)|Medium|Java|Leetcode|
+|173   |678  | [Valid Parenthesis String Good](Java/678_ValidParenthesisString.java)|Medium|Java|Leetcode|
 |174   |627  | [Longest Palindrome.java](Java/627_LongestPalindrome.java)|Easy|Java|Lintcode|
 |175   |726  | [Check Valid Full Binary Tree.java](Java/726_CheckFullBinaryTree.java)|Medium|Java|Lintcode|
 |176   |728  | [Three Distinct Factors.java](Java/728_ThreeDistinctFactors.java)|Medium|Java|Lintcode|
