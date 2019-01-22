@@ -14,6 +14,7 @@ minStack.pop();
 minStack.top();      --> Returns 0.
 minStack.getMin();   --> Returns -2.
 
+Best solution
 class MinStack {
     Stack<Integer> stack;
     int min;
@@ -24,7 +25,7 @@ class MinStack {
     }
     
     public void push(int x) {
-        if (x <= min){
+        if (x <= min){ // must be <= , can't be <
             stack.push(min);
             stack.push(x);
             min = x;
