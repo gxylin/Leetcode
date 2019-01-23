@@ -200,8 +200,8 @@ Solution for Leetcode/Lintcode
 |191   |37   |[Partition Array by Odd and Even.java](Java/37_PartitionArraybyOddandEven.java)|Easy|Java|Lintcode|
 |192   |144|[Interleaving Positive and Negative](Java/144_InterleavingPositiveandNegativeNumbers.java)|Medium|Java|Lintcode|
 |193   |111  |[Climbing Stairs.java](Java/111_ClimbingStairs.java)|Easy|Java|Lintcode|
-|194   |116  | [Jump Game.java](Java/116_JumpGame.java)|Medium|Java|Lintcode|
-|195   |117  | [Jump Game II.java](Java/117_JumpGameII.java)|Medium|Java|Lintcode|
+|194   |116  | [Jump Game Good Greedy](Java/116_JumpGame.java)|Medium|Java|Lintcode|
+|195   |117  | [Jump Game II Good Greedy](Java/117_JumpGameII.java)|Medium|Java|Lintcode|
 |196   |604  | [Window Sum.java](Java/604_WindowSum.java)|Easy|Java|Lintcode|
 |197   |80   | [Remove Duplicates from Sorted Array II Very Good](Java/80_RemoveDuplicatesII.java)|Medium|Java|Leetcode|
 |198   |88   | [Merge Sorted Array.java](Java/88_MergeSortedArray.java)|Easy|Java|Leetcode|
