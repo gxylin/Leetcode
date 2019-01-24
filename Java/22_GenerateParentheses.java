@@ -62,7 +62,7 @@ class Solution {
         if (leftRemain > 0){
             helper(res, str + "(", leftRemain - 1, rightRemain);
         }
-        if (rightRemain > leftRemain){ //note that it is not rightRemain > 0 because to eliminate invalid cases
+        if (rightRemain > leftRemain){ //note that it is not rightRemain > 0 in order to eliminate invalid cases
             helper(res, str + ")", leftRemain, rightRemain - 1);
         }
     }
