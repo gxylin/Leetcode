@@ -211,7 +211,7 @@ Solution for Leetcode/Lintcode
 |202   |131  | [Palindrome Partitioning Recursion Memo Very Good](Java/131_PalindromePartitioning.java)|Medium|Java|Leetcode|
 |203   |545  | [Boundary of Binary Tree Very Good](Java/545_BoundaryofBinaryTree.java)|Medium|Java|Leetcode|
 |204   |42   | [Trapping Rain Water Good](Java/42_TrappingRainWater.java)|Hard|Java|Leetcode|
-|205   |675  | [Cut Off Trees for Golf Event Very Good](Java/675_CutOffTreesforGolfEvent.java)|Hard|Java|Leetcode|
+|205   |675  | [Cut Off Trees for Golf Event Very Good PQ + BFS](Java/675_CutOffTreesforGolfEvent.java)|Hard|Java|Leetcode|
 |206   |460  | [LFU Cache Very Good](Java/460_LFUCache.java)|Hard|Java|Leetcode|
 |207   |725  | [Split Linked Listin Parts.java](Java/725_SplitLinkedListinParts.java)|Medium|Java|Leetcode|
 |208   |529  | [Minesweeper.java](Java/529_Minesweeper.java)|Medium|Java|Leetcode|
