@@ -30,7 +30,7 @@ Solution for Leetcode/Lintcode
 |25    |648  | [Word Abbreviation Set.java](Java/648_WordAbbreviationSet.java)|Medium|Java|Lintcode|
 |26    |124  | [Longest Consecutive Sequence.java](Java/124_LongestConsecutiveSequence.java)|Medium|Java|Lintcode|
 |27    |526  | [Load Balancer.java](Java/526_LoadBalancer.java)|Medium|Java|Lintcode|
-|28    |76   | [Longest Increasing Subsequence.java](Java/76_LongestIncreasingSubsequence.java)|Medium|Java|Lintcode|
+|28    |76   | [Longest Increasing Subsequence LIS Very Good](Java/76_LongestIncreasingSubsequence.java)|Medium|Java|Lintcode|
 |29    |423  | [Valid Parentheses Good](Java/423_ValidParentheses.java)|Easy|Java|Lintcode|
 |30    |622  | [Guess Number Game.java](Java/622_GuessNumberGame.java)|Easy|Java|Lintcode|
 |31    |61   | [Search for a Range.java](Java/61_SearchforaRange.java)|Medium|Java|Lintcode|
@@ -224,7 +224,7 @@ Solution for Leetcode/Lintcode
 |215   |70   | [Climbing Stairs.java](Java/70_ClimbingStairs.java)|Easy|Java|Leetcode|
 |216|662| [Maximum Width of Binary Tree Label Full Binary Tree Very Good](Java/662_MaximumWidthofBinaryTree.java)|Medium|Java|Leetcode|
 |217   |661  | [Image Smoother.java](Java/661_ImageSmoother.java)|Easy|Java|Leetcode|
-|218   |646  | [Maximum Length of Pair Chain.java](Java/646_MaximumLengthofPairChain.java)|Medium|Java|Leetcode|
+|218   |646  | [Maximum Length of Pair Chain LIS Very Good](Java/646_MaximumLengthofPairChain.java)|Medium|Java|Leetcode|
 |219   |645  | [Set Mismatch.java](Java/645_SetMismatch.java)|Easy|Java|Leetcode|
 |220   |606  | [Construct String from Binary Tree.java](Java/606_ConstructStringfromBinaryTree.java)|Easy|Java|Leetcode|
 |221   |536  | [Construct Binary Tree from String.java](Java/536_ConstructBinaryTreefromString.java)|Medium|Java|Leetcode|
