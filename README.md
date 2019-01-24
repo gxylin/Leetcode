@@ -229,7 +229,7 @@ Solution for Leetcode/Lintcode
 |220   |606  | [Construct String from Binary Tree Good](Java/606_ConstructStringfromBinaryTree.java)|Easy|Java|Leetcode|
 |221   |536  | [Construct Binary Tree from String Recursion Good](Java/536_ConstructBinaryTreefromString.java)|Medium|Java|Leetcode|
 |222   |553  | [Optimal Division.java](Java/553_OptimalDivision.java)|Medium|Java|Leetcode|
-|223   |459  | [Repeated Substring Pattern.java](Java/459_RepeatedSubstringPattern.java)|Easy|Java|Leetcode|
+|223   |459  | [Repeated Substring Pattern Good](Java/459_RepeatedSubstringPattern.java)|Easy|Java|Leetcode|
 |224   |686  | [Repeated String Match.java](Java/686_RepeatedStringMatch.java)|Easy|Java|Leetcode|
 |225   |396  | [Rotate Function.java](Java/396_RotateFunction.java)|Medium|Java|Leetcode|
 |226   |14   | [Longest Common Prefix.java](Java/14_LongestCommonPrefix.java)|Easy|Java|Leetcode|
