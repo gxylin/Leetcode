@@ -47,3 +47,27 @@ class Solution {
         return (int) thirdMax;
     }
 }
+
+class Solution {
+    public int thirdMax(int[] nums) {
+        long first = Long.MIN_VALUE;
+        long second = Long.MIN_VALUE;
+        long res = Long.MIN_VALUE;
+        for (int num : nums){
+            if (num > first){
+                res = second;
+                second = first;
+                first = num;
+            }else if (num > second && num < first){
+                res = second;
+                second = num;
+            }else if (num > res && num < second){
+                res = num;
+            }
+        }
+        if (res == Long.MIN_VALUE){
+            return (int)first;
+        }
+        return (int)res;
+    }
+}
