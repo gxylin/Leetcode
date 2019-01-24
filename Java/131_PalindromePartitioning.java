@@ -98,6 +98,7 @@ class Solution {
 }
 
 
+Best solution:
 class Solution {
     public List<List<String>> partition(String s) {
         Map<String, List<List<String>>> map = new HashMap<>();
@@ -105,7 +106,9 @@ class Solution {
     }
     private List<List<String>> dfs(String s, Map<String, List<List<String>>> map){
         List<List<String>> res = new ArrayList<>();
-        if (s == null || s.length() == 0){
+        if (s.length() == 0){
+            List<String> item = new ArrayList<>();
+            res.add(item);
             return res;
         }
         if (map.containsKey(s)){
@@ -116,26 +119,19 @@ class Solution {
             String sub = s.substring(0, i);
             if (isValid(sub)){
                 List<List<String>> temp = dfs(s.substring(i), map);
-                if (temp.size() == 0){
+                for (List<String> list : temp){
                     List<String> item = new ArrayList<>();
                     item.add(sub);
+                    item.addAll(list);
                     res.add(item);
-                }else{
-                    for (List<String> list : temp){
-                        List<String> item = new ArrayList<>();
-                        item.add(sub);
-                        item.addAll(list);
-                        res.add(item);
-                    }
-                    
                 }
-                
             }
         }
         map.put(s, res);
         return res;
     }
     private boolean isValid(String s){
+
         int left = 0;
         int right = s.length() - 1;
         while (left < right){
