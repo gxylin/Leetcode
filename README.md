@@ -226,8 +226,8 @@ Solution for Leetcode/Lintcode
 |217   |661  | [Image Smoother.java](Java/661_ImageSmoother.java)|Easy|Java|Leetcode|
 |218   |646  | [Maximum Length of Pair Chain LIS Very Good](Java/646_MaximumLengthofPairChain.java)|Medium|Java|Leetcode|
 |219   |645  | [Set Mismatch.java](Java/645_SetMismatch.java)|Easy|Java|Leetcode|
-|220   |606  | [Construct String from Binary Tree.java](Java/606_ConstructStringfromBinaryTree.java)|Easy|Java|Leetcode|
-|221   |536  | [Construct Binary Tree from String.java](Java/536_ConstructBinaryTreefromString.java)|Medium|Java|Leetcode|
+|220   |606  | [Construct String from Binary Tree Good](Java/606_ConstructStringfromBinaryTree.java)|Easy|Java|Leetcode|
+|221   |536  | [Construct Binary Tree from String Good](Java/536_ConstructBinaryTreefromString.java)|Medium|Java|Leetcode|
 |222   |553  | [Optimal Division.java](Java/553_OptimalDivision.java)|Medium|Java|Leetcode|
 |223   |459  | [Repeated Substring Pattern.java](Java/459_RepeatedSubstringPattern.java)|Easy|Java|Leetcode|
 |224   |686  | [Repeated String Match.java](Java/686_RepeatedStringMatch.java)|Easy|Java|Leetcode|
