@@ -207,8 +207,8 @@ Solution for Leetcode/Lintcode
 |198   |88   | [Merge Sorted Array.java](Java/88_MergeSortedArray.java)|Easy|Java|Leetcode|
 |199   |287  | [Find Duplicate Number Binary Search Good](Java/287_FindDuplicateNumber.java)|Medium|Java|Leetcode|
 |200   |111  | [Minimum Depth of Binary Tree Good](Java/111_MinimumDepthofBinaryTree.java)|Easy|Java|Leetcode|
-|201   |22   | [Generate Parentheses Recursion Very Good](Java/22_GenerateParentheses.java)|Medium|Java|Leetcode|
-|202   |131  | [Palindrome Partitioning.java](Java/131_PalindromePartitioning.java)|Medium|Java|Leetcode|
+|201   |22   | [Generate Parentheses DFS Very Good](Java/22_GenerateParentheses.java)|Medium|Java|Leetcode|
+|202   |131  | [Palindrome Partitioning Recursion Memo Very Good](Java/131_PalindromePartitioning.java)|Medium|Java|Leetcode|
 |203   |545  | [Boundary of Binary Tree.java](Java/545_BoundaryofBinaryTree.java)|Medium|Java|Leetcode|
 |204   |42   | [Trapping Rain Water.java](Java/42_TrappingRainWater.java)|Hard|Java|Leetcode|
 |205   |675  | [Cut Off Trees for Golf Event.java](Java/675_CutOffTreesforGolfEvent.java)|Hard|Java|Leetcode|
