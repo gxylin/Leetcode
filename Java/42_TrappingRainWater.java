@@ -128,3 +128,33 @@ class Solution {
         return res;
     }
 }
+
+
+class Solution {
+    public int trap(int[] height) {
+        int n = height.length;
+        int left = 0;
+        int right = n - 1;
+        int i = 0;
+        int j = n - 1;
+        int res = 0;
+        while (i <= j){
+            if (height[left] < height[right]){
+                if (height[i] <= height[left]){
+                    res += height[left] - height[i];
+                    i++;
+                }else{
+                    left = i;
+                }
+            }else{
+                if (height[j] <= height[right]){
+                    res += height[right] - height[j];
+                    j--;
+                }else{
+                    right = j;
+                }
+            }
+        }
+        return res;
+    }
+}
