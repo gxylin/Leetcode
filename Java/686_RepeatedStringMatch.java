@@ -28,3 +28,29 @@ class Solution {
         return count;
     }
 }
+
+class Solution {
+    public int repeatedStringMatch(String A, String B) {
+        int len1 = A.length();
+        int len2 = B.length();
+        int n = len2 / len1;
+        if (len2 % len1 != 0){
+            n++;
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++){
+            sb.append(A);
+        }
+        String str = sb.toString();
+        int index = str.indexOf(B);
+        if (index >= 0){
+            return n;
+        }
+        str += A;
+        n++;
+        if (str.indexOf(B) >= 0){
+            return n;
+        }
+        return -1;
+    }
+}
