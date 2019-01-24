@@ -233,7 +233,7 @@ Solution for Leetcode/Lintcode
 |224   |686  | [Repeated String Match Good](Java/686_RepeatedStringMatch.java)|Easy|Java|Leetcode|
 |225   |396  | [Rotate Function.java](Java/396_RotateFunction.java)|Medium|Java|Leetcode|
 |226   |14   | [Longest Common Prefix.java](Java/14_LongestCommonPrefix.java)|Easy|Java|Leetcode|
-|227   |31   | [Next Permutation.java](Java/31_NextPermutation.java)|Medium|Java|Leetcode|
+|227   |31   | [Next Permutation Good](Java/31_NextPermutation.java)|Medium|Java|Leetcode|
 |228   |38   | [Count and Say.java](Java/38_CountandSay.java)|Easy|Java|Leetcode|
 |229   |41   | [First Missing Positive.java](Java/41_FirstMissingPositive.java)|Hard|Java|Leetcode|
 |230   |54   | [Spiral Matrix.java](Java/54_SpiralMatrix.java)|Medium|Java|Leetcode|
