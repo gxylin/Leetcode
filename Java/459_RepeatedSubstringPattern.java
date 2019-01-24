@@ -45,6 +45,7 @@ class Solution {
     }
 }
 
+Time complexity: O(N^2)
 class Solution {
     public boolean repeatedSubstringPattern(String str) {
         int len = str.length();
