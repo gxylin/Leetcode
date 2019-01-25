@@ -43,6 +43,25 @@ class Solution {
     }
 }
 
+class Solution {
+    int max = Integer.MIN_VALUE;
+    public int maxPathSum(TreeNode root) {
+        maxIncludeRoot(root);
+        return max;
+    }
+    private int maxIncludeRoot(TreeNode root){
+        if (root == null){
+            return 0;
+        }
+        int left = maxIncludeRoot(root.left);
+        int right = maxIncludeRoot(root.right);
+        int leftMaxIncludeRoot = Math.max(left, 0);
+        int rightMaxIncluderoot = Math.max(right, 0);
+        max = Math.max(max, leftMaxIncludeRoot + rightMaxIncluderoot + root.val);
+        return Math.max(leftMaxIncludeRoot, rightMaxIncluderoot) + root.val;
+    }
+}
+
 Method 2: without using global variable
 /**
  * Definition for a binary tree node.
@@ -72,3 +91,5 @@ class Solution {
         return root.val + Math.max(leftMax, rightMax);
     }
 }
+
+
