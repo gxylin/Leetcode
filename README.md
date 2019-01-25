@@ -248,7 +248,7 @@ Solution for Leetcode/Lintcode
 |239   |134  |[Gas Station Good](Java/134_GasStation.java)|Medium|Java|Leetcode|
 |240   |145  |[Binary Tree Postorder Traversal](Java/145_Postorder.java)|Hard|Java|Leetcode|
 |241   |150  |[Evaluate Reverse Polish Notation.java](Java/150_EvaluateReversePolishNotation.java)|Medium|Java|Leetcode|
-|242   |162  |[Find Peak Element.java](Java/162_FindPeakElement.java)|Medium|Java|Leetcode|
+|242   |162  |[Find Peak Element Good Binary Search](Java/162_FindPeakElement.java)|Medium|Java|Leetcode|
 |243   |166  |[Fraction to Recurring Decimal](Java/166_Fraction.java)|Medium|Java|Leetcode|
 |244   |169  |[Majority Element.java](Java/169_MajorityElement.java)|Easy|Java|Leetcode|
 |245   |171  |[Excel Sheet Column Number](Java/171_ExcelNumber.java)|Easy|Java|Leetcode|
