@@ -254,8 +254,8 @@ Solution for Leetcode/Lintcode
 |245   |171  |[Excel Sheet Column Number](Java/171_ExcelNumber.java)|Easy|Java|Leetcode|
 |246   |168  |[Excel Sheet Column Title](Java/168_ColumnExcel.java)|Easy|Java|Leetcode|
 |247   |172  |[Factorial Trailing Zeroes.java](Java/172_FactorialTrailingZeroes.java)|Easy|Java|Leetcode|
-|248   |174  |[Dungeon Game.java](Java/174_DungeonGame.java)|Hard|Java|Leetcode|
-|249   |198  |[House Robber.java](Java/198_HouseRobber.java)|Easy|Java|Leetcode|
+|248   |174  |[Dungeon Game Very Good](Java/174_DungeonGame.java)|Hard|Java|Leetcode|
+|249   |198  |[House Robber Very Good](Java/198_HouseRobber.java)|Easy|Java|Leetcode|
 |250   |202  |[Happy Number.java](Java/202_HappyNumber.java)|Easy|Java|Leetcode|
 |251   |208  |[Implement Trie.java](Java/208_Trie.java)|Medium|Java|Leetcode|
 |252   |213  |[House Robber II.java](Java/213_HouseRobberII.java)|Medium|Java|Leetcode|
