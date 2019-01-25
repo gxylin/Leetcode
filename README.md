@@ -239,8 +239,8 @@ Solution for Leetcode/Lintcode
 |230   |54   | [Spiral Matrix.java](Java/54_SpiralMatrix.java)|Medium|Java|Leetcode|
 |231   |76   | [Minimum Window Substring Sliding Window Very Good](Java/76_MinimumWindowSubstring.java)|Hard|Java|Leetcode|
 |232  |103  | [Binary Tree Zigzag Level Order Traversal.java](Java/103_BinaryTreeZigzagTraversal.java)|Medium|Java|Leetcode|
-|233|105|[Construct Binary Tree from Preorder and Inorder Traversal](Java/105_Construct.java)|Medium|Java|Leetcode|
-|234|106 |[Construct Binary Tree from Inorder and Postorder Traversal](Java/106_Construct.java)|Medium|Java|Leetcode|
+|233|105|[Construct Binary Tree from Preorder and Inorder Traversal Very Good](Java/105_Construct.java)|Medium|Java|Leetcode|
+|234|106 |[Construct Binary Tree from Inorder and Postorder Traversal Very Good](Java/106_Construct.java)|Medium|Java|Leetcode|
 |235   |108  |[Convert Sorted Array to Binary Search Tree](Java/108_ConvertToBSTjava)|Easy|Java|Leetcode|
 |236   |114  |[Flatten Binary Tree to Linked List Very Good](Java/114_FlattenBinaryTree.java)|Medium|Java|Leetcode|
 |237   |124  |[Binary Tree Maximum Path Sum Very Good](Java/124_MaximumPathSum.java)|Hard|Java|Leetcode|
