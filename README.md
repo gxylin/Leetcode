@@ -265,7 +265,7 @@ Solution for Leetcode/Lintcode
 |256   |252  |[Meeting Rooms Very Good](Java/252_MeetingRooms.java)|Easy|Java|Leetcode|
 |257   |253  |[Meeting Rooms II TreeMap Sweep line Very Good](Java/253_MeetingRoomsII.java)|Medium|Java|Leetcode|
 |258   |269  |[Alien Dictionary Topological sort Very good](Java/269_AlienDictionary.java)|Hard|Java|Leetcode|
-|259   |289  |[Game of Life.java](Java/289_GameofLife.java)|Medium|Java|Leetcode|
+|259   |289  |[Game of Life use Bit](Java/289_GameofLife.java)|Medium|Java|Leetcode|
 |260   |225  |[Implement Stack Using Queue.java](Java/225_ImplementStack.java)|Medium|Java|Leetcode|
 |261   |295  |[Find Median from Data Stream.java](Java/295_FindMedianDataStream.java)|Hard|Java|Leetcode|
 |262   |322  |[Coin Change Dynamic Programming](Java/322_CoinChange.java)|Medium|Java|Leetcode|
