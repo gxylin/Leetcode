@@ -262,8 +262,8 @@ Solution for Leetcode/Lintcode
 |253   |230  |[Kth Smallest Element in a BST Good](Java/230_KthSmallestBST.java)|Medium|Java|Leetcode|
 |254   |671  |[Second Minimum Node In a Binary Tree](Java/671_SecondMinimumBinary.java)|Easy|Java|Leetcode|
 |255   |251  |[Flatten 2D Vector.java](Java/251_Flatten2DVector.java)|Medium|Java|Leetcode|
-|256   |252  |[Meeting Rooms.java](Java/252_MeetingRooms.java)|Easy|Java|Leetcode|
-|257   |253  |[Meeting Rooms II TreeMap Sweep line](Java/253_MeetingRoomsII.java)|Medium|Java|Leetcode|
+|256   |252  |[Meeting Rooms Very Good](Java/252_MeetingRooms.java)|Easy|Java|Leetcode|
+|257   |253  |[Meeting Rooms II TreeMap Sweep line Very Good](Java/253_MeetingRoomsII.java)|Medium|Java|Leetcode|
 |258   |269  |[Alien Dictionary Topological sort Very good](Java/269_AlienDictionary.java)|Hard|Java|Leetcode|
 |259   |289  |[Game of Life.java](Java/289_GameofLife.java)|Medium|Java|Leetcode|
 |260   |225  |[Implement Stack Using Queue.java](Java/225_ImplementStack.java)|Medium|Java|Leetcode|
