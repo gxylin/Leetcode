@@ -272,7 +272,7 @@ Solution for Leetcode/Lintcode
 |263   |280  |[Wiggle Sort.java](Java/280_WiggleSort.java)|Medium|Java|Leetcode|
 |264   |324  |[Wiggle Sort II.java](Java/324_WiggleSortII.java)|Medium|Java|Leetcode|
 |265   |329  |[Longest Increasing Path DFS + Memo Very Good](Java/329_LongestIncreasingPath.java)|Hard|Java|Leetcode|
-|266   |334  |[Increasing Triplet Subsequence.java](Java/334_IncreasingTripletSubsequence.java)|Medium|Java|Leetcode|
+|266   |334  |[Increasing Triplet Subsequence Good](Java/334_IncreasingTripletSubsequence.java)|Medium|Java|Leetcode|
 |267   |340  |[Longest Substring with At Most K Distinct Characters](Java/340_LongestSubstring.java)|Hard|Java|Leetcode|
 |268   |348  |[Design Tic Tac Toe Good](Java/348_Design_Tic_Tac.java)|Medium|Java|Leetcode|
 |269   |349  |[Intersection of Two Arrays](Java/349_Intersection.java)|Easy|Java|Leetcode|
