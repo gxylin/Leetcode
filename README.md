@@ -267,8 +267,8 @@ Solution for Leetcode/Lintcode
 |258   |269  |[Alien Dictionary Topological sort Very good](Java/269_AlienDictionary.java)|Hard|Java|Leetcode|
 |259   |289  |[Game of Life use Bit](Java/289_GameofLife.java)|Medium|Java|Leetcode|
 |260   |225  |[Implement Stack Using Queue.java](Java/225_ImplementStack.java)|Medium|Java|Leetcode|
-|261   |295  |[Find Median from Data Stream.java](Java/295_FindMedianDataStream.java)|Hard|Java|Leetcode|
-|262   |322  |[Coin Change Dynamic Programming](Java/322_CoinChange.java)|Medium|Java|Leetcode|
+|261   |295  |[Find Median from Data Stream Very Good PriorityQueue](Java/295_FindMedianDataStream.java)|Hard|Java|Leetcode|
+|262   |322  |[Coin Change Dynamic Programming Good](Java/322_CoinChange.java)|Medium|Java|Leetcode|
 |263   |280  |[Wiggle Sort.java](Java/280_WiggleSort.java)|Medium|Java|Leetcode|
 |264   |324  |[Wiggle Sort II.java](Java/324_WiggleSortII.java)|Medium|Java|Leetcode|
 |265   |329  |[Longest Increasing Path DFS + Memo](Java/329_LongestIncreasingPath.java)|Hard|Java|Leetcode|
