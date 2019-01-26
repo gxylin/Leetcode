@@ -71,3 +71,42 @@ class Solution {
     }
     
 }
+
+Better version:
+class Solution {
+    public int longestIncreasingPath(int[][] matrix) {
+        if (matrix == null || matrix.length == 0){
+            return 0;
+        }
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int max = 1;
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                int candi = dfs(matrix, i, j, dirs, map);
+                max = Math.max(max, candi);
+            }
+        }
+        return max;
+    }
+    private int dfs(int[][] matrix, int x, int y, int[][] dirs, Map<Integer, Integer> map){
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int key = x * n + y;
+        if (map.containsKey(key)){
+            return map.get(key);
+        }
+        int res = 1;
+        for (int[] dir : dirs){
+            int nx = x + dir[0];
+            int ny = y + dir[1];
+            if (nx >= 0 && nx < m && ny >= 0 && ny < n && matrix[nx][ny] > matrix[x][y]){
+                res = Math.max(res, dfs(matrix, nx, ny, dirs, map) + 1);
+            }
+        }
+        map.put(key, res);
+        return res;
+    }
+}
