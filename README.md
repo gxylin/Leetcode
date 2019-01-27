@@ -292,7 +292,7 @@ Solution for Leetcode/Lintcode
 |283   |805  |[Maxium Association Set](Java/805_MaximumAssociationSet.java)|Medium|Java|Lintcode|
 |284   |79   |[Word Search backtracking Very Good](Java/79_WordSearch.java)|Medium|Java|Leetcode|
 |285   |212  |[Word Search II backtracking Trie Very Good](Java/212_WordSearchII.java)|Hard|Java|Leetcode|
-|286   |336  |[Palindrome Pair](Java/336_PalindromePairs.java)|Hard|Java|Leetcode|
+|286   |336  |[Palindrome Pair Good Cases](Java/336_PalindromePairs.java)|Hard|Java|Leetcode|
 |287   |549  |[Binary Tree Longest Consecutive Sequence II Very Good](Java/549_BinaryTree.java)|Medium|Java|Leetcode|
 |288   |44   |[Wildcard Matching](Java/44_WildcardMatching.java)|Hard|Java|Leetcode|
 |289   |10   |[Regular Expression Matching](Java/10_RegularExpressionMatching.java)|Hard|Java|Leetcode|
