@@ -230,3 +230,94 @@ class Solution {
         visited[x][y] = false;
     }
 }
+
+
+Better version:
+class Solution {
+    class Trie {
+        class TrieNode {
+            TrieNode[] children;
+            boolean isEnd;
+            public TrieNode(){
+                children = new TrieNode[26];
+                isEnd = false;
+            }
+        }
+        TrieNode root;
+        public Trie (){
+            root = new TrieNode();
+        }
+        public void insert (String word){
+            TrieNode node = root;
+            for (int i = 0; i < word.length(); i++){
+                char c = word.charAt(i);
+                if (node.children[c - 'a'] == null){
+                    node.children[c - 'a'] = new TrieNode();
+                }
+                node = node.children[c - 'a'];
+            }
+            node.isEnd = true;
+        }
+        public boolean search (String word){
+            TrieNode node = root;
+            for (int i = 0; i < word.length(); i++){
+                char c = word.charAt(i);
+                if (node.children[c - 'a'] == null){
+                    return false;
+                }
+                node = node.children[c- 'a'];
+            }
+            return node.isEnd;
+        }
+        public boolean startWith(String word){
+            TrieNode node = root;
+            for (int i = 0; i < word.length(); i++){
+                char c = word.charAt(i);
+                if (node.children[c - 'a'] == null){
+                    return false;
+                }
+                node = node.children[c - 'a'];
+            }
+            return true;
+        }
+    }
+    
+    public List<String> findWords(char[][] board, String[] words) {
+        Set<String> res = new HashSet<>();
+        Trie trie = new Trie();
+        for (String str : words){
+            trie.insert(str);
+        }
+        int m = board.length;
+        int n = board[0].length;
+        boolean[][] visited = new boolean[m][n];
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                visited[i][j] = true;
+                backtrack(res, board, trie, visited, i, j, "" + board[i][j], dirs);
+                visited[i][j] = false;
+            }
+        }
+        return new ArrayList<String>(res);
+    }
+    private void backtrack(Set<String> res, char[][] board, Trie trie, boolean[][] visited, int x, int y, String item, int[][] dirs){
+        if (!trie.startWith(item)){
+            return;
+        }
+        if (trie.search(item)){
+            res.add(item);
+        }
+        int m = board.length;
+        int n = board[0].length;
+        for (int[] dir : dirs){
+            int nx = x + dir[0];
+            int ny = y + dir[1];
+            if (nx >= 0 && nx < m && ny >= 0 && ny < n && !visited[nx][ny]){
+                visited[nx][ny] = true;
+                backtrack(res, board, trie, visited, nx, ny, item + board[nx][ny], dirs);
+                visited[nx][ny] = false;
+            }
+        }
+    }
+}
