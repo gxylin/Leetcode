@@ -294,8 +294,8 @@ Solution for Leetcode/Lintcode
 |285   |212  |[Word Search II backtracking Trie Very Good](Java/212_WordSearchII.java)|Hard|Java|Leetcode|
 |286   |336  |[Palindrome Pair Good Cases](Java/336_PalindromePairs.java)|Hard|Java|Leetcode|
 |287   |549  |[Binary Tree Longest Consecutive Sequence II Very Good](Java/549_BinaryTree.java)|Medium|Java|Leetcode|
-|288   |44   |[Wildcard Matching](Java/44_WildcardMatching.java)|Hard|Java|Leetcode|
-|289   |10   |[Regular Expression Matching](Java/10_RegularExpressionMatching.java)|Hard|Java|Leetcode|
+|288   |44   |[Wildcard Matching Very Good](Java/44_WildcardMatching.java)|Hard|Java|Leetcode|
+|289   |10   |[Regular Expression Matching Very Good](Java/10_RegularExpressionMatching.java)|Hard|Java|Leetcode|
 |290   |243  |[Shortest Word Distance](Java/243_ShortestI.java)|Easy|Java|Leetcode|
 |291   |244  |[Shortest Word Distance II](Java/244_ShortestII.java)|Medium|Java|Leetcode|
 |292   |245  |[Shortest Word Distance III](Java/245_ShortestIII.java)|Medium|Java|Leetcode|
