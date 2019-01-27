@@ -9,7 +9,8 @@ class Solution {
         int count1 = 0;
         int count2 = 0;
         for (int i = 0; i < nums.length; i++){
-            if (nums[i] == major1){
+            if (nums[i] == major1){ 
+    //must check nums[i] == major1 or major2 first before checking count1 == 0 or count2 == 0 to avoid major1 and major2 are the same
                 count1++;
             }else if (nums[i] == major2){
                 count2++;
