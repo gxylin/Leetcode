@@ -41,7 +41,7 @@ class Solution {
     }
 }
 
-Method 2: DP
+Method 2: DP: best solution
 class Solution {
     public List<String> wordBreak(String s, List<String> wordDict) {
         Map<String, List<String>> map = new HashMap<>();
