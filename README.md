@@ -284,8 +284,8 @@ Solution for Leetcode/Lintcode
 |275 |395|[Longest Substring with At Least K Repeating Characters Sliding Window Very good](Java/395_LongestSubstring.java)|Medium|Java|Leetcode|
 |276   |412  |[Fizz Buzz](Java/412_FizzBuzz.java)|Easy|Java|Leetcode|
 |277   |454  |[4Sum II](Java/454_4SumII.java)|Medium|Java|Leetcode|
-|278   |611  |[Valid Triangle Number](Java/611_ValidTriangleNumber.java)|Medium|Java|Leetcode|
-|279   |259  |[3Sum Smaller](Java/259_3SumSmaller.java)|Medium|Java|Leetcode|
+|278   |611  |[Valid Triangle Number Good](Java/611_ValidTriangleNumber.java)|Medium|Java|Leetcode|
+|279   |259  |[3Sum Smaller Good](Java/259_3SumSmaller.java)|Medium|Java|Leetcode|
 |280   |733  |[Flood Fill](Java/733_FloodFill.java)|Easy|Java|Leetcode|
 |281   |547  |[Union Find Friend Circles](Java/547_FriendCircles.java)|Medium|Java|Leetcode|
 |282   |140  |[Word Break II Recursion + Memo Very Good](Java/140_WordBreakII.java)|Hard|Java|Leetcode|
