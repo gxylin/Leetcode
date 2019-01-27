@@ -298,7 +298,7 @@ Solution for Leetcode/Lintcode
 |289   |10   |[Regular Expression Matching Very Good](Java/10_RegularExpressionMatching.java)|Hard|Java|Leetcode|
 |290   |243  |[Shortest Word Distance](Java/243_ShortestI.java)|Easy|Java|Leetcode|
 |291   |244  |[Shortest Word Distance II](Java/244_ShortestII.java)|Medium|Java|Leetcode|
-|292   |245  |[Shortest Word Distance III](Java/245_ShortestIII.java)|Medium|Java|Leetcode|
+|292   |245  |[Shortest Word Distance III Good](Java/245_ShortestIII.java)|Medium|Java|Leetcode|
 |293   |9    |[Palindrome Number.java](Java/9_PalindromeNumber.java)|Easy|Java|Leetcode|
 |294   |19   |[Remove Nth Node From End of List](Java/19_RemoveNth.java)|Medium|Java|Leetcode|
 |295   |36   |[Valid Sudoku](Java/36_ValidSudoku.java)|Medium|Java|Leetcode|
