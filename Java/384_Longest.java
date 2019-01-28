@@ -16,22 +16,19 @@ class Solution {
         while (end < s.length()){
             char endCh = s.charAt(end);
             map.put(endCh, map.getOrDefault(endCh, 0) + 1);
-            if (map.get(endCh) > 1){
+            if (map.get(endCh) == 2){
                 count++;
             }
             end++;
             while (count > 0){
-                
                 char startCh = s.charAt(start);
-                if (map.get(startCh) > 1){
+                if (map.get(startCh) == 2){
                     count--;
                 }
                 map.put(startCh, map.get(startCh) - 1);
                 start++;
             }
-            if (end - start > ans){
-                ans = end - start;
-            }
+            ans = Math.max(ans, end - start);
         }
         return ans;
     }
