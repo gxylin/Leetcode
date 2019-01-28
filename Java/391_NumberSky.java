@@ -67,3 +67,19 @@ public class Solution {
         return max;
     }
 }
+
+Method 2 treemap 
+public int countOfAirplanes(List<Interval> airplanes){
+    TreeMap<Integer, Integer> treemap = new TreeMap<>();
+    for (Interval plane : airplanes){
+        treemap.put(plane, treemap.getOrDefault(plane, 0) + 1);
+        treemap.put(plane, treemap.getOrDefault(plane, 0) - 1);
+    }
+    int active = 0;
+    int max = 0;
+    for (int i : treemap.values){
+        active += i;
+        max = Math.max(max, active);
+    }
+    return max;
+}
