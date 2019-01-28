@@ -317,8 +317,8 @@ Solution for Leetcode/Lintcode
 |307   |362  |[Sliding Window Maximum](Java/362_SlidingWindow.java)|Hard|Java|Lintcode|
 |308   |643  |[Maximum Average Subarray I](Java/643_MaximumI.java)|Easy|Java|Leetcode|
 |309   |644  |[Maximum Average Subarray II](Java/644_MaximumII.java)|Hard|Java|Leetcode|
-|310   |391  |[Number of Airplanes in the Sky ](Java/391_NumberSky.java)|Medium|Java|Lintcode|
-|311   |221  |[Maximal Square](Java/221_MaximalSquare.java)|Medium|Java|Leetcode|
+|310   |391  |[Number of Airplanes in the Sky Sweep line](Java/391_NumberSky.java)|Medium|Java|Lintcode|
+|311   |221  |[Maximal Square Dynamic Programming Good](Java/221_MaximalSquare.java)|Medium|Java|Leetcode|
 |312   |397  |[Longest Increasing Continuous Subsequence](Java/397_LICS.java)|Easy|Java|Lintcode|
 |313   |398  |[Longest Increasing Continuous Subsequence 2D (memorization)](Java/LICS_2D.java)|Hard|Java|Lintcode|
 |314   |394  |[Coins in a Line I](Java/394_CoinsLine.java)|Medium|Java|Lintcode|
