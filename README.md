@@ -303,7 +303,7 @@ Solution for Leetcode/Lintcode
 |294   |19   |[Remove Nth Node From End of List](Java/19_RemoveNth.java)|Medium|Java|Leetcode|
 |295   |36   |[Valid Sudoku](Java/36_ValidSudoku.java)|Medium|Java|Leetcode|
 |296   |229  |[Majority Element II Very Good](Java/229_MajorityElementII.java)|Medium|Java|Leetcode|
-|297   |384  |[Longest Substring Without Repeating Characters](Java/384_Longest.java)|Medium|Java|Lintcode|
+|297   |384  |[Longest Substring Without Repeating Characters Sliding Window](Java/384_Longest.java)|Medium|Java|Lintcode|
 |XXX   |XXX  |[Union Find Template](Java/UnionFindTemplate.java)|
 |298   |305  |[Number of Islands II](Java/434_NumberofIslandsII.java)|Hard|Java|Leetcode|
 |299   |364  |[Trapping Rain Water II](Java/364_TrappingRainWaterII.java)|Hard|Java|Lintcode|
