@@ -323,20 +323,11 @@ Solution for Leetcode/Lintcode
 |313   |398  |[Longest Increasing Continuous Subsequence 2D DFS + memo](Java/LICS_2D.java)|Hard|Java|Lintcode|
 |314   |394  |[Coins in a Line I Dynamic Programming Good](Java/394_CoinsLine.java)|Medium|Java|Lintcode|
 |315   |395  |[Coins in a Line II Dynamic Programming Very Good](Java/395_CoinsII.java)|Medium|Java|Lintcode|
-|316   |312  |[Burst Balloons](Java/312_BurstBalloons.java)|Hard|Java|Leetcode|
+|316   |312  |[Burst Balloons Divide Conquer Very Good](Java/312_BurstBalloons.java)|Hard|Java|Leetcode|
 |317   |77   |[Longest Common Subsequence (LCS)](Java/77_LCS.java)|Medium|Java|Lintcode|
 |318   |79   |[Longest Common Substring](Java/79_LCS.java)|Medium|Java|Lintcode|
 |319   |92   |[Backpack](Java/92_Backpack.java)|Medium|Java|Lintcode|
 |320   |125  |[Backpack II](Java/125_BackpackII.java)|Medium|Java|Lintcode|
-|312   |89   |[k sum](Java/89_kSum.java)|Hard|Java|Lintcode|
-|313   |402  |[Continuous Subarray Sum](Java/402_Continuous.java)|Medium|Java|Lintcode|
-|314   |22   |[Flatten List.java](Java/22_FlattenList.java)|Easy|Java|Lintcode|
-|315   |86   |[Binary Search Tree Iterator](Java/86_BSTIterator.java)|Hard|Java|Lintcode|
-|316   |694  |[Number of Distinct Islands](Java/694_NumberIslands.java)|Medium|Java|Leetcode|
-|317   |127  |[Word Ladder](Java/127_WordLadder.java)|Medium|Java|Leetcode|
-|318   |240  |[Search 2D Matrix II Good](Java/240_SearchII.java)|Medium|Java|Leetcode|
-|319   |518  |[Coin Change 2](Java/518_CoinChange2.java)|Medium|Java|Leetcode|
-|320   |537  |[Complex Number Multiplication](Java/537_ComplexNumber.java)|Medium|Java|Leetcode|
 |321   |663  |[Equal Tree Partition Tree Sum](Java/663_EqualTreePartition.java)|Medium|Java|Leetcode|
 |322   |791  |[Custom Sort String](Java/791_CustomSortString.java)|Medium|Java|Leetcode|
 |323   |742  |[Closest Leaf in a Binary Tree](Java/742_ClosestLeaf.java)|Medium|Java|Leetcode|
@@ -921,3 +912,12 @@ Solution for Leetcode/Lintcode
 |900   |446  |[Arithmetic Slices II - Subsequence Very Good DP LIS](Java/446_Arithmetic.java)|Hard|Java|Leetcode|
 |901   |984  |[String Without AAA or BBB](Java/984_String.java)|Easy|Java|Leetcode|
 |902   |981  |[Time Based Key-Value Store](Java/981_Time.java)|Medium|Java|Leetcode|
+|903   |89   |[k sum](Java/89_kSum.java)|Hard|Java|Lintcode|
+|904   |402  |[Continuous Subarray Sum](Java/402_Continuous.java)|Medium|Java|Lintcode|
+|905   |22   |[Flatten List.java](Java/22_FlattenList.java)|Easy|Java|Lintcode|
+|906   |86   |[Binary Search Tree Iterator](Java/86_BSTIterator.java)|Hard|Java|Lintcode|
+|907   |694  |[Number of Distinct Islands](Java/694_NumberIslands.java)|Medium|Java|Leetcode|
+|908   |127  |[Word Ladder](Java/127_WordLadder.java)|Medium|Java|Leetcode|
+|909   |240  |[Search 2D Matrix II Good](Java/240_SearchII.java)|Medium|Java|Leetcode|
+|910   |518  |[Coin Change 2](Java/518_CoinChange2.java)|Medium|Java|Leetcode|
+|911   |537  |[Complex Number Multiplication](Java/537_ComplexNumber.java)|Medium|Java|Leetcode|
