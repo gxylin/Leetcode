@@ -321,8 +321,8 @@ Solution for Leetcode/Lintcode
 |311   |221  |[Maximal Square Dynamic Programming Good](Java/221_MaximalSquare.java)|Medium|Java|Leetcode|
 |312   |397  |[Longest Increasing Continuous Subsequence](Java/397_LICS.java)|Easy|Java|Lintcode|
 |313   |398  |[Longest Increasing Continuous Subsequence 2D DFS + memo](Java/LICS_2D.java)|Hard|Java|Lintcode|
-|314   |394  |[Coins in a Line I](Java/394_CoinsLine.java)|Medium|Java|Lintcode|
-|315   |395  |[Coins in a Line II](Java/395_CoinsII.java)|Medium|Java|Lintcode|
+|314   |394  |[Coins in a Line I Dynamic Programming Good](Java/394_CoinsLine.java)|Medium|Java|Lintcode|
+|315   |395  |[Coins in a Line II Dynamic Programming Very Good](Java/395_CoinsII.java)|Medium|Java|Lintcode|
 |316   |312  |[Burst Balloons](Java/312_BurstBalloons.java)|Hard|Java|Leetcode|
 |317   |77   |[Longest Common Subsequence (LCS)](Java/77_LCS.java)|Medium|Java|Lintcode|
 |318   |79   |[Longest Common Substring](Java/79_LCS.java)|Medium|Java|Lintcode|
