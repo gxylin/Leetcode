@@ -53,3 +53,39 @@ class Solution {
         return ans;
     }
 }
+
+
+https://leetcode.com/problems/burst-balloons/discuss/76228/Share-some-analysis-and-explanations
+
+class Solution {
+    public int maxCoins(int[] nums) {
+        int n = nums.length;
+        int[] arr = new int[n+2];
+        for (int i = 1; i <= n; i++){
+            arr[i] = nums[i-1];
+        }
+        arr[0] = 1;
+        arr[n+1] = 1;
+        Map<Integer, Integer> map = new HashMap<>();
+        return burst(arr, 1, n, map);
+    }
+    private int burst(int[] arr, int left, int right, Map<Integer, Integer> map){
+        if (left > right){
+            return 0;
+        }
+        int N = arr.length;
+        int key = left * N + right;
+        if (map.containsKey(key)){
+            return map.get(key);
+        }
+        int res = 0;
+        for (int i = left; i <= right; i++){
+            int lastBurst = arr[left-1] * arr[i] * arr[right+1];
+            int leftBurst = burst(arr, left, i - 1, map);
+            int rightBurst = burst(arr, i + 1, right, map);
+            res = Math.max(res, lastBurst + leftBurst + rightBurst);
+        }
+        map.put(key, res);
+        return res;
+    }
+}
