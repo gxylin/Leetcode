@@ -308,7 +308,7 @@ Solution for Leetcode/Lintcode
 |298   |305  |[Number of Islands II Union Find Good](Java/434_NumberofIslandsII.java)|Hard|Java|Leetcode|
 |299   |364  |[Trapping Rain Water II Very Good](Java/364_TrappingRainWaterII.java)|Hard|Java|Lintcode|
 |300   |81   |[Data Stream Median](Java/81_DataStream.java)|Hard|Java|Lintcode|
-|301   |575  |[Expression Expand](Java/575_ExpressionExpand.java)|Medium|Java|Lintcode|
+|301   |575  |[Expression Expand Very Good](Java/575_ExpressionExpand.java)|Medium|Java|Lintcode|
 |302   |84   |[Largest Rectangle in Histogram Monotonic Stack Very Good](Java/84_LargestRectangle.java)|Hard|Java|Leetcode|
 |303   |85   |[Maximal Rectangle Very Good](Java/85_MaximalRectangle.java)|Hard|Java|Leetcode|
 |304   |385  |[Sliding Window Maximum](Java/362_SlidingWindowMaximum.java)|Hard|Java|Leetcode|
