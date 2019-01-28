@@ -24,6 +24,10 @@ Initialize:
 Answer:
 • dp[n] > sum/2
 
+    
+Take 5 coins as an example
+Note that opponent always wants to minimize yours
+you want to maximize yours
 public class Solution {
     /*
      * @param values: a vector of integers
