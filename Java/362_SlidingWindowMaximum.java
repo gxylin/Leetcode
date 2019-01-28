@@ -57,3 +57,27 @@ public class Solution {
     }
 };
 
+Method 2:
+class Solution {
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        if (nums == null || nums.length == 0 || k == 0){
+            return new int[0];
+        }
+        int n = nums.length;
+        int[] maxLeft = new int[n];
+        int[] maxRight = new int[n];
+        maxLeft[0] = nums[0];
+        maxRight[n-1] = nums[n-1];
+        for (int i = 1; i < nums.length; i++){
+            maxLeft[i] = i % k == 0 ? nums[i] : Math.max(maxLeft[i-1], nums[i]);
+            int j = n - 1 - i;
+            maxRight[j] = j % k == 0 ? nums[j] : Math.max(maxRight[j+1], nums[j]);
+        }
+        int[] res = new int[n-k+1];
+        for (int i = 0; i < n-k+1; i++){
+            res[i] = Math.max(maxRight[i], maxLeft[i+k-1]);
+        }
+        return res;
+    }
+}
+
