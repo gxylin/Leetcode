@@ -15,6 +15,9 @@ Explanation:
 "a", "b", "c" appear in S, so the order of "a", "b", "c" should be "c", "b", and "a". 
 Since "d" does not appear in S, it can be at any position in T. "dcba", "cdba", "cbda" are also valid 
 
+Time complexity: 
+Time complexity: O(n*mlogm)
+Space complexity: O(m)
 class Solution {
     class Pair{
         char c;
@@ -41,6 +44,30 @@ class Solution {
         }
         while (!pq.isEmpty()){
             sb.append(pq.poll().c);
+        }
+        return sb.toString();
+    }
+}
+
+Method 2: 
+Time complexity: O(mn)
+    Space complexity: O(m)
+class Solution {
+    public String customSortString(String S, String T) {
+        Set<Character> set = new HashSet<>();
+        StringBuilder sb = new StringBuilder();
+        for (char c : S.toCharArray()){
+            for (int i = 0; i < T.length(); i++){
+                if (T.charAt(i) == c){
+                    sb.append(c);
+                }
+            }
+            set.add(c);
+        }
+        for (char c : T.toCharArray()){
+            if (!set.contains(c)){
+                sb.append(c);
+            }
         }
         return sb.toString();
     }
