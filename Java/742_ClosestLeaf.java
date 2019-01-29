@@ -23,15 +23,7 @@ Explanation: Either 2 or 3 is the nearest leaf node to the target of 1.
 Convert to undirected graph using dfs and use bfs to find the minimal path
           
 Method 1:
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Good
 class Solution {
     public int findClosestLeaf(TreeNode root, int k) {
         Map<Integer, List<TreeNode>> graph = new HashMap<>();
