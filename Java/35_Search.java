@@ -40,5 +40,6 @@ class Solution {
             return end;
         }
         return end+1;
+        //return nums.length;
     }
 }
