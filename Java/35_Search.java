@@ -36,9 +36,9 @@ class Solution {
         if (nums[start] >= target){
             return start;
         }
-        if (nums[end] < target){
-            return end + 1;
+        if (nums[end] >= target){
+            return end;
         }
-        return end;
+        return end+1;
     }
 }
