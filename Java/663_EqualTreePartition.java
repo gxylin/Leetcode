@@ -25,15 +25,7 @@ Sum: 15
 Sum: 15
 
 Method 1: DFS: HashMap
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Best solution
 class Solution {
     public boolean checkEqualTree(TreeNode root) {
         Map<Integer, Integer> map = new HashMap<>();
