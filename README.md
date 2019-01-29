@@ -330,7 +330,7 @@ Solution for Leetcode/Lintcode
 |320   |125  |[Backpack II Very Good](Java/125_BackpackII.java)|Medium|Java|Lintcode|
 |321   |663  |[Equal Tree Partition Tree Sum Very Good HashMap+Tree](Java/663_EqualTreePartition.java)|Medium|Java|Leetcode|
 |322   |791  |[Custom Sort String](Java/791_CustomSortString.java)|Medium|Java|Leetcode|
-|323   |742  |[Closest Leaf in a Binary Tree](Java/742_ClosestLeaf.java)|Medium|Java|Leetcode|
+|323   |742  |[Closest Leaf in a Binary Tree Very Good Convert Tree to Graph](Java/742_ClosestLeaf.java)|Medium|Java|Leetcode|
 |324   |776  |[Split BST](Java/776_SplitBST.java)|Medium|Java|Leetcode|
 |325   |8    |[String to Integer (atoi)](Java/8_StringtoInteger.java)|Medium|Java|Leetcode|
 |326   |11   |[Container With Most Water](Java/11_ContainerWater.java)|Medium|Java|Leetcode|
