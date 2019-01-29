@@ -328,7 +328,7 @@ Solution for Leetcode/Lintcode
 |318   |79   |[Longest Common Substring](Java/79_LCS.java)|Medium|Java|Lintcode|
 |319   |92   |[Backpack Very Good](Java/92_Backpack.java)|Medium|Java|Lintcode|
 |320   |125  |[Backpack II Very Good](Java/125_BackpackII.java)|Medium|Java|Lintcode|
-|321   |663  |[Equal Tree Partition Tree Sum](Java/663_EqualTreePartition.java)|Medium|Java|Leetcode|
+|321   |663  |[Equal Tree Partition Tree Sum Very Good HashMap+Tree](Java/663_EqualTreePartition.java)|Medium|Java|Leetcode|
 |322   |791  |[Custom Sort String](Java/791_CustomSortString.java)|Medium|Java|Leetcode|
 |323   |742  |[Closest Leaf in a Binary Tree](Java/742_ClosestLeaf.java)|Medium|Java|Leetcode|
 |324   |776  |[Split BST](Java/776_SplitBST.java)|Medium|Java|Leetcode|
