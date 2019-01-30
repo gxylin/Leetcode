@@ -35,6 +35,34 @@ class Solution {
     }
 }
 
+class Solution {
+    public String multiply(String num1, String num2) {
+        int l1 = num1.length();
+        int l2 = num2.length();
+        int[] res = new int[l1+l2];
+        for (int i = 0; i < l1; i++){
+            for (int j = 0; j < l2; j++){
+                res[i+j] += (int)(num1.charAt(l1-i-1) - '0') * (int)(num2.charAt(l2-j-1) - '0');
+            }
+        }
+        for (int i = 0; i < res.length - 2; i++){
+            res[i+1] += res[i] / 10;
+            res[i] %= 10;
+        }
+        int i = l1+l2-1;
+        while (i > 0 && res[i] == 0){
+            i--;
+        }
+        StringBuilder sb = new StringBuilder();
+        while (i >= 0){
+            sb.append(res[i]);
+            i--;
+        }
+        return sb.toString();
+    }
+}
+
+
 Better version:
 class Solution {
     public String multiply(String num1, String num2) {
