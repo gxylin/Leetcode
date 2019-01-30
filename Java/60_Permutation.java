@@ -33,6 +33,42 @@ class Solution {
     }
 }
 
+class Solution {
+    public String getPermutation(int n, int k) {
+        int[] nums = new int[n];
+        for (int i = 1; i <= n; i++){
+            nums[i-1] = i;
+        }
+        List<List<Integer>> list = permute(nums);
+        StringBuilder sb = new StringBuilder();
+        for (int i : list.get(k-1)){
+            sb.append(i);
+        }
+        return sb.toString();
+    }
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        Set<Integer> seen = new HashSet<>();
+        dfs(res, new ArrayList<Integer>(), seen, nums);
+        return res;
+    }
+    private void dfs(List<List<Integer>> res, List<Integer> item, Set<Integer> seen, int[] nums){
+        if(item.size() == nums.length){
+            res.add(new ArrayList<Integer>(item));
+            return;
+        }
+        for (int i = 0; i < nums.length; i++){
+            if (seen.contains(nums[i])){
+                continue;
+            }
+            item.add(nums[i]);
+            seen.add(nums[i]);
+            dfs(res, item, seen, nums);
+            seen.remove(nums[i]);
+            item.remove(item.size() - 1);
+        }
+    }
+}
 
 Method 2: DFS TLS
 class Solution {
