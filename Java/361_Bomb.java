@@ -80,3 +80,34 @@ class Solution {
     }
 }
 
+Method 2: 
+Time complexity: O(mn)
+Space complexity: O(n)
+http://www.cnblogs.com/grandyang/p/5599289.html
+public int maxKilledEnemies(char[][] grid){
+     int res = 0;
+     int m = grid.length;
+     int n = grid[0].length;
+     int rowKills = 0;
+     int[] colKills = new int[n];
+     for (int i = 0; i < m; i++){
+         for (int j = 0; j < n; j++){
+             if (j == 0 || grid[i][j-1] == 'W'){
+                 rowKills = 0;
+                 for (int k = j; j < n && grid[i][k] != 'W'; k++){
+                     rowKills += grid[i][k] == 'E';
+                 }
+             }
+             if (i == 0 || grid[i-1][j] == 'W'){
+                 colKills[j] = 0;
+                 for (int k = i; k < m && grid[k][j] != 'W'; k++){
+                     colKills[j] += grid[k][j] == 'E';
+                 }
+             }
+             if (grid[i][j] == '0'){
+                 res = Math.max(res, rowKills + colKills[j]);
+             }
+         }
+     }
+     return res;
+}
