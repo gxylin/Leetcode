@@ -335,7 +335,7 @@ Solution for Leetcode/Lintcode
 |325   |8    |[String to Integer (atoi)](Java/8_StringtoInteger.java)|Medium|Java|Leetcode|
 |326   |11   |[Container With Most Water Good](Java/11_ContainerWater.java)|Medium|Java|Leetcode|
 |327   |35   |[Search Insert Position Binary Search Very Good](Java/35_Search.java)|Easy|Java|Leetcode|
-|328   |24   |[Swap Nodes in Pairs](Java/24_SwapNodes.java)|Medium|Java|Leetcode|
+|328   |24   |[Swap Nodes in Pairs Good](Java/24_SwapNodes.java)|Medium|Java|Leetcode|
 |329   |43   |[Multiply Strings Good](Java/43_MultiplyStrings.java)|Medium|Java|Leetcode|
 |330   |18   |[4Sum](Java/18_4Sum.java)|Medium|Java|Leetcode|
 |331   |30   |[Substring with Concatenation of All Words](Java/30_Substring.java)|Hard|Java|Leetcode|
