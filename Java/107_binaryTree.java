@@ -62,21 +62,21 @@ Method 2: dfs
  * }
  */
 class Solution {
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
-        dfs(root, res, 0);
+        dfs(res, root, 0);
         return res;
     }
-    private void dfs(TreeNode root, List<List<Integer>> res, int height){
+    private void dfs(List<List<Integer>> res, TreeNode root, int height){
         if (root == null){
             return;
         }
-        if (height == res.size()){
-            List<Integer> list = new ArrayList<>();;
-            res.add(list);
+        if (res.size() == height){
+            List<Integer> item = new ArrayList<>();
+            res.add(0, item);
         }
-        res.get(height).add(root.val);
-        dfs(root.left, res, height+1);
-        dfs(root.right, res, height+1);
+        dfs(res, root.left, height + 1);
+        dfs(res, root.right, height + 1);
+        res.get(res.size() - height - 1).add(root.val);
     }
 }
