@@ -351,8 +351,8 @@ Solution for Leetcode/Lintcode
 |341   |101  |[Symmetric Tree Good](Java/101_Symmetric.java)|Easy|Java|Leetcode|
 |342   |107  |[Binary Tree Level Order Traversal II](Java/107_binaryTree.java)|Easy|Java|Leetcode|
 |343   |125  |[Valid Palindrome](Java/125_ValidPalindrome.java)|Easy|Java|Leetcode|
-|344   |96   |[Unique Binary Search Trees (Catalan Number)](Java/96_Unique.java)|Medium|Java|Leetcode|
-|345   |95   |[Unique Binary Search Trees II](Java/95_Unique.java)|Medium|Java|Leetcode|
+|344   |96   |[Unique Binary Search Trees (Catalan Number) DP](Java/96_Unique.java)|Medium|Java|Leetcode|
+|345   |95   |[Unique Binary Search Trees II Recursion](Java/95_Unique.java)|Medium|Java|Leetcode|
 |346   |87   |[Scramble String](Java/87_ScrambleString.java)|Hard|Java|Leetcode|
 |347   |97   |[Interleaving String](Java/97_InterleavingString.java)|Hard|Java|Leetcode|
 |348   |118  |[Pascal's Triangle](Java/118_Pascal_Triangle.java)|Easy|Java|Leetcode|
