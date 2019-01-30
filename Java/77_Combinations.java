@@ -33,3 +33,28 @@ class Solution {
         }
     }
 }
+
+This is combination, not permutation, so we need have a start flag to avoid [1, 3] and [3, 1] which are the same
+class Solution {
+    public List<List<Integer>> combine(int n, int k) {
+        List<List<Integer>> res = new ArrayList<>();
+        dfs(res, new ArrayList<Integer>(), new HashSet<Integer>(), n, k, 1);
+        return res;
+    }
+    private void dfs(List<List<Integer>> res, List<Integer> item, Set<Integer> seen, int n, int k, int start){
+        if (item.size() == k){
+            res.add(new ArrayList<>(item));
+            return;
+        }
+        for (int i = start; i <= n; i++){
+            if (seen.contains(i)){
+                continue;
+            }
+            item.add(i);
+            seen.add(i);
+            dfs(res, item, seen, n, k, i+1);
+            seen.remove(i);
+            item.remove(item.size() - 1);
+        }
+    }
+}
