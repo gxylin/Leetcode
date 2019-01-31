@@ -367,7 +367,7 @@ Solution for Leetcode/Lintcode
 |357   |535  |[Encode and Decode TinyURL](Java/535_url.java)|Medium|Java|Leetcode|
 |358   |211  |[Add and Search Word Trie DFS Good](Java/211_Add.java)|Medium|Java|Leetcode|
 |359   |187  |[Repeated DNA Sequences](Java/187_Repeated.java)|Medium|Java|Leetcode|
-|360   |216  |[Combination Sum III](Java/216_Combination.java)|Medium|Java|Leetcode|
+|360   |216  |[Combination Sum III backtracking Good](Java/216_Combination.java)|Medium|Java|Leetcode|
 |361   |214  |[Shortest Palindrome](Java/214_Shortest.java)|Hard|Java|Leetcode|
 |362   |219  |[Contains Duplicate II](Java/219_Contains.java)|Easy|Java|Leetcode|
 |363   |220  |[Contains Duplicate III TreeSet TreeMap](Java/220_Contains.java)|Medium|Java|Leetcode|
