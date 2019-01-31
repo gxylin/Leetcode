@@ -33,4 +33,32 @@ class Solution {
     }
 }
 
+class Solution {
+    public List<String> restoreIpAddresses(String s) {
+        List<String> res = new ArrayList<>();
+        if (s.length() > 12){
+            return res;
+        }
+        dfs(res, "", s, 0, 4);
+        return res;
+    }
+    private void dfs(List<String> res, String item, String s, int start, int k){
+        if (k == 0 && start == s.length()){
+            res.add(item);
+            return;
+        }
+        for (int i = start; i < s.length() && i - start < 3; i++){
+            String str = s.substring(start, i+1);
+            if (str.length() > 1 && str.charAt(0) == '0'){
+                break;
+            }
+            int num = Integer.parseInt(str);
+            if (num > 255){
+                break;
+            }
+            dfs(res, start == 0 ? str : item + "." + str, s, i+1, k-1); 
+        }
+    }
+}
+
 https://leetcode.com/problems/restore-ip-addresses/discuss/30944/Very-simple-DFS-solution
