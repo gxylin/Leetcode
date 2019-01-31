@@ -7,6 +7,27 @@ Example 2:
 Input: [0,2,3,4,6,8,9]
 Output: ["0","2->4","6","8->9"]
 
+Best solution:
+class Solution {
+    public List<String> summaryRanges(int[] nums) {
+        List<String> res = new ArrayList<>();
+        int i = 0;
+        while (i < nums.length){
+            int j = i;
+            while (j + 1 < nums.length && nums[j] + 1 == nums[j+1]){
+                j++;
+            }
+            if (j == i){
+                res.add(String.valueOf(nums[i]));
+            }else{
+                res.add(nums[i] + "->" + nums[j]);
+            }
+            i = j + 1;
+        }
+        return res;
+    }
+}
+
 Method 1:
 class Solution {
     public List<String> summaryRanges(int[] nums) {
