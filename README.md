@@ -370,7 +370,7 @@ Solution for Leetcode/Lintcode
 |360   |216  |[Combination Sum III backtracking Good](Java/216_Combination.java)|Medium|Java|Leetcode|
 |361   |214  |[Shortest Palindrome Good](Java/214_Shortest.java)|Hard|Java|Leetcode|
 |362   |219  |[Contains Duplicate II](Java/219_Contains.java)|Easy|Java|Leetcode|
-|363   |220  |[Contains Duplicate III TreeSet TreeMap](Java/220_Contains.java)|Medium|Java|Leetcode|
+|363   |220  |[Contains Duplicate III TreeSet Very Good](Java/220_Contains.java)|Medium|Java|Leetcode|
 |364   |226  |[Invert Binary Tree](Java/226_Invert.java)|Easy|Java|Leetcode|
 |365   |258  |[Add Digits](Java/258_Add.java)|Easy|Java|Leetcode|
 |366   |222  |[Count Complete Tree Nodes Very Good](Java/222_count.java)|Medium|Java|Leetcode|
