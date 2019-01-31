@@ -356,7 +356,7 @@ Solution for Leetcode/Lintcode
 |346   |87   |[Scramble String Recursion](Java/87_ScrambleString.java)|Hard|Java|Leetcode|
 |347   |97   |[Interleaving String Dynamic Programming Good](Java/97_InterleavingString.java)|Hard|Java|Leetcode|
 |348   |118  |[Pascal's Triangle](Java/118_Pascal_Triangle.java)|Easy|Java|Leetcode|
-|349   |99   |[Recover Binary Search Tree](Java/99_Recover.java)|Hard|Java|Leetcode|
+|349   |99   |[Recover Binary Search Tree Good](Java/99_Recover.java)|Hard|Java|Leetcode|
 |350   |93   |[Restore IP Addresses](Java/93_Restore.java)|Medium|Java|Leetcode|
 |351   |116  |[Populating Next Right Pointers in Each Node](Java/116_Populating.java)|Medium|Java|Leetcode|
 |352   |117  |[Populating Next Right Pointers in Each Node II Good](Java/117_Populating.java)|Medium|Java|Leetcode|
