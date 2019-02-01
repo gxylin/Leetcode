@@ -21,6 +21,7 @@ class Solution {
         List<List<String>> result = new ArrayList<>();
         Map<String, List<String>> map = new HashMap<>();
         for (String str : strings){
+           //first find the key by baselining every char in str
            int offset = (int) (str.charAt(0) - 'a');
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < str.length(); i++){
