@@ -16,6 +16,7 @@ class Solution {
     public boolean wordPattern(String pattern, String str) {
         Map<Character, String>  map = new HashMap<>();
         String[] strArray = str.split(" ");
+        //String[] strs = str.split("\\s+");
         if (pattern.length() != strArray.length){
             return false;
         }
