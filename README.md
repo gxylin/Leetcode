@@ -383,7 +383,7 @@ Solution for Leetcode/Lintcode
 |373   |249  |[Group Shifted Strings Very Good](Java/249_Group.java)|Medium|Java|Leetcode|
 |374   |250  |[Count Univalue Subtrees Good](Java/250_Count.java)|Medium|Java|Leetcode|
 |375   |254  |[Factor Combinations Backtracking Good](Java/254_Factor.java)|Medium|Java|Leetcode|
-|376   |255  |[Verify preorder in binary search tree montonic stack](Java/255_Verify.java)|Medium|Java|Leetcode|
+|376   |255  |[Verify preorder in binary search tree montonic stack Very Good](Java/255_Verify.java)|Medium|Java|Leetcode|
 |377   |256  |[Paint House](Java/256_paint.java)|Easy|Java|Leetcode|
 |378   |274  |[H-Index](Java/274_H-Index.java)|Medium|Java|Leetcode|
 |379   |275  |[H-Index II](Java/275_Hindex.java)|Medium|Java|Leetcode|
