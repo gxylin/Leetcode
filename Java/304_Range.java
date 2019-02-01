@@ -16,7 +16,7 @@ sumRegion(2, 1, 4, 3) -> 8
 sumRegion(1, 1, 2, 2) -> 11
 sumRegion(1, 2, 2, 4) -> 12
 
-Method 1:
+Method 1: Best solution
 dp on consructor
 class NumMatrix {
     int[][] preSum;
