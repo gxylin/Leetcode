@@ -75,18 +75,16 @@ class Solution {
         }
         return result;
     }
-    private Map<Integer, Set<Integer>> initializeGraph (int n, int[][] edges){
-        Map<Integer, Set<Integer>> result = new HashMap<>();
+    private Map<Integer, Set<Integer>> buildGraph(int n, int[][] edges){
+        Map<Integer, Set<Integer>> graph = new HashMap<>();
         for (int i = 0; i < n; i++){
-            result.put(i, new HashSet<Integer>());
+            graph.put(i, new HashSet<>());
         }
-        for (int i = 0; i < edges.length; i++){
-            int u = edges[i][0];
-            int v = edges[i][1];
-            result.get(u).add(v);
-            result.get(v).add(u);
+        for (int[] edge : edges){
+            graph.get(edge[0]).add(edge[1]);
+            graph.get(edge[1]).add(edge[0]);
         }
-        return result;
+        return graph;
     }
 }
 
