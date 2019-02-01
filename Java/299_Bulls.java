@@ -63,3 +63,35 @@ class Solution {
         return A + "A" + B + "B";
     }
 }
+
+class Solution {
+    public String getHint(String secret, String guess) {
+        int A = 0;
+        int B = 0;
+        int len = secret.length();
+        boolean[] bull = new boolean[len];
+        for (int i = 0; i < len; i++){
+            if (secret.charAt(i) == guess.charAt(i)){
+                A++;
+                bull[i] = true;
+            }
+        }
+        Map<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < len; i++){
+            if (!bull[i]){
+                char c = secret.charAt(i);
+                map.put(c, map.getOrDefault(c, 0) + 1);
+            }
+        }
+        for (int i = 0; i < len; i++){
+            if (!bull[i]){
+                char c = guess.charAt(i);
+                if (map.containsKey(c) && map.get(c) > 0){
+                    map.put(c, map.get(c) - 1);
+                    B++;
+                }
+            }
+        }
+        return A + "A" + B + "B";
+    }
+}
