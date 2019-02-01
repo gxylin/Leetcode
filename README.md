@@ -392,7 +392,7 @@ Solution for Leetcode/Lintcode
 |382   |284  |[Peeking Iterator](Java/284_Peeking.java)|Medium|Java|Leetcode|
 |383   |292  |[Nim Game](Java/292_Nim.java)|Easy|Java|Leetcode|
 |384   |299  |[Bulls and Cows](Java/299_Bulls.java)|Medium|Java|Leetcode|
-|385   |282  |[Expression Add Operators Backtracking](Java/282_Expression.java)|Hard|Java|Leetcode|
+|385   |282  |[Expression Add Operators DFS Very Good](Java/282_Expression.java)|Hard|Java|Leetcode|
 |386   |318  |[Maximum Product of Word Lengths bit compare two words](Java/318_Maximum.java)|Medium|Java|Leetcode|
 |387   |303  |[Range Sum Query - Immutable preSum Array](Java/303_Range.java)|Easy|Java|Leetcode|
 |388   |304  |[Range Sum Query 2D 2D preSum Array](Java/304_Range.java)|Medium|Java|Leetcode|
