@@ -393,7 +393,7 @@ Solution for Leetcode/Lintcode
 |383   |292  |[Nim Game](Java/292_Nim.java)|Easy|Java|Leetcode|
 |384   |299  |[Bulls and Cows](Java/299_Bulls.java)|Medium|Java|Leetcode|
 |385   |282  |[Expression Add Operators DFS Very Good](Java/282_Expression.java)|Hard|Java|Leetcode|
-|386   |318  |[Maximum Product of Word Lengths bit compare two words](Java/318_Maximum.java)|Medium|Java|Leetcode|
+|386   |318  |[Maximum Product of Word Lengths Convert String to Bit Very Good](Java/318_Maximum.java)|Medium|Java|Leetcode|
 |387   |303  |[Range Sum Query - Immutable preSum Array](Java/303_Range.java)|Easy|Java|Leetcode|
 |388   |304  |[Range Sum Query 2D 2D preSum Array](Java/304_Range.java)|Medium|Java|Leetcode|
 |389   |310  |[Minimum Height Trees topological sort graph](Java/310_Minimum.java)|Medium|Java|Leetcode|
