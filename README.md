@@ -387,7 +387,7 @@ Solution for Leetcode/Lintcode
 |377   |256  |[Paint House](Java/256_paint.java)|Easy|Java|Leetcode|
 |378   |274  |[H-Index](Java/274_H-Index.java)|Medium|Java|Leetcode|
 |379   |275  |[H-Index II](Java/275_Hindex.java)|Medium|Java|Leetcode|
-|380   |241  |[Different Ways to Add Parentheses Divide and Conquer](Java/241_Different.java)|Medium|Java|Leetcode|
+|380   |241  |[Different Ways to Add Parentheses Divide and Conquer Recursion Very Good](Java/241_Different.java)|Medium|Java|Leetcode|
 |381   |290  |[Word Pattern](Java/290_WordPattern.java)|Easy|Java|Leetcode|
 |382   |284  |[Peeking Iterator](Java/284_Peeking.java)|Medium|Java|Leetcode|
 |383   |292  |[Nim Game](Java/292_Nim.java)|Easy|Java|Leetcode|
