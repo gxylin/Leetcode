@@ -89,3 +89,35 @@ class Solution {
         return sb.toString();
     }
 }
+
+class Solution {
+    public String decodeString(String s) {
+        Stack<Integer> numStack = new Stack<>();
+        Stack<String> strStack = new Stack<>();
+        int curr = 0;
+        String str = "";
+        for (int i = 0; i < s.length(); i++){
+            char c = s.charAt(i);
+            if (Character.isDigit(c)){
+                curr = curr * 10 + (int)(c - '0');
+            }else if (c == '['){
+                numStack.push(curr);
+                strStack.push(str);
+                curr = 0;
+                str = "";
+            }else if (Character.isLetter(c)){
+                str += c;
+            }else if (c == ']'){
+                int num = numStack.pop();
+                String prevStr = strStack.pop();
+                StringBuilder sb = new StringBuilder();
+                while (num > 0){
+                    sb.append(str);
+                    num--;
+                }
+                str = prevStr + sb.toString();
+            }
+        }
+        return str;
+    }
+}
