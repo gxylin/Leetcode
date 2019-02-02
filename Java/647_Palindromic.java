@@ -56,3 +56,8 @@ class Solution {
         return count;
     }
 }
+
+
+Note that 
+i must go backward from i = n - 1, can't start from 0, because dp[i][j] replies on dp[i+1]
+j must go forward from i can't start from n - 1, because dp[i][j] replies on dp[j-1]
