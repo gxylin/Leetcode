@@ -120,3 +120,58 @@ class Solution {
         return right - left <= 0 ? 0 : right - left + 1;
     }
 }
+
+
+Method 5: Better solution
+Time complexity: O(nlogn)
+Space complexity: O(n)
+class Solution {
+    public int findUnsortedSubarray(int[] nums) {
+        int[] copy = Arrays.copyOf(nums, nums.length);
+        Arrays.sort(copy);
+        int i = 0;
+        int j = nums.length - 1;
+        while (i < j && nums[i] == copy[i]){
+            i++;
+        }
+        while (i < j && nums[j] == copy[j]){
+            j--;
+        }
+        return i == j ? 0 : j - i + 1;
+    }
+}
+
+Method 6: Best solution
+Time complexity: O(n)
+Space complexity: O(1)
+class Solution {
+    public int findUnsortedSubarray(int[] nums) {
+        if (nums == null || nums.length == 0 || nums.length == 1){
+            return 0;
+        }
+        int left = 0;
+        int right = nums.length - 1;
+        while (left < right && nums[left+1] >= nums[left]){
+            left++;
+        }
+        if (left == right){
+            return 0;
+        }
+        while (left < right && nums[right-1] <= nums[right]){
+            right--;
+        }
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for (int i = left; i <= right; i++){
+            min = Math.min(min, nums[i]);
+            max = Math.max(max, nums[i]);
+        }
+        while (left >= 0 && nums[left] > min){
+            left--;
+        }
+        while (right < nums.length && nums[right] < max){
+            right++;
+        }
+        return right - left - 1;
+    }
+}
