@@ -401,7 +401,7 @@ Solution for Leetcode/Lintcode
 |391   |331  |[Verify Preorder Serialization of a Binary Tree Very Good](Java/331_Verify.java)|Medium|Java|Leetcode|
 |392   |337  |[House Robber III Tree DP Very Good](Java/337_House.java)|Medium|Java|Leetcode|
 |393   |315  |[Count of Smaller Numbers After Self Merge Sort](Java/315_Count.java)|Hard|Java|leetcode|
-|394   |332  |[Reconstruct Itinerary Backtracking](java/332_Reconstruct.java)|Medium|Java|Leetcode|
+|394   |332  |[Reconstruct Itinerary Backtracking](Java/332_Reconstruct.java)|Medium|Java|Leetcode|
 |395   |373  |[Find K Pairs with Smallest Sums](Java/373_Find.java)|Medium|Java|Leetcode|
 |396   |345  |[Reverse Vowels of a String](Java/345_Reverse.java)|Easy|Java|Leetcode|
 |397   |321  |[Create Maximum Number](Java/321_Create.java)|Hard|Java|Leetcode|
