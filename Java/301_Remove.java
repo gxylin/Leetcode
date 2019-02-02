@@ -60,3 +60,31 @@ class Solution {
         return count == 0;
     }
 }
+
+Another way to check is valid parenthesis without stack
+private boolean isValid(String str){
+        int count = 0;
+        for (char c : str.toCharArray()){
+            if (c == '('){
+                count++;
+            }else if (c == ')'){
+                count--;
+                if (count < 0){
+                    return false;
+                }
+            }
+        }
+        count = 0;
+        for (int i = str.length() - 1; i >= 0; i--){
+            char c = str.charAt(i);
+            if (c == ')'){
+                count++;
+            }else if (c == '('){
+                count--;
+                if (count <0){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
