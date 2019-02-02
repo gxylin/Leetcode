@@ -51,6 +51,9 @@ class Solution {
 
 Method 2: Best solution
 https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/discuss/78551/7-lines-Easy-Java-Solution
+in a tree, for all the edges, the number of indegree = the number of outdegree
+For a valid tree, (number of "#") = (number of nodes) + 1
+     
 public boolean isValidSerialization(String preorder) {
     String[] nodes = preorder.split(",");
     int diff = 1;
