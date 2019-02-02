@@ -77,7 +77,10 @@ class Solution {
     }
 }
 
-Method 3: Merge Sort Idea:
+Method 3: Merge Sort Idea: Best solution
+The smaller numbers on the right of a number are exactly those that jump from its right to its left during a stable sort. 
+So I do mergesort with added tracking of those right-to-left jumps.
+	
 https://leetcode.com/problems/count-of-smaller-numbers-after-self/discuss/76583/11ms-JAVA-solution-using-merge-sort-with-explanation
 
 class Solution {
