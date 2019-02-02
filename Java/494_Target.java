@@ -113,7 +113,7 @@ class Solution {
             dp[i][0] = 1;
         }
         for (int i = 1; i <= n; i++){
-            for (int j = 0; j <= target; j++){
+            for (int j = 0; j <= target; j++){ // here j must start from 0, not 1 for special case [0, 0, 0, 0, 1], S = 1
                 dp[i][j] = dp[i-1][j];
                 if (j >= nums[i-1]){
                     dp[i][j] += dp[i-1][j - nums[i-1]];
