@@ -94,3 +94,24 @@ class Solution {
         return Math.max(leftMax, rightMax);
     }
 }
+
+Best solution:
+class Solution {
+    public int diameterOfBinaryTree(TreeNode root) {
+        if (root == null){
+            return 0;
+        }
+        int[] ans = new int[1];
+        diameterInlcudeRoot(root, ans);
+        return ans[0];
+    }
+    private int diameterInlcudeRoot(TreeNode root, int[] ans){
+        if (root == null){
+            return 0;
+        }
+        int left = diameterInlcudeRoot(root.left, ans);
+        int right = diameterInlcudeRoot(root.right, ans);
+        ans[0] = Math.max(ans[0], left + right);
+        return Math.max(left, right) + 1;
+    }
+}
