@@ -49,7 +49,7 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: Best solution
 https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/discuss/78551/7-lines-Easy-Java-Solution
 public boolean isValidSerialization(String preorder) {
     String[] nodes = preorder.split(",");
