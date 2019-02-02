@@ -13,13 +13,13 @@ space complexity: O(n)
 class Solution {
     public boolean verifyPreorder(int[] preorder) {
         Stack<Integer> monotonicStack = new Stack<>();
-        int last = Integer.MIN_VALUE;
+        int root = Integer.MIN_VALUE;
         for (int p: preorder){
-            if (p < last){
+            if (p < root){
                 return false;
             }
             while (!monotonicStack.isEmpty() && p > monotonicStack.peek()){
-                last = monotonicStack.pop();
+                root = monotonicStack.pop();
             }
             monotonicStack.push(p);
         }
