@@ -54,14 +54,22 @@ https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/dis
 in a tree, for all the edges, the number of indegree = the number of outdegree
 For a valid tree, (number of "#") = (number of nodes) + 1
      
-public boolean isValidSerialization(String preorder) {
-    String[] nodes = preorder.split(",");
-    int diff = 1;
-    for (String node: nodes) {
-        if (--diff < 0) return false;
-        if (!node.equals("#")) diff += 2;
+class Solution {
+    public boolean isValidSerialization(String preorder) {
+        String[] strs = preorder.split(",");
+        int diff = 1;//diff = outdegree - indegree
+        for (String str : strs){
+            diff--;
+            if (diff < 0){
+                return false;
+            }
+            if (!str.equals("#")){
+                diff += 2;
+            }
+        }
+        return diff == 0;
+        
     }
-    return diff == 0;
 }
 
 Method 3:
