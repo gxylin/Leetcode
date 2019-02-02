@@ -7,6 +7,9 @@ Could you do it using only constant space complexity?
 
 
 https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/discuss/68142/Java-O(n)-and-O(1)-extra-space
+
+https://www.geeksforgeeks.org/check-if-a-given-array-can-represent-preorder-traversal-of-binary-search-tree/
+Similar as Next Greater Element 
 Method 1: monotonic stack
 time complexity: O(n)
 space complexity: O(n)
