@@ -405,7 +405,7 @@ Solution for Leetcode/Lintcode
 |395   |373  |[Find K Pairs with Smallest Sums Very Good](Java/373_Find.java)|Medium|Java|Leetcode|
 |396   |345  |[Reverse Vowels of a String](Java/345_Reverse.java)|Easy|Java|Leetcode|
 |397   |321  |[Create Maximum Number](Java/321_Create.java)|Hard|Java|Leetcode|
-|398   |32   |[Longest Valid Parentheses two pointers](Java/32_Longest.java)|Hard|Java|Leetcode|
+|398   |32   |[Longest Valid Parentheses Two Pointers Very Good](Java/32_Longest.java)|Hard|Java|Leetcode|
 |399   |581  |[Shortest Unsorted Continuous Subarray two pointers](Java/581_Shortest.java)|Easy|Java|Leetcode|
 |400   |494  |[Target Sum Add Operator DFS or Backpack DP Very Good](Java/494_Target.java)|Medium|Java|Leetcode|
 |401   |543  |[Diameter of Binary Tree Good](Java/543_Diameter.java)|Easy|Java|Leetcode|
