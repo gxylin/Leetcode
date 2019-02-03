@@ -49,7 +49,6 @@ class Solution {
             return "";
         }
         String[] res = new String[1];
-        res[0] = "";
         dfs(root, "", res);
         return res[0]; 
     }
@@ -59,7 +58,7 @@ class Solution {
         }
         if (root.left == null && root.right == null){
             str = (char)(root.val + 'a') + str;
-            if (res[0].equals("") || str.compareTo(res[0]) < 0){
+            if (res[0] == null || str.compareTo(res[0]) < 0){
                 res[0] = str;
             }
             return;
