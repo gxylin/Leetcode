@@ -921,3 +921,4 @@ Solution for Leetcode/Lintcode
 |909   |240  |[Search 2D Matrix II Good](Java/240_SearchII.java)|Medium|Java|Leetcode|
 |910   |518  |[Coin Change 2](Java/518_CoinChange2.java)|Medium|Java|Leetcode|
 |911   |537  |[Complex Number Multiplication](Java/537_ComplexNumber.java)|Medium|Java|Leetcode|
+|912   |985  |[Sum of Even Numbers After Queries Good](Java/985_Sum.java)|Easy|Java|Leetcode|
