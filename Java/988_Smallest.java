@@ -6,7 +6,7 @@ Find the lexicographically smallest string that starts at a leaf of this tree an
 
  
  
-Method 1:
+Method 1: Top Down
 class Solution {
     String res = "";
     public String smallestFromLeaf(TreeNode root) {
@@ -34,15 +34,7 @@ class Solution {
 }
 
 Method 2: without global
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Top Down
 class Solution {
     public String smallestFromLeaf(TreeNode root) {
         if (root == null){
@@ -66,5 +58,32 @@ class Solution {
         str = (char)(root.val + 'a') + str;
         dfs(root.left, str, res);
         dfs(root.right, str, res);
+    }
+}
+
+Methdo 3: Bottom up
+
+class Solution {
+    public String smallestFromLeaf(TreeNode root) {
+        return dfs(root);
+    }
+    private String dfs(TreeNode root){
+        if (root == null){
+            return null;
+        }
+        String left = dfs(root.left);
+        String right =dfs(root.right);
+        char c = (char)(root.val + 'a');
+        if (left == null && right == null){
+            return "" + c;
+        }else if (left != null && right == null){
+            return left + c;
+        }else if (left == null && right != null){
+            return right + c;
+        }
+        if (left.compareTo(right) < 0){
+            return left + c;
+        }
+        return right + c;
     }
 }
