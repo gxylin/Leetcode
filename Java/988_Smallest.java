@@ -32,3 +32,40 @@ class Solution {
         dfs(root.right, str);
     }
 }
+
+Method 2: without global
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public String smallestFromLeaf(TreeNode root) {
+        if (root == null){
+            return "";
+        }
+        String[] res = new String[1];
+        res[0] = "";
+        dfs(root, "", res);
+        return res[0]; 
+    }
+    private void dfs(TreeNode root, String str, String[] res){
+        if (root == null){
+            return;
+        }
+        if (root.left == null && root.right == null){
+            str = (char)(root.val + 'a') + str;
+            if (res[0].equals("") || str.compareTo(res[0]) < 0){
+                res[0] = str;
+            }
+            return;
+        }
+        str = (char)(root.val + 'a') + str;
+        dfs(root.left, str, res);
+        dfs(root.right, str, res);
+    }
+}
