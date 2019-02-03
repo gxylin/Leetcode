@@ -5,6 +5,7 @@ Return the intersection of these two interval lists.
 (Formally, a closed interval [a, b] (with a <= b) denotes the set of real numbers x with a <= x <= b.  The intersection of two closed intervals is a set of real numbers that is either empty, or can be represented as a closed interval.  For example, the intersection of [1, 3] and [2, 4] is [2, 3].)
 
 
+Method 1: O(((m+n)Log(m+n))
 Sweep line similar as meeting room
 
 /**
@@ -70,3 +71,50 @@ class Solution {
         return res;
     }
 }
+
+Method 2: best solution
+O(m+n)
+            
+/**
+ * Definition for an interval.
+ * public class Interval {
+ *     int start;
+ *     int end;
+ *     Interval() { start = 0; end = 0; }
+ *     Interval(int s, int e) { start = s; end = e; }
+ * }
+ */
+class Solution {
+    public Interval[] intervalIntersection(Interval[] A, Interval[] B) {
+        int m = A.length;
+        int n = B.length;
+        int i = 0;
+        int j = 0;
+        List<Interval> list = new ArrayList<>();
+        while (i < m && j < n){
+            Interval a = A[i];
+            Interval b = B[j];
+            
+            int startMax = Math.max(a.start, b.start);
+            int endMin = Math.min(a.end, b.end);
+            
+            if (startMax <= endMin){
+                list.add(new Interval(startMax, endMin));
+            }
+            
+            if (endMin == a.end){
+                i++;
+            }
+            if (endMin == b.end){
+                j++;
+            }
+        }
+        Interval[] res = new Interval[list.size()];
+        for (int k = 0; k < list.size(); k++){
+            res[k] = list.get(k);
+        }
+        return res;
+    }
+}
+            
+            
