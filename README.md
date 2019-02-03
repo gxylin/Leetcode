@@ -923,3 +923,4 @@ Solution for Leetcode/Lintcode
 |911   |537  |[Complex Number Multiplication](Java/537_ComplexNumber.java)|Medium|Java|Leetcode|
 |912   |985  |[Sum of Even Numbers After Queries Good](Java/985_Sum.java)|Easy|Java|Leetcode|
 |913   |988  |[Smallest String Starting From Leaf Good](Java/988_Smallest.java)|Medium|Java|Leetcode|
+|914   |986  |[Interval List Intersections Sweep line](Java/986_Interval.java)|Medium|Java|Leetcode|
