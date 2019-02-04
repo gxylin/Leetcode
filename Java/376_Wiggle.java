@@ -26,7 +26,7 @@ Similarly, down[i]down[i] refers to the length of the longest wiggle subsequence
 the element as the last element of the wiggle subsequence and ending with a falling wiggle.
 
 
-Method 1: Similar as LIS
+Method 1: 
 Time complexity: O(n^2)
 Space complexity: O(n)
 class Solution {
@@ -35,10 +35,10 @@ class Solution {
             return nums.length;
         }
         int n = nums.length;
-        int[] up = new int[n];
+        int[] up = new int[n]; //dp[i] denote longest result ending at i, (note result must include the element at i)
         int[] down = new int[n];
-      //  Arrays.fill(up, 1);
-      //  Arrays.fill(down, 1);
+        Arrays.fill(up, 1);
+        Arrays.fill(down, 1);
         for (int i = 1; i < n; i++){
             for (int j = 0; j < i; j++){
                 if (nums[i] > nums[j]){
@@ -48,7 +48,7 @@ class Solution {
                 }
             }
         }
-        return 1 + Math.max(up[n-1], down[n-1]);
+        return Math.max(up[n-1], down[n-1]);
     }
 }
 
@@ -61,7 +61,7 @@ class Solution {
             return nums.length;
         }
         int n = nums.length;
-        int[] up = new int[n];
+        int[] up = new int[n]; 
         int[] down = new int[n];
         up[0] = 1;
         down[0] = 1;
