@@ -61,7 +61,7 @@ class Solution {
             return nums.length;
         }
         int n = nums.length;
-        int[] up = new int[n]; 
+        int[] up = new int[n]; //dp[i] denote longest result ending at i, (note result may or may include the element at i)
         int[] down = new int[n];
         up[0] = 1;
         down[0] = 1;
