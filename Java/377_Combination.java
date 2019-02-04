@@ -75,7 +75,7 @@ combination sum being calculated many times. We can use an array to save those r
 already a result before calculation. We can fill the array with -1 to indicate that 
 the result hasn't been calculated yet. 0 is not a good choice because it means there is no combination sum for the target.
 
-Different from backpack DP
+Different from backpack DP, similar as LIS
 Method 3: DP iteration -- bottom up
 class Solution {
     public int combinationSum4(int[] nums, int target) {
