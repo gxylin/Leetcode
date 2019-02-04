@@ -26,7 +26,7 @@ Similarly, down[i]down[i] refers to the length of the longest wiggle subsequence
 the element as the last element of the wiggle subsequence and ending with a falling wiggle.
 
 
-Method 1:
+Method 1: Similar as LIS
 Time complexity: O(n^2)
 Space complexity: O(n)
 class Solution {
