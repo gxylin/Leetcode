@@ -11,7 +11,7 @@ class Solution {
         int[] dp = new int[n+1];
         // 1.Init except dp[n], since it cannot be itself and must break into two positive
         for (int i = 1; i < n; i++){
-            dp[i] = i;
+            dp[i] = i; // note that in the result, itself could be the largest one in product.
         }
         for (int i = 2; i <= n; i++){
             for (int j = 1; j <= i - j; j++){
