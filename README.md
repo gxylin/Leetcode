@@ -426,7 +426,7 @@ Solution for Leetcode/Lintcode
 |416   |137  |[Single Number II Very Good](Java/137_Single.java)|Medium|Java|Leetcode|
 |417   |260  |[Single Number III Very Good](Java/260_Single.java)|Medium|Java|Leetcode|
 |418   |342  |[Power of Four](Java/342_Power.java)|Easy|Java|Leetcode|
-|419   |343  |[Integer break](Java/343_Integer.java)|Medium|Java|Leetcode|
+|419   |343  |[Integer break Dynamic Programming Good](Java/343_Integer.java)|Medium|Java|Leetcode|
 |420   |374  |[Guess Number](Java/374_Guess.java)|Easy|Java|Leetcode|
 |421   |377  |[Combination Sum IV](Java/377_Combination.java)|Medium|Java|Leetcode|
 |422   |389  |[Find the Difference](Java/389_Find.java)|Easy|Java|Leetcode|
