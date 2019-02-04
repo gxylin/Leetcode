@@ -421,7 +421,7 @@ Solution for Leetcode/Lintcode
 |411   |309  |[Best Time to Buy and Sell Stock with Cooldown](Java/309_Best.java)|Medium|Java|Leetcode|
 |412   |621  |[Task Scheduler Very Good](Java/621_Task.java)|Medium|Java|Leetcode|
 |413   |191  |[Number of 1 Bits](Java/191_Number.java)|Easy|Java|Leetcode|
-|414   |190  |[Reverse Bits](Java/190_Reverse.java)|Easy|Java|Leetcode|
+|414   |190  |[Reverse Bits Good](Java/190_Reverse.java)|Easy|Java|Leetcode|
 |415   |326  |[Power of Three](Java/326_Power.java)|Easy|Java|Leetcode|
 |416   |137  |[Single Number II Very Good](Java/137_Single.java)|Medium|Java|Leetcode|
 |417   |260  |[Single Number III](Java/260_Single.java)|Medium|Java|Leetcode|
