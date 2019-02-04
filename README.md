@@ -429,7 +429,7 @@ Solution for Leetcode/Lintcode
 |419   |343  |[Integer break Dynamic Programming Good](Java/343_Integer.java)|Medium|Java|Leetcode|
 |420   |374  |[Guess Number](Java/374_Guess.java)|Easy|Java|Leetcode|
 |421   |377  |[Combination Sum IV](Java/377_Combination.java)|Medium|Java|Leetcode|
-|422   |389  |[Find the Difference](Java/389_Find.java)|Easy|Java|Leetcode|
+|422   |389  |[Find the Difference (Single Number)](Java/389_Find.java)|Easy|Java|Leetcode|
 |423   |376  |[Wiggle Subsequence](Java/376_Wiggle.java)|Medium|Java|Leetcode|
 |424   |415  |[Add Strings](Java/415_Add.java)|Easy|Java|Leetcode|
 |425   |381  |[Insert Delete GetRandom O(1) - Duplicates allowed](Java/381_Insert.java)|Hard|Java|Leetcode|
