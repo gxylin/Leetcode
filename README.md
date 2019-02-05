@@ -443,7 +443,7 @@ Solution for Leetcode/Lintcode
 |433   |424  |[Longest Repeating Character Replacement Sliding Window Very Good](Java/424_Longest.java)|Medium|Java|Leetcode|
 |434   |433  |[Minimum Genetic Mutation BFS](Java/433_Minimum.java)|Medium|Java|Leetcode|
 |435   |434  |[Number of Segments in a String split](Java/434_Number.java)|Easy|Java|Leetcode|
-|436   |435  |[Non-overlapping Intervals](Java/435_overlapping.java)|Medium|Java|Leetcode|
+|436   |435  |[Non-overlapping Intervals Good (merge interval)](Java/435_overlapping.java)|Medium|Java|Leetcode|
 |437   |447  |[Number of Boomerangs](Java/447_Number.java)|Easy|Java|Leetcode|
 |438   |442  |[Find All Duplicates in an Array](Java/442_Find.java)|Medium|Java|Leetcode|
 |439   |541  |[Reverse String II](Java/541_Reverse.java)|Easy|Java|Leetcode|
