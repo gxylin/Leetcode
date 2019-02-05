@@ -50,3 +50,27 @@ class Solution {
         return count;
     }
 }
+
+class Solution {
+    public int findMinArrowShots(int[][] points) {
+        int count = 0;
+        Arrays.sort(points, new Comparator<int[]>(){
+            public int compare (int[] a, int[] b){
+                if (a[0] == b[0]){
+                    return a[1] - b[1];
+                }
+                return a[0] - b[0];
+            }
+        });
+        int[] last = null;
+        for (int[] p : points){
+            if (last == null || last[1] < p[0]){
+                count++;
+                last = p;
+            }else{
+                last[1] = Math.min(last[1], p[1]);
+            }
+        }
+        return count;
+    }
+}
