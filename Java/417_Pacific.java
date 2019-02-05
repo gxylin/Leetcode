@@ -75,3 +75,53 @@ class Solution {
         return false;
     }
 }
+
+
+class Solution {
+    public List<int[]> pacificAtlantic(int[][] matrix) {
+        List<int[]> res = new ArrayList<>();
+        if (matrix == null || matrix.length == 0){
+            return res;
+        }
+        int m = matrix.length;
+        int n = matrix[0].length;
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (bfs(matrix, i, j)){
+                    res.add(new int[]{i, j});
+                }
+            }
+        }
+        return res;
+    }
+    private boolean bfs(int[][] matrix, int x, int y){
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        Queue<int[]> queue = new LinkedList<>();
+        boolean[][] visited = new boolean[m][n];
+        boolean atlantic = false;
+        boolean pacific = false;
+        queue.offer(new int[]{x, y});
+        visited[x][y] = true;
+        while (!queue.isEmpty()){
+            int[] curr = queue.poll();
+            for (int[] dir : dirs){
+                int nx = curr[0] + dir[0];
+                int ny = curr[1] + dir[1];
+                if (nx < 0 || ny < 0){
+                    pacific = true;
+                }else if (nx == m || ny == n){
+                    atlantic = true;
+                }else if (!visited[nx][ny] && matrix[nx][ny] <= matrix[curr[0]][curr[1]]){
+                    visited[nx][ny] = true;
+                    queue.offer(new int[]{nx, ny});
+                }
+                if (pacific && atlantic){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
