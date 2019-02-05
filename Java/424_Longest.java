@@ -49,3 +49,29 @@ class Solution {
         return ans;
     }
 }
+
+
+Better version:
+class Solution {
+    public int characterReplacement(String s, int k) {
+        int res = 0;
+        int start = 0;
+        int end = 0;
+        int maxCount = 0;
+        Map<Character, Integer> map = new HashMap<>();
+        while (end < s.length()){
+            char cEnd = s.charAt(end);
+            map.put(cEnd, map.getOrDefault(cEnd, 0) + 1);
+            maxCount = Math.max(maxCount, map.get(cEnd));
+            end++;
+            while (end - start - maxCount > k){
+                char cStart = s.charAt(start);
+                map.put(cStart, map.get(cStart) - 1);
+                maxCount = Math.max(maxCount, map.get(cStart));
+                start++;
+            }
+            res = Math.max(res, end - start);
+        }
+        return res;
+    }
+}
