@@ -39,6 +39,32 @@ class Solution {
         return false;
     }
 }
+Passed solution:
+class Solution {
+    public int numMatchingSubseq(String S, String[] words) {
+        int count = 0;
+        for (String word : words){
+            if (isSub(word, S)){
+                count++;
+            }
+        }
+        return count;
+    }
+    private boolean isSub(String S, String T){
+        int prev = 0;
+        int index = 0;
+        while (index < S.length()){
+            prev = T.indexOf(S.charAt(index), prev);
+            if (prev < 0){
+                return false;
+            }
+            prev++;
+            index++;
+        }
+        return true;
+    }
+}
+
 
 Method 3: Accepted (174ms)
 Refer to explanation:https://leetcode.com/problems/number-of-matching-subsequences/discuss/117634/Efficient-and-simple-go-through-words-in-parallel-with-explanation
