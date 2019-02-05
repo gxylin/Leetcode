@@ -48,3 +48,27 @@ class Solution {
         
     }
 }
+
+
+https://github.com/optimisea/Leetcode/blob/master/Java/655_BigIntegerAddition.java
+Better solution:
+class Solution {
+    public String addStrings(String num1, String num2) {
+        int m = num1.length();
+        int n = num2.length();
+        StringBuilder sb = new StringBuilder();
+        int sum = 0;
+        int carry = 0;
+        for (int i = m -1, j = n-1; i>=0 || j >= 0; i--, j--){
+            sum = carry;
+            sum += (i >= 0) ? (int) (num1.charAt(i) - '0') : 0;
+            sum += (j >= 0) ? (int) (num2.charAt(j) - '0') : 0;
+            sb.append(sum%10);
+            carry = sum/10;
+        }
+        if (carry != 0){
+            sb.append(carry);
+        }
+        return sb.reverse().toString();
+    }
+}
