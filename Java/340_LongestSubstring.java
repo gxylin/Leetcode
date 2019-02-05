@@ -12,7 +12,7 @@ class Solution {
         Map<Character, Integer> map = new HashMap<>();
         int start = 0;
         int end = 0;
-        int count = 0;
+        int count = 0; // track how many different characters now
         int max = Integer.MIN_VALUE;
         while (end < s.length()){
             char c = s.charAt(end);
