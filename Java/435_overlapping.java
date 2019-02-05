@@ -56,11 +56,11 @@ class Solution {
         for (Interval item : intervals){
             if (last == null || last.end <= item.start){
                 last = item;
-                count++;
             }else{
                 last.end = Math.min(last.end, item.end);
+                count++;
             }
         }
-        return intervals.length - count;
+        return count;
     }
 }
