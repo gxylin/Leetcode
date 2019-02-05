@@ -438,7 +438,7 @@ Solution for Leetcode/Lintcode
 |428   |417  |[Pacific Atlantic Water Flow BFS Very Good](Java/417_Pacific.java)|Medium|Java|Leetcode
 |429   |392  |[Is subsequence Good](Java/392_IsSubsequence.java)|Medium|Java|Leetcode
 |430   |383  |[Ransom Note](Java/383_Ransom.java)|Easy|Java|Leetcode|
-|431   |386  |[Lexicographical Numbers](Java/386_Lexicographical.java)|Medium|Java|Leetcode|
+|431   |386  |[Lexicographical Numbers Good](Java/386_Lexicographical.java)|Medium|Java|Leetcode|
 |432   |410  |[Split Array Largest Sum Binary Search Very Good](Java/410_Split.java)|Hard|Java|Leetcode|
 |433   |424  |[Longest Repeating Character Replacement Sliding Window](Java/424_Longest.java)|Medium|Java|Leetcode|
 |434   |433  |[Minimum Genetic Mutation BFS](Java/433_Minimum.java)|Medium|Java|Leetcode|
