@@ -46,6 +46,7 @@ The difference is that indexOf only call once function then traversed in "String
 but we used multiple calling function "charAt" to get the value in "String.value[]" arr.
 The time expense of calling function made the difference.
     
+Good solution
 Method 2: 2ms
 class Solution {
     public boolean isSubsequence(String s, String t) {
