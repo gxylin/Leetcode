@@ -26,3 +26,29 @@ class Solution {
         return result;
     }
 }
+
+The same solution as Leetcode 448 Find All Numbers Disappeared in an Array
+
+https://github.com/optimisea/Leetcode/blob/master/Java/448_Find.java
+
+class Solution {
+    public List<Integer> findDuplicates(int[] nums) {
+        List<Integer> res = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++){
+            while (i != nums[i] - 1 && nums[i] != nums[nums[i]-1]){
+                swap(nums, i, nums[i]-1);
+            }
+        }
+        for (int i = 0; i < nums.length; i++){
+            if (nums[i] - 1 != i){
+                res.add(nums[i]);
+            }
+        }
+        return res;
+    }
+    private void swap(int[] nums, int i, int j){
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+}
