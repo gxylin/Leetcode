@@ -9,7 +9,7 @@ Restrictions:
 The string consists of lower English letters only.
 Length of the given string and k will in the range [1, 10000]
 
-Best solution
+Method 1: Best solution
 class Solution {
     public String reverseStr(String s, int k) {
         char[] charArray = s.toCharArray();
