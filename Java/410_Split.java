@@ -42,15 +42,15 @@ class Solution {
         }
         return start;
     }
-    private boolean lessThanMid(int target, int[] nums, int m){
-        int count = 1;
+    private boolean lessThanMid(int[] nums, int target, int m){
         int sum = 0;
+        int count = 0;
         for (int num : nums){
             sum += num;
             if (sum > target){
                 count++;
                 sum = num;
-                if (count > m){//must be greater than m, not equal
+                if (count == m){
                     return false;
                 }
             }
