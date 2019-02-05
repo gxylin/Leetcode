@@ -436,7 +436,7 @@ Solution for Leetcode/Lintcode
 |426   |405  |[Convert a Number to Hexadecimal Bit Manipulation](Java/405_Convert.java)|Easy|Java|Leetcode|
 |427   |404  |[Sum of Left Leaves](Java/404_Sum.java)|Easy|Java|Leetcode|
 |428   |417  |[Pacific Atlantic Water Flow BFS Very Good](Java/417_Pacific.java)|Medium|Java|Leetcode
-|429   |392  |[Is subsequence](Java/392_IsSubsequence.java)|Medium|Java|Leetcode
+|429   |392  |[Is subsequence Good](Java/392_IsSubsequence.java)|Medium|Java|Leetcode
 |430   |383  |[Ransom Note](Java/383_Ransom.java)|Easy|Java|Leetcode|
 |431   |386  |[Lexicographical Numbers](Java/386_Lexicographical.java)|Medium|Java|Leetcode|
 |432   |410  |[Split Array Largest Sum Binary Search Very Good](Java/410_Split.java)|Hard|Java|Leetcode|
