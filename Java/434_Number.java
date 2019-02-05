@@ -24,7 +24,7 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: Good solution
 Time complexity: O(n)
 Space complexity: O(1)
 class Solution {
