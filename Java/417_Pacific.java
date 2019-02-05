@@ -23,7 +23,8 @@ Return:
 
 [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]] (positions with parentheses in above matrix).
 
- Method 1: time complexity: O(N^2 * 2^N)
+ Method 1: Forward Travel
+ Time complexity: O(N^2 * 2^N)
 class Solution {
     public List<int[]> pacificAtlantic(int[][] matrix) {
         List<int[]> result = new ArrayList<>();
@@ -127,7 +128,9 @@ class Solution {
     }
 }
 
-Method 2: O(N^2 + 2^N) Better solution (Good)
+Method 2: Best solution: Backward travel
+
+Time complexity: O(N^2 + 2^N) 
 class Solution {
     public List<int[]> pacificAtlantic(int[][] matrix) {
         List<int[]> res = new ArrayList<>();
