@@ -36,3 +36,7 @@ class Solution {
         return sb.reverse().toString();
     }
 }
+
+15 decimal is 1111 in binary. By anding (&) 1111 and the input number, you basically get the last 4 binary digits of the input number.
+
+e.g. input number is decimal 33. In binary 33 is 0010 0001. So, 0010 0001 & 0000 1111 = 0000 0001
