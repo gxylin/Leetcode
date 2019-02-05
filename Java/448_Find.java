@@ -12,6 +12,8 @@ Input:
 Output:
 [5,6]
 
+The same as Leetcode 442
+https://github.com/optimisea/Leetcode/blob/master/Java/442_Find.java
 Method 1: without extra space  Best solution
 class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
