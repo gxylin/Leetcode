@@ -58,6 +58,33 @@ class Solution {
     }
 }
 
+Similar as LIS
+class Solution {
+    public int wiggleMaxLength(int[] nums) {
+        if (nums.length < 2){
+            return nums.length;
+        }
+        int n = nums.length;
+        int[] up = new int[n]; //dp[i] denote longest result ending at i, (note result must include the element at i)
+        int[] down = new int[n];
+        Arrays.fill(up, 1);
+        Arrays.fill(down, 1);
+        int max = 1;
+        for (int i = 1; i < n; i++){
+            for (int j = 0; j < i; j++){
+                if (nums[i] > nums[j]){
+                    up[i] = Math.max(up[i], down[j] + 1);
+                }else if (nums[i] < nums[j]){
+                    down[i] = Math.max(down[i], up[j] + 1);
+                }
+                max = Math.max(max, up[i]);
+                max = Math.max(max, down[i]);
+            }
+        }
+        return max;
+    }
+}
+
 Method 2:
 Time complexity: O(n)
 Space complexity: O(n)
