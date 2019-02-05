@@ -12,7 +12,7 @@ Input:
 Output:
 [5,6]
 
-Method 1: without extra space
+Method 1: without extra space  Best solution
 class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
         List<Integer> result = new ArrayList<>();
