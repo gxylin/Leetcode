@@ -445,7 +445,7 @@ Solution for Leetcode/Lintcode
 |435   |434  |[Number of Segments in a String split](Java/434_Number.java)|Easy|Java|Leetcode|
 |436   |435  |[Non-overlapping Intervals Good (merge interval)](Java/435_overlapping.java)|Medium|Java|Leetcode|
 |437   |447  |[Number of Boomerangs (Tuple)](Java/447_Number.java)|Easy|Java|Leetcode|
-|438   |442  |[Find All Duplicates in an Array](Java/442_Find.java)|Medium|Java|Leetcode|
+|438   |442  |[Find All Duplicates in an Array Good](Java/442_Find.java)|Medium|Java|Leetcode|
 |439   |541  |[Reverse String II](Java/541_Reverse.java)|Easy|Java|Leetcode|
 |440   |452  |[Minimum Number of Arrows to Burst Balloons Interval Very Good](Java/452_Minimum.java)|Medium|Java|Leetcode|
 |441   |530  |[Minimum Absolute Difference in BST](Java/530_Minimum.java)|Easy|Java|Leetcode|
