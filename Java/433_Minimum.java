@@ -83,3 +83,46 @@ class Solution {
         return -1;
     }
 }
+
+
+class Solution {
+    public int minMutation(String start, String end, String[] bank) {
+        Set<String> set = new HashSet<>();
+        for (String s : bank){
+            set.add(s);
+        }
+        Queue<String> queue = new LinkedList<>();
+        Set<String> visited = new HashSet<>();
+        queue.offer(start);
+        visited.add(start);
+        char[] dir = {'A', 'C', 'G', 'T'};
+        int res = 0;
+        while (!queue.isEmpty()){
+            int size = queue.size();
+            for (int i = 0; i < size; i++){
+                String curr = queue.poll();
+                if (curr.equals(end)){
+                    return res;
+                }
+                char[] charArr = curr.toCharArray();
+                for (int j = 0; j < charArr.length; j++){
+                    char c = charArr[j];
+                    for (int k = 0; k < dir.length; k++){
+                        char ch = dir[k];
+                        if (c != ch){
+                            charArr[j] = ch;
+                            String str = String.valueOf(charArr);
+                            if (set.contains(str) && !visited.contains(str)){
+                                visited.add(str);
+                                queue.offer(str);
+                            }
+                        }
+                    }
+                    charArr[j] = c;
+                }
+            }
+            res++;
+        }
+        return -1;
+    }
+}
