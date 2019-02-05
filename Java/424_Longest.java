@@ -57,7 +57,7 @@ class Solution {
         int res = 0;
         int start = 0;
         int end = 0;
-        int maxCount = 0;
+        int maxCount = 0; // tracking the max number value of one character to replace all others
         Map<Character, Integer> map = new HashMap<>();
         while (end < s.length()){
             char cEnd = s.charAt(end);
