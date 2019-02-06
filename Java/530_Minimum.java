@@ -146,3 +146,26 @@ class Solution {
         inOrder(root.right, root, ans);
     }
 }
+
+Method 4: in order traversal
+class Solution {
+    public int getMinimumDifference(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode curr = root;
+        TreeNode prev = null;
+        int min = Integer.MAX_VALUE;
+        while (curr != null || !stack.isEmpty()){
+            while (curr != null){
+                stack.push(curr);
+                curr = curr.left;
+            }
+            TreeNode node = stack.pop();
+            if (prev != null){
+                min = Math.min(min, node.val - prev.val); 
+            }
+            prev = node;
+            curr = node.right;
+        }
+        return min;
+    }
+}
