@@ -14,7 +14,7 @@ Only three moves are needed (remember each move increments two elements):
 
 [1,2,3]  =>  [2,3,3]  =>  [3,4,3]  =>  [4,4,4]
 
-The target number is the median number. So basically it is the problem to find median.
+
 class Solution {
     public int minMoves(int[] nums) {
         int sum = 0;
