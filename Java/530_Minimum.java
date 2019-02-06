@@ -147,7 +147,7 @@ class Solution {
     }
 }
 
-Method 4: in order traversal
+Method 4: in order traversal Best solution
 class Solution {
     public int getMinimumDifference(TreeNode root) {
         Stack<TreeNode> stack = new Stack<>();
