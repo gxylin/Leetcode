@@ -16,6 +16,8 @@ Only two moves are needed (remember each move increments or decrements one eleme
 
 [1,2,3]  =>  [2,2,3]  =>  [2,2,2]
 
+Note that The target number is the median number. So basically it is the problem to find median.
+    
 class Solution {
     public int minMoves2(int[] nums) {
         Arrays.sort(nums);
