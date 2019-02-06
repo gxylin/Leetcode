@@ -50,7 +50,7 @@ class Solution {
         return result;
     }
 }
-Method 2: monotonic decreasing stack
+Method 2: monotonic increasing stack: top element is the smallest one
 https://leetcode.com/problems/next-greater-element-i/discuss/97595/Java-10-lines-linear-time-complexity-O(n)-with-explanation
 Time complexity: O(n)
 Space complexity: O(n)
