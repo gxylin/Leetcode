@@ -109,3 +109,27 @@ class Solution {
         return true;
     }
 }
+
+
+Best solution:
+class Solution {
+    public boolean detectCapitalUse(String word) {
+        boolean cap = false;
+        if (Character.isUpperCase(word.charAt(word.length() - 1))){
+            cap = true;
+        }
+        for (int i = 0; i < word.length(); i++){
+            char c = word.charAt(i);
+            if (i == 0){
+                if (Character.isLowerCase(c) && cap){
+                    return false;
+                }   
+            }else{
+                 if (Character.isLowerCase(c) && cap || Character.isUpperCase(c) && !cap){
+                    return false;
+                }   
+            }
+        }
+        return true;
+    }
+}
