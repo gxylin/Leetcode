@@ -34,7 +34,7 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: preSum + HashMap
 In this approach, we make use of a countcount variable, which is used to store the relative number of ones and zeros 
 encountered so far while traversing the array. The countcount variable is incremented by one for every \text{1}1 encountered 
 and the same is decremented by one for every \text{0}0 encountered.
