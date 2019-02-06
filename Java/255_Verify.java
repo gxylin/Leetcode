@@ -24,7 +24,7 @@ class Solution {
                 return false;
             }
             while (!monotonicStack.isEmpty() && p > monotonicStack.peek()){
-                root = monotonicStack.pop();
+                root = monotonicStack.pop(); // note that the order of root travesal is the in order BST traversal
             }
             monotonicStack.push(p);
         }
