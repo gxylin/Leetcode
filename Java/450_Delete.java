@@ -164,3 +164,41 @@ class Solution {
         }
     }
 }
+
+class Solution {
+    public TreeNode deleteNode(TreeNode root, int key) {
+        TreeNode dummy = new TreeNode(-1);
+        dummy.left = root;
+        delete(root, dummy, key);
+        return dummy.left;
+    }
+    private void delete(TreeNode root, TreeNode parent, int key){
+        if (root == null){
+            return;
+        }
+        if (root.val == key){
+            if (root.left == null){
+                if (root == parent.left){
+                    parent.left = root.right;
+                }else{
+                    parent.right = root.right;
+                }
+            }else{
+                if (root == parent.left){
+                    parent.left = root.left;
+                }else{
+                    parent.right = root.left;
+                }
+                TreeNode node = root.left;
+                while (node.right != null){
+                    node = node.right;
+                }
+                node.right = root.right;
+            }
+        }else if (root.val > key){
+            delete(root.left, root, key);
+        }else{
+            delete(root.right, root, key);
+        }
+    }
+}
