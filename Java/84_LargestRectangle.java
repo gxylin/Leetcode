@@ -11,7 +11,7 @@ For example,
 Given heights = [2,1,5,6,2,3],
 return 10.
 
-Method: monotonic increasing stack 
+Method: monotonic decreasing stack: top element is the largest one in the stack
 O(n)
 
 class Solution {
