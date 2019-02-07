@@ -31,6 +31,16 @@ class Solution {
     }
 }
 
+class Solution {
+    public int distributeCandies(int[] candies) {
+        Set<Integer> set = new HashSet<>();
+        for (int c : candies){
+            set.add(c);
+        }
+        return Math.min(candies.length/2, set.size());
+    }
+}
+
 Method 2:
 Time complexity: O(nlogn)
 Space complexity: O(1)
