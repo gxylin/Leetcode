@@ -470,7 +470,7 @@ Solution for Leetcode/Lintcode
 |460   |540  |[Single Element in a Sorted Array Good](Java/540_Single.java)|Medium|Java|Leetcode|
 |461   |557  |[Reverse Words in a String III](Java/557_Reverse.java)|Easy|Java|Leetcode|
 |462   |523  |[Continuous Subarray Sum Very Good](Java/523_Continuous.java)|Medium|Java|Leetcode|
-|463   |524  |[Longest Word in Dictionary through Deleting](Java/524_Longest.java)|Medium|Java|Leetcode|
+|463   |524  |[Longest Word in Dictionary through Deleting Two Pointers String](Java/524_Longest.java)|Medium|Java|Leetcode|
 |464   |441  |[Arranging Coins](Java/441_Arranging.java)|Easy|Java|Leetcode|
 |465   |436  |[Find Right Interval TreeMap](Java/436_Find.java)|Medium|Java|Leetcode|
 |466   |485  |[Max Consecutive Ones](Java/485_Max.java)|Easy|Java|Leetcode|
