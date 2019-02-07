@@ -467,7 +467,7 @@ Solution for Leetcode/Lintcode
 |457   |467  |[Unique Substrings in Wraparound String Dynamic Programming Good](Java/467_Unique.java)|Medium|Java|Leetcode|
 |458   |520  |[Detect Capital](Java/520_Detect.java)|Easy|Java|Leetcode|
 |459   |525  |[Contiguous Array Very Good](Java/525_Contiguous.java)|Medium|Java|Leetcode|
-|460   |540  |[Single Element in a Sorted Array](Java/540_Single.java)|Medium|Java|Leetcode|
+|460   |540  |[Single Element in a Sorted Array Good](Java/540_Single.java)|Medium|Java|Leetcode|
 |461   |557  |[Reverse Words in a String III](Java/557_Reverse.java)|Easy|Java|Leetcode|
 |462   |523  |[Continuous Subarray Sum](Java/523_Continuous.java)|Medium|Java|Leetcode|
 |463   |524  |[Longest Word in Dictionary through Deleting](Java/524_Longest.java)|Medium|Java|Leetcode|
