@@ -475,7 +475,7 @@ Solution for Leetcode/Lintcode
 |465   |436  |[Find Right Interval TreeMap](Java/436_Find.java)|Medium|Java|Leetcode|
 |466   |485  |[Max Consecutive Ones](Java/485_Max.java)|Easy|Java|Leetcode|
 |467   |513  |[Find Bottom Left Tree Value](Java/513_Find.java)|Medium|Java|Leetcode|
-|468   |506  |[Relative Ranks](Java/506_Relative.java)|Easy|Java|Leetcode|
+|468   |506  |[Relative Ranks Good](Java/506_Relative.java)|Easy|Java|Leetcode|
 |469   |474  |[Ones and Zeroes Dynamic Programming](Java/474_Ones.java)|Medium|Java|Leetcode|
 |470   |563  |[Binary Tree Tilt](Java/563_Binary.java)|Easy|Java|Leetcode|
 |471   |565  |[Array Nesting](Java/565_Array.java)|Medium|Java|Leetcode|
