@@ -477,7 +477,7 @@ Solution for Leetcode/Lintcode
 |467   |513  |[Find Bottom Left Tree Value](Java/513_Find.java)|Medium|Java|Leetcode|
 |468   |506  |[Relative Ranks Good](Java/506_Relative.java)|Easy|Java|Leetcode|
 |469   |474  |[Ones and Zeroes 3D Backpack Very Good](Java/474_Ones.java)|Medium|Java|Leetcode|
-|470   |563  |[Binary Tree Tilt](Java/563_Binary.java)|Easy|Java|Leetcode|
+|470   |563  |[Binary Tree Tilt Good](Java/563_Binary.java)|Easy|Java|Leetcode|
 |471   |565  |[Array Nesting](Java/565_Array.java)|Medium|Java|Leetcode|
 |472   |554  |[Brick Wall](Java/554_Brick.java)|Medium|Java|Leetcode|
 |473   |566  |[Reshape the Matrix](Java/566_Reshape.java)|Easy|Java|Leetcode|
