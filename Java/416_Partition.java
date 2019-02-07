@@ -129,8 +129,10 @@ class Solution {
         boolean[] dp = new boolean[target+1];
         dp[0] = true;
         for (int i = 0; i < nums.length; i++){
-            for (int j = target; j >= nums[i]; j--){
-                dp[j] = dp[j] || dp[j - nums[i]];
+            for (int j = target; j >= 0; j--){
+                if (j >= nums[i]){
+                    dp[j] = dp[j] || dp[j - nums[i]];
+                }
             }
         }
         return dp[target];
