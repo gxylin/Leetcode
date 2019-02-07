@@ -51,14 +51,14 @@ class Solution {
             if (nums[high] == 0){
                 zeros++;
             }
+            high++;
             while (zeros > k){
                 if (nums[low] == 0){
                     zeros--;
                 }
                 low++;
             }
-            max = Math.max(max, high - low + 1);
-            high++;
+            max = Math.max(max, high - low);
         }
         return max;
     }
