@@ -37,3 +37,27 @@ class Solution {
         return result;
     }
 }
+
+class Solution {
+    public String[] findRelativeRanks(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++){
+            map.put(nums[i], i);
+        }
+        Arrays.sort(nums);
+        String[] res = new String[nums.length];
+        for (int i = nums.length - 1; i >= 0; i--){
+            int index = map.get(nums[i]);
+            if (i == nums.length - 1){
+                res[index] = "Gold Medal";
+            } else if (i == nums.length - 2){
+                res[index] = "Silver Medal";
+            }else if (i == nums.length - 3){
+                res[index] = "Bronze Medal";
+            }else{
+                res[index] = String.valueOf(nums.length - i);
+            }
+        }
+        return res;
+    }
+}
