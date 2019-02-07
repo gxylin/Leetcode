@@ -35,9 +35,45 @@ class Solution {
     }
 }
 
+class Solution {
+    public int arrayNesting(int[] nums) {
+        int n = nums.length;
+        int max = 0;
+        for (int i = 0; i < n; i++){
+            Set<Integer> set = new HashSet<>();
+            int index = i;
+            int count = 0;
+            while (!set.contains(nums[index])){
+                set.add(nums[index]);
+                count++;
+                index = nums[index];
+            }
+            max = Math.max(max, count);
+        }
+        return max;
+    }
+}
+
+class Solution {
+    public int arrayNesting(int[] nums) {
+        int n = nums.length;
+        int max = 0;
+        for (int i = 0; i < n; i++){
+            boolean[] visited = new boolean[n];
+            int index = i;
+            int count = 0;
+            while (!visited[nums[index]]){
+                visited[nums[index]] = true;
+                count++;
+                index = nums[index];
+            }
+            max = Math.max(max, count);
+        }
+        return max;
+    }
+}
+
 Method 2: 
-Time complexity: O(n)
-Space complexity: O(1)
 class Solution {
     public int arrayNesting(int[] nums) {
         int max = 0;
