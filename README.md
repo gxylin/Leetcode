@@ -114,7 +114,7 @@ Solution for Leetcode/Lintcode
 |106   |128  | [Longest Consecutive Sequence.java](Java/128_LongestConsecutiveSequence.java)|Hard|Java|Leetcode|
 |107   |171  | [Anagrams.java](Java/171_Anagrams.java)|Medium|Java|Lintcode|
 |108   |438  | [Find All Anagrams in String Sliding Window Very Good](Java/438_FindAllAnagramsinString.java)|Medium|Java|Leetcode|
-|XXX    |438  | [template for sliding window](https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007)|
+|XXX    |438  | [template for sliding window](Java/slidingwindow.java)|
 |109   |263  | [Ugly Number](Java/263_UglyNumber.java)|Easy|Java|leetcode|
 |110   |264  | [Ugly Number II Dynamic Programming Merge Sort Idea](Java/264_UglyNumberII.java)|Medum|Java|Leetcode|
 |111   |692  | [Top K Frequent Words Very Good](Java/692_TopKFrequentWords.java)|Medium|Java|Leetcode|
