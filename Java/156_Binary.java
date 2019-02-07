@@ -85,6 +85,7 @@ class Solution {
     }
 }
 
+Best solution:
 public TreeNode upsideDownBinaryTree(TreeNode root) {
     if(root == null || root.left == null) {
         return root;
