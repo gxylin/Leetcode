@@ -485,7 +485,7 @@ Solution for Leetcode/Lintcode
 |475   |575  |[Distribute candies](Java/575_Distribute.java)|Easy|Java|Leetcode|
 |476   |583  |[Delete Operation for Two Strings Dynamic Good](Java/583_Delete.java)|Medium|Java|Leetcode|
 |477   |156  |[Binary Tree Upside Down Reverse Tree Very Good](Java/156_Binary.java)|Medium|Java|Leetcode|
-|478   |159  |[Longest Substring with At Most Two Distinct Characters](Java/159_Longest.java)|Hard|Java|Leetcode|
+|478   |159  |[Longest Substring with At Most Two Distinct Characters Sliding Windwo Template Very Good](Java/159_Longest.java)|Hard|Java|Leetcode|
 |479   |170  |[Two Sum III - Data structure design](Java/170_Two.java)|Easy|Java|Leetcode|
 |480   |265  |[Paint House II](Java/265_Paint.java)|Hard|Java|Leetcode|
 |481   |266  |[Palindrome Permutation](Java/266_Palindrome.java)|Easy|Java|Leetcode|
