@@ -38,7 +38,7 @@ class Solution {
                 while (j < s.length() && str.charAt(i) != s.charAt(j)){
                     j++;
                 }
-                if (j == s.length() && i < str.length()){
+                if (j == s.length()){
                     break;
                 }
                 i++;
@@ -52,7 +52,7 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: Better version of Two pointers
 class Solution {
     public String findLongestWord(String s, List<String> d) {
         Collections.sort(d, new Comparator<String>(){
