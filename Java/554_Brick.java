@@ -33,3 +33,20 @@ class Solution {
         return wall.size() - max;
     }
 }
+
+class Solution {
+    public int leastBricks(List<List<Integer>> wall) {
+        int sum = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        int res = wall.size();
+        for (List<Integer> list : wall){
+            sum = 0;
+            for(int i = 0; i < list.size() - 1; i++){
+                sum += list.get(i);
+                map.put(sum, map.getOrDefault(sum, 0) + 1);
+                res = Math.min(res, wall.size() - map.get(sum));
+            }
+        }
+        return res;
+    }
+}
