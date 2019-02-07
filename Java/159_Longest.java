@@ -47,6 +47,8 @@ class Solution {
     }
 }
 
+
+Better solution to match longest sliding window template
 class Solution {
     public int lengthOfLongestSubstringTwoDistinct(String s) {
         if (s == null){
