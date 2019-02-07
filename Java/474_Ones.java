@@ -87,7 +87,7 @@ class Solution {
 
 https://leetcode.com/problems/ones-and-zeroes/discuss/95807/0-1-knapsack-detailed-explanation.
 
-Method 3: Best,similar to a coin change problem
+Method 3: Best,similar to a backpack(Partition Equal Subset Sum) problem
 class Solution {
     public int findMaxForm(String[] strs, int m, int n) {
         int l = strs.length;
