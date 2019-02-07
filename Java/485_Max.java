@@ -58,14 +58,14 @@ class Solution {
             if (nums[high] == 0){
                 count++;
             }
-            while (count > 0){
+            high++;
+            while (count > k){
                 if (nums[low] == 0){
                     count--;
                 }
                 low++;
             }
-            max = Math.max(max, high - low + 1);
-            high++;
+            max = Math.max(max, high - low);
         }
         return max;
     }
