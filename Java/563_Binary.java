@@ -74,3 +74,41 @@ class Solution {
         return left + right + root.val;
     }
 }
+
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    class Pair {
+        int sum;
+        int tilt;
+        public Pair (int sum, int tilt){
+            this.sum = sum;
+            this.tilt = tilt;
+        }
+    }
+    public int findTilt(TreeNode root) {
+        if (root == null){
+            return 0;
+        }
+        Pair p = dfs(root);
+        return p.tilt;
+    }
+    private Pair dfs(TreeNode root){
+        if (root == null){
+            return new Pair(0, 0);
+        }
+        Pair left = dfs(root.left);
+        Pair right = dfs(root.right);
+        int tilt = Math.abs(left.sum - right.sum) + left.tilt + right.tilt;
+        int sum = root.val + left.sum + right.sum;
+        return new Pair(sum, tilt);
+    }
+}
