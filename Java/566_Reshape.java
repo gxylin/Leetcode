@@ -62,7 +62,7 @@ class Solution {
     }
 }
 
-Method 2: 
+Method 2:  Best solution
 Space complexity: O(1)
 class Solution {
     public int[][] matrixReshape(int[][] nums, int r, int c) {
