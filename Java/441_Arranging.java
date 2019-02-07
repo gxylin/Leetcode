@@ -45,3 +45,27 @@ class Solution {
         return (int) start;
     }
 }
+
+
+Better:
+class Solution {
+    public int arrangeCoins(int n) {
+        long start = 1;
+        long end = n;
+        while (start + 1 < end){
+            long mid = start + (end - start) / 2;
+            long res = (1 + mid) * mid / 2;
+            if (res == n){
+                return (int)mid;
+            }else if (res < n){
+                start = mid;
+            }else{
+                end = mid;
+            }
+        }
+        if ((start+1)*start/2 <= n){
+            return (int)start;
+        }
+        return (int)end;
+    }
+}
