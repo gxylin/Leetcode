@@ -496,7 +496,7 @@ Solution for Leetcode/Lintcode
 |486   |271  |[Encode and Decode Strings](Java/271_Encode.java)|Medium|Java|Leetcode|
 |487   |276  |[Paint Fence](Java/276_Paint.java)|Easy|Java|Leetcode|
 |488   |296  |[Best Meeting Point Very Good](Java/296_Best.java)|Hard|Java|Leetcode|
-|489   |339  |[Nested List Weight Sum Recursion Good](Java/339_Nested.java)|Easy|Java|Leetcode|
+|489   |339  |[Nested List Weight Sum DFS Good](Java/339_Nested.java)|Easy|Java|Leetcode|
 |490   |346  |[Moving Average from Data Stream](Java/346_Moving.java)|Easy|Java|Leetcode|
 |491   |320  |[Generalized Abbreviation](Java/320_Generalized.java)|Medium|Java|Leetcode|
 |492   |357  |[Count Numbers with Unique Digits](Java/357_Count.java)|Medium|Java|Leetcode|
