@@ -502,7 +502,7 @@ Solution for Leetcode/Lintcode
 |492   |357  |[Count Numbers with Unique Digits Good Analysis](Java/357_Count.java)|Medium|Java|Leetcode|
 |493   |359  |[Logger Rate Limiter Good](Java/359_Logger.java)|Easy|Java|Leetcode|
 |494   |360  |[Sort Transformed Array Good](Java/360_Sort.java)|Medium|Java|Leetcode|
-|495   |362  |[Design Hit Counter](Java/362_Design.java)|Medium|Java|Leetcode|
+|495   |362  |[Design Hit Counter Very Good](Java/362_Design.java)|Medium|Java|Leetcode|
 |496   |364  |[Nested List Weight Sum II](Java/364_Nested.java)|Medium|Java|Leetcode|
 |497   |366  |[Find Leaves of Binary Tree Java Concept](Java/366_Find.java)|Medium|Java|Leetcode|
 |498   |369  |[Plus One Linked List](Java/369_Plus.java)|Medium|Java|Leetcode|
