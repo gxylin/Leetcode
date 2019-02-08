@@ -138,7 +138,7 @@ class Solution {
     }
 }
 
-Method 4: calculate distance without knowing the median point
+Method 4: (best solution) calculate distance without knowing the median point
 Time complexity: O(mn)
 Space compleixty: O(mn)
 class Solution {
