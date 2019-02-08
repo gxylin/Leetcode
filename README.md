@@ -887,7 +887,7 @@ Solution for Leetcode/Lintcode
 |875   |958  |[Check Completeness of a Binary Tree Good](Java/958_Check.java)|Medium|Java|Leetcode|
 |876   |959  |[Regions Cut By Slashes Very Good](Java/959_Regions.java)|Medium|Java|Leetcode|
 |877   |960  |[Delete Columns to Make Sorted III Longest Increasing Subsequence Very Good](Java/960_Delete.java)|Hard|Java|Leetcode|
-|878   |132  |[Palindrome Partitioning II](Java/132_Palindrome.java)|Hard|Java|Leetcode|
+|878   |132  |[Palindrome Partitioning II LIS DP + Cache Very Good](Java/132_Palindrome.java)|Hard|Java|Leetcode|
 |879   |961  |[N-Repeated Element in Size 2N Array](Java/961_Repeated.java)|Easy|Java|Leetcode|
 |880   |962  |[Maximum Width Ramp Monotonic Stack Very Good](Java/962_Maximum.java)|Medium|Java|Leetcode|
 |881   |963  |[Minimum Area Rectangle II](Java/963_Minimum.java)|Medium|Java|Leetcode|
