@@ -49,7 +49,7 @@ class MovingAverage {
  * double param_1 = obj.next(val);
  */
  
- Method 2:
+ Method 2: Best solution
  Time complexity: O(1)
  Space complexity: O(n)
  class MovingAverage {
