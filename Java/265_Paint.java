@@ -18,7 +18,7 @@ Explanation: Paint house 0 into color 0, paint house 1 into color 2. Minimum cos
 Follow up:
 Could you solve it in O(nk) runtime?
 
-Method 1: Best solution
+Method 1: Best solution  Very Good Analysis
 Time complexity: O(nk)
 Space complexity: O(1)
 Explanation: dp[i][j] represents the min paint cost from house 0 to house i when house i use color j;
