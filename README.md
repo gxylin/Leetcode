@@ -500,7 +500,7 @@ Solution for Leetcode/Lintcode
 |490   |346  |[Moving Average from Data Stream](Java/346_Moving.java)|Easy|Java|Leetcode|
 |491   |320  |[Generalized Abbreviation DFS Good](Java/320_Generalized.java)|Medium|Java|Leetcode|
 |492   |357  |[Count Numbers with Unique Digits Good Analysis](Java/357_Count.java)|Medium|Java|Leetcode|
-|493   |359  |[Logger Rate Limiter](Java/359_Logger.java)|Easy|Java|Leetcode|
+|493   |359  |[Logger Rate Limiter Good](Java/359_Logger.java)|Easy|Java|Leetcode|
 |494   |360  |[Sort Transformed Array](Java/360_Sort.java)|Medium|Java|Leetcode|
 |495   |362  |[Design Hit Counter](Java/362_Design.java)|Medium|Java|Leetcode|
 |496   |364  |[Nested List Weight Sum II](Java/364_Nested.java)|Medium|Java|Leetcode|
