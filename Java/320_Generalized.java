@@ -49,7 +49,7 @@ class Solution {
     }
 }
 
-Method 2: DFS
+Method 2: DFS Best solution
 class Solution {
     public List<String> generateAbbreviations(String word) {
         List<String> result = new ArrayList<>();
