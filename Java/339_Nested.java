@@ -55,3 +55,30 @@ class Solution {
         return sum;
     }
 }
+                                            
+Method 2: BFS
+class Solution{
+     public int depthSum(List<NestedInteger> nestedList){
+         Queue<NestedInteger> queue = new LinkedList<>();
+         int sum = 0;
+         for (NestedInteger ni : nestedList){
+             queue.offer(ni);
+         }
+         int level = 0;
+         while(!queue.isEmpty()){
+             int size = queue.size();
+             level++;
+             for (int i = 0; i < size; i++){
+                 NestedInteger ni = queue.poll();
+                 if (ni.isInteger()){
+                    sum += level * ni.getInteger();
+                 }else{
+                    for (NestedInteger i : ni.getList()){
+                         queue.offer(i);
+                    }
+                 }
+             }
+         }
+         return sum;
+     }
+}
