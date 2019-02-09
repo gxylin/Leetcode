@@ -19,6 +19,8 @@ Example 2:
 Given s = "apple", abbr = "a2e":
 Return false.
 
+ 
+ https://github.com/optimisea/Leetcode/edit/master/Java/408_Valid.java
 public class Solution {
     /*
      * @param word: a non-empty string
