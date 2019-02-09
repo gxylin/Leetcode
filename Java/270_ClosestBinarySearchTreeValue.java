@@ -4,7 +4,7 @@ Note:
 Given target value is a floating point.
 You are guaranteed to have only one unique value in the BST that is closest to the target.
 
-Method 1:
+Method 1: Best solution
 class Solution {
     public int closestValue(TreeNode root, double target) {
         if (root.val > target){
