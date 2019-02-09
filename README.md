@@ -505,7 +505,7 @@ Solution for Leetcode/Lintcode
 |495   |362  |[Design Hit Counter Very Good for large data](Java/362_Design.java)|Medium|Java|Leetcode|
 |496   |364  |[Nested List Weight Sum II DFS/BFS Good](Java/364_Nested.java)|Medium|Java|Leetcode|
 |497   |366  |[Find Leaves of Binary Tree Java Concept](Java/366_Find.java)|Medium|Java|Leetcode|
-|498   |369  |[Plus One Linked List](Java/369_Plus.java)|Medium|Java|Leetcode|
+|498   |369  |[Plus One Linked List DFS + LinkedList](Java/369_Plus.java)|Medium|Java|Leetcode|
 |499   |370  |[Range Addition Range Caching](Java/370_Range.java)|Medium|Java|Leetcode|
 |500   |408  |[Valid Word Abbreviation](Java/408_Valid.java)|Easy|Java|Leetcode|
 |501   |422  |[Valid Word Square](Java/422_Valid.java)|Easy|Java|Leetcode|
