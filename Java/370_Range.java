@@ -74,13 +74,16 @@ class Solution {
 }
 Intuition
 
-    There is only one read query on the entire range, and it occurs at the end of all update queries. Additionally, the order of processing update queries is irrelevant.
+    There is only one read query on the entire range, and it occurs at the end of all update queries. Additionally, the order
+    of processing update queries is irrelevant.
 
     Cumulative sums or partial_sum operations apply the effects of past elements to the future elements in the sequence.
 
 Algorithm
 
-The algorithm makes use of the above intuition to simply store changes at the borders of the update ranges (instead of processing the entire range). Finally a single post processing operation is carried out over the entire output array.
+The algorithm makes use of the above intuition to simply store changes at the borders of the update ranges
+(instead of processing the entire range). Finally a single post processing operation is carried out over the
+entire output array.
 
 The two steps that are required are as follows:
 
@@ -110,8 +113,10 @@ arriarrj=arri+val=arrj+val−val=arrj∀i∈[start,end]∀i∈(end,length)
 
 which meets our end goal. It is easy to see that the updates over a range did not carry over beyond it due to the compensating effect of the −val-val−val increment over the +val+val+val increment.
 
-It is good to note that this works for multiple update queries because the particular binary operations here (namely addition and subtraction):
+It is good to note that this works for multiple update queries because the particular binary operations here 
+(namely addition and subtraction):
 
     are closed over the entire domain of Integers. (A counter example is division which is not closed over all Integers).
 
-    are complementary operations. (As a counter example multiplication and division are not always complimentary due to possible loss of precision when dividing Integers).
+    are complementary operations. (As a counter example multiplication and division are not always complimentary due to
+    possible loss of precision when dividing Integers).
