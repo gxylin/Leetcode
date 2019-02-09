@@ -90,6 +90,35 @@ class Solution {
     }
 }
 
+Best solution:
+class Solution {
+    public ListNode plusOne(ListNode head){
+         if (head == null){
+             return head;
+         }
+         int carry = dfs(head);
+         if (carry == 0){
+            return head;
+         }
+         ListNode newHead = ListNode(1);
+         newHead.next = head;
+         return newHead;
+    }
+    private int dfs(ListNode node){
+        if (node == null){
+            return 1;
+        }
+        int carry = dfs(node.next);
+        if (carry == 0){
+            return 0;
+        }
+        int val = node.val + carry;
+        node.val = val%10;
+        return val/10;
+    }
+}
+
+
 Method 3:
 Iterative Two-Pointers with dummy node Java O(n) time, O(1) space
 
