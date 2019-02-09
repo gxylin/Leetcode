@@ -1,4 +1,5 @@
-Given a string representing arbitrarily nested ternary expressions, calculate the result of the expression. You can always assume that the given expression is valid and only consists of digits 0-9, ?, :, T and F (T and F represent True and False respectively).
+Given a string representing arbitrarily nested ternary expressions, calculate the result of the expression. You can always assume
+that the given expression is valid and only consists of digits 0-9, ?, :, T and F (T and F represent True and False respectively).
 
 Note:
 
@@ -61,5 +62,27 @@ class Solution {
             }
         }
         return String.valueOf(stack.peek());
+    }
+}
+
+public String parseTernary(String expression){
+    Stack<Character> stack = new Stack<>();
+    for (int i = expression.length() - 1; i >= 0; i--){
+        char c = expression.charAt(i);
+        if (c == ':'){
+            continue;
+        }else if (!stack.isEmpty() && stack.peek() == '?'){// key note: let the "?" to be pushed in the stack.
+            stack.pop();
+            int first = stack.pop();
+            int second = stack.pop();
+            if (c == 'T'){
+                stack.push(first);
+            }else{
+                stack.push(second);
+            }
+        }else{
+            stack.push(c);
+        }
+        return String.valueOf(stack.pop());
     }
 }
