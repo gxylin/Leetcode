@@ -40,7 +40,8 @@ hit[] array is wrapped around by mod operation. Each hit bucket is associated wi
 which record current time. If it is not current time, it means it is 300s or 600s... ago and need to reset to 1.
 
  O(1) hit() O(s) getHits() 
-    
+
+Method 1: for large data
 class HitCounter {
 
     private int[] times;
@@ -84,3 +85,27 @@ class HitCounter {
  * obj.hit(timestamp);
  * int param_2 = obj.getHits(timestamp);
  */
+
+Method 2: for small data
+class HitCounter {
+     Queue<Integer> queue;
+    /** Initialize your data structure here. */
+    public HitCounter() {
+        queue = new LinkedList<>();
+    }
+    
+    /** Record a hit.
+        @param timestamp - The current timestamp (in seconds granularity). */
+    public void hit(int timestamp) {
+        queue.offer(timestamp);
+    }
+    
+    /** Return the number of hits in the past 5 minutes.
+        @param timestamp - The current timestamp (in seconds granularity). */
+    public int getHits(int timestamp) {
+        while (!queue.isEmpty() && timestamp - queue.peek() >= 300){
+           queue.poll();
+        }
+        return queue.size();
+    }
+}
