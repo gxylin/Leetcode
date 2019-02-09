@@ -91,15 +91,15 @@ class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
-        TreeNode curr = root;
-        while (curr != null || !stack.isEmpty()){
-            while (curr != null){
-                stack.add(curr);
-                curr = curr.left;
+        TreeNode node = root;
+        while (node != null || !stack.isEmpty()){
+            while (node != null){
+                stack.add(node);
+                node = node.left;
             }
-            TreeNode node = stack.pop();
-            res.add(node.val);
-            curr = node.right;
+            TreeNode curr = stack.pop();
+            res.add(curr.val);
+            node = curr.right;
         }
         return res;
     }
