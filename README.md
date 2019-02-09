@@ -496,14 +496,14 @@ Solution for Leetcode/Lintcode
 |486   |271  |[Encode and Decode Strings](Java/271_Encode.java)|Medium|Java|Leetcode|
 |487   |276  |[Paint Fence](Java/276_Paint.java)|Easy|Java|Leetcode|
 |488   |296  |[Best Meeting Point Very Good](Java/296_Best.java)|Hard|Java|Leetcode|
-|489   |339  |[Nested List Weight Sum DFS Good](Java/339_Nested.java)|Easy|Java|Leetcode|
+|489   |339  |[Nested List Weight Sum DFS/BFS Good](Java/339_Nested.java)|Easy|Java|Leetcode|
 |490   |346  |[Moving Average from Data Stream](Java/346_Moving.java)|Easy|Java|Leetcode|
 |491   |320  |[Generalized Abbreviation DFS Good](Java/320_Generalized.java)|Medium|Java|Leetcode|
 |492   |357  |[Count Numbers with Unique Digits Good Analysis](Java/357_Count.java)|Medium|Java|Leetcode|
 |493   |359  |[Logger Rate Limiter Very Good for large data](Java/359_Logger.java)|Easy|Java|Leetcode|
 |494   |360  |[Sort Transformed Array Good](Java/360_Sort.java)|Medium|Java|Leetcode|
 |495   |362  |[Design Hit Counter Very Good for large data](Java/362_Design.java)|Medium|Java|Leetcode|
-|496   |364  |[Nested List Weight Sum II](Java/364_Nested.java)|Medium|Java|Leetcode|
+|496   |364  |[Nested List Weight Sum II DFS/BFS Good](Java/364_Nested.java)|Medium|Java|Leetcode|
 |497   |366  |[Find Leaves of Binary Tree Java Concept](Java/366_Find.java)|Medium|Java|Leetcode|
 |498   |369  |[Plus One Linked List](Java/369_Plus.java)|Medium|Java|Leetcode|
 |499   |370  |[Range Addition Range Caching](Java/370_Range.java)|Medium|Java|Leetcode|
