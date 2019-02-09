@@ -21,7 +21,7 @@ Given s = "apple", abbr = "a2e":
 
 Return false.
 
-
+https://github.com/optimisea/Leetcode/blob/master/Java/637_CheckWordAbbreviation.java
 class Solution {
     public boolean validWordAbbreviation(String word, String abbr) {
         int i = 0;
