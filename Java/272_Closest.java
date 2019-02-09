@@ -20,6 +20,7 @@ Output: [4,3]
 
 Follow up:
 Assume that the BST is balanced, could you solve it in less than O(n) runtime (where n = total nodes)?
+Answer: binary search O(h)
 
 
 Method 1:
@@ -35,9 +36,13 @@ O(n)
  */
 class Solution {
     public List<Integer> closestKValues(TreeNode root, double target, int k) {
-        LinkedList<Integer> result = new LinkedList<>();
+        Queue<Integer> result = new LinkedList<>();
         inOrder(result, root, target, k);
-        return result;
+        List<Integer> res = new ArrayList<>();
+        for (int : result){
+          res.add(int);
+        }
+        return res;
     }
     private void inOrder(LinkedList<Integer> result, TreeNode root, double target, int k){
         if (root == null){
@@ -45,13 +50,44 @@ class Solution {
         }
         inOrder(result, root.left, target, k);
         if (result.size() == k){
-            if (Math.abs(result.peekFirst() - target) <= Math.abs(root.val - target)){
+            if (Math.abs(result.peek() - target) <= Math.abs(root.val - target)){
                 return;
             }else{
-                result.pollFirst();
+                result.poll();
             }
         }
-        result.offerLast(root.val);
+        result.offer(root.val);
         inOrder(result, root.right, target, k);
     }
+}
+
+Method 2: BST inorder traversal 
+
+public List<Integer> closestKValues(TreeNode root, double target, int k){
+    List<Integer> res = new ArrayList<>();
+    Stack<TreeNode> stack = new Stack<>();
+    TreeNode node = root;
+    Queue<Integer> queue = new LinkedList<>();
+    while (node != null || !stack.isEmpty()){
+        while (node != null){
+            stack.push(node);
+            node = node.left;
+        }
+        TreeNode curr = stack.pop();
+        if (queue.size() < k){
+            queue.offer(curr.val);
+        }else{
+            if (Math.abs(queue.peek().val - target) > Math.abs(curr.val - target)){
+                queue.poll();
+                queue.offer(curr.val);
+            }else{
+                break;
+            }
+        }
+        node = curr.right;
+    }
+     for (int : queue){
+          res.add(int);
+     }
+     return res;
 }
