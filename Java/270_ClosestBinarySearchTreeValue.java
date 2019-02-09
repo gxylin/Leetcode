@@ -59,3 +59,24 @@ class Solution {
         return closest;
     }
 }
+
+Method 4: BST inorder iteration;
+public int closestValue(TreeNode root, double target){
+    Stack<TreeNode> stack = new Stack<>();
+    TreeNode node = root;
+    int res = Integer.MAX_VALUE;
+    double diff = Double.MAX_VALUE;
+    while (node != null || !stack.isEmpty()){
+        while (node != null){
+            stack.push(node);
+            node = node.next;
+        }
+        TreeNode curr = stack.pop();
+        if (Math.abs(curr.val - target) < diff){
+            diff = Math.abs(curr.val - target);
+            res = curr.val;
+        } 
+        node = curr.right;
+    }
+    return res;
+}
