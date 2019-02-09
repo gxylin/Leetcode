@@ -69,7 +69,7 @@ public int closestValue(TreeNode root, double target){
     while (node != null || !stack.isEmpty()){
         while (node != null){
             stack.push(node);
-            node = node.next;
+            node = node.left;
         }
         TreeNode curr = stack.pop();
         if (Math.abs(curr.val - target) < diff){
