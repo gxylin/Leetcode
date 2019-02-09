@@ -53,12 +53,12 @@ Method 2: for large data
 class Logger {
     private int N;
     private int[] times;
-    private Map<String, Integer> map;
+    private String[] strs;
     /** Initialize your data structure here. */
     public Logger() {
         N = 10;
         times = new int[N];
-        map = new HashMap<>();
+        strs = new String[N];
     }
     
     /** Returns true if the message should be printed in the given timestamp, otherwise returns false.
@@ -66,21 +66,18 @@ class Logger {
         The timestamp is in seconds granularity. */
     public boolean shouldPrintMessage(int timestamp, String message) {
        int index = timestamp % 10;
-       if (!map.containsKey(message)){
-          map.put(message, index);
-          time[index] = timestamp;
-          return true;
-       }else{
-          int oldIndex = map.get(message);
-          if (timestamp - time[oldIndex] <= 10){
-              return false;
-          }else{//replace the index and don't care about the oldIndex content
-              time[index] = timestamp;
-              map.put(message, index);
-              return true;
-          }  
+       for (int i = 0; i < N; i++){
+           if (strs[i].equals(message)){
+               if (timstamp - time[i] <= 10){
+                   return false;
+               }
+               strs[i] = null;
+               time[i] = 0;
+           }
        }
-        
+       strs[index] = message;
+       time[index] = timstamp;
+       return true;
     }
 }
 
