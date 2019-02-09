@@ -126,3 +126,33 @@ class Solution {
         
     }
 }
+
+Best solution:
+https://github.com/optimisea/Leetcode/blob/master/Java/650_BinaryTreeLeavesOrderTraversal.java
+class Solution {
+    public List<List<Integer>> findLeaves(TreeNode root) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null){
+            return res;
+        }
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        depth(root, map);
+        for (List<Integer> list : map.values()){
+            res.add(list);
+        }
+        return res;
+    }
+    private int depth(TreeNode root, Map<Integer, List<Integer>> map){
+        if (root == null){
+            return 0;
+        }
+        int left = depth(root.left, map);
+        int right = depth(root.right, map);
+        int depth = Math.max(left, right) + 1;
+        if (!map.containsKey(depth)){
+            map.put(depth, new ArrayList<>());
+        }
+        map.get(depth).add(root.val);
+        return depth;
+    }
+}
