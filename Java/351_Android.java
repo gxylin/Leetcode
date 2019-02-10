@@ -1,10 +1,12 @@
- Given an Android 3x3 key lock screen and two integers m and n, where 1 ≤ m ≤ n ≤ 9, count the total number of unlock patterns of the Android lock screen, which consist of minimum of m keys and maximum n keys.
+ Given an Android 3x3 key lock screen and two integers m and n, where 1 ≤ m ≤ n ≤ 9, count the total number of unlock patterns o
+ f the Android lock screen, which consist of minimum of m keys and maximum n keys.
 
 Rules for a valid pattern:
 
     Each pattern must connect at least m keys and at most n keys.
     All the keys must be distinct.
-    If the line connecting two consecutive keys in the pattern passes through any other keys, the other keys must have previously selected in the pattern. No jumps through non selected key is allowed.
+    If the line connecting two consecutive keys in the pattern passes through any other keys, the other keys must have previously
+    selected in the pattern. No jumps through non selected key is allowed.
     The order of keys used matters.
 
 Explanation:
@@ -28,7 +30,8 @@ Line 1 - 9 is valid because it passes through key 5, which had been selected in 
 Example:
 Given m = 1, n = 1, return 9. 
 
-The optimization idea is that 1,3,7,9 are symmetric, 2,4,6,8 are also symmetric. Hence we only calculate one among each group and multiply by 4.
+The optimization idea is that 1,3,7,9 are symmetric, 2,4,6,8 are also symmetric. Hence we only calculate one among each group
+and multiply by 4.
 
 public class Solution {
     // cur: the current position
