@@ -53,7 +53,7 @@ class Solution {
     }
 }
 
-Method 2: Very Good
+Method 2: Very Good like DP
 class Solution {
     public int maxDistance(List<List<Integer>> arrays) {
         int ans = 0;
