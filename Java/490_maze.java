@@ -1,8 +1,10 @@
-There is a ball in a maze with empty spaces and walls. The ball can go through empty spaces by rolling up, down, left or right, but it won't stop rolling until hitting a wall. When the ball stops, it could choose the next direction.
+There is a ball in a maze with empty spaces and walls. The ball can go through empty spaces by rolling up, down, left or right, 
+but it won't stop rolling until hitting a wall. When the ball stops, it could choose the next direction.
 
 Given the ball's start position, the destination and the maze, determine whether the ball could stop at the destination.
 
-The maze is represented by a binary 2D array. 1 means the wall and 0 means the empty space. You may assume that the borders of the maze are all walls. The start and destination coordinates are represented by row and column indexes.
+The maze is represented by a binary 2D array. 1 means the wall and 0 means the empty space. You may assume that the borders of
+the maze are all walls. The start and destination coordinates are represented by row and column indexes.
 
 Example 1
 
@@ -45,10 +47,8 @@ Note:
 
 
 
-
-    Time complexity : O(mn)O(mn)O(mn). Complete traversal of maze will be done in the worst case. Here, mmm and nnn refers to the number of rows and coloumns of the maze.
-
-    Space complexity : O(mn)O(mn)O(mn). visitedvisitedvisited array of size m∗nm*nm∗n is used and queuequeuequeue size can grow upto m∗nm*nm∗n in worst case.
+Time complexity : O(mn) Complete traversal of maze will be done in the worst case. 
+Space complexity : O(mn). visited array of size m∗n is used and queue size can grow upto m∗n in worst case.
 
 
 Method 1: BFS
