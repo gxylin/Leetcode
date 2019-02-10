@@ -110,3 +110,72 @@ class Solution {
         return points[hole[0]][hole[1]].dist != Integer.MAX_VALUE ? points[hole[0]][hole[1]].s : "impossible";
     }
 }
+
+
+Best solution:
+Class Solution{
+  Class Point{
+    int x;
+    int y;
+    int dist;
+    String str;
+    public Point (int x, int y, int dist, String str){
+      this.x = x;
+      this.y = y;
+      this.dist = dist;
+      this.str = str;
+    }
+  }
+  public String findShortestWay(int[][] maze, int[] ball, int[] hole){
+    int m = maze.length;
+    int n = maze[0].length;
+    Point[][] points = new Point[m][n];
+    Queue<Point> queue = new LinkedList<>();
+    for (int i = 0; i < m; i++){
+      for (int j = 0; j < n; j++){
+        if (i == ball[0] && j == ball[1]){
+          point[i][j] = new Point(i, j, 0, "");
+          queue.offer(point[i][j]);
+        }else{
+          point[i][j] = new Point(i, j, Integer.MAX_VALUE, "");
+        }
+      }
+    }
+    String[] str = {"d", "r", "u", "l"};
+    int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+    while (!queue.isEmpty()){
+      Point p = queue.poll();
+      for (int i = 0;  i< dirs.length; i++){
+        int[] dir = dirs[i];
+        int x = p.x;
+        int y = p.y;
+        int step = 0;
+        String currStr = p.str + str[i];
+        while (x >= 0 && x < m && y >= 0 && y < n && maze[x][y] == 0 && (x != hole[0] || y != hole[1])){
+          x += dir[0];
+          y += dir[1];
+          step++;
+        }
+        if (x != hole[0] || y != hole[1]){
+          x -= dir[0];
+          y -= dir[1];
+          step--;
+          if (p.dist + step < point[x][y].dist || (p.dist + step == point[x][y] && currStr.compare(point[x][y].str) < 0)){
+            point[x][y].dist = p.dist + step;
+            point[x][y].str = currStr;
+            queue.offer(new Point(x, y, p.dist + step, currStr));
+          }
+        }else{
+          if (p.dist + step < point[x][y].dist || (p.dist + step == point[x][y] && currStr.compare(point[x][y].str) < 0)){
+            point[x][y].dist = p.dist + step;
+            point[x][y].str = currStr;
+          }
+        }
+      }
+    }
+    return points[hole[0]][hole[1]].dist != Integer.MAX_VALUE ? points[hole[0]][hole[1]].s : "impossible"; 
+  }
+}
+
+
+
