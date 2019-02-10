@@ -145,6 +145,7 @@ class Solution {
                 if (dfs(maze, new int[]{x-dx[i], y-dy[i]}, destination, visited)){
                     return true;
                 }
+                visited[x-dx[i]][y-dy[i]] = false;
             }
         }
         return false;
@@ -184,9 +185,20 @@ public class Solution {
 }
 
 DFS:
-In order to do this traversal, one of the simplest schemes is to undergo depth first search. In this case, we choose one path at a time and try to go as deep as possible into the levels of the tree before going for the next path. In order to implement this, we make use of a recursive function dfs(maze, start, desination, visited). This function takes the given mazemazemaze array, the startstartstart position and the destinationdestinationdestination position as its arguments along with a visitedvisitedvisited array. visitedvisitedvisited array is a 2-D boolean array of the same size as that of mazemazemaze. A True value at visited[i][j]visited[i][j]visited[i][j] represents that the current position has already been reached earlier during the path traversal. We make use of this array so as to keep track of the same paths being repeated over and over. We mark a True at the current position in the visitedvisitedvisited array once we reach that particular positon in the mazemazemaze.
+In order to do this traversal, one of the simplest schemes is to undergo depth first search. In this case, we choose one 
+path at a time and try to go as deep as possible into the levels of the tree before going for the next path. In order to
+implement this, we make use of a recursive function dfs(maze, start, desination, visited). This function takes the given 
+mazemazemaze array, the startstartstart position and the destinationdestinationdestination position as its arguments along 
+with a visitedvisitedvisited array. visitedvisitedvisited array is a 2-D boolean array of the same size as that of mazemazemaze. 
+    A True value at visited[i][j]visited[i][j]visited[i][j] represents that the current position has already been reached earlier 
+    during the path traversal. We make use of this array so as to keep track of the same paths being repeated over and over. We 
+    mark a True at the current position in the visitedvisitedvisited array once we reach that particular positon in the mazemazemaze.
 
-From every startstartstart position, we can move continuously in either left, right, upward or downward direction till we reach the boundary or a wall. Thus, from the startstartstart position, we determine all the end points which can be reached by choosing the four directions. For each of the cases, the new endpoint will now act as the new start point for the traversals. The destination, obviously remains unchanged. Thus, now we call the same function four times for the four directions, each time with a new start point obtained previously.
+From every startstartstart position, we can move continuously in either left, right, upward or downward direction till we reach 
+the boundary or a wall. Thus, from the startstartstart position, we determine all the end points which can be reached by choosing
+the four directions. For each of the cases, the new endpoint will now act as the new start point for the traversals. The destination,
+obviously remains unchanged. Thus, now we call the same function four times for the four directions, each time with a new start point 
+obtained previously.
 
 If any of the function call returns a True value, it means we can reach the desination. 
 
