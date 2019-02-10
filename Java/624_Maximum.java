@@ -19,7 +19,8 @@ Note:
     The integers in the m arrays will be in the range of [-10000, 10000].
 
 
-Method 1:
+Method 1: 
+Template: keep three varialbles, max (or min) value, max (or min) index and 2nd max(or min) value
 class Solution {
     public int maxDistance(List<List<Integer>> arrays) {
         int min = Integer.MAX_VALUE;
@@ -50,7 +51,7 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: Very Good
 class Solution {
     public int maxDistance(List<List<Integer>> arrays) {
         int ans = 0;
