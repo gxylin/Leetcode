@@ -52,11 +52,10 @@ Note:
 
 Method 1: Better solution
 BFS (accepted)
-Time complexity : O(m∗n∗max(m,n)). Time complexity : O(m∗n∗max(m,n))O(m*n*\text{max}(m,n))O(m∗n∗max(m,n)).
-Complete traversal of maze will be done in the worst case. Here, mmm and nnn refers to the number of rows and columns of the maze. 
-Further, for every current node chosen, we can travel upto a maximum depth of max(m,n)\text{max}(m,n)max(m,n) in any direction.
+Time complexity : O(m∗n∗max(m,n)). Complete traversal of maze will be done in the worst case. 
+Further, for every current node chosen, we can travel upto a maximum depth of max(m,n) in any direction.
 
-Space complexity : O(mn)O(mn). queuequeuequeue size can grow upto m∗nm*nm∗n in the worst case
+Space complexity : O(mn) queue size can grow upto m∗n in the worst case
 
 class Solution {
     public int shortestDistance(int[][] maze, int[] start, int[] destination) {
@@ -102,22 +101,22 @@ public class Solution {
         for (int[] row: distance)
             Arrays.fill(row, Integer.MAX_VALUE);
         distance[start[0]][start[1]] = 0;
-         int[][] dirs={{0, 1} ,{0, -1}, {-1, 0}, {1, 0}};
-        Queue < int[] > queue = new LinkedList < > ();
-        queue.add(start);
+        int[][] dirs={{0, 1} ,{0, -1}, {-1, 0}, {1, 0}};
+        Queue <int[]> queue = new LinkedList<>();
+        queue.offer(start);
         while (!queue.isEmpty()) {
-            int[] s = queue.remove();
+            int[] curr = queue.poll();
             for (int[] dir: dirs) {
-                int x = s[0] + dir[0];
-                int y = s[1] + dir[1];
-                int count = 0;
+                int x = curr[0] + dir[0];
+                int y = curr[1] + dir[1];
+                int step = 0;
                 while (x >= 0 && y >= 0 && x < maze.length && y < maze[0].length && maze[x][y] == 0) {
                     x += dir[0];
                     y += dir[1];
-                    count++;
+                    step++;
                 }
-                if (distance[s[0]][s[1]] + count < distance[x - dir[0]][y - dir[1]]) {
-                    distance[x - dir[0]][y - dir[1]] = distance[s[0]][s[1]] + count;
+                if (distance[curr[0]][curr[1]] + step < distance[x - dir[0]][y - dir[1]]) {
+                    distance[x - dir[0]][y - dir[1]] = distance[curr[0]][curr[1]] + count;
                     queue.add(new int[] {x - dir[0], y - dir[1]});
                 }
             }
@@ -200,14 +199,11 @@ class Solution {
 }
 
 
-Time complexity : O(m∗n∗max(m,n)). Complete traversal of maze will be done in the worst case. Here, mmm and nnn refers to the number 
-of rows and columns of the maze. Further, for every current node chosen, we can travel upto a maximum depth of max(m,n)\text{max}(m,n)
-max(m,n) in any direction.
+Time complexity : O(m∗n∗max(m,n)). Complete traversal of maze will be done in the worst case. 
 
- Space complexity : O(mn). distancedistancedistance array of size m∗nm*nm∗n is used.
+ Space complexity : O(mn). 
 
 Method 3: Dijkstra Algorithm
-
 
 Time complexity : O((mn)^2). Complete traversal of maze will be done in the worst case and function minDistance takes O(mn) time.
 
