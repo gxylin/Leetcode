@@ -21,6 +21,8 @@ Note:
 
 Method 1: 
 Template: keep three varialbles, max (or min) value, max (or min) index and 2nd max(or min) value
+Similar concept as Paint House II https://github.com/optimisea/Leetcode/blob/master/Java/265_Paint.java
+to find the best and keep 2nd best
 class Solution {
     public int maxDistance(List<List<Integer>> arrays) {
         int min = Integer.MAX_VALUE;
