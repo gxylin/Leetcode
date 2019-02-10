@@ -1,4 +1,5 @@
-Given an array A of positive integers, call a (contiguous, not necessarily distinct) subarray of A good if the number of different integers in that subarray is exactly K.
+Given an array A of positive integers, call a (contiguous, not necessarily distinct) subarray of A good if the number of different 
+integers in that subarray is exactly K.
 
 (For example, [1,2,3,1,2] has 3 different integers: 1, 2, and 3.)
 
