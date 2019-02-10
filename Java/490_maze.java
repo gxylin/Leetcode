@@ -87,7 +87,7 @@ class Solution {
     }
 }
 
-One queue:
+One queue: Best solution
 class Solution {
     public boolean hasPath(int[][] maze, int[] start, int[] destination) {
         int[][] dir = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
