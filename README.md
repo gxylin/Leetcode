@@ -524,7 +524,7 @@ Solution for Leetcode/Lintcode
 |514   |505  |[Maze II BFS DFS Dijstra Very Good](Java/505_MazeII.java)|Medium|Java|Leetcode|
 |515   |499  |[Maze III BFS DFS Very Good](Java/499_MazeIII.java)|Hard|Java|Leetcode|
 |516   |562  |[Longest Line of Consecutive One in Matrix](Java/562_Longest.java)|Medium|Java|Leetcode|
-|517   |635  |[Design Log Storage System](Java/635_Design.java)|Medium|Java|Leetcode|
+|517   |635  |[Design Log Storage System Good](Java/635_Design.java)|Medium|Java|Leetcode|
 |518   |734  |[Sentence Similarity](Java/734_Sentence.java)|Easy|Java|Leetcode|
 |519   |737  |[Sentence Similarity II build graph and Union Find](Java/737_Sentence.java)|Medium|Java|Leetcode|
 |520   |760  |[Find Anagram Mapping](Java/760_Find.java)|Easy|Java|Leetcode|
