@@ -926,3 +926,4 @@ Solution for Leetcode/Lintcode
 |914   |986  |[Interval List Intersections Two Pointers Sweep line Good](Java/986_Interval.java)|Medium|Java|Leetcode|
 |915   |987  |[Vertical Order Traversal of a Binary Tree Good](Java/987_Vertical.java)|Medium|Java|Leetcode|
 |916   |991  |[Broken Calculator](Java/991_Broken.java)|Medium|Java|Leetcode|
+|917   |989  |[Add to Array-Form of Integer](Java/989_Add.java)|Easy|Java|Leetcode|
