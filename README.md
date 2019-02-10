@@ -515,7 +515,7 @@ Solution for Leetcode/Lintcode
 |505   |681  |[Next Closest Time Very Good](Java/681_Next.java)|Medium|Java|Leetcode|
 |506   |325  |[Maximum Size Subarray Sum Equals k Very Good](Java/325_Maximum.java)|Medium|Java|Leetcode|
 |507   |272  |[Closest Binary Search Tree Value II](Java/272_Closest.java)|Hard|Java|Leetcode|
-|508   |624  |[Maximum Distance in Arrays](Java/624_Maximum.java)|Easy|Java|Leetcode|
+|508   |624  |[Maximum Distance in Arrays Very Good Array](Java/624_Maximum.java)|Easy|Java|Leetcode|
 |509   |351  |[Android Unlock Patterns](Java/351_Android.java)|Medium|Java|Leetcode|
 |510   |544  |[Output Contest Matches](Java/544_Output.java)|Medium|Java|Leetcode|
 |511   |616  |[Add Bold Tag in String Merge Interval](Java/616_Add.java)|Medium|Java|Leetcode|
