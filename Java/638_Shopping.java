@@ -29,6 +29,78 @@ There are at most 6 kinds of items, 100 special offers.
 For each item, you need to buy at most 6 of them.
 You are not allowed to buy more items than you want, even if that would lower the overall price.
 
+    
+Method: best solution:
+class Solution {
+    public int shoppingOffers(List<Integer> price, List<List<Integer>> special, List<Integer> needs) {
+        int n = price.size();
+        int res = Integer.MAX_VALUE;
+        for (List<Integer> list : special){
+            boolean pass = true;
+            for (int i = 0; i < n; i++){
+                if (list.get(i) > needs.get(i)){
+                    pass = false;
+                    break;
+                }
+            }
+            if (pass){
+                List<Integer> newNeed = new ArrayList<>();
+                for (int i = 0; i < n; i++){
+                    newNeed.add(needs.get(i) - list.get(i));
+                }
+                res = Math.min(res, shoppingOffers(price, special, newNeed) + list.get(list.size() - 1));
+            }
+            int sum = 0;
+            for (int i = 0; i < n; i++){
+                sum += price.get(i) * needs.get(i);
+            }
+            res = Math.min(res, sum);
+        }
+        return res;
+    }
+}
+
+With memo
+class Solution {
+    Map<String, Integer> map = new HashMap<>();
+    public int shoppingOffers(List<Integer> price, List<List<Integer>> special, List<Integer> needs) {
+        StringBuilder sb = new StringBuilder();
+        for (int i : needs){
+            sb.append(i + ":");
+        }
+        String key = sb.toString();
+        if (map.containsKey(key)){
+            return map.get(key);
+        }
+        int n = price.size();
+        int res = Integer.MAX_VALUE;
+        for (List<Integer> list : special){
+            boolean pass = true;
+            for (int i = 0; i < n; i++){
+                if (list.get(i) > needs.get(i)){
+                    pass = false;
+                    break;
+                }
+            }
+            if (pass){
+                List<Integer> newNeed = new ArrayList<>();
+                for (int i = 0; i < n; i++){
+                    newNeed.add(needs.get(i) - list.get(i));
+                }
+                res = Math.min(res, shoppingOffers(price, special, newNeed) + list.get(list.size() - 1));
+            }
+            int sum = 0;
+            for (int i = 0; i < n; i++){
+                sum += price.get(i) * needs.get(i);
+            }
+            res = Math.min(res, sum);
+        }
+        map.put(key, res);
+        return res;
+    }
+}
+
+
 Method: DFS + memo
 class Solution {
     public int shoppingOffers(List<Integer> price, List<List<Integer>> special, List<Integer> needs) {
