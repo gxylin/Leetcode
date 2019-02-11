@@ -537,7 +537,7 @@ Solution for Leetcode/Lintcode
 |527   |633  |[Sum of Square Numbers Two points Good](Java/633_Sum.java)|Easy|Java|Leetcode|
 |528   |623  |[Add One Row to Tree Good](Java/623_Add.java)|Medium|Java|Leetcode|
 |529   |637  |[Average of Levels in Binary Tree](Java/637_Average.java)|Easy|Java|Leetcode|
-|530   |638  |[Shopping Offers DFS meomo](Java/638_Shopping.java)|Medium|Java|Leetcode|
+|530   |638  |[Shopping Offers Recursion Memo](Java/638_Shopping.java)|Medium|Java|Leetcode|
 |531   |653  |[Two Sum IV - Input is a BST](Java/653_Two.java)|Easy|Java|Leetcode|
 |532   |648  |[Replace Words Trie](Java/648_Replace.java)|Medium|Java|Leetcode|
 |533   |665  |[Non-decreasing Array](Java/665_Nondecreasing.java)|Medium|Java|Leetcode|
