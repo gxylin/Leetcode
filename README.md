@@ -534,7 +534,7 @@ Solution for Leetcode/Lintcode
 |524   |594  |[Longest Harmonious Subsequence Very Good](Java/594_Longest.java)|Easy|Java|Leetcode|
 |525   |599  |[Minimum Index Sum of Two Lists](Java/599_Minimum.java)|Easy|Java|Leetcode|
 |526   |628  |[Maximum Product of Three Numbers Good](Java/628_Maximum.java)|Easy|Java|Leetcode
-|527   |633  |[Sum of Square Numbers Two points](Java/633_Sum.java)|Easy|Java|Leetcode|
+|527   |633  |[Sum of Square Numbers Two points Good](Java/633_Sum.java)|Easy|Java|Leetcode|
 |528   |623  |[Add One Row to Tree](Java/623_Add.java)|Medium|Java|Leetcode|
 |529   |637  |[Average of Levels in Binary Tree](Java/637_Average.java)|Easy|Java|Leetcode|
 |530   |638  |[Shopping Offers DFS meomo](Java/638_Shopping.java)|Medium|Java|Leetcode|
