@@ -11,6 +11,55 @@ Input: [4,2,1]
 Output: False
 Explanation: You can't get a non-decreasing array by modify at most one element.
 
+Best solution:
+class Solution {
+    public boolean checkPossibility(int[] nums) {
+        int left = 0;
+        int right = nums.length-1;
+        int asc = 0;
+        int des = 0;
+        for (int i = 0; i < nums.length; i++){
+            if (nums[left] <= nums[i]){
+                left = i;
+            }else{
+                asc++;
+            }
+        }
+        for (int i = nums.length - 1; i>= 0; i--){
+            if (nums[right] >= nums[i]){
+                right = i;
+            }else{
+                des++;
+            }
+        }
+        if (asc > 1 && des > 1){
+            return false;
+        }
+        return true;
+    }
+}
+
+提供一种略有不同的方法。
+顺序检查凹变段和逆序检查凸变段。
+如果满足，则asc和desc中的较小值必然不大于1。
+时间开销O(n)，空间开销O(1)，缺点是双向检查，优点是便于理解o(╯□╰)o。
+
+class Solution {
+    public boolean checkPossibility(int[] nums) {
+        for(int i = 0, m = 0, n = nums.length - 1, asc = 0, desc = 0;i < nums.length;i++) {
+            if(nums[m] <= nums[i]) m = i;
+            else asc++;
+            
+            if(nums[n] >= nums[nums.length - 1 - i]) n = nums.length - 1 - i;
+            else desc++;
+            
+            if(asc > 1 && desc > 1) return false;
+        }
+        
+        return true;
+    }
+}
+
 class Solution {
     public boolean checkPossibility(int[] nums) {
         int count = 0;
@@ -30,6 +79,8 @@ class Solution {
         return true;
     }
 }
+
+
 
 https://leetcode.com/problems/non-decreasing-array/discuss/106826/JavaC++-Simple-greedy-like-solution-with-explanation
 The problem requires that every number has to be equal or greater than previous number.
