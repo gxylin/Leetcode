@@ -54,3 +54,32 @@ class Solution {
         return Math.max(max1 * max2 * max3, min1 * min2 * max1);
     }
 }
+
+class Solution {
+    public int maximumProduct(int[] nums) {
+        int max = Integer.MIN_VALUE;
+        int max2 = Integer.MIN_VALUE;
+        int max3 = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        int min2 = Integer.MAX_VALUE;
+        for (int i : nums){
+            if (i > max){
+                max3 = max2;
+                max2 = max;
+                max = i;
+            }else if (i > max2){
+                max3 = max2;
+                max2 = i;
+            }else if (i > max3){
+                max3 = i;
+            }
+            if (i < min){
+                min2 = min;
+                min = i;
+            }else if (i < min2){
+                min2 = i;
+            }
+        }
+        return Math.max(max * max2 * max3, max * min * min2);
+    }
+}
