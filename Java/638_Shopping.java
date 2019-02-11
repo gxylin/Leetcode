@@ -50,12 +50,12 @@ class Solution {
                 }
                 res = Math.min(res, shoppingOffers(price, special, newNeed) + list.get(list.size() - 1));
             }
-            int sum = 0;
-            for (int i = 0; i < n; i++){
-                sum += price.get(i) * needs.get(i);
-            }
-            res = Math.min(res, sum);
         }
+        int sum = 0;
+        for (int i = 0; i < n; i++){
+            sum += price.get(i) * needs.get(i);
+        }
+        res = Math.min(res, sum);
         return res;
     }
 }
@@ -89,12 +89,12 @@ class Solution {
                 }
                 res = Math.min(res, shoppingOffers(price, special, newNeed) + list.get(list.size() - 1));
             }
-            int sum = 0;
-            for (int i = 0; i < n; i++){
-                sum += price.get(i) * needs.get(i);
-            }
-            res = Math.min(res, sum);
         }
+        int sum = 0;
+        for (int i = 0; i < n; i++){
+            sum += price.get(i) * needs.get(i);
+        }
+        res = Math.min(res, sum);
         map.put(key, res);
         return res;
     }
