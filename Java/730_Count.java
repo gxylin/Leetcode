@@ -26,7 +26,8 @@ Each character S[i] will be in the set {'a', 'b', 'c', 'd'}.
 
 Intuition and Algorithm
 
-Let dp[x][i][j] be the answer for the substring S[i...j] where S[i] == S[j] == 'a'+x. Note that since we only have 4 characters a, b, c, d, thus 0 <= x < 4. 
+Let dp[x][i][j] be the answer for the substring S[i...j] where S[i] == S[j] == 'a'+x. Note that since we only have 4 characters a, b, c, 
+d, thus 0 <= x < 4. 
 The DP formula goes as follows:
 
     If S[i] != 'a'+x, then dp[x][i][j] = dp[x][i+1][j], note that here we leave the first character S[i] in the window out due
