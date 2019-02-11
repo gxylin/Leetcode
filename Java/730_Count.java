@@ -98,3 +98,42 @@ overlapping sub-problems as we recall the DP formula.
 https://leetcode.com/articles/count-different-palindromic-subsequences/#
 https://leetcode.com/problems/count-different-palindromic-subsequences/discuss/109514/c-on2-time-on-memory-with-explanation
 
+
+class Solution {
+    public int countPalindromicSubsequences(String S) {
+        int mod = (int)Math.pow(10, 9) + 7;
+        int n = S.length();
+        int[][][] dp = new int[4][n][n];
+        for (int i = n - 1; i >= 0; i--){
+            for (int j = i; j < n; j++){
+                for (int k = 0; k < 4; k++){
+                    char c = (char)('a' + k);
+                    if (j == i){
+                        if (S.charAt(i) == c){
+                            dp[k][i][j] = 1;
+                        }else{
+                            dp[k][i][j] = 0;
+                        }   
+                    }else{
+                        if (S.charAt(i) != c){
+                            dp[k][i][j] = dp[k][i+1][j];
+                        }else if (S.charAt(j) != c){
+                            dp[k][i][j] = dp[k][i][j-1];
+                        }else{
+                            dp[k][i][j] = 2;
+                            for (int m = 0; m < 4; m++){
+                                dp[k][i][j] = (dp[k][i][j] + dp[m][i+1][j-1]) % mod;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        int res = 0;
+        for (int i = 0; i < 4; i++){
+            res = (res + dp[i][0][n-1]) % mod;
+        }
+        return res;
+    }
+}
