@@ -60,3 +60,54 @@ class Solution {
         return sb.deleteCharAt(sb.length() - 1).toString();
     }
 }
+
+
+class Solution {
+    class TrieNode{
+        TrieNode[] children;
+        boolean isEnd;
+        public TrieNode(){
+            children = new TrieNode[26];
+            isEnd = false;
+        }
+    }
+    public String replaceWords(List<String> dict, String sentence) {
+        TrieNode root = new TrieNode();
+        for (String str : dict){
+            TrieNode node = root;
+            for (int i = 0; i < str.length(); i++){
+                char c = str.charAt(i);
+                if (node.children[c - 'a'] == null){
+                    node.children[c - 'a'] = new TrieNode();
+                }
+                node = node.children[c - 'a'];
+            }
+            node.isEnd = true;
+        }
+        String[] strs = sentence.split("\\s+");
+        StringBuilder res = new StringBuilder();
+        for (String str : strs){
+            TrieNode node = root;
+            StringBuilder sb = new StringBuilder();
+            boolean found = false;
+            for (int i = 0; i < str.length(); i++){
+                char c = str.charAt(i);
+                sb.append(c);
+                if (node.children[c - 'a'] == null){
+                    break;
+                }
+                node = node.children[c - 'a'];
+                if (node.isEnd){
+                    found = true;
+                    break;
+                }
+            }
+            if (found){
+                res.append(sb.toString() + " ");
+            }else{
+                res.append(str + " ");
+            }
+        }
+        return res.toString().trim();
+    }
+}
