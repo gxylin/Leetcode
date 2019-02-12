@@ -11,7 +11,9 @@ Input: [4,2,1]
 Output: False
 Explanation: You can't get a non-decreasing array by modify at most one element.
 
-Best solution:
+Best solution: 
+Try 3, 4, 2, 3
+    need left to catch: 2, 4, 2, 3
 class Solution {
     public boolean checkPossibility(int[] nums) {
         int left = 0;
