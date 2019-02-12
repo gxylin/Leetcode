@@ -55,6 +55,25 @@ class Solution {
     }
 }
 
+class Solution {
+    public int totalHammingDistance(int[] nums) {
+        int res = 0;
+        for (int i = 0; i < 32; i++){
+            int zeros = 0;
+            int ones = 0;
+            for (int j = 0 ;j < nums.length; j++){
+                if (((nums[j] >> i) & 1) == 1){
+                    ones++;
+                }else{
+                    zeros++;
+                }
+            }
+            res += zeros * ones;
+        }
+        return res;
+    }
+}
+
 The total Hamming distance is constructed bit by bit in this approach.
 
 Let's take a series of number: a1, a2, a3,..., an
