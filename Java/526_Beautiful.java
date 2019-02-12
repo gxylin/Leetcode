@@ -74,3 +74,36 @@ class Solution {
         }
     }
 }
+
+class Solution {
+    public int countArrangement(int N) {
+        List<List<Integer>> res = new ArrayList<>();
+        int[] arr = new int[N];
+        for (int i = 0; i < N; i++){
+            arr[i] = i + 1;
+        }
+        boolean[] visited = new boolean[N];
+        dfs(res, new ArrayList<>(), arr, 0, visited);
+        return res.size();
+    }
+    private void dfs(List<List<Integer>> res, List<Integer> item, int[] arr, int pos, boolean[] visited){
+        if (pos == arr.length){
+            if (item.size() == arr.length){
+                res.add(new ArrayList<>(item));
+            }
+            return;
+        }
+        for (int i = 0; i < arr.length; i++){
+            if (visited[i]){
+                continue;
+            }
+            if (arr[i] % (pos+1) == 0 || (pos+1) % arr[i] == 0){
+                visited[i] = true;
+                item.add(arr[i]);
+                dfs(res, item, arr, pos + 1, visited);
+                item.remove(item.size() - 1);
+                visited[i] = false;
+            }
+        }
+    }
+}
