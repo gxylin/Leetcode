@@ -72,3 +72,41 @@ class Solution {
         return root;
     }
 }
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public TreeNode constructMaximumBinaryTree(int[] nums) {
+        if (nums == null || nums.length == 0){
+            return null;
+        }
+        return build(nums, 0, nums.length - 1);
+    }
+    private TreeNode build(int[] nums, int start, int end){
+        if (start > end){
+            return null;
+        }
+        if (start == end){
+            return new TreeNode(nums[start]);
+        }
+        int max = Integer.MIN_VALUE;
+        int index = -1;
+        for (int i = start; i <= end; i++){
+            if (max < nums[i]){
+                max = nums[i];
+                index = i;
+            }
+        }
+        TreeNode root = new TreeNode(max);
+        root.left = build(nums, start, index-1);
+        root.right = build(nums, index+1, end);
+        return root;
+    }
+}
