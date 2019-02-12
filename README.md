@@ -546,7 +546,7 @@ Solution for Leetcode/Lintcode
 |536   |657  |[Judge Route Circle](Java/657_Judge.java)|Easy|Java|Leetcode|
 |537   |659  |[Split Array into Consecutive Subsequences Greedy Good](Java/659_Split.java)|Medium|Java|Leetcode|
 |538   |669  |[Trim a Binary Search Tree](Java/669_Trim.java)|Easy|Java|Leetcode|
-|539   |670  |[Maximum Swap number](Java/670_Maximum.java)|Medium|Java|Leetcode|
+|539   |670  |[Maximum Swap number Good as next permutation](Java/670_Maximum.java)|Medium|Java|Leetcode|
 |540   |526  |[Beautiful Arrangement backtracking](Java/526_Beautiful.java)|Medium|Java|Leetcode|
 |541   |515  |[Find Largest Value in Each Tree Row](Java/515_Find.java)|Medium|Java|Leetcode|
 |542   |531  |[Lonely Pixel I Matrix](Java/531_Lonely.java)|Medium|Java|Leetcode|
