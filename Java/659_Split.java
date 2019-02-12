@@ -2,20 +2,31 @@ Intuition
 
 Call a chain a sequence of 3 or more consecutive numbers.
 
-Considering numbers x from left to right, if x can be added to a current chain, it's at least as good to add x to that chain first, rather than to start a new chain.
+Considering numbers x from left to right, if x can be added to a current chain, it's at least as good to add x to that chain first, 
+    rather than to start a new chain.
 
-Why? If we started with numbers x and greater from the beginning, the shorter chains starting from x could be concatenated with the chains ending before x, possibly helping us if there was a "chain" from x that was only length 1 or 2.
+Why? If we started with numbers x and greater from the beginning, the shorter chains starting from x could be concatenated with the 
+chains ending before x, possibly helping us if there was a "chain" from x that was only length 1 or 2.
 
 Algorithm
 
 Say we have a count of each number, and let tails[x] be the number of chains ending right before x.
 
-Now let's process each number. If there's a chain ending before x, then add it to that chain. Otherwise, if we can start a new chain, do so.
+Now let's process each number. If there's a chain ending before x, then add it to that chain. Otherwise, if we can start a new chain,
+do so.
 
-It's worth noting that our solution can be amended to take only O(1)O(1)O(1) additional space, since we could do our counts similar to Approach #1, and we only need to know the last 3 counts at a time.
+It's worth noting that our solution can be amended to take only O(1)O(1)O(1) additional space, since we could do our counts similar
+    to Approach #1, and we only need to know the last 3 counts at a time.
 
+    
+    
 1. We iterate through the array once to get the frequency of all the elements in the array
-2. We iterate through the array once more and for each element we either see if it can be appended to a previously constructed consecutive sequence or if it can be the start of a new consecutive sequence. If neither are true, then we return false.
+2. We iterate through the array once more and for each element we either see if it can be appended to a previously constructed
+consecutive sequence or if it can be the start of a new consecutive sequence. If neither are true, then we return false.
+
+    
+Key Note:
+appending to existing array has higher priority than creating one array
 
 Greedy
 public boolean isPossible(int[] nums) {
