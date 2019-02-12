@@ -549,7 +549,7 @@ Solution for Leetcode/Lintcode
 |539   |670  |[Maximum Swap number Good as next permutation](Java/670_Maximum.java)|Medium|Java|Leetcode|
 |540   |526  |[Beautiful Arrangement backtracking Good](Java/526_Beautiful.java)|Medium|Java|Leetcode|
 |541   |515  |[Find Largest Value in Each Tree Row](Java/515_Find.java)|Medium|Java|Leetcode|
-|542   |531  |[Lonely Pixel I Matrix](Java/531_Lonely.java)|Medium|Java|Leetcode|
+|542   |531  |[Lonely Pixel I Matrix Good](Java/531_Lonely.java)|Medium|Java|Leetcode|
 |543   |477  |[Total Hamming Distance](Java/477_Total.java)|Medium|Java|Leetcode|
 |544   |473  |[Matchsticks to Square Backtracking Partition](Java/473_Matchsticks.java)|Medium|Java|Leetcode|
 |545   |491  |[Increasing Subsequences Backtracking](Java/491_Increasing.java)|Medium|Java|Leetcode|
