@@ -48,3 +48,30 @@ public boolean isPossible(int[] nums) {
     }
     return true;
 }
+
+class Solution {
+    public boolean isPossible(int[] nums) {
+        Map<Integer, Integer> freq = new HashMap<>();
+        Map<Integer, Integer> append = new HashMap<>();
+        for (int num : nums){
+            freq.put(num, freq.getOrDefault(num, 0) + 1);
+        }
+        for (int i = 0; i < nums.length; i++){
+            if (freq.get(nums[i]) == 0){
+                continue;
+            }
+            if (append.getOrDefault(nums[i], 0) > 0){
+                append.put(nums[i], append.get(nums[i]) - 1);
+                append.put(nums[i] + 1, append.getOrDefault(nums[i] + 1, 0) + 1);
+            }else if (freq.getOrDefault(nums[i] + 1, 0) > 0 && freq.getOrDefault(nums[i] + 2, 0) > 0){
+                freq.put(nums[i] + 1, freq.get(nums[i] + 1) - 1);
+                freq.put(nums[i] + 2, freq.get(nums[i] + 2) - 1);
+                append.put(nums[i] + 3, append.getOrDefault(nums[i] + 3, 0) + 1);
+            }else{
+                return false;
+            }
+            freq.put(nums[i], freq.get(nums[i]) - 1);
+        }
+        return true;
+    }
+}
