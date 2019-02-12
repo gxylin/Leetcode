@@ -542,7 +542,7 @@ Solution for Leetcode/Lintcode
 |532   |648  |[Replace Words Trie](Java/648_Replace.java)|Medium|Java|Leetcode|
 |533   |665  |[Non-decreasing Array Very Good](Java/665_Nondecreasing.java)|Medium|Java|Leetcode|
 |534   |652  |[Find Duplicate Subtrees Serialization Very Good](Java/652_Find.java)|Medium|Java|Leetcode|
-|535   |654  |[Maximum Binary Tree](Java/654_Maximum.java)|Medium|Java|Leetcode
+|535   |654  |[Maximum Binary Tree Good](Java/654_Maximum.java)|Medium|Java|Leetcode
 |536   |657  |[Judge Route Circle](Java/657_Judge.java)|Easy|Java|Leetcode|
 |537   |659  |[Split Array into Consecutive Subsequences Greedy](Java/659_Split.java)|Medium|Java|Leetcode|
 |538   |669  |[Trim a Binary Search Tree](Java/669_Trim.java)|Easy|Java|Leetcode|
