@@ -103,6 +103,39 @@ class Solution {
 }
 
 
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public TreeNode trimBST(TreeNode root, int L, int R) {
+        if (root == null){
+            return root;
+        }
+        if (root.val > R){
+            return trimBST(root.left, L, R);
+        }else if (root.val < L){
+            return trimBST(root.right, L, R);
+        }else if (root.val == R){
+            root.right = null;
+            root.left = trimBST(root.left, L, R);
+            return root;
+        }else if (root.val == L){
+            root.left = null;
+            root.right = trimBST(root.right, L, R);
+            return root;
+        }
+        root.left = trimBST(root.left, L, R);
+        root.right = trimBST(root.right, L, R);
+        return root;
+    }
+}
+
 Complexity Analysis
 
     Time Complexity: O(N), where N is the total number of nodes in the given tree. We visit each node at most once.
