@@ -552,7 +552,7 @@ Solution for Leetcode/Lintcode
 |542   |531  |[Lonely Pixel I Matrix Good](Java/531_Lonely.java)|Medium|Java|Leetcode|
 |543   |477  |[Total Hamming Distance](Java/477_Total.java)|Medium|Java|Leetcode|
 |544   |473  |[Matchsticks to Square Backtracking Partition Very Good](Java/473_Matchsticks.java)|Medium|Java|Leetcode|
-|545   |491  |[Increasing Subsequences Backtracking](Java/491_Increasing.java)|Medium|Java|Leetcode|
+|545   |491  |[Increasing Subsequences Backtracking Very Good](Java/491_Increasing.java)|Medium|Java|Leetcode|
 |546   |498  |[Diagonal Traverse](Java/498_Diagonal.java)|Medium|Java|Leetcode|
 |547   |542  |[01 Matrix another kind of BFS](Java/542_Matrix.java)|Medium|Java|Leetcode|
 |548   |680  |[Valid Palindrome II ](Java/680_Valid.java)|Easy|Java|Leetcode|
