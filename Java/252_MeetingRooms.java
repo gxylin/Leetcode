@@ -87,6 +87,7 @@ class Solution {
 
 
 Method 3: the same as Meeting rooms II
+Time complexity: O(nlogn)
 class Solution {
     public int minMeetingRooms(Interval[] intervals) {
         if (intervals == null || intervals.length == 0){
