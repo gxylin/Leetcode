@@ -562,7 +562,7 @@ Solution for Leetcode/Lintcode
 |552   |698  |[Partition to K Equal Sum Subsets Backtracking Partition Very Good](Java/698_Partition.java)|Medium|Java|Leetcode|
 |553   |712  |[Minimum ASCII Delete Sum for Two Strings Dynamic Programming](Java/712_Minimum.java)|Medium|Java|Leetcode|
 |554   |720  |[Longest Word in Dictionary Trie HashMap Good](Java/720_Longest.java)|Medium|Java|Leetcode|
-|555   |718  |[Maximum Length of Repeated Subarray Dynamic Programming](Java/718_Maximum.java)|Medium|Java|Leetcode|
+|555   |718  |[Maximum Length of Repeated Subarray Very Good Must see](Java/718_Maximum.java)|Medium|Java|Leetcode|
 |556   |724  |[Find Pivot Index](Java/724_Find.java)|Easy|Java|Leetcode|
 |557   |728  |[Self Dividing Numbers](Java/728_Self.java)|Easy|Java|Leetcode|
 |558   |729  |[My Calendar I](Java/729_My.java)|Medium|Java|Leetcode|
