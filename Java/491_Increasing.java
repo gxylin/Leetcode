@@ -51,7 +51,7 @@ class Solution {
     }
 }
 
-Method 3: Best Solution
+Method 3: Best Solution note that this is not stardard backtracking
 Pretty straightforward. Maybe one thing is: while nums is not necessarily sorted but we have to skip duplicates in each recursion, 
 so we use a hash set to record what we have used in this particular recursion.
     
@@ -68,7 +68,7 @@ class Solution {
         if (item.size() >= 2){
             res.add(new ArrayList<Integer>(item));
         }
-        Set<Integer> set = new HashSet<>();
+        Set<Integer> set = new HashSet<>(); // note that this is not stardard backtracking
         for (int i = start; i < nums.length; i++){
             if (set.contains(nums[i])){
                 continue;
