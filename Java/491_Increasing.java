@@ -54,6 +54,10 @@ class Solution {
 Method 3: Best Solution
 Pretty straightforward. Maybe one thing is: while nums is not necessarily sorted but we have to skip duplicates in each recursion, 
 so we use a hash set to record what we have used in this particular recursion.
+    
+We don't do the same as standard backtrack to set.remove() because we have the set at each level, 
+    not the same set used by all levels in the DFS.
+    
 class Solution {
     public List<List<Integer>> findSubsequences(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
