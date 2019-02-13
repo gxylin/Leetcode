@@ -22,6 +22,7 @@ Note:
 The length of nums will be in the range [0, 10000].
 Each element nums[i] will be an integer in the range [-1000, 1000].
 
+Best solution O(n)
 class Solution {
     public int pivotIndex(int[] nums) {
         if (nums == null || nums.length == 0){
