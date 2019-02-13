@@ -126,7 +126,7 @@ class Solution {
 
 Method 3: BFS
 Time complexity: O(mn)
-Space complexity: O(1)
+Space complexity: O(mn)
 class Solution {
     public int[][] updateMatrix(int[][] matrix) {
         int m = matrix.length;
@@ -155,6 +155,50 @@ class Solution {
                     q.offer(new int[]{x, y});
                 }
             }
+        }
+        return res;
+    }
+}
+
+
+Method 4: Best solution
+class Solution {
+    public int[][] updateMatrix(int[][] matrix) {
+        if (matrix == null || matrix.length == 0){
+            return new int[0][0];
+        }
+        int m = matrix.length;
+        int n = matrix[0].length;
+        Queue<int[]> queue = new LinkedList<>();
+        boolean[][] visited = new boolean[m][n];
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (matrix[i][j] == 0){
+                    queue.offer(new int[]{i, j});
+                    visited[i][j] = true;
+                }
+            }
+        }
+        int[][] res = new int[m][n];
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        int level = 0;
+        while (!queue.isEmpty()){ 
+            int size = queue.size();
+            for (int i = 0; i < size; i++){
+                int[] curr = queue.poll();
+                int x = curr[0];
+                int y = curr[1];
+                res[x][y] = level;
+                for (int[] dir : dirs){
+                    int nx = curr[0] + dir[0];
+                    int ny = curr[1] + dir[1];
+                    if (nx >= 0 && nx < m && ny >= 0 && ny < n && !visited[nx][ny]){
+                        visited[nx][ny] = true;
+                        queue.offer(new int[]{nx, ny});
+                    }
+                }
+            }
+            level++;
         }
         return res;
     }
