@@ -565,7 +565,7 @@ Solution for Leetcode/Lintcode
 |555   |718  |[Maximum Length of Repeated Subarray Very Good Must see](Java/718_Maximum.java)|Medium|Java|Leetcode|
 |556   |724  |[Find Pivot Index](Java/724_Find.java)|Easy|Java|Leetcode|
 |557   |728  |[Self Dividing Numbers](Java/728_Self.java)|Easy|Java|Leetcode|
-|558   |729  |[My Calendar I](Java/729_My.java)|Medium|Java|Leetcode|
+|558   |729  |[My Calendar I TreeMap Very Good](Java/729_My.java)|Medium|Java|Leetcode|
 |559   |731  |[My Calendar II TreeMap Sweep line](Java/731_My.java)|Medium|Java|Leetcode|
 |560   |732  |[My Calendar III TreeMap Sweep line](Java/732_my.java)|Hard|Java|Leetcode|
 |561   |735  |[Asteroid Collision](Java/735_Asteroid.java)|Medium|Java|Leetcode|
