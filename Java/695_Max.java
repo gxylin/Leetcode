@@ -18,7 +18,7 @@ Given the above grid, return 0.
 Note: The length of each dimension in the given grid does not exceed 50.
 
 Method 1: BFS Similar as Number of Island
-Time complexity: O(mn)
+Time complexity: O(mn * mn)
 Space complexity: O(mn)
 class Solution {
     public int maxAreaOfIsland(int[][] grid) {
@@ -107,7 +107,7 @@ class Solution {
 
 
 Method 2: DFS recursion
-Time complexity: O(mn)
+Time complexity: O(mn * mn)
 Space complexity: O(mn)
 class Solution {
     int[][] grid;
