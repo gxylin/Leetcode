@@ -70,7 +70,7 @@ public class MyCalendar {
  * boolean param_1 = obj.book(start,end);
  */
  
- Method 2: TreeMap  Best solution
+ Method 2: TreeMap  
  Time complexity: O(logn)
  class MyCalendar {
     class Interval {
@@ -111,6 +111,8 @@ public class MyCalendar {
  */
  
  Method 3: No need to create Interval class, just use treemap
+ Best solution
+ Time complexity: O(logn)
  class MyCalendar {
     TreeMap<Integer, Integer> intervals;
     public MyCalendar() {
