@@ -21,6 +21,8 @@ The length of words[i] will be in the range [1, 30].
 
 Methodd 1: Trie
 Similar to Map Sum Trie and Longest Word in Dictionary through Deleting
+Time complexity: O(n * log(26)) -> O(n)
+Space complexity: O(n)
 class Solution {
     class TrieNode{
         TrieNode[] children;
@@ -61,8 +63,55 @@ class Solution {
         return ans;
     }
 }
+
+class Solution {
+    class TrieNode{
+        TrieNode[] children;
+        boolean isEnd;
+        public TrieNode(){
+            children = new TrieNode[26];
+            isEnd = false;
+        }
+    }
+    public String longestWord(String[] words) {
+        TrieNode root = new TrieNode();
+        for(String word : words){
+            TrieNode node = root;
+            for (int i = 0; i < word.length(); i++){
+                char c = word.charAt(i);
+                if (node.children[c - 'a'] == null){
+                    node.children[c - 'a'] = new TrieNode();
+                }
+                node = node.children[c- 'a'];
+            }
+            node.isEnd = true;
+        }
+        String res = "";
+        for (String word : words){
+            TrieNode node = root;
+            boolean found = true;
+            for (int i = 0; i < word.length(); i++){
+                char c = word.charAt(i);
+                node = node.children[c- 'a'];
+                if (!node.isEnd){
+                    found = false;
+                    break;
+                }
+            }
+            if (found){
+                if (word.length() > res.length() || word.length() == res.length() && word.compareTo(res) < 0){
+                    res = word;
+                }
+            }
+        }
+        return res;
+    }
+}
+
 https://leetcode.com/problems/longest-word-in-dictionary/discuss/109114/JavaC++-Clean-Code
 Best solution: build HashMap
+Time complexity: O(nlogn)
+Space complexity: O(n)
 class Solution {
     public String longestWord(String[] words) {
         Arrays.sort(words);
@@ -89,6 +138,8 @@ Whenever our found word would be superior, we check if all it's prefixes are pre
 
 Alternatively, we could have sorted the words beforehand, so that we know the word we are considering would be the answer if all it's prefixes are present.
 
+Time complexity: O(n*k)
+Space complexity: O(n)
 class Solution {
     public String longestWord(String[] words) {
         String ans = "";
