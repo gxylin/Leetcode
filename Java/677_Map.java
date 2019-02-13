@@ -97,6 +97,60 @@ class MapSum {
     }
 }
 
+class MapSum {
+    class TrieNode{
+        TrieNode[] children;
+        int num;
+        public TrieNode(){
+            children = new TrieNode[26];
+            num = 0;
+        }
+    }
+    /** Initialize your data structure here. */
+    TrieNode root;
+    Map<String, Integer> map;
+    public MapSum() {
+        root = new TrieNode();
+        map = new HashMap<>();
+    }
+    
+    public void insert(String key, int val) {
+        TrieNode node = root;
+        if (map.containsKey(key)){
+            val -= map.get(key);
+        }
+        map.put(key, val);
+        for (int i = 0; i < key.length(); i++){
+            char c = key.charAt(i);
+            if (node.children[c - 'a'] == null){
+                node.children[c - 'a'] = new TrieNode();
+            }
+            node = node.children[c - 'a'];
+            node.num += val;
+        }
+    }
+    
+    public int sum(String prefix) {
+        TrieNode node = root;
+        for (int i = 0; i < prefix.length(); i++){
+            char c = prefix.charAt(i);
+            if (node.children[c - 'a'] != null){
+                node = node.children[c - 'a'];
+            }else{
+                return 0;
+            }
+        }
+        return node.num;
+    }
+}
+
+/**
+ * Your MapSum object will be instantiated and called as such:
+ * MapSum obj = new MapSum();
+ * obj.insert(key,val);
+ * int param_2 = obj.sum(prefix);
+ */
+
 
 /**
  * Your MapSum object will be instantiated and called as such:
