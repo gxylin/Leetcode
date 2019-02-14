@@ -60,7 +60,7 @@ new_row[i] = new_row[j] = 1, we add count[i, j] to the answer, then we increment
 
 
 
-    Time Complexity: O(R*C^2)O where R,CR, CR,C is the number of rows and columns.
+    Time Complexity: O(R*C*C)O where R,CR, CR,C is the number of rows and columns.
 
     Space Complexity: O(C^2) in additional space.
 
