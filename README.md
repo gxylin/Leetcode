@@ -572,7 +572,7 @@ Solution for Leetcode/Lintcode
 |562   |402  |[Remove K Digits monotonic Stack Very Good](Java/402_Remove.java)|Medium|Java|Leetcode|
 |563   |738  |[Monotone Increasing Digits](Java/738_Monotone.java)|Medium|Java|Leetcode|
 |564   |739  |[Daily Temperatures Monotonic Stack Good](Java/739_Daily.java)|Medium|Java|Leetcode|
-|565   |740  |[Delete and Earn Dynamic Programming and TreeMap](Java/740_Delete.java)|Medium|Java|Leetcode|
+|565   |740  |[Delete and Earn Dynamic Programming and TreeMap Very Good](Java/740_Delete.java)|Medium|Java|Leetcode|
 |566   |747  |[Largest Number At Least Twice of Others](Java/747_Largest.java)|Easy|Java|Leetcode|
 |567   |744  |[Find Smallest Letter Greater Than Target Binary Search](Java/744_Find.java)|Easy|Java|Leetcode|
 |568   |743  |[Network Delay Time Graph Dijkstra Very Good](Java/743_Network.java)|Medium|Java|Leetcode|
