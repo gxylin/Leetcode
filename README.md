@@ -579,7 +579,7 @@ Solution for Leetcode/Lintcode
 |569   |750  |[Number Of Corner Rectangles HashMap Very Good](Java/750_Number.java)|Medium|Java|Leetcode|
 |570   |784  |[Letter Case Permutation Recursion](Java/784_Letter.java)|Easy|Java|Leetcode|
 |571   |766  |[Toeplitz Matrix](Java/766_Toeplitz.java)|Easy|Java|Leetcode|
-|572   |767  |[Reorganize String](Java/767_Reorganize.java)|Medium|Java|Leetcode|
+|572   |767  |[Reorganize String Greedy PQ Very Good](Java/767_Reorganize.java)|Medium|Java|Leetcode|
 |573   |769  |[Max Chunks To Make Sorted](Java/769_Max.java)|Medium|Java|Leetcode|
 |574   |768  |[Max Chunks To Make Sorted II](Java/768_Max.java)|Hard|Java|Leetcode|
 |575   |788  |[Rotated Digits](Java/788_Rotated.java)|Easy|Java|Leetcode|
