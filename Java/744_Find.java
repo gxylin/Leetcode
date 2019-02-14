@@ -60,3 +60,33 @@ class Solution {
         return right + 1 < letters.length ? letters[right+1] : letters[0];
     }
 }
+
+
+The pattern is 0001111
+    binary search to find the first 1
+class Solution {
+    public char nextGreatestLetter(char[] letters, char target) {
+        int n = letters.length;
+        int start = 0;
+        int end = n - 1;
+        while (start + 1 < end){
+            int mid = start + (end - start)/ 2;
+            char c = letters[mid];
+            if (c == target){
+                start = mid;
+            }else if (c > target){
+                end = mid;
+            }else{
+                start = mid;
+            }
+        }
+        if (letters[start] > target){
+            return letters[start];
+        }
+        if (letters[end] > target){
+            return letters[end];
+        }
+        return letters[0];
+    }
+}
+
