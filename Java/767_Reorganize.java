@@ -64,6 +64,8 @@ class Solution {
 
 
 Better solution:
+Time complexity: O(nlogn)
+Space complexity: O(n)
 class Solution {
     class Pair{
         char ch;
