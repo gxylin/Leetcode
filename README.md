@@ -568,7 +568,7 @@ Solution for Leetcode/Lintcode
 |558   |729  |[My Calendar I TreeMap Very Good](Java/729_My.java)|Medium|Java|Leetcode|
 |559   |731  |[My Calendar II TreeMap Sweep line](Java/731_My.java)|Medium|Java|Leetcode|
 |560   |732  |[My Calendar III TreeMap Sweep line](Java/732_my.java)|Hard|Java|Leetcode|
-|561   |735  |[Asteroid Collision](Java/735_Asteroid.java)|Medium|Java|Leetcode|
+|561   |735  |[Asteroid Collision Stack Very Good](Java/735_Asteroid.java)|Medium|Java|Leetcode|
 |562   |402  |[Remove K Digits monotonic stack](Java/402_Remove.java)|Medium|Java|Leetcode|
 |563   |738  |[Monotone Increasing Digits](Java/738_Monotone.java)|Medium|Java|Leetcode|
 |564   |739  |[Daily Temperatures Monotonic Stack](Java/739_Daily.java)|Medium|Java|Leetcode|
