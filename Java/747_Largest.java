@@ -24,6 +24,7 @@ Note:
 nums will have a length in the range [1, 50].
 Every nums[i] will be an integer in the range [0, 99].
 
+ One pass
 class Solution {
     public int dominantIndex(int[] nums) {
         int max = Integer.MIN_VALUE;
@@ -42,5 +43,28 @@ class Solution {
             return maxInd;
         }
         return - 1;
+    }
+}
+
+Two passes:
+class Solution {
+    public int dominantIndex(int[] nums) {
+        int max = Integer.MIN_VALUE;
+        int index = -1;
+        for (int i = 0; i < nums.length; i++){
+            if (nums[i] > max){
+                max = nums[i];
+                index = i;
+            }
+        }
+        for (int i : nums){
+            if (i == max){
+                continue;
+            }
+            if (max < 2 * i){
+                return -1;
+            }
+        }
+        return index;
     }
 }
