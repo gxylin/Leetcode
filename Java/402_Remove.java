@@ -103,3 +103,36 @@ class Solution {
         return sb.length() == 0 ? "0" : sb.toString();
     }
 }
+
+
+Best Solution:
+class Solution {
+    public String removeKdigits(String num, int k) {
+        Stack<Integer> stack = new Stack<>();
+        char[] charArr = num.toCharArray();
+        int n = charArr.length;
+        for (int i = 0; i < n; i++){
+            //greedy: pop the larger one
+            int digit = (int)(charArr[i] - '0');
+            while (!stack.isEmpty() && k > 0 && digit < stack.peek()){
+                stack.pop();
+                k--;
+            }
+            stack.push(digit);
+        }
+        while (k > 0){
+            stack.pop();
+            k--;
+        }
+        StringBuilder sb = new StringBuilder();
+        while (!stack.isEmpty()){
+            sb.append(stack.pop());
+        }
+        sb.reverse(); //sb.reverse() is assigned back to sb
+        int i = 0;
+        while (sb.length() > 0 && sb.charAt(0) == '0'){
+            sb.deleteCharAt(0);
+        }
+        return sb.length() == 0 ? "0" : sb.toString();
+    }
+}
