@@ -70,3 +70,31 @@ class Solution {
         return dp[n];
     }
 }
+
+Time complexity: O(nlogn)
+Space complexity: O(n)
+ class Solution {
+    public int deleteAndEarn(int[] nums) {
+        TreeMap<Integer, Integer> treemap = new TreeMap<>();
+        for (int i : nums){
+            treemap.put(i, treemap.getOrDefault(i, 0) + 1);
+        }
+        int n = treemap.size();
+        int[] dp = new int[n+1];
+        int i = 1;
+        for (int key : treemap.keySet()){
+            Integer preKey = treemap.lowerKey(key);
+            if (preKey == null){
+                dp[i] = key * treemap.get(key);
+            }else{
+                if (preKey == key - 1){
+                    dp[i] = Math.max(dp[i-1], dp[i-2] + key * treemap.get(key));
+                }else{
+                    dp[i] = dp[i-1] + key * treemap.get(key);
+                }
+            }
+            i++;
+        }
+        return dp[n];
+    }
+}
