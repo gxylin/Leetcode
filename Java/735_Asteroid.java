@@ -69,3 +69,45 @@ class Solution {
         return res;
     }
 }
+
+
+Best solution:
+Time complexity: O(n)
+Space complexity: O(n)
+    class Solution {
+    public int[] asteroidCollision(int[] asteroids) {
+        Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < asteroids.length; i++){
+            if (stack.isEmpty() || asteroids[i] > 0){
+                stack.push(asteroids[i]);
+            }else{//asteroids[i] > 0
+                while (true){
+                    int prev = stack.peek();
+                    if (prev < 0){
+                        stack.push(asteroids[i]);
+                        break;
+                    }else if (prev == -asteroids[i]){
+                        stack.pop();
+                        break;
+                    }else if (prev > -asteroids[i]){
+                        break;
+                    }else{
+                        stack.pop();
+                        if (stack.isEmpty()){
+                            stack.push(asteroids[i]);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        int n = stack.size();
+        int[] res = new int[n];
+        int index = n - 1;
+        while (!stack.isEmpty()){
+            res[index--] = stack.pop();
+        }
+        return res;
+    }
+}
+
