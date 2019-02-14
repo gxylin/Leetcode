@@ -61,3 +61,53 @@ class Solution {
         return sb.toString();
     }
 }
+
+
+Better solution:
+class Solution {
+    class Pair{
+        char ch;
+        int num;
+        public Pair (char ch, int num){
+            this.ch = ch;
+            this.num = num;
+        }
+    }
+    public String reorganizeString(String S) {
+        char[] chars = S.toCharArray();
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : chars){
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        Queue<Pair> pq = new PriorityQueue<>(new Comparator<Pair>(){
+            public int compare (Pair p1, Pair p2){
+                return p2.num - p1.num;
+            }
+        });
+        for (char c : map.keySet()){
+            pq.offer(new Pair(c, map.get(c)));
+        }
+        StringBuilder sb = new StringBuilder();
+        while (!pq.isEmpty()){
+            Pair curr = pq.poll();
+            if (pq.isEmpty()){
+                if (curr.num > 1){
+                    return "";
+                }else{
+                    sb.append(curr.ch);
+                    break;
+                }
+            }
+            sb.append(curr.ch);
+            Pair next = pq.poll();
+            sb.append(next.ch);
+            if (curr.num > 1){
+                pq.offer(new Pair(curr.ch, curr.num - 1));
+            }
+            if (next.num > 1){
+                pq.offer(new Pair(next.ch, next.num - 1));
+            }
+        }
+        return sb.toString();
+    }
+}
