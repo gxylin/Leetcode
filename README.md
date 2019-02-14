@@ -521,7 +521,7 @@ Solution for Leetcode/Lintcode
 |511   |616  |[Add Bold Tag in String Merge Interval](Java/616_Add.java)|Medium|Java|Leetcode|
 |512   |758  |[Bold Words in String](Java/758_Bold.java)|Medium|Java|Leetcode|
 |513   |490  |[Maze I BFS DFS](Java/490_maze.java)|Medium|Java|Leetcode|
-|514   |505  |[Maze II BFS DFS Dijstra Very Good](Java/505_MazeII.java)|Medium|Java|Leetcode|
+|514   |505  |[Maze II BFS DFS Dijkstra Very Good](Java/505_MazeII.java)|Medium|Java|Leetcode|
 |515   |499  |[Maze III BFS DFS Very Good](Java/499_MazeIII.java)|Hard|Java|Leetcode|
 |516   |562  |[Longest Line of Consecutive One in Matrix](Java/562_Longest.java)|Medium|Java|Leetcode|
 |517   |635  |[Design Log Storage System Good](Java/635_Design.java)|Medium|Java|Leetcode|
