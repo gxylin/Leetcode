@@ -15,19 +15,27 @@ Note: N is an integer in the range [0, 10^9].
 
 Intuition
 
-One initial thought that comes to mind is we can always have a candidate answer of d999...9 (a digit 0 <= d <= 9 followed by some number of nines.) For example if N = 432543654, we could always have an answer of at least 399999999.
+One initial thought that comes to mind is we can always have a candidate answer of d999...9 (a digit 0 <= d <= 9 followed by some 
+number of nines.) For example if N = 432543654, we could always have an answer of at least 399999999.
 
-We can do better. For example, when the number is 123454321, we could have a candidate of 123449999. It seems like a decent strategy is to take a monotone increasing prefix of N, then decrease the number before the "cliff" (the index where adjacent digits decrease for the first time) if it exists, and replace the rest of the characters with 9s.
+We can do better. For example, when the number is 123454321, we could have a candidate of 123449999. It seems like a decent strategy 
+is to take a monotone increasing prefix of N, then decrease the number before the "cliff" (the index where adjacent digits decrease 
+for the first time) if it exists, and replace the rest of the characters with 9s.
 
-When does that strategy fail? If N = 333222, then our strategy would give us the candidate answer of 332999 - but this isn't monotone increasing. However, since we are looking at all indexes before the original first occurrence of a cliff, the only place where a cliff could exist, is next to where we just decremented a digit.
+When does that strategy fail? If N = 333222, then our strategy would give us the candidate answer of 332999 - 
+    but this isn't monotone increasing. However, since we are looking at all indexes before the original first occurrence of a cliff, 
+    the only place where a cliff could exist, is next to where we just decremented a digit.
 
 Thus, we can repair our strategy, by successfully morphing our answer 332999 -> 329999 -> 299999 with a linear scan.
 
 Algorithm
 
-We'll find the first cliff S[i-1] > S[i]. Then, while the cliff exists, we'll decrement the appropriate digit and move i back. Finally, we'll make the rest of the digits 9s and return our work.
+We'll find the first cliff S[i-1] > S[i]. Then, while the cliff exists, we'll decrement the appropriate digit and move i back. 
+    Finally, we'll make the rest of the digits 9s and return our work.
 
-We can prove our algorithm is correct because every time we encounter a cliff, the digit we decrement has to decrease by at least 1. Then, the largest possible selection for the rest of the digits is all nines, which is always going to be monotone increasing with respect to the other digits occurring earlier in the number.
+We can prove our algorithm is correct because every time we encounter a cliff, the digit we decrement has to decrease by at least 1. 
+    Then, the largest possible selection for the rest of the digits is all nines, which is always going to be monotone increasing with 
+    respect to the other digits occurring earlier in the number.
 
 
 example: 
@@ -49,5 +57,39 @@ class Solution {
             S[j] = '9';
         }
         return Integer.parseInt(String.valueOf(S));
+    }
+}
+
+
+Best solution:
+class Solution {
+    public int monotoneIncreasingDigits(int N) {
+        String s = Integer.toString(N);
+        int n = s.length();
+        int index = -1;
+        for (int i = 0; i < n - 1; i++){
+            if (s.charAt(i) > s.charAt(i+1)){
+                index = i;
+                break;
+            }
+        }
+        if (index == -1){
+            return N;
+        }
+        while (index > 0 && s.charAt(index) == s.charAt(index-1)){ // deal with cases: 668832 should be 667999 instead of 668799 (not increasing)
+            index--;
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < index; i++){
+            sb.append(s.charAt(i));
+        }
+        sb.append((int)(s.charAt(index) - '0') - 1);
+        for (int i = index + 1; i < n; i++){
+            sb.append('9');
+        }
+        if (sb.charAt(0) == '0'){
+            sb.deleteCharAt(0);
+        }
+        return Integer.parseInt(sb.toString());
     }
 }
