@@ -151,6 +151,8 @@ class Solution {
 
 
 Better version:
+Time complexity: V + E
+
 class Solution {
     public int networkDelayTime(int[][] times, int N, int K) {
         Map<Integer, Map<Integer, Integer>> graph = new HashMap<>();
