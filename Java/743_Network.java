@@ -162,8 +162,8 @@ class Solution {
             }
             graph.get(edge[0]).put(edge[1], edge[2]);
         }
-        Map<Integer, Integer> distMap = new HashMap<>(); // store the result, key: vertex, value: shortest dist
-        Queue<int[]> pq = new PriorityQueue<int[]>(new Comparator<int[]>(){//e1[0]: vertex, e1[1]: shortest dist
+        Map<Integer, Integer> distMap = new HashMap<>(); // store the result, key: vertex, value: shortest dist from source to key 
+        Queue<int[]> pq = new PriorityQueue<int[]>(new Comparator<int[]>(){//e1[0]: vertex, e1[1]: shortest dist from source to key
             public int compare(int[] e1, int[] e2){
                 return e1[1] - e2[1];
             }
