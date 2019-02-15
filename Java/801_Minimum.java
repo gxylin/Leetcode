@@ -99,6 +99,8 @@ class Solution {
     }
 }
 
+Similar as Wiggle Subsequence (Alternate DP) https://github.com/optimisea/Leetcode/blob/master/Java/376_Wiggle.java
+
 Optimize from O(n) to O(1)
 Notice that every ith swapRecord and fixRecord is only relevant with the previous one. 
 So the algorithm should be optimized to an O(1) space version. 
