@@ -590,7 +590,7 @@ Solution for Leetcode/Lintcode
 |580   |792  |[Number of Matching Subsequences Good](Java/792_Number.java)|Medium|Java|Leetcode|
 |581   |795  |[Number of Subarrays with Bounded Maximum Very Good](Java/795_Number.java)|Medium|Java|Leetcode|
 |582   |804  |[Unique Morse Code Words](Java/804_Unique.java)|Easy|Java|Leetcode|
-|583   |801  |[Minimum Swaps To Make Sequences Increasing Very good Two Alternate 1D DP](Java/801_Minimum.java)|Medium|Java|Leetcode|
+|583   |801  |[Minimum Swaps To Make Sequences Increasing Very good Two Alternate Must See](Java/801_Minimum.java)|Medium|Java|Leetcode|
 |584   |807  |[Max Increase to Keep City Skyline](Java/807_Max.java)|Medium|Java|Leetcode|
 |585   |814  |[Binary Tree Pruning](Java/814_Binary.java)|Medium|Java|Leetcode|
 |586   |806  |[Number of Lines To Write String](Java/806_Number.java)|Easy|Java|Leetcode|
