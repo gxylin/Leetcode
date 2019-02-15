@@ -41,7 +41,7 @@ class Solution {
             if (A[i] >= L && A[i] <= R){
                 count = i - prevInd + 1;
                 res += count;
-            }else if (A[i] < L){
+            }else if (A[i] < L){//note that the incremental does not change
                 res += count;
             }else{
                 count = 0;
