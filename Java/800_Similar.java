@@ -4,7 +4,8 @@ The red-green-blue color "#AABBCC" can be written as "#ABC" in shorthand.  For e
 
 Now, say the similarity between two colors "#ABCDEF" and "#UVWXYZ" is -(AB - UV)^2 - (CD - WX)^2 - (EF - YZ)^2.
 
-Given the color "#ABCDEF", return a 7 character color that is most similar to #ABCDEF, and has a shorthand (that is, it can be represented as some "#XYZ"
+Given the color "#ABCDEF", return a 7 character color that is most similar to #ABCDEF, and has a shorthand (that is, it can be 
+represented as some "#XYZ"
 
 Example 1:
 Input: color = "#09f166"
@@ -38,7 +39,7 @@ class Solution {
             return s;
         }
         String ans = "";
-        int num = Integer.parseInt(s, 16);
+        int num = Integer.parseInt(s, 16); //convert 16 hex to 10 decimal
         char[] chars = {'f','0', '1', '2', '3', '4', '5','6','7','8','9','a','b','c','d','e','f', '0'};
         for (int i = 1; i < chars.length-1; i++){
             char c = s.charAt(0);
