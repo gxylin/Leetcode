@@ -102,9 +102,9 @@ class Solution {
             public int compare (int[] f1, int[] f2){
                 return f1[1] - f2[1];
             }
-        });
-        Map<Integer, Integer> distMap = new HashMap<>();
-        distMap.put(src * 200, 0);
+        });//int[]{node, shortest, stop}
+        Map<Integer, Integer> distMap = new HashMap<>();//key: node * n + stop, val: shortest dist
+        distMap.put(src * n, 0);
         pq.offer(new int[]{src, 0, -1});
         while (!pq.isEmpty()){
             int[] curr = pq.poll();
@@ -119,8 +119,8 @@ class Solution {
             }
             Map<Integer, Integer> map = graph.get(node);
             for (int nei : map.keySet()){
-                int key = nei * 200 + (stop + 1); 
-                if (!distMap.containsKey(key) || dist + map.get(nei) < distMap.get(key) && stop + 1 <= K){
+                int key = nei * n + (stop + 1); 
+                if ((!distMap.containsKey(key) || dist + map.get(nei) < distMap.get(key)) && stop + 1 <= K){
                     distMap.put(key, dist + map.get(nei));
                     pq.offer(new int[]{nei, dist + map.get(nei), stop + 1});
                 }
