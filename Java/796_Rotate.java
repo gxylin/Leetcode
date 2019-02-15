@@ -22,6 +22,7 @@ class Solution {
     }
 }
 
+Best solution
 class Solution {
     public boolean rotateString(String A, String B) {
         if (A.length() == 0 && B.length() == 0){
@@ -32,7 +33,7 @@ class Solution {
         }
         String newA = A + A;
         int len = B.length();
-        for (int i = 0; i < newA.length() - len; i++){
+        for (int i = 0; i < len; i++){
             String sub = newA.substring(i, i+len);
             if (sub.equals(B)){
                 return true;
