@@ -24,6 +24,9 @@ arr will have length in range [1, 2000].
 arr[i] will be an integer in range [0, 10**8].
 
 https://leetcode.com/problems/max-chunks-to-make-sorted-ii/discuss/113466/simple-java-solution-with-explanation
+Method 1: 
+Time complexity: O(nlogn)
+Space complexity: O(n)
 class Solution {
     public int maxChunksToSorted(int[] arr) {
         int[] sorted = arr.clone();
@@ -46,3 +49,33 @@ class Solution {
         return ans;
     }
 }
+
+
+Method 2: Best solution
+Time complexity: O(n)
+Space complexity: O(n)
+https://leetcode.com/problems/max-chunks-to-make-sorted-ii/discuss/113462/Java-solution-left-max-and-right-min.
+class Solution {
+    public int maxChunksToSorted(int[] arr) {
+        int n = arr.length;
+        int[] leftMax= new int[n+1];
+        int[] rightMin = new int[n+1];
+        leftMax[0] = 0;
+        rightMin[n] = Integer.MAX_VALUE;
+        for (int i = 1; i <= n; i++){
+            leftMax[i] = Math.max(leftMax[i-1], arr[i-1]);
+        }
+        for (int i = n-1; i >= 0; i--){
+            rightMin[i] = Math.min(rightMin[i+1], arr[i]);
+        }
+        int count = 0;
+        for (int i = 0; i < n; i++){
+            if (leftMax[i+1] <= rightMin[i+1]){
+                count++;
+            }
+        }
+        return count;
+    }
+}
+
+
