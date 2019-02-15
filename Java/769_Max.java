@@ -40,3 +40,20 @@ class Solution {
         return ans;
     }
 }
+
+class Solution {
+    public int maxChunksToSorted(int[] arr) {
+        int count = 0;
+        int i = 0;
+        while (i < arr.length){
+            int j = arr[i];
+            while (i <= j && arr[i] <= j){
+                i++;
+            }
+            if (i == j + 1){
+                count++;
+            }
+        }
+        return count == 0 ? 1 : count;
+    }
+}
