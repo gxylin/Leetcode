@@ -587,7 +587,7 @@ Solution for Leetcode/Lintcode
 |577   |796  |[Rotate String](Java/796_Rotate.java)|Easy|Java|Leetcode|
 |578   |797  |[All Paths From Source to Target Backtracking](Java/797_All.java)|Medium|Java|Leetcode|
 |579   |800  |[Similar RGB Color](Java/800_Similar.java)|Easy|Java|Leetcode|
-|580   |792  |[Number of Matching Subsequences](Java/792_Number.java)|Medium|Java|Leetcode|
+|580   |792  |[Number of Matching Subsequences Good](Java/792_Number.java)|Medium|Java|Leetcode|
 |581   |795  |[Number of Subarrays with Bounded Maximum](Java/795_Number.java)|Medium|Java|Leetcode|
 |582   |804  |[Unique Morse Code Words](Java/804_Unique.java)|Easy|Java|Leetcode|
 |583   |801  |[Minimum Swaps To Make Sequences Increasing Very good Two Alternate 1D DP](Java/801_Minimum.java)|Medium|Java|Leetcode|
