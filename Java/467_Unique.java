@@ -1,6 +1,8 @@
-Consider the string s to be the infinite wraparound string of "abcdefghijklmnopqrstuvwxyz", so s will look like this: "...zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd....".
+Consider the string s to be the infinite wraparound string of "abcdefghijklmnopqrstuvwxyz", so s will look like this:
+"...zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd....".
 
-Now we have another string p. Your job is to find out how many unique non-empty substrings of p are present in s. In particular, your input is the string p and you need to output the number of different non-empty substrings of p in the string s.
+Now we have another string p. Your job is to find out how many unique non-empty substrings of p are present in s. In particular,
+your input is the string p and you need to output the number of different non-empty substrings of p in the string s.
 
 Note: p consists of only lowercase English letters and the size of p might be over 10000.
 
@@ -21,7 +23,7 @@ Explanation: There are six substrings "z", "a", "b", "za", "ab", "zab" of string
 Method 1: DP
 class Solution {
     public int findSubstringInWraproundString(String p) {
-        int[] count = new int[26];
+        int[] dp = new int[26]; //ending with char
         int maxCount = 0;
         for (int i = 0; i < p.length(); i++){
             if (i > 0 && (p.charAt(i) - p.charAt(i-1) ==  1 || p.charAt(i-1) - p.charAt(i) == 25)){
@@ -30,11 +32,11 @@ class Solution {
                 maxCount = 1;
             }
             int index = p.charAt(i) - 'a';
-            count[index] = Math.max(count[index], maxCount);
+            dp[index] = Math.max(dp[index], maxCount);
         }
         int sum = 0;
         for (int i = 0; i < 26; i++){
-            sum += count[i];
+            sum += dp[i];
         }
         return sum;
     }
