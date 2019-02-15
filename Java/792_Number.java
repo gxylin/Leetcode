@@ -40,6 +40,7 @@ class Solution {
     }
 }
 Passed solution:
+Time complexity: O(n * m * L) : n: length of words, m : S length, L: average word length
 class Solution {
     public int numMatchingSubseq(String S, String[] words) {
         int count = 0;
@@ -50,11 +51,11 @@ class Solution {
         }
         return count;
     }
-    private boolean isSub(String S, String T){
+    private boolean isSub(String T, String S){
         int prev = 0;
         int index = 0;
-        while (index < S.length()){
-            prev = T.indexOf(S.charAt(index), prev);
+        while (index < T.length()){
+            prev = S.indexOf(T.charAt(index), prev);
             if (prev < 0){
                 return false;
             }
