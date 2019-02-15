@@ -430,7 +430,7 @@ Solution for Leetcode/Lintcode
 |420   |374  |[Guess Number](Java/374_Guess.java)|Easy|Java|Leetcode|
 |421   |377  |[Combination Sum IV](Java/377_Combination.java)|Medium|Java|Leetcode|
 |422   |389  |[Find the Difference (Single Number)](Java/389_Find.java)|Easy|Java|Leetcode|
-|423   |376  |[Wiggle Subsequence Dynamic Programming Alternate Very Good](Java/376_Wiggle.java)|Medium|Java|Leetcode|
+|423   |376  |[Wiggle Subsequence Dynamic Programming Alternate Very Good Must see](Java/376_Wiggle.java)|Medium|Java|Leetcode|
 |424   |415  |[Add Strings](Java/415_Add.java)|Easy|Java|Leetcode|
 |425   |381  |[Insert Delete GetRandom O(1) - Duplicates allowed](Java/381_Insert.java)|Hard|Java|Leetcode|
 |426   |405  |[Convert a Number to Hexadecimal Bit Manipulation](Java/405_Convert.java)|Easy|Java|Leetcode|
