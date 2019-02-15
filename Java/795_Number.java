@@ -32,3 +32,23 @@ class Solution {
     }
 }
 
+class Solution {
+    public int numSubarrayBoundedMax(int[] A, int L, int R) {
+        int res = 0;
+        int prevInd = 0;
+        int count = 0;
+        for (int i = 0; i < A.length; i++){
+            if (A[i] >= L && A[i] <= R){
+                count = i - prevInd + 1;
+                res += count;
+            }else if (A[i] < L){
+                res += count;
+            }else{
+                count = 0;
+                prevInd = i + 1;
+            }
+        }
+        return res;
+    }
+}
+
