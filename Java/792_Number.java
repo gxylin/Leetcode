@@ -69,7 +69,7 @@ class Solution {
 
 Method 3: Accepted (174ms)
 Refer to explanation:https://leetcode.com/problems/number-of-matching-subsequences/discuss/117634/Efficient-and-simple-go-through-words-in-parallel-with-explanation
-
+The same time complexity as above
 class Solution {
     public int numMatchingSubseq(String S, String[] words) {
         Map<Character, LinkedList<String>> map = new HashMap<>();
