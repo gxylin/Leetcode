@@ -105,3 +105,36 @@ class Solution {
         return res;
     }
 }
+
+class Solution {
+    public String mostCommonWord(String paragraph, String[] banned) {
+        Set<String> ban = new HashSet<>();
+        for (String s : banned){
+            ban.add(s);
+        }
+        Map<String, Integer> map = new HashMap<>();
+        StringBuilder sb = new StringBuilder();
+        int max = 0;
+        String res = "";
+        for (int i = 0; i <= paragraph.length(); i++){
+            char c = i < paragraph.length() ? paragraph.charAt(i) : '.';
+            if (Character.isLetter(c)){
+                sb.append(Character.toLowerCase(c));
+            }else{
+                if (sb.length() > 0){
+                    String str = sb.toString();
+                    sb = new StringBuilder();
+                    if (!ban.contains(str)){
+                        map.put(str, map.getOrDefault(str, 0) + 1);
+                        int count = map.get(str);
+                        if (count > max){
+                            max = count;
+                            res = str;
+                        }
+                    }
+                }
+            }
+        }
+        return res;
+    }
+}
