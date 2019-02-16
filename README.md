@@ -597,7 +597,7 @@ Solution for Leetcode/Lintcode
 |587   |812  |[Largest Triangle Area](Java/812_Largest.java)|Easy|Java|Leetcode|
 |588   |811  |[Subdomain Visit Count Good](Java/811_Subdomain.java)|Easy|Java|Leetcode|
 |589   |819  |[Most Common Word Good](Java/819_Most.java)|Easy|Java|Leetcode|
-|590   |813  |[Largest Sum of Averages 2D DP + 1D DP](Java/813_Largest.java)|Medium|Java|Leetcode|
+|590   |813  |[Largest Sum of Averages 2D DP + 1D DP Very Good](Java/813_Largest.java)|Medium|Java|Leetcode|
 |591   |821  |[Shortest Distance to a Character Good](Java/821_Shortest.java)|Easy|Java|Leetcode|
 |592   |817  |[Linked List Components](Java/817_Linked.java)|Medium|Java|Leetcode|
 |593   |832  |[Flipping an Image](Java/832_Flipping.java)|Easy|Java|Leetcode|
