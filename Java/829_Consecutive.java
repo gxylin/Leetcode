@@ -30,3 +30,22 @@ class Solution {
         return count;
     }
 }
+
+
+https://leetcode.com/problems/consecutive-numbers-sum/discuss/209317/topic
+class Solution {
+    public int consecutiveNumbersSum(int N) {
+        int count = 0;
+        int m = 1; //number of items that can consecutively sum up to N
+        while (true){
+            int mx = N - m*(m-1)/2;
+            if (mx <= 0){
+                break;
+            }else if (mx % m == 0){
+                count++;
+            }
+            m++;
+        }
+        return count;
+    }
+}
