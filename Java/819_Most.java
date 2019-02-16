@@ -69,3 +69,39 @@ class Solution {
         return ans;
     }
 }
+
+
+Best solution:
+class Solution {
+    public String mostCommonWord(String paragraph, String[] banned) {
+        Set<String> ban = new HashSet<>();
+        for (String s : banned){
+            ban.add(s);
+        }
+        Map<String, Integer> map = new HashMap<>();
+        StringBuilder sb = new StringBuilder();
+        int max = 0;
+        String res = "";
+        paragraph += '.'; 
+        for (char c : paragraph.toCharArray()){
+            if (Character.isLetter(c)){
+                sb.append(Character.toLowerCase(c));
+            }else{
+                if (sb.length() > 0){
+                    String str = sb.toString();
+                    sb = new StringBuilder();
+                    if (!ban.contains(str)){
+                        map.put(str, map.getOrDefault(str, 0) + 1);
+                        int count = map.get(str);
+                        if (count > max){
+                            max = count;
+                            res = str;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        return res;
+    }
+}
