@@ -83,3 +83,31 @@ class Solution {
         return res;
     }
 }
+
+                                                                                      
+Best solution:
+                                                                                      class Solution {
+    public List<String> subdomainVisits(String[] cpdomains) {
+        Map<String, Integer> map = new HashMap<>();
+        for (String domain : cpdomains){
+            String[] strs = domain.split(" ");
+            int num = Integer.parseInt(strs[0]);
+            String str = strs[1];
+            for (int i = 0 ; i < str.length(); i++){
+                if (str.charAt(i) == '.'){
+                    String sub = str.substring(i+1);
+                    map.put(sub, map.getOrDefault(sub, 0) + num);
+                }
+            }
+            map.put(str, map.getOrDefault(str, 0) + num);
+        }
+        List<String> res = new ArrayList<>();
+        for (String key : map.keySet()){
+            StringBuilder sb = new StringBuilder();
+            sb.append(map.get(key) + " ");
+            sb.append(key);
+            res.add(sb.toString());
+        }
+        return res;
+    }
+}
