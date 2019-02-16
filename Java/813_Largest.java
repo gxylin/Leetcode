@@ -71,4 +71,26 @@ class Solution {
 Note that this is 2D DP with built-in 1D LCS DP
 so time complexity is O(K * N * N)
 
+ https://leetcode.com/problems/largest-sum-of-averages/discuss/122775/Java-bottom-up-DP-with-Explanation
+class Solution {
+    public double largestSumOfAverages(int[] A, int K) {
+        int N = A.length;
+        double[][] dp = new double[K+1][N+1];
+        double[] preSum = new double[N+1];
+        for (int i = 1; i <= N; i++){
+            preSum[i] = preSum[i-1] + A[i-1];
+        }
+        double max = 0.0;
+        for (int k = 1; k <= K; k++){
+            for (int i = 0; i <= N; i++){
+                for (int j = 0; j < i; j++){
+                    double avg = (preSum[i] - preSum[j]) / (i-j);
+                    dp[k][i] = Math.max(dp[k][i], dp[k-1][j] + avg);
+                }
+            }
+            max = Math.max(max, dp[k][N]);
+        }
+        return max;
+    }
+}
 
