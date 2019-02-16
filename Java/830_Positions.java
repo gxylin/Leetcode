@@ -68,3 +68,36 @@ class Solution {
         return res;
     }
 }
+
+Similar as Group Binary String 
+https://github.com/optimisea/Leetcode/blob/master/Java/696_Count.java
+
+Best solution:
+class Solution {
+    public List<List<Integer>> largeGroupPositions(String S) {
+        List<List<Integer>> res = new ArrayList<>();
+        int curr = 1;
+        int currStart = 0;
+        for (int i = 1; i < S.length(); i++){
+            if (S.charAt(i) == S.charAt(i-1)){
+                curr++;
+            }else{
+                if (curr >= 3){
+                    List<Integer> list = new ArrayList<>();
+                    list.add(currStart);
+                    list.add(i-1);
+                    res.add(list);
+                }
+                currStart = i;
+                curr = 1;
+            }
+        }
+        if (curr >= 3){
+            List<Integer> list = new ArrayList<>();
+            list.add(currStart);
+            list.add(S.length()-1);
+            res.add(list);
+        }
+        return res;
+    }
+}
