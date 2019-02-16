@@ -66,3 +66,19 @@ class Solution {
         return res;
     }
 }
+
+class Solution {
+    public int[] numberOfLines(int[] widths, String S) {
+        int line = 1;
+        int sum = 0;
+        for (char c : S.toCharArray()){
+            if (sum + widths[c - 'a'] <= 100){
+                sum += widths[c - 'a'];
+            }else{
+                sum = widths[c - 'a'];
+                line++;
+            }
+        }
+        return new int[]{line, sum};
+    }
+}
