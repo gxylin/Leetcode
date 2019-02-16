@@ -74,3 +74,48 @@ class Solution {
         }
     }
 }
+
+
+Best solution:
+class Solution {
+    public List<Integer> splitIntoFibonacci(String S) {
+        List<List<Integer>> res = new ArrayList<>();
+        backtrack(res, S, new ArrayList<>(), 0);
+        if (res.size() == 0){
+            return new ArrayList<Integer>();
+        }
+        return res.get(0);
+    }
+    private void backtrack(List<List<Integer>> res, String S, List<Integer> item, int start){
+        if (start == S.length()){
+            if (item.size() >= 3){
+                res.add(new ArrayList<Integer>(item));
+            }
+            return;
+        }
+        for (int i = start; i < S.length(); i++){
+            String sub = S.substring(start, i+1);
+            if (sub.length() > 1 && sub.charAt(0) == '0'){//note that this condition should break
+                break;
+            }
+            long temp = Long.parseLong(sub);
+            if (temp > Integer.MAX_VALUE){
+                break;
+            }
+            int num = (int)temp;
+            if (item.size() <= 1){    
+                item.add(num);
+                backtrack(res, S, item, i+1);
+                item.remove(item.size() - 1);
+            }else{
+                int first = item.get(item.size() - 2);
+                int second = item.get(item.size() - 1);
+                if (first + second == num){
+                    item.add(num);
+                    backtrack(res, S, item, i+1);
+                    item.remove(item.size() - 1);
+                }
+            }
+        }
+    }
+}
