@@ -86,7 +86,7 @@ class Solution {
 
                                                                                       
 Best solution:
-                                                                                      class Solution {
+class Solution {
     public List<String> subdomainVisits(String[] cpdomains) {
         Map<String, Integer> map = new HashMap<>();
         for (String domain : cpdomains){
