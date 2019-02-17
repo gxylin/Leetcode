@@ -16,8 +16,8 @@ k will be between 1 and floor(nums.length / 3).
 
 https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/discuss/108230/Clean-Java-DP-O(n)-Solution.-Easy-extend-to-Sum-of-K-Non-Overlapping-SubArrays.
 Method: best, DP
-dp[i][j] deontes max total sum at the i-th part and subarray from index 0 to index j-1 (inclusive)
-id[i][j] deontes starting index + 1 at the i-th part and subarray from index 0 to index j-1 (inclusive)
+dp[i][j] deontes max total sum at the i-th part and ending at index j - 1 
+id[i][j] deontes starting index + 1 at the i-th part and ending at index j - 1 
 class Solution {
     public int[] maxSumOfThreeSubarrays(int[] nums, int k) {
         int m = 3;
@@ -58,7 +58,42 @@ class Solution {
     
     
     
- 
+ class Solution {
+    public int[] maxSumOfThreeSubarrays(int[] nums, int k) {
+        int m = 3;
+        int n = nums.length;
+        int[][] dp = new int[m+1][n+1];
+        int[][] idx = new int[m+1][n+1];
+        int[] preSum = new int[n+1];
+        for (int i = 1; i <= n; i++){
+            preSum[i] = preSum[i-1] + nums[i-1];
+        }
+        for (int i = 1; i <= m; i++){
+            for (int j = i * k; j <= n - (m-i)*k; j++){
+                //initialization for comparision
+                dp[i][j] = dp[i][j-1];
+                idx[i][j] = idx[i][j-1];
+                //find the largest sums and starting index
+                int cand = dp[i-1][j-k] + preSum[j] - preSum[j-k];
+                if (cand > dp[i][j]){
+                    dp[i][j] = cand;
+                    idx[i][j] = j - k + 1;
+                }
+            }
+        }
+        int[] res = new int[m];
+        res[m-1] = idx[m][n] - 1;
+        for (int i = m-2; i >= 0; i--){
+            res[i] = idx[i+1][res[i+1]] - 1;
+        }
+        return res;
+        // int last = idx[m][n];
+        // int mid = idx[m-1][last-1];
+        // int first = idx[m-2][mid-1];
+        // return new int[]{first-1, mid-1, last-1};
+    }
+}
+
     
 Method:
 class Solution {
