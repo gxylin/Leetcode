@@ -49,6 +49,7 @@ class Solution {
     }
 }
 
+Best solution:
 class Solution {
     public int findNumberOfLIS(int[] nums) {
         if (nums == null || nums.length == 0){
@@ -56,19 +57,18 @@ class Solution {
         }
         int[] lengths = new int[nums.length];
         int[] counts = new int[nums.length];
-        for (int i = 0; i < nums.length; i++){
-            lengths[i] = 1;
-        }
-        Arrays.fill(counts, 1);
         int longest = 0;
         int count = 0;
         for (int i = 0; i < nums.length; i++){
+            lengths[i] = 1;
+            counts[i] = 1;
             for (int j = 0; j < i; j++){
                 if (nums[j] < nums[i]){
-                    if (lengths[i] < lengths[j] + 1){
-                        lengths[i] = lengths[j] + 1;
+                    int cand = lengths[j] + 1;
+                    if (lengths[i] < cand){
+                        lengths[i] = cand;
                         counts[i] = counts[j];
-                    }else if (lengths[i] == lengths[j] + 1){
+                    }else if (lengths[i] == cand){
                         counts[i] += counts[j];
                     }
                 }
