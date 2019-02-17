@@ -929,3 +929,4 @@ Solution for Leetcode/Lintcode
 |917   |989  |[Add to Array-Form of Integer](Java/989_Add.java)|Easy|Java|Leetcode|
 |918   |990  |[Satisfiability of Equality Equations](Java/990_Satisfiability.java)|Medium|Java|Leetcode|
 |919   |992  |[Subarrays with K Different Integers Very Good Sliding Window](Java/992_Subarrays.java)|Hard|Java|Leetcode|
+|920   |993  |[Cousins in Binary Tree](Java/993_Cousins.java)|Easy|Java|Leetcode|
