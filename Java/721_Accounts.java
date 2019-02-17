@@ -24,7 +24,7 @@ The length of accounts will be in the range [1, 1000].
 The length of accounts[i] will be in the range [1, 10].
 The length of accounts[i][j] will be in the range [1, 30].
 
-Method 1: DFS
+Method 1: DFS Best solution
 Intuition
 
 Draw an edge between two emails if they occur in the same account. The problem comes down to finding connected components of this graph.
