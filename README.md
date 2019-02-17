@@ -605,7 +605,7 @@ Solution for Leetcode/Lintcode
 |595   |824  |[Goat Latin](Java/824_Goat.java)|Easy|Java|Leetcode|
 |596   |829  |[Consecutive Numbers Sum](Java/829_Consecutive.java)|Medium|Java|Leetcode|
 |597   |842  |[Split Array into Fibonacci Sequence Backtracking](Java/842_Split.java)|Medium|Java|Leetcode|
-|598   |851  |[Loud and Rich DFS + memorization](Java/851_Loud.java)|Medium|Java|Leetcode|
+|598   |851  |[Loud and Rich DFS + memorization Good](Java/851_Loud.java)|Medium|Java|Leetcode|
 |599   |517  |[Super Washing Machines](Java/517_Super.java)|Hard|Java|Leetcode|
 |600   |273  |[Integer to English Words](Java/273_Integer.java)|Hard|Java|Leetcode|
 |601   |268  |[Missing Number](Java/268_Missing.java)|Easy|Java|Leetcode|
