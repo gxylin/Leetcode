@@ -932,3 +932,4 @@ Solution for Leetcode/Lintcode
 |920   |993  |[Cousins in Binary Tree](Java/993_Cousins.java)|Easy|Java|Leetcode|
 |921   |994  |[Rotting Oranges](Java/994_Rotting.java)|Easy|Java|Leetcode|
 |922   |996  |[Number of Squareful Arrays](Java/996_Number.java)|Hard|Java|Leetcode|
+|923   |995  |[Minimum Number of K Consecutive Bit Flips](Java/995_Minimum.java)|Hard|Java|Leetcode|
