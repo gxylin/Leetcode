@@ -82,3 +82,50 @@ class Solution {
         return false;
     }
 }
+
+Shorter version isPerfectSquare
+private boolean isPerfectSquare(long num) {
+        long sqrt = (long)Math.sqrt(num);
+        return sqrt * sqrt == num;
+}
+
+Method 2: use global variable
+class Solution {
+    int count = 0;
+    public int numSquarefulPerms(int[] A) {
+        boolean[] visited = new boolean[A.length];
+        Arrays.sort(A);
+        backtrack(0, A, -1, visited);
+        return count;
+    }
+    private void backtrack(int total, int[] A, int lastNum, boolean[] visited){
+        if (total == A.length){
+            count++;
+            return;
+        }
+        for (int i = 0; i < A.length; i++){
+            if (i > 0 && A[i] == A[i-1] && !visited[i-1]){
+                continue;
+            }
+            if (visited[i]){
+                continue;
+            }
+            if (lastNum == -1){
+                visited[i] = true;
+                backtrack(total+1, A, A[i], visited);
+                visited[i] = false;
+            }else{
+                int cand = A[i]  + lastNum ;
+                if (isPerfectSquare(cand)){
+                    visited[i] = true;
+                    backtrack(total+1, A, A[i], visited);
+                    visited[i] = false;
+                }
+            }
+        }
+    }
+    private boolean isPerfectSquare(int num) {
+        int sqrt = (int)Math.sqrt(num);
+        return sqrt * sqrt == num;
+    }
+}
