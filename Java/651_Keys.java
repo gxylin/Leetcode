@@ -64,7 +64,7 @@ class Solution {
         int[] dp = new int[N+1];
         for (int i = 1; i <= N; i++){
             dp[i] = i;
-            for (int j = 1; j <= i - 3; j++){
+            for (int j = 1; j < i - 2; j++){
                 dp[i] = Math.max(dp[i], dp[j] * (i-2-j+1));
             }
         }
