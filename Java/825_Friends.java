@@ -66,7 +66,7 @@ class Solution {
                     continue;
                 }
                 if (i != j){
-                    ans += counts[i] * counts[j];
+                    ans += counts[i] * counts[j]/ 2 * 2;
                 }else{
                     ans += counts[i] * (counts[i] - 1);
                 }
