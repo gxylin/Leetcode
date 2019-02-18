@@ -53,7 +53,7 @@ class Solution {
                 used[i] = true;
                 if (!dfs(map, used, desiredTotal - i)){//if the second player can't win
                     map.put(key, true);
-                    used[i] = false;
+                    used[i] = false; // need backtrack
                     return true;
                 }
                 used[i] = false;
@@ -109,8 +109,8 @@ class Solution {
             total[0] += i;
             if (!firstWin(max, visited, target, total, map)){
                 map.put(key, true);
-                visited[i] = false;
-                total[0] -= i;
+                visited[i] = false; // need backtrack
+                total[0] -= i; // need backtrack
                 return true;
             }
             total[0] -= i;
