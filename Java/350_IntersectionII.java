@@ -12,6 +12,10 @@ What if nums1's size is small compared to nums2's size? Which algorithm is bette
 What if elements of nums2 are stored on disk, and the memory is limited such that you 
 cannot load all elements into the memory at once?
 
+The correction answer for the last question is to build index for the nums2 and for loop nums1 to use regional binary search
+to find the num in nums2 on disk.
+ 
+ 
 External Sort:http://faculty.simpson.edu/lydia.sinapova/www/cmsc250/LN250_Weiss/L17-ExternalSortEX2.htm
  From a data engineer’s perspective, basically there are three ideas to solve the question:
 
