@@ -618,7 +618,7 @@ Solution for Leetcode/Lintcode
 |608   |71   |[Simplify Path Stack](Java/71_Simplify.java)|Medium|Java|Leetcode|
 |609   |91   |[Decode Ways](Java/91_Decode.java)|Medium|Java|Leetcode|
 |610   |639  |[Decode Ways II Very Good](Java/639_Decode.java)|Medium|Java|Leetcode|
-|611   |642  |[Design Search Autocomplete System Trie](Java/642_Design.java)|Hard|Java|Leetcode|
+|611   |642  |[Design Search Autocomplete System Trie PQ HashMap Very Good](Java/642_Design.java)|Hard|Java|Leetcode|
 |612   |165  |[Compare Version Numbers Split](Java/165_Compare.java)|Medium|Java|Leetcode|
 |613   |285  |[Inorder Successor in BST Very good](Java/285_Inorder.java)|Medium|Java|Leetcode|
 |614   |333  |[Largest BST Subtree Very Good](Java/333_Largest.java)|Medium|Java|Leetcode|
