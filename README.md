@@ -631,7 +631,7 @@ Solution for Leetcode/Lintcode
 |621   |605  |[Can Place Flowers Greedy](Java/605_Can.java)|Easy|Java|Leetcode|
 |622   |464  |[Can I win Backtrack + Memo Very Good](Java/464_Can.java)|Medium|Java|Leetcode|
 |623   |486  |[Predict the Winner DP Very Good](Java/486_Predict.java)|Medium|Java|Leetcode|
-|624   |844  |[Backspace String Compare](Java/844_Backspace.java)|Easy|Java|Leetcode|
+|624   |844  |[Backspace String Compare Good](Java/844_Backspace.java)|Easy|Java|Leetcode|
 |625   |799  |[Champagne Tower](Java/799_Champagne.java)|Medium|Java|Leetcode|
 |626   |479  |[Largest Palindrome Product](Java/479_Largest.java)|Medium|Java|Leetcode|
 |627   |164  |[Maximum Gap](Java/164_Maximum.java)|Hard|Java|Leetcode|
