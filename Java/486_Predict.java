@@ -19,6 +19,8 @@ Note:
 Any scores in the given array are non-negative integers and will not exceed 10,000,000.
 If the scores of both players are equal, then player 1 is still the winner.
 
+    
+    Compare to 464, this one has to use dp (recursion + memo) because number is chosen following some order
 https://leetcode.com/problems/predict-the-winner/discuss/96838/Java-'1-Line'-Recursive-Solution-O(n2)-Time-and-O(n)-Space
     class Solution {
     public boolean PredictTheWinner(int[] nums) {
