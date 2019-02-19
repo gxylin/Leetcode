@@ -27,6 +27,10 @@ If the first player choose 1, the second player can only choose integers from 2 
 The second player will win by choosing 10 and get a total = 11, which is >= desiredTotal.
 Same with other integers chosen by the first player, the second player will always win.
 
+    
+Compare to Leetcode 486, this one has to use backtrack + memo because number is chosen in any order.
+    https://github.com/optimisea/Leetcode/blob/master/Java/486_Predict.java
+
 class Solution {
     public boolean canIWin(int maxChoosableInteger, int desiredTotal) {
         int sum = maxChoosableInteger * (maxChoosableInteger + 1) / 2;
