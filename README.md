@@ -638,7 +638,7 @@ Solution for Leetcode/Lintcode
 |628   |752  |[Open the Lock BFS](Java/752_Open.java)|Medium|Java|Leetcode|
 |629   |840  |[Magic Squares In Grid](Java/840_Magic.java)|Easy|Java|Leetcode|
 |630   |849  |[Maximize Distance to Closest Person](Java/849_Maximize.java)|Easy|Java|Leetcode|
-|631   |838  |[Push Dominoes](Java/838_Push.java)|Medium|Java|Leetcode|
+|631   |838  |[Push Dominoes Two Pointers Very Good](Java/838_Push.java)|Medium|Java|Leetcode|
 |632   |802  |[Find Eventual Safe States Classic Color DFS](Java/802_Find.java)|Medium|Java|Leetcode|
 |633   |778  |[Swim in Rising Water PriorityQueue](Java/778_Swim.java)|Hard|Java|Leetcode|
 |634   |852  |[Peak Index in a Mountain Array](Java/852_Peak.java)|Easy|Java|Leetcode|
