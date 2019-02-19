@@ -179,6 +179,7 @@ class Solution {
 }
  
 
+Best solution:
 class Solution {
     public int openLock(String[] deadends, String target) {
         Set<String> dead = new HashSet<>();
