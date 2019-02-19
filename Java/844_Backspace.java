@@ -59,6 +59,29 @@ class Solution {
     }
 }
 
+Time complexity: O(n)
+Space complexity: O(n)
+    class Solution {
+    public boolean backspaceCompare(String S, String T) {
+        String a = format(S);
+        String b = format(T);
+        return a.equals(b);
+    }
+    private String format(String s){
+        StringBuilder sb = new StringBuilder();
+        for (char c : s.toCharArray()){
+            if (c != '#'){
+                sb.append(c);
+            }else{
+                if (sb.length() > 0){
+                    sb.deleteCharAt(sb.length() - 1);
+                }
+            }
+        }
+        return sb.toString();
+    }
+}
+
 Method 2:
 Time complexixty: O(n)
 Space complexity: O(1)
