@@ -107,6 +107,7 @@ key:
                L .... R
                R .... R
 2. Record last seen L and R to find out the prevous letter
+3. Pay attention to corner case at the start (prevL = -1, prevR = -1) and at the end (i == n)
 class Solution {
     public String pushDominoes(String dominoes) {
         char[] arr = dominoes.toCharArray();
