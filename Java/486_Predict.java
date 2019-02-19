@@ -19,6 +19,30 @@ Note:
 Any scores in the given array are non-negative integers and will not exceed 10,000,000.
 If the scores of both players are equal, then player 1 is still the winner.
 
+https://leetcode.com/problems/predict-the-winner/discuss/96838/Java-'1-Line'-Recursive-Solution-O(n2)-Time-and-O(n)-Space
+    class Solution {
+    public boolean PredictTheWinner(int[] nums) {
+        int n = nums.length;
+        int[][] cache = new int[n][n];
+        for (int i = 0; i < n; i++){
+            Arrays.fill(cache[i], -1);
+        }
+        return maxScore(nums, 0, n-1, cache) >= 0;
+    }
+    private int maxScore(int[] nums, int start, int end, int[][] cache){
+        if (cache[start][end] != -1){
+            return cache[start][end];
+        }
+        if (start == end){
+            return nums[start];
+        }
+        int chooseFront = nums[start] - maxScore(nums, start+1, end, cache);
+        int chooseEnd = nums[end] - maxScore(nums, start, end-1, cache);
+        cache[start][end] = Math.max(chooseFront, chooseEnd);
+        return cache[start][end];
+    }
+}
+
 
 Method 1:
 Time complexity: O(2^n)
