@@ -1,6 +1,8 @@
 On an N x N grid, each square grid[i][j] represents the elevation at that point (i,j).
 
-Now rain starts to fall. At time t, the depth of the water everywhere is t. You can swim from a square to another 4-directionally adjacent square if and only if the elevation of both squares individually are at most t. You can swim infinite distance in zero time. Of course, you must stay within the boundaries of the grid during your swim.
+Now rain starts to fall. At time t, the depth of the water everywhere is t. You can swim from a square to another 4-directionally
+adjacent square if and only if the elevation of both squares individually are at most t. You can swim infinite distance in zero time.
+ Of course, you must stay within the boundaries of the grid during your swim.
 
 You start at the top left square (0, 0). What is the least time until you can reach the bottom right square (N-1, N-1)?
 
@@ -81,6 +83,48 @@ class Solution {
     }
 }
 
+class Solution {
+    class Pair {
+        int x;
+        int y;
+        int height;
+        public Pair (int x, int y, int height){
+            this.x = x;
+            this.y = y;
+            this.height = height;
+        }
+    }
+    public int swimInWater(int[][] grid) {
+        int N = grid.length;
+        Queue<Pair> pq = new PriorityQueue<>(new Comparator<Pair>(){
+            public int compare (Pair p1, Pair p2){
+                return p1.height - p2.height;
+            }
+        });
+        
+        pq.offer(new Pair(0, 0, grid[0][0]));
+        boolean[][] inQueue = new boolean[N][N];
+        inQueue[0][0] = true;
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        int max = 0;
+        while (!pq.isEmpty()){
+            Pair p = pq.poll();
+            max = Math.max(max, p.height);
+            if (p.x == N-1 && p.y == N-1 && max >= p.height){
+                return max;
+            }
+            for (int[] dir : dirs){
+                int nx = p.x + dir[0];
+                int ny = p.y + dir[1];
+                if (nx >= 0 && nx < N && ny >= 0 && ny < N && !inQueue[nx][ny]){
+                    pq.offer(new Pair(nx, ny, grid[nx][ny]));
+                    inQueue[nx][ny] = true;
+                }
+            }
+        }
+        return max;
+    }
+}
 Method 2: Binary Search + DFS
 Intuition and Algorithm
 
