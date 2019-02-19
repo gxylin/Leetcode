@@ -642,7 +642,7 @@ Solution for Leetcode/Lintcode
 |632   |802  |[Find Eventual Safe States Classic Color DFS](Java/802_Find.java)|Medium|Java|Leetcode|
 |633   |778  |[Swim in Rising Water PriorityQueue](Java/778_Swim.java)|Hard|Java|Leetcode|
 |634   |852  |[Peak Index in a Mountain Array](Java/852_Peak.java)|Easy|Java|Leetcode|
-|635   |815  |[Bus Routes BFS](Java/815_Bus.java)|Hard|Java|Leetcode|
+|635   |815  |[Bus Routes BFS Good](Java/815_Bus.java)|Hard|Java|Leetcode|
 |636   |826  |[Most Profit Assigning Work](Java/826_Most.java)|Medium|Java|Leetcode|
 |637   |827  |[Making A Large Island](Java/827_Making.java)|Hard|Java|Leetcode|
 |638   |828  |[Unique Letter String](Java/828_Unique.java)|Hard|Java|Leetcode|
