@@ -38,3 +38,32 @@ class Solution {
     }
 }
 
+Method 2: Best solution TreeMap
+Time complexity: O(mlogm + nlogm)
+Space complexity: O(m)
+class Solution {
+    public int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {
+        int n = worker.length;
+        int m = profit.length;
+        int res = 0;
+        TreeMap<Integer, Integer> treemap = new TreeMap<>();//key: diff, value : the max profit at this key
+        for (int i = 0; i < m; i++){
+            treemap.put(difficulty[i], Math.max(profit[i], treemap.getOrDefault(difficulty[i], 0))); // in case the same diff but different profit
+        }
+        int max = 0;
+        // here is the trick about how to get the max value below or equal the key
+        for (int diff : treemap.keySet()){
+            max = Math.max(max, treemap.get(diff));
+            treemap.put(diff, max); // change treemap to key: diff, value: the max profit below or equal this key
+        }
+        /////////////
+        
+        for (int i = 0; i < n; i++){
+            Integer key = treemap.floorKey(worker[i]);
+            if (key != null){
+                res += treemap.get(key);
+            }
+        }
+        return res;
+    }
+}
