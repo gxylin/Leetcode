@@ -97,6 +97,51 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: Best solution:
+https://leetcode.com/problems/push-dominoes/discuss/132482/Java-one-pass-in-place-13ms
 
-https://leetcode.com/problems/push-dominoes/discuss/132332/C++JavaPython-Two-Pointers
+Two pointers:
+key: 
+1. four cases: L .... L
+               R .... L
+               L .... R
+               R .... R
+2. Record last seen L and R to find out the prevous letter
+class Solution {
+    public String pushDominoes(String dominoes) {
+        char[] arr = dominoes.toCharArray();
+        int n = dominoes.length();
+        int prevL = -1; //previous L position
+        int prevR = -1;
+        for (int i = 0; i <= n; i++){
+            if (i < n && arr[i] == 'L'){
+                if (prevL > prevR || prevL == -1 && prevR == -1){//L....L
+                    while (prevL < i){
+                        prevL++;
+                        arr[prevL] = 'L';
+                    }
+                }else{//R...L
+                    int low = prevR + 1;
+                    int high = i - 1;
+                    while (low < high){
+                        arr[low] = 'R';
+                        arr[high] = 'L';
+                        low++;
+                        high--;
+                    }
+                    prevL = i;
+                }
+            }else if (i == n || arr[i] == 'R'){
+                if (prevR > prevL){//R...R
+                    while (prevR < i){
+                       arr[prevR] = 'R';
+                       prevR++; 
+                    }
+                }else{//L...R
+                    prevR = i;
+                }
+            }
+        }
+        return new String(arr);
+    }
+}
