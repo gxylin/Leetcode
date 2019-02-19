@@ -89,3 +89,49 @@ class Solution {
         return ans;
     }
 }
+
+class Solution {
+    public int maxDistToClosest(int[] seats) {
+        int count = 0;
+        int res = 0;
+        int firstInd =  0;
+        int lastInd = seats.length - 1;
+        for (int i = 0; i < seats.length; i++){
+            if (seats[i] == 0){
+                count++;
+            }else{
+                res = count;
+                firstInd = i;
+                break;
+            }
+        }
+        count = 0;
+        for (int i = seats.length - 1; i >= 0; i--){
+            if (seats[i] == 0){
+                count++;
+            }else{
+                res = Math.max(res, count);
+                lastInd = i;
+                break;
+            }
+        }
+        if (firstInd == lastInd){
+            return res;
+        }
+        count = 0;
+        for (int i = firstInd + 1; i <= lastInd; i++){
+            if (seats[i] == 0){
+                count++;
+            }else{
+                if (count % 2 == 0){
+                    res = Math.max(res, count/2);
+                }else{
+                    res = Math.max(res, count/2+1);
+                }
+                count = 0;
+            }
+        }
+        return res;
+    }
+}
+
