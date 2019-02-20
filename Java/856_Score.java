@@ -78,7 +78,7 @@ class Solution {
     }
 }
 
-Method 3: Best
+Method 3: 
 Our goal is to maintain the score at the current depth we are on. When we see an opening bracket, we increase our depth, 
 and our score at the new depth is 0. When we see a closing bracket,
 we add twice the score of the previous deeper part - except when counting (), which has a score of 1.
@@ -96,5 +96,40 @@ class Solution {
             }
         }
         return stack.pop();
+    }
+}
+
+
+
+class Solution {
+    public int scoreOfParentheses(String S) {
+        int res[] = new int[30], i = 0;
+        for (char c : S.toCharArray())
+            if (c == '(') 
+                res[++i] = 0;
+            else 
+                res[i - 1] += Math.max(res[i--] * 2, 1);
+        return res[0];
+        
+    }
+}
+
+Best solution:
+O(1)
+class Solution {
+    public int scoreOfParentheses(String S) {
+        int res = 0;
+        int layer = 0;
+        for (int i = 0; i < S.length(); i++){
+            if (S.charAt(i) == '('){
+                layer++;
+            }else{
+                layer--;
+            }
+            if (S.charAt(i) == '(' && S.charAt(i+1) == ')'){
+                res += 1 << (layer - 1);
+            }
+        }
+        return res;
     }
 }
