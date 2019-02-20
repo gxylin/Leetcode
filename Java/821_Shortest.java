@@ -69,3 +69,38 @@ class Solution {
         return res;
     }
 }
+
+Method 3: more general solution as Leetcode 
+Maximize Distance to Closest Person
+Longest Mountain in Array
+
+Time complexity: O(n)
+Space complexity: O(n)
+class Solution {
+    public int[] shortestToChar(String S, char C) {
+        int n = S.length();
+        int[] left = new int[n];
+        int[] right = new int[n];
+        Arrays.fill(left, n);
+        Arrays.fill(right, n);
+        for (int i = 0; i < n; i++){
+            if (S.charAt(i) == C){
+                left[i] = 0;
+            }else if (i > 0){
+                left[i] = left[i-1] + 1;
+            }
+        }
+        for (int i = n-1; i >= 0; i--){
+            if (S.charAt(i) == C){
+                right[i] = 0;
+            }else if (i < n-1){
+                right[i] = right[i+1] + 1;
+            }
+        }
+        int[] res = new int[n];
+        for (int i = 0; i < n; i++){
+            res[i] = Math.min(left[i], right[i]);
+        }
+        return res;
+    }
+}
