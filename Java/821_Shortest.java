@@ -41,7 +41,8 @@ class Solution {
     }
 }
 
-Method 2: Best solution
+Method 2: Best solution 
+Similar question: https://github.com/optimisea/Leetcode/blob/master/Java/849_Maximize.java
 Time complexity: O(n)
 Space complexity: O(1)
 Loop twice on the string S.
