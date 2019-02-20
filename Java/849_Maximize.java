@@ -90,6 +90,9 @@ class Solution {
     }
 }
 
+Method 2: Best solution
+Time complexity: O(n)
+Space complexity: O(1)
 class Solution {
     public int maxDistToClosest(int[] seats) {
         int count = 0;
@@ -135,3 +138,31 @@ class Solution {
     }
 }
 
+Method 3: Similar as  https://github.com/optimisea/Leetcode/blob/master/Java/821_Shortest.java
+Time complexity: O(n)
+Space complexity: O(n)
+class Solution {
+    public int maxDistToClosest(int[] seats) {
+        int n = seats.length;
+        int pos = -2 * n;
+        int[] res = new int[n];
+        for (int i = 0; i < seats.length; i++){
+            if (seats[i] == 1){
+                pos = i;
+            }
+            res[i] = i - pos;
+        }
+        pos = 2 * n;
+        for (int i = n - 1; i >= 0; i--){
+            if (seats[i] == 1){
+                pos = i;
+            }
+            res[i] = Math.min(res[i], pos - i);
+        }
+        int max = 0;
+        for (int i = 0; i < n; i++){
+            max = Math.max(max, res[i]);
+        }
+        return max;
+    }
+}
