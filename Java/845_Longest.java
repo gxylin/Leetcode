@@ -120,3 +120,26 @@ class Solution {
         return max;
     }
 }
+
+class Solution {
+    public int longestMountain(int[] A) {
+        int n = A.length;
+        int[] increase = new int[n];
+        int[] decrease = new int[n];
+        for (int i = 1; i < n; i++){
+            if (A[i] > A[i-1]){
+                increase[i] = increase[i-1] + 1;
+            }
+        }
+        int max = 0;
+        for (int i = n-2; i >= 0; i--){
+            if (A[i] > A[i+1]){
+                decrease[i] = decrease[i+1] + 1;
+            }
+            if (increase[i] > 0 && decrease[i] > 0){
+                max = Math.max(max, increase[i] + decrease[i] + 1);
+            }
+        }
+        return max;
+    }
+}
