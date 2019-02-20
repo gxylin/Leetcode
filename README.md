@@ -645,7 +645,7 @@ Solution for Leetcode/Lintcode
 |635   |815  |[Bus Routes BFS Very Good](Java/815_Bus.java)|Hard|Java|Leetcode|
 |636   |826  |[Most Profit Assigning Work TreeMap Very Good](Java/826_Most.java)|Medium|Java|Leetcode|
 |637   |827  |[Making A Large Island Very Good](Java/827_Making.java)|Hard|Java|Leetcode|
-|638   |828  |[Unique Letter String](Java/828_Unique.java)|Hard|Java|Leetcode|
+|638   |828  |[Unique Letter String Very Good Thinking](Java/828_Unique.java)|Hard|Java|Leetcode|
 |639   |867  |[Transpose Matrix](Java/867_Transpose.java)|Easy|Java|Leetcode|
 |640   |833  |[Find And Replace in String](Java/833_Find.java)|Medium|Java|Leetcode|
 |641   |841  |[Keys and Rooms Classic DFS BFS](Java/841_Keys.java)|Medium|Java|Leetcode|
