@@ -153,7 +153,7 @@ class Solution {
         int up = 0;
         int down = 0;
         for (int i = 1; i < A.length; i++){
-            if (down > 0 && A[i] > A[i-1] || A[i] == A[i-1]){//refresh at the starting point of each mountain peak
+            if (down > 0 && A[i] > A[i-1] || A[i] == A[i-1]){//refresh at the starting point of each mountain
                 down = 0;
                 up = 0;
             }
