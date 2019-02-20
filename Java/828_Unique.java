@@ -90,3 +90,29 @@ class Solution {
         return (int) (count % (Math.pow(10, 9) + 7));
     }
 }
+
+
+class Solution {
+    public int uniqueLetterString(String S) {
+        int mod = (int) Math.pow(10, 9) + 7;
+        Map<Character, List<Integer>> map = new HashMap<>();
+        for (int i = 0; i < S.length(); i++){
+            char c = S.charAt(i);
+            if (!map.containsKey(c)){
+                map.put(c, new ArrayList<>());
+            }
+            map.get(c).add(i);
+        }
+        long res = 0;
+        for (char key : map.keySet()){
+            List<Integer> list = map.get(key);
+            for (int i = 0; i < list.size(); i++){
+                long prevInd = i == 0 ? -1 : list.get(i-1);
+                long nextInd = i == list.size() - 1 ? S.length() : list.get(i+1);
+                long currInd = list.get(i);
+                res = (res + ((currInd - prevInd) * (nextInd - currInd)) % mod) % mod;
+            }
+        }
+        return (int) res;
+    }
+}
