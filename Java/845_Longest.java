@@ -56,3 +56,67 @@ class Solution {
     }
 }
 
+class Solution {
+    public int longestMountain(int[] A) {
+        if (A.length < 3){
+            return 0;
+        }
+        int max = 0;
+        int i = 0;
+        int j = 0;
+        while (i < A.length){
+            j = i+1;
+            boolean up = false;
+            boolean down = false;
+            while (j < A.length && A[j] > A[j-1]){
+                up = true;
+                j++;
+            }
+            if (j == i+1){
+                i++;
+                continue;
+            }
+            while (j < A.length && A[j] < A[j-1]){
+                down = true;
+                j++;
+            }
+            if (up && down){
+                max = Math.max(max, j - i);
+                
+            }
+            i = j - 1;
+        }
+        return max;
+    }
+}
+
+Method 2: Similar as 
+Maximize Distance to Closest Person
+Shortest Distance to a Character
+
+Time compleixty: O(n)
+Space complexity: O(n)
+class Solution {
+    public int longestMountain(int[] A) {
+        int n = A.length;
+        int[] increase = new int[n];
+        int[] decrease = new int[n];
+        for (int i = 1; i < n; i++){
+            if (A[i] > A[i-1]){
+                increase[i] = increase[i-1] + 1;
+            }
+        }
+        for (int i = n-2; i >= 0; i--){
+            if (A[i] > A[i+1]){
+                decrease[i] = decrease[i+1] + 1;
+            }
+        }
+        int max = 0;
+        for (int i = 0; i < n; i++){
+            if (increase[i] > 0 && decrease[i] > 0){
+                max = Math.max(max, increase[i] + decrease[i] + 1);
+            }
+        }
+        return max;
+    }
+}
