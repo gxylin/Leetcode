@@ -69,7 +69,7 @@ class Solution {
             preSum[i] = sum;
         }
         for (int i = 0; i < n; i++){
-            int delta = ((int)(S.charAt(i) - 'a' + preSum[i])) % 26;
+            int delta = ((int)(S.charAt(i) - 'a') + preSum[i]) % 26;
             char c = (char)('a' + delta);
             sb.append(c);
         }
