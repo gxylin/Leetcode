@@ -150,3 +150,82 @@ class Solution {
         return count;
     }
 }
+
+Method 3: Union Find
+O(M*N)
+class Solution {
+    class UF {
+        int[] parent;
+        int[] size;
+        int count;
+        public UF (int N){
+            parent = new int[N];
+            size = new int[N];
+            for (int i = 0; i < N; i++){
+                parent[i] = i;
+                size[i] = 1;
+            }
+            count = N;
+        }
+        public int find(int x){
+            if (parent[x] == x){
+                return x;
+            }
+            return parent[x] = find(parent[x]);
+        }
+        public void union(int x, int y){
+            int rootX = find(x);
+            int rootY = find(y);
+            if (rootX != rootY){
+                parent[rootX] = rootY;
+                size[rootY] += size[rootX];
+                count--;
+            }
+        }
+    }
+    public int largestIsland(int[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+        UF uf = new UF(m*n);
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        for (int i = 0; i< m; i++){
+            for (int j = 0; j < n; j++){
+                if (grid[i][j] == 1){
+                    int curr = i * n + j;
+                    for (int[] dir : dirs){
+                        int nx = i + dir[0];
+                        int ny = j + dir[1];
+                        if (nx >= 0 && nx < m && ny >= 0 && ny < n && grid[nx][ny] == 1){
+                            int nei = nx * n + ny;
+                            uf.union(curr, nei);
+                        }
+                    }
+                }
+            }
+        }
+        int max = 0;
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (grid[i][j] == 0){
+                    int count = 1;
+                    int curr = i * n + j;
+                    Set<Integer> seen = new HashSet<>();
+                    for (int[] dir : dirs){
+                        int nx = i + dir[0];
+                        int ny = j + dir[1];
+                        if (nx >= 0 && nx < m && ny >= 0 && ny < n && grid[nx][ny] == 1){
+                            int nei = nx * n + ny;
+                            int root = uf.find(nei);
+                            if (!seen.contains(root)){
+                                count += uf.size[root];
+                                seen.add(root);
+                            }
+                        }
+                    }
+                    max = Math.max(max, count);
+                }
+            }
+        }
+        return max == 0 ? m * n : max;
+    }
+}
