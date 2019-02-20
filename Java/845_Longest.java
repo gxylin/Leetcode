@@ -143,3 +143,30 @@ class Solution {
         return max;
     }
 }
+
+Best solution
+Time complexity: O(n)
+Space complexiyt: O(1)
+class Solution {
+    public int longestMountain(int[] A) {
+        int max = 0;
+        int up = 0;
+        int down = 0;
+        for (int i = 1; i < A.length; i++){
+            if (down > 0 && A[i] > A[i-1] || A[i] == A[i-1]){
+                down = 0;
+                up = 0;
+            }
+            if (A[i] > A[i-1]){
+                up++;
+            }
+            if (A[i] < A[i-1]){
+                down++;
+            }
+            if (up > 0 && down > 0){
+                max = Math.max(max, up + down + 1);
+            }
+        }
+        return max;
+    }
+}
