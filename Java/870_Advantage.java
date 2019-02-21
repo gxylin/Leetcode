@@ -21,7 +21,7 @@ Note:
 0 <= B[i] <= 10^9
 
 
-Method 1: TreeMap
+Method 1: TreeMap Best solution
 Time complexity: O(nlogn)
 Space complexity: O(n)
 class Solution {
