@@ -47,18 +47,17 @@ class Solution {
     public int matrixScore(int[][] A) {
         int m = A.length;
         int n = A[0].length;
-        int ans = 0;
+        int res = 0;
         for (int j = 0; j < n; j++){
             int zeros = 0;
             for (int i = 0; i < m; i++){
                 zeros += A[i][j] ^ A[i][0];
             }
-            ans += Math.max(zeros, m - zeros) * (1 << (n-1-j));
+            res += Math.max(zeros, m - zeros) * (1 << (n-1-j));
         }
-        return ans;
+        return res;
     }
 }
-
 
 O(m*n)
  class Solution {
