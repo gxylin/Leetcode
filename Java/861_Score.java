@@ -58,3 +58,41 @@ class Solution {
         return ans;
     }
 }
+
+
+O(m*n)
+ class Solution {
+    public int matrixScore(int[][] A) {
+        int m = A.length;
+        int n = A[0].length;
+        for (int i = 0; i < m; i++){
+            if (A[i][0] == 0){
+                for (int j = 0; j < n; j++){
+                    A[i][j] ^= 1;
+                }
+            }
+        }
+        for (int j = 1; j < n; j++){
+            int count = 0;
+            for (int i = 0; i < m; i++){
+                if (A[i][j] == 0){
+                    count++;
+                }
+            }
+            if (count > m - count){
+                for (int i = 0; i < m; i++){
+                    A[i][j] ^= 1;
+                }
+            }
+        }
+        int res = 0;
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (A[i][j] == 1){
+                    res += (1 << n-1-j);
+                }   
+            }
+        }
+        return res;
+    }
+}
