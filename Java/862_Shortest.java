@@ -24,6 +24,9 @@ Note:
 1 <= K <= 10 ^ 9
 
 
+Different from Leetcode 406 which is only positive integer
+https://github.com/optimisea/Leetcode/blob/master/Java/406_MinimumSizeSubarraySum.java
+
 Method: Monotonic Stack/Queue
 Time complexity: O(n)
 Space complexity: O(n)
