@@ -84,3 +84,25 @@ class Solution {
         return max;
     }
 }
+
+Best solution:
+Time complexity: O(1)
+Space complexity: O(1)
+class Solution {
+    public int binaryGap(int N) {
+        int prev = -1;
+        int curr = -1;
+        int max = 0;
+        for (int i = 0; i < 32; i++){
+            if (((N >> i) & 1) == 1){
+                curr = i;
+                if (curr != - 1 && prev != -1){
+                    max = Math.max(max, curr - prev);
+                }
+                prev = curr;
+            }
+        }
+        return max;
+        
+    }
+}
