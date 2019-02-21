@@ -9,6 +9,10 @@ Challenge
 If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log n).
 
 Method 1: two points, sliding window
+
+Differnt from Leetcode 862 which could be negative integer
+https://github.com/optimisea/Leetcode/blob/master/Java/862_Shortest.java
+
 time complexity: O(n)
 class Solution {
     public int minSubArrayLen(int s, int[] nums) {
