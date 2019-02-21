@@ -33,6 +33,10 @@ Method 1: preOrder + postOrder
 Two pass:
 Time complexity: O(N)
 Space complexity: O(N)
+ 
+ preOrder == top down
+ postOrder == bottom up
+ 
 class Solution {
     public TreeNode subtreeWithAllDeepest(TreeNode root) {
         Map<TreeNode, Integer> map = new HashMap<>();
