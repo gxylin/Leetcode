@@ -71,7 +71,7 @@ class MovingAverage {
             sum -= queue.poll();
             count--;
         }
-        return sum / Math.min(count, size);
+        return sum / count;
     }
 }
 
