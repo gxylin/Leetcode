@@ -85,6 +85,32 @@ class Solution {
     }
 }
 
+Best solution:
+class Solution {
+    public int numFactoredBinaryTrees(int[] A) {
+        int mod = (int) Math.pow(10, 9) + 7;
+        int n = A.length;
+        Arrays.sort(A);
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++){
+            map.put(A[i], i);
+        }
+        long[] dp = new long[n];
+        long sum = 0;
+        for (int i = 0; i < n; i++){
+            dp[i] = 1;
+            for (int j = 0; j < i; j++){
+                if (A[i] % A[j] == 0 && map.containsKey( A[i] / A[j] )){
+                    int ind = map.get(A[i]/A[j]);
+                    dp[i] = (dp[i] + (dp[j] * dp[ind]) % mod)%mod;
+                }
+            }
+            sum = (sum + dp[i]) % mod;
+        }
+        return (int)sum;
+    }
+}
+
 Use one hashmap
 class Solution {
     public int numFactoredBinaryTrees(int[] A) {
