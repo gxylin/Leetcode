@@ -137,4 +137,52 @@ class Solution {
     }
 }
 
+Best solution:
+class Solution {
+    public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
+        List<Integer> res = new ArrayList<>();
+        Map<TreeNode, Set<TreeNode>> graph = new HashMap<>();
+        buildGraph(graph, root, null);
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(target);
+        Set<TreeNode> visited = new HashSet<>();
+        visited.add(target);
+        int k = 0;
+        while (!queue.isEmpty() && k <= K){
+            int size = queue.size();
+            for (int i = 0; i < size; i++){
+                TreeNode curr = queue.poll();
+                if (k == K){
+                    res.add(curr.val);
+                }
+                for (TreeNode next : graph.get(curr)){
+                    if (!visited.contains(next)){
+                        queue.offer(next);
+                        visited.add(next);
+                    }
+                }
+            }
+            k++;
+        }
+        return res;
+    }
+    private void buildGraph(Map<TreeNode, Set<TreeNode>> graph, TreeNode root, TreeNode parent){
+        if (root == null){
+            return;
+        }
+        if (!graph.containsKey(root)){
+            graph.put(root, new HashSet<>());
+        }
+        if (parent != null && !graph.containsKey(parent)){
+            graph.put(parent, new HashSet<>());
+        }
+        if (parent != null){
+            graph.get(root).add(parent);
+            graph.get(parent).add(root);
+        }
+        buildGraph(graph, root.left, root);
+        buildGraph(graph, root.right, root);
+    }
+}
+
 https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/discuss/143752/JAVA-Graph-+-BFS
