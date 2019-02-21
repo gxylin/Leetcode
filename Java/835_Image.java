@@ -28,6 +28,9 @@ Spapce complexity: O(N)
 https://leetcode.com/problems/image-overlap/discuss/130623/C++JavaPython-Straight-Forward
 
 note that in order to avoid collison, the factor must be greater than 2*n - 1.
+avoid case :[0,1], [1, 1]
+             [1, 1], [1, 0]
+          
 class Solution {
     public int largestOverlap(int[][] A, int[][] B) {
         int n = A.length;
