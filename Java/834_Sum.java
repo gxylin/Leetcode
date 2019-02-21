@@ -20,8 +20,8 @@ equals 1 + 1 + 2 + 2 + 2 = 8.  Hence, answer[0] = 8, and so on.
 Note: 1 <= N <= 10000
 
 Method 1: Brute Force TLE
-Time complexity: O(N^2)
-Space complexity: O(N)
+Time complexity: O((V+E)*V^2)
+Space complexity: O(V+E)
 class Solution {
     public int[] sumOfDistancesInTree(int N, int[][] edges) {
         if (edges.length == 0){
@@ -82,11 +82,11 @@ class Solution {
 
 
 Method 2: Best solution
-Time complexity: O(N)
-Space complexity: O(N)
+Time complexity: O(V+E)
+Space complexity: O(V+E)
 class Solution {
     public int[] sumOfDistancesInTree(int N, int[][] edges) {
-        int[] res = new int[N];
+        int[] res = new int[N]; //first stores the sum distance of curr node to its subtree nodes, then stores the answer
         int[] count = new int[N]; //store the number of subtree nodes (including i) at node i
         Arrays.fill(count, 1);
         Map<Integer, Set<Integer>> graph = new HashMap<>();
