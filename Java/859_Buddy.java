@@ -66,3 +66,40 @@ class Solution {
         return true;
     }
 }
+
+class Solution {
+    public boolean buddyStrings(String A, String B) {
+        int m = A.length();
+        int n = B.length();
+        if (m != n){
+            return false;
+        }
+        int index1 = -1;
+        int index2 = -1;
+        for (int i = 0; i < n; i++){
+            if (A.charAt(i) != B.charAt(i)){
+                if (index1 != -1 && index2 != -1){
+                    return false;
+                }
+                if (index1 == -1){
+                    index1 = i;
+                }else if (index2 == -1){
+                    index2 = i;
+                    if (A.charAt(index1) != B.charAt(index2) || A.charAt(index2) != B.charAt(index1)){
+                        return false;
+                    }
+                }
+            }
+        }
+        if (index1 == -1 && index2 == -1){
+            Set<Character> set = new HashSet<>();
+            for (char c : A.toCharArray()){
+                if (!set.add(c)){
+                    return true;
+                }
+            }
+            return false;
+        }
+        return true;
+    }
+}
