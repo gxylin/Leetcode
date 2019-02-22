@@ -16,6 +16,8 @@ Method 1: Trie
 https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/discuss/130427/()-Beats-92
 https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/discuss/91059/Java-O(n)-solution-using-Trie
 
+
+In order to get O(n), we have to find way to ensure "search" is O(1) which is what Trie does.
 Time complexity: O(n)
 Space complexity: O(n)
 class Solution {
