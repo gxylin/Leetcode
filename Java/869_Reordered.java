@@ -107,3 +107,31 @@ class Solution {
         return res;
     }
 }
+
+class Solution {
+    public boolean reorderedPowerOf2(int N) {
+        int[] counter = count(N);
+        for (int i = 0; i < 31; i++){
+            int[] cand = count(1<< i);
+            boolean found = true;
+            for (int j = 0; j < 10; j++){
+                if (cand[j] != counter[j]){
+                    found = false;
+                    break;
+                }
+            }
+            if (found){
+                return true;
+            }
+        }
+        return false;
+    }
+    private int[] count(int N){
+        int[] res = new int[10];
+        while (N > 0){
+            res[N%10]++;
+            N /= 10;
+        }
+        return res;
+    }
+}
