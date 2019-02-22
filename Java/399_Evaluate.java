@@ -163,6 +163,7 @@ class Solution {
                 }
             }  
         }
+        seen.remove(start);
         return -1.0; 
     }
 }
