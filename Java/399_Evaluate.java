@@ -119,3 +119,50 @@ class Solution {
         return -1.0;
     }
 }
+
+class Solution {
+    public double[] calcEquation(String[][] equations, double[] values, String[][] queries) {
+        int N = queries.length;
+        Map<String, Map<String, Double>> graph = new HashMap<>();
+        for (int i = 0; i < values.length; i++){
+            String dividend = equations[i][0];
+            String divisor = equations[i][1];
+            if (!graph.containsKey(dividend)){
+                graph.put(dividend, new HashMap<>());
+            }
+            if (!graph.containsKey(divisor)){
+                graph.put(divisor, new HashMap<>());
+            }
+            graph.get(dividend).put(divisor, values[i]);
+            graph.get(divisor).put(dividend, 1.0 / values[i]);
+        }
+        double[] res = new double[N];
+        for (int i = 0; i < N; i++){
+            String dividend = queries[i][0];
+            String divisor = queries[i][1];
+            if (!graph.containsKey(dividend) || !graph.containsKey(divisor)){
+                res[i] = -1.0;
+            }else{
+                Set<String> seen = new HashSet<>();
+                res[i] = dfs(graph, dividend, divisor, seen);
+            }
+        }
+        return res;
+    }
+    private double dfs(Map<String, Map<String, Double>> graph, String start, String end, Set<String> seen){
+        if (start.equals(end)){
+            return 1.0;
+        }
+        seen.add(start);
+        Map<String, Double> map = graph.get(start);
+        for (String next : map.keySet()){
+            if (!seen.contains(next)){
+                double val = dfs(graph, next, end, seen);
+                if (val > 0){
+                    return map.get(next) * val;
+                }
+            }  
+        }
+        return -1.0; 
+    }
+}
