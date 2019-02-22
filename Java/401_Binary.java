@@ -82,6 +82,33 @@ class Solution {
     }
 }
 
+class Solution {
+    public final int[] weights = {1, 2, 4, 8, 1, 2, 4, 8, 16, 32};
+    public List<String> readBinaryWatch(int num) {
+        List<String> res = new ArrayList<>();
+        dfs(res, num, 0, 0, 0);
+        return res;
+    }
+    private void dfs(List<String> res, int num, int index, int hour, int minute){
+        if (num == 0){
+            res.add(hour + ":" + (minute < 10 ?  "0" + minute : minute));
+        }
+        for (int i = index; i < weights.length; i++){
+            if (i < 4){
+                if (hour + weights[i] >= 12){
+                    continue;
+                }
+                dfs(res, num - 1, i + 1, hour + weights[i], minute);
+            }else{
+                if (minute + weights[i] >= 60){
+                    continue;
+                }
+                dfs(res, num - 1, i + 1, hour, minute + weights[i]);
+            }
+        }
+    }
+}
+
 backtracking:
 class Solution {
     public final int[] weights = {8, 4, 2, 1, 32, 16, 8, 4, 2, 1};
