@@ -58,7 +58,7 @@ class Solution {
 Method 2: Best solution
 recursion
 class Solution {
-    public final int[] weights = {8, 4, 2, 1, 32, 16, 8, 4, 2, 1};
+    public final int[] weights = {1, 2, 4, 8, 32, 16, 8, 4, 2, 1};//order does not matter as long as the first 4 are hours
     public List<String> readBinaryWatch(int num) {
         List<String> res = new ArrayList<>();
         dfs(res, num, 0, 0, 0);
