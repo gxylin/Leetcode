@@ -48,7 +48,7 @@ class Solution {
             for (int j = 31; j >= 0; j--){
                 int bit = (i >> j) & 1;
                 if (node.children[bit ^ 1] != null){
-                    localMax += (1 << j);
+                    localMax |= (1 << j);
                     node = node.children[bit^1];
                 }else{
                     node = node.children[bit];
