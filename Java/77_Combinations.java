@@ -58,3 +58,24 @@ class Solution {
         }
     }
 }
+
+
+Best solution: no need to add HashSet seen
+class Solution {
+    public List<List<Integer>> combine(int n, int k) {
+        List<List<Integer>> res = new ArrayList<>();
+        dfs(res, new ArrayList<Integer>(), n, k, 1);
+        return res;
+    }
+    private void dfs(List<List<Integer>> res, List<Integer> item, int n, int k, int start){
+        if (item.size() == k){
+            res.add(new ArrayList<>(item));
+            return;
+        }
+        for (int i = start; i <= n; i++){
+            item.add(i);
+            dfs(res, item, n, k, i+1);
+            item.remove(item.size() - 1);
+        }
+    }
+}
