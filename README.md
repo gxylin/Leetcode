@@ -665,7 +665,7 @@ Solution for Leetcode/Lintcode
 |655   |868  |[Binary Gap](Java/868_Binary.java)|Easy|Java|Leetcode|
 |656   |865  |[Smallest Subtree with all the Deepest Nodes Label TreeNode Depth Very Good](Java/865_Smallest.java)|Medium|Java|Leetcode|
 |657   |870  |[Advantage Shuffle Greedy](Java/870_Advantage.java)|Medium|Java|Leetcode|
-|658   |869  |[Reordered Power of 2](Java/869_Reordered.java)|Medium|Java|Leetcode|
+|658   |869  |[Reordered Power of 2 Convert num to array](Java/869_Reordered.java)|Medium|Java|Leetcode|
 |659   |401  |[Binary Watch Permutation](Java/401_Binary.java)|Easy|Java|Leetcode|
 |660   |400  |[Nth Digit](Java/400_Nth.java)|Easy|Java|Leetcode|
 |661   |201  |[Bitwise AND of Numbers Range](Java/201_Bitwise.java)|Medium|Java|Leetcode|
