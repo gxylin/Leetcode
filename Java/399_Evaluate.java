@@ -120,6 +120,7 @@ class Solution {
     }
 }
 
+Best solution:
 class Solution {
     public double[] calcEquation(String[][] equations, double[] values, String[][] queries) {
         int N = queries.length;
