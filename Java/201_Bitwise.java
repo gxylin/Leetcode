@@ -12,6 +12,7 @@ Output: 0
 The key is to find common parts from left to right between m and n.
 Note that the last bit of any odd number and any even number will be 0
 
+O(1)
 class Solution {
     public int rangeBitwiseAnd(int m, int n) {
         int i = 0;
@@ -26,3 +27,20 @@ class Solution {
 
 
 https://leetcode.com/problems/bitwise-and-of-numbers-range/discuss/56729/Bit-operation-solution(JAVA)
+
+
+TLE
+O(n)
+class Solution {
+    public int rangeBitwiseAnd(int m, int n) {
+        int res = 0;
+        for (int i = 0; i < 32; i++){
+            int digit = 1;
+            for (int j= m; j <= n; j++){
+                digit &= (j >> i);
+            }
+            res |= (digit << i);
+        }
+        return res;
+    }
+}
