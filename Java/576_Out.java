@@ -109,3 +109,33 @@ class Solution {
         return count;
     }
 }
+
+Similar as Leetcode 688
+    https://github.com/optimisea/Leetcode/edit/master/Java/688_KnightProbabilityinChessboard.java
+class Solution {
+    public int findPaths(int m, int n, int N, int i, int j) {
+        int mod = (int) Math.pow(10, 9) + 7;
+        int[][] dp = new int[m][n];
+        dp[i][j] = 1;
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        int count = 0;
+        for (int k = 1; k <= N; k++){
+            int[][] temp = new int[m][n];
+            for (int r = 0; r < m; r++){
+                for (int c = 0; c < n; c++){
+                    for (int[] dir : dirs){
+                        int nx = r + dir[0];
+                        int ny = c + dir[1];
+                        if (nx < 0 || nx == m || ny < 0 || ny == n){
+                            count = (count + dp[r][c]) % mod;
+                        }else{
+                            temp[nx][ny] = (temp[nx][ny] + dp[r][c]) % mod;
+                        }
+                    }
+                }
+            }
+            dp = temp;
+        }
+        return count;
+    }
+}
