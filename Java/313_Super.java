@@ -38,6 +38,11 @@ class Solution {
 }
 
 Method 2: O(nk) the principle is like merge sort
+
+The same as Ugly Number II 
+https://github.com/optimisea/Leetcode/blob/master/Java/264_UglyNumberII.java
+
+
 https://leetcode.com/problems/ugly-number-ii/discuss/69362/O(n)-Java-solution
 https://leetcode.com/problems/super-ugly-number/discuss/76291/Java-three-methods-23ms-36-ms-58ms(with-heap)-performance-explained
 class Solution {
