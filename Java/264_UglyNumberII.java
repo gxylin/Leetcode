@@ -32,6 +32,9 @@ class Solution {
 Dynamic programming: better solution
 https://leetcode.com/problems/ugly-number-ii/discuss/69364/My-16ms-C++-DP-solution-with-short-explanation
 the concept of merge sort
+
+the same as super ugly number
+https://github.com/optimisea/Leetcode/blob/master/Java/313_Super.java
 class Solution {
     public int nthUglyNumber(int n) {
         int[] res = new int[n];
