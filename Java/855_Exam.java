@@ -26,6 +26,7 @@ Note:
 ExamRoom.seat() and ExamRoom.leave() will be called at most 10^4 times across all test cases.
 Calls to ExamRoom.leave(p) are guaranteed to have a student currently sitting in seat number p.
 
+Time complexity: O(n) for both 
 class ExamRoom {
     private List<Integer> list;
     private int n;
