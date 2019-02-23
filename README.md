@@ -681,7 +681,7 @@ Solution for Leetcode/Lintcode
 |671   |429  |[N-ary Tree Level Order Traversal](Java/429_N-ary.java)|Easy|Java|Leetcode|
 |672   |589  |[N-ary Tree Preorder Traversal](Java/589_N-ary.java)|Easy|Java|Leetcode|
 |673   |590  |[N-ary Tree Postorder Traversal](Java/590_N-ary.java)|Easy|Java|Leetcode|
-|674   |430  |[Flatten a Multilevel Doubly Linked List DFS + LinkedList](Java/430_Flatten.java)|Medium|Java|Leetcode|
+|674   |430  |[Flatten a Multilevel Doubly Linked List DFS + LinkedList Very Good](Java/430_Flatten.java)|Medium|Java|Leetcode|
 |675   |470  |[Implement Rand10() Using Rand7()](Java/470_Implement.java)|Medium|Java|Leetcode|
 |676   |475  |[Heaters Two pointers](Java/475_Heaters.java)|Easy|Java|Leetcode|
 |677   |482  |[License Key Formatting](Java/482_License.java)|Easy|Java|Leetcode|
