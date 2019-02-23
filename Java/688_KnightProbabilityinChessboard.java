@@ -95,3 +95,8 @@ class Solution {
         return sum / Math.pow(8, K);
     }
 }
+
+
+Similar as Leetcode 576
+https://github.com/optimisea/Leetcode/blob/master/Java/576_Out.java
+
