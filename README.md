@@ -935,3 +935,4 @@ Solution for Leetcode/Lintcode
 |923   |995  |[Minimum Number of K Consecutive Bit Flips](Java/995_Minimum.java)|Hard|Java|Leetcode|
 |924   |997  |[Find the Town Judge](Java/997_Find.java)|Easy|Java|Leetcode|
 |925   |999  |[Available Captures for Rook](Java/999_Available.java)|Easy|Java|Leetcode|
+|926   |998  |[Maximum Binary Tree II](Java/998_Maximum.java)|Medium|Java|Leetcode|
