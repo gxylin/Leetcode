@@ -26,26 +26,21 @@ Please do not use the built-in HashSet library.
 
 
 class MyHashSet {
-    int[] arr;
+    private int[] arr;
     /** Initialize your data structure here. */
     public MyHashSet() {
-        int N = 1000001;
-        arr = new int[N];
-        for (int i = 0; i < N; i++){
+        arr = new int[1000001];
+        for (int i = 0; i < arr.length; i++){
             arr[i] = -1;
         }
     }
     
     public void add(int key) {
-        if (arr[key] == -1){
-            arr[key] = key;
-        }
+        arr[key] = key;
     }
     
     public void remove(int key) {
-        if (arr[key] != -1){
-            arr[key] = -1;
-        }
+        arr[key] = -1;
     }
     
     /** Returns true if this set contains the specified element */
