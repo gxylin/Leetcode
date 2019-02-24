@@ -60,7 +60,7 @@ class KthLargest {
  */
  
  
- Method 2: One PQ
+ Method 2: One PQ (Best solution)
  class KthLargest {
     Queue<Integer> minPQ;
     int K;
