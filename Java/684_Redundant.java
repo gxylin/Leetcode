@@ -114,3 +114,47 @@ class Solution {
         return false;
     }
 }
+
+class Solution {
+    public int[] findRedundantConnection(int[][] edges) {
+        Map<Integer, Set<Integer>> graph = new HashMap<>();
+        int[] res = new int[2];
+        for (int[] edge : edges){
+            int u = edge[0];
+            int v = edge[1];
+            if (!graph.containsKey(u)){
+                graph.put(u, new HashSet<>());
+            }
+            if (!graph.containsKey(v)){
+                graph.put(v, new HashSet<>());
+            }
+            Set<Integer> set = new HashSet<>();
+            if (!graph.get(u).isEmpty() && !graph.get(v).isEmpty()){
+                if (hasCircle(graph, u, v, set)){
+                    res[0] = u;
+                    res[1] = v;
+                    return res;
+                }
+            }
+            graph.get(u).add(v);
+            graph.get(v).add(u);
+        }
+        return res;
+    }
+    private boolean hasCircle(Map<Integer, Set<Integer>> graph, int u, int v, Set<Integer> set){
+        if (u == v){
+            return true;
+        }
+        set.add(u);
+        for (int nei: graph.get(u)){
+            if (set.contains(nei)){
+                continue;
+            }
+            if (hasCircle(graph, nei, v, set)){
+                return true;
+            }
+        }
+        set.remove(u);
+        return false;
+    }
+}
