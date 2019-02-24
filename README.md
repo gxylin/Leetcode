@@ -936,3 +936,4 @@ Solution for Leetcode/Lintcode
 |924   |997  |[Find the Town Judge](Java/997_Find.java)|Easy|Java|Leetcode|
 |925   |999  |[Available Captures for Rook](Java/999_Available.java)|Easy|Java|Leetcode|
 |926   |998  |[Maximum Binary Tree II](Java/998_Maximum.java)|Medium|Java|Leetcode|
+|927   |1001 |[Grid Illumination](Java/1001_Grid.java)|Hard|Java|Leetcode|
