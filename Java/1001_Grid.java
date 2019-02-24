@@ -38,7 +38,15 @@ Note:
 0 <= queries.length <= 20000
 lamps[i].length == queries[i].length == 2
 
+https://leetcode.com/problems/grid-illumination/discuss/243076/Java-Clean-Code-O(N)-Time-and-O(N)-Space-Beats-100
+The basic idea is:
 
+The row, column or diagonal will remain illuminated if there are >= 1 lamp
+all the diagonals with 1 slope, x= y+c i.e. x-y = constant
+all the diagonals with -1 slope, x= -y+c i.e x+y = constant
+store the counts in separate maps
+When a lamp is turned off, the count in respective row, column or diagonal decreases by 1
+ 
 class Solution {
     public int[] gridIllumination(int N, int[][] lamps, int[][] queries) {
         Map<Integer, Integer> mapX = new HashMap<>();
