@@ -92,3 +92,40 @@ class Solution {
         return root;
     }
 }
+
+Use  inorder iteration template
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public TreeNode insertIntoBST(TreeNode root, int val) {
+        Stack<TreeNode>  stack = new Stack<>();
+        TreeNode curr = root;
+        while (curr != null || !stack.isEmpty()){
+            while (curr != null){
+                stack.push(curr);
+                curr = curr.left;
+            }
+            TreeNode node = stack.pop();
+            if (val < node.val){
+                TreeNode temp = node.left;
+                node.left = new TreeNode(val);
+                node.left.left = temp;
+                break;
+            }
+            curr = node.right;
+            if (stack.isEmpty() && curr == null){
+                if (val > node.val){
+                    node.right = new TreeNode(val);
+                }
+            }
+        }
+        return root;
+    }
+}
