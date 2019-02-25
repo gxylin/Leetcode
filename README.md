@@ -706,7 +706,7 @@ Solution for Leetcode/Lintcode
 |696   |709  |[To Lower Case](Java/709_To.java)|Easy|Java|Leetcode|
 |697   |702  |[Search in a Sorted Array of Unknown Size](Java/702_Search.java)|Medium|Java|Leetcode|
 |698   |715  |[Range Module](Java/715_Range.java)|Hard|Java|Leetcode|
-|699   |403  |[Frog Jump](Java/403_Frog.java)|Hard|Java|Leetcode|
+|699   |403  |[Frog Jump HashMap DP](Java/403_Frog.java)|Hard|Java|Leetcode|
 |700   |717  |[1-bit and 2-bit Characters](Java/717_bit.java)|Easy|Java|Leetcode|
 |701   |719  |[Find K-th Smallest Pair Distance](Java/719_FindK-th.java)|Hard|Java|Leetcode|
 |XXX   |XXX  |[Binary Search Template](Java/binary.java)|
