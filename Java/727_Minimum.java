@@ -20,7 +20,9 @@ Note:
     The length of S will be in the range [1, 20000].
     The length of T will be in the range [1, 100].
 
-Different from minium window substring
+Different from minmium window substring
+https://github.com/optimisea/Leetcode/blob/master/Java/76_MinimumWindowSubstring.java
+
 Method 1: DP
 Time complexity: O(mn)
 Space complexity: O(mn)
