@@ -84,10 +84,10 @@ class Solution {
 Best solution:
 dp[i][j] denotes the number of distinct subsequence with the first i substring from s and the first j substring from t
 when s.charAt(i-1) == t.charAt(j-1).
-  Two options: if include t.charAt(j-1), then dp[i][j] += dp[i-1][j-1]
-               if not include t.charAt(j-1), then dp[i][j] += dp[i-1][j]
+  Two options: if include s.charAt(i-1), then dp[i][j] += dp[i-1][j-1]
+               if not include s.charAt(i-1), then dp[i][j] += dp[i-1][j]
  when s.charAt(i-1) != t.charAt(j-1)
-  only one option: not include t.charAt(j-1), then dp[i][j] = dp[i-1][j];
+  only one option: not include s.charAt(i-1), then dp[i][j] = dp[i-1][j];
 class Solution {
     public int numDistinct(String s, String t) {
         int m = s.length();
