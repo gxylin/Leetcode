@@ -52,8 +52,8 @@ class Solution {
 
 Why did I use s binary search?
 In fact there are some similar problems on Leetcode so that is part of experience.
-Secondly, I got a hint from "Answers within 10^-6 of the true value will be accepted as correct.". The first solution I tried was binary search.
-Because binary search may not find exact value but it can approach the true answer.
+Secondly, I got a hint from "Answers within 10^-6 of the true value will be accepted as correct.". The first solution I tried 
+was binary search. Because binary search may not find exact value but it can approach the true answer.
 
 Explanation of solution
 Now we are using binary search to find the smallest possible value of D.
@@ -68,7 +68,8 @@ O(NlogM), where N is station length and M is st[N - 1] - st[0]
 
 Intuition
 
-Let's ask possible(D): with K (or less) gas stations, can we make every adjacent distance between gas stations at most D? This function is monotone, so we can apply a binary search to find D*D^{\text{*}}D​*​​.
+Let's ask possible(D): with K (or less) gas stations, can we make every adjacent distance between gas stations at most D?
+    This function is monotone, so we can apply a binary search to find D*D^{\text{*}}D​*​​.
 
 Algorithm
 
