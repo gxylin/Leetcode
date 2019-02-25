@@ -19,6 +19,14 @@ HashMap may not be very good since the problem is asking for the rectangular are
 From map we could only get the exact value of (val - target).
 Not like 560	Subarray Sum Equals K.java, which could use HashMap
 
+first  consider the situation matrix is 1D
+    we can save every sum of 0~i(0<=i<len) and binary search previous sum to find 
+    possible result for every index, time complexity is O(NlogN).
+    so in 2D matrix, we can sum up all values from row i to row j and create a 1D array 
+    to use 1D array solution.
+    If col number is less than row number, we can sum up all values from col i to col j 
+    then use 1D array solution.
+      
 Time complexity: O(min(row, col)^2 * max(row, col)*log(max(row, col)))
 Space complexity: O(max(row, col)
 class Solution {
