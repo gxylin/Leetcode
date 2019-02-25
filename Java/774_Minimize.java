@@ -44,7 +44,7 @@ class Solution {
     private boolean possible(double mid, int[] stations, int K){
         int used = 0;
         for (int i = 0; i < stations.length - 1; i++){
-            used += (int) (stations[i+1] - stations[i]) / mid;
+            used += (int) (stations[i+1] - stations[i]) / mid; (note that this is double division then conver to int, it is like ceiling() - 1
         }
         return used <= K;
     }
