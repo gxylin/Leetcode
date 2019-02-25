@@ -111,3 +111,26 @@ class Solution {
         return dp[n];
     }
 }
+
+class Solution {
+    public boolean wordBreak(String s, List<String> wordDict) {
+         Set<String> set = new HashSet<>();
+        int min = Integer.MAX_VALUE;
+        for (String word : wordDict){
+            set.add(word);
+            min = Math.min(min, word.length());
+        }
+        int n = s.length();
+        boolean[] dp = new boolean[n+1];
+        dp[0] = true;
+        for (int i = min; i <= n; i++){
+            for (int j = 0; j <= i - min; j++){
+                if (set.contains(s.substring(j,i)) && dp[j]){
+                    dp[i] = true;
+                    break;
+                }
+            }
+        }
+        return dp[n];
+    }
+}
