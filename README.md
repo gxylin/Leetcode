@@ -714,7 +714,7 @@ Solution for Leetcode/Lintcode
 |703   |872  |[Leaf-Similar Trees](Java/872_Leaf-Similar.java)|Easy|Java|Leetcode|
 |704   |668  |[Kth Smallest Number in Multiplication Table](Java/668_Kth.java)|Hard|Java|Leetcode|
 |705   |727  |[Minimum Window Subsequence Dynamic Programming Very Good](Java/727_Minimum.java)|Hard|Java|Leetcode|
-|706   |115  |[Distinct Subsequences Dynamic Programming](Java/115_Distinct.java)|Hard|Javav|Leetcode|
+|706   |115  |[Distinct Subsequences Dynamic Programming Good](Java/115_Distinct.java)|Hard|Javav|Leetcode|
 |707   |876  |[Middle of the Linked List](Java/876_Middle.java)|Easy|Java|Leetcode|
 |708   |354  |[Russian Doll Envelopes LIS](Java/354_Russian.java)|Hard|Java|Leetcode|
 |709   |363  |[Max Sum of Rectangle No Larger Than K](Java/363_Max.java)|Hard|Java|Leetcode|
