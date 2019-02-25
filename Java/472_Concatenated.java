@@ -146,3 +146,63 @@ class Solution {
         return false;
     }
 }
+
+Better solution:
+class Solution {
+    class TrieNode {
+        TrieNode[] children;
+        boolean isEnd;
+        public TrieNode(){
+            children = new TrieNode[26];
+            isEnd = false;
+        }
+    }
+    public List<String> findAllConcatenatedWordsInADict(String[] words) {
+        List<String> res = new ArrayList<>();
+        //build Trie
+        TrieNode root = new TrieNode();
+        for (String word : words){
+            if (word.length() == 0){
+                continue;
+            }
+            TrieNode node = root;
+            for (int i = 0; i < word.length(); i++){
+                char c = word.charAt(i);
+                if (node.children[c - 'a'] == null){
+                    node.children[c - 'a'] = new TrieNode();
+                }
+                node = node.children[c - 'a'];
+            }
+            node.isEnd = true;
+        }
+        //search
+        for (String word : words){
+            if (word.length() == 0){
+                continue;
+            }
+            if (isValid(root, word, 0, 0)){
+                res.add(word);
+            }
+        }
+        return res;
+    }
+    private boolean isValid(TrieNode root, String word, int start, int count){
+        if (start == word.length()){
+            return count > 1;
+        }
+        TrieNode node = root;
+        for (int i = start; i < word.length(); i++){
+            char c = word.charAt(i);
+            if (node.children[c - 'a'] == null){
+                return false;
+            }
+            node = node.children[c- 'a'];
+            if (node.isEnd){
+                if (isValid(root, word, i+1, count+1)){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
