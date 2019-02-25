@@ -11,7 +11,7 @@ Given k = 4 and a matrix:
 ]
 return 5
 
-Method 1: BSF
+Method 1: BFS
 Time complexity: O(k*logk)
 Space complexity: O(m*n)
     
