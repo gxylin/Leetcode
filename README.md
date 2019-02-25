@@ -717,7 +717,7 @@ Solution for Leetcode/Lintcode
 |706   |115  |[Distinct Subsequences Dynamic Programming Good](Java/115_Distinct.java)|Hard|Java|Leetcode|
 |707   |876  |[Middle of the Linked List](Java/876_Middle.java)|Easy|Java|Leetcode|
 |708   |354  |[Russian Doll Envelopes LIS](Java/354_Russian.java)|Hard|Java|Leetcode|
-|709   |363  |[Max Sum of Rectangle No Larger Than K](Java/363_Max.java)|Hard|Java|Leetcode|
+|709   |363  |[Max Sum of Rectangle No Larger Than K Good](Java/363_Max.java)|Hard|Java|Leetcode|
 |710   |428  |[Serialize and Deserialize N-ary Tree](Java/428_Serialize.java)|Hard|Java|Leetcode|
 |711   |440  |[K-th Smallest in Lexicographical Order](Java/440_K-th.java)|Hard|Java|Leetcode|
 |712   |472  |[Concatenated Words DFS Trie Dynamic Programming](Java/472_Concatenated.java)|Hard|Java|Leetcode|
