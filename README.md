@@ -937,3 +937,4 @@ Solution for Leetcode/Lintcode
 |925   |999  |[Available Captures for Rook](Java/999_Available.java)|Easy|Java|Leetcode|
 |926   |998  |[Maximum Binary Tree II](Java/998_Maximum.java)|Medium|Java|Leetcode|
 |927   |1001 |[Grid Illumination](Java/1001_Grid.java)|Hard|Java|Leetcode|
+|928   |658  |[Find K Closest Elements](Java/658_Find.java)|Medium|Java|Leetcode|
