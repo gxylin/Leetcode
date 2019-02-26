@@ -16,6 +16,35 @@ There are 8 records with length 2 will be regarded as rewardable:
 Only "AA" won't be regarded as rewardable owing to more than one absent times. 
 Note: The value of n won't exceed 100,000.
 
+    
+    
+Best solution:
+https://leetcode.com/problems/student-attendance-record-ii/discuss/101638/Simple-Java-O(n)-solution
+
+class Solution {
+    public int checkRecord(int n) {
+        int M = (int) Math.pow(10, 9) + 7;
+        long[] P = new long[n+1];//ending with P and no A
+        long[] L = new long[n+1];//ending with L and no A
+        P[0] = 1;
+        P[1] = 1;
+        L[0] = 0;
+        L[1] = 1;
+        for (int i = 2; i <= n; i++){
+            P[i] = (P[i-1] + L[i-1]) % M;
+            L[i] = (P[i-1] + P[i-2]) % M;
+        }
+        long res = (P[n] + L[n]) % M;
+        //insert A into (n-1) length 
+        for (int i = 0; i < n; i++){
+            long num = ((P[i] + L[i])%M * (P[n-1-i] + L[n-1-i])%M)%M;
+            res = (res + num) % M;
+        }
+        return (int)res;
+    }
+}
+    
+ 
 https://leetcode.com/problems/student-attendance-record-ii/discuss/101643/Share-my-O(n)-C++-DP-solution-with-thinking-process-and-explanation?page=2
 
 Time complexity: O(n)
