@@ -61,6 +61,39 @@ class Solution {
     }
 }
 
+class Solution {
+    public boolean splitArray(int[] nums) {
+        int n = nums.length;
+        if (n < 7){
+            return false;
+        }
+        int[] preSum = new int[n+1];
+        preSum[0] = 0;
+        for (int i = 1; i <= n; i++){
+          preSum[i] = preSum[i-1] + nums[i-1];
+        }
+        for (int j = 3; j < n - 3; j++){
+          Set<Integer> set = new HashSet<>();
+           for (int i = 1; i < j-1; i++){
+              if (preSum[j] - preSum[i+1] ==  preSum[i]){
+                  set.add(preSum[i]);
+              }
+           }
+           for (int k = j + 1; k < n-2; k++){
+               if (preSum[n] - preSum[k+1] == preSum[k] - preSum[j+1]){
+                   if (set.contains(preSum[n] - preSum[k+1]){
+                      return true;
+                   }
+               }
+           }
+        }
+        return false;
+    }
+}
+                       
+                       
+                       
+                       
 Methodd 2: DFS TLE
 class Solution {
     public boolean splitArray(int[] nums) {
