@@ -1,12 +1,14 @@
  Design and implement a data structure for a compressed string iterator. It should support the following operations: next and hasNext.
 
-The given compressed string will be in the form of each letter followed by a positive integer representing the number of this letter existing in the original uncompressed string.
+The given compressed string will be in the form of each letter followed by a positive integer representing the number of this letter 
+existing in the original uncompressed string.
 
 next() - if the original string still has uncompressed characters, return the next letter; Otherwise return a white space.
 hasNext() - Judge whether there is any letter needs to be uncompressed.
 
 Note:
-Please remember to RESET your class variables declared in StringIterator, as static/class variables are persisted across multiple test cases. Please see here for more details.
+Please remember to RESET your class variables declared in StringIterator, as static/class variables are persisted across multiple test 
+ cases. Please see here for more details.
 
 Example:
 
