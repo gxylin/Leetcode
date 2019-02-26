@@ -3,7 +3,8 @@
     0 < i, i + 1 < j, j + 1 < k < n - 1
     Sum of subarrays (0, i - 1), (i + 1, j - 1), (j + 1, k - 1) and (k + 1, n - 1) should be equal.
 
-where we define that subarray (L, R) represents a slice of the original array starting from the element indexed L to the element indexed R.
+where we define that subarray (L, R) represents a slice of the original array starting from the element indexed L to the element 
+indexed R.
 
 Example:
 
