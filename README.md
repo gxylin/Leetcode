@@ -721,7 +721,7 @@ Solution for Leetcode/Lintcode
 |710   |428  |[Serialize and Deserialize N-ary Tree](Java/428_Serialize.java)|Hard|Java|Leetcode|
 |711   |440  |[K-th Smallest in Lexicographical Order](Java/440_K-th.java)|Hard|Java|Leetcode|
 |712   |472  |[Concatenated Words DFS Trie Dynamic Programming](Java/472_Concatenated.java)|Hard|Java|Leetcode|
-|713   |480  |[Sliding Window Median](Java/480_Sliding.java)|Hard|Java|Leetcode|
+|713   |480  |[Sliding Window Median Two PriorityQueue Good](Java/480_Sliding.java)|Hard|Java|Leetcode|
 |714   |492  |[Construct Rectangle](Java/492_Construct.java)|Easy|Java|Leetcode|
 |715   |493  |[Reverse Pairs Merge Sort](Java/493_Reverse.java)|Hard|Java|Leetcode|
 |716   |507  |[Perfect Number](Java/507_Perfect.java)|Easy|Java|Leetcode|
