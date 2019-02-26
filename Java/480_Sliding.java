@@ -82,3 +82,67 @@ class Solution {
         }
     }
 }
+
+
+class Solution {
+    public double[] medianSlidingWindow(int[] nums, int k) {
+        Queue<Integer> minPQ = new PriorityQueue<>();//store the larger half, if even number, put into minPQ
+        Queue<Integer> maxPQ = new PriorityQueue<>(new Comparator<Integer>(){//store the smaller half
+            public int compare (Integer i1, Integer i2){
+                return i2.compareTo(i1);
+            }
+        });
+        int n = nums.length;
+        if (n == 0){
+            return new double[0];
+        }
+        double[] res = new double[n-k+1];
+        for (int i = 0; i < n; i++){
+            add(minPQ, maxPQ, nums[i]);
+            if (i >= k - 1){
+                res[i-k+1] = getMedian(minPQ, maxPQ);
+                remove(minPQ, maxPQ, nums[i-k+1]);
+            }
+        }
+        return res;
+    }
+    private void add(Queue<Integer> minPQ,  Queue<Integer> maxPQ, int num){
+        if (minPQ.isEmpty()){
+            minPQ.offer(num);
+        }else{
+            if (num < minPQ.peek()){
+                maxPQ.offer(num);
+                if (maxPQ.size() > minPQ.size()){
+                    minPQ.offer(maxPQ.poll());
+                }
+            }else{
+                minPQ.offer(num);
+                if(minPQ.size() > maxPQ.size() + 1){
+                    maxPQ.offer(minPQ.poll());
+                }
+            }
+        }
+    }
+    private void remove(Queue<Integer> minPQ,  Queue<Integer> maxPQ, int num){
+        if (num < minPQ.peek()){
+            maxPQ.remove(num);
+        }else{
+            minPQ.remove(num);
+        }
+        if (maxPQ.size() > minPQ.size()){
+            minPQ.offer(maxPQ.poll());
+        }else if (minPQ.size() > maxPQ.size() + 1){
+            maxPQ.offer(minPQ.poll());
+        }
+    }
+    private double getMedian(Queue<Integer> minPQ, Queue<Integer> maxPQ){
+        if (minPQ.size() == 0 && maxPQ.size() == 0){
+            return 0.0;
+        }
+        if (minPQ.size() == maxPQ.size()){
+            return ((double)minPQ.peek() + (double)maxPQ.peek()) / 2.0; 
+        }else{
+            return (double) minPQ.peek();
+        }
+    } 
+}
