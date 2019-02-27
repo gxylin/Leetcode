@@ -16,6 +16,8 @@ Example 2:
 Input: x = 2, y = 6, z = 5
 Output: False
 
+https://leetcode.com/problems/water-and-jug-problem/discuss/83715/Math-solution-Java-solution
+
 class Solution {
     public boolean canMeasureWater(int x, int y, int z) {
         if (x + y < z){
