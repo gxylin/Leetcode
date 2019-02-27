@@ -735,7 +735,7 @@ Solution for Leetcode/Lintcode
 |724   |600  |[Non-negative Integers without Consecutive Ones](Java/600_Non-negative.java)|Hard|Java|Leetecode|
 |725   |630  |[Course Schedule III](Java/630_Course.java)|Hard|Java|Leetcode|
 |726   |676  |[Implement Magic Dictionary Trie BFS HashMap Very Good](Java/676_Implement.java)|Medium|Java|Leetcode|
-|727   |679  |[24 Game Backtracking](Java/679_Game.java)|Hard|Java|Leetcode|
+|727   |679  |[24 Game Backtracking Within Backtracking](Java/679_Game.java)|Hard|Java|Leetcode|
 |728   |683  |[K Empty Slots Sliding Window](Java/683_Empty.java)|Hard|Java|Leetcode|
 |729   |691  |[Stickers to Spell Word Dynamic Programming + Backtracking](Java/691_Stickers.java)|Hard|Java|Leetcode|
 |730   |884  |[Uncommon Words from Two Sentences](Java/884_Uncommon.java)|Easy|Java|Leetcode|
