@@ -740,7 +740,7 @@ Solution for Leetcode/Lintcode
 |729   |691  |[Stickers to Spell Word Recursion + Memo Very Good](Java/691_Stickers.java)|Hard|Java|Leetcode|
 |730   |884  |[Uncommon Words from Two Sentences Good](Java/884_Uncommon.java)|Easy|Java|Leetcode|
 |731   |716  |[Max Stack](Java/716_Max.java)|Hard|Java|Leetcode|
-|732   |723  |[Candy Crush Two Pointers Good](Java/723_Candy.java)|Medium|Java|Leetcode|
+|732   |723  |[Candy Crush Two Pointers Label values Very Good](Java/723_Candy.java)|Medium|Java|Leetcode|
 |733   |883  |[Projection Area of 3D Shapes](Java/883_Projection.java)|Easy|Java|Leetcode|
 |734   |726  |[Number of Atoms Recursion](Java/726_Number.java)|Hard|Java|Leetcode|
 |735   |748  |[Shortest Completing Word](Java/748_Shortest.java)|Medium|Java|Leetcode|
