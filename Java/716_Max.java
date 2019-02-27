@@ -62,7 +62,7 @@ class MaxStack {
         int max = maxStack.peek();
         Stack<Integer> buffer = new Stack<>();
         while (top() != max){
-            buffer.push(pop());
+            buffer.push(pop()); // must be pop(), not stack.pop() or maxStack.pop()
         }
         stack.pop();
         maxStack.pop();
