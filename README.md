@@ -737,7 +737,7 @@ Solution for Leetcode/Lintcode
 |726   |676  |[Implement Magic Dictionary Trie BFS HashMap Very Good](Java/676_Implement.java)|Medium|Java|Leetcode|
 |727   |679  |[24 Game Backtracking Within Backtracking Very Good](Java/679_Game.java)|Hard|Java|Leetcode|
 |728   |683  |[K Empty Slots Sliding Window](Java/683_Empty.java)|Hard|Java|Leetcode|
-|729   |691  |[Stickers to Spell Word Dynamic Programming + Backtracking](Java/691_Stickers.java)|Hard|Java|Leetcode|
+|729   |691  |[Stickers to Spell Word Recursion + Memo Very Good](Java/691_Stickers.java)|Hard|Java|Leetcode|
 |730   |884  |[Uncommon Words from Two Sentences](Java/884_Uncommon.java)|Easy|Java|Leetcode|
 |731   |716  |[Max Stack](Java/716_Max.java)|Hard|Java|Leetcode|
 |732   |723  |[Candy Crush Two Pointers](Java/723_Candy.java)|Medium|Java|Leetcode|
