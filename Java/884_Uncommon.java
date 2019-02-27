@@ -49,28 +49,3 @@ class Solution {
     }
 }
 
-class Solution {
-    public String[] uncommonFromSentences(String A, String B) {
-        List<String> list = new ArrayList<>();
-        getSet(A, B, list);
-        getSet(B, A, list);
-        String[] res = new String[list.size()];
-        for (int i = 0; i < list.size(); i++){
-            res[i] = list.get(i);
-        }
-        return res;
-    }
-    private void getSet(String A, String B, List<String> list){
-        String[] strA = A.split("\\s+");
-        String[] strB = B.split("\\s+");
-        Set<String> set = new HashSet<>();
-        for (String str : strA){
-            set.add(str);
-        }
-        for (String str : strB){
-            if (!set.contains(str)){
-                list.add(str);
-            }
-        }
-    }
-}
