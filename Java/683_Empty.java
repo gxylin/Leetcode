@@ -47,6 +47,11 @@ There are two cases that we need to update left and right:
  2. we find days[i] < days[left] || days[i] < days[right] (it means that the pre-assumed subarray is not correct).
 
 
+ Key : Maintain a size of k sliding window with the max day of left (outside of window) and right (outside of window) is greater than
+ the min of the days within the window. Find the minimum of the max day.
+                                                                                                                   
+                                                                                                                  
+                                                                                                                   
 Sliding window
 Time complexity: O(n)
 Space complexity: O(n)
