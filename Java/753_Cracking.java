@@ -19,6 +19,11 @@ n will be in the range [1, 4].
 k will be in the range [1, 10].
 k^n will be at most 4096.
 
+    We can think of this problem as the problem of finding an Euler path (a path visiting every edge exactly once) on the following
+    graph: there are $$k^{n-1}$$ nodes with each node having $$k$$ edges. It turns out this graph always has an Eulerian circuit
+    (path starting where it ends.) We should visit each node in "post-order" so as to not get stuck in the graph prematurely.
+    
+    
 Backtracking
 class Solution {
     public String crackSafe(int n, int k) {
