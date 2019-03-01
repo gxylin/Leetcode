@@ -76,6 +76,7 @@ class Solution {
 }
 
 
+Better version:
 class Solution {
     public boolean pyramidTransition(String bottom, List<String> allowed) {
         Map<String, Set<String>> map = new HashMap<>();
