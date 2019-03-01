@@ -50,9 +50,9 @@ class Solution {
     public int minSwapsCouples(int[] row) {
         int N = row.length / 2;
         UF uf = new UF(N);
-        for (int i = 0; i < N; i++){
-            int x = row[2*i];
-            int y = row[2*i+1];
+        for (int i = 0; i < row.length; i += 2){
+            int x = row[i];
+            int y = row[i+1];
             uf.union(x/2, y/2);
         }
         return N - uf.count;
