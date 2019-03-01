@@ -22,6 +22,13 @@ Note:
 sx, sy, tx, ty will all be integers in the range [1, 10^9].
 
 https://leetcode.com/problems/reaching-points/discuss/114856/Easy-and-Concise-2-line-SolutionPythonC++Java
+
+Search from target to source instead of source to target because it's always easy to get the root 
+    because you have exact one way to get the parent node, think as tree
+    
+ using ty%=tx instead of while (tx > ty) { tx -= ty }
+
+
 class Solution {
     public boolean reachingPoints(int sx, int sy, int tx, int ty) {
         while (tx > sx && ty > sy){
@@ -31,10 +38,10 @@ class Solution {
                 ty %= tx;
             }
         }
-        if (tx == sx && (ty - sy) % sx == 0){
+        if (tx == sx && sy <= ty && (ty - sy) % sx == 0){
             return true;
         }
-        if (ty == sy && (tx - sx) % sy == 0){
+        if (ty == sy && sx <= tx && (tx - sx) % sy == 0){
             return true;
         }
         return false;
