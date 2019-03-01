@@ -87,7 +87,7 @@ Time complexixty: O(n)
 Space complexity: O(1)
 class Solution {
     public boolean backspaceCompare(String S, String T) {
-        int i = S.length()- 1;
+         int i = S.length()- 1;
         int j = T.length() - 1;
         int skipS = 0;
         int skipT = 0;
@@ -115,12 +115,13 @@ class Solution {
                 }
                 
             }
+            if ((i >= 0) ^ (j >= 0)){
+                return false;
+            }
             if (i >= 0 && j >= 0 && S.charAt(i) != T.charAt(j)){
                 return false;
             }
-            if ((i >= 0) != (j >= 0)){
-                return false;
-            }
+            
             i--;
             j--;
         }
