@@ -758,7 +758,7 @@ Solution for Leetcode/Lintcode
 |747   |779  |[K-th Symbol in Grammar Recursion](Java/779_Kth.java)|Medium|Java|Leetcode|
 |748   |781  |[Rabbits in Forest](Java/781_Rabbits.java)|Medium|Java|Leetcode|
 |749   |780  |[Reaching Points](Java/780_Reaching.java)|Hard|Java|Leetcode|
-|750   |793  |[Preimage Size of Factorial Zeroes Function Binary Search](Java/793_Preimage.java)|Hard|Java|Leetcode|
+|750   |793  |[Preimage Size of Factorial Trailing Zeroes Binary Search](Java/793_Preimage.java)|Hard|Java|Leetcode|
 |751   |798  |[Smallest Rotation with Highest Score](Java/798_Smallest.java)|Hard|Java|Leetcode|
 |752   |809  |[Expressive Words](Java/809_Expressive.java)|Medium|Java|Leetcode|
 |753   |810  |[Chalkboard XOR Game](Java/810_Chalkboard.java)|Hard|Java|Leetcode|
