@@ -748,7 +748,7 @@ Solution for Leetcode/Lintcode
 |737   |745  |[Prefix and Suffix Search Good](Java/745_Prefix.java)|Hard|Java|Leetcode|
 |738   |753  |[Cracking the Safe Backtracking Very Good](Java/753_Cracking.java)|Hard|Java|Leetcode|
 |739   |754  |[Reach a Number](Java/754_Reach.java)|Medium|Java|Leetcode|
-|740   |756  |[Pyramid Transition Matrix DFS + Backtracking](Java/756_Pyramid.java)|Medium|Java|Leetcode|
+|740   |756  |[Pyramid Transition Matrix DFS + Backtracking Very Good](Java/756_Pyramid.java)|Medium|Java|Leetcode|
 |741   |759  |[Employee Free Time Merge Interval](Java/759_Employee.java)|Hard|Java|Leetcode|
 |742   |761  |[Special Binary String Recursion Very Good](Java/761_Special.java)|Hard|Java|Leetcode|
 |743   |765  |[Couples Holding Hands Union Find](Java/765_Couples.java)|Hard|Java|Leetcode|
