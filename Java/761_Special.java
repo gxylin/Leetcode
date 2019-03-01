@@ -2,7 +2,10 @@ Special binary strings are binary strings with the following two properties:
 
 The number of 0's is equal to the number of 1's.
 Every prefix of the binary string has at least as many 1's as 0's.
-Given a special string S, a move consists of choosing two consecutive, non-empty, special substrings of S, and swapping them. (Two strings are consecutive if the last character of the first string is exactly one index before the first character of the second string.)
+    
+Given a special string S, a move consists of choosing two consecutive, non-empty, special substrings of S, and swapping them. 
+(Two strings are consecutive if the last character of the first string is exactly one index before the first character of the 
+second string.)
 
 At the end of any number of moves, what is the lexicographically largest resulting string possible?
 
@@ -18,7 +21,7 @@ S has length at most 50.
 S is guaranteed to be a special binary string as defined above.
 
 Recursion
-Similar as valid pathensis string and number of atoms
+Similar as Valid Parentheses string and number of atoms
 https://leetcode.com/problems/special-binary-string/discuss/113211/Easy-and-Concise-Solution-with-Explanation-C++JavaPython
 https://leetcode.com/problems/special-binary-string/discuss/113212/Think-of-it-as-Valid-Parentheses
 class Solution {
