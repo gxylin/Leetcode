@@ -74,3 +74,52 @@ class Solution {
         }
     }
 }
+
+
+class Solution {
+    public boolean pyramidTransition(String bottom, List<String> allowed) {
+        Map<String, Set<String>> map = new HashMap<>();
+        for (String s : allowed){
+            String key = s.substring(0, 2);
+            String val = s.substring(2);
+            if (!map.containsKey(key)){
+                map.put(key, new HashSet<>());
+            }
+            map.get(key).add(val);
+        }
+        
+        return dfs(bottom, map);
+    }
+    private boolean dfs(String target,  Map<String, Set<String>> map){
+        if (target.length() == 1){
+            return true;
+        }
+        for (int i = 0; i < target.length() - 1; i++){
+            String sub = target.substring(i, i+2);
+            if (!map.containsKey(sub)){
+                return false;
+            } 
+        }
+        StringBuilder sb = new StringBuilder();
+        List<String> list = new ArrayList<>();
+        backtrack(list, sb, map, target, 0);
+        for (String str : list){
+            if (dfs(str, map)){
+                return true;
+            }
+        }
+        return false;
+    }
+    private void backtrack(List<String> list, StringBuilder sb, Map<String, Set<String>> map, String target, int start){
+        if (sb.length() == target.length() - 1){
+            list.add(sb.toString());
+            return;
+        }
+        Set<String> set = map.get(target.substring(start, start+2));
+        for (String key : set){
+            sb.append(key);
+            backtrack(list, sb, map, target, start+1);
+            sb.deleteCharAt(sb.length() - 1);
+        }
+    }
+}
