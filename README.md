@@ -772,8 +772,8 @@ Solution for Leetcode/Lintcode
 |761   |892  |[Surface Area of 3D Shapes](Java/892_Surface.java)|Easy|Java|Leetcode|
 |762   |889  |[Construct Binary Tree from Preorder and Postorder Traversal](Java/889_Construct.java)|Medium|Java|Leetcode|
 |763   |818  |[Race Car](Java/818_Race.java)|Hard|Java|Leetcode|
-|764   |847  |[Shortest Path Visiting All Nodes BFS Classic](Java/847_Shortest.java)|Hard|Java|Leetcode|
-|765   |864  |[Shortest Path to Get All Keys BFS Classic](Java/864_Shortest.java)|Hard|Java|Leetcode|
+|764   |847  |[Shortest Path Visiting All Nodes BFS Bit Mask Avoid Repeating Route](Java/847_Shortest.java)|Hard|Java|Leetcode|
+|765   |864  |[Shortest Path to Get All Keys BFS Bit Mask Avoid Repeating Route](Java/864_Shortest.java)|Hard|Java|Leetcode|
 |766   |896  |[Monotonic Array](Java/896_Monotonic.java)|Easy|Java|Leetcode|
 |767   |853  |[Car Fleet](Java/853_Car.java)|Medium|Java|Leetcode|
 |768   |897  |[Increasing Order Search Tree](Java/897_Increasing.java)|Easy|Java|Leetcode|
