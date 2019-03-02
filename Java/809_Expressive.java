@@ -61,3 +61,49 @@ class Solution {
         return true;
     }
 }
+
+
+class Solution {
+    public int expressiveWords(String S, String[] words) {
+        int ans = 0;
+        for (String word : words){
+            if (isExtended(S, word)){
+                ans++;
+            }
+        }
+        return ans;
+    }
+    private boolean isExtended(String S, String word){
+        int i = 0;
+        int j = 0;
+        int iStart = 0;
+        int jStart = 0;
+        while (i < S.length() && j < word.length()){
+            if (S.charAt(iStart) != word.charAt(jStart)){
+                return false;
+            }
+            i = iStart + 1;
+            while (i < S.length() && S.charAt(i) == S.charAt(i-1)){
+                i++;
+            }
+            j = jStart + 1;
+            while (j < word.length() && word.charAt(j) == word.charAt(j-1)){
+                j++;
+            }
+            int iDiff = i - iStart;
+            int jDiff = j - jStart;
+            if (jDiff > iDiff){
+                return false;
+            }
+            if (jDiff < iDiff && iDiff < 3){
+                return false;
+            }
+            iStart = i;
+            jStart = j;
+        }
+        if ((i < S.length()) ^ (j < word.length())){
+            return false;
+        }
+        return true;
+    }
+}
