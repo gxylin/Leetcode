@@ -4,7 +4,8 @@ Your car drives automatically according to a sequence of instructions A (acceler
 
 When you get an instruction "A", your car does the following: position += speed, speed *= 2.
 
-When you get an instruction "R", your car does the following: if your speed is positive then speed = -1 , otherwise speed = 1.  (Your position stays the same.)
+When you get an instruction "R", your car does the following: if your speed is positive then speed = -1 , otherwise speed = 1. 
+ (Your position stays the same.)
 
 For example, after commands "AAR", your car goes to positions 0->1->3->3, and your speed goes to 1->2->4->-1.
 
