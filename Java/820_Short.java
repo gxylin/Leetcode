@@ -17,7 +17,7 @@ Note:
 1 <= words[i].length <= 7.
 Each word has only lowercase letters.
 
-Method 1: Trie
+Method 1: Trie Best solution
 class Solution {
     class TrieNode {
         TrieNode[] children;
