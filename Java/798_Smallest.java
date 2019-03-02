@@ -57,4 +57,40 @@ class Solution {
 }
 
 Method 2: O(n)
-https://leetcode.com/problems/smallest-rotation-with-highest-score/discuss/118725/Easy-and-Concise-5-lines-Solution-C++JavaPython?page=3
+https://leetcode.com/problems/smallest-rotation-with-highest-score/discuss/118725/C%2B%2BJavaPython-Solution-with-Explanation
+ Key note: Don't calculate the absolute score, we can calculate the relative score compared to K = 0
+
+ Get point
+Each time when we rotate, we make index 0 to index N-1, then we get one more point.
+We know that for sure, so I don't need to record it.
+
+Lose point
+(i - A[i] + N) % N is the value of K making A[i]'s index just equal to A[i].
+For example, If A[6] = 1, then K = (6 - A[6]) % 6 = 5 making A[6] to index 1 of new array.
+So when K=5, we get this point for A[6]
+Then if K is bigger when K = (i - A[i] + 1) % N, we start to lose this point, making our score -= 1
+All I have done is record the value of K for all A[i] where we will lose points.
+
+A[i]=0
+Rotation makes no change for it, becasue we alwars have 0 <= index.
+However, it is covered in "get point" and "lose point".
+                                                                                                          
+                                                                                                          
+ class Solution {
+    public int bestRotation(int[] A) {
+        int n = A.length;
+        int[] loss = new int[n];
+        for (int i = 0; i < n; i++){
+            loss[(i-A[i]+n+1)%n] -= 1;
+        }
+        int max_i = 0;
+        for (int i = 1; i < n; i++){
+            loss[i] += loss[i-1] + 1;
+            if (loss[i] > loss[max_i]){
+                max_i = i;
+            }
+        }
+        return max_i;
+    }
+}
+                                                                                                          
