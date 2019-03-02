@@ -763,7 +763,7 @@ Solution for Leetcode/Lintcode
 |752   |809  |[Expressive Words](Java/809_Expressive.java)|Medium|Java|Leetcode|
 |753   |810  |[Chalkboard XOR Game](Java/810_Chalkboard.java)|Hard|Java|Leetcode|
 |754   |816  |[Ambiguous Coordinates Left and Right Very Good](Java/816_Ambiguous.java)|Medium|Java|Leetcode|
-|755   |820  |[Short Encoding of Words Trie](Java/820_Short.java)|Medium|Java|Leetcode|
+|755   |820  |[Short Encoding of Words Trie Very Good](Java/820_Short.java)|Medium|Java|Leetcode|
 |756   |831  |[Masking Personal Information](Java/831_Masking.java)|Medium|Java|Leetcode|
 |757   |822  |[Card Flipping Game](Java/822_Card.java)|Medium|Java|Leetcode|
 |758   |893  |[Groups of Special-Equivalent Strings Compare two HashMap](Java/893_Groups.java)|Easy|Java|Leetcode|
