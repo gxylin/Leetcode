@@ -766,7 +766,7 @@ Solution for Leetcode/Lintcode
 |755   |820  |[Short Encoding of Words Trie Very Good](Java/820_Short.java)|Medium|Java|Leetcode|
 |756   |831  |[Masking Personal Information](Java/831_Masking.java)|Medium|Java|Leetcode|
 |757   |822  |[Card Flipping Game](Java/822_Card.java)|Medium|Java|Leetcode|
-|758   |893  |[Groups of Special-Equivalent Strings Compare two HashMap](Java/893_Groups.java)|Easy|Java|Leetcode|
+|758   |893  |[Groups of Special-Equivalent Strings Compare two HashMap Very Good](Java/893_Groups.java)|Easy|Java|Leetcode|
 |759   |837  |[New 21 Game Dynamic Programming](Java/837_New.java)|Medium|Java|Leetcode|
 |760   |839  |[Similar String Groups Union Find](Java/839_Similar.java)|Hard|Java|Leetcode|
 |761   |892  |[Surface Area of 3D Shapes](Java/892_Surface.java)|Easy|Java|Leetcode|
