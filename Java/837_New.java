@@ -27,6 +27,27 @@ Answers will be accepted as correct if they are within 10^-5 of the correct answ
 The judging time limit has been reduced for this question.
 
 Method: DP + Sliding window
+https://leetcode.com/problems/new-21-game/discuss/132334/One-Pass-DP-O(N)
+ When the game ends, the point is between K and K-1+W
+    What is the probability that the the point is less than N?
+    - If N is greater than K-1+W, probability is 1
+    - If N is less than K, probability is 0
+    
+    If W == 3 and we want to find the probability to get a 5
+    - You can get a card with value 1, 2, or 3 with equal probability (1/3)
+    - If you had a 4 and you get a 1: prob(4) * (1/3)
+    - If you had a 3 and you get a 2: prob(3) * (1/3)
+    - If you had a 2 and you get a 3: prob(2) * (1/3)
+    - If you had a 1, you can never reach a 5 in the next draw
+    - prob(5) = prob(4) / 3 + prob(3) / 3 + prob(2) /3
+    
+    To generalize:
+    The probability to get point K is
+    p(K) = p(K-1) / W + p(K-2) / W + p(K-3) / W + ... p(K-W) / W
+    
+    let wsum = p(K-1) + p(K-2) + ... + p(K-W)
+    p(K) = wsum / W
+    
 class Solution {
     public double new21Game(int N, int K, int W) {
         if (K == 0){
