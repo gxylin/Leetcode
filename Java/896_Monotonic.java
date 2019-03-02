@@ -74,6 +74,18 @@ class Solution {
         return increase || decrease;
     }
 }
+class Solution {
+    public boolean isMonotonic(int[] A) {
+        boolean inc = true;
+        boolean dec = true;
+        for (int i = 1; i < A.length; i++){
+            inc = inc && (A[i] >= A[i-1]);
+            dec = dec && (A[i] <= A[i-1]);
+            
+        }
+        return inc || dec;
+    }
+}
 
 Method 2: two pass
 class Solution {
