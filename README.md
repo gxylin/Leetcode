@@ -941,3 +941,4 @@ Solution for Leetcode/Lintcode
 |XXX   |XXX  |[Merge Sort Template](Java/mergeSort.java)|
 |929   |365  |[Water and Jug GCD(greater common divisor)](Java/365_Water.java)|Medium|Java|Leetcode
 |930   |1002 |[Find Common Characters](Java/1002_Find.java)|Easy|Java|Leetcode|
+|931   |1003 |[Check If Word Is Valid After Substitutions](Java/1003_Check.java)|Medium|Java|Leetcode|
