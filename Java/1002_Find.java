@@ -38,3 +38,30 @@ class Solution {
         return res;
     }
 }
+
+
+Better version:
+class Solution {
+    public List<String> commonChars(String[] A) {
+        int[] minCount = new int[26];
+        for (int i = 0; i < 26; i++){
+            minCount[i] = Integer.MAX_VALUE;
+        }
+        for (String str : A){
+            int[] hash = new int[26];
+            for (char c : str.toCharArray()){
+                hash[c - 'a']++;
+            }
+            for (int i = 0; i < 26; i++){
+                minCount[i] = Math.min(minCount[i], hash[i]);
+            }
+        }
+        List<String> res = new ArrayList<>();
+        for (int i = 0; i < 26; i++){
+            for (int j = 0; j < minCount[i]; j++){
+                res.add(String.valueOf((char)(i+'a')));
+            }
+        }
+        return res;
+    }
+}
