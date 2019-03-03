@@ -50,3 +50,39 @@ class Solution {
         return res;
     }
 }
+
+
+class Solution {
+    class Car {
+        int pos;
+        double time;
+        public Car (int pos, double time){
+            this.pos = pos;
+            this.time = time;
+        }
+    }
+    public int carFleet(int target, int[] position, int[] speed) {
+        int n = position.length;
+        if (n == 0){
+            return 0;
+        }
+        Car[] cars = new Car[n];
+        for (int i = 0; i < n; i++){
+            cars[i] = new Car(position[i], (double)(target - position[i]) / speed[i]);
+        }
+        Arrays.sort(cars, new Comparator<Car>(){
+            public int compare (Car car1, Car car2){
+                return car2.pos - car1.pos;
+            }
+        });
+        int res = 0;
+        double curr = 0.0;
+        for (int i = 0; i < n; i++){
+            if (cars[i].time > curr){
+                res++;
+                curr = cars[i].time;
+            }
+        }
+        return res;
+    }
+}
