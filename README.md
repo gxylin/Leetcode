@@ -940,3 +940,4 @@ Solution for Leetcode/Lintcode
 |928   |658  |[Find K Closest Elements](Java/658_Find.java)|Medium|Java|Leetcode|
 |XXX   |XXX  |[Merge Sort Template](Java/mergeSort.java)|
 |929   |365  |[Water and Jug GCD(greater common divisor)](Java/365_Water.java)|Medium|Java|Leetcode
+|930   |1002 |[Find Common Characters](Java/1002_Find.java)|Easy|Java|Leetcode|
