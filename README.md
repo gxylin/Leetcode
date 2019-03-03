@@ -777,7 +777,7 @@ Solution for Leetcode/Lintcode
 |766   |896  |[Monotonic Array](Java/896_Monotonic.java)|Easy|Java|Leetcode|
 |767   |853  |[Car Fleet](Java/853_Car.java)|Medium|Java|Leetcode|
 |768   |897  |[Increasing Order Search Tree](Java/897_Increasing.java)|Easy|Java|Leetcode|
-|769   |873  |[Length of Longest Fibonacci Subsequence Dynamic Programming](Java/873_Length.java)|Medium|Java|Leetcode|
+|769   |873  |[Length of Longest Fibonacci Subsequence 2D LIS Very GOod](Java/873_Length.java)|Medium|Java|Leetcode|
 |770   |854  |[K-Similar Strings Classic BFS](Java/854_Similar.java)|Hard|Java|Leetcode|
 |771   |857  |[Minimum Cost to Hire K Workers](Java/857_Minimum.java)|Hard|Java|Leetcode|
 |772   |874  |[Walking Robot Simulation](Java/874_Walking.java)|Easy|Java|Leetcode|
