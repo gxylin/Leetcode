@@ -82,3 +82,34 @@ class Solution {
         return res >= 3 ? res : 0;
     }
 }
+
+
+Best:
+dp[i][j] represents the length of longest sequence which ends with A[i] and A[j].
+class Solution {
+    public int lenLongestFibSubseq(int[] A) {
+        int N = A.length;
+        int[][] dp = new int[N][N];
+        Map<Integer, Integer> pos = new HashMap<>();
+        for (int i = 0; i < N; i++){
+            Arrays.fill(dp[i], 2);
+            pos.put(A[i], i);
+        }
+        int max = 2;
+        for (int j = 0; j < N; j++){
+            for (int i = 0; i < j; i++){
+                int first = A[j] - A[i];
+                if (first >= A[i]){
+                    continue;
+                }
+                if (!pos.containsKey(first)){
+                    continue;
+                }
+                int index = pos.get(first);
+                dp[i][j] = dp[index][i] + 1;
+                max = Math.max(max, dp[i][j]);
+            }
+        }
+        return max == 2 ? 0 : max;
+    }
+}
