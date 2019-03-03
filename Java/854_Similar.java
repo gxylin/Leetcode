@@ -25,7 +25,10 @@ Note:
 A and B contain only lowercase letters from the set {'a', 'b', 'c', 'd', 'e', 'f'}
 
 Classic BFS: swap only pair at every step and use bfs to guaranteee shortest path
-Method: BFS
+find the first mismatch character at j , then find the second one at k, only swap when 
+curr.charAt(k) == B.charAt(j) && curr.charAt(k) != B.charAt(k)
+
+Method 1: BFS
 class Solution {
     public int kSimilarity(String A, String B) {
         Queue<String> queue = new LinkedList<>();
@@ -45,7 +48,7 @@ class Solution {
                     j++;
                 }
                 for (int k = j + 1; k < curr.length(); k++){
-                    if (curr.charAt(k) == B.charAt(j) && curr.charAt(k) != B.charAt(k)){
+                    if (curr.charAt(k) == B.charAt(j) && curr.charAt(k) != B.charAt(k)){//this is the key
                         String next = swap(curr, j, k);//return string to ensure that curr won't change
                         if (!seen.contains(next)){
                             queue.offer(next);
@@ -64,5 +67,44 @@ class Solution {
         arr[j] = arr[k];
         arr[k] = temp;
         return new String(arr);
+    }
+}
+
+Method 2: DFS + memo
+class Solution {
+    public int kSimilarity(String A, String B) {
+        Map<String, Integer> memo = new HashMap<>();
+        return minStep(A.toCharArray(), B, memo, 0);
+    }
+    private int minStep(char[] A, String B, Map<String, Integer> memo, int i){
+        String sa = new String(A);
+        if (sa.equals(B)){
+            return 0;
+        }
+        if (memo.containsKey(sa)){
+            return memo.get(sa);
+        }
+        
+        while (i < sa.length() && A[i] == B.charAt(i)){
+            i++;
+        }
+        int min = Integer.MAX_VALUE;
+        for (int j = i + 1; j < sa.length(); j++){
+            if (sa.charAt(j) == B.charAt(i)&& sa.charAt(j) != B.charAt(j)){
+                swap(A, i, j);
+                int next = minStep(A, B, memo, i+1);
+                if (next != Integer.MAX_VALUE){
+                    min = Math.min(min, next + 1);
+                }
+                swap(A, i, j);
+            }
+        }
+        memo.put(sa, min);
+        return min;
+    }
+     private void swap(char[] cs, int i, int j) {
+        char temp = cs[i];
+        cs[i] = cs[j];
+        cs[j] = temp;
     }
 }
