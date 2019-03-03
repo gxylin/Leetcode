@@ -68,15 +68,8 @@ class Solution {
 }
 
 Best solution:
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+
+ 
 class Solution {
     public TreeNode increasingBST(TreeNode root) {
         return dfs(root, null);
@@ -93,35 +86,27 @@ class Solution {
 }
 
 Iteration: based on inorder traversal template
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+
 class Solution {
     public TreeNode increasingBST(TreeNode root) {
         Stack<TreeNode> stack = new Stack<>();
-        TreeNode curr = root;
+        TreeNode node = root;
         TreeNode newRoot = null;
         TreeNode prev = null;
-        while (curr != null || !stack.isEmpty()){
-            while (curr != null){
-                stack.push(curr);
-                curr = curr.left;
+        while (node != null || !stack.isEmpty()){
+            while (node != null){
+                stack.push(node);
+                node = node.left;
             }
-            TreeNode node = stack.pop();
+            TreeNode curr = stack.pop();
             if (prev == null){
-                newRoot = node;
+                newRoot = curr;
             }else{
-                prev.right = node;
+                prev.right = curr;
             }
-            node.left = null;
-            prev = node;
-            curr = node.right;
+            curr.left = null;
+            prev = curr;
+            node = curr.right;
         }
         return newRoot;
     }
