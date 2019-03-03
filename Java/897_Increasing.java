@@ -67,3 +67,62 @@ class Solution {
     }
 }
 
+Best solution:
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public TreeNode increasingBST(TreeNode root) {
+        return dfs(root, null);
+    }
+    private TreeNode dfs(TreeNode root, TreeNode tail){
+        if (root == null){
+            return tail;
+        }
+        TreeNode res = dfs(root.left, root);
+        root.left = null;
+        root.right = dfs(root.right, tail);
+        return res;
+    }
+}
+
+Iteration: based on inorder traversal template
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public TreeNode increasingBST(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode curr = root;
+        TreeNode newRoot = null;
+        TreeNode prev = null;
+        while (curr != null || !stack.isEmpty()){
+            while (curr != null){
+                stack.push(curr);
+                curr = curr.left;
+            }
+            TreeNode node = stack.pop();
+            if (prev == null){
+                newRoot = node;
+            }else{
+                prev.right = node;
+            }
+            node.left = null;
+            prev = node;
+            curr = node.right;
+        }
+        return newRoot;
+    }
+}
