@@ -90,7 +90,7 @@ class Solution {
     public int lenLongestFibSubseq(int[] A) {
         int N = A.length;
         int[][] dp = new int[N][N];
-        Map<Integer, Integer> pos = new HashMap<>();
+        Map<Integer, Integer> pos = new HashMap<>(); // to reduce one dimension loop
         for (int i = 0; i < N; i++){
             Arrays.fill(dp[i], 2);
             pos.put(A[i], i);
