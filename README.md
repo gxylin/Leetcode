@@ -782,9 +782,9 @@ Solution for Leetcode/Lintcode
 |771   |857  |[Minimum Cost to Hire K Workers](Java/857_Minimum.java)|Hard|Java|Leetcode|
 |772   |874  |[Walking Robot Simulation](Java/874_Walking.java)|Easy|Java|Leetcode|
 |773   |875  |[Koko Eating Bananas Binary Search](Java/875_Koko.java)|Medium|Java|Leetcode|
-|774   |871  |[Minimum Number of Refueling Stops Dynamic Programming Heap](Java/871_Minimum.java)|Hard|Java|Leetcode|
-|775   |877  |[Stone Game](Java/877_Stone.java)|Medium|Java|Leetcode|
-|776   |878  |[Nth Magical Number](Java/878_Nth.java)|Hard|Java|Leetcode|
+|774   |871  |[Minimum Number of Refueling Stops Dynamic Programming PriorityQueue](Java/871_Minimum.java)|Hard|Java|Leetcode|
+|775   |877  |[Stone Game Dynamic](Java/877_Stone.java)|Medium|Java|Leetcode|
+|776   |878  |[Nth Magical Number GCD LCM Binary Search](Java/878_Nth.java)|Hard|Java|Leetcode|
 |777   |880  |[Decoded String at Index](Java/880_Decoded.java)|Medium|Java|Leetcode|
 |778   |881  |[Boats to Save People](Java/881_Boats.java)|Medium|Java|Leetcode|
 |779   |905  |[Sort Array By Parity](Java/905_Sort.java)|Easy|Java|Leetcode|
