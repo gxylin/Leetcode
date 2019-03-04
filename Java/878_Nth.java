@@ -55,25 +55,18 @@ class Solution {
 }
 
 Method 2: Binary Search
-https://leetcode.com/problems/nth-magical-number/discuss/154613/C++JavaPython-Binary-Search
+https://leetcode.com/problems/nth-magical-number/discuss/154613/C%2B%2BJavaPython-Binary-Search
 Time complexity: O(logN)
 class Solution {
     public int nthMagicalNumber(int N, int A, int B) {
-        //first calculate gcd and lcm
-        long a = A;
-        long b = B;
-        while (b > 0){
-            long tmp = a;
-            a = b;
-            b = tmp % a;
-        }
-        long gcd = a;
+        //first calculate gcd (greatest common divisor) and lcm (least common multiple)
+        long gcd = gcdLong(A, B);
         long lcm = (A * B) / gcd;
         long low = Math.min(A, B);
         long high = N * low;
         while (low <= high){
             long mid = low + (high - low) / 2;
-            long numOfMagicNum = mid / A + mid / B - mid / lcm; // method to calculate number of magic number
+            long numOfMagicNum = mid / A + mid / B - mid / lcm; // method to calculate number of magic number: Inclusion exclusion principle. 
             if (numOfMagicNum >= N){
                 high = mid - 1;
             }else{
@@ -83,4 +76,11 @@ class Solution {
         long mod = (long)1e9 + 7;
         return (int)(low % mod);
     }
+    private long gcdLong (long a, long b){
+        if (b == 0){
+           return a;
+        }
+        return gcd(b, a%b);
+    }
 }
+
