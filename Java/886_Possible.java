@@ -84,6 +84,7 @@ class Solution {
 }
 
 
+Better version: the same as https://github.com/optimisea/Leetcode/blob/master/Java/785_Is.java
 class Solution {
     public boolean possibleBipartition(int N, int[][] dislikes) {
         Map<Integer, Set<Integer>> map = new HashMap<>();
