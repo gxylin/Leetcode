@@ -54,6 +54,8 @@ class Solution {
 
 
 Method 2: Best solution
+Iterate through the array, each time all elements to the left are smaller (or equal) to all elements to the right,
+there is a new chunck.
 Time complexity: O(n)
 Space complexity: O(n)
 https://leetcode.com/problems/max-chunks-to-make-sorted-ii/discuss/113462/Java-solution-left-max-and-right-min.
