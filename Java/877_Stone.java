@@ -1,8 +1,10 @@
-Alex and Lee play a game with piles of stones.  There are an even number of piles arranged in a row, and each pile has a positive integer number of stones piles[i].
+Alex and Lee play a game with piles of stones.  There are an even number of piles arranged in a row, and each pile has a positive 
+integer number of stones piles[i].
 
 The objective of the game is to end with the most stones.  The total number of stones is odd, so there are no ties.
 
-Alex and Lee take turns, with Alex starting first.  Each turn, a player takes the entire pile of stones from either the beginning or the end of the row.  This continues until there are no more piles left, at which point the person with the most stones wins.
+Alex and Lee take turns, with Alex starting first.  Each turn, a player takes the entire pile of stones from either the beginning
+or the end of the row.  This continues until there are no more piles left, at which point the person with the most stones wins.
 
 Assuming Alex and Lee play optimally, return True if and only if Alex wins the game.
 
@@ -45,3 +47,31 @@ class Solution {
     }
 }
 
+The same as Leetcode 486 Predict the winner
+https://github.com/optimisea/Leetcode/blob/master/Java/486_Predict.java
+
+class Solution {
+    public boolean stoneGame(int[] piles) {
+        int N = piles.length;
+        int[][] cache = new int[N][N];
+        for (int i = 0; i < N; i++){
+            Arrays.fill(cache[i], -1);
+        }
+        return maxRelativeStone(piles, 0, N-1, cache) >= 0;
+    }
+    private int maxRelativeStone(int[] piles, int start, int end, int[][] cache){
+        if (cache[start][end] != -1){
+            return cache[start][end];
+        }
+        if (start > end){
+            return 0;
+        }
+        if (start == end){
+            return piles[start];
+        }
+        int chooseFront = piles[start] - maxRelativeStone(piles, start+1, end, cache);
+        int chooseEnd = piles[end] - maxRelativeStone(piles, start, end-1, cache);
+        cache[start][end] = Math.max(chooseFront, chooseEnd);
+        return cache[start][end];
+    }
+}
