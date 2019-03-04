@@ -127,3 +127,38 @@ class Solution {
     }
 }
 
+class Solution {
+    public int robotSim(int[] commands, int[][] obstacles) {
+        Set<String> set = new HashSet<>();
+        for (int[] o : obstacles){
+            set.add(o[0] + ":" + o[1]);
+        }
+        int x = 0;
+        int y = 0;
+        int[][] dirs = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+        int max = 0;
+        int d = 0;
+        for (int c : commands){
+            if (c == -1){
+                d = (d + 1) % 4;
+            }else if (c == -2){
+                d = (d + 3) %4;
+            }else{
+                int[] dir = dirs[d];
+                int nx = x + dir[0];
+                int ny = y + dir[1];
+                String key = nx + ":" + ny;
+                while (c > 0 && !set.contains(key)){
+                    x += dir[0];
+                    y += dir[1];
+                    c--;
+                    nx = x + dir[0];
+                    ny = y + dir[1];
+                    key = nx + ":" + ny;
+                }
+            }
+            max = Math.max(max, x * x + y * y);
+        }
+        return max;
+    }
+}
