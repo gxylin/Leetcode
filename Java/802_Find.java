@@ -56,19 +56,19 @@ class Solution {
         int n = graph.length;
         int[] colors = new int[n];
         for (int i = 0; i < n; i++){
-            if (dfs(graph, colors, i)){//the visited node is eventually safe if it is true
+            if (isSafe(graph, colors, i)){//the visited node is eventually safe if it is true
                 res.add(i);
             }
         }
         return res;
     }
-    private boolean dfs(int[][] graph, int[] colors, int start){
+    private boolean isSafe(int[][] graph, int[] colors, int start){
         if (colors[start] > 0){
             return colors[start] == 2;
         }
         colors[start] = 1;
         for (int nei : graph[start]){
-            if (!dfs(graph, colors, nei)){
+            if (!isSafe(graph, colors, nei)){
                 return false;
             }
         }
