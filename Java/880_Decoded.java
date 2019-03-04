@@ -36,6 +36,10 @@ S starts with a letter.
 The decoded string is guaranteed to have less than 2^63 letters.
 
 
+ https://leetcode.com/problems/decoded-string-at-index/discuss/156747/C%2B%2BPython-O(N)-Time-O(1)-Space
+If it's S[i] = d is a digit, then N = N / d before repeat and K = K % N is what we want.
+If it's S[i] = c is a character, we return c if K == 0 or K == N
+ 
 class Solution {
     public String decodeAtIndex(String S, int K) {
         long N = 0L;
