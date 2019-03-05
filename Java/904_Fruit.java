@@ -134,3 +134,33 @@ class Solution {
         return res;
     }
 }
+
+
+Best solution from template (sliding window)
+ Find the longest subarray with at most two different numbers
+ class Solution {
+    public int totalFruit(int[] tree) {
+        Map<Integer, Integer> map = new HashMap<>();
+        int res = 0;
+        int start = 0;
+        int end = 0;
+        int k = 2;
+        int count = 0;
+        while (end < tree.length){
+            map.put(tree[end], map.getOrDefault(tree[end], 0) + 1);
+            if (map.get(tree[end]) == 1){
+                count++;
+            }
+            end++;
+            while (count > k){
+                if (map.get(tree[start]) == 1){
+                    count--;
+                }
+                map.put(tree[start], map.get(tree[start]) - 1);
+                start++;
+            }
+            res = Math.max(res, end - start);
+        }
+        return res;
+    }
+}
