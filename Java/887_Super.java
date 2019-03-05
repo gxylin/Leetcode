@@ -2,7 +2,8 @@ You are given K eggs, and you have access to a building with N floors from 1 to 
 
 Each egg is identical in function, and if an egg breaks, you cannot drop it again.
 
-You know that there exists a floor F with 0 <= F <= N such that any egg dropped at a floor higher than F will break, and any egg dropped at or below floor F will not break.
+You know that there exists a floor F with 0 <= F <= N such that any egg dropped at a floor higher than F will break, and any egg 
+dropped at or below floor F will not break.
 
 Each move, you may take an egg (if you have an unbroken one) and drop it from any floor X (with 1 <= X <= N). 
 
@@ -40,10 +41,39 @@ Note:
 
 Method 1: DP + Bruce Force
 Time complexity: O(KN^2)
+https://algorithms.tutorialhorizon.com/dynamic-programming-egg-dropping-problem/
+class Solution {
+    public int superEggDrop(int K, int N) {
+        int[][] cache = new int[K+1][N+1];
+        for (int i = 0; i <= K; i++){
+            Arrays.fill(cache[i], -1);
+        }
+        return minNum(K, N, cache);
+    }
+    private int minNum(int K, int N, int[][] cache){
+        if (cache[K][N] != -1){
+            return cache[K][N];
+        }
+        if (K == 1 || N <= 1){
+            return N;
+        }
+        int min = Integer.MAX_VALUE;
+        for (int i = 1; i <= N; i++){
+            int eggBreak = minNum(K-1, i-1, cache);
+            int notBreak = minNum(K, N-i, cache);
+            min = Math.min(min, Math.max(eggBreak, notBreak) + 1);
+        }
+        cache[K][N] = min;
+        return min;
+    }
+}
+
+
 
 Method 2: DP + binary search
 Time complexity: O(KNlogN)
 https://leetcode.com/problems/super-egg-drop/solution/
+https://leetcode.com/problems/super-egg-drop/discuss/159055/Java-DP-solution-from-O(KN2)-to-O(KNlogN)
 
 Method 3: DP
 Time complexity: KLogN
