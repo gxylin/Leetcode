@@ -92,4 +92,5 @@ class Solution {
     }
 }
 
+https://leetcode.com/problems/spiral-matrix-iii/discuss/158970/C%2B%2BJavaPython-112233-Steps
 
