@@ -791,7 +791,7 @@ Solution for Leetcode/Lintcode
 |780   |890  |[Find and Replace Pattern](Java/890_Find.java)|Medium|Java|Leetcode|
 |781   |886  |[Possible Bipartition DFS Color](Java/886_Possible.java)|Medium|Java|Leetcode|
 |782   |879  |[Profitable Schemes knapsack](Java/879_Profitable.java)|Hard|Java|Leetcode|
-|783   |894  |[All Possible Full Binary Trees Recursion](Java/894_All.java)|Medium|Java|Leetcode|
+|783   |894  |[All Possible Full Binary Trees Recursion Memo](Java/894_All.java)|Medium|Java|Leetcode|
 |784   |895  |[Maximum Frequency Stack Very Good LFU](Java/895_Maximum.java)|Hard|Java|Leetcode|
 |785   |898  |[Bitwise ORs of Subarrays](Java/898_Bitwise.java)|Medium|Java|Leetcode|
 |786   |904  |[Fruit Into Baskets Sliding Window](Java/904_Fruit.java)|Medium|Java|Leetcode|
