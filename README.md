@@ -793,7 +793,7 @@ Solution for Leetcode/Lintcode
 |782   |879  |[Profitable Schemes knapsack](Java/879_Profitable.java)|Hard|Java|Leetcode|
 |783   |894  |[All Possible Full Binary Trees Recursion Memo](Java/894_All.java)|Medium|Java|Leetcode|
 |784   |895  |[Maximum Frequency Stack Very Good LFU](Java/895_Maximum.java)|Hard|Java|Leetcode|
-|785   |898  |[Bitwise ORs of Subarrays](Java/898_Bitwise.java)|Medium|Java|Leetcode|
+|785   |898  |[Bitwise ORs of Subarrays HashSet Good](Java/898_Bitwise.java)|Medium|Java|Leetcode|
 |786   |904  |[Fruit Into Baskets Sliding Window](Java/904_Fruit.java)|Medium|Java|Leetcode|
 |787   |885  |[Spiral Matrix III](Java/885_Spiral.java)|Medium|Java|Leetcode|
 |788   |887  |[Super Egg Drop](Java/887_Super.java)|Hard|Java|Leetcode|
