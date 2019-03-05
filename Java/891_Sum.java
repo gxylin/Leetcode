@@ -22,7 +22,8 @@ Note:
 
 1 <= A.length <= 20000
 1 <= A[i] <= 20000
-
+ 
+The order in initial arrays doesn't matter, So sort it.
 
 class Solution {
     public int sumSubseqWidths(int[] A) {
