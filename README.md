@@ -812,7 +812,7 @@ Solution for Leetcode/Lintcode
 |801   |163  |[Missing Ranges](Java/163_Missing.java)|Medium|Java|Leetcode|
 |802   |286  |[Walls and Gates](Java/286_Walls.java)|Medium|Java|Leetcode|
 |803   |288  |[Unique Word Abbreviation](Java/288_Unique.java)|Medium|Java|Leetcode|
-|804   |291  |[Word Pattern II Backtracking](Java/291_Word.java)|Hard|Java|Leetcode|
+|804   |291  |[Word Pattern II Backtracking Very Good](Java/291_Word.java)|Hard|Java|Leetcode|
 |805   |353  |[Design Snake Game](Java/353_Design.java)|Medium|Java|Leetcode|
 |806   |361  |[Bomb Enemy Very Good](Java/361_Bomb.java)|Medium|Java|Leetcode|
 |807   |379  |[Design Phone Directory](Java/379_Design.java)|Medium|Java|Leetcode|
