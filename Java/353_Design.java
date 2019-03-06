@@ -56,8 +56,8 @@ class SnakeGame {
     int height;
     int foodIndex;
     Queue<Integer> queue;
-    int row;
-    int col;
+    int row; //head location
+    int col; //head location
     /** Initialize your data structure here.
         @param width - screen width
         @param height - screen height 
