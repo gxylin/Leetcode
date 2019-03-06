@@ -799,13 +799,13 @@ Solution for Leetcode/Lintcode
 |788   |887  |[Super Egg Drop](Java/887_Super.java)|Hard|Java|Leetcode|
 |789   |900  |[RLE Iterator](Java/900_RLE.java)|Medium|Java|Leetcode|
 |790   |891  |[Sum of Subsequence Widths](Java/891_Sum.java)|Hard|Java|Leetcode|
-|791   |901  |[Online Stock Span Monotonic Stack](Java/901_Online.java)|Medium|Java|Leetcode|
+|791   |901  |[Online Stock Span Monotonic Stack Good](Java/901_Online.java)|Medium|Java|Leetcode|
 |792   |899  |[Orderly Queue](Java/899_Orderly.java)|Hard|Java|Leetcode|
 |793   |903  |[Valid Permutations for DI Sequence Dynamic Programming](Java/903_Valid.java)|Hard|Java|Leetcode|
 |794   |908  |[Smallest Range I](Java/908_Smallest.java)|Easy|Java|Leetcode|
 |795   |910  |[Smallest Range II](Java/910_Smallest.java)|Medium|Java|Leetcode|
 |796   |911  |[Online Election Good](Java/911_Online.java)|Medium|Java|Leetcode|
-|797   |907  |[Sum of Subarray Minimums Dynamic Programming + Monotonic Stack](Java/907_Sum.java)|Hard|Java|Leetcode|
+|797   |907  |[Sum of Subarray Minimums Dynamic Monotonic Stack very Good Must See](Java/907_Sum.java)|Hard|Java|Leetcode|
 |798   |65   |[Valid Number](Java/65_Valid.java)|Hard|Java|Leetcode|
 |799   |37   |[Sudoku Solver Backtracking](Java/37_Sudoku.java)|Hard|Java|Leetcode|
 |800   |126  |[Word ladder II](Java/126_Word.java)|Hard|Java|Leetcode|
