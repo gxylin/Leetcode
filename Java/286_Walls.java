@@ -52,7 +52,7 @@ class Solution {
                     int nx = curr[0] + dir[0];
                     int ny = curr[1] + dir[1];
                     if (nx < m && nx >= 0 && ny < n && ny >= 0 && rooms[nx][ny] != -1 && rooms[nx][ny] != 0){
-                        if (level <= rooms[nx][ny]){
+                        if (level < rooms[nx][ny]){
                             rooms[nx][ny] = level;
                             queue.offer(new int[]{nx, ny});
                         }
