@@ -943,3 +943,4 @@ Solution for Leetcode/Lintcode
 |930   |1002 |[Find Common Characters Very Good](Java/1002_Find.java)|Easy|Java|Leetcode|
 |931   |1003 |[Check If Word Is Valid After Substitutions](Java/1003_Check.java)|Medium|Java|Leetcode|
 |932   |1004 |[Max Consecutive Ones III](Java/1004_Max.java)|Medium|Java|Leetcode|
+|XXX   |XXX  |[Monotonic Stack Template](Java/montonic.java)|
