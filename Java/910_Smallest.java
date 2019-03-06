@@ -30,6 +30,7 @@ Note:
 0 <= K <= 10000
 
 Method 1:
+The same as 
 Add 0 or 2*K
 
 class Solution {
