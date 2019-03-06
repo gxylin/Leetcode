@@ -90,10 +90,8 @@ class TopVotedCandidate {
 
 class TopVotedCandidate {
     TreeMap<Integer, Integer> map;
-    int[] times;
     public TopVotedCandidate(int[] persons, int[] times) {
         map = new TreeMap<>();
-        this.times = times;
         int[] hash = new int[persons.length+1];
         int cand = 0;
         for (int i = 0; i < persons.length; i++){
