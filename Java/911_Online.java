@@ -86,3 +86,35 @@ class TopVotedCandidate {
         return i < 0 ? map.get(times[-i-2]) : map.get(times[i]);
     }
 }
+
+
+class TopVotedCandidate {
+    TreeMap<Integer, Integer> map;
+    int[] times;
+    public TopVotedCandidate(int[] persons, int[] times) {
+        map = new TreeMap<>();
+        this.times = times;
+        int[] hash = new int[persons.length+1];
+        int cand = 0;
+        for (int i = 0; i < persons.length; i++){
+            int time = times[i];
+            int person = persons[i];
+            hash[person]++;
+            if (hash[person] >= hash[cand]){
+                cand = person;
+            }
+            map.put(time, cand);
+        }
+    }
+    
+    public int q(int t) {
+        Integer key = map.floorKey(t);
+        return map.get(key);
+    }
+}
+
+/**
+ * Your TopVotedCandidate object will be instantiated and called as such:
+ * TopVotedCandidate obj = new TopVotedCandidate(persons, times);
+ * int param_1 = obj.q(t);
+ */
