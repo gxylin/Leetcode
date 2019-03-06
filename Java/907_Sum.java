@@ -60,3 +60,47 @@ class Solution {
         return res;
     }
 }
+
+
+Monotonic Stack Template
+https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
+
+Method 3: Monotonic Stack
+Best solution
+class Solution {
+    public int sumSubarrayMins(int[] A) {
+        int mod = (int)1e9 + 7;
+        int n = A.length;
+        // left is for the distance to previous less element
+        // right is for the distance to next less element
+        int[] left = new int[n];
+        int[] right = new int[n];
+        for(int i = 0; i < A.length; i++) {
+            left[i] = i + 1;
+            right[i] = n - i;
+        }
+        Stack<Integer> stack = new Stack<>();
+        // previous less element
+        for (int i = 0; i < n; i++){
+            while (!stack.isEmpty() && A[stack.peek()] > A[i]){
+                stack.pop();
+            }
+            left[i] = stack.isEmpty() ? i + 1 : i - stack.peek();
+            stack.push(i);
+        }
+         //next less element
+        stack = new Stack<>();
+        for (int i = 0; i < n; i++){
+            while (!stack.isEmpty() && A[stack.peek()] > A[i]){
+                int index = stack.pop();
+                right[index] = i - index;
+            }
+            stack.push(i);
+        }
+        int res = 0;
+        for (int i = 0; i < n; i++){
+            res = (res + A[i] * left[i] * right[i]) % mod;
+        }
+        return res;
+    }
+}
