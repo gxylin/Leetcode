@@ -816,7 +816,7 @@ Solution for Leetcode/Lintcode
 |805   |353  |[Design Snake Game](Java/353_Design.java)|Medium|Java|Leetcode|
 |806   |361  |[Bomb Enemy preSum Very Good](Java/361_Bomb.java)|Medium|Java|Leetcode|
 |807   |379  |[Design Phone Directory](Java/379_Design.java)|Medium|Java|Leetcode|
-|808   |302  |[Smallest Rectangle Enclosing Black Pixels Binary Search](Java/302_Smallest.java)|Hard|Java|Leetcode|
+|808   |302  |[Smallest Rectangle Enclosing Black Pixels Binary Search Good](Java/302_Smallest.java)|Hard|Java|Leetcode|
 |809   |487  |[Max Consecutive Ones II](Java/487_Max.java)|Medium|Java|Leetcode|
 |810   |471  |[Encode String with Shortest Length 2D Dynamic Programming](Java/471_Encode.java)|Hard|Java|Leetcode|
 |811   |465  |[Optimal Account Setting](Java/465_Optimal.java)|Hard|Java|Leetcode|
