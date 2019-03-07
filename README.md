@@ -814,7 +814,7 @@ Solution for Leetcode/Lintcode
 |803   |288  |[Unique Word Abbreviation](Java/288_Unique.java)|Medium|Java|Leetcode|
 |804   |291  |[Word Pattern II Backtracking Very Good](Java/291_Word.java)|Hard|Java|Leetcode|
 |805   |353  |[Design Snake Game](Java/353_Design.java)|Medium|Java|Leetcode|
-|806   |361  |[Bomb Enemy Very Good](Java/361_Bomb.java)|Medium|Java|Leetcode|
+|806   |361  |[Bomb Enemy preSum Very Good](Java/361_Bomb.java)|Medium|Java|Leetcode|
 |807   |379  |[Design Phone Directory](Java/379_Design.java)|Medium|Java|Leetcode|
 |808   |302  |[Smallest Rectangle Enclosing Black Pixels Binary Search](Java/302_Smallest.java)|Hard|Java|Leetcode|
 |809   |487  |[Max Consecutive Ones II](Java/487_Max.java)|Medium|Java|Leetcode|
