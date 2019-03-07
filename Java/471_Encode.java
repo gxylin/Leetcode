@@ -6,7 +6,8 @@ Note:
 
     k will be a positive integer and encoded string will not be empty or have extra space.
     You may assume that the input string contains only lowercase English letters. The string's length is at most 160.
-    If an encoding process does not make the string shorter, then do not encode it. If there are several solutions, return any of them is fine.
+    If an encoding process does not make the string shorter, then do not encode it. If there are several solutions,
+return any of them is fine.
 
 Example 1:
 
@@ -60,7 +61,7 @@ class Solution {
                     dp[i][j] = substr;
                 }else{
                     dp[i][j] = substr;
-                     // Loop for trying all results that we get after dividing the strings into 2 and combine the   results of 2 substrings
+                    //Loop for trying all results that we get after dividing the strings into 2 and combine the results of 2 substrings
                     for (int k = i; k < j; k++){
                         if ((dp[i][k] + dp[k+1][j]).length() < dp[i][j].length()){
                             dp[i][j] = dp[i][k] + dp[k+1][j];
