@@ -20,6 +20,10 @@ Input: s = "aaadbbcc", k = 2
 Output: "abacabcd"
 Explanation: The same letters are at least distance 2 from each other.
 
+The same as Reorganize String
+https://github.com/optimisea/Leetcode/blob/master/Java/767_Reorganize.java
+
+
 Method 1: PQ + Greedy
 Time complexity: O(N*logN) N is the s.length()
 class Solution {
