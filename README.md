@@ -827,7 +827,7 @@ Solution for Leetcode/Lintcode
 |816   |755  |[Pour Water Two points](Java/755_Pour.java)|Medium|Java|Leetcode|
 |817   |656  |[Coin Path LIS DP + Record Path Very Good](Java/656_Coin.java)|Hard|Java|Leetcode|
 |818   |317  |[Shortest Distance from All Buildings BFS](Java/317_Shortest.java)|Hard|Java|Leetcode|
-|819   |358  |[Rearrange String k Distance Apart](Java/358_Rearrange.java)|Hard|Java|Leetcode|
+|819   |358  |[Rearrange String k Distance Apart Very Good](Java/358_Rearrange.java)|Hard|Java|Leetcode|
 |820   |634  |[Find the Derangement of An Array](Java/634_Find.java)|Medium|Java|Leetcode|
 |821   |356  |[Line Reflection](Java/356_Line.java)|Medium|Java|Leetcode|
 |822   |625  |[Minimum Factorization](Java/625_Minimum.java)|Medium|Java|Leetcode|
