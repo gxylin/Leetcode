@@ -823,7 +823,7 @@ Solution for Leetcode/Lintcode
 |812   |489  |[Robot clean room](Java/489_Robot.java)|Hard|Java|Leetcode|
 |813   |555  |[Split Concatenated Strings Good](Java/555_Split.java)|Medium|Java|Leetcode|
 |814   |157  |[Read N Characters Given Read4](Java/157_Read.java)|Easy|Java|Leetcode|
-|815   |666  |[Path Sum IV](Java/666_Path.java)|Medium|Java|Leetcode|
+|815   |666  |[Path Sum IV Very Good](Java/666_Path.java)|Medium|Java|Leetcode|
 |816   |755  |[Pour Water Two points](Java/755_Pour.java)|Medium|Java|Leetcode|
 |817   |656  |[Coin Path](Java/656_Coin.java)|Hard|Java|Leetcode|
 |818   |317  |[Shortest Distance from All Buildings BFS](Java/317_Shortest.java)|Hard|Java|Leetcode|
