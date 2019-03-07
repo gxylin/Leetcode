@@ -30,7 +30,7 @@ public int read(char[] buf, int n) {
     // check if it's the end of the file
     eof = count < 4;
     
-    // get the actual count
+    // get the actual needed count to put into buf
     count = Math.min(count, n - total);
     
     // copy from temp buffer to buf
