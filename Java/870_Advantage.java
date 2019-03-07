@@ -20,7 +20,8 @@ Note:
 0 <= A[i] <= 10^9
 0 <= B[i] <= 10^9
 
-
+Note that Time complexity: treemap remove operation: O(logn)
+                    priority queue remove operation: O(n)
 Method 1: TreeMap Best solution
 Time complexity: O(nlogn)
 Space complexity: O(n)
