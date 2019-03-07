@@ -81,7 +81,7 @@ class Solution {
 }
 
 Method 2: 
-Time complexity: O(mn)
+Time complexity: O(mn * factor)), worst case could be O(mn * (m or n))
 Space complexity: O(n)
 http://www.cnblogs.com/grandyang/p/5599289.html
 public int maxKilledEnemies(char[][] grid){
@@ -110,4 +110,65 @@ public int maxKilledEnemies(char[][] grid){
          }
      }
      return res;
+}
+
+Method 3: 
+Time complexty: O(mn)
+Space complexity: O(mn)
+http://www.cnblogs.com/grandyang/p/5599289.html
+
+preSum to calculate left, right, up, down first
+
+public int maxKilledEnemies(char[][] grid){
+    int m = grid.length;
+    int n = grid[0].length;
+    int[][] left = new int[m][n];
+    for (int i = 0; i < m; i++){
+        for (int j = 0; j < n; j++){
+            if (j == 0 || grid[i][j]=='W'){
+                left[i][j] = 0;
+            }else{
+                left[i][j] = left[i][j-1] + (grid[i][j] == 'E');
+            }
+        }
+    }
+    int[][] right = new int[m][n];
+    for (int i = 0; i < m; i++){
+        for (int j = n-1; j >= 0; j--){
+            if (j == n-1 || grid[i][j] == 'W'){
+                right[i][j] = 0;
+            }else{
+                right[i][j] = right[i][j+1] + (grid[i][j] == 'E');
+            }
+        }
+    }
+    int[][] up = new int[m][n];
+    for (int j = 0; j < n; j++){
+        for (int i = 0; i < m; i++){
+            if (i == 0 || grid[i][j] == 'W'){
+                up[i][j] = 0;
+            }else{
+                up[i][j] = up[i-1][j] + (grid[i][j] == 'E');
+            }
+        }
+    }
+    int[][] down = new int[m][n];
+    for (int j = 0; j < n; j++){
+        for (int i = m-1; i>=0; i--){
+            if (i == 0 || grid[i][j] == 'W'){
+                down[i][j] = 0;
+            }else{
+                down[i][j] = down[i+1][j] + (grid[i][j] == 'E');
+            }
+        }
+    }
+    int res = 0;
+    for (int i = 0; i < m; i++){
+        for (int j = 0;j < n; j++){
+            if (grid[i][j] == '0'){
+                res = Math.max(res, left[i][j] + right[i][j] + up[i][j] + down[i][j]);
+            }
+        }
+    }
+    return res;
 }
