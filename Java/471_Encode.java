@@ -48,7 +48,9 @@ Time complexity: O(N^4) since replaceAll takes O(N) time
 dp[i][j] = string from index i to index j in encoded form
 diff means the length diff between i and j
 diff is used because we only need to fill the top left half dp[i][j] matrix and return dp[0][n-1]
-
+dp[i][j] = min(dp[i][j], dp[i][k] + dp[k+1][j]) or if we can find some pattern in string from i to j which will 
+result in more less length.
+    
 class Solution {
     public String encode(String s) {
         int n = s.length();
