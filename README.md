@@ -825,7 +825,7 @@ Solution for Leetcode/Lintcode
 |814   |157  |[Read N Characters Given Read4](Java/157_Read.java)|Easy|Java|Leetcode|
 |815   |666  |[Path Sum IV Very Good](Java/666_Path.java)|Medium|Java|Leetcode|
 |816   |755  |[Pour Water Two points](Java/755_Pour.java)|Medium|Java|Leetcode|
-|817   |656  |[Coin Path](Java/656_Coin.java)|Hard|Java|Leetcode|
+|817   |656  |[Coin Path LIS DP + Record Path](Java/656_Coin.java)|Hard|Java|Leetcode|
 |818   |317  |[Shortest Distance from All Buildings BFS](Java/317_Shortest.java)|Hard|Java|Leetcode|
 |819   |358  |[Rearrange String k Distance Apart](Java/358_Rearrange.java)|Hard|Java|Leetcode|
 |820   |634  |[Find the Derangement of An Array](Java/634_Find.java)|Medium|Java|Leetcode|
