@@ -88,3 +88,27 @@ class Solution {
         return Math.max(tasks.length, (maxCount-1)*(n+1) + count);
     }
 }
+
+better:
+Corner case: when n == 1
+     AAABBB 0 , n there is 0, it means same task can put together,
+
+class Solution {
+    public int leastInterval(char[] tasks, int n) {
+        int maxCount = 0;
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : tasks){
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        int extra = 0;
+        for (char key : map.keySet()){
+            if (maxCount == map.get(key)){
+                extra++;
+            }else if (maxCount < map.get(key)){
+                maxCount = map.get(key);
+                extra = 1;
+            }
+        }
+        return Math.max(tasks.length, (maxCount-1) * (n+1) + extra);
+    }
+}
