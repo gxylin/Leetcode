@@ -25,7 +25,12 @@ Note:
     The total length of all the strings will not over 1,000.
 
 
+Key idea:
+1. find the bigger one of each str: normal or reverse
+2. try every possibiity to for each str
 
+Brute force:
+Time complexity: O(n^2), n is the sum length of all lengths of strs
 class Solution {
     String res = "";
     public String splitLoopedString(String[] strs) {
@@ -33,13 +38,14 @@ class Solution {
             return "";
         }
         int n = strs.length;
+        //step 1: find the bigger one for each str
         for (int i = 0; i < n; i++){
             String strR = reverse(strs[i]);
             if (strR.compareTo(strs[i]) > 0){
                 strs[i] = strR;
             }
         }
-        
+        //step 2: check normal or reverse for each str
         for (int i = 0; i < n; i++){
             solve(strs, i, true);
             solve(strs, i, false);
