@@ -64,6 +64,9 @@ class Solution {
 
 
 Better solution:
+The same as Rearrange String k Distance Apart 
+https://github.com/optimisea/Leetcode/edit/master/Java/358_Rearrange.java
+
 Time complexity: O(nlogn)
 Space complexity: O(n)
 class Solution {
