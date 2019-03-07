@@ -112,7 +112,7 @@ public int maxKilledEnemies(char[][] grid){
      return res;
 }
 
-Method 3: 
+Method 3:  Best solution
 Time complexty: O(mn)
 Space complexity: O(mn)
 http://www.cnblogs.com/grandyang/p/5599289.html
