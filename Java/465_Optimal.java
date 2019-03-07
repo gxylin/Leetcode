@@ -1,4 +1,7 @@
-A group of friends went on holiday and sometimes lent each other money. For example, Alice paid for Bill's lunch for $10. Then later Chris gave Alice $5 for a taxi ride. We can model each transaction as a tuple (x, y, z) which means person x gave person y $z. Assuming Alice, Bill, and Chris are person 0, 1, and 2 respectively (0, 1, 2 are the person's ID), the transactions can be represented as [[0, 1, 10], [2, 0, 5]].
+A group of friends went on holiday and sometimes lent each other money. For example, Alice paid for Bill's lunch for $10. Then later 
+Chris gave Alice $5 for a taxi ride. We can model each transaction as a tuple (x, y, z) which means person x gave person y $z.
+Assuming Alice, Bill, and Chris are person 0, 1, and 2 respectively (0, 1, 2 are the person's ID), the transactions can be represented
+as [[0, 1, 10], [2, 0, 5]].
 
 Given a list of transactions between a group of people, return the minimum number of transactions required to settle the debt.
 
@@ -37,29 +40,35 @@ Person #2 gave person #0 $5.
 
 Therefore, person #1 only need to give person #0 $4, and all debt is settled.
 
-
+backtracking
 class Solution {
     public int minTransfers(int[][] transactions) {
-        Map<Integer, Integer> m = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
         for (int[] t : transactions) {
-            m.put(t[0], m.getOrDefault(t[0], 0) - t[2]);
-            m.put(t[1], m.getOrDefault(t[1], 0) + t[2]);
+            map.put(t[0], map.getOrDefault(t[0], 0) - t[2]);
+            map.put(t[1], map.getOrDefault(t[1], 0) + t[2]);
         }
-        return settle(0, new ArrayList<>(m.values()));
+        List<Integer> list = new ArrayList<>();
+        for (int val : map.values()){
+            list.add(val);
+        }
+        return settle(0, list);
     }
 
     private int settle(int start, List<Integer> debt) {
-        while (start < debt.size() && debt.get(start) == 0)
+        while (start < debt.size() && debt.get(start) == 0){
             start++;
-        if (start == debt.size()) return 0;
-        int r = Integer.MAX_VALUE;
+        }
+        if (start == debt.size()) 
+            return 0;
+        int res = Integer.MAX_VALUE;
         for (int i = start; i < debt.size(); i++){
             if (debt.get(start) * debt.get(i) < 0) {
                 debt.set(i, debt.get(i) + debt.get(start));
-                r = Math.min(r, 1 + settle(start + 1, debt));
+                res = Math.min(res, 1 + settle(start + 1, debt));
                 debt.set(i, debt.get(i) - debt.get(start));
             }
         }
-        return r;
+        return res;
     }
 }
