@@ -86,6 +86,9 @@ Then use Kahn’s aglorithm to do topological sort. This is essentially BFS.
 https://en.wikipedia.org/wiki/Topological_sorting
 
 
+indegree: Map<Integer, Integer> indegree, which stores the count of numbers that have higher level of the key
+priority map: Map<Integer, Set<Integer>> map, which stores the numbers that have lower level of the key
+
 class Solution {
     public String alienOrder(String[] words) {
         if (words == null || words.length == 0){
