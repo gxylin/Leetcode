@@ -17,6 +17,12 @@ n is in the range of [1, 106].
 
 https://leetcode.com/problems/find-the-derangement-of-an-array/solution/#
 
+Put elment i at index i -1, then it will generate two cases:
+1) put i - 1 at index i => dp[i-2];
+2) put i -1 not at index i => dp[i-1]
+
+i could be put at (i-1) different locations. so,
+
 dp[i]=(i−1)∗(dp[i−1]+dp[i−2])
  
 
