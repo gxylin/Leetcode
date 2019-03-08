@@ -97,3 +97,27 @@ class Solution {
         return -1;
     }
 }
+
+Best solution: the same as Leetcode 768 Max Chunks To Make Sorted II
+https://github.com/optimisea/Leetcode/blob/master/Java/768_Max.java
+class Solution {
+    public int partitionDisjoint(int[] A) {
+        int n = A.length;
+        int[] left = new int[n+1];
+        int[] right = new int[n+1];
+        left[0] = Integer.MIN_VALUE;
+        right[n] = Integer.MAX_VALUE;
+        for (int i =1 ; i <= n; i++){
+            left[i] = Math.max(left[i-1], A[i-1]);
+        }
+        for (int i = n-1; i>= 0; i--){
+            right[i] = Math.min(right[i+1], A[i]);
+        }
+        for (int i = 1; i < n; i++){
+            if (left[i] <= right[i]){
+                return i;
+            }
+        }
+        return -1;
+    }
+}
