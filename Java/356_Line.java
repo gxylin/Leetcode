@@ -13,6 +13,7 @@ Output: false
 Follow up:
 Could you do better than O(n2) ?
 
+Note that (min + max) / 2 == (left + right) / 2 == > right = sum - left
 
 class Solution {
     public boolean isReflected(int[][] points) {
