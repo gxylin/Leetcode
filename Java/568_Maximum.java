@@ -65,6 +65,7 @@ Note:
 Method 1:
 Time complexity: O(N^2*K)
 Space compleixty: O(N*K)
+dp[i][j] represents the max vacation days at index i city and at index j week.
 class Solution {
     public int maxVacationDays(int[][] flights, int[][] days) {
         int N = days.length;
