@@ -54,6 +54,9 @@ class Solution {
 
 
 Method 2: Best solution
+The same as Leetcode 915: Partition Array into Disjoint Intervals
+https://github.com/optimisea/Leetcode/edit/master/Java/915_Partition.java
+
 Iterate through the array, each time all elements to the left are smaller (or equal) to all elements to the right,
 there is a new chunck.
 Time complexity: O(n)
@@ -82,3 +85,25 @@ class Solution {
     }
 }
 
+class Solution {
+    public int maxChunksToSorted(int[] arr) {
+        int n = arr.length;
+        int[] leftMax = new int[n+1];
+        int[] rightMin = new int[n+1];
+        leftMax[0] = Integer.MIN_VALUE;
+        rightMin[n] = Integer.MAX_VALUE;
+        for (int i = 1; i <= n; i++){
+            leftMax[i] = Math.max(leftMax[i-1], arr[i-1]);
+        }
+        for (int i = n-1; i>= 0; i--){
+            rightMin[i] = Math.min(rightMin[i+1], arr[i]);
+        }
+        int count = 0;
+        for (int i = 1; i <= n; i++){
+            if (leftMax[i] <= rightMin[i]){
+                count++;
+            }
+        }
+        return count;
+    }
+}
