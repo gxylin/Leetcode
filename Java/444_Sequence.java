@@ -44,6 +44,11 @@ org: [4,1,5,2,6,3], seqs: [[5,2,6,3],[4,1,5,2]]
 Output:
 true
 
+The same as Alien Dictionary, build indegree map and priority map
+https://github.com/optimisea/Leetcode/blob/master/Java/269_AlienDictionary.java
+
+indegree: Map<Integer, Integer> indegree, which stores the count of numbers that have higher level of the key
+priority map: Map<Integer, Set<Integer>> map, which stores the numbers that have lower level of the key
 
 class Solution {
     public boolean sequenceReconstruction(int[] org, List<List<Integer>> seqs) {
