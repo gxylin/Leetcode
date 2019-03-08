@@ -15,7 +15,7 @@ Explanation: The original array is [1,2,3]. The two derangements are [2,3,1] and
 Note:
 n is in the range of [1, 106]. 
 
-https://leetcode.com/problems/find-the-derangement-of-an-array/solution/#
+http://www.cnblogs.com/grandyang/p/7210929.html
 
 Put elment i at index i -1, then it will generate two cases:
 1) put i - 1 at index i => dp[i-2];
