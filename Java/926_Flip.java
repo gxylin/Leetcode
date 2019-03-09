@@ -77,9 +77,9 @@ class Solution {
         dp[0] = zeros; //all '0' need to be '1'
         for (int i = 1; i <= n; i++){
             if (S.charAt(i-1) == '1'){
-                dp[i] = dp[i-1] + 1;
+                dp[i] = dp[i-1] + 1; //compare to previoius step, one '0' conversion is reduced
             }else{
-                dp[i] = dp[i-1] - 1;
+                dp[i] = dp[i-1] - 1; //compare to previous step, one '1' conversion is added
             }
         }
         int min = n;
