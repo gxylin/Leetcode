@@ -34,6 +34,9 @@ Time complexity: O(N)
 Space complexity: O(N)
 This is DP partition problem
 
+dp[i] denotes the minimum swap needed to ensure all 0 before index i and all 1 after and inlcude index i
+
+
 The key idea to find the cut point where the left of the point will be 0 and the right of the point will be 1. So we can
 use DP to find the point which yields the minimum flip. This is a top down DP solution
 
