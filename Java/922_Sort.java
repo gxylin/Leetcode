@@ -54,6 +54,8 @@ class Solution {
             }
             if (odd < n && even < n){
                 swap(A, odd, even);
+                even += 2;
+                odd += 2;
             }
         }
         return A;
