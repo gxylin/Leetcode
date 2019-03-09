@@ -74,6 +74,9 @@ class Solution {
     }
 }
 
+Similar as Leetcode 1002 Find Common Character
+https://github.com/optimisea/Leetcode/blob/master/Java/1002_Find.java
+
 Method 2: Best solution
 Time complexity: O(A + B)
 Space complexity: O(1)
