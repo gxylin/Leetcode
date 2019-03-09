@@ -2,11 +2,15 @@
 
 In a network of nodes, each node i is directly connected to another node j if and only if graph[i][j] = 1.
 
-Some nodes initial are initially infected by malware.  Whenever two nodes are directly connected and at least one of those two nodes is infected by malware, both nodes will be infected by malware.  This spread of malware will continue until no more nodes can be infected in this manner.
+Some nodes initial are initially infected by malware.  Whenever two nodes are directly connected and at least one of those two nodes
+is infected by malware, both nodes will be infected by malware.  This spread of malware will continue until no more nodes can be 
+infected in this manner.
 
 Suppose M(initial) is the final number of nodes infected with malware in the entire network, after the spread of malware stops.
 
-We will remove one node from the initial list, completely removing it and any connections from this node to any other node.  Return the node that if removed, would minimize M(initial).  If multiple nodes could be removed to minimize M(initial), return such a node with the smallest index.
+We will remove one node from the initial list, completely removing it and any connections from this node to any other node.  
+Return the node that if removed, would minimize M(initial).  If multiple nodes could be removed to minimize M(initial), 
+return such a node with the smallest index.
 
  
 
@@ -61,7 +65,7 @@ class Solution {
             if (parent[x] == x){
                 return x;
             }
-            return find(parent[x]);
+            return parent[x] = find(parent[x]);
         }
         public void union(int x, int y){
             int rootX = find(x);
