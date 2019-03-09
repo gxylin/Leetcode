@@ -1,4 +1,5 @@
-Your music player contains N different songs and she wants to listen to L (not necessarily different) songs during your trip.  You create a playlist so that:
+Your music player contains N different songs and she wants to listen to L (not necessarily different) songs during your trip. 
+ You create a playlist so that:
 
 Every song is played at least once
 A song can only be played again only if K other songs have been played
