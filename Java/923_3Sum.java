@@ -1,4 +1,5 @@
-Given an integer array A, and an integer target, return the number of tuples i, j, k  such that i < j < k and A[i] + A[j] + A[k] == target.
+Given an integer array A, and an integer target, return the number of tuples i, j, k  such that i < j < k and 
+A[i] + A[j] + A[k] == target.
 
 As the answer can be very large, return it modulo 10^9 + 7.
 
@@ -42,6 +43,7 @@ class Solution {
         int n = map.size();
         int[] B = new int[n];
         Arrays.sort(A);
+       ///remove duplicates from sorted array
         int index = 0;
         B[0] = A[0];
         for (int i = 0; i < A.length; i++){
@@ -50,6 +52,7 @@ class Solution {
                 B[index] = A[i];
             }
         }
+     //////////////////////////////////
         int mod = (int)Math.pow(10, 9) + 7;
         long res = 0;
         for (int i = 0; i < n; i++){
