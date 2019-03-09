@@ -839,7 +839,7 @@ Solution for Leetcode/Lintcode
 |828   |917  |[Reverse Only Letters](Java/917_Reverse.java)|Easy|Java|Leetcode|
 |829   |916  |[Word Subsets](Java/916_Word.java)|Medium|Java|Leetcode|
 |830   |918  |[Maximum Sum Circular Subarray Very Good](Java/918_Maximum.java)|Medium|Java|Leetcode|
-|831   |919  |[Complete Binary Tree Inserter](Java/919_Complete.java)|Medium|Java|Leetcode|
+|831   |919  |[Complete Binary Tree Inserter Label Node Very Good](Java/919_Complete.java)|Medium|Java|Leetcode|
 |832   |920  |[Number of Music Playlists Dynamic Programming](Java/920_Number.java)|Hard|Java|Leetcode|
 |833   |922  |[Sort Array By Parity II](Java/922_Sort.java)|Easy|Java|Leetcode|
 |834   |921  |[Minimum Add to Make Parentheses Valid](Java/921_Minimum.java)|Medium|Java|Leetcode|
