@@ -73,3 +73,42 @@ class Solution {
         return res + diff;
     }
 }
+
+
+Best solution:
+class Solution {
+    public int minAddToMakeValid(String S) {
+        int count = 0;
+        int res = 0;
+        for (char c : S.toCharArray()){
+            if (c == '('){
+                count++;
+            }else{
+                count--;
+            }
+            if (count < 0){
+                res++;
+                count = 0;
+            }
+        }
+        return res + count;
+    }
+}
+Similar as the isValid Function of  Leetcode 301 https://github.com/optimisea/Leetcode/blob/master/Java/301_Remove.java
+
+private boolean isValid(String str){
+        int count = 0;
+        for (char c : str.toCharArray()){
+            if (c == '('){
+                count++;
+            }else if (c == ')'){
+                count--;
+                if (count < 0){
+                    return false;
+                }
+            }
+        }
+        return count == 0;
+    }
+}
+
