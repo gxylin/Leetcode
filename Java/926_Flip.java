@@ -52,7 +52,8 @@ Step 2: Iteration.
 
 Step 3: Top down DP to find minimum
 
-```
+
+Method 1: DP
 class Solution {
     public int minFlipsMonoIncr(String S) {
         int n = S.length();
@@ -81,4 +82,7 @@ class Solution {
         return min;
     }
 }
-```
+
+Method 2: Array
+https://leetcode.com/problems/flip-string-to-monotone-increasing/discuss/183896/Prefix-Suffix-Java-O(N)-One-Pass-Solution-Space-O(1)
+
