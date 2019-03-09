@@ -26,9 +26,15 @@ Note:
 0 <= K <= A.length
 A[i] is 0 or 1 
 
+ 
+ 
 Sliding Window: the same as I & II
 https://github.com/optimisea/Leetcode/blob/master/Java/485_Max.java
 https://github.com/optimisea/Leetcode/blob/master/Java/487_Max.java
+
+Also check Leetcode 926 Flip String to Monotone Increasing
+https://github.com/optimisea/Leetcode/blob/master/Java/926_Flip.java
+
 
 class Solution {
     public int longestOnes(int[] A, int K) {
