@@ -37,7 +37,7 @@ graph[i][i] = 1
 0 <= initial[i] < graph.length
 
 
-Union Find: the complexity of Union Find with path compression is O(1)
+Union Find: the complexity of Union Find with path compression is O(1): return parent[x] = find(parent[x]);
 O(N^2)
 class Solution {
     class UF {
