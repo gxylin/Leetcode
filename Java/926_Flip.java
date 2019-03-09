@@ -53,6 +53,10 @@ Step 2: Iteration.
 Step 3: Top down DP to find minimum
 
 
+
+Also check Leetcode 1004 Max Consecutive Ones III
+ https://github.com/optimisea/Leetcode/blob/master/Java/1004_Max.java
+
 Method 1: DP
 class Solution {
     public int minFlipsMonoIncr(String S) {
