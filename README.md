@@ -835,7 +835,7 @@ Solution for Leetcode/Lintcode
 |824   |660  |[Remove 9  Convert 10-based to x-based](Java/660_Remove.java)|Hard|Java|Leetcode|
 |825   |568  |[Maximum Vacation Days Dynamic Programming](Java/568_Maximum.java)|Hard|Java|Leetcode|
 |826   |914  |[X of a Kind in a Deck of Cards gcd](Java/914_gcd.java)|Easy|Java|Leetcode|
-|827   |915  |[Partition Array into Disjoint Intervals Good](Java/915_Partition.java)|Medium|Java|Leetcode|
+|827   |915  |[Partition Array into Disjoint Intervals Very Good](Java/915_Partition.java)|Medium|Java|Leetcode|
 |828   |917  |[Reverse Only Letters](Java/917_Reverse.java)|Easy|Java|Leetcode|
 |829   |916  |[Word Subsets](Java/916_Word.java)|Medium|Java|Leetcode|
 |830   |918  |[Maximum Sum Circular Subarray Very Good](Java/918_Maximum.java)|Medium|Java|Leetcode|
