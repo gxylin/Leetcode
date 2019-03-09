@@ -8,7 +8,8 @@ A[j], A[j+1], ..., A[A.length - 1] is the third part.
 All three parts have equal binary value.
 If it is not possible, return [-1, -1].
 
-Note that the entire part is used when considering what binary value it represents.  For example, [1,1,0] represents 6 in decimal, not 3.  Also, leading zeros are allowed, so [0,1,1] and [1,1] represent the same value.
+Note that the entire part is used when considering what binary value it represents.  For example, [1,1,0] represents 6 in decimal, 
+not 3.  Also, leading zeros are allowed, so [0,1,1] and [1,1] represent the same value.
 
  
 
