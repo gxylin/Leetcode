@@ -56,6 +56,8 @@ class Solution {
 }
 
 
+Similar as Leetcode 916 word subset: https://github.com/optimisea/Leetcode/blob/master/Java/916_Word.java
+
 Better version:
 class Solution {
     public List<String> commonChars(String[] A) {
