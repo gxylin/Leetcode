@@ -74,6 +74,24 @@ class Solution {
     }
 }
 
+Better version:
+class Solution {
+    public int partitionDisjoint(int[] A) {
+        int cand = 0;
+        int maxToCand = A[0];
+        int maxToI = A[0];
+        for (int i = 1; i < A.length; i++){
+            maxToI = Math.max(maxToI, A[i]);
+            if (A[i] < maxToCand){
+                cand = i;
+                maxToCand = maxToI;
+            }
+        }
+        return cand + 1;
+    }
+}
+
+
 Method 3: 
 Time complexity: O(n)
 Space complexity: O(n)
