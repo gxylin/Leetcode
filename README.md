@@ -947,3 +947,4 @@ Solution for Leetcode/Lintcode
 |933   |1005 |[Maximize Sum Of Array After K Negations](Java/1005_Maximize.java)|Easy|Java|Leetcode|
 |934   |1006 |[Clumsy Factorial](Java/1006_Clumsy.java)|Medium|Java|Leetcode|
 |935   |1007 |[Minimum Domino Rotations For Equal Row](Java/1007_Minimum.java)|Medium|Java|Leetcode|
+|936   |1008 |[Construct Binary Search Tree from Preorder Traversal](Java/1008_Construct.java)|Medium|Java|Leetcode|
