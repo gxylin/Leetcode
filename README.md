@@ -855,7 +855,7 @@ Solution for Leetcode/Lintcode
 |844   |931  |[Minimum Falling Path Sum](Java/931_Minimum.java)|Medium|Java|Leetcode|
 |XXX   |XXX  |[Trie Template](Java/trieTemplate.java)|
 |845   |933  |[Number of Recent Calls Treemap](Java/933_Number.java)|Easy|Java|Leetcode|
-|846   |934  |[Shortest Bridge BFS](Java/934_Shortest.java)|Medium|Java|Leetcode|
+|846   |934  |[Shortest Bridge BFS Very Good](Java/934_Shortest.java)|Medium|Java|Leetcode|
 |847   |935  |[Knight Dialer](Java/935_Knight.java)|Medium|Java|Leetcode|
 |848   |427  |[Construct Quad Tree Recursion](Java/427_Construct.java)|Medium|Java|Leetcode|
 |849   |938  |[Range Sum of BST](Java/938_Range.java)|Medium|Java|Leetcode|
