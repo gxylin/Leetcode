@@ -945,3 +945,4 @@ Solution for Leetcode/Lintcode
 |932   |1004 |[Max Consecutive Ones III](Java/1004_Max.java)|Medium|Java|Leetcode|
 |XXX   |XXX  |[Monotonic Stack Template](Java/montonic.java)|
 |933   |1005 |[Maximize Sum Of Array After K Negations](Java/1005_Maximize.java)|Easy|Java|Leetcode|
+|934   |1006 |[Clumsy Factorial](Java/1006_Clumsy.java)|Medium|Java|Leetcode|
