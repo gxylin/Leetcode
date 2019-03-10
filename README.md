@@ -944,3 +944,4 @@ Solution for Leetcode/Lintcode
 |931   |1003 |[Check If Word Is Valid After Substitutions](Java/1003_Check.java)|Medium|Java|Leetcode|
 |932   |1004 |[Max Consecutive Ones III](Java/1004_Max.java)|Medium|Java|Leetcode|
 |XXX   |XXX  |[Monotonic Stack Template](Java/montonic.java)|
+|933   |1005 |[Maximize Sum Of Array After K Negations](Java/1005_Maximize.java)|Easy|Java|Leetcode|
