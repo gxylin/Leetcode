@@ -63,3 +63,42 @@ class Solution {
         return res;
     }
 }
+
+
+Method 2: 
+https://leetcode.com/problems/distinct-subsequences-ii/discuss/192030/Java-DP-O(N2)-time-greater-O(N)-time-greater-O(1)-space
+
+In the original post, 
+if s[j] == s[i], do nothing to avoid duplicates.
+
+The sentence is really confusing and misleading. and conceptually wrong.
+
+When s[j] == s[i], the correct explanation is to add existing substring with one more letter, so the number will be the same as previous sum and hence no need to add more.
+
+Take abcc as example,
+
+ending:
+a : a
+b: ab b
+c: ac abc bc c
+c: ac abc bc c ====when scan to the first c, add one more letter, acc abcc bcc cc
+
+class Solution {
+    public int distinctSubseqII(String S) {
+        int mod = (int)1e9 + 7;
+        int n = S.length();
+        int[] dp = new int[n];
+        Arrays.fill(dp, 1);
+        int res = 0;
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < i; j++){
+                if (S.charAt(i) != S.charAt(j)){
+                    dp[i] = (dp[i] + dp[j])%mod;
+                }
+            }
+            res = (res + dp[i]) % mod;
+        }
+        return res;
+    }
+}
+
