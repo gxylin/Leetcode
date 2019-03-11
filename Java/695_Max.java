@@ -63,6 +63,7 @@ class Solution {
 }
 
 Without modifying grid
+Time complexity: O(M*N)
 class Solution {
     public int maxAreaOfIsland(int[][] grid) {
         if (grid == null || grid.length == 0){
@@ -74,7 +75,7 @@ class Solution {
         boolean[][] visited = new boolean[m][n];
         for (int i = 0; i < m; i++){
             for (int j = 0; j < n; j++){
-                if (grid[i][j] == 1){
+                if (grid[i][j] == 1 && !visited[i][j]){
                     max = Math.max(max, bfs(grid, i, j, visited));
                 }
             }
