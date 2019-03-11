@@ -83,6 +83,7 @@ b: ab b
 c: ac abc bc c
 c: ac abc bc c ====when scan to the first c, add one more letter, acc abcc bcc cc
 
+O(n^2)
 class Solution {
     public int distinctSubseqII(String S) {
         int mod = (int)1e9 + 7;
@@ -102,3 +103,4 @@ class Solution {
     }
 }
 
+The refer to Method 1 for O(N) solution
