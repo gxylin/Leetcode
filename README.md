@@ -861,7 +861,7 @@ Solution for Leetcode/Lintcode
 |849   |938  |[Range Sum of BST](Java/938_Range.java)|Medium|Java|Leetcode|
 |850   |937  |[Reorder log files](Java/937_Reorder.java)|Easy|Java|Leetcode|
 |851   |940  |[Distinct Subsequences II Dynamic Very Good](Java/940_Distinct.java)|Hard|Java|Leetcode|
-|852   |939  |[Minimum Area Rectangle](Java/939_Minimum.java)|Medium|Java|Leetcode|
+|852   |939  |[Minimum Area Rectangle Good](Java/939_Minimum.java)|Medium|Java|Leetcode|
 |853   |29   |[Divide Two Integers](Java/29_Divide.java)|Medium|Java|Leetcode|
 |854   |941  |[Valid Mountain Array Good Two Pointers](Java/941_Valid.java)|Easy|Java|Leetcode|
 |855   |942  |[DI String Match Two Pointers](Java/942_DIString.java)|Easy|Java|Leetcode|
