@@ -51,7 +51,7 @@ class Solution {
         for (int i = 1; i < A.length; i++){
             max = Math.max(max+1, A[i]);
             res += max - A[i];
-            A[i] = max;
+        //    A[i] = max; //not needed
         }
         return res;
     }
