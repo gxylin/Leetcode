@@ -86,7 +86,7 @@ class Solution {
 Method 2:  Best solution
 Time complexity: O(mn)
 Space complexity: O(m)
-
+https://leetcode.com/problems/delete-columns-to-make-sorted-ii/discuss/203182/JavaC%2B%2BPython-Greedy-Solution-O(MN)
 class Solution {
     public int minDeletionSize(String[] A) {
         int m = A.length;
