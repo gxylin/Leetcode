@@ -40,6 +40,22 @@ class Solution {
         return res;
     }
 }
+class Solution {
+    public int minIncrementForUnique(int[] A) {
+        if (A.length <= 1){
+            return 0;
+        }
+        Arrays.sort(A);
+        int res = 0;
+        int max = A[0]; // maintain max value before the curr
+        for (int i = 1; i < A.length; i++){
+            max = Math.max(max+1, A[i]);
+            res += max - A[i];
+            A[i] = max;
+        }
+        return res;
+    }
+}
 
 Better version:
 class Solution {
