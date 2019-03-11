@@ -83,28 +83,30 @@ class Solution {
 }
 
 
-Method 2: 
+Method 2:  Best solution
 Time complexity: O(mn)
 Space complexity: O(m)
+
 class Solution {
     public int minDeletionSize(String[] A) {
         int m = A.length;
         int n = A[0].length();
-        boolean[] cut = new boolean[m-1];//it means A[i] < A[i+1] at i, in other words, previous columns are already sorted to deal with equality case
+      // isSorted[i] = true if and only if A[i] < A[i + 1], that is to say A[i] and A[i + 1] are sorted.
+        boolean[] isSorted = new boolean[m-1];
         int i = 0;
         int res = 0;
         for (int j = 0; j < n; j++){
             for (i = 0; i < m - 1; i++){
-                if (!cut[i] && A[i].charAt(j) > A[i+1].charAt(j)){
+                if (!isSorted[i] && A[i].charAt(j) > A[i+1].charAt(j)){
                     res++;
                     break;
                 }
             }
-            //update cut only if the column is selected
+            //update isSorted if the column is selected
             if (i == m -1){
                 for (int k = 0; k < m-1; k++){
                     if (A[k].charAt(j) < A[k+1].charAt(j)){
-                        cut[k] = true;
+                        isSorted[k] = true;
                     }
                 }
             }
