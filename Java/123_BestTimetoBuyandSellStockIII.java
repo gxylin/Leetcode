@@ -21,6 +21,7 @@ class Solution {
     }
 }
 
+General format:
 class Solution {
     public int maxProfit(int[] prices) {
         int[] minCost = new int[3];
