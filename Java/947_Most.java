@@ -45,7 +45,7 @@ class Solution {
             if (x == parent[x]){
                 return x;
             }
-            return find(parent[x]);
+            return parent[x] = find(parent[x]); // path compression
         }
         public void union(int x, int y){
             int rootX = find(x);
