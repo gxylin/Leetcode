@@ -114,3 +114,30 @@ class Solution {
         return res;
     }
 }
+
+class Solution {
+    public int minDeletionSize(String[] A) {
+        int res = 0;
+        int m = A.length;
+        int n = A[0].length();
+        boolean[] isSorted = new boolean[m-1];
+        for (int j = 0; j < n; j++){
+            boolean updateSort = true;
+            for (int i = 0; i < m-1; i++){
+                if (!isSorted[i] && A[i].charAt(j) > A[i+1].charAt(j)){
+                    res++;
+                    updateSort = false;
+                    break;
+                }
+            }
+            if (updateSort){
+                for (int i = 0; i < m - 1; i++){
+                    if (A[i].charAt(j) < A[i+1].charAt(j)){
+                        isSorted[i] = true;
+                    }
+                }
+            }
+        }
+        return res;
+    }
+}
