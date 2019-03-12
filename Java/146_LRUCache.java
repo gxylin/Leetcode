@@ -95,6 +95,8 @@ class LRUCache {
 
 
 
+Better solution:
+
 Code that was written in the 2nd time
 class LRUCache {
     class LinkedNode {
