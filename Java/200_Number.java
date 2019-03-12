@@ -59,6 +59,48 @@ class Solution {
     }
 }
 
+
+Better BFS version:
+class Solution {
+    public int numIslands(char[][] grid) {
+        if (grid == null || grid.length == 0){
+            return 0;
+        }
+        int m = grid.length;
+        int n = grid[0].length;
+        boolean[][] visited = new boolean[m][n];
+        int count = 0;
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (!visited[i][j] && grid[i][j] == '1'){
+                    bfs(grid, visited, i, j);
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+    private void bfs(char[][] grid, boolean[][] visited, int x, int y){
+        int m = grid.length;
+        int n = grid[0].length;
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        Queue<int[]> queue = new LinkedList<>();
+        queue.offer(new int[]{x, y});
+        visited[x][y] = true;
+        while (!queue.isEmpty()){
+            int[] curr = queue.poll();
+            for (int[] dir : dirs){
+                int nx = curr[0] + dir[0];
+                int ny = curr[1] + dir[1];
+                if (nx >= 0 && nx < m && ny >= 0 && ny < n && !visited[nx][ny] && grid[nx][ny] == '1'){
+                    visited[nx][ny] = true;
+                    queue.offer(new int[]{nx, ny});
+                }
+            }
+        }
+    }
+}
+
 Method 2: Union Find  faster than BFS
 Time complexity: O(m*n) 
 class Solution {
