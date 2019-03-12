@@ -26,23 +26,24 @@ class Solution {
         l1 = reverse(l1);
         l2 = reverse(l2);
         ListNode dummy = new ListNode(-1);
-        ListNode tail = dummy;
+        ListNode head = dummy;
+        ListNode n1= l1;
+        ListNode n2 = l2;
         int carry = 0;
         int sum = 0;
-        for (ListNode i = l1, j = l2; i != null || j != null;){
+        while (n1 != null || n2 != null){
             sum = carry;
-            sum += (i != null) ? i.val : 0;
-            sum += (j != null) ? j.val: 0;
-            
-            ListNode node = new ListNode (sum % 10);
-            tail.next = node;
-            tail = node;
+            sum += (n1 != null) ? n1.val : 0;
+            sum += (n2 != null) ? n2.val : 0;
             carry = sum / 10;
-            i = (i != null) ? i.next : null;
-            j = (j != null) ? j.next : null;
+            ListNode node = new ListNode(sum % 10);
+            head.next = node;
+            head = node;
+            n1 = (n1 != null) ? n1.next : n1;
+            n2 = (n2 != null) ? n2.next : n2;
         }
         if (carry != 0){
-            tail.next = new ListNode(carry);
+            head.next = new ListNode(carry);
         }
         return reverse(dummy.next);
     }
