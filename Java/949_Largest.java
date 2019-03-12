@@ -149,8 +149,9 @@ class Solution {
 
 
 Another solution Similar to Leetcode 681 Next Closest Time
+
+Best solution:
 class Solution {
-    
     public String largestTimeFromDigits(int[] A) {
         if (A == null || A.length == 0){
             return "";
