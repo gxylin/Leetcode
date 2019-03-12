@@ -104,7 +104,7 @@ Solution for Leetcode/Lintcode
 |96    |283  | [Move Zeroes.java](Java/283_MoveZeroes.java)|Easy|Java|Leetcode|
 |97    |27   | [Remove Element.java](Java/27_RemoveElement.java)|Easy|Java|Leetcode|
 |98    |26   | [Remove Duplicates from Sorted Array Good](Java/26_RemoveDuplicatesfromSortedArray.java)|Easy|Java|Leetcode|
-|99    |16   | [3SumClosest.java](Java/16_3SumClosest.java)|Medium|Java|Leetcode|
+|99    |16   | [3Sum Closest](Java/16_3SumClosest.java)|Medium|Java|Leetcode|
 |100   |31   | [Partition Array.java](Java/31_PartitionArray.java)|Medium|Java|Lintcode|
 |101   |561  | [ArrayPartitionI.java](Java/561_ArrayPartitionI.java)|Easy|Java|Leetcode|
 |102   |5    | [Kth Largest Element Quick Select](Java/5_KthLargestElement.java)|Medium|Java|Lintcode|
