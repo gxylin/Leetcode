@@ -43,6 +43,32 @@ Note:
 All characters have an ASCII value in [35, 126].
 1 <= len(chars) <= 1000.
 
+
+Best solution: in place
+class Solution {
+    public int compress(char[] chars) {
+        int index = 0;
+        int i = 0;
+        while (i < chars.length){
+            char curr = chars[i];
+            int count = 0;
+            while (i < chars.length && chars[i] == curr){
+                count++;
+                i++;
+            }
+            chars[index++] = curr;
+            if (count > 1){
+                String str = String.valueOf(count);
+                for (char c : str.toCharArray()){
+                    chars[index++] = c;
+                }
+            }
+        }
+        return index;
+    }
+}
+
+
 Method 1: 
 Space complexity: O(1)
 class Solution {
@@ -194,26 +220,3 @@ class Solution {
 
 
 
-Best solution: in place
-class Solution {
-    public int compress(char[] chars) {
-        int index = 0;
-        int i = 0;
-        while (i < chars.length){
-            char curr = chars[i];
-            int count = 0;
-            while (i < chars.length && chars[i] == curr){
-                count++;
-                i++;
-            }
-            chars[index++] = curr;
-            if (count > 1){
-                String str = String.valueOf(count);
-                for (char c : str.toCharArray()){
-                    chars[index++] = c;
-                }
-            }
-        }
-        return index;
-    }
-}
