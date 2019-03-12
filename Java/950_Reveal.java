@@ -55,3 +55,25 @@ class Solution {
         return res;
     }
 }
+
+
+Method 2: reverse queue
+https://leetcode.com/problems/reveal-cards-in-increasing-order/discuss/200515/JavaC%2B%2BPython-Simulate-the-Reversed-Process
+class Solution {
+    public int[] deckRevealedIncreasing(int[] deck) {
+        Arrays.sort(deck);
+        int n = deck.length;
+        int[] res = new int[n];
+        Queue<Integer> queue = new LinkedList<>();
+        for (int i = n - 1; i >= 0; i--){
+            if (queue.size() > 0){
+                queue.offer(queue.poll());
+            }
+            queue.offer(deck[i]);
+        }
+        for (int i = n-1; i >= 0; i--){
+            res[i] = queue.poll();
+        }
+        return res;
+    }
+}
