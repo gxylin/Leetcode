@@ -31,7 +31,7 @@ A.length is even
 Method 1:
 Time complexity: O(nlogn)
  
-Key: need to use treemap to ensure the logic is in ascending or descending order
+Key: need to use treemap to ensure the logic is in ascending or descending order, otherwise we don't know to check key/2 or key*2
 class Solution {
     public boolean canReorderDoubled(int[] A) {
         if (A.length == 0){
