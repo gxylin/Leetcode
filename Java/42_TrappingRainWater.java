@@ -5,6 +5,36 @@ For example,
 Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
 
 
+Best Solution:
+class Solution {
+    public int trap(int[] height) {
+        int left = 0;
+        int right = height.length - 1;
+        int i = left;
+        int j = right;
+        int res = 0;
+        while (i <= j){
+            if (height[left] <= height[right]){
+                if (height[i] >= height[left]){
+                    left = i;
+                }else{
+                    res += height[left] - height[i];
+                }
+                i++;
+            }else{
+                if (height[j] >= height[right]){
+                    right = j;
+                }else{
+                    res += height[right] - height[j];
+                }
+                j--;
+            }
+        }
+        return res;
+    }
+}
+
+
 
 class Solution {
     public int trap(int[] height) {
@@ -99,35 +129,6 @@ class Solution {
     }
 }
 
-
-Best one:
-class Solution {
-    public int trap(int[] height) {
-        int left = 0;
-        int right = height.length - 1;
-        int i = left;
-        int j = right;
-        int res = 0;
-        while (i <= j){
-            if (height[left] <= height[right]){
-                if (height[i] >= height[left]){
-                    left = i;
-                }else{
-                    res += height[left] - height[i];
-                }
-                i++;
-            }else{
-                if (height[j] >= height[right]){
-                    right = j;
-                }else{
-                    res += height[right] - height[j];
-                }
-                j--;
-            }
-        }
-        return res;
-    }
-}
 
 
 class Solution {
