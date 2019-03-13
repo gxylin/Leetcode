@@ -75,7 +75,7 @@ class Solution {
             sb.append(words[index]);
             //check if it is the last line
             int diff = last - 1 - index; 
-            if (last == words.length || diff == 0){//left justify
+            if (last == words.length || diff == 0){//left justify, when diff == 0, it means one word for one line
                 for (int i = index + 1; i < last; i++){
                     sb.append(" ");
                     sb.append(words[i]);
