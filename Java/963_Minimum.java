@@ -1,4 +1,5 @@
-Given a set of points in the xy-plane, determine the minimum area of any rectangle formed from these points, with sides not necessarily parallel to the x and y axes.
+Given a set of points in the xy-plane, determine the minimum area of any rectangle formed from these points, with sides not 
+necessarily parallel to the x and y axes.
 
 If there isn't any rectangle, return 0.
 
@@ -23,6 +24,8 @@ class Solution {
                     if (dist(p1, p3) + dist(p2, p3) != dist(p1, p2)){
                         continue;
                     }
+                    // x4 = x3 + (x2 - x1)
+                    //y4 = y3 + (y2 - y1)
                     int x = p1[0] + p2[0] - p3[0];
                     int y = p1[1] + p2[1] - p3[1];
                     if (!set.contains(x + ":" + y)){
