@@ -45,6 +45,8 @@ Method 2: DP: best solution
 note the difference with Leetcode 131 Palindrome Partition
 https://github.com/optimisea/Leetcode/blob/master/Java/131_PalindromePartitioning.java
 
+In this case: the return result could be empty due to no valid break.
+
 class Solution {
     public List<String> wordBreak(String s, List<String> wordDict) {
         Map<String, List<String>> map = new HashMap<>();
