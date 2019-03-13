@@ -54,7 +54,7 @@ class Solution {
             }
             cells = temp;
             if (map.containsKey(Arrays.toString(cells))){
-                N %= N - map.get(Arrays.toString(cells)); 
+                N %= map.get(Arrays.toString(cells)) - N; 
             }
             
         }
