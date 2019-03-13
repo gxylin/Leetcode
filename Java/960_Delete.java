@@ -65,3 +65,29 @@ class Solution {
         return res;
     }
 }
+
+class Solution {
+    public int minDeletionSize(String[] A) {
+        int m = A.length;
+        int n = A[0].length();
+        int res = n;
+        int[] dp = new int[n];
+        for (int j = 0; j < n; j++){
+            dp[j] = 1;
+            for (int i = 0; i < j; i++){
+                boolean validColumn = true;
+                for (int k = 0; k < m; k++){
+                    if (A[k].charAt(i) > A[k].charAt(j)){
+                        validColumn = false;
+                        break;
+                    }
+                }
+                if (validColumn){// if all characters in column j are equal or greater than i then i is a valid column
+                    dp[j] = Math.max(dp[j], dp[i]+1);
+                }
+            }
+            res = Math.min(res, n - dp[j]);
+        }
+        return res;
+    }
+}
