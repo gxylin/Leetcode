@@ -88,13 +88,13 @@ class Solution {
                 int remainder = (maxWidth - count) % diff;
                 for (int i = index + 1; i < last; i++){
                     for (int j = 0; j < spaces; j++){
-                        sb.append(" ");
+                        sb.append(" ");//even distributed space
                     }
-                    if (remainder > 0){
+                    if (remainder > 0){//remainder for left adjust
                         sb.append(" ");
                         remainder--;
                     }
-                    sb.append(" ");
+                    sb.append(" ");// default one " " space
                     sb.append(words[i]);
                 }
             }
