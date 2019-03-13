@@ -42,6 +42,9 @@ class Solution {
 }
 
 Method 2: DP: best solution
+note the difference with Leetcode 131 Palindrome Partition
+https://github.com/optimisea/Leetcode/blob/master/Java/131_PalindromePartitioning.java
+
 class Solution {
     public List<String> wordBreak(String s, List<String> wordDict) {
         Map<String, List<String>> map = new HashMap<>();
