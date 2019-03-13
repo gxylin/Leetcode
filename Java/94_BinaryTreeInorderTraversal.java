@@ -94,7 +94,7 @@ class Solution {
         TreeNode node = root;
         while (node != null || !stack.isEmpty()){
             while (node != null){
-                stack.psh(node);
+                stack.push(node);
                 node = node.left;
             }
             TreeNode curr = stack.pop();
