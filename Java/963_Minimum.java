@@ -21,6 +21,7 @@ class Solution {
                     if (p1[0] == p3[0] && p1[1] == p3[1] || p2[0] == p3[0] && p2[1] == p3[1]){
                         continue;
                     }
+                    //pythagorean theorem
                     if (dist(p1, p3) + dist(p2, p3) != dist(p1, p2)){
                         continue;
                     }
