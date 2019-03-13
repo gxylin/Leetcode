@@ -59,7 +59,7 @@ Method 2: Best solution
 Similar as backpack DP problem as Leetcode 416. But here is more challenging because some data point may not be chosen. Moreover, 
 the dp definition is different. In this question,
 dp[i][j] denotes the largest left sum at the case of after using i-th rod and the difference between left sum and right sum is 
-j - sum of all rods.
+j - sum of all rods. In other words, j is the difference between left sum and right sum plus sum of all rods
 Initially, I want to design dp as i-th rod and difference between left sum and right to be j, however, j could be negative, 
 use sum of all rods to offset all negative values.
 So the answer should be dp[n][sum of all rods].
