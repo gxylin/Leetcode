@@ -47,16 +47,16 @@ class Solution {
         int n = A[0].length();
         int res = n;
         int[] dp = new int[n];
-        Arrays.fill(dp, 1);
         int k = 0;
         for (int j = 0; j < n; j++){
+            dp[j] = 1;
             for (int i = 0; i < j; i++){
                 for (k = 0; k < m; k++){
                     if (A[k].charAt(i) > A[k].charAt(j)){
                         break;
                     }
                 }
-                if (k == m){// if all characters in column i are greater than j then its a valid subsequence
+                if (k == m){// if all characters in column j are equal or greater than i then i is a valid column
                     dp[j] = Math.max(dp[j], dp[i]+1);
                 }
             }
