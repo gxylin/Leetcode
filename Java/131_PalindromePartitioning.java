@@ -51,6 +51,10 @@ class Solution {
 
 
 Method 2: Recursion + memo
+Best solution:
+note the difference with Leetcode 140 word break II
+https://github.com/optimisea/Leetcode/blob/master/Java/140_WordBreakII.java
+
 class Solution {
     Map<String, List<List<String>>> map = new HashMap<>();
     public List<List<String>> partition(String s) {
