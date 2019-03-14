@@ -68,3 +68,53 @@ class Solution {
         return -1;
     }
 }
+
+
+Palantir Phone interview: when input is string instead of int[] data
+class Solution {
+    private int[] mask = {128, 64, 32, 16, 8};
+    public boolean validUtf8(String str) {
+        if (str == null || str.length() == 0){
+            return false;
+        }
+        if (str.length() % 8 != 0){
+            return false;
+        }
+        int len = str.length() / 8;
+        int[] data = new int[len];
+        int start = 0;
+        for (int i = 0; i < n; i++){
+            data[i] = Integer.parseInt(str.substring(start, start+8));
+            start += 8;
+        }
+        
+        //below is the same as the original one
+        for (int i = 0; i < len; i++){
+            int num = data[i];
+            int type = getType(num);
+            if (type == 0){
+                continue;
+            }else if (type > 1 && type + i <= len){
+                while (type > 1){
+                    i++;
+                    int next = getType(data[i]);
+                    if (next != 1){
+                        return false;
+                    }
+                    type--;
+                }
+            }else{
+                return false;
+            }
+        }
+        return true;
+    }
+    private int getType(int num){
+        for (int i = 0; i < mask.length; i++){
+            if ((mask[i] & num) == 0){
+                return i;
+            }
+        }
+        return -1;
+    }
+}
