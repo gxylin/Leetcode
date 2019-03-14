@@ -950,3 +950,4 @@ Solution for Leetcode/Lintcode
 |936   |1008 |[Construct Binary Search Tree from Preorder Traversal](Java/1008_Construct.java)|Medium|Java|Leetcode|
 |937   |215  |[Kth Largest Element in an Array](Java/215_Kth.java)|Medium|Java|Leetcode|
 |938   |468  |[Validate IP Address](Java/468_Validate.java)|Medium|Java|Leetcode|
+|939   |393  |[UTF-8 Validation](Java/393_utf8.java)|Medium|Java|Leetcode|
