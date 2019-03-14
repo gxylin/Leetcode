@@ -34,6 +34,25 @@ But the second continuation byte does not start with 10, so it is invalid.
 
 https://leetcode.com/problems/utf-8-validation/discuss/87485/O(n)-JAVA-solution-with-detailed-explaination
 
+* Method: 
+     * Start from index 0, determine each byte's type and check its validity.
+     *
+     * There are five kinds of valid byte type: 0**, 10**, 110**,1110** and 11110**
+     * Give them type numbers, 0, 1, 2, 3, 4 which are the index of the first 0 from left. 
+     * So, the index of the first 0 determines the byte type.
+     *
+     * if a byte belongs to one of them:
+        1 : if it is type 0, continue
+        2 : if it is type 2 or 3 or 4, check whether the following 1, 2, and 3 byte(s) are of type 1 or not
+                if not, return false;
+     * else if a byte is type 1 or not of valid type, return false
+        
+ Type 0:  0xxxxxxx
+ Type 1:  10xxxxxx
+ Type 2:  110xxxxx
+ Type 3:  1110xxxx
+ Type 4:  11110xxx
+ 
 Palantir and FB phone interview Question
 class Solution {
     private int[] mask = {128, 64, 32, 16, 8};
