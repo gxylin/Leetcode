@@ -17,7 +17,8 @@ Example 2:
 
 Input: [0,0,null,0,null,0,null,null,0]
 Output: 2
-Explanation: At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid configurations of camera placement.
+Explanation: At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid configurations
+of camera placement.
 
 Note:
 
