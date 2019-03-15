@@ -39,6 +39,7 @@ class Solution {
     }
 }
 
+Best solution:
 class Solution {
     public int[] sortedSquares(int[] A) {
         int n = A.length;
