@@ -14,7 +14,7 @@ Input:
 Output:
 [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
 https://leetcode.com/problems/queue-reconstruction-by-height/discuss/89350/Java-solution-using-Arrays.sort()-and-%22insert-sorting%22-idea
-Method 1: O(nlogn)
+Method 1: O(n^2)
 class Solution {
     public int[][] reconstructQueue(int[][] people) {
         Arrays.sort(people, new Comparator<int[]>(){
