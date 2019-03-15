@@ -5,6 +5,9 @@ In one move, we may choose two adjacent nodes and move one coin from one node to
 Return the number of moves required to make every node have exactly one coin.
 
 
+    Basically we are calculating how many times (a cumulative result)
+    each coin pass the edge (parent-child edge) in order to make the graph balanced.
+    
 class Solution {
     int res = 0;
     public int distributeCoins(TreeNode root) {
