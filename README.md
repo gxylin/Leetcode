@@ -905,7 +905,7 @@ Solution for Leetcode/Lintcode
 |893   |971  |[Flip Binary Tree To Match Preorder Traversal Very Good](Java/971_Flip.java)|Medium|Java|Leetcode|
 |894   |968  |[Binary Tree Cameras Greedy](Java/968_Binary.java)|Hard|Java|Leetcode|
 |895   |977  |[Squares of a Sorted Array Two Pointers](Java/977_Squares.java)|Easy|Java|Leetcode|
-|896   |978  |[Longest Turbulent Subarray](Java/978_Longest.java)|Medium|Java|Leetcode|
+|896   |978  |[Longest Turbulent Subarray Good](Java/978_Longest.java)|Medium|Java|Leetcode|
 |897   |979  |[Distribute Coins in Binary Tree Very Good](Java/979_Distribute.java)|Medium|Java|Leetcode|
 |898   |980  |[Unique Paths III Very Good](Java/980_Unique.java)|Hard|Java|Leetcode|
 |899   |92   |[Reverse Linked List II](Java/92_Reverse.java)|Medium|Java|Leetcode|
