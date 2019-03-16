@@ -108,13 +108,13 @@ public class BSTIterator {
 
     /** @return the next smallest number */
     public int next() {
-        TreeNode res = stack.pop();
-        TreeNode node = res.right;
+        TreeNode curr = stack.pop();
+        TreeNode node = curr.right;
         while (node != null){
             stack.push(node);
             node = node.left;
         }
-        return res.val;
+        return curr.val;
     }
 }
 
