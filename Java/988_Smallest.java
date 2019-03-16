@@ -33,6 +33,28 @@ class Solution {
     }
 }
 
+best solution
+class Solution {
+    String res = "";
+    public String smallestFromLeaf(TreeNode root) {
+        dfs(root, "");
+        return res;
+    }
+    private void dfs(TreeNode root, String prev){
+        if (root == null){
+            return;
+        }
+        String curr = (char)('a' + root.val) + prev;
+        if (root.left == null && root.right == null){//check if it is leaf
+            if (res.equals("") || curr.compareTo(res) < 0){
+                res = curr;
+            }
+        }
+        dfs(root.left, curr);
+        dfs(root.right, curr);
+    }
+}
+
 Method 2: without global
 Top Down
 class Solution {
