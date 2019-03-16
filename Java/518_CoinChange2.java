@@ -25,7 +25,7 @@ Example 3:
 
 Input: amount = 10, coins = [10] 
 Output: 1
-
+https://leetcode.com/problems/coin-change-2/discuss/141076/Logical-Thinking-with-Clear-Java-Code
 class Solution {
     public int change(int amount, int[] coins) {
         int[] dp = new int[amount+1];
@@ -50,3 +50,18 @@ class Solution {
         return dp[amount];
     }
 }
+
+/*
+Actually the above solution is reduced from 2D space complexity to 1D space complexity
+backpack DP:
+dp denotes the number of ways to reach amount with the number of count coins:
+two cases: 1. take the last coin: the amount must be greater than lastCoin. then
+              dp[amount][count] += dp[amount - lastCoin][count-1];
+           2. not take the last coin: dp[amount][count] += dp[amount][count-1]
+           
+dp[amount][count] = dp[amount - lastCoin][count-1] + dp[amount][count-1]
+*/
+then since count only replies on prevous step, reduced to 1D space dp[amount]
+
+
+
