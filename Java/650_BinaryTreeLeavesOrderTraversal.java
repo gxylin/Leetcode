@@ -29,6 +29,7 @@ Returns [[4, 5, 3], [2], [1]].
 所以怎么求高度?怎么保存答案? – DFS计算节点高度,hash 保存答案
 
 
+Method 1: label node from bottom to top, e.g., bottom: 0...
 public class Solution {
     /*
      * @param root: the root of binary tree
@@ -58,5 +59,5 @@ public class Solution {
     }
 }
 
-Method 2: label node
+Method 2: label node (label node from top to bottom, e.g. top: 0,1,2........)
 Similar to https://github.com/optimisea/Leetcode/blob/master/Java/865_Smallest.java
