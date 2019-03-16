@@ -65,3 +65,7 @@ class Solution {
         }
     }
 }
+
+
+Check the similar question: 996. Number of Squareful Arrays
+https://github.com/optimisea/Leetcode/blob/master/Java/996_Number.java
