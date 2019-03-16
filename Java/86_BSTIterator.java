@@ -123,3 +123,25 @@ public class BSTIterator {
  * BSTIterator i = new BSTIterator(root);
  * while (i.hasNext()) v[f()] = i.next();
  */
+
+
+Inorder traversal template
+https://github.com/optimisea/Leetcode/blob/master/Java/94_BinaryTreeInorderTraversal.java
+
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode node = root;
+        while (node != null || !stack.isEmpty()){
+            while (node != null){
+                stack.push(node);
+                node = node.left;
+            }
+            TreeNode curr = stack.pop();
+            res.add(curr.val);
+            node = curr.right;
+        }
+        return res;
+    }
+}
