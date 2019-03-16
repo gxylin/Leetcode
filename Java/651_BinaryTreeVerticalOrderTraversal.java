@@ -51,9 +51,12 @@ Return its vertical order traversal as:
 怎样保证第二个顺序,行数从小到大 – BFS 一行一行的访问
 
 
+Check another one:
 Refer to https://github.com/optimisea/Leetcode/blob/master/Java/987_Vertical.java
 
 for DFS solution with more challenging condition
+
+
 
 public class Solution {
     /*
