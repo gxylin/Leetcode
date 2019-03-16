@@ -912,7 +912,7 @@ Solution for Leetcode/Lintcode
 |900   |446  |[Arithmetic Slices II - Subsequence Very Good DP LIS](Java/446_Arithmetic.java)|Hard|Java|Leetcode|
 |901   |984  |[String Without AAA or BBB](Java/984_String.java)|Easy|Java|Leetcode|
 |902   |981  |[Time Based Key-Value Store](Java/981_Time.java)|Medium|Java|Leetcode|
-|903   |89   |[k sum](Java/89_kSum.java)|Hard|Java|Lintcode|
+|903   |89   |[k sum backpack Dynamic Programming Very Good](Java/89_kSum.java)|Hard|Java|Lintcode|
 |904   |402  |[Continuous Subarray Sum](Java/402_Continuous.java)|Medium|Java|Lintcode|
 |905   |22   |[Flatten List.java](Java/22_FlattenList.java)|Easy|Java|Lintcode|
 |906   |86   |[Binary Search Tree Iterator](Java/86_BSTIterator.java)|Hard|Java|Lintcode|
