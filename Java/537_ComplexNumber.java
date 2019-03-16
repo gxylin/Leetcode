@@ -39,3 +39,24 @@ class Solution {
         return result;
     }
 }
+
+
+class Solution {
+    public String complexNumberMultiply(String a, String b) {
+        int[] A = parse(a);
+        int[] B = parse(b);
+        StringBuilder sb = new StringBuilder();
+        int real = A[0] * B[0] - A[1] * B[1];
+        int imag = A[0] * B[1] + A[1] * B[0];
+        sb.append(real + "+" + imag + "i");
+        return sb.toString();
+    }
+    private int[] parse(String S){
+        int[] res = new int[2];
+        int i = 0;
+        int index = S.indexOf("+");
+        res[0] = Integer.parseInt(S.substring(0, index));
+        res[1] = Integer.parseInt(S.substring(index+1, S.length() - 1));
+        return res;
+    }
+}
