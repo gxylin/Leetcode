@@ -83,6 +83,29 @@ class Solution {
     }
 }
 
+
+class Solution {
+    public String smallestFromLeaf(TreeNode root) {
+        String[] res = new String[1];
+        res[0] = "";
+        dfs(root, "", res);
+        return res[0];
+    }
+    private void dfs(TreeNode root, String prev, String[] res){
+        if (root == null){
+            return;
+        }
+        String curr = (char)('a' + root.val) + prev;
+        if (root.left == null && root.right == null){//check if it is leaf
+            if (res[0].equals("") || curr.compareTo(res[0]) < 0){
+                res[0] = curr;
+            }
+        }
+        dfs(root.left, curr, res);
+        dfs(root.right, curr, res);
+    }
+}
+
 Methdo 3: Bottom up
 
 class Solution {
