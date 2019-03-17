@@ -32,6 +32,7 @@ piles.length <= H <= 10^9
 
 
 Similar as Leetcode 1014. Capacity To Ship Packages Within D Days
+https://github.com/optimisea/Leetcode/blob/master/Java/1014_Capacity.java
 
 
 Time complexity: O(NlogM)
