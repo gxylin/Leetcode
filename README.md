@@ -951,3 +951,4 @@ Solution for Leetcode/Lintcode
 |937   |215  |[Kth Largest Element in an Array](Java/215_Kth.java)|Medium|Java|Leetcode|
 |938   |468  |[Validate IP Address](Java/468_Validate.java)|Medium|Java|Leetcode|
 |939   |393  |[UTF-8 Validation](Java/393_utf8.java)|Medium|Java|Leetcode|
+|940   |1012 |[Complement of Base 10 Integer Good](Java/1012_Complement.java)|Easy|Java|Leetcode|
