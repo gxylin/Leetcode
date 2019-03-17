@@ -954,3 +954,4 @@ Solution for Leetcode/Lintcode
 |940   |1012 |[Complement of Base 10 Integer Good](Java/1012_Complement.java)|Easy|Java|Leetcode|
 |941   |1013 |[Pairs of Songs With Total Durations Divisible by 60 Very Good](Java/1013_Pairs.java)|Easy|Java|Leetcode|
 |942   |1014 |[Capacity To Ship Packages Within D Days Binary Search Very Good](Java/1014_Capacity.java)|Medium|Java|Leetcode|
+|943   |983  |[Minimum Cost For Tickets Very Good](Java/983_Minimum.java)|Medium|Java|Leetcode|
