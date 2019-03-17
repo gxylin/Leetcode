@@ -66,15 +66,14 @@ class Solution {
             if (!travelDay[i]){
                 dp[i] = dp[i-1];
             }else{
-                int min = Integer.MAX_VALUE;
+                dp[i] = Integer.MAX_VALUE;
                 for (int j = 0; j < costs.length; j++){
                     int cand = costs[j];
                     if (i >= costDay[j]){
                        cand += dp[i - costDay[j]];
                     }
-                    min = Math.min(min, cand);
+                    dp[i] = Math.min(dp[i], cand);
                 }
-                dp[i] = min;
             }
         }
         return dp[max];
