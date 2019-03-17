@@ -59,3 +59,32 @@ class Solution {
         return count;
     }
 }
+
+class Solution {
+    public int minEatingSpeed(int[] piles, int H) {
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for (int i : piles){
+            min = Math.min(min, i);
+            max = Math.max(max, i);
+        }
+        int low = 0;
+        int high = max;
+        while (low <= high){
+            int mid = low + (high - low) / 2;
+            if (possible(piles, H, mid)){
+                high = mid - 1;
+            }else{
+                low = mid + 1;
+            }
+        }
+        return low;
+    }
+    private boolean possible(int[] piles, int H, int mid){
+        int sum = 0;
+        for (int i : piles){
+            sum += (int)Math.ceil( (double)i / mid);
+        }
+        return sum <= H;
+    }
+}
