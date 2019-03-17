@@ -952,3 +952,4 @@ Solution for Leetcode/Lintcode
 |938   |468  |[Validate IP Address](Java/468_Validate.java)|Medium|Java|Leetcode|
 |939   |393  |[UTF-8 Validation](Java/393_utf8.java)|Medium|Java|Leetcode|
 |940   |1012 |[Complement of Base 10 Integer Good](Java/1012_Complement.java)|Easy|Java|Leetcode|
+|941   |1031 |[Pairs of Songs With Total Durations Divisible by 60 Very Good](Java/1013_Pairs.java)|Easy|Java|Leetcode|
