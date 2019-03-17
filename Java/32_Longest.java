@@ -92,6 +92,11 @@ class Solution {
 Method 4: Best solution
 Time complexity: O(n)
 Space complexity: O(1)
+    
+    
+must scan from left to right and from right to left.
+e.g., (()
+       
 class Solution {
     public int longestValidParentheses(String s) {
         int left = 0, right = 0, ans = 0;
