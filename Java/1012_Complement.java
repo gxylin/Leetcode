@@ -30,6 +30,10 @@ Note:
 0 <= N < 10^9
 https://leetcode.com/problems/complement-of-base-10-integer/discuss/256740/JavaC%2B%2BPython-Find-111.....1111-greater-N
 
+Let's find the first number X that X = 1111....1 > N
+And also, it has to be noticed that,
+N = 0 is a corner case expecting1 as result.
+ 
 
 Best solution 1 :
 N + bitwiseComplement(N) = 11....11 = X
