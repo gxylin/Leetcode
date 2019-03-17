@@ -931,7 +931,7 @@ Solution for Leetcode/Lintcode
 |919   |992  |[Subarrays with K Different Integers Very Good Sliding Window](Java/992_Subarrays.java)|Hard|Java|Leetcode|
 |920   |993  |[Cousins in Binary Tree](Java/993_Cousins.java)|Easy|Java|Leetcode|
 |921   |994  |[Rotting Oranges](Java/994_Rotting.java)|Easy|Java|Leetcode|
-|922   |996  |[Number of Squareful Arrays](Java/996_Number.java)|Hard|Java|Leetcode|
+|922   |996  |[Number of Squareful Arrays Backtracking Very Good](Java/996_Number.java)|Hard|Java|Leetcode|
 |923   |995  |[Minimum Number of K Consecutive Bit Flips](Java/995_Minimum.java)|Hard|Java|Leetcode|
 |924   |997  |[Find the Town Judge](Java/997_Find.java)|Easy|Java|Leetcode|
 |925   |999  |[Available Captures for Rook](Java/999_Available.java)|Easy|Java|Leetcode|
