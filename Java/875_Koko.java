@@ -30,6 +30,10 @@ Note:
 piles.length <= H <= 10^9
 1 <= piles[i] <= 10^9
 
+
+Similar as Leetcode 1014. Capacity To Ship Packages Within D Days
+
+
 Time complexity: O(NlogM)
 class Solution {
     public int minEatingSpeed(int[] piles, int H) {
