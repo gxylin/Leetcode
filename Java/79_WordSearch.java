@@ -101,6 +101,8 @@ class Solution {
     }
 }
 
+
+Best solution:
 class Solution {
     public boolean exist(char[][] board, String word) {
         if (board == null || board.length == 0){
