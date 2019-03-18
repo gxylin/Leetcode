@@ -377,7 +377,7 @@ Solution for Leetcode/Lintcode
 |367   |218  |[Skyline Very Good PriorityQueue Sweep Line](Java/218_Skyline.java)|Hard|Java|Leetcode|
 |368   |228  |[Summary Ranges](Java/228_Summary.java)|Medium|Java|Leetcode|
 |369   |224  |[Basic Calculator Stack Good](Java/224_Basic.java)|Hard|Java|Leetcode|
-|370   |225  |[Basic Calculator II No Stack Good](Java/227_Basic.java)|Medium|Java|Leetcode|
+|370   |227  |[Basic Calculator II No Stack Good](Java/227_Basic.java)|Medium|Java|Leetcode|
 |371   |246  |[Strobogrammatic Numbe](Java/246_Strobogrammatic.java)|Easy|Java|Leetcode|
 |372   |247  |[Strobogrammatic Numbe II](Java/247_Strobogrammatic.java)|Medium|Java|Leetcode|
 |373   |249  |[Group Shifted Strings Very Good](Java/249_Group.java)|Medium|Java|Leetcode|
