@@ -31,6 +31,7 @@ class Solution {
     }
 }
 
+Best solution:
 Method 2:
 Time complexity: O(n)
 class Solution {
@@ -82,7 +83,6 @@ O(n)
 class Solution {
     public int kthSmallest(TreeNode root, int k) {
         Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
         TreeNode node = root;
         while (node != null || !stack.isEmpty()){
             while (node != null){
