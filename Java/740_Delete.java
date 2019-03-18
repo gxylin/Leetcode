@@ -24,24 +24,68 @@ The length of nums is at most 20000.
 Each element nums[i] is an integer in the range [1, 10000].
 
 Similar as House Robber I
+dp[i] denotes the max pointers when reach up to number i, either delete it to get dp[i-2] + i * count[i] or keep it to get dp[i-1]
 
 Method 1: best solution
+Time complexity: O(N)
+Space complexity: O(N)
 class Solution {
     public int deleteAndEarn(int[] nums) {
-        int[] count = new int[10001];
+        if (nums == null || nums.length == 0){
+            return 0;
+        }
+        int max = 0;
+        for (int i : nums){
+            max = Math.max(max, i);
+        }
+        int[] count = new int[max+1];
         for (int i : nums){
             count[i]++;
         }
-        int[] dp = new int[10001];
+        int[] dp = new int[max+1];
+        dp[0] = 0;
         dp[1] = 1 * count[1];
-        for (int i = 2; i <= 10000; i++){
+        for (int i = 2; i <= max; i++){
             dp[i] = Math.max(dp[i-1], dp[i-2] + i * count[i]);
         }
-        return dp[10000];
+        return dp[max];
     }
 }
 
+
+Better solution:
+
 Method 2: DP + treemap
+
+Time complexity: O(nlogn)
+Space complexity: O(n)
+ class Solution {
+    public int deleteAndEarn(int[] nums) {
+        TreeMap<Integer, Integer> treemap = new TreeMap<>();
+        for (int i : nums){
+            treemap.put(i, treemap.getOrDefault(i, 0) + 1);
+        }
+        int n = treemap.size();
+        int[] dp = new int[n+1];
+        int i = 1;
+        for (int key : treemap.keySet()){
+            Integer preKey = treemap.lowerKey(key);
+            if (preKey == null){
+                dp[i] = key * treemap.get(key);
+            }else{
+                if (preKey == key - 1){
+                    dp[i] = Math.max(dp[i-1], dp[i-2] + key * treemap.get(key));
+                }else{
+                    dp[i] = dp[i-1] + key * treemap.get(key);
+                }
+            }
+            i++;
+        }
+        return dp[n];
+    }
+}
+
+
 class Solution {
     public int deleteAndEarn(int[] nums) {
         TreeMap<Integer, Integer> map = new TreeMap<>();
@@ -72,30 +116,3 @@ class Solution {
     }
 }
 
-Time complexity: O(nlogn)
-Space complexity: O(n)
- class Solution {
-    public int deleteAndEarn(int[] nums) {
-        TreeMap<Integer, Integer> treemap = new TreeMap<>();
-        for (int i : nums){
-            treemap.put(i, treemap.getOrDefault(i, 0) + 1);
-        }
-        int n = treemap.size();
-        int[] dp = new int[n+1];
-        int i = 1;
-        for (int key : treemap.keySet()){
-            Integer preKey = treemap.lowerKey(key);
-            if (preKey == null){
-                dp[i] = key * treemap.get(key);
-            }else{
-                if (preKey == key - 1){
-                    dp[i] = Math.max(dp[i-1], dp[i-2] + key * treemap.get(key));
-                }else{
-                    dp[i] = dp[i-1] + key * treemap.get(key);
-                }
-            }
-            i++;
-        }
-        return dp[n];
-    }
-}
