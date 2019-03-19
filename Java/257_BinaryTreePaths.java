@@ -11,15 +11,7 @@ All root-to-leaf paths are:
 
 ["1->2->5", "1->3"]
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Best solution:
 class Solution {
     public List<String> binaryTreePaths(TreeNode root) {
         List<String> result = new ArrayList<>();
