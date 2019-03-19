@@ -53,7 +53,9 @@ class Solution {
     }
 }
 
+Best solution:
 Can also use Stack<StringBuilder>
+
 class Solution {
     public String decodeString(String s) {
         if (s == null || s.length() == 0){
@@ -89,6 +91,7 @@ class Solution {
         return sb.toString();
     }
 }
+
 
 class Solution {
     public String decodeString(String s) {
