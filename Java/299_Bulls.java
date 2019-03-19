@@ -67,6 +67,7 @@ class Solution {
     }
 }
 
+best solution:
 class Solution {
     public String getHint(String secret, String guess) {
         int A = 0;
