@@ -75,3 +75,29 @@ class Solution {
         return Math.max(left, right) + 1;
     }
 }
+
+
+Best solution:
+
+class Solution {
+    public boolean isBalanced(TreeNode root) {
+        if (root == null){
+            return true;
+        }
+        boolean[] res = new boolean[1];
+        res[0] = true;
+        depth(root, res);
+        return res[0];
+    }
+    private int depth(TreeNode root, boolean[] res){
+        if (root == null){
+            return 0;
+        }
+        int left = depth(root.left, res);
+        int right =depth(root.right, res);
+        if (Math.abs(left - right) > 1){
+            res[0] = false;;
+        }
+        return Math.max(left, right) + 1;
+    }
+}
