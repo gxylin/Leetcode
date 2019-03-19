@@ -54,6 +54,7 @@ public class Solution {
 }
 
 
+Best solution:
 class Solution {
     public int longestConsecutive(int[] nums) {
         if (nums == null || nums.length == 0){
