@@ -12,36 +12,36 @@ You should return the indices: [0,9].
 Time complexity: O(N * M)
 class Solution {
     public List<Integer> findSubstring(String s, String[] words) {
-        List<Integer> result = new ArrayList<>();
-        if (s == null || s.length() == 0 || words.length == 0){
-            return result;
+        List<Integer> res = new ArrayList<>();
+        if (words == null || words.length == 0){
+            return res;
         }
         Map<String, Integer> map = new HashMap<>();
         for (String word : words){
             map.put(word, map.getOrDefault(word, 0) + 1);
         }
         int len = words[0].length();
-        int last = s.length() - len * words.length;
+        int n = words.length;
         int start = 0;
-        while (start  <= last){
+        int last = s.length() - n * len;
+        while (start <= last){
             Map<String, Integer> copy = new HashMap<>(map);
             for (int i = 0; i < words.length; i++){
-                String str = s.substring(start+i*len, start+i*len+len);
-                if (copy.containsKey(str)){
-                    copy.put(str, copy.get(str) - 1);
-                    if (copy.get(str) == 0){
-                        copy.remove(str);
-                    }
-                    if (copy.isEmpty()){
-                        result.add(start);
-                        break;
+                String sub = s.substring(start + i * len, start + i * len + len);
+                if (copy.containsKey(sub)){
+                    copy.put(sub, copy.get(sub) - 1);
+                    if (copy.get(sub) == 0){
+                        copy.remove(sub);
                     }
                 }else{
                     break;
                 }
+                if (copy.isEmpty()){
+                    res.add(start);
+                }
             }
             start++;
         }
-        return result;
+        return res;
     }
 }
