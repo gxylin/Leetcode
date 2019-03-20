@@ -14,6 +14,55 @@ Note:
 
 S will consist of lowercase letters and have length in range [1, 500].
 
+    
+    
+Best solution:
+The same as Rearrange String k Distance Apart 
+https://github.com/optimisea/Leetcode/edit/master/Java/358_Rearrange.java
+
+
+class Solution {
+    class Pair {
+        char ch;
+        int num;
+        public Pair (char ch, int num){
+            this.ch = ch;
+            this.num = num;
+        }
+    }
+    public String reorganizeString(String S) {
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : S.toCharArray()){
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        Queue<Pair> maxPQ = new PriorityQueue<>(new Comparator<Pair>(){
+            public int compare (Pair p1, Pair p2){
+                return p2.num - p1.num;
+            }
+        });
+        for (char c : map.keySet()){
+            maxPQ.offer(new Pair(c, map.get(c)));
+        }
+        StringBuilder sb = new StringBuilder();
+        Queue<Pair> waitQ = new LinkedList<>();
+        int K = 2;
+        while (!maxPQ.isEmpty()){
+            Pair curr = maxPQ.poll();
+            sb.append(curr.ch);
+            waitQ.offer(new Pair(curr.ch, curr.num - 1));
+            if (waitQ.size() < K){
+                continue;
+            }
+            Pair p = waitQ.poll();
+            if (p.num > 0){
+                maxPQ.offer(new Pair(p.ch, p.num));
+            }
+        }
+        return sb.length() == S.length() ? sb.toString() : "";
+    }
+}
+
+
 Similar as Task Scheduler, greedy + PQ
 class Solution {
     class Pair {
@@ -116,48 +165,3 @@ class Solution {
 }
 
 
-Best solution:
-The same as Rearrange String k Distance Apart 
-https://github.com/optimisea/Leetcode/edit/master/Java/358_Rearrange.java
-
-
-class Solution {
-    class Pair {
-        char ch;
-        int num;
-        public Pair (char ch, int num){
-            this.ch = ch;
-            this.num = num;
-        }
-    }
-    public String reorganizeString(String S) {
-        Map<Character, Integer> map = new HashMap<>();
-        for (char c : S.toCharArray()){
-            map.put(c, map.getOrDefault(c, 0) + 1);
-        }
-        Queue<Pair> maxPQ = new PriorityQueue<>(new Comparator<Pair>(){
-            public int compare (Pair p1, Pair p2){
-                return p2.num - p1.num;
-            }
-        });
-        for (char c : map.keySet()){
-            maxPQ.offer(new Pair(c, map.get(c)));
-        }
-        StringBuilder sb = new StringBuilder();
-        Queue<Pair> waitQ = new LinkedList<>();
-        int K = 2;
-        while (!maxPQ.isEmpty()){
-            Pair curr = maxPQ.poll();
-            sb.append(curr.ch);
-            waitQ.offer(new Pair(curr.ch, curr.num - 1));
-            if (waitQ.size() < K){
-                continue;
-            }
-            Pair p = waitQ.poll();
-            if (p.num > 0){
-                maxPQ.offer(new Pair(p.ch, p.num));
-            }
-        }
-        return sb.length() == S.length() ? sb.toString() : "";
-    }
-}
