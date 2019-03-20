@@ -72,7 +72,7 @@ class Solution {
 
 
 Best: the same method as Binary Tree Maximum Path Sum, Longest Univalue Path
-
+best solution:
 class Solution {
     int max = Integer.MIN_VALUE;
     public int diameterOfBinaryTree(TreeNode root) {
@@ -95,7 +95,6 @@ class Solution {
     }
 }
 
-Best solution:
 class Solution {
     public int diameterOfBinaryTree(TreeNode root) {
         if (root == null){
