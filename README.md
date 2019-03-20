@@ -955,3 +955,4 @@ Solution for Leetcode/Lintcode
 |941   |1013 |[Pairs of Songs With Total Durations Divisible by 60 Very Good](Java/1013_Pairs.java)|Easy|Java|Leetcode|
 |942   |1014 |[Capacity To Ship Packages Within D Days Binary Search Very Good](Java/1014_Capacity.java)|Medium|Java|Leetcode|
 |943   |983  |[Minimum Cost For Tickets Very Good](Java/983_Minimum.java)|Medium|Java|Leetcode|
+|944   |909  |[Snakes and Ladders BFS Good](Java/909_Snakes.java)|Medium|Java|Leetcode|
