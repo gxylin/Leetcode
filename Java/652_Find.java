@@ -87,3 +87,34 @@ class Solution {
     }
 }
 
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
+        List<TreeNode> res = new ArrayList<>();
+        Map<String, Integer> map = new HashMap<>();
+        preOrder(res, root, map);
+        return res;
+    }
+    private String preOrder(List<TreeNode> res, TreeNode root, Map<String, Integer> map){
+        if (root == null){
+            return "null,";
+        }
+        String str = root.val + ",";
+        str += preOrder(res, root.left, map);
+        str += preOrder(res, root.right, map);
+        map.put(str, map.getOrDefault(str, 0) + 1);
+        if (map.get(str) == 2){
+            res.add(root);
+        }
+        return str;
+    }
+}
+
