@@ -22,6 +22,14 @@ where the largest sum among the two subarrays is only 18.
 
 https://leetcode.com/problems/split-array-largest-sum/discuss/89817/Clear-Explanation:-8ms-Binary-Search-Java?page=2
 
+
+The same as Leetcode 1014 Capacity To Ship Packages Within D Days
+
+https://github.com/optimisea/Leetcode/blob/master/Java/1014_Capacity.java
+
+875 Koko Eating Bananas
+https://github.com/optimisea/Leetcode/blob/master/Java/875_Koko.java
+
 class Solution {
     public int splitArray(int[] nums, int m) {
         int max = 0;
