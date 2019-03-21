@@ -65,6 +65,7 @@ class Solution {
     }
 }
 
+Best solution:
 Method 2: binary search
 Time complexity: O(mlogn or nlogm)
 class Solution {
