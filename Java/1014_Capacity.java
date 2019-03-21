@@ -48,6 +48,9 @@ Note:
 Similar as 875 Koko Eating Bananas
 https://github.com/optimisea/Leetcode/blob/master/Java/875_Koko.java
 
+Simiar as 410 Split Array Largest Sum
+https://github.com/optimisea/Leetcode/blob/master/Java/410_Split.java
+
 class Solution {
     public int shipWithinDays(int[] weights, int D) {
         int sum = 0;
