@@ -8,6 +8,39 @@ Examples:
 "00", 0 -> ["0+0", "0-0", "0*0"]
 "3456237490", 9191 -> []
 
+Best solution:
+class Solution {
+    public List<String> addOperators(String num, int target) {
+        List<String> res = new ArrayList<>();
+        dfs(res, num, target, "", 0, 0, 0);
+        return res;
+    }
+    private void dfs(List<String> res, String num, int target, String item, int start, long eval, long prev){
+        if(start == num.length()){
+            if (eval + prev == target){
+                res.add(item);
+            }
+            return;
+        }
+        for (int i = start; i < num.length(); i++){
+            String sub = num.substring(start, i+1);
+            if (sub.length() > 1 && sub.charAt(0) == '0'){
+                break;
+            }
+            long curr = Long.parseLong(sub);
+            if (item.length() == 0){
+                dfs(res, num, target, sub, i + 1, eval, curr);
+            }else{
+                dfs(res, num, target, item + "+" + sub, i+1, eval + prev, curr);
+                dfs(res, num, target, item  + "-" + sub, i+1, eval + prev, -curr);
+                dfs(res, num, target, item + "*" + sub, i + 1, eval, prev * curr);    
+            }
+        }
+    }
+}
+
+
+
 class Solution {
     public List<String> addOperators(String num, int target) {
         List<String> result = new ArrayList<>();
