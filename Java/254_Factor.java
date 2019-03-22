@@ -70,7 +70,7 @@ class Solution {
     }
 }
 
-Method 2:
+Method 2: best solution
 public List<List<Integer>> getFactors(int n) {
     List<List<Integer>> result = new ArrayList<List<Integer>>();
     helper(result, new ArrayList<Integer>(), n, 2);
