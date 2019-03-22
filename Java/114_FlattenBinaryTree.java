@@ -91,6 +91,8 @@ class Solution {
 }
 
 With extra space and just the same as standard preorder traversal
+
+Best solution:
 class Solution {
     public void flatten(TreeNode root) {
         if (root == null){
