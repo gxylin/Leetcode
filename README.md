@@ -956,4 +956,5 @@ Solution for Leetcode/Lintcode
 |942   |1014 |[Capacity To Ship Packages Within D Days Binary Search Very Good](Java/1014_Capacity.java)|Medium|Java|Leetcode|
 |943   |983  |[Minimum Cost For Tickets Very Good](Java/983_Minimum.java)|Medium|Java|Leetcode|
 |944   |909  |[Snakes and Ladders BFS Good](Java/909_Snakes.java)|Medium|Java|Leetcode|
-|945   |1020 |[Partition Array Into Three Parts With Equal Sum](Java/1020_Partition.java)|Medium|Java|Leetcode|
+|945   |1020 |[Partition Array Into Three Parts With Equal Sum](Java/1020_Partition.java)|Easy|Java|Leetcode|
+|946   |1021 |[Best Sightseeing Pair](Java/1021_Best.java)|Medium|Java|Leetcode
