@@ -26,6 +26,10 @@ Note:
 
 1 <= K <= 10^5
 
+(A*B+C)%K = (A%K * B%K + C%K) %K
+
+It is only necessary to iterate K times because we get a distinct result in each iteration, if the module is 0 then the number of iterations is the answer.
+ 
 class Solution {
     public int smallestRepunitDivByK(int K) {
         if (K % 2 == 0 || K % 5 == 0){
