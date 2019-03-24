@@ -958,3 +958,4 @@ Solution for Leetcode/Lintcode
 |944   |909  |[Snakes and Ladders BFS Good](Java/909_Snakes.java)|Medium|Java|Leetcode|
 |945   |1020 |[Partition Array Into Three Parts With Equal Sum](Java/1020_Partition.java)|Easy|Java|Leetcode|
 |946   |1021 |[Best Sightseeing Pair](Java/1021_Best.java)|Medium|Java|Leetcode
+|947   |1023 |[Binary String With Substrings Representing 1 To N](Java/1023_Binary.java)|Medium|Java|Leetcode|
