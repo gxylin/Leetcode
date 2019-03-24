@@ -18,6 +18,9 @@ Note:
 2 <= A.length <= 50000
 1 <= A[i] <= 1000
 
+Method 1:
+Time complexity: O(N)
+Space complexity: O(N)
 class Solution {
     public int maxScoreSightseeingPair(int[] A) {
         int max = Integer.MIN_VALUE;
@@ -33,6 +36,22 @@ class Solution {
             int curr = stack.pop();
             int next = stack.peek();
             max = Math.max(max, A[curr] + A[next] + next - curr);
+        }
+        return max;
+    }
+}
+
+Method 2:
+https://leetcode.com/problems/best-sightseeing-pair/discuss/260850/JavaC%2B%2BPython-One-Pass
+Time complexity: O(N)
+Space complexity: O(1)
+class Solution {
+    public int maxScoreSightseeingPair(int[] A) {
+        int max = Integer.MIN_VALUE;
+        int curr = 0;
+        for (int i : A){
+            max = Math.max(max, curr + i);
+            curr = Math.max(curr, i) - 1;
         }
         return max;
     }
