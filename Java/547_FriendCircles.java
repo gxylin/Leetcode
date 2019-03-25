@@ -80,55 +80,51 @@ class Solution {
     }
 }
 
-Method 3: Union Find
+Method 3: Union Find Best solution
 class Solution {
-    class UF{
-        int[] id; //parent link
-        int[] size; //size of component for each root id;
-        int count; // number of components
-        public UF(int N){
-            count = N;
-            id = new int[N];
+    class UF {
+        int[] parent;
+        int[] size;
+        int count;
+        public UF (int N){
+            parent = new int[N];
             size = new int[N];
+            count = N;
             for (int i = 0; i < N; i++){
-                id[i] = i;
+                parent[i] = i;
                 size[i] = 1;
             }
         }
-        public int size(){
-            return count;
-        }
-        public int root(int p){
-            while (p != id[p]){
-                p = id[p];
+        public int find(int x){
+            if (parent[x] == x){
+                return x;
             }
-            return p;
+            return parent[x] = find(parent[x]);
         }
-        public boolean find(int p, int q){
-            return root(p) == root(q);
-        }
-        public void union(int p, int q){
-            int rp = root(p);
-            int rq = root(q);
-            if (size[rp] < size[rq]){
-                id[rp] = rq;
-                size[rq] += size[rp];
-            }else{
-                id[rq] = rp;
-                size[rp] += size[rq];
+        public void union (int x, int y){
+            int rootX = find(x);
+            int rootY = find(y);
+            if (rootX != rootY){
+                parent[rootX] = rootY;
+                size[rootY] += size[rootX];
+                count--;
             }
-            count--;
         }
     }
     public int findCircleNum(int[][] M) {
-        UF uf = new UF(M.length);
-        for (int i = 0; i < M.length; i++){
-            for (int j = i + 1; j < M[0].length; j++){
-                if (M[i][j] == 1 && !uf.find(i, j)){
+        int m = M.length;
+        int n = M[0].length;
+        UF uf = new UF(n);
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                if (i == j){
+                    continue;
+                }
+                if (M[i][j] == 1){
                     uf.union(i, j);
                 }
             }
         }
-        return uf.size();
+        return uf.count;
     }
 }
