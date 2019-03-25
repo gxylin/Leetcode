@@ -19,6 +19,9 @@ Example 1:
 Input: [1,3,5,6], 0
 Output: 0
 
+    
+Check leetcode: https://leetcode.com/problems/random-pick-with-weight/discuss/154044/Java-accumulated-freq-sum-and-binary-search
+
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int start = 0;
