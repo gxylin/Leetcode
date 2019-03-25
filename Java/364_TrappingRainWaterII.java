@@ -69,6 +69,7 @@ public class Solution {
 }
 
 
+Best solution:
 
 class Solution {
     class Node {
