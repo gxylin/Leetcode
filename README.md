@@ -960,3 +960,4 @@ Solution for Leetcode/Lintcode
 |946   |1021 |[Best Sightseeing Pair](Java/1021_Best.java)|Medium|Java|Leetcode
 |947   |1023 |[Binary String With Substrings Representing 1 To N](Java/1023_Binary.java)|Medium|Java|Leetcode|
 |948   |1022 |[Smallest Integer Divisible by K](Java/1022_Smallest.java)|Medium|Java|Leetcode|
+|949   |528  |[Random Pick with Weight Good](Java/528_Random.java)|Medium|Java|Leetcode|
