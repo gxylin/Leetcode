@@ -24,6 +24,8 @@ The input is two lists: the subroutines called and their arguments. Solution's c
 
 https://leetcode.com/problems/random-pick-with-weight/discuss/154044/Java-accumulated-freq-sum-and-binary-search
 
+
+Check binary search https://github.com/optimisea/Leetcode/blob/master/Java/35_Search.java 
 class Solution {
     Random random;
     int[] wSum;
