@@ -962,3 +962,4 @@ Solution for Leetcode/Lintcode
 |948   |1022 |[Smallest Integer Divisible by K](Java/1022_Smallest.java)|Medium|Java|Leetcode|
 |949   |528  |[Random Pick with Weight Good](Java/528_Random.java)|Medium|Java|Leetcode|
 |XXX   |XXX  |[Good Binary Search Question from LinkedIn](Java/linkedInBS.java)|
+|950   |149  |[Max Points on a Line gcd](Java/149_Max.java)|Hard|Java|Leetcode|
