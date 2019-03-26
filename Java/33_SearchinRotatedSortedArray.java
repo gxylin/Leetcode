@@ -65,7 +65,7 @@ class Solution {
                     start = mid;
                 }
             }else if (nums[mid] <= nums[end]){
-                if (nums[mid] < target && target <= nums[end]){
+                if (nums[mid] < target && target <= nums[end]){ // note that must use <= , not <
                     start = mid;
                 }else{
                     end = mid;
