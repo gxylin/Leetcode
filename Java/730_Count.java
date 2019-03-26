@@ -99,6 +99,8 @@ https://leetcode.com/articles/count-different-palindromic-subsequences/#
 https://leetcode.com/problems/count-different-palindromic-subsequences/discuss/109514/c-on2-time-on-memory-with-explanation
 
 
+Best solution:
+
 class Solution {
     public int countPalindromicSubsequences(String S) {
         int mod = (int)Math.pow(10, 9) + 7;
