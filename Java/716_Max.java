@@ -27,6 +27,8 @@ Note:
 
 
 Similar to 155. Min Stack Method 2
+
+Method 1: Two stacks O(N)
 class MaxStack {
     Stack<Integer> stack;
     Stack<Integer> maxStack;
