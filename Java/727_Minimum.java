@@ -20,7 +20,7 @@ Note:
     The length of S will be in the range [1, 20000].
     The length of T will be in the range [1, 100].
 
-Different from minmium window substring
+Different from minmium window substring, here is the difference: T is a subsequence of W which requires to keep the order
 https://github.com/optimisea/Leetcode/blob/master/Java/76_MinimumWindowSubstring.java
 
 Method 1: DP
