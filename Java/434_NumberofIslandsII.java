@@ -49,7 +49,7 @@ public class Solution {
             if (parent[a] == a){
                 return a;
             }
-            return find(parent[a]);
+            return parent[a] = find(parent[a]);
         }
         public void union(int a, int b){
             int rootA = find(a);
