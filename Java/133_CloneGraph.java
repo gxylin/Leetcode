@@ -117,6 +117,37 @@ public class Solution {
     }
 }
 
+
+public class Solution {   
+    public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
+        if (node == null){
+            return null;
+        }
+        Map<UndirectedGraphNode, UndirectedGraphNode> map = new HashMap<>();
+        UndirectedGraphNode root = new UndirectedGraphNode(node.label);
+        map.put(node, root);
+        dfs(node, map);
+        return root;
+    }
+    private void dfs(UndirectedGraphNode node, Map<UndirectedGraphNode, UndirectedGraphNode> map){
+        if (node == null){
+            return;
+        }
+        for (UndirectedGraphNode nei : node.neighbors){
+            if (!map.containsKey(nei)){
+                UndirectedGraphNode newNode = new UndirectedGraphNode(nei.label);
+                map.put(nei, newNode);
+                map.get(node).neighbors.add(newNode);
+                dfs(nei, map);//only new node will go on for dfs
+            }else{
+                map.get(node).neighbors.add(map.get(nei));
+            }
+            
+        }
+    }
+}
+
+
 Better version: DFS
 /**
  * Definition for undirected graph.
@@ -145,32 +176,61 @@ public class Solution {
 }
 
 
-Better DFS
-public class Solution {   
-    public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
+After updating new API
+/*
+// Definition for a Node.
+class Node {
+    public int val;
+    public List<Node> neighbors;
+
+    public Node() {}
+
+    public Node(int _val,List<Node> _neighbors) {
+        val = _val;
+        neighbors = _neighbors;
+    }
+};
+*/
+class Solution {
+    Map<Node, Node> map = new HashMap<>();
+    public Node cloneGraph(Node node) {
         if (node == null){
             return null;
         }
-        Map<UndirectedGraphNode, UndirectedGraphNode> map = new HashMap<>();
-        UndirectedGraphNode root = new UndirectedGraphNode(node.label);
-        map.put(node, root);
-        dfs(node, map);
-        return root;
+        Node clone = new Node(node.val, new ArrayList<>());
+        map.put(node, clone);
+        for (Node nei : node.neighbors){
+            if (!map.containsKey(nei)){
+                cloneGraph(nei);
+            }
+            clone.neighbors.add(map.get(nei));
+        }
+        return clone;
     }
-    private void dfs(UndirectedGraphNode node, Map<UndirectedGraphNode, UndirectedGraphNode> map){
+}
+
+Without global variable:
+
+class Solution {
+    public Node cloneGraph(Node node) {
+        if (node == null){
+            return null;
+        }
+        Map<Node, Node> map = new HashMap<>();
+        dfs(node, map);
+        return map.get(node);
+    }
+    private void dfs(Node node, Map<Node, Node> map){
         if (node == null){
             return;
         }
-        for (UndirectedGraphNode nei : node.neighbors){
+        Node clone = new Node(node.val, new ArrayList<>());
+        map.put(node, clone);
+        for (Node nei : node.neighbors){
             if (!map.containsKey(nei)){
-                UndirectedGraphNode newNode = new UndirectedGraphNode(nei.label);
-                map.put(nei, newNode);
-                map.get(node).neighbors.add(newNode);
-                dfs(nei, map);//only new node will go on for dfs
-            }else{
-                map.get(node).neighbors.add(map.get(nei));
+                dfs(nei, map);
             }
-            
+            clone.neighbors.add(map.get(nei));
         }
     }
 }
