@@ -17,6 +17,10 @@ Binary Search related question
 
 378. Kth Smallest Element in a Sorted Matrix
 
+35. Search Insert Position
+
+     Must see https://github.com/optimisea/Leetcode/blob/master/Java/35_Search.java
+
 Template to find the first smallest one:
 
 public int binarySearch(int[] nums, int target) {
@@ -34,6 +38,15 @@ public int binarySearch(int[] nums, int target) {
      return low;
 }
 
+     35. Search Insert Position
+
+     Must see https://github.com/optimisea/Leetcode/blob/master/Java/35_Search.java
+     
+Note that for this template, in most cases target should be between low (inclusive) and high (inclusive) 
+     But there are two corner cases
+     case 1: target less than low, e.g. [1,2,3] target = 0 == > low will be 1, high will be 2
+     case 2: target greater than high, e.g. [1,2,3] target = 4 == > low will be 2, high will be 3
+          
 public int binarySearch(int[] nums, int target) {
      int n = nums.length;
      int low = 0;
