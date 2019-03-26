@@ -84,3 +84,7 @@ class MaxStack {
  * int param_4 = obj.peekMax();
  * int param_5 = obj.popMax();
  */
+
+Method 2: Double Linked List + TreeMap
+O(LogN)
+   https://leetcode.com/articles/max-stack/
