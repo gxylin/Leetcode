@@ -106,3 +106,83 @@ class Solution {
         return true;
     }
 }
+
+
+
+class Solution {
+    public String validIPAddress(String IP) {
+        if (isIPv4(IP)){
+            return "IPv4";
+        }
+        if (isIPv6(IP)){
+            return "IPv6";
+        }
+        return "Neither";
+    }
+    private boolean isIPv4(String IP){
+        int count = 0;
+        for (char c : IP.toCharArray()){
+            if (c == '.'){
+                count++;
+            }
+        }
+        if (count != 3){
+            return false;
+        }
+        String[] strs = IP.split("\\.");
+        if (strs.length != 4){
+            return false;
+        }
+        for (String str : strs){
+            if (str.length() == 0 || str.length() > 3){
+                return false;
+            }
+            for (char c : str.toCharArray()){
+                if (!Character.isDigit(c)){
+                    return false;
+                }
+            }
+            int num = Integer.parseInt(str);
+            if (!str.equals(String.valueOf(num)) || num < 0 || num > 255){
+                return false;
+            }
+        }
+        return true;
+    }
+    private boolean isIPv6(String IP){
+        int count = 0;
+        for (char c : IP.toCharArray()){
+            if (c == ':'){
+                count++;
+            }
+        }
+        if (count != 7){
+            return false;
+        }
+        String[] strs = IP.split(":");
+        if (strs.length != 8){
+            return false;
+        }
+        for (String str : strs){
+            if (str.length() == 0 || str.length() > 4){
+                return false;
+            }
+            for (char c : str.toCharArray()){
+                if (Character.isLetter(c)){
+                    if (Character.isUpperCase(c)){
+                        if (c < 'A' || c > 'F'){
+                            return false;
+                        }
+                    }else{
+                        if (c < 'a' || c > 'f'){
+                            return false;
+                        }
+                    }
+                }else if (!Character.isDigit(c)){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+}
