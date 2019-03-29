@@ -64,3 +64,39 @@ class Solution {
         return n-1;
     }
 }
+
+Better version for binary search for insert position
+class Solution {
+    Random random;
+    int[] wSum;
+    public Solution(int[] w) {
+        random = new Random();
+        wSum = new int[w.length];
+        wSum[0] = w[0];
+        for (int i = 1; i < w.length; i++){
+            wSum[i] = wSum[i-1] + w[i];
+        }
+    }
+    
+    public int pickIndex() {
+        int n = wSum.length;
+        int max = wSum[n-1];
+        int target = random.nextInt(max) + 1;
+        //the below will be the same as Leetcode 35: search insert position
+        int start = 0;
+        int end = n-1;
+        while (start <= end){
+            int mid = start + (end - start) / 2;
+            if (wSum[mid] == target){
+                return mid;
+            }else if (wSum[mid] < target){
+                start = mid + 1;
+            }else{
+                end = mid - 1;
+            }
+        }
+        return start;
+    }
+}
+
+
