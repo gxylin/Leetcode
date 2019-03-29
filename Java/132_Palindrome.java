@@ -9,6 +9,25 @@ Output: 1
 Explanation: The palindrome partitioning ["aa","b"] could be produced using 1 cut.
 https://leetcode.com/problems/palindrome-partitioning-ii/discuss/42213/Easiest-Java-DP-Solution-(97.36)
 
+Best solution:
+class Solution {
+    public int minCut(String s) {
+        int n = s.length();
+        int[] dp = new int[n];
+        boolean[][] cache = new boolean[n][n];
+        for (int i = 0; i < n; i++){
+            dp[i] = i;
+            for (int j = 0; j <= i; j++){
+                if ((j+1 > i - 1 || cache[j+1][i-1]) && s.charAt(j) == s.charAt(i)){
+                    cache[j][i] = true;
+                    dp[i] = j == 0 ? 0 : Math.min(dp[i], dp[j-1] + 1);
+                }
+            }
+        }
+        return dp[n-1];
+    }
+}
+
 
 Similar as Longest Increasing Sequence
 Time complexity: O(n^2)
