@@ -51,6 +51,7 @@ class Solution {
     }
 }
 
+General format:
 class Solution {
     public String baseNeg2(int N) {
         //  If n is zero then in any base it will be 0 only 
@@ -58,14 +59,15 @@ class Solution {
             return "0";
         }
         StringBuilder sb = new StringBuilder();
+        int negBase = -2;
         while (N != 0){
             // Get remainder by negative base, it can be negative also 
-            int remainder = N % (-2); 
-            N /= -2; 
+            int remainder = N % negBase; 
+            N /= negBase; 
 
             // if remainder is negative, add abs(base) to it and add 1 to n 
             if (remainder < 0){
-                remainder += 2; 
+                remainder += -1 * negBase; 
                 N += 1; 
             } 
             // convert remainder to string add into the result 
@@ -74,7 +76,6 @@ class Solution {
         return sb.reverse().toString();
     }
 }
-
 
 5 % 2 = 1
 5 % (-2) = -1
