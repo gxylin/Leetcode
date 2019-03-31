@@ -10,6 +10,10 @@ You must not use any built-in BigInteger library or convert the inputs to intege
 高精度乘法的实现
 对应数位相加后一次性进位
 
+The same as String multipy
+https://github.com/optimisea/Leetcode/blob/master/Java/43_MultiplyStrings.java
+
+
 public class Solution {
     /*
      * @param num1: a non-negative integers
