@@ -966,4 +966,5 @@ Solution for Leetcode/Lintcode
 |951   |XXX  |[Combination Sum III](Java/combSum.java)|Medium|Java|XXX
 |952   |XXX  |[Compare String](Java/compareStr.java)|Medium|Java|XXX
 |953   |1029 |[Binary Prefix Divisible By 5](Java/1029_Binary.java)|Easy|Java|Leetcode|
-|954   |1030 |[Convert to Base -2 Good](Java/1028_Convert.java)|Medium|Java|Leetcode|
+|954   |1028 |[Convert to Base -2 Good](Java/1028_Convert.java)|Medium|Java|Leetcode|
+|955   |1030 |[Next Greater Element](Java/1030_Next.java)|Medium|Java|Leetcode|
