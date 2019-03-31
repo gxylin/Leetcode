@@ -965,3 +965,4 @@ Solution for Leetcode/Lintcode
 |950   |149  |[Max Points on a Line gcd](Java/149_Max.java)|Hard|Java|Leetcode|
 |951   |XXX  |[Combination Sum III](Java/combSum.java)|Medium|Java|XXX
 |952   |XXX  |[Compare String](Java/compareStr.java)|Medium|Java|XXX
+|953   |1029 |[Binary Prefix Divisible By 5](Java/1029_Binary.java)|Easy|Java|Leetcode|
