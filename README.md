@@ -968,3 +968,4 @@ Solution for Leetcode/Lintcode
 |953   |1029 |[Binary Prefix Divisible By 5](Java/1029_Binary.java)|Easy|Java|Leetcode|
 |954   |1028 |[Convert to Base -2 Good](Java/1028_Convert.java)|Medium|Java|Leetcode|
 |955   |1030 |[Next Greater Element](Java/1030_Next.java)|Medium|Java|Leetcode|
+|956   |1031 |[Number of Enclaves](Java/1031_Number.java)|Medium|Java|Leetcode|
