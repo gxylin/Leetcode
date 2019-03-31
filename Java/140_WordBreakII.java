@@ -50,29 +50,35 @@ In this case: the return result could be empty due to no valid break.
 class Solution {
     public List<String> wordBreak(String s, List<String> wordDict) {
         Map<String, List<String>> map = new HashMap<>();
-        return dp(map, s, wordDict);
+        Set<String> set = new HashSet<>();
+        for (String str : wordDict){
+            set.add(str);
+        }
+        return dfs(s, set, map);
     }
-    private List<String> dp(Map<String, List<String>> map, String s, List<String> wordDict){
+    private List<String> dfs(String s, Set<String> set, Map<String, List<String>> map){
         if (map.containsKey(s)){
             return map.get(s);
         }
-        List<String> result = new ArrayList<>();
-        if  (wordDict.contains(s)){
-            result.add(s);
+        List<String> res = new ArrayList<>();
+        if (set.contains(s)){
+            res.add(s);
         }
-        for (int i = 1; i < s.length(); i++){
+        for (int i = 1; i <= s.length(); i++){
             String sub = s.substring(0, i);
-            if (wordDict.contains(sub)){
-                List<String> temp = dp(map, s.substring(i), wordDict);
+            if (set.contains(sub)){
+                List<String> temp = dfs(s.substring(i), set, map);
                 if (temp.size() != 0){
                     for (String str : temp){
-                        result.add(sub + " " + str);
+                        res.add(sub + " " + str);
                     }
                 }
+                
             }
         }
-        map.put(s, result);
-        return result;
+        map.put(s, res);
+        return res;
+        
     }
 }
 
