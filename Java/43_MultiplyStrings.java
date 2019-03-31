@@ -35,6 +35,7 @@ class Solution {
     }
 }
 
+Best solution:
 class Solution {
     public String multiply(String num1, String num2) {
         int l1 = num1.length();
