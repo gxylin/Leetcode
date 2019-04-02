@@ -970,3 +970,4 @@ Solution for Leetcode/Lintcode
 |955   |1030 |[Next Greater Element](Java/1030_Next.java)|Medium|Java|Leetcode|
 |956   |1031 |[Number of Enclaves](Java/1031_Number.java)|Medium|Java|Leetcode|
 |957   |158  |[Read N Characters Given Read4 II - Call multiple times](Java/158_Read.java)|Hard|Java|Leetcode|
+|958   |708  |[Insert into a Cyclic Sorted List](Java/708_insert.java)|Medium|Java|Leetcode|
