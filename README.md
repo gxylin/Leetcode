@@ -119,7 +119,7 @@ Solution for Leetcode/Lintcode
 |110   |264  | [Ugly Number II Dynamic Programming Merge Sort Idea](Java/264_UglyNumberII.java)|Medum|Java|Leetcode|
 |111   |692  | [Top K Frequent Words Very Good](Java/692_TopKFrequentWords.java)|Medium|Java|Leetcode|
 |112   |613  | [High Five Good](Java/613_HighFive.java)|Medium|Java|Lintcode|
-|113 |401 |[Kth Smallest Number in Sorted Matrix Good Binary Search](Java/401_KthSmallestNumberinSortedMatrix.java)|Medium|Java|Lintcode
+|113|401|[Kth Smallest Number in a Sorted Matrix Good Binary Search](Java/401_KthSmallestNumberinSortedMatrix.java)|Medium|Java|Lintcode
 |114   |109  | [Triangle.java](Java/109_Triangle.java)|Easy|Java|Lintcode|
 |115   |64   | [Minimum Path Sum.java](Java/64_MinimumPathSum.java)|Medium|Java|Leetcode|
 |116   |62   | [Unique Paths.java](Java/62_UniquePaths.java)|Medium|Java|Leetcode|
