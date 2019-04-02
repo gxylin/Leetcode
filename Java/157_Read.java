@@ -18,6 +18,14 @@ Output: "abcde"
 Note:
 The read function will only be called once for each test case.
 
+Note that 
+思路：文件中的字符数可能小于n，所以不断借助read4读取字符的时候需要判断是否已经读到文件末尾。每次将read4中字符复制到buf中时，
+也需要判断好能够复制的上限。
+注意， n也可能小于文件的字数
+
+
+https://www.jianshu.com/p/b06b90a52617?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+https://cheonhyangzhang.wordpress.com/2016/12/22/157-leetcode-java-read-n-characters-given-read4-easy/
 
 public int read(char[] buf, int n) {
   boolean eof = false;      // end of file flag
@@ -41,4 +49,3 @@ public int read(char[] buf, int n) {
   return total;
 }
 
-https://www.jiuzhang.com/solution/read-n-characters-given-read4-ii-call-multiple-times/
