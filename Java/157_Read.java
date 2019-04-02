@@ -23,7 +23,12 @@ Note that
 也需要判断好能够复制的上限。
 注意， n也可能小于文件的字数
 
-
+The meaning here is that read4() function will read 4 characters at a time from a file and then put the characters that has been read
+into this buf variable.
+So read() function is reading at most n characters from a file ( we don’t know what file and how it’s reading from the file), and 
+put x characters into char[] buf.
+  
+  
 https://www.jianshu.com/p/b06b90a52617?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
 https://cheonhyangzhang.wordpress.com/2016/12/22/157-leetcode-java-read-n-characters-given-read4-easy/
 
