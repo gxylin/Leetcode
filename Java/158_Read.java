@@ -7,6 +7,8 @@ The read function may be called multiple times.
 
 https://www.youtube.com/watch?v=5gO5syMOKnI
 
+https://www.lintcode.com/problem/read-n-characters-given-read4-ii-call-multiple-times/description
+
 Public class Solution Extends Read4{
   @buffer: destination buffer
   @n: max character that can read
