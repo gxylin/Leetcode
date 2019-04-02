@@ -30,7 +30,6 @@ put x characters into char[] buf.
   
   
 https://www.jianshu.com/p/b06b90a52617?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
-https://cheonhyangzhang.wordpress.com/2016/12/22/157-leetcode-java-read-n-characters-given-read4-easy/
 
 buf: the destination buffer
 n: max number of char to read
@@ -56,5 +55,30 @@ public int read(char[] buf, int n) {
   }
   
   return total;
+}
+
+https://cheonhyangzhang.wordpress.com/2016/12/22/157-leetcode-java-read-n-characters-given-read4-easy/
+
+public class Solution extends Reader4 {
+    /**
+     * @param buf Destination buffer
+     * @param n   Maximum number of characters to read
+     * @return    The number of characters read
+     */
+    public int read(char[] buf, int n) {
+        int offset = 0;
+        char[] buf4 = new char[4];
+        while(true) {
+            int count = read4(buf4);
+            if (count == 0) {
+                break;
+            }
+            for (int i = 0; i < count && offset < n; i ++) {
+                buf[offset] = buf4[i];
+                offset ++;
+            }
+        }
+        return offset;
+    }
 }
 
