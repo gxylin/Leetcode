@@ -32,6 +32,10 @@ put x characters into char[] buf.
 https://www.jianshu.com/p/b06b90a52617?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
 https://cheonhyangzhang.wordpress.com/2016/12/22/157-leetcode-java-read-n-characters-given-read4-easy/
 
+buf: the destination buffer
+n: max number of char to read
+return the number of char that was read
+
 public int read(char[] buf, int n) {
   boolean eof = false;      // end of file flag
   int total = 0;            // total bytes have read
