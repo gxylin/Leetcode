@@ -64,3 +64,52 @@ public class Solution {
         traverse(root.right,queue);
     }
 }
+
+
+
+Iteration:
+/**
+ * Definition for Doubly-ListNode.
+ * public class DoublyListNode {
+ *     int val;
+ *     DoublyListNode next, prev;
+ *     DoublyListNode(int val) {
+ *         this.val = val;
+ *         this.next = this.prev = null;
+ *     }
+ * } * Definition of TreeNode:
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left, right;
+ *     public TreeNode(int val) {
+ *         this.val = val;
+ *         this.left = this.right = null;
+ *     }
+ * }
+ */
+
+public class Solution {
+    /**
+     * @param root: The root of tree
+     * @return: the head of doubly list node
+     */
+    public DoublyListNode bstToDoublyList(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode node = root;
+        DoublyListNode dummy = new DoublyListNode(-1);
+        DoublyListNode prev = dummy;
+        while (!stack.isEmpty() || node != null){
+            while (node != null){
+                stack.push(node);
+                node = node.left;
+            }
+            TreeNode curr = stack.pop();
+            DoublyListNode temp = new DoublyListNode(curr.val);
+            prev.next = temp;
+            temp.prev = prev;
+            prev = temp;
+            node = curr.right;
+        }
+        return dummy.next;
+    }
+}
