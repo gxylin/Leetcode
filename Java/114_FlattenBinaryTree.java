@@ -51,8 +51,22 @@ class Solution {
     }
 }
          
-         
-         
+Best solution: for recursion
+Because the required traversal is preorder, we think/work from reverse preorder traversal
+class Solution {
+    TreeNode lastNode = null;
+    public void flatten(TreeNode root) {
+        if (root == null){
+            return;
+        }
+        //reverse preorder
+        flatten(root.right);
+        flatten(root.left);
+        root.right = lastNode;
+        root.left = null;
+        lastNode = root;
+    }
+}
          
 Method 1: Divide && Conquer
 /**
@@ -145,22 +159,7 @@ class Solution {
 }
 
 
-Best solution:
-Because the required traversal is preorder, we think/work from reverse preorder traversal
-class Solution {
-    TreeNode lastNode = null;
-    public void flatten(TreeNode root) {
-        if (root == null){
-            return;
-        }
-        //reverse preorder
-        flatten(root.right);
-        flatten(root.left);
-        root.right = lastNode;
-        root.left = null;
-        lastNode = root;
-    }
-}
+
 
 // helper function takes in the previous head, do the flattening and returns the head of the flatten binary tree
 class Solution {
