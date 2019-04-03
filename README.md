@@ -963,7 +963,7 @@ Solution for Leetcode/Lintcode
 |949   |528  |[Random Pick with Weight Good](Java/528_Random.java)|Medium|Java|Leetcode|
 |XXX   |XXX  |[Good Binary Search Question from LinkedIn](Java/linkedInBS.java)|
 |950   |149  |[Max Points on a Line gcd](Java/149_Max.java)|Hard|Java|Leetcode|
-|951   |XXX  |[Combination Sum III](Java/combSum.java)|Medium|Java|XXX
+|951   |XXX  |[Combination Sum III Menu](Java/combSum.java)|Medium|Java|XXX
 |952   |XXX  |[Compare String](Java/compareStr.java)|Medium|Java|XXX
 |953   |1029 |[Binary Prefix Divisible By 5](Java/1029_Binary.java)|Easy|Java|Leetcode|
 |954   |1028 |[Convert to Base -2 Good](Java/1028_Convert.java)|Medium|Java|Leetcode|
