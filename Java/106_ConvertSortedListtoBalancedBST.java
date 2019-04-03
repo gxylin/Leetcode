@@ -55,3 +55,54 @@ public class Solution {
         return root;
     }
 }
+
+
+/**
+ * Definition for ListNode.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int val) {
+ *         this.val = val;
+ *         this.next = null;
+ *     }
+ * }
+ * Definition of TreeNode:
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left, right;
+ *     public TreeNode(int val) {
+ *         this.val = val;
+ *         this.left = this.right = null;
+ *     }
+ * }
+ */
+
+
+public class Solution {
+    /*
+     * @param head: The first node of linked list.
+     * @return: a tree node
+     */
+    public TreeNode sortedListToBST(ListNode head) {
+        if (head == null){
+            return null;
+        }
+        return build(head, null);
+    }
+    private TreeNode build(ListNode head, ListNode tail){
+        if (head == tail){
+            return null;
+        }
+        ListNode fast = head;
+        ListNode slow = head;
+        while (fast != tail && fast.next != tail){
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        TreeNode root = new TreeNode(slow.val);
+        root.left = build(head, slow);
+        root.right = build(slow.next, tail);
+        return root;
+    }
+}
