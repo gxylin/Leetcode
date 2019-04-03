@@ -26,6 +26,34 @@ Hints:
 If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal.
 
 
+Best solution:
+
+class Solution {
+    public void flatten(TreeNode root) {
+        if (root == null){
+            return;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()){
+            TreeNode curr = stack.pop();
+            if (curr.right != null){
+                stack.push(curr.right);
+            }
+            if (curr.left != null){
+                stack.push(curr.left);
+            }
+            if (!stack.isEmpty()){
+                curr.right = stack.peek();//note that curr.left is not necessary to be the next, but stack.peek() will be for sure.
+                curr.left = null;
+            }
+        }
+    }
+}
+         
+         
+         
+         
 Method 1: Divide && Conquer
 /**
  * Definition for a binary tree node.
