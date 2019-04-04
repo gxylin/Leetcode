@@ -1,8 +1,10 @@
 We are stacking blocks to form a pyramid. Each block has a color which is a one letter string, like `'Z'`.
 
-For every block of color `C` we place not in the bottom row, we are placing it on top of a left block of color `A` and right block of color `B`. We are allowed to place the block there only if `(A, B, C)` is an allowed triple.
+For every block of color `C` we place not in the bottom row, we are placing it on top of a left block of color `A` and right block
+of color `B`. We are allowed to place the block there only if `(A, B, C)` is an allowed triple.
 
-We start with a bottom row of bottom, represented as a single string. We also start with a list of allowed triples allowed. Each allowed triple is represented as a string of length 3.
+We start with a bottom row of bottom, represented as a single string. We also start with a list of allowed triples allowed. 
+    Each allowed triple is represented as a string of length 3.
 
 Return true if we can build the pyramid all the way to the top, otherwise false.
 
