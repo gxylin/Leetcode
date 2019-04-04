@@ -19,6 +19,61 @@ As an added challenge, try to code it using only iterators in C++ or iterators i
 
 http://massivealgorithms.blogspot.com/2015/11/buttercola-airbnb-2d-iterator-with.html
 
+
+With remove()
+public class Solution{
+   private List<List<Integer>> matrix;
+   private int rowId;
+   private int colId;
+   private int numRows;
+   
+   public Solution(List<List<Integer>> matrix){
+      this.matrix = matrix;
+      rowId = 0;
+      colId = 0;
+      numRows = matrix.size();
+   }
+  
+  public boolean hasNext(){
+     if (matrix == null || matrix.size() == 0){
+        return false;
+     }
+    while (rowId < numRows && (matrix.get(rowId) == null || matrix.get(rowId).isEmpty())){
+       rowId++;
+    }
+    return rowId < numRows;
+  }
+  
+   public void next(){
+     int val = matrix.get(rowId).get(colId);
+     colId++;
+     if (colId == matrix.get(rowId).size()){
+        rowId++;
+        colId = 0;
+     }
+     return val;
+   }
+   
+   public void remove(){
+      if (colId == 0){ // Case 1: if the element to remove is the last element of the row
+         List<Integer> list = matrix.get(rowId - 1);
+         list.remove(list.size() - 1);
+       //update rowId: this is just a possible option
+         if (list.size() == 0){
+           matrix.remove(list);
+           rowId--;
+         }
+      }else{ // Case 2: the element to remove is not the last element
+         List<Integer> list = matrix.get(rowId);
+         list.remove(colId - 1);
+        //update colId
+         colId--;
+      }
+   }
+}
+
+
+
 Best solution:
 Method 2:
  public class Vector2D implements Iterator<Integer> {
