@@ -16,6 +16,41 @@ As an added challenge, try to code it using only iterators in C++ or iterators i
 
  
  http://www.jiuzhang.com/solutions/flatten-2d-vector/
+
+Best solution:
+Method 2:
+ public class Vector2D implements Iterator<Integer> {
+    private Iterator<List<Integer>> i;
+    private Iterator<Integer> j;
+    
+    public Vector2D(List<List<Integer>> vec2d) {
+        i = vec2d.iterator();
+    }
+
+    @Override
+    public Integer next() {
+        return j.next();
+    }
+
+    @Override
+    public boolean hasNext() {
+        while (i.hasNext() && (j == null || !j.hasNext())){
+            j = i.next().iterator();
+        }
+        if (j == null){
+            return false;
+        }
+        return j.hasNext();
+    }
+}
+
+/**
+ * Your Vector2D object will be instantiated and called as such:
+ * Vector2D i = new Vector2D(vec2d);
+ * while (i.hasNext()) v[f()] = i.next();
+ */
+
+
 public class Vector2D implements Iterator<Integer> {
     Stack<Integer> stack;
     public Vector2D(List<List<Integer>> vec2d) {
@@ -56,34 +91,4 @@ public class Vector2D implements Iterator<Integer> {
  */
  
  
- Method 2:
- public class Vector2D implements Iterator<Integer> {
-    private Iterator<List<Integer>> i;
-    private Iterator<Integer> j;
-    
-    public Vector2D(List<List<Integer>> vec2d) {
-        i = vec2d.iterator();
-    }
-
-    @Override
-    public Integer next() {
-        return j.next();
-    }
-
-    @Override
-    public boolean hasNext() {
-        while (i.hasNext() && (j == null || !j.hasNext())){
-            j = i.next().iterator();
-        }
-        if (j == null){
-            return false;
-        }
-        return j.hasNext();
-    }
-}
-
-/**
- * Your Vector2D object will be instantiated and called as such:
- * Vector2D i = new Vector2D(vec2d);
- * while (i.hasNext()) v[f()] = i.next();
- */
+ 
