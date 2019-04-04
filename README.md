@@ -261,7 +261,7 @@ Solution for Leetcode/Lintcode
 |252   |213  |[House Robber II Very Good](Java/213_HouseRobberII.java)|Medium|Java|Leetcode|
 |253   |230  |[Kth Smallest Element in a BST Good](Java/230_KthSmallestBST.java)|Medium|Java|Leetcode|
 |254   |671  |[Second Minimum Node In a Binary Tree](Java/671_SecondMinimumBinary.java)|Easy|Java|Leetcode|
-|255   |251  |[Flatten 2D Vector.java](Java/251_Flatten2DVector.java)|Medium|Java|Leetcode|
+|255   |251  |[Flatten 2D Vector Airbnb](Java/251_Flatten2DVector.java)|Medium|Java|Leetcode|
 |256   |252  |[Meeting Rooms Very Good](Java/252_MeetingRooms.java)|Easy|Java|Leetcode|
 |257   |253  |[Meeting Rooms II TreeMap Sweep line Very Good](Java/253_MeetingRoomsII.java)|Medium|Java|Leetcode|
 |258   |269  |[Alien Dictionary Topological sort Very good](Java/269_AlienDictionary.java)|Hard|Java|Leetcode|
