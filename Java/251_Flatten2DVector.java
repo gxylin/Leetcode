@@ -17,6 +17,8 @@ As an added challenge, try to code it using only iterators in C++ or iterators i
  
  http://www.jiuzhang.com/solutions/flatten-2d-vector/
 
+http://massivealgorithms.blogspot.com/2015/11/buttercola-airbnb-2d-iterator-with.html
+
 Best solution:
 Method 2:
  public class Vector2D implements Iterator<Integer> {
