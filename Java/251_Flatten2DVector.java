@@ -20,7 +20,7 @@ As an added challenge, try to code it using only iterators in C++ or iterators i
 http://massivealgorithms.blogspot.com/2015/11/buttercola-airbnb-2d-iterator-with.html
 
 
-With remove()
+Airbnb phone interview: With remove()
 public class Solution{
    private List<List<Integer>> matrix;
    private int rowId;
