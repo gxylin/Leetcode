@@ -117,6 +117,9 @@ Corner case:
 If all number are negative,
 return the maximum one,
 (which equals to the max subarray sum)
+
+
+Best solution: O(N)
 class Solution {
     public int maxSubarraySumCircular(int[] A) {
         int max = Integer.MIN_VALUE;
