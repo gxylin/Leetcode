@@ -71,3 +71,25 @@ class Solution {
         return str;
     }
 }
+
+
+class Solution {
+    public String countAndSay(int n) {
+        String curr = "1";
+        for (int i = 1; i < n; i++){
+            StringBuilder sb = new StringBuilder();
+            int j = 0;
+            while (j < curr.length()){
+                int k = j;
+                while (k < curr.length() && curr.charAt(k) == curr.charAt(j)){
+                    k++;
+                }
+                sb.append(k-j);
+                sb.append(curr.charAt(j));
+                j = k;
+            }
+            curr = sb.toString();
+        }
+        return curr;
+    }
+}
