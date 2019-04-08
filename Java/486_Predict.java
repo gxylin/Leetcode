@@ -48,6 +48,22 @@ class Solution {
     }
 }
 
+Method 3: best of best
+Time complexity: O(n^2)
+Space complexity: O(n^2)
+class Solution {
+    public boolean PredictTheWinner(int[] nums) {
+        int n = nums.length;
+        int[][] dp = new int[n][n];
+        for (int i = n - 2; i >= 0; i--){
+            for (int j = i + 1; j < n; j++){
+                dp[i][j] = Math.max(nums[i] - dp[i+1][j], nums[j] - dp[i][j-1]);
+            }
+        }
+        return dp[0][n-1] >= 0;
+    }
+}
+
 Method 1:
 Time complexity: O(2^n)
 Space complexity: O(n)
@@ -84,21 +100,7 @@ public class Solution {
     }
 }
 
-Method 3:
-Time complexity: O(n^2)
-Space complexity: O(n^2)
-class Solution {
-    public boolean PredictTheWinner(int[] nums) {
-        int n = nums.length;
-        int[][] dp = new int[n][n];
-        for (int i = n - 2; i >= 0; i--){
-            for (int j = i + 1; j < n; j++){
-                dp[i][j] = Math.max(nums[i] - dp[i+1][j], nums[j] - dp[i][j-1]);
-            }
-        }
-        return dp[0][n-1] >= 0;
-    }
-}
+
 
 Method 4:
 Time complexity: O(n^2)
