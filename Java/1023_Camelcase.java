@@ -35,6 +35,33 @@ Note:
 All strings consists only of lower and upper case English letters.
 
 
+Better solution:
+class Solution {
+    public List<Boolean> camelMatch(String[] queries, String pattern) {
+        List<Boolean> res = new ArrayList<>();
+        for (String query : queries){
+            if (isMatch(query, pattern)){
+                res.add(true);
+            }else{
+                res.add(false);
+            }
+        }
+        return res;
+    }
+    private boolean isMatch(String query, String pattern){
+        int j = 0;
+        for (int i = 0; i < query.length(); i++){
+            if (j < pattern.length() && query.charAt(i) == pattern.charAt(j)){
+                j++;
+            }else if (Character.isUpperCase(query.charAt(i))){
+                return false;
+            }
+        }
+        return j == pattern.length();
+    }
+}
+
+
 class Solution {
     public List<Boolean> camelMatch(String[] queries, String pattern) {
         List<Boolean> res = new ArrayList<>();
