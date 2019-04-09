@@ -971,3 +971,4 @@ Solution for Leetcode/Lintcode
 |956   |1031 |[Number of Enclaves](Java/1031_Number.java)|Medium|Java|Leetcode|
 |957   |158  |[Read N Characters Given Read4 II - Call multiple times](Java/158_Read.java)|Hard|Java|Leetcode|
 |958   |708  |[Insert into a Cyclic Sorted List](Java/708_insert.java)|Medium|Java|Leetcode|
+|959   |1021 |[Remove Outermost Parentheses](Java/1021_Remove.java)|Easy|Java|Leetcode|
