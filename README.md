@@ -974,3 +974,4 @@ Solution for Leetcode/Lintcode
 |959   |1021 |[Remove Outermost Parentheses](Java/1021_Remove.java)|Easy|Java|Leetcode|
 |960   |1022 |[Sum of Root To Leaf Binary Numbers](Java/1022_Sum.java)|Easy|Java|Leetcode|
 |961   |1023 |[Camelcase Matching](Java/1023_Camelcase.java)|Medium|Java|Leetcode|
+|962   |1024 |[Video Stitching](Java/1024_Video.java)|Medium|Java|Leetcode|
