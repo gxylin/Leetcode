@@ -102,3 +102,48 @@ class Solution {
         return res;
     }
 }
+
+
+Bests solution:
+class Solution {
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        int[] indegree = new int[numCourses];
+        Map<Integer, Set<Integer>> map = new HashMap<>();
+        for (int[] pre : prerequisites){
+            indegree[pre[0]]++;
+            if (!map.containsKey(pre[1])){
+                map.put(pre[1], new HashSet<>());
+            }
+            map.get(pre[1]).add(pre[0]);
+        }
+        Queue<Integer> queue = new LinkedList<>();
+        for (int i = 0; i < indegree.length; i++){
+            if (indegree[i] == 0){
+                queue.offer(i);
+            }
+        }
+        List<Integer> list = new ArrayList<>();
+        while (!queue.isEmpty()){
+            int curr = queue.poll();
+            list.add(curr);
+            if (map.containsKey(curr)){
+                Set<Integer> set = map.get(curr);
+                for (int next : set){
+                    indegree[next]--;
+                    if (indegree[next] == 0){
+                        queue.offer(next);
+                    }
+                }
+            }
+        }
+        if (list.size() < numCourses){
+            return new int[0];
+        }
+        int index = 0;
+        int[] res = new int[numCourses];
+        for (int i = 0; i < numCourses; i++){
+            res[index++] = list.get(i);
+        }
+        return res;
+    }
+}
