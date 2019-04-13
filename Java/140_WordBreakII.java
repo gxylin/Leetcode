@@ -64,15 +64,15 @@ class Solution {
         if (set.contains(s)){
             res.add(s);
         }
-        for (int i = 1; i <= s.length(); i++){
+        for (int i = 1; i < s.length(); i++){
             String sub = s.substring(0, i);
             if (set.contains(sub)){
                 List<String> temp = dfs(s.substring(i), set, map);
-                if (temp.size() != 0){
+          //      if (temp.size() != 0){
                     for (String str : temp){
                         res.add(sub + " " + str);
                     }
-                }
+           //     }
                 
             }
         }
