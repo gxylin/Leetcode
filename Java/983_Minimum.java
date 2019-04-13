@@ -79,3 +79,33 @@ class Solution {
         return dp[max];
     }
 }
+
+
+Better:
+class Solution {
+    public int mincostTickets(int[] days, int[] costs) {
+        int n = days.length;
+        int max = days[n-1];
+        int[] dp = new int[max+1];
+        boolean[] travelDay = new boolean[max+1];
+        for (int day : days){
+            travelDay[day] = true;
+        }
+        int[] costDay = {1, 7, 30};
+        for (int i = 1; i <= max; i++){
+            if (!travelDay[i]){
+                dp[i] = dp[i-1];
+            }else{
+                dp[i] = Integer.MAX_VALUE;
+                for (int j = 0; j < costDay.length; j++){
+                    if (i >= costDay[j]){
+                        dp[i] = Math.min(dp[i], dp[i-costDay[j]] + costs[j]);
+                    }else{
+                        dp[i] = Math.min(dp[i], costs[j]);
+                    }
+                }
+            }
+        }
+        return dp[max];
+    }
+}
