@@ -24,6 +24,87 @@ All keys and values will be in the range of [0, 1000000].
 The number of operations will be in the range of [1, 10000].
 Please do not use the built-in HashMap library.
 
+    
+Best Solution:
+class MyHashMap {
+    class ListNode {
+        int key;
+        int val;
+        ListNode next;
+        public ListNode(int key, int val){
+            this.key = key;
+            this.val = val;
+            this.next = null;
+        }
+    }
+    /** Initialize your data structure here. */
+    private int N;
+    private ListNode[] nodes;
+    public MyHashMap() {
+        N = 10000;
+        nodes = new ListNode[N+1];
+        
+    }
+    
+    public int findBucket(int key){
+        return Integer.hashCode(key) % (N+1);
+    }
+    
+    public ListNode findPrev(ListNode bucket, int key){
+        ListNode node = bucket;
+        ListNode prev = null;
+        while (node != null && node.key != key){
+            prev = node;
+            node = node.next;
+        }
+        return prev;
+    }
+    /** value will always be non-negative. */
+    public void put(int key, int value) {
+        int index = findBucket(key);
+        if (nodes[index] == null){
+            nodes[index] = new ListNode(-1, -1);
+        }
+        ListNode prev = findPrev(nodes[index], key);
+        if (prev.next == null){
+            prev.next = new ListNode(key, value);
+        }else{
+            prev.next.val = value;
+        }
+    }
+    
+    /** Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key */
+    public int get(int key) {
+        int index = findBucket(key);
+        if (nodes[index] != null){
+            ListNode prev = findPrev(nodes[index], key);
+            if (prev.next != null){
+                return prev.next.val;
+            }
+        }
+        return -1;
+    }
+    
+    /** Removes the mapping of the specified value key if this map contains a mapping for the key */
+    public void remove(int key) {
+        int index = findBucket(key);
+        if (nodes[index] != null){
+            ListNode prev = findPrev(nodes[index], key);
+            if (prev.next != null){
+                prev.next = prev.next.next;
+            }
+        }
+    }
+}
+
+/**
+ * Your MyHashMap object will be instantiated and called as such:
+ * MyHashMap obj = new MyHashMap();
+ * obj.put(key,value);
+ * int param_2 = obj.get(key);
+ * obj.remove(key);
+ */
+
 
 class MyHashMap {
     int[] arr;
