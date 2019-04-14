@@ -24,23 +24,30 @@ Note:
 The number of nodes in the tree is between 2 and 5000.
 Each node will have value between 0 and 100000.
 
+Method 1: Best Top down
+class Solution {
+    public int maxAncestorDiff(TreeNode root) {
+        return dfs(root, root.val, root.val);
+    }
+    private int dfs(TreeNode root, int min, int max){
+        if (root == null){
+            return 0;
+        }
+        int res = Math.max(Math.abs(root.val-min), Math.abs(root.val - max));
+        max = Math.max(max, root.val);
+        min = Math.min(min, root.val);
+        int left = dfs(root.left, min, max);
+        int right = dfs(root.right, min, max);
+        return Math.max(res, Math.max(left, right));
+    }
+}
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Method 2: Bottom Up
 class Solution {
     class Node{
         int min;
         int max;
-        int diff;
-        public Node(int diff, int max, int min){
-            this.diff = diff;
+        public Node(int max, int min){
             this.min = min;
             this.max = max;
         }
@@ -55,14 +62,14 @@ class Solution {
     }
     private Node dfs(TreeNode root){
         if (root == null){
-            return new Node(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MAX_VALUE);
+            return new Node(Integer.MIN_VALUE, Integer.MAX_VALUE);
         }
         Node left = dfs(root.left);
         Node right = dfs(root.right);
         int diff = Integer.MIN_VALUE;
         
         if (left.max == Integer.MIN_VALUE && right.max == Integer.MIN_VALUE){
-            return new Node(diff, root.val, root.val);
+            return new Node(root.val, root.val);
         }
         
         if (left.max != Integer.MIN_VALUE && left.min != Integer.MAX_VALUE){
@@ -75,6 +82,6 @@ class Solution {
         res = Math.max(res, diff);
         int currMax = Math.max(root.val, Math.max(left.max, right.max));
         int currMin = Math.min(root.val, Math.min(left.min, right.min));
-        return new Node(diff, currMax, currMin);
+        return new Node(currMax, currMin);
     }
 }
