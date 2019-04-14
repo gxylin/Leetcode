@@ -978,3 +978,4 @@ Solution for Leetcode/Lintcode
 |963   |1025 |[Divisor Game](Java/1025_Divisor.java)|Easy|Java|Leetcode|
 |964   |1026 |[Maximum Difference Between Node and Ancestor](Java/1026_Maximum.java)|Medium|Java|Leetcode|
 |965   |1027 |[Longest Arithmetic Sequence](Java/1027_Longest.java)|Medium|Java|Leetcode|
+|966   |1028 |[Recover a Tree From Preorder Traversal](Java/1028_Recover.java)|Hard|Java|Leetcode|
