@@ -44,6 +44,10 @@ Similar to Arithmetics Slice DP but add additional dimension
 
 does not need to sort, like LIS
 
+
+The similar as Leetcode 1027
+https://github.com/optimisea/Leetcode/blob/master/Java/1027_Longest.java
+
 class Solution {
     public int numberOfArithmeticSlices(int[] A) {
         int n = A.length;
