@@ -976,3 +976,4 @@ Solution for Leetcode/Lintcode
 |961   |1023 |[Camelcase Matching](Java/1023_Camelcase.java)|Medium|Java|Leetcode|
 |962   |1024 |[Video Stitching](Java/1024_Video.java)|Medium|Java|Leetcode|
 |963   |1025 |[Divisor Game](Java/1025_Divisor.java)|Easy|Java|Leetcode|
+|964   |1026 |[Maximum Difference Between Node and Ancestor](Java/1026_Maximum.java)|Medium|Java|Leetcode|
