@@ -52,7 +52,8 @@ class Solution {
             if (!doubleQ.isEmpty() && doubleQ.peek() < i - k + 1){
                 doubleQ.poll();
             }
-            while (!doubleQ.isEmpty() && nums[i] >= nums[doubleQ.peekLast()]){//save the 2nd largest
+            while (!doubleQ.isEmpty() && nums[i] >= nums[doubleQ.peekLast()]){
+             //remove thoese elements that definitely not the result and push all candidates to peek()
                 doubleQ.pollLast();
             }
             doubleQ.offer(i);
