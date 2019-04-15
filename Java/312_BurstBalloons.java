@@ -17,6 +17,32 @@ Return 167
     nums = [3,1,5,8] --> [3,5,8] -->   [3,8]   -->  [8]  --> []
    coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167
 
+    
+Best solution:
+https://leetcode.com/problems/burst-balloons/discuss/194608/DP-solution-with-detailed-text-and-video-explanation.
+class Solution {
+    public int maxCoins(int[] nums) {
+        int n = nums.length;
+        int[] arr = new int[n+2];
+        for (int i = 1; i <= n; i++){
+            arr[i] = nums[i-1];
+        }
+        arr[0] = 1;
+        arr[n+1] = 1;
+        int[][] dp = new int[n+2][n+2];
+        for (int len = 0; len <= n; len++){
+            for (int i = 1; i + len <= n; i++){
+                int j = i + len;
+                for (int k = i; k <= j; k++){
+                    dp[i][j] = Math.max(dp[i][j], dp[i][k-1] + dp[k+1][j] + arr[k] * arr[i-1] * arr[j+1]);
+                }
+            }
+        }
+        return dp[1][n];
+    }
+}
+
+
 Method:
 区间DP
 O(n^2)
