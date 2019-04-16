@@ -147,7 +147,7 @@ class Solution {
     }
 }
 
-Better solution:
+Better solution: O(mn)
 class Solution {
     class TrieNode {
         TrieNode[] children;
