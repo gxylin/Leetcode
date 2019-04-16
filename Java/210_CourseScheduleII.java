@@ -104,7 +104,7 @@ class Solution {
 }
 
 
-Bests solution:
+Best solution:
 class Solution {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         int[] indegree = new int[numCourses];
