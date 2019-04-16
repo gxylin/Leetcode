@@ -96,3 +96,43 @@ class Solution {
         return true;
     }
 }
+
+
+Best from topological sort template: need two maps 
+     indegree map: Map<Integer, Integer>
+     priority map: Map<Integer, Set<Integer>>
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        int[] indegree = new int[numCourses];
+        Map<Integer, Set<Integer>> map = new HashMap<>();
+        for (int[] p : prerequisites){
+            indegree[p[0]]++;
+            if (!map.containsKey(p[1])){
+                map.put(p[1], new HashSet<>());
+            }
+            map.get(p[1]).add(p[0]);
+        }
+        Queue<Integer> queue = new LinkedList<>();
+        for (int i = 0; i < numCourses; i++){
+            if (indegree[i] == 0){
+                queue.offer(i);
+            }
+        }
+        List<Integer> res = new ArrayList<>();
+        while (!queue.isEmpty()){
+            int course = queue.poll();
+            res.add(course);
+            if (!map.containsKey(course)){
+                continue;
+            }
+            Set<Integer> set = map.get(course);
+            for(int next : set){
+                indegree[next]--;
+                if (indegree[next] == 0){
+                    queue.offer(next);
+                }
+            }
+        }
+        return res.size() == numCourses;
+    }
+}
