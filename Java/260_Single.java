@@ -88,3 +88,29 @@ class Solution {
         return res;
     }
 }
+
+
+class Solution {
+    public int[] singleNumber(int[] nums) {
+        int diff = 0;
+        for (int num : nums){
+            diff ^= num;
+        }
+        for (int i = 0; i < 32; i++){
+            if (((diff >> i) & 1) == 1){
+                diff = (1 << i);
+                break;
+            }
+        }
+        int first = 0;
+        int second = 0;
+        for (int num : nums){
+            if ((num & diff) == 0){
+                first ^= num;
+            }else{
+                second ^= num;
+            }
+        }
+        return new int[]{first, second};
+    }
+}
