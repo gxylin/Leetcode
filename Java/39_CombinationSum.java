@@ -12,6 +12,30 @@ A solution set is:
   [2, 2, 3]
 ]
 
+Permutation no need sort
+class Solution {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> res = new ArrayList<>();
+        dfs(res, new ArrayList<>(), candidates, target, 0);
+        return res;
+    }
+    private void dfs(List<List<Integer>> res, List<Integer> item, int[] candidates, int target, int pos){
+        if (target == 0){
+            res.add(new ArrayList<>(item));
+            return;
+        }
+        for (int i = pos; i < candidates.length; i++){
+            if (candidates[i] > target){
+                continue;
+            }
+            item.add(candidates[i]);
+            dfs(res, item, candidates, target - candidates[i], i);
+            item.remove(item.size() - 1);
+        }
+    }
+}
+
+
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
