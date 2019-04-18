@@ -24,7 +24,8 @@ The length of nums is at most 20000.
 Each element nums[i] is an integer in the range [1, 10000].
 
 Similar as House Robber I
-dp[i] denotes the max pointers when reach up to number i, either delete it to get dp[i-2] + i * count[i] or keep it to get dp[i-1]
+dp[i] denotes the max pointers when reach up to number i, either delete it to get dp[i-2] + i * count[i] or keep
+it to get dp[i-1]
 
 Method 1: best solution
 Time complexity: O(N)
