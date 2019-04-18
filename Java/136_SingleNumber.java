@@ -38,3 +38,20 @@ class Solution {
         return res;
     }
 }
+
+
+class Solution {
+    public int singleNumber(int[] nums) {
+        int res = 0;
+        for (int i = 0; i < 32; i++){
+            int temp = 0;
+            for (int num : nums){
+                temp += ((num >> i) & 1);
+            }
+            if (temp % 2 == 1){
+                res |= (1 << i);
+            }
+        }
+        return res;
+    }
+}
