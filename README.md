@@ -980,3 +980,4 @@ Solution for Leetcode/Lintcode
 |965   |1027 |[Longest Arithmetic Sequence](Java/1027_Longest.java)|Medium|Java|Leetcode|
 |966   |1028 |[Recover a Tree From Preorder Traversal](Java/1028_Recover.java)|Hard|Java|Leetcode|
 |967   |1030 |[Matrix Cells in Distance Order](Java/1030_Matrix.java)|Easy|Java|Leetcode|
+|968   |1029 |[Two City Scheduling Greedy DP](Java/1029_Two.java)|Easy|Java|Leetcode|
