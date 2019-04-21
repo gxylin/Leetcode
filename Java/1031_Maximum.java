@@ -30,6 +30,32 @@ M >= 1
 L + M <= A.length <= 1000
 0 <= A[i] <= 1000
 
+Method 1: DP
+Time complexity: O(N)
+Space complexity: O(N)
+ 
+
+ class Solution {
+    public int maxSumTwoNoOverlap(int[] A, int L, int M) {
+        int N = A.length;
+        int[] preSum = new int[N+1];
+        for (int i = 1; i <= N; i++){
+            preSum[i] = preSum[i-1] + A[i-1];
+        }
+        int res = preSum[L+M] or 0; //denote the result until the first L + M elements
+        int maxL = preSum[L] or 0; // denote the max sum of L element before the last M element
+        int maxM = preSum[M] or 0; // denote the max sum of M element before the last L element
+        for (int i = L + M; i <= N; i++){
+            maxL = Math.max(maxL, preSum[i-M] - preSum[i-L-M]);
+            maxM = Math.max(maxM, preSum[i-L] - preSum[i-L-M]);
+            res = Math.max(res, Math.max(maxL + preSum[i] - preSum[i-M], maxM + preSum[i]- preSum[i-L]));
+        }
+        return res;
+        
+    }
+}
+
+Method 2: Brute force:
 Time complexity: O(N^2)
 Space complexity: O(N)
 class Solution {
