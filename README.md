@@ -981,3 +981,4 @@ Solution for Leetcode/Lintcode
 |966   |1028 |[Recover a Tree From Preorder Traversal](Java/1028_Recover.java)|Hard|Java|Leetcode|
 |967   |1030 |[Matrix Cells in Distance Order](Java/1030_Matrix.java)|Easy|Java|Leetcode|
 |968   |1029 |[Two City Scheduling Greedy DP](Java/1029_Two.java)|Easy|Java|Leetcode|
+|969   |1031 |[Maximum Sum of Two Non-Overlapping Subarrays](Java/1031_Maximum.java)|Medium|Java|Leetcode|
