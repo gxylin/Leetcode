@@ -141,7 +141,7 @@ class Solution {
 }
 
 
-Best solution:
+Better UF solution
 class Solution {
     class UF {
         int[] parent;
