@@ -73,6 +73,14 @@ class Solution {
 
 Best: the same method as Binary Tree Maximum Path Sum, Longest Univalue Path
 best solution:
+
+If need find for n-ary tree, just find the longest and 2nd longest in all children, then similar as below
+consider left as the longest,
+and right as the 2nd longest
+
+https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=514267&extra=page%3D2%26filter%3Dsortid%26sortid%3D311%26searchoption%255B3046%255D%255Bvalue%255D%3D2%26searchoption%255B3046%255D%255Btype%255D%3Dradio%26searchoption%255B3109%255D%255Bvalue%255D%3D2%26searchoption%255B3109%255D%255Btype%255D%3Dradio%26orderby%3Ddateline&page=2
+
+
 class Solution {
     int max = Integer.MIN_VALUE;
     public int diameterOfBinaryTree(TreeNode root) {
