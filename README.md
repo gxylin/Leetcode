@@ -408,7 +408,7 @@ Solution for Leetcode/Lintcode
 |398   |32   |[Longest Valid Parentheses Two Pointers Very Good](Java/32_Longest.java)|Hard|Java|Leetcode|
 |399   |581  |[Shortest Unsorted Continuous Subarray Very Good](Java/581_Shortest.java)|Easy|Java|Leetcode|
 |400   |494  |[Target Sum Add Operator DFS or Backpack DP Very Good](Java/494_Target.java)|Medium|Java|Leetcode|
-|401   |543  |[Diameter of Binary Tree Good](Java/543_Diameter.java)|Easy|Java|Leetcode|
+|401   |543  |[Diameter of Binary Tree Very very Good](Java/543_Diameter.java)|Easy|Java|Leetcode|
 |402   |394  |[Decode String Stack Very Good](Java/394_Decode.java)|Medium|Java|Leetcode|
 |403   |437  |[Path Sum III Good Recursion](Java/437_Path.java)|Easy|Java|Leetcode|
 |404   |448  |[Find All Numbers Disappeared in an Array](Java/448_Find.java)|Easy|Java|Leetcode|
