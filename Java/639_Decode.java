@@ -128,7 +128,7 @@ class Solution {
                     dp[i] += dp[i-2];
                 }
             }else{
-                dp[i] += dp[i-2] * 15;//can't be 20 so 26-11+1-1
+                dp[i] += dp[i-2] * 15;//can't be 20 so 26-11+1-1 because * can't be 0
             }
             dp[i] %= mod;
         }
