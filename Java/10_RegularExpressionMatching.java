@@ -50,7 +50,7 @@ class Solution {
                         dp[i][j] = dp[i-2][j];
                     }else if (i > 1 && (p.charAt(i-2) == s.charAt(j-1) || p.charAt(i-2) == '.')){
                         dp[i][j] = dp[i-2][j] || dp[i-2][j-1] || dp[i][j-1];
-                    }else{
+                    }else{//not needed
                         dp[i][j] = dp[i][j-1];
                     }
                 }
