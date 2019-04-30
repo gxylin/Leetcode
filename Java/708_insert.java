@@ -31,16 +31,18 @@ class Solution{
       Node prev = head;
       Node curr = head.next;
       while (curr != head){
-         if (prev.val <= insertVal && insertVal <= next.val){
+         if (prev.val <= insertVal && insertVal <= curr.val){
             break;
          }
-         if (prev.val > next.val && (prev.val <= insertVal || insertVal <= next.val)){
+         if (prev.val > curr.val && (prev.val <= insertVal || insertVal <= curr.val)){
              break;
          }
          prev = curr;
          curr = curr.next;
       }
-      prev.next = new Node(insertVal);
+      Node newNode = new Node(insertVal);
+      prev.next = newNode;
+      newNode.next = curr;
       return head;
    }
 }
