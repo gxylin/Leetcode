@@ -34,6 +34,10 @@ class Solution {
     }
 }
 
+
+Best solution:
+The same as https://github.com/optimisea/Leetcode/blob/master/Java/442_Find.java
+
 class Solution {
     public int firstMissingPositive(int[] nums) {
         for (int i = 0; i < nums.length; i++){
