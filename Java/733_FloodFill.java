@@ -60,3 +60,32 @@ class Solution {
         return image;
     }
 }
+
+
+Better:
+class Solution {
+    public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
+        if (image[sr][sc] == newColor){
+            return image;
+        }
+        int origColor = image[sr][sc];
+        int m = image.length;
+        int n = image[0].length;
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        Queue<int[]> queue = new LinkedList<>();
+        queue.offer(new int[]{sr, sc});
+        image[sr][sc] = newColor;
+        while (!queue.isEmpty()){
+            int[] curr = queue.poll();
+            for (int[] dir : dirs){
+                int nx = curr[0] + dir[0];
+                int ny = curr[1] + dir[1];
+                if (nx >= 0 && nx < m && ny >= 0 && ny < n && image[nx][ny] == origColor){
+                    queue.offer(new int[]{nx, ny});
+                    image[nx][ny] = newColor;
+                }
+            }
+        }
+        return image;
+    }
+}
