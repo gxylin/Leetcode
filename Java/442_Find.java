@@ -27,6 +27,10 @@ class Solution {
     }
 }
 
+
+Best solution:
+The same as Leetcode 41 the first missing positive https://github.com/optimisea/Leetcode/blob/master/Java/41_FirstMissingPositive.java
+
 The same solution as Leetcode 448 Find All Numbers Disappeared in an Array
 
 https://github.com/optimisea/Leetcode/blob/master/Java/448_Find.java
@@ -35,7 +39,7 @@ class Solution {
     public List<Integer> findDuplicates(int[] nums) {
         List<Integer> res = new ArrayList<>();
         for (int i = 0; i < nums.length; i++){
-            while (i != nums[i] - 1 && nums[i] != nums[nums[i]-1]){
+            while (nums[i] > 0 && nums[i] <= nums.length && i != nums[i] - 1 && nums[i] != nums[nums[i]-1]){
                 swap(nums, i, nums[i]-1);
             }
         }
