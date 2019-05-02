@@ -555,7 +555,7 @@ Solution for Leetcode/Lintcode
 |545   |491  |[Increasing Subsequences Different Backtracking Very Good](Java/491_Increasing.java)|Medium|Java|Leetcode|
 |546   |498  |[Diagonal Traverse matrix good](Java/498_Diagonal.java)|Medium|Java|Leetcode|
 |547   |542  |[01 Matrix another kind of BFS](Java/542_Matrix.java)|Medium|Java|Leetcode|
-|548   |680  |[Valid Palindrome II ](Java/680_Valid.java)|Easy|Java|Leetcode|
+|548   |680  |[Valid Palindrome II Very Good](Java/680_Valid.java)|Easy|Java|Leetcode|
 |549   |677  |[Map Sum Pairs Trie](Java/677_Map.java)|Medium|Java|Leetcode|
 |550   |695  |[Max Area of Island](Java/695_Max.java)|Easy|Java|Leetcode|
 |551   |696  |[Count Binary Substrings Very Good Group char to int](Java/696_Count.java)|Easy|Java|Leetcode|
