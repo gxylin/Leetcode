@@ -70,3 +70,45 @@ class Solution {
         return res;
     }
 }
+
+
+class Solution {
+    class Pair{
+        int quality;
+        double ratio;
+        public Pair(int quality, double ratio){
+            this.quality = quality;
+            this.ratio = ratio;
+        }
+    }
+    public double mincostToHireWorkers(int[] quality, int[] wage, int K) {
+        int N = quality.length;
+        Pair[] pairs = new Pair[N];
+        for (int i = 0; i < N; i++){
+            pairs[i] = new Pair(quality[i], (double)wage[i]/quality[i]);
+        }
+        Arrays.sort(pairs, new Comparator<Pair>(){
+            public int compare (Pair p1, Pair p2){
+                return Double.compare(p1.ratio, p2.ratio);
+            }
+        });
+        Queue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>(){
+            public int compare (Integer i1, Integer i2){
+                return (int)(i2 - i1);
+            }
+        });
+        double res = Double.MAX_VALUE;
+        int sumQ = 0;
+        for (Pair p : pairs){
+            sumQ += p.quality;
+            pq.offer(p.quality);
+            if (pq.size() > K){
+                sumQ -= pq.poll();
+            }
+            if (pq.size() == K){
+                res = Math.min(res, sumQ * p.ratio);
+            }
+        }
+        return res;
+    }
+}
