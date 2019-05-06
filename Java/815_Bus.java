@@ -57,3 +57,51 @@ class Solution {
         return -1;
     }
 }
+
+
+
+Method 2: Faster
+Use bus as the visited set instead of stopo as the visited set
+
+class Solution {
+    public int numBusesToDestination(int[][] routes, int S, int T) {
+        if (S == T){
+            return 0;
+        }
+        Map<Integer, Set<Integer>> graph = new HashMap<>();//key : stop, values are the set of buses
+        for (int i = 0; i < routes.length; i++){
+            for (int j = 0; j < routes[i].length; j++){
+                if (!graph.containsKey(routes[i][j])){
+                    graph.put(routes[i][j], new HashSet<>());
+                }
+                graph.get(routes[i][j]).add(i);
+            }
+        }
+        
+        Queue<Integer> queue = new LinkedList<>(); 
+        Set<Integer> set = new HashSet<>(); 
+        queue.offer(S);
+        int res = 0;
+        while (!queue.isEmpty()){
+            int size = queue.size();
+            res++;
+            for (int i = 0; i < size; i++){
+                int stop = queue.poll();
+                Set<Integer> buses = graph.get(stop);
+                for (int bus : buses){
+                    if (set.contains(bus)){
+                        continue;
+                    }
+                    set.add(bus);
+                    for (int j = 0; j < routes[bus].length; j++){
+                        if (routes[bus][j] == T){
+                            return res;
+                        }
+                        queue.offer(routes[bus][j]);
+                    }
+                }
+            }
+        }
+        return -1;
+    }
+}
