@@ -80,24 +80,23 @@ class Solution {
         String position = pos[0] + "," + pos[1];
         if (visited.contains(position)){
             return;
-        }else{
-            visited.add(position);
-            robot.clean();
-            for (int i = 0; i < dirs.length; i++){
-                int newDirect = (direct + i) % 4;
-                if (robot.move()){
-                    int x = pos[0] + dirs[newDirect][0];
-                    int y = pos[1] + dirs[newDirect][1];
-                    int[] newPos = new int[]{x, y};
-                    backtracking(robot, visited, dirs, newPos, newDirect);
-                    robot.turnRight();
-                    robot.turnRight();
-                    robot.move();
-                    robot.turnLeft();
-                    robot.turnLeft();
-                }
-                robot.turnRight();
+        }
+        visited.add(position);
+        robot.clean();
+        for (int i = 0; i < dirs.length; i++){
+            int newDirect = (direct + i) % 4;
+            if (robot.move()){
+               int x = pos[0] + dirs[newDirect][0];
+               int y = pos[1] + dirs[newDirect][1];
+               int[] newPos = new int[]{x, y};
+               backtracking(robot, visited, dirs, newPos, newDirect);
+               robot.turnRight();
+               robot.turnRight();
+               robot.move();
+               robot.turnLeft();
+               robot.turnLeft();
             }
+            robot.turnRight();
         }
     }
 }
