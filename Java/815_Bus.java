@@ -33,7 +33,7 @@ class Solution {
             }
         }
         queue.offer(S);
-        visited.add(S);
+        visited.add(S);//record stop, not bus
         int count = 0;
         while (!queue.isEmpty()){
             int size = queue.size();
@@ -79,7 +79,7 @@ class Solution {
         }
         
         Queue<Integer> queue = new LinkedList<>(); 
-        Set<Integer> set = new HashSet<>(); 
+        Set<Integer> set = new HashSet<>();  //record bus not stop, so we don't do set.add(S)
         queue.offer(S);
         int res = 0;
         while (!queue.isEmpty()){
