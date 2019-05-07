@@ -38,6 +38,7 @@ class Solution {
                     i++;
                 }
                 reverse(ans, start, i);
+                i--;
             }
         }
         return ans;
