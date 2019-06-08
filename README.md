@@ -984,3 +984,4 @@ Solution for Leetcode/Lintcode
 |969   |1031 |[Maximum Sum of Two Non-Overlapping Subarrays Very Good](Java/1031_Maximum.java)|Medium|Java|Leetcode|
 |970   |1032 |[Stream of Characters Trie](Java/1032_Stream.java)|Hard|Java|Leetcode|
 |971   |843  |[Guess the Word](Java/843_Guess.java)|Hard|Java|Leetcode|
+|972   |1033 |[Moving Stones Until Consecutive](Java/1033_Moving.java)|Easy|Java|Leetcode|
