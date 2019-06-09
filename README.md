@@ -985,3 +985,4 @@ Solution for Leetcode/Lintcode
 |970   |1032 |[Stream of Characters Trie](Java/1032_Stream.java)|Hard|Java|Leetcode|
 |971   |843  |[Guess the Word](Java/843_Guess.java)|Hard|Java|Leetcode|
 |972   |1033 |[Moving Stones Until Consecutive](Java/1033_Moving.java)|Easy|Java|Leetcode|
+|973   |1034 |[Coloring A Border](Java/1034_Coloring.java)|Medium|Java|Leetcode|
