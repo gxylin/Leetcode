@@ -31,6 +31,43 @@ Note:
 0 <= c0 < grid[0].length
 1 <= color <= 1000
 
+ 
+Best solution:
+class Solution {
+    public int[][] colorBorder(int[][] grid, int r0, int c0, int color) {
+        int m = grid.length;
+        int n = grid[0].length;
+        Queue<int[]> queue = new LinkedList<>();
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        queue.offer(new int[]{r0, c0});
+        boolean[][] visited = new boolean[m][n];
+        visited[r0][c0] = true;
+        int orig = grid[r0][c0];
+        while (!queue.isEmpty()){
+            int[] curr = queue.poll();
+            int x = curr[0];
+            int y = curr[1];
+            if (x == 0 || x == m - 1 || y == 0 || y == n - 1){
+                grid[x][y] = color;
+            }
+            for (int[] dir : dirs){
+                int nx = x + dir[0];
+                int ny = y + dir[1];
+                if (nx >= 0 && nx < m && ny >= 0 && ny < n && !visited[nx][ny]){
+                    if (grid[nx][ny] == orig){
+                        queue.offer(new int[]{nx, ny});
+                        visited[nx][ny] = true;
+                    }else{
+                        grid[x][y] = color;
+                    }
+                    
+                }
+            }
+        }
+        return grid;
+    }
+}
+
 Method 1: BFS
 Time complexity: O(mn)
 Space complexity: O(mn)
