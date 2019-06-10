@@ -33,6 +33,8 @@ Note:
 1 <= B.length <= 500
 1 <= A[i], B[i] <= 2000
 
+ Longest common subsequence
+ 
 Method 1: DP
 Time complexity: O(mn)
 Space complexity: O(mn)
