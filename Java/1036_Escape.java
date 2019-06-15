@@ -30,6 +30,9 @@ source.length == target.length == 2
 source != target
 
 
+https://leetcode.com/problems/escape-a-large-maze/discuss/282870/python-solution-with-picture-show-my-thoughts
+
+need optimization to limit the bfs steps
 class Solution {
     public boolean isEscapePossible(int[][] blocked, int[] source, int[] target) {
         return helper(blocked, source, target) && helper(blocked, target, source);
