@@ -987,3 +987,4 @@ Solution for Leetcode/Lintcode
 |972   |1033 |[Moving Stones Until Consecutive](Java/1033_Moving.java)|Easy|Java|Leetcode|
 |973   |1034 |[Coloring A Border](Java/1034_Coloring.java)|Medium|Java|Leetcode|
 |974   |1035 |[Uncrossed Lines](Java/1035_Uncrossed.java)|Medium|Java|Leetcode|
+|975   |1036 |[Escape a Large Maze](Java/1036_Escape.java)|Hard|Java|Leetcode|
