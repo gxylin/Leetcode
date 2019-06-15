@@ -988,3 +988,4 @@ Solution for Leetcode/Lintcode
 |973   |1034 |[Coloring A Border](Java/1034_Coloring.java)|Medium|Java|Leetcode|
 |974   |1035 |[Uncrossed Lines](Java/1035_Uncrossed.java)|Medium|Java|Leetcode|
 |975   |1036 |[Escape a Large Maze](Java/1036_Escape.java)|Hard|Java|Leetcode|
+|976   |1037 |[Valid Boomerang](Java/1037_Valid.java)|Easy|Java|Leetcode|
