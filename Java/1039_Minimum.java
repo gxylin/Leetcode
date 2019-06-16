@@ -30,6 +30,10 @@ Note:
 3 <= A.length <= 50
 1 <= A[i] <= 100
 
+ Without loss of generality, there is a triangle that uses adjacent vertices A[0] and A[N-1] 
+ (where N = A.length). Depending on your choice K of it, this breaks down the triangulation into
+ two subproblems A[1:K] and A[K+1:N-1].
+ 
 
 class Solution {
     public int minScoreTriangulation(int[] A) {
