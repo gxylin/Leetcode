@@ -990,3 +990,4 @@ Solution for Leetcode/Lintcode
 |975   |1036 |[Escape a Large Maze](Java/1036_Escape.java)|Hard|Java|Leetcode|
 |976   |1037 |[Valid Boomerang](Java/1037_Valid.java)|Easy|Java|Leetcode|
 |977   |1038 |[Binary Search Tree to Greater Sum Tree](Java/1038_Binary.java)|Medium|Java|Leetcode|
+|978   |1039 |[Minimum Score Triangulation of Polygon 3D Dynamic Programming](Java/1039_Minimum.java)|Medium|Java|Leetcode|
